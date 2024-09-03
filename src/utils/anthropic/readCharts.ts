@@ -9,110 +9,115 @@ export const readVplateauAnthropic = async (
   imageFileName: string,
   model: string = 'claude-3-5-sonnet-20240620'
 ) => {
-  const filePath = path.join(imagesPath, imageFileName);
-  const base64Image = fs.readFileSync(filePath).toString('base64');
+  try {
+    const filePath = path.join(imagesPath, imageFileName);
+    const base64Image = fs.readFileSync(filePath).toString('base64');
 
-  const VPlateauSystem = importMarkdownFile(
-    'prompts/charts/V_plateau/V_plateauSystem.md'
-  );
-  const VPlateauUser = importMarkdownFile(
-    'prompts/charts/V_plateau/V_plateauUser.md'
-  );
+    const VPlateauSystem = importMarkdownFile(
+      'prompts/charts/V_plateau/V_plateauSystem.md'
+    );
+    const VPlateauUser = importMarkdownFile(
+      'prompts/charts/V_plateau/V_plateauUser.md'
+    );
 
-  const examples = [
-    {
-      filePath: './prompts/charts/V_plateau/examples/v_p-3.98.png',
-      Vplateau: '3.98',
-    },
-    {
-      filePath: './prompts/charts/V_plateau/examples/v_p-4.3.png',
-      Vplateau: '4.3',
-    },
-    {
-      filePath: './prompts/charts/V_plateau/examples/v_p-4.4.png',
-      Vplateau: '4.4',
-    },
-    {
-      filePath: './prompts/charts/V_plateau/examples/v_p-4.35.png',
-      Vplateau: '4.35',
-    },
-    {
-      filePath: './prompts/charts/V_plateau/examples/v_p-2.5.png',
-      Vplateau: '2.5',
-    },
-    {
-      filePath: './prompts/charts/V_plateau/examples/v_p-4.png',
-      Vplateau: '4',
-    },
-  ];
+    const examples = [
+      {
+        filePath: './prompts/charts/V_plateau/examples/v_p-3.98.png',
+        Vplateau: '4.0',
+      },
+      {
+        filePath: './prompts/charts/V_plateau/examples/v_p-4.3.png',
+        Vplateau: '4.3',
+      },
+      {
+        filePath: './prompts/charts/V_plateau/examples/v_p-4.4.png',
+        Vplateau: '4.4',
+      },
+      {
+        filePath: './prompts/charts/V_plateau/examples/v_p-4.35.png',
+        Vplateau: '4.3',
+      },
+      {
+        filePath: './prompts/charts/V_plateau/examples/v_p-2.5.png',
+        Vplateau: '2.5',
+      },
+      {
+        filePath: './prompts/charts/V_plateau/examples/v_p-4.png',
+        Vplateau: '4.0',
+      },
+    ];
 
-  const content: any[] = [];
+    const content: any[] = [];
 
-  for (const example of examples) {
-    const exampleBase64 = fs.readFileSync(example.filePath).toString('base64');
+    for (const example of examples) {
+      const exampleBase64 = fs
+        .readFileSync(example.filePath)
+        .toString('base64');
+      content.push({
+        type: 'image',
+        source: {
+          type: 'base64',
+          media_type: 'image/png',
+          data: exampleBase64,
+        },
+      });
+      content.push({
+        type: 'text',
+        text: JSON.stringify({ Vplateau: example.Vplateau }),
+      });
+    }
+
     content.push({
       type: 'image',
       source: {
         type: 'base64',
         media_type: 'image/png',
-        data: exampleBase64,
+        data: base64Image,
       },
     });
-    content.push({
-      type: 'text',
-      text: JSON.stringify({ Vplateau: example.Vplateau }),
-    });
-  }
+    const createMessageRequest = () =>
+      anthropic.messages.create({
+        model,
+        max_tokens: 1024,
+        temperature: 0,
+        system: VPlateauSystem,
+        messages: [
+          {
+            role: 'user',
+            content: [
+              {
+                type: 'text',
+                text: VPlateauUser,
+              },
+              ...content,
+            ],
+          },
+        ],
+      });
 
-  content.push({
-    type: 'image',
-    source: {
-      type: 'base64',
-      media_type: 'image/png',
-      data: base64Image,
-    },
-  });
-  const createMessageRequest = () =>
-    anthropic.messages.create({
-      model,
-      max_tokens: 1024,
-      temperature: 0,
-      system: VPlateauSystem,
-      messages: [
-        {
-          role: 'user',
-          content: [
-            {
-              type: 'text',
-              text: VPlateauUser,
-            },
-            ...content,
-          ],
-        },
-      ],
-    });
-
-  let response: any;
-  try {
-    response = await createMessageRequest();
-  } catch (error: any) {
-    if (error.response && error.response.status === 429) {
-      await handleRateLimitError(error.response);
+    let response: any;
+    try {
       response = await createMessageRequest();
-    } else {
-      throw error;
+    } catch (error: any) {
+      console.error('Error reading V_plateau with Anthropic API:', error);
+      if (error.response && error.response.status === 429) {
+        await handleRateLimitError(error.response);
+        response = await createMessageRequest();
+      } else {
+        throw error;
+      }
     }
-  }
 
-  console.log(response);
+    let jsonOutput;
+    try {
+      jsonOutput = JSON.parse(response.content[0].text);
+    } catch (error) {
+      console.error('Error parsing JSON:', error);
+      jsonOutput = await fixJson(response.content[0].text);
+    }
 
-  let jsonOutput;
-  try {
-    jsonOutput = JSON.parse(response.content[0].text);
+    return jsonOutput;
   } catch (error) {
-    console.error('Error parsing JSON:', error);
-    jsonOutput = await fixJson(response.content[0].text);
+    console.error('Error reading V_plateau:', error);
   }
-
-  return jsonOutput;
 };

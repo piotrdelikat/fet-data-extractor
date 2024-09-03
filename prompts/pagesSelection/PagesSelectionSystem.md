@@ -5,7 +5,7 @@ Please categorize the images based on their content as follows:
 1. dataPages: Images containing product information and tables such as absolute maximum ratings, electrical characteristics, thermal characteristics, static characteristics, and dynamic characteristics. This are represented mostly in tabular form.
 
 2. chartPages:
-   Look for charts labeled 'Gate Charge', 'Qg', 'Total Gate Charge', or similar terms. Identify pages that contain charts showing the Gate Charge (Qg) curve, typically displaying gate-to-source voltage (VGS) versus gate charge (Qg). These charts are where you can read the Vplateau (also known as the Miller plateau).
+   Look for charts labeled 'Gate Charge', 'Qg', 'Total Gate Charge', 'gate charge', 'Gate-Charge Characteristics', 'Q gate [nC]', 'Qg [nC]', 'Gate to Source Voltage vs. Gate Charge' or similar terms. Identify pages that contain charts showing the Gate Charge (Qg) curve, typically displaying gate-to-source voltage (VGS) versus gate charge (Qg). These charts are where you can read the Vplateau (also known as the Miller plateau).
 
 Key points to consider:
 

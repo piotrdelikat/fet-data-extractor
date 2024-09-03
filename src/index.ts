@@ -16,34 +16,25 @@ const handlePdfConversion = async (mfr: string, mpn: string) => {
     console.error(`Error converting ${mpn}:`, error);
   }
 };
-
 const processDocuments = async (
   directoryPath: string,
+  limit?: number,
   model: string = 'claude-3-5-sonnet-20240620'
 ) => {
   const pdfFiles = fs
     .readdirSync(directoryPath)
     .filter((file) => file.endsWith('.pdf'));
 
-  for (const pdfFile of pdfFiles) {
+  for (const pdfFile of pdfFiles.slice(0, limit)) {
     const filePath = path.join(directoryPath, pdfFile);
     const fileName = pdfFile.replace('.pdf', ''); // Remove .pdf from the filename
 
     const mfr = path.basename(directoryPath);
     const mpn = fileName;
 
+    const imagesPath = path.join('images', mfr, mpn);
     const intermediatePath = path.join('intermediate', mfr, mpn);
-    const imagesPath = path.join(intermediatePath, 'images');
-    const llmExtractPath = path.join(
-      intermediatePath,
-      `llm_extract_${model}.json`
-    );
-
-    // Check if the intermediate path exists, if not, create it
-    if (!fs.existsSync(intermediatePath)) {
-      fs.mkdirSync(intermediatePath, { recursive: true });
-      console.log(`Created directory: ${intermediatePath}`);
-    }
+    const llmExtractPath = path.join(intermediatePath, `llm_extract.json`);
 
     // Check if the images path exists, if not, convert the PDF to images
     if (!fs.existsSync(imagesPath)) {
@@ -52,46 +43,74 @@ const processDocuments = async (
       console.log(`Images already exist for: ${mfr}/${mpn}`);
     }
 
-    const preselectionResult = await preselectPagesOpenAI(imagesPath); // await preselectPagesAnthropic(imagesPath);
     let jsonOutput: any = {};
+    let dataUpdated = false;
 
-    //Check if the llm_extract.json file exists, if not, read values from images
-    if (!fs.existsSync(llmExtractPath)) {
-      // Anthropic
+    // Check if the intermediate path exists, if not, create it
+    if (!fs.existsSync(intermediatePath)) {
+      fs.mkdirSync(intermediatePath, { recursive: true });
+      console.log(`Created directory: ${intermediatePath}`);
+    }
+    // Check if the llm_extract.json file exists
+    if (fs.existsSync(llmExtractPath)) {
+      // If it exists, read the existing content
+      const existingContent = fs.readFileSync(llmExtractPath, 'utf-8');
+      jsonOutput = JSON.parse(existingContent);
+      console.log(`Existing data found for: ${mfr}/${mpn}`);
+
+      // Check if V_plateau exists in the JSON
+      if (
+        !jsonOutput.charts?.Gate_Charge?.V_plateau ||
+        jsonOutput.charts?.Gate_Charge?.V_plateau === 'unknown'
+      ) {
+        // If V_plateau doesn't exist, perform the preselection step
+        const preselectionResult = await preselectPagesOpenAI(imagesPath);
+        const vPlateauResult = await readVplateauAnthropic(
+          imagesPath,
+          preselectionResult.chartPages.V_plateau,
+          model
+        );
+
+        console.log(
+          'V_plateau extraction result:',
+          JSON.stringify(vPlateauResult, null, 2)
+        );
+        if (!jsonOutput.charts) jsonOutput.charts = {};
+        if (!jsonOutput.charts.Gate_Charge) jsonOutput.charts.Gate_Charge = {};
+        jsonOutput.charts.Gate_Charge.V_plateau = vPlateauResult.Vplateau;
+        dataUpdated = true;
+      }
+    } else {
+      // If llm_extract.json doesn't exist, perform both preselection and data extraction
+      const preselectionResult = await preselectPagesOpenAI(imagesPath);
       const dataReadResult = await readValuesFromImagesAnthropic(
         imagesPath,
         preselectionResult.dataPages,
         model
       );
       jsonOutput = dataReadResult;
+      dataUpdated = true;
+
+      if (preselectionResult.chartPages.V_plateau) {
+        const vPlateauResult = await readVplateauAnthropic(
+          imagesPath,
+          preselectionResult.chartPages.V_plateau,
+          model
+        );
+        console.log(vPlateauResult);
+        if (!jsonOutput.charts) jsonOutput.charts = {};
+        if (!jsonOutput.charts.Gate_Charge) jsonOutput.charts.Gate_Charge = {};
+        jsonOutput.charts.Gate_Charge.V_plateau = vPlateauResult.Vplateau;
+      }
+    }
+
+    // Write the updated JSON back to the file only if data was updated
+    if (dataUpdated) {
+      fs.writeFileSync(llmExtractPath, JSON.stringify(jsonOutput, null, 2));
+      console.log(`Analysis complete. Output written to: ${llmExtractPath}`);
     } else {
-      console.log(`Values already extracted for: ${mfr}/${mpn}`);
+      console.log(`No new data to update for: ${mfr}/${mpn}`);
     }
-
-    if (preselectionResult.chartPages.V_plateau) {
-      const vPlateauResult = await readVplateauAnthropic(
-        imagesPath,
-        preselectionResult.chartPages.V_plateau,
-        model
-      );
-      console.log(vPlateauResult);
-      jsonOutput['V_plateau'] = vPlateauResult.Vplateau;
-    }
-
-    const jsonFolderPath = intermediatePath;
-    const outputFileName = `llm_extract_${model}.json`;
-
-    fs.writeFileSync(
-      path.join(jsonFolderPath, outputFileName),
-      JSON.stringify(jsonOutput, null, 0)
-    );
-
-    console.log(
-      `Analysis complete. Output written to: ${path.join(
-        jsonFolderPath,
-        outputFileName
-      )}`
-    );
   }
 };
 
@@ -107,16 +126,9 @@ const processAllManufacturers = () => {
 };
 
 // Call processDocuments on individual directories for testing
-// processDocuments(`${datasheetsFolderPath}/analog`);
-// processDocuments(`${datasheetsFolderPath}/anhi`);
-// processDocuments(`${datasheetsFolderPath}/apm`);
-// processDocuments(`${datasheetsFolderPath}/epc_space`);
-//processDocuments(`${datasheetsFolderPath}/slkor`);
-// processDocuments(`${datasheetsFolderPath}/ts`);
-
-// readVplateau('./intermediate/epc_space/EPC7018GC', 'EPC7018GC.5.png').then(
-//   (res) => console.log(res)
-// );
+// processDocuments(`${datasheetsFolderPath}/infineon`, 6);
+// processDocuments(`${datasheetsFolderPath}/ao`, 6);
+// processDocuments(`${datasheetsFolderPath}/slkor`, 1);
 
 // Call processDocuments on all directories
-//processAllManufacturers();
+processAllManufacturers();

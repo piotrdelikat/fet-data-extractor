@@ -16,9 +16,9 @@ The `fet-datasheets` project is designed to extract values of electronic compone
 ## Installation
 
 1. Clone the repository
-2. Install dependencies:
+2. Install dependencies with yarn:
    ```
-   npm install
+   yarn install
    ```
 3. Set up environment variables (if required)
 
@@ -39,7 +39,7 @@ ANTHROPIC_API_KEY=your_anthropic_api_key
 ## Usage
 
 To run the main script:
-npm run dev
+yarn dev
 
 ## Utility Scripts
 
@@ -47,7 +47,7 @@ npm run dev
 
 To work with a collection of MOSFET datasheet PDFs install available package with:
 
-npm run install-datasheets
+yarn install-datasheets
 
 Or change datasheetsFolderPath to a folder containing the PDFs in index.ts file.
 
@@ -57,23 +57,20 @@ This script processes all directories in the 'intermediate' folder, moving any f
 
 To move files from the 'omitted' folder back to the main 'images' folder:
 
-npm run move-omitted
+yarn move-omitted
 
 ### Fix File Names
 
 This script ensures correct sorting order for image files by renaming them from `X.1.png` to `X.01.png` for pages 1-9.
 To pad single-digit page numbers with a leading zero in image filenames:
 
-npm run fix-filenames
+yarn fix-filenames
 
-## Manufaturers and Componets Processed so far for Testing Purposes:
+### Copy Images Folders
 
--analog_power_inc.
--anhi
--epc_space
--apm
--slkor
--ts
+This script copies content of 'images' folder to the 'intermediate' folder per manufacturer and component to separate images folder.
+
+yarn copyImagesFolders
 
 ## File Processing
 

@@ -10,21 +10,24 @@
     "@anthropic-ai/sdk": "^0.27.1",
     "@google/generative-ai": "^0.17.1",
     "dotenv": "^16.4.5",
+    "fet-datasheets": "https://github.com/open-pe/fet-datasheets",
     "openai": "^4.56.0",
     "pdf2pic": "^3.1.1"
   },
   "devDependencies": {
     "@types/node": "^22.4.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "ts-node src/index.ts",
     "watch": "tsc --watch",
-    "install-datasheets": "npm install https://github.com/open-pe/fet-datasheets",
+    "install-datasheets": "yarn add https://github.com/open-pe/fet-datasheets",
     "fix-filenames": "ts-node src/utils/fixFileNames.ts",
-    "move-omitted": "ts-node src/utils/moveOmittedFiles.ts"
+    "move-omitted": "ts-node src/utils/moveOmittedFiles.ts",
+    "copyImagesFolders": "ts-node src/utils/copyImagesFolders.ts"
   }
 }

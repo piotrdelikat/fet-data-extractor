@@ -4,7 +4,7 @@ import path from 'path';
 import { datasheetsFolderPath } from '..';
 
 export const convertPdfToImage = async (mfr: string, mpn: string) => {
-  const savePath = path.join('intermediate', mfr, mpn, 'images');
+  const savePath = path.join('images', mfr, mpn);
 
   // Check and create the directory if it doesn't exist
   if (!fs.existsSync(savePath)) {
