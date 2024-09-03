@@ -1,0 +1,11 @@
+
+.DS_Store
+
+*.pdf_downloads/
+.env
+node_modules
+dist
+yarn.lock
+
+lowQuality
+datasheets

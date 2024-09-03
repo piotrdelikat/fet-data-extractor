@@ -1,0 +1,5 @@
+{
+  "dataPages": ["AMIF100S201.1.png", "AMIF100S201.2.png"],
+  "chartPages": { "V_plateau": "AMIF100S201.4.png" },
+  "dimensionsPages": ["AMIF100S201.5.png"]
+}

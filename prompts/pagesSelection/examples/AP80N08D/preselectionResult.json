@@ -1,0 +1,5 @@
+{
+  "dataPages": ["AP80N08D.1.png", "AP80N08D.2.png"],
+  "chartPages": { "V_plateau": "AP80N08D.3.png" },
+  "dimensionsPages": ["AP80N08D.5.png"]
+}
