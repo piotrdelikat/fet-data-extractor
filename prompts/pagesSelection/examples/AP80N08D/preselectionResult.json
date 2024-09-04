@@ -1,5 +1,5 @@
 {
-  "dataPages": ["AP80N08D.1.png", "AP80N08D.2.png"],
-  "chartPages": { "V_plateau": "AP80N08D.3.png" },
-  "dimensionsPages": ["AP80N08D.5.png"]
+  "dataPages": ["AP80N08D.01.png", "AP80N08D.02.png"],
+  "chartPages": { "V_plateau": "AP80N08D.03.png" },
+  "dimensionsPages": ["AP80N08D.05.png"]
 }
