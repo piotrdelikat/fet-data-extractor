@@ -8,14 +8,6 @@ import { preselectPagesOpenAI } from './utils/openAI/preselectPages';
 // Set the datasheets folder path
 export const datasheetsFolderPath = './node_modules/fet-datasheets';
 
-const handlePdfConversion = async (mfr: string, mpn: string) => {
-  try {
-    await convertPdfToImage(mfr, mpn);
-    console.log(`Successfully converted ${mpn} to image.`);
-  } catch (error) {
-    console.error(`Error converting ${mpn}:`, error);
-  }
-};
 const processDocuments = async (
   directoryPath: string,
   limit?: number,
@@ -37,8 +29,12 @@ const processDocuments = async (
     const llmExtractPath = path.join(intermediatePath, `llm_extract.json`);
 
     // Check if the images path exists, if not, convert the PDF to images
-    if (!fs.existsSync(imagesPath)) {
-      await handlePdfConversion(mfr, mpn);
+    if (!fs.existsSync(imagesPath) || fs.readdirSync(imagesPath).length === 0) {
+      const conversionResult = await convertPdfToImage(mfr, mpn);
+      if (conversionResult === null) {
+        console.log(`Skipping ${mpn} due to conversion failure.`);
+        continue; // Skip to the next PDF
+      }
     } else {
       console.log(`Images already exist for: ${mfr}/${mpn}`);
     }
