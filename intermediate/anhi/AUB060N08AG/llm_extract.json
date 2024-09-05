@@ -1,0 +1,369 @@
+{
+  "general_info": {
+    "componentName": [
+      "AUA060N08AG",
+      "AUB060N08AG",
+      "AUP060N08AG",
+      "AUN060N08AG",
+      "AUD060N08AG"
+    ],
+    "manufacturer": "ANHI Semiconductor",
+    "type": "MOSFET Silicon N-Channel MOS",
+    "applications": [
+      "Synchronous rectification in SMPS",
+      "Hard switching and High speed circuit",
+      "DC/DC in telecoms and industrial"
+    ],
+    "features": [
+      "Low drain-source on-resistance: RDS(ON) = 5.6mΩ (typ.)",
+      "High speed power switching",
+      "Enhanced body diode dv/dt capability",
+      "Enhanced avalanche ruggedness"
+    ]
+  },
+  "key_performance_parameters": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 80,
+      "unit": "V"
+    },
+    "RDS(on)_max": {
+      "parameter": "On-Resistance",
+      "value": 6,
+      "unit": "mΩ"
+    },
+    "Qg_typ": {
+      "parameter": "Total Gate Charge",
+      "value": 55.7,
+      "unit": "nC"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "value": 240,
+      "unit": "A"
+    }
+  },
+  "packaging": [
+    {
+      "partName": "AUA060N08AG",
+      "package": "TO220F",
+      "marking": "AUA060N08AG"
+    },
+    {
+      "partName": "AUB060N08AG",
+      "package": "TO263",
+      "marking": "AUB060N08AG"
+    },
+    {
+      "partName": "AUP060N08AG",
+      "package": "TO220",
+      "marking": "AUP060N08AG"
+    },
+    {
+      "partName": "AUN060N08AG",
+      "package": "DFN5x6",
+      "marking": "AUN060N08AG"
+    },
+    {
+      "partName": "AUD060N08AG",
+      "package": "TO252",
+      "marking": "AUD060N08AG"
+    }
+  ],
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous drain current",
+      "symbol": "ID",
+      "min": null,
+      "typ": null,
+      "max": 60,
+      "unit": "A",
+      "conditions": "TC=25°C"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed drain current",
+      "symbol": "ID pulse",
+      "min": null,
+      "typ": null,
+      "max": 240,
+      "unit": "A",
+      "conditions": "TC=25°C"
+    },
+    "EAS": {
+      "parameter": "Avalanche energy, single pulse",
+      "symbol": "EAS",
+      "min": null,
+      "typ": null,
+      "max": 300,
+      "unit": "mJ"
+    },
+    "VGS": {
+      "parameter": "Gate source voltage (static)",
+      "symbol": "VGS",
+      "min": -20,
+      "typ": null,
+      "max": 20,
+      "unit": "V",
+      "conditions": "static"
+    },
+    "Ptot_TO220F": {
+      "parameter": "Power dissipation (TO220F)",
+      "symbol": "Ptot",
+      "min": null,
+      "typ": null,
+      "max": 30,
+      "unit": "W",
+      "conditions": "TC=25°C"
+    },
+    "Ptot_TO263_TO220_TO252": {
+      "parameter": "Power dissipation (TO263&TO220&TO252)",
+      "symbol": "Ptot",
+      "min": null,
+      "typ": null,
+      "max": 150,
+      "unit": "W",
+      "conditions": "TC=25°C"
+    },
+    "Ptot_DFN5x6": {
+      "parameter": "Power dissipation (DFN5x6)",
+      "symbol": "Ptot",
+      "min": null,
+      "typ": null,
+      "max": 74,
+      "unit": "W",
+      "conditions": "TC=25°C"
+    },
+    "Tstg": {
+      "parameter": "Storage temperature",
+      "symbol": "Tstg",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    },
+    "Tj": {
+      "parameter": "Operating junction temperature",
+      "symbol": "Tj",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "TO220F": {
+      "RthJC": {
+        "parameter": "Thermal resistance, junction - case",
+        "symbol": "RthJC",
+        "min": null,
+        "typ": null,
+        "max": 5,
+        "unit": "°C/W"
+      },
+      "RthJA": {
+        "parameter": "Thermal resistance, junction - ambient",
+        "symbol": "RthJA",
+        "min": null,
+        "typ": null,
+        "max": 60,
+        "unit": "°C/W",
+        "conditions": "device on PCB, minimal footprint"
+      }
+    },
+    "TO263_TO220_TO252": {
+      "RthJC": {
+        "parameter": "Thermal resistance, junction - case",
+        "symbol": "RthJC",
+        "min": null,
+        "typ": null,
+        "max": 1,
+        "unit": "°C/W"
+      },
+      "RthJA": {
+        "parameter": "Thermal resistance, junction - ambient",
+        "symbol": "RthJA",
+        "min": null,
+        "typ": null,
+        "max": 62,
+        "unit": "°C/W",
+        "conditions": "device on PCB, minimal footprint"
+      }
+    },
+    "DFN5x6": {
+      "RthJC": {
+        "parameter": "Thermal resistance, junction - case",
+        "symbol": "RthJC",
+        "min": null,
+        "typ": null,
+        "max": 1.7,
+        "unit": "°C/W"
+      },
+      "RthJA": {
+        "parameter": "Thermal resistance, junction - ambient",
+        "symbol": "RthJA",
+        "min": null,
+        "typ": null,
+        "max": 50,
+        "unit": "°C/W",
+        "conditions": "device on PCB, minimal footprint"
+      }
+    }
+  },
+  "electrical_characteristics": {
+    "static_characteristics": {
+      "V(BR)DSS": {
+        "parameter": "Drain-source breakdown voltage",
+        "symbol": "V(BR)DSS",
+        "min": 80,
+        "typ": null,
+        "max": null,
+        "unit": "V",
+        "conditions": "VGS=0V, ID=10mA"
+      },
+      "VGS(th)": {
+        "parameter": "Gate threshold voltage",
+        "symbol": "VGS(th)",
+        "min": 2.5,
+        "typ": null,
+        "max": 3.4,
+        "unit": "V",
+        "conditions": "VDS=VGS, ID=250μA"
+      },
+      "IDSS": {
+        "parameter": "Zero gate voltage drain current",
+        "symbol": "IDSS",
+        "min": null,
+        "typ": null,
+        "max": 1000,
+        "unit": "nA",
+        "conditions": "VDS=80V, VGS=0V, Tj=25°C"
+      },
+      "IGSS": {
+        "parameter": "Gate-source leakage current",
+        "symbol": "IGSS",
+        "min": null,
+        "typ": null,
+        "max": 100,
+        "unit": "nA",
+        "conditions": "VGS=20V, VDS=0V"
+      },
+      "RDS(on)": {
+        "parameter": "Drain-source on-state resistance",
+        "symbol": "RDS(on)",
+        "min": null,
+        "typ": 5.4,
+        "max": 6,
+        "unit": "mΩ",
+        "conditions": "VGS=10V, ID=20A, Tj=25°C"
+      },
+      "RG": {
+        "parameter": "Gate resistance (Intrinsic)",
+        "symbol": "RG",
+        "min": null,
+        "typ": 1.2,
+        "max": null,
+        "unit": "Ω",
+        "conditions": "f=1MHz, open drain"
+      }
+    },
+    "dynamic_characteristics": {
+      "Ciss": {
+        "parameter": "Input capacitance",
+        "symbol": "Ciss",
+        "min": null,
+        "typ": 3730,
+        "max": null,
+        "unit": "pF",
+        "conditions": "Vds=40V,Vgs=0V f=1MHz"
+      },
+      "Coss": {
+        "parameter": "Output capacitance",
+        "symbol": "Coss",
+        "min": null,
+        "typ": 674,
+        "max": null,
+        "unit": "pF",
+        "conditions": "Vds=40V,Vgs=0V f=1MHz"
+      },
+      "Crss": {
+        "parameter": "Reverse transfer capacitance",
+        "symbol": "Crss",
+        "min": null,
+        "typ": 24.24,
+        "max": null,
+        "unit": "pF",
+        "conditions": "Vds=40V,Vgs=0V f=1MHz"
+      },
+      "td(on)": {
+        "parameter": "Turn-on delay time",
+        "symbol": "td(on)",
+        "min": null,
+        "typ": 16.5,
+        "max": null,
+        "unit": "ns",
+        "conditions": "VDD=40V,VGS=10V,RG=10Ω ID=20A"
+      },
+      "tr": {
+        "parameter": "Rise time",
+        "symbol": "tr",
+        "min": null,
+        "typ": 13.7,
+        "max": null,
+        "unit": "ns",
+        "conditions": "VDD=40V,VGS=10V,RG=10Ω ID=20A"
+      },
+      "td(off)": {
+        "parameter": "Turn-off delay time",
+        "symbol": "td(off)",
+        "min": null,
+        "typ": 35.9,
+        "max": null,
+        "unit": "ns",
+        "conditions": "VDD=40V,VGS=10V,RG=10Ω ID=20A"
+      },
+      "tf": {
+        "parameter": "Fall time",
+        "symbol": "tf",
+        "min": null,
+        "typ": 13.45,
+        "max": null,
+        "unit": "ns",
+        "conditions": "VDD=40V,VGS=10V,RG=10Ω ID=20A"
+      }
+    },
+    "gate_charge_characteristics": {
+      "Qgs": {
+        "parameter": "Gate to source charge",
+        "symbol": "Qgs",
+        "min": null,
+        "typ": 15.9,
+        "max": null,
+        "unit": "nC",
+        "conditions": "VDS=40V,VGS=0 to 10V ID=20A"
+      },
+      "Qgd": {
+        "parameter": "Gate to drain charge",
+        "symbol": "Qgd",
+        "min": null,
+        "typ": 13.3,
+        "max": null,
+        "unit": "nC",
+        "conditions": "VDS=40V,VGS=0 to 10V ID=20A"
+      },
+      "Qg": {
+        "parameter": "Gate charge total",
+        "symbol": "Qg",
+        "min": null,
+        "typ": 55.7,
+        "max": null,
+        "unit": "nC",
+        "conditions": "VDS=40V,VGS=0 to 10V ID=20A"
+      }
+    }
+  },
+  "charts": {
+    "Gate_Charge": {
+      "V_plateau": "unknown"
+    }
+  }
+}

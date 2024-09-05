@@ -1,0 +1,382 @@
+{
+  "general_info": {
+    "componentName": "AUIRFS4010-7P",
+    "manufacturer": "Infineon",
+    "description": "HEXFET® Power MOSFET",
+    "features": [
+      "Advanced Process Technology",
+      "Ultra Low On-Resistance",
+      "Enhanced dV/dT and di/dT capability",
+      "175°C Operating Temperature",
+      "Fast Switching",
+      "Repetitive Avalanche Allowed up to Tjmax",
+      "Lead-Free, RoHS Compliant",
+      "Automotive Qualified"
+    ]
+  },
+  "key_parameters": {
+    "VDSS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "On-State Resistance",
+      "typ": 3.3,
+      "max": 4,
+      "unit": "mΩ"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 190,
+      "unit": "A"
+    }
+  },
+  "package_info": {
+    "base_part_number": "AUIRFS4010-7P",
+    "package_type": "D²Pak 7 Pin",
+    "standard_pack": [
+      {
+        "form": "Tube",
+        "quantity": 50
+      },
+      {
+        "form": "Tape and Reel Left",
+        "quantity": 800
+      }
+    ],
+    "orderable_part_numbers": [
+      "AUIRFS4010-7P",
+      "AUIRFS4010-7TRL"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "ID_25C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "conditions": "TC = 25°C",
+      "max": 190,
+      "unit": "A"
+    },
+    "ID_100C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "conditions": "TC = 100°C",
+      "max": 130,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "max": 740,
+      "unit": "A"
+    },
+    "PD": {
+      "parameter": "Maximum Power Dissipation",
+      "conditions": "TC = 25°C",
+      "max": 380,
+      "unit": "W"
+    },
+    "Linear_Derating_Factor": {
+      "value": 2.5,
+      "unit": "W/°C"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "max": "± 20",
+      "unit": "V"
+    },
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy (Thermally Limited)",
+      "max": 330,
+      "unit": "mJ"
+    },
+    "IAR": {
+      "parameter": "Avalanche Current",
+      "value": "See Fig.14,15, 22a, 22b",
+      "unit": "A"
+    },
+    "EAR": {
+      "parameter": "Repetitive Avalanche Energy",
+      "unit": "mJ"
+    },
+    "dv/dt": {
+      "parameter": "Peak Diode Recovery",
+      "max": 26,
+      "unit": "V/ns"
+    },
+    "TJ": {
+      "parameter": "Operating Junction and",
+      "range": "-55 to + 175",
+      "unit": "°C"
+    },
+    "TSTG": {
+      "parameter": "Storage Temperature Range",
+      "range": "-55 to + 175",
+      "unit": "°C"
+    },
+    "TL": {
+      "parameter": "Soldering Temperature, for 10 seconds (1.6mm from case)",
+      "max": 300,
+      "unit": "°C"
+    }
+  },
+  "thermal_resistance": {
+    "RthJC": {
+      "parameter": "Junction-to-Case",
+      "typ": null,
+      "max": 0.4,
+      "unit": "°C/W"
+    },
+    "RthJA": {
+      "parameter": "Junction-to-Ambient",
+      "typ": null,
+      "max": 40,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-to-Source Breakdown Voltage",
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": "VGS = 0V, ID = 250μA"
+    },
+    "ΔV(BR)DSS/ΔTJ": {
+      "parameter": "Breakdown Voltage Temp. Coefficient",
+      "min": null,
+      "typ": 0.11,
+      "max": null,
+      "unit": "V/°C",
+      "conditions": "Reference to 25°C, ID = 5mA"
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain-to-Source On-Resistance",
+      "min": null,
+      "typ": 3.3,
+      "max": 4,
+      "unit": "mΩ",
+      "conditions": "VGS = 10V, ID = 110A"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 2,
+      "typ": null,
+      "max": 4,
+      "unit": "V",
+      "conditions": "VDS = VGS, ID = 250μA"
+    },
+    "gfs": {
+      "parameter": "Forward Trans conductance",
+      "min": 210,
+      "typ": null,
+      "max": null,
+      "unit": "S",
+      "conditions": "VDS = 25V, ID = 110A"
+    },
+    "RG": {
+      "parameter": "Gate Resistance",
+      "min": null,
+      "typ": 2.1,
+      "max": null,
+      "unit": "Ω"
+    },
+    "IDSS": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "min": null,
+      "typ": null,
+      "max": [
+        20,
+        250
+      ],
+      "unit": "μA",
+      "conditions": [
+        "VDS = 100V, VGS = 0V",
+        "VDS = 100V,VGS = 0V,TJ =125°C"
+      ]
+    },
+    "IGSS": {
+      "parameter": "Gate-to-Source Forward Leakage",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "nA",
+      "conditions": "VGS = 20V"
+    },
+    "IGSS_reverse": {
+      "parameter": "Gate-to-Source Reverse Leakage",
+      "min": null,
+      "typ": null,
+      "max": -100,
+      "unit": "nA",
+      "conditions": "VGS = -20V"
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "min": null,
+      "typ": 150,
+      "max": 230,
+      "unit": "nC",
+      "conditions": "ID = 110A, VDS = 50V, VGS = 10V"
+    },
+    "Qgs": {
+      "parameter": "Gate-to-Source Charge",
+      "min": null,
+      "typ": 36,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain Charge",
+      "min": null,
+      "typ": 48,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qg(th)": {
+      "parameter": "Total Gate Charge Sync. (Qg - Qgd)",
+      "min": null,
+      "typ": 102,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "min": null,
+      "typ": 19,
+      "max": null,
+      "unit": "ns",
+      "conditions": "VDD = 65V, ID = 110A, RG = 2.7Ω, VGS = 10V"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "min": null,
+      "typ": 56,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "min": null,
+      "typ": 48,
+      "max": null,
+      "unit": "ns"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "min": null,
+      "typ": 9830,
+      "max": null,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 50V, f = 1.0MHz"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "min": null,
+      "typ": 650,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "min": null,
+      "typ": 260,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss_ef_ER": {
+      "parameter": "Effective Output Capacitance (Energy Related)",
+      "min": null,
+      "typ": 730,
+      "max": null,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 0V to 80V"
+    },
+    "Coss_ef_TR": {
+      "parameter": "Effective Output Capacitance (Time Related)",
+      "min": null,
+      "typ": 740,
+      "max": null,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 0V to 80V"
+    }
+  },
+  "diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Source Current (Body Diode)",
+      "min": null,
+      "typ": null,
+      "max": 186,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Pulsed Source Current (Body Diode)",
+      "min": null,
+      "typ": null,
+      "max": 740,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "min": null,
+      "typ": 1.3,
+      "max": null,
+      "unit": "V",
+      "conditions": "TJ = 25°C, IS = 110A, VGS = 0V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "min": null,
+      "typ": [
+        60,
+        67
+      ],
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        "TJ = 25°C",
+        "TJ = 125°C"
+      ]
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "min": null,
+      "typ": [
+        150,
+        180
+      ],
+      "max": null,
+      "unit": "nC",
+      "conditions": [
+        "TJ = 25°C",
+        "TJ = 125°C"
+      ]
+    },
+    "IRRM": {
+      "parameter": "Reverse Recovery Current",
+      "min": null,
+      "typ": 4.7,
+      "max": null,
+      "unit": "A",
+      "conditions": "TJ = 25°C"
+    },
+    "ton": {
+      "parameter": "Forward Turn-On Time",
+      "value": "Intrinsic turn-on time is negligible (turn-on is dominated by LS+LD)",
+      "unit": null
+    }
+  },
+  "charts": {
+    "Gate_Charge": {
+      "V_plateau": "5.0"
+    }
+  }
+}

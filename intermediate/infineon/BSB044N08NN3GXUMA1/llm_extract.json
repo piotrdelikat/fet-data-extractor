@@ -1,0 +1,281 @@
+{
+  "general_info": {
+    "componentName": "BSB044N08NN3 G",
+    "manufacturer": "Infineon",
+    "productType": "OptiMOS™3 Power-MOSFET",
+    "package": "MG-WDSON-2",
+    "outline": "MN",
+    "marking": "0208"
+  },
+  "features": [
+    "Optimized technology for DC/DC converters",
+    "Excellent gate charge x RDS(on) product (FOM)",
+    "Superior thermal resistance",
+    "Dual sided cooling",
+    "low parasitic inductance",
+    "Low profile (<0.7mm)",
+    "N-channel, normal level",
+    "100% avalanche tested",
+    "Pb-free plating; RoHS compliant",
+    "Qualified according to JEDEC¹⁾ for target applications",
+    "Compatible with DirectFET® package MN footprint and outline²⁾"
+  ],
+  "product_summary": {
+    "VDS": {
+      "value": 80,
+      "unit": "V"
+    },
+    "RDS(on)_max": {
+      "value": 4.4,
+      "unit": "mΩ"
+    },
+    "ID": {
+      "value": 90,
+      "unit": "A"
+    }
+  },
+  "maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous drain current",
+      "symbol": "ID",
+      "conditions": [
+        {
+          "VGS": 10,
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 90,
+      "unit": "A"
+    },
+    "ID_100C": {
+      "parameter": "Continuous drain current",
+      "symbol": "ID",
+      "conditions": [
+        {
+          "VGS": 10,
+          "TC": 100,
+          "unit": "°C"
+        }
+      ],
+      "value": 68,
+      "unit": "A"
+    },
+    "ID_RthJA": {
+      "parameter": "Continuous drain current",
+      "symbol": "ID",
+      "conditions": [
+        {
+          "VGS": 10,
+          "TA": 25,
+          "RthJA": 58,
+          "unit": "K/W"
+        }
+      ],
+      "value": 18,
+      "unit": "A"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed drain current",
+      "symbol": "ID pulse",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 360,
+      "unit": "A"
+    },
+    "EAS": {
+      "parameter": "Avalanche energy, single pulse",
+      "symbol": "EAS",
+      "conditions": [
+        {
+          "ID": 30,
+          "RG": 25,
+          "unit": "Ω"
+        }
+      ],
+      "value": 660,
+      "unit": "mJ"
+    },
+    "VGS": {
+      "parameter": "Gate source voltage",
+      "symbol": "VGS",
+      "value": "±20",
+      "unit": "V"
+    },
+    "Ptot": {
+      "parameter": "Power dissipation",
+      "symbol": "Ptot",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 78,
+      "unit": "W"
+    },
+    "Ptot_RthJA": {
+      "parameter": "Power dissipation",
+      "symbol": "Ptot",
+      "conditions": [
+        {
+          "TA": 25,
+          "RthJA": 58,
+          "unit": "K/W"
+        }
+      ],
+      "value": 2.2,
+      "unit": "W"
+    },
+    "TJ_Tstg": {
+      "parameter": "Operating and storage temperature",
+      "symbol": "TJ, Tstg",
+      "value": "-40 ... 150",
+      "unit": "°C"
+    },
+    "IEC_climatic_category": {
+      "parameter": "IEC climatic category; DIN IEC 68-1",
+      "value": "55/150/56"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC_bottom": {
+      "parameter": "Thermal resistance, junction - case",
+      "symbol": "RthJC",
+      "conditions": "bottom",
+      "typ": 1,
+      "unit": "K/W"
+    },
+    "RthJC_top": {
+      "parameter": "Thermal resistance, junction - case",
+      "symbol": "RthJC",
+      "conditions": "top",
+      "max": 1.6,
+      "unit": "K/W"
+    },
+    "RthJA": {
+      "parameter": "Device on PCB",
+      "symbol": "RthJA",
+      "conditions": "6 cm² cooling area",
+      "max": 58,
+      "unit": "K/W"
+    }
+  },
+  "electrical_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-source breakdown voltage",
+      "symbol": "V(BR)DSS",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 80,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate threshold voltage",
+      "symbol": "VGS(th)",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 97,
+          "unit": "μA"
+        }
+      ],
+      "min": 2,
+      "typ": 2.8,
+      "max": 3.5,
+      "unit": "V"
+    },
+    "IDSS_25C": {
+      "parameter": "Zero gate voltage drain current",
+      "symbol": "IDSS",
+      "conditions": [
+        {
+          "VDS": 80,
+          "VGS": 0,
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 0.1,
+      "max": 10,
+      "unit": "μA"
+    },
+    "IDSS_125C": {
+      "parameter": "Zero gate voltage drain current",
+      "symbol": "IDSS",
+      "conditions": [
+        {
+          "VDS": 80,
+          "VGS": 0,
+          "TJ": 125,
+          "unit": "°C"
+        }
+      ],
+      "typ": 10,
+      "max": 100,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate-source leakage current",
+      "symbol": "IGSS",
+      "conditions": [
+        {
+          "VGS": 20,
+          "VDS": 0,
+          "unit": "V"
+        }
+      ],
+      "typ": 10,
+      "max": 100,
+      "unit": "nA"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-source on-state resistance",
+      "symbol": "RDS(on)",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 30,
+          "unit": "A"
+        }
+      ],
+      "typ": 3.7,
+      "max": 4.4,
+      "unit": "mΩ"
+    },
+    "RG": {
+      "parameter": "Gate resistance",
+      "symbol": "RG",
+      "typ": 0.5,
+      "unit": "Ω"
+    },
+    "gfs": {
+      "parameter": "Transconductance",
+      "symbol": "gfs",
+      "conditions": [
+        {
+          "VDS": "|2I/gfs|RDS(on)max",
+          "ID": 30,
+          "unit": "A"
+        }
+      ],
+      "min": 36,
+      "typ": 72,
+      "unit": "S"
+    }
+  },
+  "charts": {
+    "Gate_Charge": {
+      "V_plateau": "4.5"
+    }
+  }
+}
