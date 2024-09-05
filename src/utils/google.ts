@@ -70,7 +70,7 @@ export const extractWihGoogleGemini = async (imagesPath: string) => {
 
   for (const image of images) {
     const imagePath = path.join(imagesPath, image);
-    console.log(`Processing image: ${imagePath}`);
+    console.log(`Reading tabular data from image: ${imagePath}`);
 
     files.push(await uploadToGemini(imagePath, 'image/png'));
   }

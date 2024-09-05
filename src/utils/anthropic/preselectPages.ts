@@ -19,7 +19,7 @@ export async function preselectPagesAnthropic(
 
   for (const image of images) {
     const imagePath = path.join(imagesPath, image);
-    console.log(`Processing image: ${imagePath}`);
+    console.log(`Adding image to preselection: ${imagePath}`);
     const base64Image = fs.readFileSync(imagePath).toString('base64');
 
     content.push({

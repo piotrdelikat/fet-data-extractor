@@ -20,7 +20,7 @@ export async function readValuesFromImagesAnthropic(
   try {
     for (const image of images) {
       const imagePath = path.join(imagesPath, image);
-      console.log(`Processing image: ${imagePath}`);
+      console.log(`Reading tabular data from image: ${imagePath}`);
       const base64Image = fs.readFileSync(imagePath).toString('base64');
 
       content.push({

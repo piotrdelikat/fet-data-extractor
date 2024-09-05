@@ -18,7 +18,7 @@ export async function preselectPagesOpenAI(
 
   for (const image of images) {
     const imagePath = path.join(imagesPath, image);
-    console.log(`Processing image: ${imagePath}`);
+    console.log(`Add image to LLM request for preselection:: ${imagePath}`);
     const base64Image = fs.readFileSync(imagePath).toString('base64');
 
     content.push({
