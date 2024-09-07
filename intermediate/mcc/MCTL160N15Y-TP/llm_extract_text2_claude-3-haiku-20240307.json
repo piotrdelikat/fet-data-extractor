@@ -1,0 +1,418 @@
+{
+  "general_info": {
+    "componentName": "MCTL160N15Y",
+    "manufacturer": "MCCSEMI.COM",
+    "description": "N-CHANNEL MOSFET",
+    "features": [
+      "Excellent Package for Heat Dissipation",
+      "Moisture Sensitivity Level 1",
+      "High Density Cell Design for Low RDS(on)",
+      "Halogen Free \"Green\" Device",
+      "Epoxy Meets UL 94 V-0 Flammability Rating",
+      "Lead Free Finish/RoHS Compliant (\"P\" Suffix Designates RoHS Compliant)"
+    ],
+    "applications": []
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 150,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Volltage",
+      "value": "±25",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 101,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 640,
+      "unit": "A",
+      "conditions": "Note 3"
+    },
+    "PD": {
+      "parameter": "Total Power Dissipation",
+      "value": 357,
+      "unit": "W",
+      "conditions": "Note 4"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction Temperature Range",
+      "value": "-55°C to +150°C"
+    },
+    "TSOL": {
+      "parameter": "Package Mounting Surface Temperature",
+      "value": 260,
+      "unit": "°C"
+    },
+    "RθJA": {
+      "parameter": "Thermal Resistance: Junction to Ambient",
+      "value": 45,
+      "unit": "°C/W",
+      "conditions": "Note 2"
+    },
+    "RθJC": {
+      "parameter": "Thermal Resistance: Junction to Case",
+      "value": 0.35,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 0.9,
+          "TC": 25,
+          "unit": "V"
+        }
+      ],
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 12,
+          "VGS": 25,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 0.01,
+      "max": 0.5,
+      "unit": "μA"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 120,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 0.1,
+      "max": 1,
+      "unit": "μA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 1,
+          "unit": "A"
+        }
+      ],
+      "min": 0.8,
+      "typ": 1.2,
+      "max": 2.5,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 5,
+          "ID": 30,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 5.2,
+      "max": 6.5,
+      "unit": "mΩ"
+    },
+    "Rg": {
+      "parameter": "Gate Resistance",
+      "value": 6,
+      "unit": "Ω",
+      "conditions": "f = 1 MHz, Open Drain"
+    },
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "value": 80,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "IS": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.8,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": null,
+      "unit": "nC"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 75,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 9440,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 75,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 580,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 75,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 32,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 75,
+          "VGS": 10,
+          "ID": 80,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 157,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [
+        {
+          "VDS": 75,
+          "ID": 80,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 36,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "VDS": 75,
+          "ID": 80,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 52,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-On Rise Time",
+      "value": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-Off Fall Time",
+      "value": null,
+      "unit": "ns"
+    }
+  },
+  "diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "value": 80,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "IS": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.8,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": null,
+      "unit": "nC"
+    }
+  },
+  "package_info": {
+    "dimensions": {
+      "A": {
+        "min": 2.2,
+        "max": 2.4,
+        "unit": "mm"
+      },
+      "B": {
+        "min": 0.7,
+        "max": 0.9,
+        "unit": "mm"
+      },
+      "C": {
+        "min": 9.7,
+        "max": 9.9,
+        "unit": "mm"
+      },
+      "D": {
+        "min": 0.42,
+        "max": 0.5,
+        "unit": "mm"
+      },
+      "E": {
+        "min": 0.4,
+        "max": 0.6,
+        "unit": "mm"
+      },
+      "F": {
+        "min": 10.28,
+        "max": 10.58,
+        "unit": "mm"
+      },
+      "G": {
+        "min": 3.1,
+        "max": 3.5,
+        "unit": "mm"
+      },
+      "H": {
+        "min": 9.7,
+        "max": 10.1,
+        "unit": "mm"
+      },
+      "I": {
+        "min": 7.9,
+        "max": 8.3,
+        "unit": "mm"
+      },
+      "J": "BSC",
+      "K": {
+        "min": 11.48,
+        "max": 11.88,
+        "unit": "mm"
+      },
+      "L": {
+        "min": 6.75,
+        "max": 7.15,
+        "unit": "mm"
+      },
+      "M": 1.2,
+      "N": {
+        "min": 3,
+        "max": 3.3,
+        "unit": "mm"
+      },
+      "O": {
+        "min": 3.98,
+        "max": 4.38,
+        "unit": "mm"
+      },
+      "P": {
+        "min": 1.4,
+        "max": 1.8,
+        "unit": "mm"
+      },
+      "Q": {
+        "min": 0.6,
+        "max": 0.8,
+        "unit": "mm"
+      },
+      "R": {
+        "min": 0.5,
+        "max": 0.7,
+        "unit": "mm"
+      },
+      "S": {
+        "min": 1,
+        "max": 1.3,
+        "unit": "mm"
+      },
+      "θ": {
+        "min": 4,
+        "max": 10,
+        "unit": "°"
+      }
+    },
+    "pin_configuration": {
+      "1": "GATE",
+      "9": "DRAIN",
+      "2,3,4,5,6,7,8": "SOURCE"
+    }
+  },
+  "additional_info": {
+    "note1": "Halogen free \"Green\" products are defined as those which contain less than 900ppm bromine, 900ppm chlorine, and 1500ppm total Br+Cl and antimony compounds.",
+    "note2": "The value of RθJA is measured with the device mounted on a 2 oz. Cu board with still air environment with TA = 25°C.",
+    "note3": "Repetitive rating, pulse width limited by max. junction temperature.",
+    "note4": "PD is based on max. junction temperature, using junction-case thermal resistance."
+  }
+}

@@ -1,0 +1,478 @@
+{
+  "general_info": {
+    "componentName": "PSMN5R0-80PS",
+    "manufacturer": "Nexperia",
+    "description": "N-channel 80 V 4.7 mΩ standard level MOSFET",
+    "features": [
+      "High efficiency due to low switching and conduction losses",
+      "Suitable for standard level gate drive sources"
+    ],
+    "applications": [
+      "DC-to-DC converters",
+      "Load switching",
+      "Motor control",
+      "Server power supplies"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-source voltage",
+      "conditions": [
+        {
+          "Tj": "≥25 °C",
+          "Tj_max": "≤175 °C"
+        }
+      ],
+      "value": 80,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain current",
+      "conditions": [
+        {
+          "Tmb": 25,
+          "unit": "°C",
+          "VGS": 10,
+          "VGS_unit": "V"
+        }
+      ],
+      "value": 100,
+      "unit": "A"
+    },
+    "Ptot": {
+      "parameter": "Total power dissipation",
+      "conditions": [
+        {
+          "Tmb": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 270,
+      "unit": "W"
+    },
+    "Tstg": {
+      "parameter": "Storage temperature",
+      "value": "-55 to 175",
+      "unit": "°C"
+    },
+    "Tj": {
+      "parameter": "Junction temperature",
+      "value": "-55 to 175",
+      "unit": "°C"
+    },
+    "IS": {
+      "parameter": "Source current",
+      "conditions": [
+        {
+          "Tmb": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 100,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Peak source current",
+      "conditions": [
+        {
+          "tp": "≤10 μs",
+          "pulsed": true,
+          "Tmb": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 598,
+      "unit": "A"
+    },
+    "EDS(AL)S": {
+      "parameter": "Non-repetitive drain-source avalanche energy",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V",
+          "Tj(init)": 25,
+          "Tj_unit": "°C",
+          "ID": 100,
+          "ID_unit": "A",
+          "Vsup": "≤80 V",
+          "RGS": 50,
+          "RGS_unit": "Ω",
+          "unclamped": true
+        }
+      ],
+      "value": 396,
+      "unit": "mJ"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth(j-mb)": {
+      "parameter": "Thermal resistance from junction to mounting base",
+      "value": 0.3,
+      "unit": "K/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-source breakdown voltage",
+      "conditions": [
+        {
+          "ID": 250,
+          "unit": "μA",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "Tj": -55,
+          "Tj_unit": "°C"
+        },
+        {
+          "ID": 250,
+          "unit": "μA",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "min": 73,
+      "max": 80,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-source threshold voltage",
+      "conditions": [
+        {
+          "ID": 1,
+          "unit": "mA",
+          "VDS": "VGS",
+          "Tj": 175,
+          "Tj_unit": "°C"
+        },
+        {
+          "ID": 1,
+          "unit": "mA",
+          "VDS": "VGS",
+          "Tj": -55,
+          "Tj_unit": "°C"
+        },
+        {
+          "ID": 1,
+          "unit": "mA",
+          "VDS": "VGS",
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "min": 1,
+      "max": 4.6,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain leakage current",
+      "conditions": [
+        {
+          "VDS": 80,
+          "unit": "V",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "Tj": 25,
+          "Tj_unit": "°C"
+        },
+        {
+          "VDS": 80,
+          "unit": "V",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "Tj": 125,
+          "Tj_unit": "°C"
+        }
+      ],
+      "max": 150,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate leakage current",
+      "conditions": [
+        {
+          "VGS": -20,
+          "unit": "V",
+          "VDS": 0,
+          "VDS_unit": "V",
+          "Tj": 25,
+          "Tj_unit": "°C"
+        },
+        {
+          "VGS": 20,
+          "unit": "V",
+          "VDS": 0,
+          "VDS_unit": "V",
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "max": 100,
+      "unit": "nA"
+    },
+    "RDSon": {
+      "parameter": "Drain-source on-state resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V",
+          "ID": 15,
+          "ID_unit": "A",
+          "Tj": 100,
+          "Tj_unit": "°C"
+        },
+        {
+          "VGS": 10,
+          "unit": "V",
+          "ID": 15,
+          "ID_unit": "A",
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 5.2,
+      "max": 7,
+      "unit": "mΩ"
+    },
+    "RG": {
+      "parameter": "Internal gate resistance (AC)",
+      "conditions": [
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": 0.95,
+      "unit": "Ω"
+    }
+  },
+  "dynamic_characteristics": {
+    "QG(tot)": {
+      "parameter": "Total gate charge",
+      "conditions": [
+        {
+          "ID": 0,
+          "unit": "A",
+          "VDS": 0,
+          "VDS_unit": "V",
+          "VGS": 10,
+          "VGS_unit": "V"
+        },
+        {
+          "ID": 25,
+          "unit": "A",
+          "VDS": 40,
+          "VDS_unit": "V",
+          "VGS": 10,
+          "VGS_unit": "V"
+        }
+      ],
+      "typ": 101,
+      "unit": "nC"
+    },
+    "QGS": {
+      "parameter": "Gate-source charge",
+      "conditions": [
+        {
+          "ID": 25,
+          "unit": "A",
+          "VDS": 40,
+          "VDS_unit": "V"
+        }
+      ],
+      "typ": 26,
+      "unit": "nC"
+    },
+    "QGD": {
+      "parameter": "Gate-drain charge",
+      "conditions": [
+        {
+          "ID": 25,
+          "unit": "A",
+          "VDS": 40,
+          "VDS_unit": "V"
+        }
+      ],
+      "typ": 21,
+      "unit": "nC"
+    },
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "conditions": [
+        {
+          "VDS": 12,
+          "unit": "MHz",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "f": 1,
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "typ": 6793,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "conditions": [
+        {
+          "VDS": 12,
+          "unit": "MHz",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "f": 1,
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "typ": 913,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse transfer capacitance",
+      "conditions": [
+        {
+          "VDS": 12,
+          "unit": "MHz",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "f": 1,
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "typ": 350,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-on delay time",
+      "conditions": [
+        {
+          "VDS": 12,
+          "unit": "V",
+          "RL": 0.5,
+          "RL_unit": "Ω",
+          "VGS": 10,
+          "VGS_unit": "V",
+          "RG(ext)": 4.7,
+          "RG_ext_unit": "Ω"
+        }
+      ],
+      "typ": 33,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise time",
+      "conditions": [
+        {
+          "VDS": 12,
+          "unit": "V",
+          "RL": 0.5,
+          "RL_unit": "Ω",
+          "VGS": 10,
+          "VGS_unit": "V",
+          "RG(ext)": 4.7,
+          "RG_ext_unit": "Ω"
+        }
+      ],
+      "typ": 21,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-off delay time",
+      "conditions": [
+        {
+          "VDS": 12,
+          "unit": "V",
+          "RL": 0.5,
+          "RL_unit": "Ω",
+          "VGS": 10,
+          "VGS_unit": "V",
+          "RG(ext)": 4.7,
+          "RG_ext_unit": "Ω"
+        }
+      ],
+      "typ": 73,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall time",
+      "conditions": [
+        {
+          "VDS": 12,
+          "unit": "V",
+          "RL": 0.5,
+          "RL_unit": "Ω",
+          "VGS": 10,
+          "VGS_unit": "V",
+          "RG(ext)": 4.7,
+          "RG_ext_unit": "Ω"
+        }
+      ],
+      "typ": 14,
+      "unit": "ns"
+    }
+  },
+  "source_drain_diode": {
+    "VSD": {
+      "parameter": "Source-drain forward voltage",
+      "conditions": [
+        {
+          "IS": 25,
+          "unit": "A",
+          "VG": 0,
+          "VG_unit": "V",
+          "Tj": 25,
+          "Tj_unit": "°C"
+        }
+      ],
+      "typ": 1.8,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "conditions": [
+        {
+          "IS": 50,
+          "unit": "A",
+          "dIS/dt": 100,
+          "dIS_dt_unit": "A/μs",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "VDS": 40,
+          "VDS_unit": "V"
+        }
+      ],
+      "typ": 56,
+      "unit": "ns"
+    },
+    "Qr": {
+      "parameter": "Recovered charge",
+      "conditions": [
+        {
+          "IS": 50,
+          "unit": "A",
+          "dIS/dt": 100,
+          "dIS_dt_unit": "A/μs",
+          "VGS": 0,
+          "VGS_unit": "V",
+          "VDS": 40,
+          "VDS_unit": "V"
+        }
+      ],
+      "typ": 116,
+      "unit": "nC"
+    }
+  },
+  "package_info": {
+    "package": "SOT78 (TO-220AB)",
+    "pinout": {
+      "1": "Gate",
+      "2": "Drain",
+      "3": "Source",
+      "mb": "Mounting base; connected to drain"
+    }
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "general_info": {
+    "componentName": "IRFP4228PbF",
+    "manufacturer": "IR",
+    "description": "Rad Hard eGaN® 100 V, 80 A, 6.0 mΩ Surface Mount",
+    "features": [
+      "Advanced Process Technology",
+      "Key Parameters Optimized for PDP"
+    ],
+    "applications": [
+      "Satellite and Avionics",
+      "Deep Space Probes",
+      "High Speed Rad Hard DC-DC Conversion",
+      "Rad Hard Motor Controllers",
+      "Nuclear Facilities"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": "+30/-30",
+      "unit": "V"
+    },
+    "ID_25C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "value": 78,
+      "unit": "A"
+    },
+    "ID_100C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "value": 55,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 330,
+      "unit": "A"
+    },
+    "IRP_100C": {
+      "parameter": "Repetitive Peak Current",
+      "value": 170,
+      "unit": "A"
+    },
+    "PD_25C": {
+      "parameter": "Power Dissipation",
+      "value": 310,
+      "unit": "W"
+    },
+    "PD_100C": {
+      "parameter": "Power Dissipation",
+      "value": 150,
+      "unit": "W"
+    },
+    "PD_derating": {
+      "parameter": "Linear Derating Factor",
+      "value": 2,
+      "unit": "W/°C"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "-40 to +175",
+      "unit": "°C"
+    },
+    "TSOL": {
+      "parameter": "Soldering Temperature for 10 seconds",
+      "value": 300,
+      "unit": "°C"
+    },
+    "mounting_torque": {
+      "parameter": "Mounting Torque, 6-32 or M3 Screw",
+      "value": 10,
+      "unit": "lb in"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case Thermal Resistance",
+      "value": 0.24,
+      "unit": "°C/W"
+    },
+    "RθCS": {
+      "parameter": "Case-to-Sink, Flat, Greased Surface Thermal Resistance",
+      "value": 0.49,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient Thermal Resistance",
+      "value": 40,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-to-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 0.25,
+          "unit": "mA"
+        }
+      ],
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "BVDSS_TC": {
+      "parameter": "Breakdown Voltage Temperature Coefficient",
+      "value": 150,
+      "unit": "mV/°C"
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain-to-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 33,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 3,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 0.25,
+          "unit": "mA"
+        }
+      ],
+      "min": null,
+      "typ": 3,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)_TC": {
+      "parameter": "Gate Threshold Voltage Coefficient",
+      "value": -14,
+      "unit": "mV/°C"
+    },
+    "IDSS_25C": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 150,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "µA"
+    },
+    "IDSS_125C": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 150,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 125,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 107,
+      "unit": "µA"
+    },
+    "IGSS_forward": {
+      "parameter": "Gate-to-Source Forward Leakage",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 15.5,
+      "unit": "mA"
+    },
+    "IGSS_reverse": {
+      "parameter": "Gate-to-Source Reverse Leakage",
+      "conditions": [
+        {
+          "VGS": -20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 5,
+      "unit": "nA"
+    },
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "value": 20,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDD": 75,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": 58,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain Charge",
+      "conditions": [
+        {
+          "VDD": 75,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "value": 21,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [
+        {
+          "VDD": 120,
+          "unit": "V"
+        },
+        {
+          "VGS": 15,
+          "unit": "V"
+        },
+        {
+          "RG": 5.1,
+          "unit": "Ω"
+        }
+      ],
+      "value": 33,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "conditions": [
+        {
+          "VDD": 120,
+          "unit": "V"
+        },
+        {
+          "VGS": 15,
+          "unit": "V"
+        },
+        {
+          "RG": 5.1,
+          "unit": "Ω"
+        }
+      ],
+      "value": 20,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [
+        {
+          "VDD": 120,
+          "unit": "V"
+        },
+        {
+          "VGS": 15,
+          "unit": "V"
+        },
+        {
+          "RG": 5.1,
+          "unit": "Ω"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 100,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "conditions": [
+        {
+          "VDD": 120,
+          "unit": "V"
+        },
+        {
+          "VGS": 15,
+          "unit": "V"
+        },
+        {
+          "RG": 5.1,
+          "unit": "Ω"
+        },
+        {
+          "TJ": 100,
+          "unit": "°C"
+        }
+      ],
+      "value": 58,
+      "unit": "ns"
+    },
+    "tst": {
+      "parameter": "Shoot Through Blocking Time",
+      "value": 107,
+      "unit": "µs"
+    },
+    "EPULSE": {
+      "parameter": "Energy per Pulse",
+      "conditions": [
+        {
+          "L": 220,
+          "unit": "nH"
+        },
+        {
+          "C": 0.3,
+          "unit": "µF"
+        },
+        {
+          "VGS": 15,
+          "unit": "V"
+        },
+        {
+          "VDS": 120,
+          "unit": "V"
+        },
+        {
+          "RG": 5.1,
+          "unit": "Ω"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 100,
+      "unit": "mJ"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": 4530,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": 550,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": 100,
+      "unit": "pF"
+    },
+    "Coss_eff": {
+      "parameter": "Effective Output Capacitance",
+      "conditions": [
+        {
+          "VDS": "0 to 50",
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "value": 480,
+      "unit": "pF"
+    }
+  },
+  "diode_characteristics": {
+    "IS_25C": {
+      "parameter": "Continuous Source Current (Body Diode)",
+      "value": 78,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Pulsed Source Current (Body Diode)",
+      "value": 330,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "IS": 50,
+          "unit": "A"
+        },
+        {
+          "VG": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 1.3,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": 76,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": 230,
+      "unit": "nC"
+    }
+  },
+  "avalanche_characteristics": {
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "value": 210,
+      "unit": "mJ"
+    },
+    "EAR": {
+      "parameter": "Repetitive Avalanche Energy",
+      "value": 33,
+      "unit": "mJ"
+    },
+    "VDS_avalanche": {
+      "parameter": "Repetitive Avalanche Voltage",
+      "value": 180,
+      "unit": "V"
+    },
+    "IAS": {
+      "parameter": "Avalanche Current",
+      "value": 50,
+      "unit": "A"
+    }
+  },
+  "package_info": {
+    "package": "TO-247AC",
+    "terminal_pad_finish": "Standard Terminal Pad finish is a solder alloy of 63%Pb 37%Sn",
+    "internal_inductance": {
+      "LD": {
+        "parameter": "Internal Drain Inductance",
+        "value": 4.5,
+        "unit": "nH"
+      },
+      "LS": {
+        "parameter": "Internal Source Inductance",
+        "value": 7.5,
+        "unit": "nH"
+      }
+    }
+  }
+}

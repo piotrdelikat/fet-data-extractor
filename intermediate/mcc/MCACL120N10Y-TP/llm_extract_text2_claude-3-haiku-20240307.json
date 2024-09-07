@@ -1,0 +1,325 @@
+{
+  "general_info": {
+    "componentName": "MCC ACLN1Y",
+    "manufacturer": "Micro Commercial Components",
+    "description": "N-Channel MOSFET",
+    "features": [
+      "Split Gate Trench MOSFET Technology",
+      "Low Thermal Resistance",
+      "Halogen Free \"Green\" Device",
+      "Epoxy Meets UL94V-0 Flammability Rating",
+      "Lead Free Finish, RoHS Compliant"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 120,
+      "unit": "V",
+      "conditions": "Note 3"
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": "-8 / +10",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 80,
+      "unit": "A",
+      "conditions": "@ VGS = 10 V"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 480,
+      "unit": "A",
+      "conditions": "Note 3"
+    },
+    "PD": {
+      "parameter": "Total Power Dissipation",
+      "conditions": "Note 4"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction Temperature Range",
+      "value": "-55 to +150",
+      "unit": "°C"
+    },
+    "RθJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "value": 40,
+      "unit": "°C/W",
+      "conditions": "Note 2"
+    },
+    "RθJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": 1.16,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 0.9,
+          "unit": "mA"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IGSS": {
+      "parameter": "Gate to Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 0,
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 10,
+      "max": 500,
+      "unit": "nA"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": 10,
+      "unit": "μA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 2,
+          "unit": "mA"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 2,
+      "typ": 4,
+      "max": 6,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain to Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 3.5,
+      "max": 4.2,
+      "unit": "mΩ"
+    },
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "value": 120,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "IS": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 2,
+      "max": null,
+      "unit": "V"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1648,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 551,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 27,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 66.8,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate to Source Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 27,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate to Drain Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 8.6,
+      "max": null,
+      "unit": "nC"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": 52,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": 58,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": 24,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-On Rise Time",
+      "value": 50,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 44,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-Off Fall Time",
+      "value": 15,
+      "unit": "ns"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "value": 40,
+      "unit": "°C/W",
+      "conditions": "Note 2"
+    },
+    "RθJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": 1.16,
+      "unit": "°C/W"
+    }
+  }
+}

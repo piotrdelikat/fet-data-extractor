@@ -1,0 +1,400 @@
+{
+  "general_info": {
+    "componentName": "IXTA160N10T",
+    "componentName2": "IXTP160N10T",
+    "description": "Trench Power MOSFET, N-Channel Enhancement Mode, Avalanche Rated",
+    "vdss": 100,
+    "id25": 160,
+    "rds_on": "7.0mΩ"
+  },
+  "absolute_maximum_ratings": {
+    "vdss": {
+      "parameter": "Drain to Source Voltage",
+      "value": 100,
+      "unit": "V",
+      "conditions": "T_J = 25C to 175C"
+    },
+    "vdgr": {
+      "parameter": "Drain to Gate Voltage",
+      "value": 100,
+      "unit": "V",
+      "conditions": "T_J = 25C to 175C, R_GS = 1M"
+    },
+    "vgss": {
+      "parameter": "Gate to Source Voltage, Continuous",
+      "value": 20,
+      "unit": "V"
+    },
+    "vgsm": {
+      "parameter": "Gate to Source Voltage, Transient",
+      "value": 30,
+      "unit": "V"
+    },
+    "id25": {
+      "parameter": "Drain Current, T_C = 25C (Chip Capability)",
+      "value": 160,
+      "unit": "A"
+    },
+    "il_rms": {
+      "parameter": "Lead Current Limit, RMS",
+      "value": 120,
+      "unit": "A"
+    },
+    "idm": {
+      "parameter": "Drain Current, Pulse Width Limited by T_JM",
+      "value": 430,
+      "unit": "A",
+      "conditions": "T_C = 25C"
+    },
+    "ia": {
+      "parameter": "Avalanche Current",
+      "value": 25,
+      "unit": "A",
+      "conditions": "T_C = 25C"
+    },
+    "eas": {
+      "parameter": "Avalanche Energy",
+      "value": 500,
+      "unit": "mJ",
+      "conditions": "T_C = 25C"
+    },
+    "dv_dt": {
+      "parameter": "dV/dt",
+      "value": 3,
+      "unit": "V/ns",
+      "conditions": "I_S = I_DM, V_DD = V_DSS, T_J <= 175C"
+    },
+    "pd": {
+      "parameter": "Power Dissipation",
+      "value": 430,
+      "unit": "W",
+      "conditions": "T_C = 25C"
+    },
+    "tj": {
+      "parameter": "Operating Junction Temperature Range",
+      "value": "-55 ... +175",
+      "unit": "C"
+    },
+    "tjm": {
+      "parameter": "Maximum Junction Temperature",
+      "value": 175,
+      "unit": "C"
+    },
+    "tstg": {
+      "parameter": "Storage Temperature Range",
+      "value": "-55 ... +175",
+      "unit": "C"
+    },
+    "tl": {
+      "parameter": "Maximum Lead Temperature for Soldering",
+      "value": 300,
+      "unit": "°C"
+    },
+    "tsold": {
+      "parameter": "Maximum Lead Temperature for Soldering",
+      "value": 260,
+      "unit": "°C",
+      "conditions": "1.6 mm (0.062in.) from Case for 10s"
+    },
+    "fc": {
+      "parameter": "Mounting Force (TO-263)",
+      "value": "10..65 / 2.2..14.6",
+      "unit": "N/lb"
+    },
+    "md": {
+      "parameter": "Mounting Torque (TO-220)",
+      "value": "1.13 / 10",
+      "unit": "Nm/lb.in"
+    },
+    "weight": {
+      "to263": 2.5,
+      "to220": 3,
+      "unit": "g"
+    }
+  },
+  "electrical_characteristics": {
+    "bvdss": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "conditions": [
+        {
+          "vgs": 0,
+          "id": 0.25,
+          "unit": "mA"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "vgs_th": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "vds": "V_GS",
+          "id": 0.25,
+          "unit": "A"
+        }
+      ],
+      "min": 2.5,
+      "typ": null,
+      "max": 4.5,
+      "unit": "V"
+    },
+    "igss": {
+      "parameter": "Gate to Source Leakage Current",
+      "conditions": [
+        {
+          "vgs": 20,
+          "vds": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 200,
+      "max": null,
+      "unit": "nA"
+    },
+    "idss": {
+      "parameter": "Drain to Source Leakage Current",
+      "conditions": [
+        {
+          "vds": "V_DSS",
+          "vgs": 0,
+          "unit": "V"
+        },
+        {
+          "tj": 150,
+          "unit": "C"
+        }
+      ],
+      "min": null,
+      "typ": 5,
+      "max": 250,
+      "unit": "A"
+    },
+    "rds_on": {
+      "parameter": "Drain to Source On-State Resistance",
+      "conditions": [
+        {
+          "vgs": 10,
+          "id": 25,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 7,
+      "max": null,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "vds": 10,
+          "id": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 65,
+      "max": 102,
+      "unit": "S"
+    },
+    "ciss": {
+      "parameter": "Input Capacitance",
+      "value": 6600,
+      "unit": "pF"
+    },
+    "coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "vgs": 0,
+          "vds": 25,
+          "frequency": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": 880,
+      "unit": "pF"
+    },
+    "crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "value": 135,
+      "unit": "pF"
+    },
+    "td_on": {
+      "parameter": "Turn-On Delay Time",
+      "value": 33,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "value": 61,
+      "unit": "ns"
+    },
+    "td_off": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 49,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "value": 42,
+      "unit": "ns"
+    },
+    "qg_on": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "vgs": 10,
+          "vds": "0.5 * V_DSS",
+          "id": 25,
+          "unit": "A"
+        }
+      ],
+      "value": 132,
+      "unit": "nC"
+    },
+    "qgs": {
+      "parameter": "Gate to Source Charge",
+      "conditions": [
+        {
+          "vgs": 10,
+          "vds": "0.5 * V_DSS",
+          "id": 25,
+          "unit": "A"
+        }
+      ],
+      "value": 37,
+      "unit": "nC"
+    },
+    "qgd": {
+      "parameter": "Gate to Drain Charge",
+      "conditions": [
+        {
+          "vgs": 10,
+          "vds": "0.5 * V_DSS",
+          "id": 25,
+          "unit": "A"
+        }
+      ],
+      "value": 40,
+      "unit": "nC"
+    },
+    "rth_jc": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": 0.35,
+      "unit": "°C/W"
+    },
+    "rth_ch": {
+      "parameter": "Thermal Resistance, Case to Heatsink",
+      "value": 0.5,
+      "unit": "°C/W"
+    }
+  },
+  "diode_characteristics": {
+    "is": {
+      "parameter": "Diode Forward Current",
+      "conditions": [
+        {
+          "vgs": 0,
+          "unit": "V"
+        }
+      ],
+      "value": 160,
+      "unit": "A"
+    },
+    "ism": {
+      "parameter": "Diode Repetitive Peak Forward Current",
+      "conditions": [
+        {
+          "pulse_width": "Limited by T_JM",
+          "unit": null
+        }
+      ],
+      "value": 430,
+      "unit": "A"
+    },
+    "vsd": {
+      "parameter": "Diode Forward Voltage Drop",
+      "conditions": [
+        {
+          "if": 25,
+          "vgs": 0,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Diode Reverse Recovery Time",
+      "value": 60,
+      "unit": "ns"
+    }
+  },
+  "notes": [
+    {
+      "text": "Pulse test, t ≤ 300μs; duty cycle, d ≤ 2%."
+    },
+    {
+      "text": "On through-hole packages, R_DS(on) Kelvin test contact location must be 5mm or less from the package body."
+    }
+  ],
+  "package_info": {
+    "to263": {
+      "pin_assignments": {
+        "1": "Gate",
+        "3": "Source",
+        "2,4": "Drain"
+      },
+      "dimensions": {
+        "a": 0.43,
+        "a1": 0.12,
+        "b": 0.1,
+        "b2": 0.06,
+        "c": 0.2,
+        "d": 0.66,
+        "d1": 0.34,
+        "e": 0.06,
+        "e1": 0.43,
+        "h1": 0.34,
+        "l1": 0.2,
+        "l2": 0.12,
+        "l3": 0.66,
+        "q": null
+      },
+      "unit": "mm"
+    },
+    "to220": {
+      "pin_assignments": {
+        "1": "Gate",
+        "3": "Source",
+        "2,4": "Drain"
+      },
+      "dimensions": {
+        "a": null,
+        "a1": null,
+        "b": null,
+        "b2": null,
+        "c": null,
+        "d": null,
+        "d1": null,
+        "e": null,
+        "e1": null,
+        "h1": null,
+        "l1": null,
+        "l2": null,
+        "l3": null,
+        "q": null
+      },
+      "unit": "mm"
+    }
+  }
+}

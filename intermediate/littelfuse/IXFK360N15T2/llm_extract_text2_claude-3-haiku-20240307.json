@@ -1,0 +1,523 @@
+{
+  "general_info": {
+    "componentName": "IXFK360N15T2",
+    "componentName2": "IXFX360N15T2",
+    "features": [
+      "High Current Handling Capability",
+      "Fast Intrinsic Diode",
+      "Avalanche Rated",
+      "Low RDS(on)"
+    ],
+    "advantages": [
+      "Easy to Mount",
+      "Space Savings",
+      "High Power Density"
+    ],
+    "applications": [
+      "Synchronous Recification",
+      "DC-DC Converters",
+      "Battery Chargers",
+      "Switched-Mode and Resonant-Mode Power Supplies",
+      "DC Choppers",
+      "AC Motor Drives",
+      "Uninterruptible Power Supplies",
+      "High Speed Power Switching"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": "TJ = 25C to 175C"
+    },
+    "VDGR": {
+      "parameter": "Drain to Gate Voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": "TJ = 25C to 175C, RGS = 1M"
+    },
+    "VGSS": {
+      "parameter": "Gate to Source Voltage, Continuous",
+      "value": 20,
+      "unit": "V"
+    },
+    "VGSM": {
+      "parameter": "Gate to Source Voltage, Transient",
+      "value": 30,
+      "unit": "V"
+    },
+    "ID25": {
+      "parameter": "Drain Current",
+      "value": 360,
+      "unit": "A",
+      "conditions": "TC = 25C (Chip Capability)"
+    },
+    "IL(RMS)": {
+      "parameter": "External Lead Current Limit",
+      "value": 160,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Drain Current, Single Pulse",
+      "value": 900,
+      "unit": "A",
+      "conditions": "TC = 25C, Pulse Width Limited by TJM"
+    },
+    "IA": {
+      "parameter": "Avalanche Current",
+      "value": 100,
+      "unit": "A",
+      "conditions": "TC = 25C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy",
+      "value": "TBD",
+      "unit": "J",
+      "conditions": "TC = 25C"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 1670,
+      "unit": "W",
+      "conditions": "TC = 25C"
+    },
+    "dV/dt": {
+      "parameter": "Drain-Source Voltage Rise Rate",
+      "value": 20,
+      "unit": "V/ns",
+      "conditions": "IS = IDM, VDD = VDSS, TJ <= 175°C"
+    },
+    "TJ": {
+      "parameter": "Junction Temperature Range",
+      "value": "-55 ... +175",
+      "unit": "C"
+    },
+    "TJM": {
+      "parameter": "Maximum Junction Temperature",
+      "value": 175,
+      "unit": "C"
+    },
+    "Tstg": {
+      "parameter": "Storage Temperature Range",
+      "value": "-55 ... +175",
+      "unit": "C"
+    },
+    "TL": {
+      "parameter": "Maximum Lead Temperature for Soldering",
+      "value": 300,
+      "unit": "°C"
+    },
+    "TSOLD": {
+      "parameter": "Maximum Lead Temperature for Soldering",
+      "value": 260,
+      "unit": "°C",
+      "conditions": "1.6 mm (0.062in.) from Case for 10s"
+    },
+    "Md": {
+      "parameter": "Mounting Torque (TO-264)",
+      "value": "1.13/10",
+      "unit": "Nm/lb.in."
+    },
+    "FC": {
+      "parameter": "Mounting Force (PLUS247)",
+      "value": "20..120 /4.5..27",
+      "unit": "N/lb."
+    },
+    "Weight": {
+      "parameter": "Weight",
+      "value": {
+        "TO-264": 10,
+        "PLUS247": 6
+      },
+      "unit": "g"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 3,
+          "unit": "mA"
+        }
+      ],
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 8,
+          "unit": "mA"
+        }
+      ],
+      "min": null,
+      "typ": 2.5,
+      "max": 5,
+      "unit": "V"
+    },
+    "IGSS": {
+      "parameter": "Gate to Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": -20,
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 200,
+      "max": null,
+      "unit": "nA"
+    },
+    "IDSS": {
+      "parameter": "Drain to Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 150,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 25,
+          "unit": "C"
+        }
+      ],
+      "min": null,
+      "typ": 50,
+      "max": null,
+      "unit": "uA"
+    },
+    "IDSS_150C": {
+      "parameter": "Drain to Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 150,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 150,
+          "unit": "C"
+        }
+      ],
+      "min": null,
+      "typ": 5,
+      "max": null,
+      "unit": "mA"
+    },
+    "RDS(on)": {
+      "parameter": "Drain to Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 4,
+      "max": null,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        }
+      ],
+      "min": 140,
+      "typ": 230,
+      "max": null,
+      "unit": "S"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "value": 47.5,
+      "unit": "nF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": 3060,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "value": 665,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": 50,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "value": 170,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 115,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "value": 265,
+      "unit": "ns"
+    },
+    "Qg(on)": {
+      "parameter": "Total Gate Charge",
+      "value": 715,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate to Source Charge",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "VDS": "0.5 * VDSS",
+          "unit": "V"
+        },
+        {
+          "ID": "0.5 * ID25",
+          "unit": "A"
+        }
+      ],
+      "value": 185,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate to Drain Charge",
+      "conditions": [
+        {
+          "VDS": "0.5 * VDSS",
+          "unit": "V"
+        },
+        {
+          "ID": "0.5 * ID25",
+          "unit": "A"
+        }
+      ],
+      "value": 200,
+      "unit": "nC"
+    },
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": 0.09,
+      "unit": "°C/W"
+    },
+    "RthCS": {
+      "parameter": "Thermal Resistance, Case to Sink",
+      "value": 0.15,
+      "unit": "°C/W"
+    }
+  },
+  "diode_characteristics": {
+    "IS": {
+      "parameter": "Diode Forward Current",
+      "value": 360,
+      "unit": "A",
+      "conditions": "VGS = 0V"
+    },
+    "ISM": {
+      "parameter": "Diode Repetitive Peak Forward Current",
+      "value": 1440,
+      "unit": "A",
+      "conditions": "Pulse Width Limited by TJM"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage Drop",
+      "conditions": [
+        {
+          "IF": 60,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1.2,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Diode Reverse Recovery Time",
+      "value": 150,
+      "unit": "ns"
+    },
+    "QRM": {
+      "parameter": "Diode Reverse Recovery Charge",
+      "value": 0.5,
+      "unit": "uC"
+    },
+    "IRM": {
+      "parameter": "Diode Reverse Recovery Current",
+      "value": 9,
+      "unit": "A",
+      "conditions": "IF = 160A, -di/dt = 100A/us, VR = 60V, VGS = 0V"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": 0.09,
+      "unit": "°C/W"
+    },
+    "RthCS": {
+      "parameter": "Thermal Resistance, Case to Sink",
+      "value": 0.15,
+      "unit": "°C/W"
+    }
+  },
+  "package_info": {
+    "TO-264": {
+      "A": {
+        "min": 4.82,
+        "max": 5.13,
+        "unit": "mm"
+      },
+      "A1": {
+        "min": 2.54,
+        "max": 2.89,
+        "unit": "mm"
+      },
+      "A2": {
+        "min": 2,
+        "max": 2.1,
+        "unit": "mm"
+      },
+      "b1": {
+        "min": 1.12,
+        "max": 1.42,
+        "unit": "mm"
+      },
+      "b2": {
+        "min": 2.9,
+        "max": 3.09,
+        "unit": "mm"
+      },
+      "c": {
+        "min": 0.53,
+        "max": 0.83,
+        "unit": "mm"
+      },
+      "D": {
+        "min": 25.91,
+        "max": 26.16,
+        "unit": "mm"
+      },
+      "E": {
+        "min": 19.81,
+        "max": 19.96,
+        "unit": "mm"
+      },
+      "e": {
+        "value": 5.46,
+        "unit": "mm",
+        "note": "BSC"
+      },
+      "J": {
+        "min": 0,
+        "max": 0.25,
+        "unit": "mm"
+      },
+      "K": {
+        "min": 0,
+        "max": 0.25,
+        "unit": "mm"
+      },
+      "L": {
+        "min": 20.32,
+        "max": 20.83,
+        "unit": "mm"
+      },
+      "L1": {
+        "min": 12.29,
+        "max": 12.59,
+        "unit": "mm"
+      },
+      "P": {
+        "min": 3.17,
+        "max": 3.66,
+        "unit": "mm"
+      },
+      "Q": {
+        "min": 6.07,
+        "max": 6.27,
+        "unit": "mm"
+      },
+      "Q1": {
+        "min": 8.38,
+        "max": 8.69,
+        "unit": "mm"
+      },
+      "R": {
+        "min": 3.81,
+        "max": 4.32,
+        "unit": "mm"
+      },
+      "R1": {
+        "min": 11.78,
+        "max": 12.29,
+        "unit": "mm"
+      },
+      "S": {
+        "min": 6.04,
+        "max": 6.3,
+        "unit": "mm"
+      }
+    }
+  }
+}

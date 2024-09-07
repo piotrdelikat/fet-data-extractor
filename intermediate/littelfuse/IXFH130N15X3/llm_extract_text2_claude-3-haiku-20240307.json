@@ -1,0 +1,509 @@
+{
+  "general_info": {
+    "componentName": [
+      "IXFP130N15X3",
+      "IXFH130N15X3"
+    ],
+    "manufacturer": "IXYS",
+    "description": "N-Channel Enhancement Mode Avalanche Rated X3-Class HiPerFET Power MOSFET",
+    "features": [
+      "International Standard Packages",
+      "Low RDS(ON) and QG",
+      "Avalanche Rated",
+      "Low Package Inductance"
+    ],
+    "advantages": [
+      "High Power Density",
+      "Easy to Mount",
+      "Space Savings"
+    ],
+    "applications": [
+      "Switch-Mode and Resonant-Mode Power Supplies",
+      "DC-DC Converters",
+      "PFC Circuits",
+      "AC and DC Motor Drives",
+      "Robotics and Servo Controls"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": "TJ = 25°C to 150°C"
+    },
+    "VDGR": {
+      "parameter": "Drain to Gate Voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": "TJ = 25°C to 150°C, RGS = 1M"
+    },
+    "VGSS": {
+      "parameter": "Gate to Source Voltage, Continuous",
+      "value": 20,
+      "unit": "V"
+    },
+    "VGSM": {
+      "parameter": "Gate to Source Voltage, Transient",
+      "value": 30,
+      "unit": "V"
+    },
+    "ID25": {
+      "parameter": "Continuous Drain Current",
+      "value": 130,
+      "unit": "A",
+      "conditions": "TC = 25°C"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 230,
+      "unit": "A",
+      "conditions": "TC = 25°C, Pulse Width Limited by TJM"
+    },
+    "IA": {
+      "parameter": "Continuous Avalanche Current",
+      "value": 65,
+      "unit": "A",
+      "conditions": "TC = 25°C"
+    },
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "value": 1.2,
+      "unit": "J",
+      "conditions": "TC = 25°C"
+    },
+    "dv/dt": {
+      "parameter": "Maximum Drain-Source Voltage Slew Rate",
+      "value": 50,
+      "unit": "V/ns",
+      "conditions": "IS = IDM, VDD = VDSS, TJ ≤ 150°C"
+    },
+    "PD": {
+      "parameter": "Maximum Power Dissipation",
+      "value": 390,
+      "unit": "W",
+      "conditions": "TC = 25°C"
+    },
+    "TJ": {
+      "parameter": "Operating Junction Temperature Range",
+      "value": "-55 ... +150",
+      "unit": "°C"
+    },
+    "TJM": {
+      "parameter": "Maximum Junction Temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "Tstg": {
+      "parameter": "Storage Temperature Range",
+      "value": "-55 ... +150",
+      "unit": "°C"
+    },
+    "TL": {
+      "parameter": "Maximum Lead Temperature for Soldering",
+      "value": 300,
+      "unit": "°C"
+    },
+    "TSOLD": {
+      "parameter": "Maximum Soldering Temperature",
+      "value": 260,
+      "unit": "°C",
+      "conditions": "1.6 mm (0.062in.) from Case for 10s"
+    },
+    "Md": {
+      "parameter": "Mounting Torque",
+      "value": "1.13 / 10",
+      "unit": "Nm/lb.in"
+    },
+    "Weight": {
+      "parameter": "Package Weight",
+      "value": {
+        "TO-220": 3,
+        "TO-247": 6
+      },
+      "unit": "g"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 0.25,
+          "unit": "mA"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 1.5,
+          "unit": "mA"
+        }
+      ],
+      "min": 2.5,
+      "typ": null,
+      "max": 4.5,
+      "unit": "V"
+    },
+    "IGSS": {
+      "parameter": "Gate to Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "nA"
+    },
+    "IDSS": {
+      "parameter": "Drain to Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": "VDSS",
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 5,
+      "max": null,
+      "unit": "A"
+    },
+    "IDSS_125C": {
+      "parameter": "Drain to Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": "VDSS",
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 125,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 300,
+      "max": null,
+      "unit": "A"
+    },
+    "RDS(on)": {
+      "parameter": "Drain to Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 65,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 9,
+      "max": null,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 5230,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 920,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 14,
+      "max": null,
+      "unit": "pF"
+    },
+    "Co(er)": {
+      "parameter": "Effective Output Capacitance, Energy Related",
+      "conditions": [
+        {
+          "VDS": "0 to 50 V",
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 585,
+      "max": null,
+      "unit": "pF"
+    },
+    "Co(tr)": {
+      "parameter": "Effective Output Capacitance, Time Related",
+      "conditions": [
+        {
+          "VDS": "0 to 50 V",
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1350,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 75,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 65,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 80,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate to Source Charge",
+      "conditions": [
+        {
+          "VDS": "0.5 * VDSS",
+          "unit": "V"
+        },
+        {
+          "ID": "0.5 * ID25",
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 27,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate to Drain Charge",
+      "conditions": [
+        {
+          "VDS": "0.5 * VDSS",
+          "unit": "V"
+        },
+        {
+          "ID": "0.5 * ID25",
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 25,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": {
+        "TO-220": 0.32,
+        "TO-247": 0.21
+      },
+      "unit": "°C/W"
+    },
+    "RthCS": {
+      "parameter": "Thermal Resistance, Case to Sink",
+      "value": {
+        "TO-220": 0.5,
+        "TO-247": 0.21
+      },
+      "unit": "°C/W"
+    }
+  },
+  "source_drain_diode": {
+    "IS": {
+      "parameter": "Continuous Source Current",
+      "value": 130,
+      "unit": "A",
+      "conditions": "VGS = 0V"
+    },
+    "ISM": {
+      "parameter": "Pulsed Source Current",
+      "value": 520,
+      "unit": "A",
+      "conditions": "Repetitive, Pulse Width Limited by TJM"
+    },
+    "VSD": {
+      "parameter": "Source to Drain Forward Voltage",
+      "value": 1.4,
+      "unit": "V",
+      "conditions": "IF = IS, VGS = 0V, Note 1"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": 80,
+      "unit": "ns"
+    },
+    "QRM": {
+      "parameter": "Reverse Recovery Charge",
+      "value": 230,
+      "unit": "nC"
+    },
+    "IRM": {
+      "parameter": "Peak Reverse Recovery Current",
+      "value": 5.7,
+      "unit": "A",
+      "conditions": "IF = 65A, -di/dt = 100A/μs, VR = 100V"
+    }
+  },
+  "other_characteristics": {
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 82,
+      "max": 50,
+      "unit": "S"
+    },
+    "RGi": {
+      "parameter": "Gate Input Resistance",
+      "value": 1.8,
+      "unit": null
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": 21,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "value": 25,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 62,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "value": 12,
+      "unit": "ns"
+    }
+  },
+  "package_information": {
+    "TO-220": {
+      "pin_configuration": [
+        "Gate",
+        "Drain",
+        "Source",
+        "Drain"
+      ]
+    },
+    "TO-247": {
+      "pin_configuration": [
+        "Gate",
+        "Drain",
+        "Source",
+        "Drain"
+      ]
+    }
+  }
+}

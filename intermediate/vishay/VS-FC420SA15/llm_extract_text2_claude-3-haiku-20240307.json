@@ -1,0 +1,595 @@
+{
+  "general_info": {
+    "componentName": "VS-FC420SA15",
+    "manufacturer": "Vishay Semiconductors",
+    "description": "SOT-227 Power Module, Single Switch - Power MOSFET, 400 A",
+    "features": [
+      "I_D = 400 A, T_C = 25 °C",
+      "ThunderFET Power MOSFET",
+      "Excellent gate charge x R_DS(on) product (FOM)",
+      "Reduced switching and conduction losses",
+      "Ultra low gate charge (Q_g)",
+      "Maximum 175 °C junction temperature",
+      "UL approved file E78996"
+    ],
+    "applications": [
+      "DC/DC conversions",
+      "Motor drives",
+      "DC/AC inverter",
+      "Power supplies",
+      "Uninterruptible power supplies",
+      "AC/DC switch-mode power supplies"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "V_DSS": {
+      "parameter": "Drain to source voltage",
+      "value": 150,
+      "unit": "V"
+    },
+    "I_D": {
+      "parameter": "Continuous drain current, V_GS at 10 V",
+      "conditions": [
+        {
+          "T_C": 25,
+          "unit": "°C"
+        },
+        {
+          "T_C": 90,
+          "unit": "°C"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 400,
+        "max": 300
+      },
+      "unit": "A"
+    },
+    "I_DM": {
+      "parameter": "Pulsed drain current",
+      "conditions": [
+        {
+          "note": 1
+        }
+      ],
+      "value": 860,
+      "unit": "A"
+    },
+    "P_D": {
+      "parameter": "Power dissipation",
+      "conditions": [
+        {
+          "T_C": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 909,
+      "unit": "W"
+    },
+    "V_GS": {
+      "parameter": "Gate to source voltage",
+      "value": {
+        "min": null,
+        "typ": null,
+        "max": 20
+      },
+      "unit": "V"
+    },
+    "E_AS": {
+      "parameter": "Single pulse avalanche energy",
+      "value": 720,
+      "unit": "J"
+    },
+    "I_AS": {
+      "parameter": "Avalanche current",
+      "conditions": [
+        {
+          "T_C": 25,
+          "unit": "°C"
+        },
+        {
+          "L": 10,
+          "unit": "mH"
+        },
+        {
+          "V_GS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": 120,
+      "unit": "A"
+    },
+    "T_J": {
+      "parameter": "Operating junction temperature range",
+      "value": {
+        "min": -55,
+        "typ": null,
+        "max": 175
+      },
+      "unit": "°C"
+    },
+    "T_Stg": {
+      "parameter": "Operating storage temperature range",
+      "value": {
+        "min": -40,
+        "typ": null,
+        "max": 150
+      },
+      "unit": "°C"
+    },
+    "V_ISOL": {
+      "parameter": "Insulation voltage (RMS)",
+      "conditions": [
+        {
+          "t": 1,
+          "unit": "min"
+        }
+      ],
+      "value": 2500,
+      "unit": "V"
+    }
+  },
+  "thermal_characteristics": {
+    "R_thJC": {
+      "parameter": "Junction to case",
+      "value": 0.165,
+      "unit": "°C/W"
+    },
+    "R_thCS": {
+      "parameter": "Case to heatsink",
+      "conditions": [
+        {
+          "note": "Flat, greased surface"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 0.1,
+        "max": null
+      },
+      "unit": "°C/W"
+    },
+    "weight": {
+      "value": 30,
+      "unit": "g"
+    },
+    "mounting_torque": {
+      "terminal": {
+        "value": 1.1,
+        "unit": "Nm (9.7 lbf. in)"
+      },
+      "heatsink": {
+        "value": 1.3,
+        "unit": "Nm (11.5 lbf. in)"
+      }
+    },
+    "case_style": "SOT-227"
+  },
+  "electrical_characteristics": {
+    "V_BR(DSS)": {
+      "parameter": "Drain to source breakdown voltage",
+      "conditions": [
+        {
+          "V_GS": 0,
+          "unit": "V"
+        },
+        {
+          "I_D": 500,
+          "unit": "μA"
+        }
+      ],
+      "value": {
+        "min": 150,
+        "typ": null,
+        "max": null
+      },
+      "unit": "V"
+    },
+    "ΔV_BR(DSS)/ΔT_J": {
+      "parameter": "Breakdown voltage temperature coefficient",
+      "conditions": [
+        {
+          "reference": "25 °C",
+          "unit": null
+        },
+        {
+          "I_D": 1,
+          "unit": "mA"
+        }
+      ],
+      "value": -9,
+      "unit": "mV/°C"
+    },
+    "R_DS(on)": {
+      "parameter": "Static drain to source on-resistance",
+      "conditions": [
+        {
+          "V_GS": 10,
+          "unit": "V"
+        },
+        {
+          "I_D": 200,
+          "unit": "A"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 1.93,
+        "max": 2.75
+      },
+      "unit": "mΩ"
+    },
+    "V_GS(th)": {
+      "parameter": "Gate threshold voltage",
+      "conditions": [
+        {
+          "V_DS": "V_GS",
+          "unit": null
+        },
+        {
+          "I_D": 1,
+          "unit": "mA"
+        }
+      ],
+      "value": {
+        "min": 1.8,
+        "typ": 3.46,
+        "max": 5.4
+      },
+      "unit": "V"
+    },
+    "ΔV_GE(th)/ΔT_J": {
+      "parameter": "Temperature coefficient of threshold voltage",
+      "conditions": [
+        {
+          "V_DS": "V_GS",
+          "unit": null
+        },
+        {
+          "I_D": 1,
+          "unit": "mA"
+        },
+        {
+          "temperature_range": "25 °C to 125 °C",
+          "unit": null
+        }
+      ],
+      "value": -9.6,
+      "unit": "mV/°C"
+    },
+    "g_fs": {
+      "parameter": "Forward transconductance",
+      "conditions": [
+        {
+          "V_DS": 15,
+          "unit": "V"
+        },
+        {
+          "I_D": 100,
+          "unit": "A"
+        },
+        {
+          "V_GS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 200,
+        "max": null
+      },
+      "unit": "S"
+    },
+    "I_DSS": {
+      "parameter": "Drain to source leakage current",
+      "conditions": [
+        {
+          "V_DS": 150,
+          "unit": "V"
+        },
+        {
+          "V_GS": 0,
+          "unit": "V"
+        },
+        {
+          "T_J": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 0.5,
+        "max": 10
+      },
+      "unit": "μA"
+    },
+    "I_DSS_125C": {
+      "parameter": "Drain to source leakage current",
+      "conditions": [
+        {
+          "V_DS": 150,
+          "unit": "V"
+        },
+        {
+          "V_GS": 0,
+          "unit": "V"
+        },
+        {
+          "T_J": 125,
+          "unit": "°C"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 19,
+        "max": null
+      },
+      "unit": "μA"
+    },
+    "I_GSS": {
+      "parameter": "Gate to source leakage",
+      "conditions": [
+        {
+          "V_GS": "±20",
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": null,
+        "max": "±200"
+      },
+      "unit": "nA"
+    },
+    "Q_g": {
+      "parameter": "Total gate charge",
+      "conditions": [
+        {
+          "I_D": 250,
+          "unit": "A"
+        },
+        {
+          "V_DS": 75,
+          "unit": "V"
+        },
+        {
+          "V_GS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 250,
+        "max": null
+      },
+      "unit": "nC"
+    },
+    "Q_gs": {
+      "parameter": "Gate to source charge",
+      "conditions": [
+        {
+          "I_D": 250,
+          "unit": "A"
+        },
+        {
+          "V_DS": 75,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 79,
+        "max": null
+      },
+      "unit": "nC"
+    },
+    "Q_gd": {
+      "parameter": "Gate to drain (Miller) charge",
+      "conditions": [
+        {
+          "I_D": 250,
+          "unit": "A"
+        },
+        {
+          "V_DS": 75,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 82,
+        "max": null
+      },
+      "unit": "nC"
+    },
+    "t_d(on)": {
+      "parameter": "Turn-on delay time",
+      "conditions": [
+        {
+          "V_DD": 75,
+          "unit": "V"
+        },
+        {
+          "I_D": 100,
+          "unit": "A"
+        },
+        {
+          "R_g": 1,
+          "unit": "Ω"
+        },
+        {
+          "V_GS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 139,
+        "max": null
+      },
+      "unit": "ns"
+    },
+    "t_r": {
+      "parameter": "Rise time",
+      "conditions": [
+        {
+          "V_DD": 75,
+          "unit": "V"
+        },
+        {
+          "I_D": 100,
+          "unit": "A"
+        },
+        {
+          "R_g": 1,
+          "unit": "Ω"
+        },
+        {
+          "V_GS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 285,
+        "max": null
+      },
+      "unit": "ns"
+    },
+    "t_d(off)": {
+      "parameter": "Turn-off delay time",
+      "conditions": [
+        {
+          "V_DD": 75,
+          "unit": "V"
+        },
+        {
+          "I_D": 100,
+          "unit": "A"
+        },
+        {
+          "R_g": 1,
+          "unit": "Ω"
+        },
+        {
+          "V_GS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 120,
+        "max": null
+      },
+      "unit": "ns"
+    },
+    "t_f": {
+      "parameter": "Fall time",
+      "conditions": [
+        {
+          "V_DD": 75,
+          "unit": "V"
+        },
+        {
+          "I_D": 100,
+          "unit": "A"
+        },
+        {
+          "R_g": 1,
+          "unit": "Ω"
+        },
+        {
+          "V_GS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 142,
+        "max": null
+      },
+      "unit": "ns"
+    },
+    "C_iss": {
+      "parameter": "Input capacitance",
+      "conditions": [
+        {
+          "V_GS": 0,
+          "unit": "V"
+        },
+        {
+          "V_DS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 13.7,
+        "max": null
+      },
+      "unit": "nF"
+    },
+    "C_oss": {
+      "parameter": "Output capacitance",
+      "conditions": [
+        {
+          "V_GS": 0,
+          "unit": "V"
+        },
+        {
+          "V_DS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 2.2,
+        "max": null
+      },
+      "unit": "nF"
+    },
+    "C_rss": {
+      "parameter": "Reverse transfer capacitance",
+      "conditions": [
+        {
+          "V_GS": 0,
+          "unit": "V"
+        },
+        {
+          "V_DS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": {
+        "min": null,
+        "typ": 0.104,
+        "max": null
+      },
+      "unit": "nF"
+    }
+  },
+  "source_drain_characteristics": {
+    "I_S": {
+      "parameter": "Continuous source current (body diode)",
+      "value": {
+        "min": null,
+        "typ": null,
+        "max": 476
+      },
+      "unit": "A"
+    }
+  }
+}

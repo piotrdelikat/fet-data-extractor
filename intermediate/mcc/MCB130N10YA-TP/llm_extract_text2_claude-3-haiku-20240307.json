@@ -1,0 +1,306 @@
+{
+  "general_info": {
+    "componentName": "MCB130N10YA",
+    "manufacturer": "MCCSEMI.COM",
+    "description": "N-Channel MOSFET",
+    "features": [
+      "Split Gate Trench MOSFET Technology",
+      "Low Thermal Resistance",
+      "Moisture Sensitivity Level 1",
+      "Halogen Free. \"Green\" Device",
+      "Epoxy Meets UL 94 V-0 Flammability Rating",
+      "Lead Free Finish/RoHS Compliant (\"P\" Suffix Designates RoHS Compliant)"
+    ],
+    "package": "D2-PAK"
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Volltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 130,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 520,
+      "unit": "A",
+      "conditions": "Note 3"
+    },
+    "PD": {
+      "parameter": "Total Power Dissipation",
+      "value": 250,
+      "unit": "W",
+      "conditions": "Note 4"
+    },
+    "EAS": {
+      "parameter": "Single Pulsed Avalanche Energy",
+      "value": 289,
+      "unit": "mJ",
+      "conditions": "Note 5"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction Temperature Range",
+      "value": "-55°C to +150°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJA": {
+      "parameter": "Thermal Resistance: Junction to Ambient",
+      "value": 40,
+      "unit": "°C/W",
+      "conditions": "Note 2"
+    },
+    "RθJC": {
+      "parameter": "Thermal Resistance: Junction to Case",
+      "value": 0.5,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "value": 100,
+      "unit": "V"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 0,
+          "unit": "V"
+        },
+        {
+          "VGS": "±20",
+          "unit": "V"
+        }
+      ],
+      "value": "±100",
+      "unit": "nA"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "value": 1,
+      "unit": "μA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "value": 2.8,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": 3.8,
+      "max": 4.6,
+      "unit": "mΩ"
+    },
+    "RG": {
+      "parameter": "Gate Resistance",
+      "conditions": [
+        {
+          "f": 1,
+          "unit": "MHz"
+        },
+        {
+          "load": "Open drain"
+        }
+      ],
+      "value": 0.8,
+      "unit": "Ω"
+    },
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "value": 130,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "IS": 20,
+          "unit": "A"
+        }
+      ],
+      "value": 1.3,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": 70,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": 151,
+      "unit": "nC"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "value": 4370,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "value": 1675,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "value": 30,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "value": 61,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "value": 15,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "value": 15,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": 22,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-On Rise Time",
+      "value": 49,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 33,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-Off Fall Time",
+      "value": 8,
+      "unit": "ns"
+    }
+  }
+}

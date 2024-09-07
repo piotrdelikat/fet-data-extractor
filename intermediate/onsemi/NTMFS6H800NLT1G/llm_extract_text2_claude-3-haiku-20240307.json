@@ -1,0 +1,479 @@
+{
+  "general_info": {
+    "componentName": "NTMFS6H800NL",
+    "manufacturer": "ON Semiconductor",
+    "description": "MOSFET – Power, Single, N-Channel, 80 V, 1.9 mW, 224 A",
+    "features": [
+      "Small Footprint (5x6 mm) for Compact Design",
+      "Low R_DS(on) to Minimize Conduction Losses",
+      "Low Q_G and Capacitance to Minimize Driver Losses",
+      "These Devices are Pb-Free and are RoHS Compliant"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-to-Source Voltage",
+      "value": 80,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID_steady_state_TC_25C": {
+      "parameter": "Continuous Drain Current, Steady State, T_C = 25°C",
+      "value": 224,
+      "unit": "A"
+    },
+    "ID_steady_state_TC_100C": {
+      "parameter": "Continuous Drain Current, Steady State, T_C = 100°C",
+      "value": 158,
+      "unit": "A"
+    },
+    "PD_TC_25C": {
+      "parameter": "Power Dissipation, T_C = 25°C",
+      "value": 214,
+      "unit": "W"
+    },
+    "PD_TC_100C": {
+      "parameter": "Power Dissipation, T_C = 100°C",
+      "value": 107,
+      "unit": "W"
+    },
+    "ID_steady_state_TA_25C": {
+      "parameter": "Continuous Drain Current, Steady State, T_A = 25°C",
+      "value": 30,
+      "unit": "A"
+    },
+    "ID_steady_state_TA_100C": {
+      "parameter": "Continuous Drain Current, Steady State, T_A = 100°C",
+      "value": 21,
+      "unit": "A"
+    },
+    "PD_TA_25C": {
+      "parameter": "Power Dissipation, T_A = 25°C",
+      "value": 3.9,
+      "unit": "W"
+    },
+    "PD_TA_100C": {
+      "parameter": "Power Dissipation, T_A = 100°C",
+      "value": 1.9,
+      "unit": "W"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current, T_A = 25°C, t_p = 10 ms",
+      "value": 900,
+      "unit": "A"
+    },
+    "TJ_Tstg": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "-55 to +175",
+      "unit": "°C"
+    },
+    "IS": {
+      "parameter": "Source Current (Body Diode)",
+      "value": 179,
+      "unit": "A"
+    },
+    "EAS": {
+      "parameter": "Single Pulse Drain-to-Source Avalanche Energy (I_L(pk) = 16.2 A)",
+      "value": 601,
+      "unit": "mJ"
+    },
+    "TL": {
+      "parameter": "Lead Temperature for Soldering Purposes (1/8'' from case for 10 s)",
+      "value": 260,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case - Steady State",
+      "value": 0.7,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient - Steady State",
+      "value": 39,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-to-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 0.25,
+          "unit": "A"
+        }
+      ],
+      "min": 80,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "V(BR)DSS/TJ": {
+      "parameter": "Drain-to-Source Breakdown Voltage Temperature Coefficient",
+      "value": 36,
+      "unit": "mV/°C"
+    },
+    "IDSS_25C": {
+      "parameter": "Zero Gate Voltage Drain Current, T_J = 25°C",
+      "value": 10,
+      "unit": "mA"
+    },
+    "IDSS_125C": {
+      "parameter": "Zero Gate Voltage Drain Current, T_J = 125°C",
+      "value": 250,
+      "unit": "mA"
+    },
+    "IGSS": {
+      "parameter": "Gate-to-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 0,
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VGS": "VDS",
+          "ID": 0.33,
+          "unit": "A"
+        }
+      ],
+      "min": 1.2,
+      "typ": 2,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)/TJ": {
+      "parameter": "Threshold Temperature Coefficient",
+      "value": -5.1,
+      "unit": "mV/°C"
+    },
+    "RDS(on)_at_VGS_10V": {
+      "parameter": "Drain-to-Source On Resistance at V_GS = 10V",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.5,
+      "max": 1.9,
+      "unit": "mΩ"
+    },
+    "RDS(on)_at_VGS_4.5V": {
+      "parameter": "Drain-to-Source On Resistance at V_GS = 4.5V",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.9,
+      "max": 2.4,
+      "unit": "mΩ"
+    },
+    "gFS": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "VDS": 8,
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "value": 250,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 6900,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 800,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 22,
+      "max": null,
+      "unit": "pF"
+    },
+    "QG(tot)_at_VGS_10V": {
+      "parameter": "Total Gate Charge at V_GS = 10V",
+      "conditions": [
+        {
+          "VGS": 10,
+          "VDS": 40,
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 112,
+      "max": null,
+      "unit": "nC"
+    },
+    "QG(th)_at_VGS_4.5V": {
+      "parameter": "Threshold Gate Charge at V_GS = 4.5V",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "VDS": 40,
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 10,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGS": {
+      "parameter": "Gate-to-Source Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 19,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGD": {
+      "parameter": "Gate-to-Drain Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 17,
+      "max": null,
+      "unit": "nC"
+    },
+    "VGP": {
+      "parameter": "Plateau Voltage",
+      "value": 3,
+      "unit": "V"
+    },
+    "QG(tot)_at_VGS_4.5V": {
+      "parameter": "Total Gate Charge at V_GS = 4.5V",
+      "value": 53,
+      "unit": "nC"
+    }
+  },
+  "switching_characteristics": {
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "VDS": 64,
+          "ID": 50,
+          "RG": 2.5,
+          "unit": "V, V, A, Ω"
+        }
+      ],
+      "value": 20,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "VDS": 64,
+          "ID": 50,
+          "RG": 2.5,
+          "unit": "V, V, A, Ω"
+        }
+      ],
+      "value": 153,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "VDS": 64,
+          "ID": 50,
+          "RG": 2.5,
+          "unit": "V, V, A, Ω"
+        }
+      ],
+      "value": 118,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "VDS": 64,
+          "ID": 50,
+          "RG": 2.5,
+          "unit": "V, V, A, Ω"
+        }
+      ],
+      "value": 163,
+      "unit": "ns"
+    }
+  },
+  "diode_characteristics": {
+    "VSD_25C": {
+      "parameter": "Forward Diode Voltage at T_J = 25°C",
+      "conditions": [
+        {
+          "VGS": 0,
+          "IS": 50,
+          "unit": "V, A"
+        }
+      ],
+      "min": null,
+      "typ": 0.8,
+      "max": 1.2,
+      "unit": "V"
+    },
+    "VSD_125C": {
+      "parameter": "Forward Diode Voltage at T_J = 125°C",
+      "conditions": [
+        {
+          "VGS": 0,
+          "IS": 50,
+          "unit": "V, A"
+        }
+      ],
+      "min": null,
+      "typ": 0.7,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "conditions": [
+        {
+          "VGS": 0,
+          "dIS/dt": 100,
+          "IS": 50,
+          "unit": "V, A/μs, A"
+        }
+      ],
+      "value": 77,
+      "unit": "ns"
+    },
+    "ta": {
+      "parameter": "Charge Time",
+      "value": 40,
+      "unit": "ns"
+    },
+    "tb": {
+      "parameter": "Discharge Time",
+      "value": 38,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": 110,
+      "unit": "nC"
+    }
+  },
+  "thermal_response": {
+    "RθJC_transient": {
+      "parameter": "Transient Thermal Impedance, Junction-to-Case",
+      "conditions": [
+        {
+          "duty_cycle": [
+            0.01,
+            0.02,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1
+          ],
+          "unit": "%"
+        }
+      ],
+      "graph": "Figure 13. Thermal Response"
+    },
+    "RθJA_transient": {
+      "parameter": "Transient Thermal Impedance, Junction-to-Ambient",
+      "conditions": [
+        {
+          "duty_cycle": [
+            0.01,
+            0.02,
+            0.05,
+            0.1,
+            0.2,
+            0.5,
+            1
+          ],
+          "unit": "%"
+        }
+      ],
+      "graph": "Figure 14. Thermal Response"
+    }
+  },
+  "ordering_information": {
+    "device": "NTMFS6H800NL",
+    "marking": "6H800L AYWZZ",
+    "package": "DFN5 (SO-8FL)",
+    "case": "506EZ",
+    "shipping": "1500 / Tape & Reel"
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "general_info": {
+    "componentName": "IRFI4228PbF",
+    "manufacturer": "IR",
+    "description": "PDP SWITCH PD - 97228",
+    "features": [
+      "Advanced Process Technology",
+      "Key Parameters Optimized for PDP Sustain, Energy Recovery and Pass Switch Applications",
+      "Low EPULSE Rating to Reduce Power Dissipation in PDP Sustain, Energy Recovery and Pass Switch Applications",
+      "Low QG for Fast Response",
+      "High Repetitive Peak Current Capability for Reliable Operation",
+      "Short Fall & Rise Times for Fast Switching",
+      "150°C Operating Junction Temperature for Improved Ruggedness",
+      "Repetitive Avalanche Capability for Robustness and Reliability"
+    ],
+    "applications": [
+      "Plasma Display Panels"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": "±30",
+      "unit": "V"
+    },
+    "ID_25C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "value": 34,
+      "unit": "A"
+    },
+    "ID_100C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "value": 21,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 130,
+      "unit": "A"
+    },
+    "IRP_100C": {
+      "parameter": "Repetitive Peak Current",
+      "value": 61,
+      "unit": "A"
+    },
+    "PD_25C": {
+      "parameter": "Power Dissipation",
+      "value": 46,
+      "unit": "W"
+    },
+    "PD_100C": {
+      "parameter": "Power Dissipation",
+      "value": 18,
+      "unit": "W"
+    },
+    "PD_derating": {
+      "parameter": "Linear Derating Factor",
+      "value": 0.37,
+      "unit": "W/°C"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "-40 to +150",
+      "unit": "°C"
+    },
+    "TSOL": {
+      "parameter": "Soldering Temperature for 10 seconds",
+      "value": 300,
+      "unit": "°C"
+    },
+    "mounting_torque": {
+      "parameter": "Mounting Torque, 6-32 or M3 Screw",
+      "value": "10lb·in (1.1N·m)",
+      "unit": "N"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case",
+      "value": 2.73,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient",
+      "value": 65,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-to-Source Breakdown Voltage",
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": {
+        "VGS": 0,
+        "ID": 250,
+        "unit": "µA"
+      }
+    },
+    "BVDSS_tempco": {
+      "parameter": "Breakdown Voltage Temp. Coefficient",
+      "value": 190,
+      "unit": "mV/°C",
+      "conditions": {
+        "reference": 25,
+        "ID": 1,
+        "unit": "mA"
+      }
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain-to-Source On-Resistance",
+      "value": 12.2,
+      "unit": "mΩ",
+      "conditions": {
+        "VGS": 10,
+        "ID": 20,
+        "unit": "A"
+      }
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 3,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": {
+        "VDS": "VGS",
+        "ID": 250,
+        "unit": "µA"
+      }
+    },
+    "VGS(th)_tempco": {
+      "parameter": "Gate Threshold Voltage Coefficient",
+      "value": -12,
+      "unit": "mV/°C"
+    },
+    "IDSS_25C": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "min": null,
+      "typ": null,
+      "max": 20,
+      "unit": "µA",
+      "conditions": {
+        "VDS": 150,
+        "VGS": 0,
+        "unit": "V"
+      }
+    },
+    "IDSS_125C": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "min": null,
+      "typ": null,
+      "max": 110,
+      "unit": "µA",
+      "conditions": {
+        "VDS": 150,
+        "VGS": 0,
+        "unit": "°C",
+        "TC": 125
+      }
+    },
+    "IGSS_forward": {
+      "parameter": "Gate-to-Source Forward Leakage",
+      "min": null,
+      "typ": null,
+      "max": 20,
+      "unit": "mA",
+      "conditions": {
+        "VGS": 20,
+        "unit": "V"
+      }
+    },
+    "IGSS_reverse": {
+      "parameter": "Gate-to-Source Reverse Leakage",
+      "min": null,
+      "typ": null,
+      "max": 110,
+      "unit": "nA",
+      "conditions": {
+        "VGS": -20,
+        "unit": "V"
+      }
+    },
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "value": 64,
+      "unit": "S",
+      "conditions": {
+        "VDS": 25,
+        "ID": 20,
+        "unit": "A"
+      }
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "min": null,
+      "typ": 16,
+      "max": null,
+      "unit": "nC",
+      "conditions": {
+        "VDD": 75,
+        "ID": 20,
+        "VGS": 10,
+        "unit": "V,A"
+      }
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain Charge",
+      "min": null,
+      "typ": 5,
+      "max": null,
+      "unit": "nC",
+      "conditions": {
+        "VDD": 120,
+        "VGS": 15,
+        "RG": 5.1,
+        "L": 220,
+        "C": 0.3,
+        "unit": "V,Ω,nH,µF"
+      }
+    },
+    "tst": {
+      "parameter": "Shoot Through Blocking Time",
+      "value": 100,
+      "unit": "ns",
+      "conditions": {
+        "VDD": 120,
+        "VGS": 15,
+        "RG": 5.1,
+        "L": 220,
+        "C": 0.3,
+        "unit": "°C",
+        "TJ": 25
+      }
+    },
+    "EPULSE": {
+      "parameter": "Energy per Pulse",
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "µJ",
+      "conditions": {
+        "VDD": 120,
+        "VGS": 15,
+        "RG": 5.1,
+        "L": 220,
+        "C": 0.3,
+        "unit": "°C",
+        "TJ": 25
+      }
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "min": null,
+      "typ": 4560,
+      "max": null,
+      "unit": "pF",
+      "conditions": {
+        "VDS": 25,
+        "VGS": 0,
+        "unit": "MHz",
+        "f": 1
+      }
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "min": null,
+      "typ": 560,
+      "max": null,
+      "unit": "pF",
+      "conditions": {
+        "VDS": 25,
+        "VGS": 0,
+        "unit": "MHz",
+        "f": 1
+      }
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "min": null,
+      "typ": 110,
+      "max": null,
+      "unit": "pF",
+      "conditions": {
+        "VDS": 25,
+        "VGS": 0,
+        "unit": "MHz",
+        "f": 1
+      }
+    },
+    "Coss_eff": {
+      "parameter": "Effective Output Capacitance",
+      "min": null,
+      "typ": 460,
+      "max": null,
+      "unit": "pF",
+      "conditions": {
+        "VDS": 0,
+        "VGS": 0,
+        "unit": "V,V"
+      }
+    }
+  },
+  "avalanche_characteristics": {
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "value": 170,
+      "unit": "mJ"
+    },
+    "EAR": {
+      "parameter": "Repetitive Avalanche Energy",
+      "value": 4.6,
+      "unit": "mJ"
+    },
+    "VDS_avalanche": {
+      "parameter": "Repetitive Avalanche Voltage",
+      "value": 180,
+      "unit": "V"
+    },
+    "IAS": {
+      "parameter": "Avalanche Current",
+      "value": 20,
+      "unit": "A"
+    }
+  },
+  "diode_characteristics": {
+    "IS_25C": {
+      "parameter": "Continuous Source Current (Body Diode)",
+      "value": 74,
+      "unit": "A",
+      "conditions": {
+        "TJ": 25,
+        "VGS": 0,
+        "unit": "°C,V"
+      }
+    },
+    "ISM": {
+      "parameter": "Pulsed Source Current (Body Diode)",
+      "value": 230,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "min": null,
+      "typ": 1.3,
+      "max": null,
+      "unit": "V",
+      "conditions": {
+        "IS": 20,
+        "TJ": 25,
+        "unit": "A,°C"
+      }
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": 110,
+      "unit": "ns",
+      "conditions": {
+        "IF": 20,
+        "VDD": 50,
+        "di/dt": 100,
+        "unit": "A,V,A/µs"
+      }
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": 350,
+      "unit": "nC",
+      "conditions": {
+        "IF": 20,
+        "VDD": 50,
+        "di/dt": 100,
+        "unit": "A,V,A/µs"
+      }
+    }
+  },
+  "package_info": {
+    "package": "TO-220AB Full-Pak"
+  },
+  "additional_info": {
+    "internal_inductance": {
+      "LD": {
+        "parameter": "Internal Drain Inductance",
+        "value": 4.5,
+        "unit": "nH"
+      },
+      "LS": {
+        "parameter": "Internal Source Inductance",
+        "value": 7.5,
+        "unit": "nH"
+      }
+    },
+    "note1": "TO-220AB Full-Pak packages are not recommended for Surface Mount Application."
+  }
+}

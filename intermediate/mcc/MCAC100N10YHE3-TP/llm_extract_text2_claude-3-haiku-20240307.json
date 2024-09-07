@@ -1,0 +1,338 @@
+{
+  "general_info": {
+    "componentName": "MCAC100N10YHE3",
+    "manufacturer": "MCCSEMI.COM",
+    "description": "N-CHANNEL MOSFET",
+    "features": [
+      "AEC-Q101 Qualified",
+      "Excellent Package for Heat Dissipation",
+      "High Density Cell Design for Low RDS(ON)",
+      "Moisture Sencitivity Level 1",
+      "Halogen Free. \"Green\" Device",
+      "Epoxy Meets UL 94 V-0 Flammability Rating",
+      "Lead Free Finish/RoHS Compliant (\"P\" Suffix Designates RoHS Compliant. See Ordering Information)"
+    ],
+    "operating_temperature_range": {
+      "min": -55,
+      "max": 150,
+      "unit": "°C"
+    },
+    "storage_temperature_range": {
+      "min": -55,
+      "max": 150,
+      "unit": "°C"
+    },
+    "thermal_resistance": {
+      "junction_to_ambient": {
+        "value": 53,
+        "unit": "°C/W"
+      },
+      "junction_to_case": {
+        "value": 1.1,
+        "unit": "°C/W"
+      }
+    }
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Volltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 100,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 360,
+      "unit": "A"
+    },
+    "PD": {
+      "parameter": "Total Power Dissipation",
+      "value": null,
+      "unit": "W"
+    },
+    "EAS": {
+      "parameter": "Single Pulsed Avalanche Energy",
+      "value": 400,
+      "unit": "mJ"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 0.00025,
+          "unit": "A"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 0,
+          "VGS": "±20",
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "nA"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "μA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 0.00025,
+          "unit": "A"
+        }
+      ],
+      "min": 2,
+      "typ": 3,
+      "max": 4,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 20,
+          "unit": "A"
+        },
+        {
+          "VGS": 6,
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 45.5,
+      "max": 57,
+      "unit": "mΩ"
+    },
+    "Rg": {
+      "parameter": "Gate Resistance",
+      "conditions": [
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "value": 0.8,
+      "unit": "Ω"
+    },
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "value": 100,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "IS": 18,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.2,
+      "max": null,
+      "unit": "V"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 4700,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 2300,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 67,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 10,
+          "ID": 55,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 55,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "ID": 55,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 16,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "ID": 55,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 14,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": 24,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-On Rise Time",
+      "value": 125,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 30,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-Off Fall Time",
+      "value": 8,
+      "unit": "ns"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": 47,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": 165,
+      "unit": "nC"
+    }
+  },
+  "diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "value": 100,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "IS": 18,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.2,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "conditions": [
+        {
+          "IF": 55,
+          "dIF/dt": 350,
+          "unit": "A/μs"
+        }
+      ],
+      "value": 47,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 10,
+          "ID": 55,
+          "unit": "A"
+        }
+      ],
+      "value": 165,
+      "unit": "nC"
+    }
+  }
+}

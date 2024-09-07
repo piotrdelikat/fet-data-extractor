@@ -1,0 +1,549 @@
+{
+  "general_info": {
+    "componentName": "STH310N10F7-2, STH310N10F7-6",
+    "manufacturer": "STMicroelectronics",
+    "description": "N-channel 100 V, 1.9 mΩ typ.,180 A, STripFET™ F7 Power MOSFETs in H2PAK-2 and H2PAK-6 packages",
+    "features": [
+      "Among the lowest RDS(on) on the market",
+      "Excellent figure of merit (FoM)",
+      "Low Crss/Ciss ratio for EMI immunity",
+      "High avalanche ruggedness"
+    ],
+    "applications": [
+      "Switching applications"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-source voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-source voltage",
+      "value": "± 20",
+      "unit": "V"
+    },
+    "ID(1)": {
+      "parameter": "Drain current (continuous) at TC = 25 °C",
+      "value": 180,
+      "unit": "A"
+    },
+    "ID(2)": {
+      "parameter": "Drain current (pulsed)",
+      "value": 720,
+      "unit": "A"
+    },
+    "PTOT": {
+      "parameter": "Total dissipation at TC = 25 °C",
+      "value": 315,
+      "unit": "W"
+    },
+    "EAS(3)": {
+      "parameter": "Single pulse avalanche energy (TJ = 25 °C L = 0.55 mH, IAS = 65 A)",
+      "value": 1,
+      "unit": "J"
+    },
+    "TJ": {
+      "parameter": "Operating junction temperature",
+      "value": "-55 to 175",
+      "unit": "°C"
+    },
+    "Tstg": {
+      "parameter": "Storage temperature",
+      "value": "-55 to 175",
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "Rthj-case": {
+      "parameter": "Thermal resistance junction-case",
+      "value": 0.48,
+      "unit": "°C/W"
+    },
+    "Rthj-pcb(1)": {
+      "parameter": "Thermal resistance junction-pcb",
+      "value": 35,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-source breakdown voltage (VGS= 0)",
+      "conditions": [
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Zero gate voltage drain current (VGS = 0)",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "TC": 125,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 0.001,
+      "max": 100,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate body leakage current (VDS= 0)",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate threshold voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 2.5,
+      "typ": 3.5,
+      "max": 4.5,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Static drain-source on-resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 60,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.9,
+      "max": 2.3,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 12800,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "min": null,
+      "typ": 3500,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse transfer capacitance",
+      "min": null,
+      "typ": 170,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total gate charge",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 180,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 180,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-source charge",
+      "min": null,
+      "typ": 78,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-drain charge",
+      "min": null,
+      "typ": 34,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "switching_characteristics": {
+    "td(on)": {
+      "parameter": "Turn-on delay time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 90,
+          "unit": "A"
+        },
+        {
+          "RG": 4.7,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 62,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise time",
+      "min": null,
+      "typ": 108,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-off delay time",
+      "min": null,
+      "typ": 148,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall time",
+      "min": null,
+      "typ": 40,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "diode_characteristics": {
+    "ISD": {
+      "parameter": "Source-drain current",
+      "min": null,
+      "typ": null,
+      "max": 180,
+      "unit": "A"
+    },
+    "ISDM(1)": {
+      "parameter": "Source-drain current (pulsed)",
+      "value": 720,
+      "unit": "A"
+    },
+    "VSD(2)": {
+      "parameter": "Forward on voltage",
+      "conditions": [
+        {
+          "ISD": 60,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1.5,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "conditions": [
+        {
+          "ISD": 180,
+          "unit": "A"
+        },
+        {
+          "di/dt": 100,
+          "unit": "A/μs"
+        },
+        {
+          "VDD": 80,
+          "unit": "V"
+        },
+        {
+          "Tj": 150,
+          "unit": "°C"
+        }
+      ],
+      "value": 85,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse recovery charge",
+      "value": 200,
+      "unit": "nC"
+    },
+    "IRRM": {
+      "parameter": "Reverse recovery current",
+      "value": 4.7,
+      "unit": "A"
+    }
+  },
+  "package_info": {
+    "package_type": [
+      "H2PAK-2",
+      "H2PAK-6"
+    ],
+    "package_dimensions": {
+      "H2PAK-2": {
+        "A": {
+          "min": 4.3,
+          "max": 4.8,
+          "unit": "mm"
+        },
+        "A1": {
+          "min": 0.03,
+          "max": 0.2,
+          "unit": "mm"
+        },
+        "C": {
+          "min": 1.17,
+          "max": 1.37,
+          "unit": "mm"
+        },
+        "e": {
+          "min": 4.98,
+          "max": 5.18,
+          "unit": "mm"
+        },
+        "E": {
+          "min": 0.5,
+          "max": 0.9,
+          "unit": "mm"
+        },
+        "F": {
+          "min": 0.78,
+          "max": 0.85,
+          "unit": "mm"
+        },
+        "H": {
+          "min": 10,
+          "max": 10.4,
+          "unit": "mm"
+        },
+        "H1": {
+          "min": 7.4,
+          "max": 7.8,
+          "unit": "mm"
+        },
+        "L": {
+          "min": 15.3,
+          "max": 15.8,
+          "unit": "mm"
+        },
+        "L1": {
+          "min": 1.27,
+          "max": 1.4,
+          "unit": "mm"
+        },
+        "L2": {
+          "min": 4.93,
+          "max": 5.23,
+          "unit": "mm"
+        },
+        "L3": {
+          "min": 6.85,
+          "max": 7.25,
+          "unit": "mm"
+        },
+        "L4": {
+          "min": 1.5,
+          "max": 1.7,
+          "unit": "mm"
+        },
+        "M": {
+          "min": 2.6,
+          "max": 2.9,
+          "unit": "mm"
+        },
+        "R": {
+          "min": 0.2,
+          "max": 0.6,
+          "unit": "mm"
+        },
+        "V": {
+          "min": 0,
+          "max": 8,
+          "unit": "°"
+        }
+      },
+      "H2PAK-6": {
+        "A": {
+          "min": 4.3,
+          "max": 4.8,
+          "unit": "mm"
+        },
+        "A1": {
+          "min": 0.03,
+          "max": 0.2,
+          "unit": "mm"
+        },
+        "C": {
+          "min": 1.17,
+          "max": 1.37,
+          "unit": "mm"
+        },
+        "e": {
+          "min": 2.34,
+          "max": 2.74,
+          "unit": "mm"
+        },
+        "e1": {
+          "min": 4.88,
+          "max": 5.28,
+          "unit": "mm"
+        },
+        "e2": {
+          "min": 7.42,
+          "max": 7.82,
+          "unit": "mm"
+        },
+        "E": {
+          "min": 0.45,
+          "max": 0.6,
+          "unit": "mm"
+        },
+        "F": {
+          "min": 0.5,
+          "max": 0.7,
+          "unit": "mm"
+        },
+        "H": {
+          "min": 10,
+          "max": 10.4,
+          "unit": "mm"
+        },
+        "H1": {
+          "min": 7.4,
+          "max": 7.8,
+          "unit": "mm"
+        },
+        "L": {
+          "min": 14.75,
+          "max": 15.25,
+          "unit": "mm"
+        },
+        "L1": {
+          "min": 1.27,
+          "max": 1.4,
+          "unit": "mm"
+        },
+        "L2": {
+          "min": 4.35,
+          "max": 4.95,
+          "unit": "mm"
+        },
+        "L3": {
+          "min": 6.85,
+          "max": 7.25,
+          "unit": "mm"
+        },
+        "L4": {
+          "min": 1.5,
+          "max": 1.75,
+          "unit": "mm"
+        },
+        "M": {
+          "min": 1.9,
+          "max": 2.5,
+          "unit": "mm"
+        },
+        "R": {
+          "min": 0.2,
+          "max": 0.6,
+          "unit": "mm"
+        },
+        "V": {
+          "min": 0,
+          "max": 8,
+          "unit": "°"
+        }
+      }
+    },
+    "packing_info": {
+      "tape": {
+        "A0": {
+          "min": 10.5,
+          "max": 10.7,
+          "unit": "mm"
+        },
+        "B0": {
+          "min": 15.7,
+          "max": 15.9,
+          "unit": "mm"
+        },
+        "D": {
+          "min": 1.5,
+          "max": 1.6,
+          "unit": "mm"
+        },
+        "D1": {
+          "min": 1.59,
+          "max": 1.61,
+          "unit": "mm"
+        },
+        "E": {
+          "min": 1.65,
+          "max": 1.85,
+          "unit": "mm"
+        },
+        "F": {
+          "min": 11.4,
+          "max": 11.6,
+          "unit": "mm"
+        }
+      }
+    }
+  }
+}

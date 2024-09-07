@@ -1,0 +1,551 @@
+{
+  "general_info": {
+    "componentName": "IXFK 150N15",
+    "componentName2": "IXFX 150N15",
+    "features": [
+      "International standard packages",
+      "Low RDS(on) HDMOSTM process",
+      "Rugged polysilicon gate cell structure",
+      "Unclamped Inductive Switching (UIS) rated",
+      "Low package inductance - easy to drive and to protect",
+      "Fast intrinsic rectifier"
+    ],
+    "applications": [
+      "DC-DC converters",
+      "Battery chargers",
+      "Switched-mode and resonant-mode power supplies",
+      "DC choppers",
+      "AC motor control",
+      "Temperature and lighting controls"
+    ],
+    "advantages": [
+      "PLUS 247TM package for clip or spring mounting",
+      "Space savings",
+      "High power density"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": [
+        {
+          "TJ": "25C to 150C"
+        }
+      ]
+    },
+    "VDGR": {
+      "parameter": "Drain to Gate Voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": [
+        {
+          "TJ": "25C to 150C"
+        },
+        {
+          "RGS": 1000000
+        }
+      ]
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage, Continuous",
+      "value": 20,
+      "unit": "V"
+    },
+    "VGSM": {
+      "parameter": "Gate to Source Voltage, Transient",
+      "value": 30,
+      "unit": "V"
+    },
+    "ID25": {
+      "parameter": "Drain Current",
+      "value": 150,
+      "unit": "A",
+      "conditions": [
+        {
+          "TC": 25
+        }
+      ]
+    },
+    "ID(RMS)": {
+      "parameter": "Drain Current, RMS",
+      "value": 76,
+      "unit": "A",
+      "conditions": [
+        {
+          "TC": 25
+        }
+      ]
+    },
+    "IDM": {
+      "parameter": "Drain Current, Single Pulse",
+      "value": 600,
+      "unit": "A",
+      "conditions": [
+        {
+          "TC": 25
+        },
+        {
+          "note": 1
+        }
+      ]
+    },
+    "IAR": {
+      "parameter": "Avalanche Current",
+      "value": 150,
+      "unit": "A",
+      "conditions": [
+        {
+          "TC": 25
+        }
+      ]
+    },
+    "EAR": {
+      "parameter": "Avalanche Energy",
+      "value": 60,
+      "unit": "mJ",
+      "conditions": [
+        {
+          "TC": 25
+        }
+      ]
+    },
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "value": 3,
+      "unit": "J",
+      "conditions": [
+        {
+          "TC": 25
+        }
+      ]
+    },
+    "dv/dt": {
+      "parameter": "dv/dt",
+      "value": 5,
+      "unit": "V/ns",
+      "conditions": [
+        {
+          "IS": "IDM",
+          "di/dt": 100000,
+          "VDD": "VDSS"
+        }
+      ]
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 560,
+      "unit": "W",
+      "conditions": [
+        {
+          "TC": 25
+        }
+      ]
+    },
+    "TJ": {
+      "parameter": "Junction Temperature Range",
+      "value": "-55 to +150",
+      "unit": "C"
+    },
+    "TJM": {
+      "parameter": "Maximum Junction Temperature",
+      "value": 150,
+      "unit": "C"
+    },
+    "Tstg": {
+      "parameter": "Storage Temperature Range",
+      "value": "-55 to +150",
+      "unit": "C"
+    },
+    "TL": {
+      "parameter": "Lead Temperature (1.6 mm from case for 10 s)",
+      "value": 300,
+      "unit": "C"
+    },
+    "Md": {
+      "parameter": "Mounting Torque",
+      "value": "0.9/6",
+      "unit": "Nm/lb.in."
+    },
+    "Weight": {
+      "parameter": "Weight",
+      "value": {
+        "PLUS 247": 6,
+        "TO-264": 10
+      },
+      "unit": "g"
+    }
+  },
+  "static_characteristics": {
+    "VDSS": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 3,
+          "unit": "mA"
+        }
+      ]
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "min": 2,
+      "typ": 4,
+      "max": null,
+      "unit": "V",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 8,
+          "unit": "mA"
+        }
+      ]
+    },
+    "IGSS": {
+      "parameter": "Gate to Source Leakage Current",
+      "value": 100,
+      "unit": "nA",
+      "conditions": [
+        {
+          "VGS": 20,
+          "VDS": 0
+        }
+      ]
+    },
+    "IDSS_25C": {
+      "parameter": "Drain to Source Leakage Current at 25C",
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "uA",
+      "conditions": [
+        {
+          "VDS": "VDSS",
+          "VGS": 0
+        }
+      ]
+    },
+    "IDSS_125C": {
+      "parameter": "Drain to Source Leakage Current at 125C",
+      "min": null,
+      "typ": 2,
+      "max": null,
+      "unit": "mA",
+      "conditions": [
+        {
+          "VDS": "VDSS",
+          "VGS": 0
+        }
+      ]
+    },
+    "RDS(on)": {
+      "parameter": "Drain to Source On-State Resistance",
+      "min": null,
+      "typ": 12.5,
+      "max": null,
+      "unit": "mOhm",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 0.5,
+          "note": 1
+        }
+      ]
+    }
+  },
+  "dynamic_characteristics": {
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "value": 5075,
+      "unit": "S",
+      "conditions": [
+        {
+          "VDS": 10,
+          "ID": 60,
+          "note": 2
+        }
+      ]
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "value": 9100,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "value": 2600,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 25,
+          "f": 1000000
+        }
+      ]
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "value": 1200,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": 50,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "value": 60,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VGS": 10,
+          "VDS": 0.5,
+          "ID": 0.5
+        }
+      ]
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 110,
+      "unit": "ns",
+      "conditions": [
+        {
+          "RG": 12
+        }
+      ]
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "value": 45,
+      "unit": "ns"
+    },
+    "Qg(on)": {
+      "parameter": "Total Gate Charge",
+      "value": 360,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate to Source Charge",
+      "value": 65,
+      "unit": "nC",
+      "conditions": [
+        {
+          "VGS": 10,
+          "VDS": 0.5,
+          "ID": 0.5
+        }
+      ]
+    },
+    "Qgd": {
+      "parameter": "Gate to Drain Charge",
+      "value": 190,
+      "unit": "nC",
+      "conditions": [
+        {
+          "VGS": 10,
+          "VDS": 0.5,
+          "ID": 0.5
+        }
+      ]
+    },
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": 0.22,
+      "unit": "K/W"
+    },
+    "RthCK": {
+      "parameter": "Thermal Resistance, Case to Heatsink",
+      "value": 0.15,
+      "unit": "K/W"
+    }
+  },
+  "source_drain_diode_characteristics": {
+    "IS": {
+      "parameter": "Source-Drain Diode Forward Current",
+      "value": 150,
+      "unit": "A",
+      "conditions": [
+        {
+          "VGS": 0
+        }
+      ]
+    },
+    "ISM": {
+      "parameter": "Source-Drain Diode Repetitive Forward Current",
+      "value": 600,
+      "unit": "A",
+      "conditions": [
+        {
+          "pulse width limited by TJM": null
+        }
+      ]
+    },
+    "VSD": {
+      "parameter": "Source-Drain Diode Forward Voltage",
+      "value": 1.5,
+      "unit": "V",
+      "conditions": [
+        {
+          "IF": 100,
+          "VGS": 0
+        }
+      ]
+    },
+    "trr": {
+      "parameter": "Source-Drain Diode Reverse Recovery Time",
+      "value": 250,
+      "unit": "ns"
+    },
+    "QRM": {
+      "parameter": "Source-Drain Diode Reverse Recovery Charge",
+      "value": 1.1,
+      "unit": "uC"
+    },
+    "IRM": {
+      "parameter": "Source-Drain Diode Reverse Recovery Current",
+      "value": 13,
+      "unit": "A",
+      "conditions": [
+        {
+          "IF": 50,
+          "di/dt": -100000,
+          "VR": 50
+        }
+      ]
+    }
+  },
+  "package_dimensions": {
+    "IXFK 150N15": {
+      "A": {
+        "min": 4.82,
+        "max": 5.13,
+        "unit": "mm"
+      },
+      "A1": {
+        "min": 12.54,
+        "max": 12.89,
+        "unit": "mm"
+      },
+      "A2": {
+        "min": 2,
+        "max": 2.1,
+        "unit": "mm"
+      },
+      "b1": {
+        "min": 1.12,
+        "max": 1.4,
+        "unit": "mm"
+      },
+      "b12": {
+        "min": 2.39,
+        "max": 2.6,
+        "unit": "mm"
+      },
+      "b2": {
+        "min": 2.9,
+        "max": 3,
+        "unit": "mm"
+      },
+      "c": {
+        "min": 0.53,
+        "max": 0.8,
+        "unit": "mm"
+      },
+      "D": {
+        "min": 25.9,
+        "max": 26.16,
+        "unit": "mm"
+      },
+      "E": {
+        "min": 19.81,
+        "max": 19.96,
+        "unit": "mm"
+      },
+      "e": {
+        "value": 5.46,
+        "unit": "mm"
+      },
+      "J": {
+        "min": 0,
+        "max": 0.25,
+        "unit": "mm"
+      },
+      "K": {
+        "min": 0,
+        "max": 0.25,
+        "unit": "mm"
+      },
+      "L": {
+        "min": 20.32,
+        "max": 20.83,
+        "unit": "mm"
+      },
+      "L1": {
+        "min": 12.29,
+        "max": 12.59,
+        "unit": "mm"
+      },
+      "P": {
+        "min": 3.17,
+        "max": 3.6,
+        "unit": "mm"
+      },
+      "Q": {
+        "min": 6.07,
+        "max": 6.2,
+        "unit": "mm"
+      },
+      "Q1": {
+        "min": 18.38,
+        "max": 18.6,
+        "unit": "mm"
+      },
+      "R": {
+        "min": 3.81,
+        "max": 4.32,
+        "unit": "mm"
+      },
+      "R1": {
+        "min": 11.78,
+        "max": 12.29,
+        "unit": "mm"
+      },
+      "S": {
+        "min": 6.04,
+        "max": 6.3,
+        "unit": "mm"
+      },
+      "T": {
+        "min": 1.57,
+        "max": 1.83,
+        "unit": "mm"
+      }
+    },
+    "IXFX 150N15": {
+      "A": {
+        "min": 4.83,
+        "max": 5.2,
+        "unit": "mm"
+      },
+      "A1": {
+        "min": 2.29,
+        "max": 2.54,
+        "unit": "mm"
+      },
+      "A2": {
+        "min": 1.91,
+        "max": 2.16,
+        "unit": "mm"
+      },
+      "b1": {
+        "min": 1.14,
+        "max": 1.4,
+        "unit": "mm"
+      }
+    }
+  }
+}

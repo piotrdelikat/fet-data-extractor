@@ -1,0 +1,19 @@
+{
+  "general_info": {
+    "manufacturer": "Toshiba Electronic Devices & Storage Corporation",
+    "address": "5231 California Avenue, Irvine, CA 92617"
+  },
+  "product_usage": {
+    "automotive_products": {
+      "engineering_samples": true,
+      "volume_production": {
+        "allowed": false,
+        "condition": "without prior approval by Toshiba Semiconductor and Storage"
+      },
+      "reliability_testing": {
+        "allowed": false,
+        "condition": "without prior approval by Toshiba Semiconductor and Storage"
+      }
+    }
+  }
+}

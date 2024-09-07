@@ -1,0 +1,569 @@
+{
+  "general_info": {
+    "componentName": "FDD86367-F085",
+    "manufacturer": "ON Semiconductor",
+    "description": "N-Channel, POWERTRENCH MOSFET, 80 V, 100 A, 4.2 mΩ",
+    "features": [
+      "Typical R_DS(on) = 3.3 mΩ at V_GS = 10 V, I_D = 80 A",
+      "Typical Q_g(tot) = 68 nC at V_GS = 10 V, I_D = 80 A",
+      "UIS Capability",
+      "AEC-Q101 Qualified and PPAP Capable",
+      "This Device is Pb-Free, Halogen Free/BFR Free and is RoHS Compliant"
+    ],
+    "applications": [
+      "Automotive Engine Control",
+      "PowerTrain Management",
+      "Solenoid and Motor Drivers",
+      "Integrated Starter/Alternator",
+      "Primary Switch for 12 V Systems"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain-to-Source Voltage",
+      "value": 80,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current - Continuous (V_GS = 10)",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 100,
+      "unit": "A"
+    },
+    "I_Pulsed_Drain_Current": {
+      "parameter": "Pulsed Drain Current",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "note": "See Figure 4"
+    },
+    "E_AS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "conditions": [
+        {
+          "L": 40,
+          "unit": "mH"
+        },
+        {
+          "I_AS": 64,
+          "unit": "A"
+        },
+        {
+          "V_DD": 80,
+          "unit": "V"
+        }
+      ],
+      "value": 82,
+      "unit": "mJ"
+    },
+    "P_D": {
+      "parameter": "Power Dissipation",
+      "value": 227,
+      "unit": "W"
+    },
+    "P_D_Derate": {
+      "parameter": "Derate Above 25°C",
+      "value": 1.52,
+      "unit": "W/°C"
+    },
+    "T_J_T_STG": {
+      "parameter": "Operating and Storage Temperature",
+      "value": "-55 to +175",
+      "unit": "°C"
+    },
+    "R_θJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": 0.66,
+      "unit": "°C/W"
+    },
+    "R_θJA": {
+      "parameter": "Maximum Thermal Resistance, Junction to Ambient",
+      "conditions": [
+        {
+          "note": "R_θJA is the sum of the junction-to-case and case-to-ambient thermal resistance, where the case thermal reference is defined as the solder mounting surface of the drain pins. R_θJC is guaranteed by design, while R_θJA is determined by the board design. The maximum rating presented here is based on mounting on a 1 in^2 pad of 2oz copper."
+        }
+      ],
+      "value": 52,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain to Source Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 0.9,
+          "unit": "mA"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS_25C": {
+      "parameter": "Drain to Source Leakage",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 0.001,
+      "max": 0.4,
+      "unit": "mA"
+    },
+    "IDSS_175C": {
+      "parameter": "Drain to Source Leakage",
+      "conditions": [
+        {
+          "VDS": 80,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 175,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "mA"
+    },
+    "IGSS": {
+      "parameter": "Gate to Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": "±20",
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": "±100",
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "VGS": "V_DS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "mA"
+        }
+      ],
+      "min": 2,
+      "typ": 3,
+      "max": 4,
+      "unit": "V"
+    },
+    "RDS(on)_25C": {
+      "parameter": "Drain to Source On Resistance",
+      "conditions": [
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 3.3,
+      "max": 4.2,
+      "unit": "mΩ"
+    },
+    "RDS(on)_175C": {
+      "parameter": "Drain to Source On Resistance",
+      "conditions": [
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "TJ": 175,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 6.6,
+      "max": 8.4,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 480,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 814,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 31,
+      "max": null,
+      "unit": "pF"
+    },
+    "Rg": {
+      "parameter": "Gate Resistance",
+      "conditions": [
+        {
+          "VGS": 0.5,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 2.3,
+      "max": null,
+      "unit": "Ω"
+    },
+    "Qg(tot)": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 68,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qg(th)": {
+      "parameter": "Threshold Gate Charge",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": "0 to 2",
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 8.8,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-to-Source Gate Charge",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 22,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain \"Miller\" Charge",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 14,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "switching_characteristics": {
+    "t_on": {
+      "parameter": "Turn-On Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "R_GEN": 6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 104,
+      "max": null,
+      "unit": "ns"
+    },
+    "t_d(on)": {
+      "parameter": "Turn-On Delay",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "R_GEN": 6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 20,
+      "max": null,
+      "unit": "ns"
+    },
+    "t_r": {
+      "parameter": "Rise Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "R_GEN": 6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 49,
+      "max": null,
+      "unit": "ns"
+    },
+    "t_d(off)": {
+      "parameter": "Turn-Off Delay",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "R_GEN": 6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 36,
+      "max": null,
+      "unit": "ns"
+    },
+    "t_f": {
+      "parameter": "Fall Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "R_GEN": 6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 16,
+      "max": null,
+      "unit": "ns"
+    },
+    "t_off": {
+      "parameter": "Turn-Off Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "R_GEN": 6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 80,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "diode_characteristics": {
+    "V_SD_80A": {
+      "parameter": "Source-to-Drain Diode Voltage",
+      "conditions": [
+        {
+          "I_SD": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1.3,
+      "max": null,
+      "unit": "V"
+    }
+  }
+}

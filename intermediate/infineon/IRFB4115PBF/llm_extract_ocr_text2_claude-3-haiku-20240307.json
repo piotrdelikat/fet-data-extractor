@@ -1,0 +1,508 @@
+{
+  "general_info": {
+    "componentName": "IRFB4115PbF",
+    "manufacturer": "International Rectifier",
+    "description": "HEXFET® Power MOSFET",
+    "applications": [
+      "High Efficiency Synchronous Rectification in SMPS",
+      "Uninterruptible Power Supply",
+      "High Speed Power Switching",
+      "Hard Switched and High Frequency Circuits"
+    ],
+    "benefits": [
+      "Improved Gate, Avalanche and Dynamic dv/dt Ruggedness",
+      "Fully Characterized Capacitance and Avalanche SOA",
+      "Enhanced body diode dV/dt and dI/dt Capability",
+      "Lead Free",
+      "RoHS Compliant, Halogen-Free"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "ID_25C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "value": 104,
+      "unit": "A"
+    },
+    "ID_100C": {
+      "parameter": "Continuous Drain Current, VGS @ 10V",
+      "value": 74,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 420,
+      "unit": "A"
+    },
+    "PD_25C": {
+      "parameter": "Maximum Power Dissipation",
+      "value": 380,
+      "unit": "W"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": {
+        "min": -20,
+        "max": 20,
+        "unit": "V"
+      }
+    },
+    "dv/dt": {
+      "parameter": "Maximum dv/dt",
+      "value": 2.5,
+      "unit": "V/ns"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": {
+        "min": -55,
+        "max": 175,
+        "unit": "°C"
+      }
+    },
+    "TSOL": {
+      "parameter": "Soldering Temperature, for 10 seconds",
+      "value": 300,
+      "unit": "°C"
+    },
+    "MOUNTING_TORQUE": {
+      "parameter": "Mounting torque, 6-32 or M3 screw",
+      "value": 10,
+      "unit": "lbxin (1.1Nxm)"
+    },
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "value": 830,
+      "unit": "mJ"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case",
+      "value": {
+        "max": 0.4,
+        "unit": "°C/W"
+      }
+    },
+    "RθCS": {
+      "parameter": "Case-to-Sink, Flat Greased Surface",
+      "value": {
+        "max": 0.62,
+        "unit": "°C/W"
+      }
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient",
+      "value": {
+        "max": 62,
+        "unit": "°C/W"
+      }
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-to-Source Breakdown Voltage",
+      "value": {
+        "min": 150,
+        "unit": "V"
+      },
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 0.00025,
+          "unit": "A"
+        }
+      ]
+    },
+    "ΔV(BR)DSS/ΔTJ": {
+      "parameter": "Breakdown Voltage Temp. Coefficient",
+      "value": {
+        "typ": 0.18,
+        "unit": "V/°C"
+      },
+      "conditions": [
+        {
+          "ID": 0.0035,
+          "unit": "A"
+        }
+      ]
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain-to-Source On-Resistance",
+      "value": {
+        "typ": 0.093,
+        "max": 0.11,
+        "unit": "Ω"
+      },
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 62,
+          "unit": "A"
+        }
+      ]
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "value": {
+        "min": 3,
+        "typ": null,
+        "max": 5,
+        "unit": "V"
+      },
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 0.00025,
+          "unit": "A"
+        }
+      ]
+    },
+    "IDSS": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "value": {
+        "max": 20,
+        "unit": "µA"
+      },
+      "conditions": [
+        {
+          "VDS": 150,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ]
+    },
+    "IDSS_125C": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "value": {
+        "max": 250,
+        "unit": "µA"
+      },
+      "conditions": [
+        {
+          "VDS": 150,
+          "VGS": 0,
+          "TC": 125,
+          "unit": "°C"
+        }
+      ]
+    },
+    "IGSS": {
+      "parameter": "Gate-to-Source Forward Leakage",
+      "value": {
+        "max": 100,
+        "unit": "nA"
+      },
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ]
+    },
+    "IGSS_reverse": {
+      "parameter": "Gate-to-Source Reverse Leakage",
+      "value": {
+        "max": -100,
+        "unit": "nA"
+      },
+      "conditions": [
+        {
+          "VGS": -20,
+          "unit": "V"
+        }
+      ]
+    },
+    "RG": {
+      "parameter": "Internal Gate Resistance",
+      "value": {
+        "typ": 2.3,
+        "unit": "Ω"
+      }
+    }
+  },
+  "dynamic_characteristics": {
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "value": {
+        "min": 97,
+        "unit": "S"
+      },
+      "conditions": [
+        {
+          "VDS": 50,
+          "ID": 62,
+          "unit": "A"
+        }
+      ]
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "value": {
+        "typ": 77,
+        "max": 120,
+        "unit": "nC"
+      },
+      "conditions": [
+        {
+          "ID": 62,
+          "VDS": 75,
+          "VGS": 10,
+          "unit": "V"
+        }
+      ]
+    },
+    "Qgs": {
+      "parameter": "Gate-to-Source Charge",
+      "value": {
+        "typ": 28,
+        "unit": "nC"
+      },
+      "conditions": [
+        {
+          "VDS": 75,
+          "ID": 62,
+          "unit": "A"
+        }
+      ]
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain (\"Miller\") Charge",
+      "value": {
+        "typ": 26,
+        "unit": "nC"
+      },
+      "conditions": [
+        {
+          "VDS": 75,
+          "ID": 62,
+          "unit": "A"
+        }
+      ]
+    },
+    "Qsync": {
+      "parameter": "Total Gate Charge Sync. (Qg - Qgd)",
+      "value": {
+        "typ": 51,
+        "unit": "nC"
+      },
+      "conditions": [
+        {
+          "VDS": 0,
+          "VGS": 10,
+          "ID": 62,
+          "unit": "A"
+        }
+      ]
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "value": {
+        "typ": 18,
+        "unit": "ns"
+      },
+      "conditions": [
+        {
+          "VDD": 98,
+          "unit": "V"
+        }
+      ]
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "value": {
+        "typ": 73,
+        "unit": "ns"
+      },
+      "conditions": [
+        {
+          "ID": 62,
+          "unit": "A"
+        }
+      ]
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "value": {
+        "typ": 41,
+        "unit": "ns"
+      },
+      "conditions": [
+        {
+          "RG": 2.2,
+          "unit": "Ω"
+        }
+      ]
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "value": {
+        "typ": 39,
+        "unit": "ns"
+      },
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ]
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "value": {
+        "typ": 5270,
+        "unit": "pF"
+      },
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ]
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "value": {
+        "typ": 490,
+        "unit": "pF"
+      },
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 0,
+          "unit": "V",
+          "f": 1
+        }
+      ]
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "value": {
+        "typ": 105,
+        "unit": "pF"
+      },
+      "conditions": [
+        {
+          "VDS": 50,
+          "VGS": 0,
+          "unit": "V",
+          "f": 1
+        }
+      ]
+    },
+    "Coss(ER)": {
+      "parameter": "Effective Output Capacitance, Energy Related",
+      "value": {
+        "typ": 460,
+        "unit": "pF"
+      },
+      "conditions": [
+        {
+          "VDS": "0 to 120",
+          "VGS": 0,
+          "unit": "V"
+        }
+      ]
+    },
+    "Coss(TR)": {
+      "parameter": "Effective Output Capacitance, Time Related",
+      "value": {
+        "typ": 530,
+        "unit": "pF"
+      },
+      "conditions": [
+        {
+          "VDS": "0 to 120",
+          "VGS": 0,
+          "unit": "V"
+        }
+      ]
+    }
+  },
+  "diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Source Current (Body Diode)",
+      "value": {
+        "max": 104,
+        "unit": "A"
+      }
+    },
+    "ISM": {
+      "parameter": "Pulsed Source Current (Body Diode)",
+      "value": {
+        "max": 420,
+        "unit": "A"
+      }
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "value": {
+        "typ": 1.3,
+        "unit": "V"
+      },
+      "conditions": [
+        {
+          "IS": 62,
+          "VGS": 0,
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "value": {
+        "typ": 86,
+        "unit": "ns"
+      },
+      "conditions": [
+        {
+          "VR": 130,
+          "IF": 62,
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": {
+        "typ": 110,
+        "max": 300,
+        "unit": "nC"
+      },
+      "conditions": [
+        {
+          "VR": 130,
+          "IF": 62,
+          "TC": 25,
+          "di/dt": 100,
+          "unit": "A/µs"
+        },
+        {
+          "VR": 130,
+          "IF": 62,
+          "TC": 125,
+          "di/dt": 100,
+          "unit": "A/µs"
+        }
+      ]
+    },
+    "IRRM": {
+      "parameter": "Reverse Recovery Current",
+      "value": {
+        "typ": 6.5,
+        "unit": "A"
+      },
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    }
+  },
+  "additional_info": {
+    "terminal_pad_finish": "Standard Terminal Pad finish is a solder alloy of 63%Pb 37%Sn"
+  }
+}

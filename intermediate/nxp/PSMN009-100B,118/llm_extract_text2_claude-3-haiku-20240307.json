@@ -1,0 +1,378 @@
+{
+  "general_info": {
+    "componentName": "PSMN009-100B",
+    "manufacturer": "Nexperia",
+    "description": "N-channel TrenchMOS SiliconMAX standard level FET",
+    "features": [
+      "Low conduction losses due to low on-state resistance",
+      "Suitable for high frequency applications due to fast switching characteristics"
+    ],
+    "applications": [
+      "High frequency computer motherboard DC-to-DC convertors",
+      "OR-ing applications"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "conditions": [
+        {
+          "Tj": "≤175 °C"
+        }
+      ],
+      "value": 100,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "conditions": [
+        {
+          "Tmb": 25,
+          "unit": "°C"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": 75,
+      "unit": "A"
+    },
+    "Ptot": {
+      "parameter": "Total Power Dissipation",
+      "conditions": [
+        {
+          "Tmb": 25,
+          "unit": "°C"
+        }
+      ],
+      "value": 230,
+      "unit": "W"
+    },
+    "VGSM": {
+      "parameter": "Peak Gate-Source Voltage",
+      "conditions": [
+        {
+          "tp": "≤50 μs",
+          "Tj": "≤150 °C",
+          "δ": 0.25
+        }
+      ],
+      "value": 30,
+      "unit": "V"
+    },
+    "EDS(AL)S": {
+      "parameter": "Non-Repetitive Drain-Source Avalanche Energy",
+      "conditions": [
+        {
+          "VGS": 10,
+          "Tj(init)": 25,
+          "ID": 35,
+          "Vsup": 15,
+          "tp": 0.1,
+          "RGS": 50
+        }
+      ],
+      "value": 120,
+      "unit": "mJ"
+    },
+    "IDS(AL)S": {
+      "parameter": "Non-Repetitive Drain-Source Avalanche Current",
+      "conditions": [
+        {
+          "VGS": 10,
+          "Vsup": 15,
+          "RGS": 50,
+          "Tj(init)": 25
+        }
+      ],
+      "value": 75,
+      "unit": "A"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth(j-mb)": {
+      "parameter": "Thermal Resistance from Junction to Mounting Base"
+    },
+    "Rth(j-a)": {
+      "parameter": "Thermal Resistance from Junction to Ambient",
+      "conditions": [
+        {
+          "description": "minimum footprint; mounted on a printed-circuit board"
+        }
+      ],
+      "value": 50,
+      "unit": "K/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "ID": 0.25,
+          "VGS": 0,
+          "Tj": -55,
+          "unit": "°C"
+        },
+        {
+          "ID": 0.25,
+          "VGS": 0,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 90,
+      "max": 100,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-Source Threshold Voltage",
+      "conditions": [
+        {
+          "ID": 1,
+          "VDS": "VGS",
+          "Tj": 175,
+          "unit": "°C"
+        },
+        {
+          "ID": 1,
+          "VDS": "VGS",
+          "Tj": 25,
+          "unit": "°C"
+        },
+        {
+          "ID": 1,
+          "VDS": "VGS",
+          "Tj": -55,
+          "unit": "°C"
+        }
+      ],
+      "min": 1,
+      "max": 4.4,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain Leakage Current",
+      "conditions": [
+        {
+          "VDS": 30,
+          "VGS": 0,
+          "Tj": 175,
+          "unit": "°C"
+        },
+        {
+          "VDS": 30,
+          "VGS": 0,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 0.021,
+      "max": 500,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate Leakage Current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "VDS": 0,
+          "Tj": 25,
+          "unit": "°C"
+        },
+        {
+          "VGS": -20,
+          "VDS": 0,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 10,
+      "max": 100,
+      "unit": "nA"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 25,
+          "Tj": 175,
+          "unit": "°C"
+        },
+        {
+          "VGS": 10,
+          "ID": 25,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 7.5,
+      "max": 8.8,
+      "unit": "mΩ"
+    },
+    "VSD": {
+      "parameter": "Source-Drain Forward Voltage",
+      "conditions": [
+        {
+          "IS": 25,
+          "VG": 0,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 0.8,
+      "max": 1.2,
+      "unit": "V"
+    }
+  },
+  "dynamic_characteristics": {
+    "QG(tot)": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "ID": 75,
+          "VDS": 80,
+          "VGS": 10,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 156,
+      "unit": "nC"
+    },
+    "QGS": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [
+        {
+          "ID": 75,
+          "VDS": 80,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 31,
+      "unit": "nC"
+    },
+    "QGD": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "ID": 75,
+          "VDS": 80,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "typ": 44,
+      "unit": "nC"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "VGS": 0,
+          "f": 1,
+          "Tj": 25,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 8250,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "VGS": 0,
+          "f": 1,
+          "Tj": 25,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 620,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "VGS": 0,
+          "f": 1,
+          "Tj": 25,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 300,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [
+        {
+          "VDS": 15,
+          "RL": 1.25,
+          "VGS": 10,
+          "RG(ext)": 6,
+          "Tj": 25,
+          "ID": 12,
+          "unit": "°C"
+        }
+      ],
+      "typ": 38,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "conditions": [
+        {
+          "VDS": 15,
+          "RL": 1.25,
+          "VGS": 10,
+          "RG(ext)": 6,
+          "Tj": 25,
+          "ID": 12,
+          "unit": "°C"
+        }
+      ],
+      "typ": 59,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [
+        {
+          "VDS": 15,
+          "RL": 1.25,
+          "VGS": 10,
+          "RG(ext)": 6,
+          "Tj": 25,
+          "ID": 12,
+          "unit": "°C"
+        }
+      ],
+      "typ": 120,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "conditions": [
+        {
+          "VDS": 15,
+          "RL": 1.25,
+          "VGS": 10,
+          "RG(ext)": 6,
+          "Tj": 25,
+          "ID": 12,
+          "unit": "°C"
+        }
+      ],
+      "typ": 43,
+      "unit": "ns"
+    }
+  }
+}
