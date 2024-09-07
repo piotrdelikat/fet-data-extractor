@@ -9,3 +9,7 @@ yarn.lock
 
 datasheets
 /images
+/text
+/textOCR
+/ocr
+/intermediateTextToJson
