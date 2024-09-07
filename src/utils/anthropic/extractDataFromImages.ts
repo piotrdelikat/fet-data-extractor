@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { anthropic, handleRateLimitError } from './anthropic';
-import { importMarkdownFile } from '../helpers';
+import { clearJsonEnds, importMarkdownFile, requestController } from '../helpers';
 import { fixJson } from '../openAI/openAI';
 
 export async function readValuesFromImagesAnthropic(
@@ -98,26 +98,27 @@ export async function readValuesFromImagesAnthropic(
         ],
       });
 
-    let response: any;
-    try {
-      response = await createMessageRequest();
+      let response: any;
+      try {
+        response = await requestController(createMessageRequest(), 'images to JSON, Anthropic API');
     } catch (error: any) {
       console.error('Error in readValuesFromImagesAnthropic:', error);
       if (error.response && error.response.status === 429) {
         await handleRateLimitError(error.response);
-        response = await createMessageRequest();
+        response = await requestController(createMessageRequest(), 'images to JSON, Anthropic API');
       } else {
         throw error;
       }
     }
-
+    
+    
     // Save JSON response
     let jsonOutput;
     try {
-      jsonOutput = JSON.parse(response.content[0].text);
+      jsonOutput = JSON.parse(clearJsonEnds(response.content[0].text));
     } catch (error) {
       console.error('Error parsing JSON:', error);
-      jsonOutput = await fixJson(response.content[0].text);
+      jsonOutput = await fixJson(clearJsonEnds(response.content[0].text));
     }
 
     return jsonOutput;

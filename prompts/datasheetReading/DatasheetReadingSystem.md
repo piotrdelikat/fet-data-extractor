@@ -123,4 +123,5 @@ Ensure all numeric values are stored as numbers, not strings. Only make exceptio
 Maintain consistent naming conventions throughout the JSON structure.
 Ensure that similar parameters across different sections are named consistently.
 
-Output the extracted data in a clean, well-structured JSON format without any additional text or explanations. Your output should be ready for direct use in data processing applications.
+Output the extracted data in a clean, well-structured JSON format without any additional text or explanations. Your output should be ready for direct use in data processing applications. Thus return ONLY the JSON object.
+

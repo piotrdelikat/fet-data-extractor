@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { importMarkdownFile } from '../helpers';
+import { importMarkdownFile, requestController } from '../helpers';
 import openai, { fixJson } from './openAI';
 
 export async function preselectPagesOpenAI(
@@ -101,12 +101,12 @@ export async function preselectPagesOpenAI(
 
   let response: any;
   try {
-    response = await createMessageRequest();
+    response = await requestController(createMessageRequest(), 'preselectig images with OpenAI API');
   } catch (error: any) {
     if (error.response && error.response.status === 429) {
       console.log('Rate limit reached. Retrying after a delay...');
       await new Promise((resolve) => setTimeout(resolve, 60000)); // Wait for 1 minute
-      response = await createMessageRequest();
+      response = await requestController(createMessageRequest(), 'preselectig images with OpenAI API');
     } else {
       throw error;
     }

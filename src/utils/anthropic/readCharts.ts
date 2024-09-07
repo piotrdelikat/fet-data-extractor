@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { anthropic, handleRateLimitError } from './anthropic';
-import { importMarkdownFile } from '../helpers';
+import { importMarkdownFile, requestController } from '../helpers';
 import { fixJson } from '../openAI/openAI';
 
 export const readVplateauAnthropic = async (
@@ -97,12 +97,12 @@ export const readVplateauAnthropic = async (
 
     let response: any;
     try {
-      response = await createMessageRequest();
+      response =  await requestController(createMessageRequest(), 'reading V_plateau value with Anthropic API');
     } catch (error: any) {
       console.error('Error reading V_plateau with Anthropic API:', error);
       if (error.response && error.response.status === 429) {
         await handleRateLimitError(error.response);
-        response = await createMessageRequest();
+        response = await requestController(createMessageRequest(), 'reading V_plateau value with Anthropic API');
       } else {
         throw error;
       }

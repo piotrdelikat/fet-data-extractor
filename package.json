@@ -9,9 +9,12 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.27.1",
     "@google/generative-ai": "^0.17.1",
+    "@langchain/community": "^0.2.32",
+    "convertapi": "^1.14.0",
     "dotenv": "^16.4.5",
     "fet-datasheets": "https://github.com/open-pe/fet-datasheets.git#dd19e9209df9e9055d76edd093077d391686bf24",
     "openai": "^4.56.0",
+    "pdf-parse": "^1.1.1",
     "pdf2pic": "^3.1.1"
   },
   "devDependencies": {

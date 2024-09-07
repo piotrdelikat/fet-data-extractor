@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { anthropic, handleRateLimitError } from './anthropic';
-import { importMarkdownFile } from '../helpers';
+import { importMarkdownFile, requestController } from '../helpers';
 import { fixJson } from '../openAI/openAI';
 
 export async function preselectPagesAnthropic(
@@ -114,11 +114,11 @@ export async function preselectPagesAnthropic(
 
   let response: any;
   try {
-    response = await createMessageRequest();
+    response = await requestController(createMessageRequest(), 'preselectig images with Anthropic API');
   } catch (error: any) {
     if (error.response && error.response.status === 429) {
       await handleRateLimitError(error.response);
-      response = await createMessageRequest();
+      response = await requestController(createMessageRequest(), 'preselectig images with Anthropic API');
     } else {
       throw error;
     }

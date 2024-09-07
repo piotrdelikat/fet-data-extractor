@@ -135,7 +135,7 @@ export const readVplateau = async (
 };
 
 export const fixJson = async (result: string) => {
-  console.log(`Attempting to fix JSON: ${result}`);
+  console.log(`Attempting to fix JSON output`);
 
   const response = await openai.chat.completions.create({
     model: 'gpt-4o-mini',
