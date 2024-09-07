@@ -12,4 +12,8 @@ datasheets
 /text
 /textOCR
 /ocr
-/intermediateTextToJson
+
+binaryPdfs.json
+failed.json
+nonExisting.json
+unprocessed.json

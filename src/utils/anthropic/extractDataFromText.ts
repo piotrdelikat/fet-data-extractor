@@ -1,7 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import { anthropic, handleRateLimitError } from './anthropic';
-import { clearJsonEnds, importMarkdownFile, requestController } from '../helpers';
+import {
+  clearJsonEnds,
+  createLogEntryOnError,
+  importMarkdownFile,
+  requestController,
+} from '../helpers';
 import { fixJson } from '../openAI/openAI';
 
 export async function readValuesFromTextAnthropic(
@@ -64,18 +69,27 @@ export async function readValuesFromTextAnthropic(
 
     let response: any;
     try {
-      response = await requestController(createMessageRequest(), 'text to JSON, Anthropic API');
+      response = await requestController(
+        createMessageRequest(),
+        'text to JSON, Anthropic API'
+      );
     } catch (error: any) {
       console.error('Error in readValuesFromTextAnthropic:', error);
       if (error.response && error.response.status === 429) {
         await handleRateLimitError(error.response);
-        response = await requestController(createMessageRequest(), 'text to JSON, Anthropic API');
+        response = await requestController(
+          createMessageRequest(),
+          'text to JSON, Anthropic API'
+        );
       } else {
-        throw error;
+        createLogEntryOnError(
+          textFilePath,
+          model,
+          `Error in readValuesFromTextAnthropic:', ${error}`
+        );
       }
     }
 
-    
     // Save JSON response
     let jsonOutput;
     try {

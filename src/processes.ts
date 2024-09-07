@@ -113,19 +113,23 @@ export const processPdfToImagesToJson = async (
 // processDocuments(`${datasheetsFolderPath}/infineon`, 6);
 // processDocuments(`${datasheetsFolderPath}/ao`, 6);
 // processDocuments(`${datasheetsFolderPath}/slkor`, 1);
-processPdfToImagesToJson(`${datasheetsFolderPath}/goford`, 3);
+// processPdfToImagesToJson(`${datasheetsFolderPath}/goford`, 3);
 
 export const processTextToJson = async (
   filePath: string,
+  outputFileName: string,
   model: string = 'claude-3-5-sonnet-20240620'
 ) => {
   const mpn = path.basename(filePath, '.txt');
 
   const mfr = path.basename(path.dirname(filePath));
 
-  const intermediatePath = path.join('intermediateTextToJson', mfr, mpn);
+  const intermediatePath = path.join('intermediate', mfr, mpn);
 
-  const llmExtractPath = path.join(intermediatePath, `llm_extract.json`);
+  const llmExtractPath = path.join(
+    intermediatePath,
+    `${outputFileName}_${model}.json`
+  );
   const textFilePath = filePath;
 
   // Check if the intermediate path exists, if not, create it
@@ -142,7 +146,6 @@ export const processTextToJson = async (
 
   // If llm_extract.json doesn't exist, perform data extraction from text
   if (fs.existsSync(textFilePath)) {
-    console.log(`Processing text file: ${textFilePath}`);
     const jsonOutput = await readValuesFromTextAnthropic(textFilePath, model);
 
     // Write the JSON output to the file
@@ -153,9 +156,53 @@ export const processTextToJson = async (
   }
 };
 
-//USAGE
-// processTextDocument('text/ao/AOTL66811.txt')
-// processTextDocument('text/diodes/DMT10H9M9LCT.txt')
+const processAllTextDocumentsForMnfTextLLM = (folderPath: string) => {
+  const files = fs.readdirSync(folderPath);
+  files.forEach((file) => {
+    if (file.endsWith('.txt')) {
+      const filePath = path.join(folderPath, file);
+      //USING SONNET-3-5 MODEL BY DEFAULLT
+      processTextToJson(filePath, 'llm_extract');
+    }
+  });
+};
+
+// Example usage:
+// processAllTextDocumentsForMnfTextLLM('text/diodes');
+
+export const processAllDocumentsFromBaseDirectory = async (
+  directoryBasePath: string
+) => {
+  // Check if the directory exists
+  if (!fs.existsSync(directoryBasePath)) {
+    console.error(`Directory does not exist: ${directoryBasePath}`);
+    return;
+  }
+
+  // Read all subdirectories in the base directory
+  const subdirectories = fs
+    .readdirSync(directoryBasePath, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name);
+
+  for (const subdirectory of subdirectories) {
+    const subdirectoryPath = path.join(directoryBasePath, subdirectory);
+    const files = fs.readdirSync(subdirectoryPath);
+
+    for (const file of files) {
+      if (file.endsWith('.txt')) {
+        const filePath = path.join(subdirectoryPath, file);
+        await processTextToJson(
+          filePath,
+          'llm_extract_text2',
+          'claude-3-haiku-20240307'
+        );
+      }
+    }
+  }
+
+  console.log('Finished processing all documents.');
+};
 
 const processSingleDocument = async (
   filePath: string,

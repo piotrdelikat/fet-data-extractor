@@ -1,6 +1,9 @@
 import fs from 'fs';
 import path from 'path';
-import { processPdfToImagesToJson, processTextToJson } from './processes';
+import {
+  processAllDocumentsFromBaseDirectory,
+  processPdfToImagesToJson,
+} from './processes';
 
 // Set the datasheets folder path
 export const datasheetsFolderPath = './node_modules/fet-datasheets';
@@ -19,17 +22,5 @@ const processAllPdfsVisualLLM = () => {
 // Process all PDFs to Images and to JSON with Visual LLM in all directories
 //processAllPdfsVisualLLM();
 
-const processAllTextDocumentsTextLLM = (folderPath: string) => {
-  const files = fs.readdirSync(folderPath);
-  files.forEach((file) => {
-    if (file.endsWith('.txt')) {
-      const filePath = path.join(folderPath, file);
-      processTextToJson(filePath);
-    }
-  });
-};
-
-// Example usage:
-// processAllTextDocumentsTextLLM('text/diodes');
-// processAllTextDocumentsTextLLM('text/toshiba');
-// processAllTextDocumentsTextLLM('text/epc_space')
+//Text to JSON from all mnf and mpn in 'text' folder holding text  extracted from PDFs
+//processAllDocumentsFromBaseDirectory('text');

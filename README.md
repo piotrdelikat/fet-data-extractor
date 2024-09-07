@@ -4,13 +4,14 @@ This project extracts values of electronic components from datasheets.
 
 ## Description
 
-The `fet-datasheets` project is designed to extract values of electronic components from datasheets in PDF format. It converts PDF files into images and then analyzes these images to extract relevant information such as component names, manufacturers, specifications, and other pertinent details. The extracted data is formatted as JSON for easy consumption.
+The `fet-datasheets` project is designed to extract values of electronic components from datasheets in PDF format. It converts PDF files into text or images and then analyzes these images to extract relevant information such as component names, manufacturers, specifications, and other pertinent details. The extracted data is formatted as JSON for easy consumption.
 
 ## Features
 
-- Converts PDF datasheets to high-quality images.
-- Reads and analyzes images to extract component information.
-- Utilizes Athropic and OpenAI's API for multi model image analysis.
+- Extracts text from PDFs.
+- Converts PDF datasheets to high-quality images used for text extraction with OCR or Visual LLM.
+- Analyzes text or images to extract component information.
+- Utilizes Athropic model Sonnet-3-5 for extracting V Plateau value from Gate Charge chart.
 - Outputs the extracted data in JSON format.
 
 ## Installation
@@ -36,9 +37,12 @@ Make sure to set up your environment variables by creating a `.env` file in the 
 OPENAI_API_KEY=your_openai_api_key
 ANTHROPIC_API_KEY=your_anthropic_api_key
 
+If you use convertapi for pdf to text conversion using OCR
+CONVERT_API_KEY=your_convert_api_key
+
 ## Usage
 
-To run the main script:
+Uncomment the desired function and run the main script:
 yarn dev
 
 ## Utility Scripts
@@ -51,30 +55,12 @@ yarn install-datasheets
 
 Or change datasheetsFolderPath to a folder containing the PDFs in index.ts file.
 
-### Move Omitted Files
-
-This script processes all directories in the 'intermediate' folder, moving any files found in 'omitted' subfolders back to their respective 'images' folders, and then deletes the empty 'omitted' folders.
-
-To move files from the 'omitted' folder back to the main 'images' folder:
-
-yarn move-omitted
-
-### Fix File Names
-
-This script ensures correct sorting order for image files by renaming them from `X.1.png` to `X.01.png` for pages 1-9.
-To pad single-digit page numbers with a leading zero in image filenames:
-
-yarn fix-filenames
-
-### Copy Images Folders
-
-This script copies content of 'images' folder to the 'intermediate' folder per manufacturer and component to separate images folder.
-
-yarn copyImagesFolders
-
 ## File Processing
 
-The main script (`src/index.ts`) handles the following tasks:
+The main scripts in (`src/index.ts`) handles the following tasks:
+
+- processAllPdfsVisualLLM
+  calls processPdfToImagesToJson on all directories in datasheetsFolderPath (./node_modules/fet-datasheets)
 
 1. PDF to Image conversion
 2. Pages preselection (gpt-4o-mini)
@@ -82,7 +68,17 @@ The main script (`src/index.ts`) handles the following tasks:
 4. Chart reading (V_plateau) (sonnet-3-5)
 5. Saving the extracted data in JSON format
 
+- processAllDocumentsFromBaseDirectory('text');
+  Convert Text to JSON with LLM from all mnf and mpn in 'text' folder holding text extracted from PDFs
+
 For more details on each process, refer to the respective utility files in the `src/utils` directory.
+
+TODO:
+
+- Add preselection of pages to find page with Gate Charge chart based on text extracted from pdf.
+- Benchmarking results from different methods text/OCR to text/Visual LLM for completeness of parameters required for calcualating Power Loss
+- Tests
+- CLI commands
 
 ## License
 
