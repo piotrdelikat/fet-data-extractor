@@ -1,0 +1,1000 @@
+EPC7018G Datasheet
+
+
+Features
+• Ultra-low QG For High Efficiency
+• Logic Level
+• Light Weight – 0.170 grams
+• New Compact Hermetic Package with Dual Gate
+• Source Sense Pin
+• Total Dose
+– Rated to 1000 krad
+• Single Event
+– SEE immunity for LET of 85 MeV/mg/cm2 with VDS up to 100% of rated Breakdown
+• Low Dose Rate at 100 mRad/sec
+– Maintains Pre-Rad specification
+• Neutron
+– Maintains Pre-Rad specification for up to 3 x 1015 Neutrons/cm2
+Applications
+• Satellite and Avionics
+• Deep Space Probes
+• High Speed Rad Hard DC-DC Conversion
+• Rad Hard Motor Controllers
+• Nuclear Facilities
+
+
+
+
+
+EPC7018G
+Rad Hard eGaN® 100 V, 80 A,
+6.0 mΩ Surface Mount
+Description
+EPC Space FSMD-G series of eGaN® power switching HEMTs have been specifically designed for critical applications in the high reliability or commercial satellite space environments. These devices have exceptionally high electron mobility and a low temperature coefficient resulting in very low RDS(on) values. The lateral structure of the die provides for very low gate charge (QG) and extremely fast switching times. These features enable faster power supply switching frequencies resulting in higher power densities, higher efficiencies and more compact packaging.
+
+Thermal Characteristics                 I/O Pin Assignment (Bottom View)
+
+
+2    5    1
+Symbol   Parameter-Conditions  Value  Units     Pin  Symbol   Description
+
+R     Thermal Resistance       48
+1   G     Gate
+3
+
+θJA
+Junction to Ambient (Note 3)
+°C/W
+2   G     Gate
+
+RθJC
+Thermal Resistance Junction to Case
+1.53
+3  D
+4  S
+5  SS
+Drain Source
+Source Sense
+
+Absolute Maximum Rating (TC = 25°C unless otherwise noted)
+Symbol              Parameter-Conditions                Value        Units
+
+
+VDS
+
+Iᴅ Iᴅᴍ Vɢꜱ
+TJ , TSTG
+Tꜱᴏʟ ESD
+Drain to Source Voltage (Note 1)
+Drain-to-Source Voltage (up to 10,000 5 ms pulses at 150°C) Continuous Drain Current ID @ VGS = 5 V
+Single-Pulse Drain Current tpulse = 300 μs
+Gate to Source Voltage (Note 2)
+Operating and Storage Junction Temperature Range Package Mounting Surface Temperature
+ESD Class
+100
+V
+120
+80
+A
+345
++6 / -4        V
+-55 to +150
+°C
+260
+ΔB
+
+
+
+
+©2023 EPC SPACE
+1                         EPC.SPACE
+
+EPC7018G Datasheet
+
+
+Static Characteristics (Typical (TYP) values are for reference only.)
+Parameter               Symbol        Test Conditions        MIN  TYP  MAX  Units
+
+Drain to Source Voltage
+
+Drain to Source Leakage
+BVDSS
+
+I
+VGS = 0 V, ID = 0.9 mA VDS = 100 V, VGS = 0 V
+
+
+TC = 25°C
+100
+
+
+0.001
+V
+0.4
+
+DSS
+VDS
+= 100 V, VGS
+= 0 V
+TC = 125°C
+0.01
+mA
+
+Gate to Source Forward Leakage Gate to Source Forward Leakage# Gate to Source Reverse Leakage Gate to Source Threshold Voltage
+Gate to Source Threshold Voltage Temperature Coefficient
+Drain to Source Resistance (Note 4) Source to Drain Forward Voltage (Note 5)
+
+
+IGSS
+
+
+VGS(th) ΔVGS(th) RDS(on) VSD
+VGS = 5 V VGS = 5 V VGS = -4 V
+
+VDS = VGS , ID = 12 mA
+
+VGS = 5 V, ID = 40 A IS = 0.5 A, VG = 0 V
+TC = 25°C TC = 125°C TC = 25°C TC = 25°C
+-55°C < TA < 150°C
+TC = 25°C TC = 25°C
+
+
+
+
+0.8
+0.01
+0.05
+0.01
+1.2
+-1.9
+5.2
+1.8
+0.5
+
+
+0.5
+2.5
+
+
+6.0
+
+
+
+
+V
+mV/°C
+mΩ V
+All measurements were done with substrate shorted to source. # Defined by design. Not subject to production test.
+
+Dynamic Characteristics (TC = 25°C unless otherwise noted. Typical (TYP) values are for reference only.)
+Parameter                  Symbol      Test Conditions      MIN  TYP  MAX  Units
+
+Input Capacitance
+Reverse transfer Capacitance Output Capacitance
+Effective Output Capacitance, Energy Related Effective Output Capacitance, Time Related
+Total Gate Charge
+CISS CRSS COSS COSS(ER) COSS(TR)
+QG
+
+
+VDS = 50 V, VGS = 0 V
+
+
+VDS = 0 to 50 V, VGS = 0 V
+
+VDS = 50 V, VGS = 5 V, ID = 40 A
+1240
+5.7
+740       pF
+970
+1250
+
+11.7
+
+Gate to Source Charge Gate to Drain Charge
+QGS QGD
+
+VDS
+
+= 50 V, ID
+
+= 40 A
+4.0
+2.1       nC
+
+Output Charge (Note 6)
+Source to Drain Recovery Charge
+QOSS QRR
+VDS = 50 V, VGS = 0 V            63
+0
+All measurements were done with substrate shorted to source.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+©2023 EPC SPACE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2                         EPC.SPACE
+
+EPC7018G Datasheet
+
+Radiation Characteristics
+EPC Space eGaN® HEMTs are tested according to MIL-STD-750 Method 1019 for total ionizing dose validation. Every manufacturing lot is tested for total ionizing dose of Gamma radiation with an in-situ bias for (i) VGS = 5 V,
+(ii) VDS = VGS = 0 V and (iii) VDS = 80% BVDSS.
+
+Electrical Characteristics up to 1000 krads (TC = 25°C unless otherwise noted. Typical (TYP) values are for reference only.)
+Parameter               Symbol      Test Conditions     MIN    TYP   MAX   Units
+
+Maximum Drain to Source Voltage Gate to Source Threshold Voltage Drain to Source Leakage
+Gate to Source Forward Leakage
+VDSMAX VGS(th) IDSS
+
+I
+VGS = 0 V, ID = 0.9 mA VDS = VGS , ID = 12 mA VDS = 100 V, VGS = 0 V
+VGS = 5 V
+100
+0.8
+
+
+1.2
+0.001
+0.01
+
+V
+2.5
+0.4
+0.5   mA
+
+Gate to Source Reverse Leakage
+GSS
+VGS
+= -4 V
+0.01
+0.5
+
+Drain to Source Resistance (Note 4)
+RDS(on)
+ID = 40 A, VGS = 5 V
+5.2
+6.0   mΩ
+
+Typical Single Event Effect Safe Operating Area
+Note : All Single Event Effect testing is performed on the K-500 Cyclotron at Texas A&M University
+
+
+Test              Environment              VDS Voltage ( V)
+
+Ion    LET
+Range
+2
+Energy
+VGS = 0 V   VGS = -4V
+MeV/mg/cm   μm     MeV
+
+See SOA
+Xe      50      131      1653      100      100
+
+Au    83.7
+130
+2482
+100
+100
+
+
+
+
+140
+
+120
+
+100
+
+80
+
+60                               Xe
+40                               Au
+
+20
+
+0
+0        -1.0       -2.0       -3.0       -4.0
+VGS Bias (Volts)
+
+Figure 1: Typical Single Event Effect Safe Operating Area
+
+
+
+©2023 EPC SPACE
+3                         EPC.SPACE
+
+EPC7018G Datasheet
+
+Figure 2: Typical Output Characteristics at 25°C           Figure 3: Typical Output Characteristics at 125°C
+
+
+300
+
+250
+
+200
+
+150
+
+100
+
+50
+
+VGS = 2 V VGS = 3 V VGS = 4 V VGS = 5 V
+300
+
+250
+
+200
+
+150
+
+100
+
+50
+
+VGS = 2 V VGS = 3 V VGS = 4 V VGS = 5 V
+
+
+0
+0.0
+
+0.5
+
+1.0
+
+1.5
+
+2.5
+
+3.0
+
+3.0
+0
+0.0
+
+0.5
+
+1.0
+
+1.5
+
+2.5
+
+3.0
+
+3.0
+VDS – Drain-to-Source Voltage (V)                         VDS – Drain-to-Source Voltage (V)
+
+
+
+
+
+
+300
+
+250
+
+200
+
+150
+
+100
+
+50
+
+0
+Figure 4: Typical Transfer Characteristics
+
+25°C
+125°C
+-55°C VDS = 3 V
+Figure 5: RDS₍ₒn₎ vs. VGS for Various Temperatures
+16
+25°C
+14                       125°C
+-55°C
+12
+ID = 40 A
+10
+
+8
+
+6
+
+4
+
+2
+
+0
+
+2.0
+2.5
+3.0  3.5  4.0  4.5  5.0
+VGS – Gate-to-Source Voltage (V)
+2.5     3.0     3.5     4.0     4.5     5.0
+VGS – Gate-to-Source Voltage (V)
+
+Figure 6: RDS₍ₒn₎ vs. VGS for Various Drain Currents
+16
+
+14
+ID = 20 A
+12                      ID = 40 A
+ID = 60 A
+10                      ID = 80 A
+
+8
+
+6
+
+4
+
+2
+
+0
+2.5     3.0     3.5     4.0     4.5     5.0
+VGS – Gate-to-Source Voltage (V)
+
+
+
+©2023 EPC SPACE
+4                         EPC.SPACE
+
+EPC7018G Datasheet
+
+
+
+
+1.50
+
+
+
+1.25
+
+
+
+1.00
+
+
+
+0.50
+Figure 7: Normalized Threshold Voltage vs. Temperature
+
+ID = 11.5 mA
+
+
+2.5
+
+
+
+2.0
+
+
+
+1.5
+
+
+
+1.0
+Figure 8: Normalized On-State Resistance vs. Temperature
+
+ID = 40 A, VG = 5 V
+
+
+
+0.00
+-60
+
+-40
+
+-20  0  20  40  60  80  100  120  140  160
+TJ – Junction Temp (°C)
+0.5
+-60
+
+-40
+
+-20  0  20  40  60  80  100  120  140  160
+TJ – Junction Temp (°C)
+
+
+
+
+2500
+
+
+2000
+
+
+1500
+
+
+1000
+
+
+500
+
+
+0
+Figure 9: Typical Capacitance (Linear Scale)
+
+
+COSS = CGD + CSD CISS = CGD + CGS CRSS = CGD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0       25       50       75      100
+VDS – Drain-to-Source Voltage (V)
+Figure 10: Typical Gate Charge
+5
+
+ID = 40 A VDS = 50 V
+
+
+3
+
+
+2
+
+
+1
+
+
+0
+0     2     4     6     8     10    12
+QG – Gate Charge (nC)
+
+Figure 11: Typical Output Charge and COSS Stored Energy
+100                              4
+
+
+
+75                              3
+
+
+
+50                              2
+
+
+
+25                              1
+
+
+
+0
+0     20     40
+
+60    80
+0
+100
+VDS – Drain-to-Source Voltage (V)
+
+
+
+
+©2023 EPC SPACE
+5                         EPC.SPACE
+
+EPC7018G Datasheet
+
+
+Package         K
+Outline and
+
+
+Symbol
+Inches     Millimeters MIN   MAX   MIN   MAX
+
+
+Note
+
+Dimensions
+A (2x)  0.028  0.038  0.711  0.965
+
+
+
+
+
+
+
+
+
+
+
+
+
+Both sides
+.005 (0.13) REF
+J        B (3x)
+C (3x) D
+E
+H         F
+G
+H
+A B
+J
+C         K
+D
+E
+F
+G
+0.075
+0.025
+0.015
+0.051
+0.024
+0.07
+0.078
+0.215
+0.311
+0.085
+0.035
+0.025
+0.061
+0.034
+0.08
+0.088
+0.225
+0.321
+1.905
+0.635
+0.381
+1.295
+0.61
+1.778
+1.981
+5.461
+7.899
+2.159
+0.889
+0.635
+1.549
+0.864
+2.032
+2.235
+5.715
+8.153
+Standard Terminal Pad finish is a solder alloy of 63%Pb 37%Sn
+
+
+Package Connections
+D
+
+
+NOTE: SS pin is connected
+G             directly to source of internal die.
+
+
+SS
+S
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+©2023 EPC SPACE
+6                         EPC.SPACE
+
+EPC7018G Datasheet
+
+Notes
+Note 1. NEVER exceed the absolute maximum VDS of the device otherwise permanent damage/destruction may result.
+Note 2. NEVER exceed the absolute maximum VGS of the device otherwise permanent damage/destruction may result.
+We recommend use at no greater than +5 V as the HEMT is fully conducting at this point.
+
+Note 3. RθJA measured with LCC3 package mounted to double-sided PCB, 0.063” thickness with 1.0 square inches of copper area on the top (mounting side) and a flood etch (3 square inches) on the bottom side.
+
+Note 4. Measured using four wire (Kelvin) sensing and pulse measurement techniques. Measurement pulse width is 80 μs and duty cycle is 1%, maximum.
+
+Note 5. With pulse measurement width 100–380 μs.
+
+Note 6. Guaranteed by design/device construction. Not tested.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+©2023 EPC SPACE
+7                         EPC.SPACE
+
+EPC7018G Datasheet
+
+EPC Space Part Number Information
+
+EPC7018  D  C  H
+
+
+
+Part Prefix
+Radiation Level Screening Level
+Package Type (empty Die Level)
+
+
+Ordering Information Availability
+
+Screening Options                Rad Assurance Options 1 character                      1 character
+C = Developmental Unit
+
+S = Space Level1
+K = Die Space Level Screen
+H = 1000 krad LET = 84
+
+
+Part Number          Screening Level          Shipping Media
+EPC7018GC         Developmental Units
+
+EPC7018GSH          Space Level
+EPC7018KH          Die Space Level
+Waffle Trays Tape and Reel
+
+
+
+1 Screening and qualification consistent to an equivalent MIL-PRF-19500 specification.
+
+EPC7018GC and EPC7018C devices are intended for engineering development purposes only and are NOT intended to be used as flight units.
+
+EPC Space Rad Hard HEMT are not sensitive to Total Ionizing Dose as such the H level covers the R,F,G radiation levels.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+©2023 EPC SPACE
+8                         EPC.SPACE
+
+EPC7018G Datasheet
+
+Screening Flow Equivalent to a MIL-PRF-19500 General Specification
+EPC SPACE Qual Flow Equivalent to a MIL-PRF-19500 Specification
+Operation       Test                     Test Methods Per Mil STD 750  Sample Size  Space Level  COT
+Probe Testing                    EPC SPACE Internal       100%      ✓      ✓
+
+Pre-Assembly
+
+
+Post-Assembly
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Screening
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Group A Inspection (Conformance)
+
+
+Group B Inspection (Conformance)
+Group C Inspection (Conformance)
+Group D Inspection (Conformance)
+Group E Inspection
+Visual inspection                   EPC SPACE Internal       100%      ✓      ✓
+Die Shear                          2,017           5       ✓      ✓
+X-Ray                            2076           5       ✓      ✓
+Serilialization                                    100%      ✓
+Electricals                     3411,3413,3421,3404      100%      ✓      ✓
+Temp Cycling                        1051          100%      ✓
+Constant Acceleration                    2006          100%      ✓
+PIND                            2052          100%      ✓
+Initial Electricals (Read and Record)          3411,3413,3421,3404       100%      ✓ HTGB                         1042 Condition B        100%      ✓ Interim Electricals (Read and Record)         3411,3413,3421,3404       100%      ✓ HTRB                      1042 Condition A 240 Hours     100%      ✓ Final Electricals (Read and Record)          3411,3413,3421,3404       100%      ✓ Final Electricals (High and Low Temperatures)     3411,3413,3421,3404       100%      ✓ Deltas                      Per Procurement Specification    100%      ✓
+Percent Defective Allowable           Per Procurement Specification    100%      ✓
+Dynamic RDSON                  EPC SPACE Internal       100%      ✓
+OutLiers Removal                  EPC SPACE Internal       100%      ✓
+X-RAY                           2076          100%      ✓
+Tinning                                       100%      ✓
+Hermetic Seal, Fine & Gross Leak              1071          100%      ✓
+Final Electricals                   3411,3413,3421,3404      100%      ✓
+
+A-2 DC Static Tests at 25ºC            3411,3413,3421,3404       116      ✓
+
+A-3 High & Low Temp DC Static Tests       3411,3413,3421,3404       116      ✓
+A-7 Gate Charges                  3471 Condition B        45       ✓
+A-7 Capacitance                      3473           45       ✓
+Sample base equivalent to a MIL-PRF-19500 flow or as required by procurement specificcation
+Sample base performed yearly per package style equivalent to a MIL-PRF-19500 flow or as required by procurement specification
+TID                             1019           15       ✓
+SEE                            1080           5       ✓
+E-1, E-2, E-5, E-6 E-7               Performed during product introduction or a major process change
+(Qualification   equivalent to a MIL-PRF-19500 flow or as required by
+
+Inspection)
+E8 Switching
+procurement specification
+
+
+
+
+
+
+
+
+
+
+
+
+
+©2023 EPC SPACE
+9                         EPC.SPACE
+
+EPC7018G Datasheet
+
+Disclaimers
+ALL PRODUCT, PRODUCT SPECIFICATIONS AND DATA ARE SUBJECT TO CHANGE WITHOUT NOTICE TO IMPROVE RELIABILITY,
+FUNCTION OR DESIGN OR OTHERWISE. EPC Space Corporation, its affiliates, agents, employees, and all persons acting on its or their behalf (collectively, “EPC Space”), disclaim any and all liability for any errors, inaccuracies or incompleteness contained in any datasheet or in any other disclosure relating to any product. EPC Space makes no warranty, representation or guarantee regarding the suitability of the products for any particular purpose. To the maximum extent permitted by applicable law, EPC Space disclaims (i) any and all liability arising out of the application or use of any product, (ii) any and all liability, including without limitation special, consequential or incidental damages, and (iii) any and all implied warranties, including warranties of fitness for particular purpose, non-infringement and merchant- ability. Statements regarding the suitability of products for certain types of applications are based on EPC Space market knowledge
+of typical requirements that are often placed on similar technologies in generic applications. Product specifications do not expand or otherwise modify EPC Space terms and conditions of purchase, including but not limited to the warranty expressed therein. Except as expressly indicated in writing, EPC Space products are not designed for use in medical, life-saving, or life-sustaining applications or for any other application in which the failure of the EPC Space product could result in personal injury or death. Customers using EPC Space products not expressly indicated for use in such applications do so at their own risk. Please contact authorized EPC Space personnel to obtain written terms and conditions regarding products designed for such applications. No license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted by this document or by any conduct of EPC Space. Product names and mark- ings noted herein may be trademarks of their respective owners.
+
+Export Administration Regulations (EAR)
+The products described in this datasheet are subject to the U.S. Export Administration Regulations (EAR), 15 C.F.R. Pts 730-774, and are classified in ECCN 9A515.e. These products may not be exported, reexported, or transferred (in country) to any foreign country, or foreign entity, by any means, except in accordance with the requirements of such regulations.
+
+Patents
+EPC Corporation and EPC Space hold numerous worldwide patents. Any that apply to the product(s) listed in this document are identi- fied by markings on the product(s) or on internal components of the product(s) in accordance with local patent laws.
+eGaN® is a registered trademark of Efficient Power Conversion Corporation, Inc. Data and specification subject to change without notice.
+
+Revisions
+Datasheet Revision      Product Status
+REV Q1           Characterization and Qualification
+Preliminary          Production Released
+
+Information subject to change without notice. Revised May, 2023
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+©2023 EPC SPACE
+10                         EPC.SPACE

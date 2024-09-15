@@ -1,0 +1,112 @@
+{
+  "general_info": {
+    "componentName": "IRL540NPbF",
+    "manufacturer": "International Rectifier",
+    "description": "HEXFET Power MOSFET",
+    "leadFree": true
+  },
+  "thermal_characteristics": {
+    "RθJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "value": null,
+      "unit": "°C/W"
+    },
+    "RθJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": null,
+      "unit": "°C/W"
+    }
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 33,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 110,
+      "unit": "A"
+    },
+    "TJ": {
+      "parameter": "Junction Temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "TSTG": {
+      "parameter": "Storage Temperature",
+      "value": -55,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain to Source Leakage Current",
+      "min": null,
+      "typ": 1,
+      "max": 250,
+      "unit": "mA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "min": 2,
+      "typ": 3,
+      "max": 4,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "On-State Resistance",
+      "min": 0.077,
+      "typ": 0.05,
+      "max": null,
+      "unit": "Ω"
+    }
+  },
+  "dynamic_characteristics": {
+    "CISS": {
+      "parameter": "Input Capacitance",
+      "min": null,
+      "typ": 1300,
+      "max": null,
+      "unit": "pF"
+    },
+    "COSS": {
+      "parameter": "Output Capacitance",
+      "min": null,
+      "typ": 300,
+      "max": null,
+      "unit": "pF"
+    },
+    "CRSS": {
+      "parameter": "Reverse Transfer Capacitance",
+      "min": null,
+      "typ": 50,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "min": null,
+      "typ": 67,
+      "max": null,
+      "unit": "nC"
+    }
+  }
+}

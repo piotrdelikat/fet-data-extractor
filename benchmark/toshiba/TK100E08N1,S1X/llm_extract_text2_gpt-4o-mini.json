@@ -1,0 +1,386 @@
+{
+  "general_info": {
+    "componentName": "TK100E08N1",
+    "manufacturer": "Toshiba",
+    "description": "Silicon N-channel MOS (U-MOS™-H)",
+    "start_of_commercial_production": "2011-12",
+    "applications": [
+      "Switching Voltage Regulators"
+    ],
+    "features": [
+      "Low drain-source on-resistance: RDS(ON) = 2.6 mΩ (typ.) (VGS = 10 V)",
+      "Low leakage current: IDSS = 10 μA (max) (VDS = 80 V)",
+      "Enhancement mode: Vth = 2.0 to 4.0 V (VDS = 10 V, ID = 1.0 mA)"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-source voltage",
+      "value": 80,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-source voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain current (DC)",
+      "value": 214,
+      "unit": "A"
+    },
+    "IDP": {
+      "parameter": "Drain current (pulsed)",
+      "value": 100,
+      "unit": "A"
+    },
+    "PD": {
+      "parameter": "Power dissipation",
+      "value": 255,
+      "unit": "W"
+    },
+    "EAS": {
+      "parameter": "Single-pulse avalanche energy",
+      "value": 278,
+      "unit": "mJ"
+    },
+    "IAR": {
+      "parameter": "Avalanche current",
+      "value": 100,
+      "unit": "A"
+    },
+    "Tch": {
+      "parameter": "Channel temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "Tstg": {
+      "parameter": "Storage temperature",
+      "value": "−55 to 150",
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth(ch-c)": {
+      "parameter": "Channel-to-case thermal resistance",
+      "value": 0.49,
+      "unit": "°C/W"
+    },
+    "Rth(ch-a)": {
+      "parameter": "Channel-to-ambient thermal resistance",
+      "value": 83.3,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "IGSS": {
+      "parameter": "Gate leakage current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 0.1,
+      "unit": "μA"
+    },
+    "IDSS": {
+      "parameter": "Drain cut-off current",
+      "conditions": [
+        {
+          "VDS": 80,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 10,
+      "unit": "μA"
+    },
+    "V(BR)DSS": {
+      "parameter": "Drain-source breakdown voltage",
+      "conditions": [
+        {
+          "ID": 10,
+          "unit": "mA"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 80,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "Vth": {
+      "parameter": "Gate threshold voltage",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 2,
+      "typ": null,
+      "max": 4,
+      "unit": "V"
+    },
+    "RDS(ON)": {
+      "parameter": "Drain-source on-resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 2.6,
+      "max": 3.2,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": "1 MHz"
+        }
+      ],
+      "min": null,
+      "typ": 9000,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse transfer capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 52,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 2100,
+      "max": null,
+      "unit": "pF"
+    },
+    "Rg": {
+      "parameter": "Gate resistance",
+      "conditions": [],
+      "min": null,
+      "typ": 3.2,
+      "max": null,
+      "unit": "Ω"
+    },
+    "tr": {
+      "parameter": "Switching time (rise time)",
+      "conditions": [],
+      "min": null,
+      "typ": 26,
+      "max": null,
+      "unit": "ns"
+    },
+    "ton": {
+      "parameter": "Switching time (turn-on time)",
+      "conditions": [],
+      "min": null,
+      "typ": 53,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Switching time (fall time)",
+      "conditions": [],
+      "min": null,
+      "typ": 46,
+      "max": null,
+      "unit": "ns"
+    },
+    "toff": {
+      "parameter": "Switching time (turn-off time)",
+      "conditions": [],
+      "min": null,
+      "typ": 140,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "gate_charge_characteristics": {
+    "Qg": {
+      "parameter": "Total gate charge",
+      "conditions": [
+        {
+          "VDD": 64,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 130,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs1": {
+      "parameter": "Gate-source charge 1",
+      "conditions": [
+        {
+          "VDD": 64,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 45,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-drain charge",
+      "conditions": [
+        {
+          "VDD": 64,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 33,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qsw": {
+      "parameter": "Gate switch charge",
+      "conditions": [
+        {
+          "VDD": 64,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 53,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "source_drain_characteristics": {
+    "IDR": {
+      "parameter": "Reverse drain current (DC)",
+      "conditions": [],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "A"
+    },
+    "IDRP": {
+      "parameter": "Reverse drain current (pulsed)",
+      "conditions": [],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "A"
+    },
+    "VDSF": {
+      "parameter": "Diode forward voltage",
+      "conditions": [],
+      "min": null,
+      "typ": -1.2,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "conditions": [],
+      "min": null,
+      "typ": 93,
+      "max": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse recovery charge",
+      "conditions": [],
+      "min": null,
+      "typ": 190,
+      "max": null,
+      "unit": "nC"
+    }
+  }
+}

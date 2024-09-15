@@ -1,0 +1,252 @@
+{
+  "general_info": {
+    "componentName": "PSMN3R5-80PS",
+    "manufacturer": "Nexperia",
+    "description": "N-channel 80 V, 3.5 mΩ standard level MOSFET in TO-220",
+    "features": [
+      "High efficiency due to low switching and conduction losses",
+      "Suitable for standard level gate drive"
+    ],
+    "applications": [
+      "DC-to-DC converters",
+      "Load switch",
+      "Motor control",
+      "Server power supplies"
+    ]
+  },
+  "quick_reference_data": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "min": null,
+      "typ": null,
+      "max": 80,
+      "unit": "V",
+      "conditions": "Tj ≥ 25 °C; Tj ≤ 175 °C"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "min": null,
+      "typ": null,
+      "max": 120,
+      "unit": "A",
+      "conditions": "Tmb = 25 °C; VGS = 10 V"
+    },
+    "Ptₒt": {
+      "parameter": "Total Power Dissipation",
+      "min": null,
+      "typ": null,
+      "max": 338,
+      "unit": "W",
+      "conditions": "Tmb = 25 °C"
+    },
+    "Tj": {
+      "parameter": "Junction Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 25,
+          "Tj": 100,
+          "unit": "°C"
+        },
+        {
+          "VGS": 10,
+          "ID": 25,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 3,
+      "typ": 3.5,
+      "max": 5.8,
+      "unit": "mΩ"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-Source Threshold Voltage",
+      "conditions": [
+        {
+          "ID": 1,
+          "VDS": "VGS",
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 1,
+      "typ": 4.6,
+      "max": 4,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain Leakage Current",
+      "conditions": [
+        {
+          "VDS": 80,
+          "VGS": 0,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 0.02,
+      "max": 10,
+      "unit": "µA"
+    },
+    "IGSS": {
+      "parameter": "Gate Leakage Current",
+      "conditions": [
+        {
+          "VGS": -20,
+          "VDS": 0,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "nA"
+    }
+  },
+  "dynamic_characteristics": {
+    "QG(total)": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "ID": 0,
+          "VDS": 0,
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 135,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGD": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 75,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 27,
+      "max": null,
+      "unit": "nC"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 9961,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 847,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [],
+      "min": null,
+      "typ": 401,
+      "max": null,
+      "unit": "pF"
+    }
+  },
+  "limiting_values": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "min": null,
+      "max": 80,
+      "unit": "V",
+      "conditions": "Tj ≥ 25 °C; Tj ≤ 175 °C"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "min": -20,
+      "max": 20,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "min": null,
+      "max": 120,
+      "unit": "A",
+      "conditions": "VGS = 10 V; Tmb = 100 °C"
+    },
+    "IDM": {
+      "parameter": "Peak Drain Current",
+      "min": null,
+      "max": 803,
+      "unit": "A",
+      "conditions": "pulsed; tp ≤ 10 µs; Tmb = 25 °C"
+    },
+    "Ptₒt": {
+      "parameter": "Total Power Dissipation",
+      "min": null,
+      "max": 338,
+      "unit": "W",
+      "conditions": "Tmb = 25 °C"
+    },
+    "Tj": {
+      "parameter": "Junction Temperature",
+      "min": -55,
+      "max": 175,
+      "unit": "°C"
+    },
+    "Tsld(M)": {
+      "parameter": "Peak Soldering Temperature",
+      "min": null,
+      "max": 260,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth(j-mb)": {
+      "parameter": "Thermal Resistance from Junction to Mounting Base",
+      "min": null,
+      "typ": 0.22,
+      "max": 0.44,
+      "unit": "K/W"
+    },
+    "Rth(j-a)": {
+      "parameter": "Thermal Resistance from Junction to Ambient",
+      "min": null,
+      "typ": 60,
+      "max": null,
+      "unit": "K/W"
+    }
+  },
+  "package_information": {
+    "packageType": "TO-220AB",
+    "description": "Plastic single-ended package; heatsink mounted; 1 mounting hole; 3-lead TO-220AB"
+  }
+}

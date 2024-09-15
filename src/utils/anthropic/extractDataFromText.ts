@@ -18,6 +18,7 @@ export async function readValuesFromTextAnthropic(
   try {
     const textContent = fs.readFileSync(textFilePath, 'utf-8');
 
+    const exampleTextFile = `./prompts/datasheetReading/examples/EPC7018GC.txt`;
     const exampleOutputFile = `./prompts/datasheetReading/examples/llm_extract_claude-3-5-sonnet-20240620.json`;
     const exampleAnswers = JSON.parse(
       fs.readFileSync(exampleOutputFile, 'utf-8')
@@ -25,9 +26,6 @@ export async function readValuesFromTextAnthropic(
 
     const DataSheetReadingSystem = importMarkdownFile(
       'prompts/datasheetReading/DatasheetReadingSystem.md'
-    );
-    const DataSheetReadingUser = importMarkdownFile(
-      'prompts/datasheetReading/DatasheetReadingTextUser.md'
     );
 
     const createMessageRequest = async () =>
@@ -42,7 +40,7 @@ export async function readValuesFromTextAnthropic(
             content: [
               {
                 type: 'text',
-                text: DataSheetReadingUser,
+                text: exampleTextFile,
               },
             ],
           },

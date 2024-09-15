@@ -1,0 +1,293 @@
+{
+  "general_info": {
+    "componentName": "IPB019N08N3 G",
+    "manufacturer": "Infineon",
+    "description": "OptiMOS’ 3 Power-Transistor",
+    "features": [
+      "Ideal for high frequency switching and sync. rec.",
+      "Optimized technology for motor drive applications",
+      "Excellent gate charge x R DS(on) product (FOM)",
+      "Very low on-resistance RD(on)",
+      "Superior thermal resistance",
+      "N-channel, normal level",
+      "100% avalanche tested",
+      "Pb-free plating; RoHS compliant",
+      "Qualified according to JEDEC ¹) for target applications",
+      "Halogen-free according to IEC61249-2-21"
+    ],
+    "applications": [
+      "Motor drive applications",
+      "High frequency switching and sync. rec."
+    ]
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": 0.5,
+      "unit": "K/W"
+    },
+    "RthJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "value": 62,
+      "unit": "K/W",
+      "conditions": "Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 ct (one layer, 70 pm thick) copper area for drain connection. PCB is vertical in still air."
+    }
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 180,
+      "unit": "A"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "value": 180,
+      "unit": "A"
+    },
+    "VDS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 80,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": "+20 / -4",
+      "unit": "V"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating and Storage Junction Temperature Range",
+      "value": "-55 to +175",
+      "unit": "°C"
+    },
+    "TSOL": {
+      "parameter": "Package Mounting Surface Temperature",
+      "value": 260,
+      "unit": "°C"
+    },
+    "ESD": {
+      "parameter": "ESD Class",
+      "value": "4B"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 80,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": 80,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 2,
+      "typ": 3.5,
+      "max": 5,
+      "unit": "V"
+    },
+    "IDSS_25C": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 80,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 10,
+      "max": 100,
+      "unit": "nA"
+    },
+    "IGSS_25C": {
+      "parameter": "Gate-Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": 10,
+      "unit": "nA"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 1.9,
+      "max": 2.7,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "CISS": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 10700,
+      "max": 14200,
+      "unit": "pF"
+    },
+    "COSS": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 2890,
+      "max": 3840,
+      "unit": "pF"
+    },
+    "CRSS": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "pF"
+    },
+    "QG": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 155,
+      "max": 206,
+      "unit": "nC"
+    },
+    "QGS": {
+      "parameter": "Gate to Source Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 50,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGD": {
+      "parameter": "Gate to Drain Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 30,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "radiation_characteristics": {},
+  "single_event_effect": {},
+  "additional_info": {
+    "terminal_pad_finish": "Standard Terminal Pad finish is a solder alloy of 63%Pb 37%Sn",
+    "ss_pin_note": "SS pin is connected directly to source of internal die."
+  }
+}

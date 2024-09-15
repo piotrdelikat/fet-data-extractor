@@ -1,0 +1,355 @@
+{
+  "general_info": {
+    "componentName": "GT52N10D5",
+    "manufacturer": "Goford Semi",
+    "description": "N-Channel Enhancement Mode Power MOSFET",
+    "features": [
+      "100% Avalanche Tested",
+      "RoHS Compliant"
+    ],
+    "applications": [
+      "Power switch",
+      "DC/DC converters"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 71,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 284,
+      "unit": "A",
+      "conditions": "Note 1"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 100,
+      "unit": "W"
+    },
+    "EAS": {
+      "parameter": "Single pulse avalanche energy",
+      "value": 144,
+      "unit": "mJ",
+      "conditions": "Note 2"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "-55 to 150",
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJA": {
+      "parameter": "Thermal Resistance, Junction-to-Ambient",
+      "value": 50,
+      "unit": "°C/W"
+    },
+    "RthJC": {
+      "parameter": "Maximum Junction-to-Case",
+      "value": 1.25,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage",
+      "conditions": [
+        {
+          "VGS": "±20",
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 1,
+      "typ": 1.7,
+      "max": 2.5,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 7.5,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "RDS(on)_at_VGS_4.5V": {
+      "parameter": "Drain-Source On-Resistance at VGS = 4.5V",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 9.5,
+      "max": null,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 2870,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [],
+      "min": null,
+      "typ": 380,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [],
+      "min": null,
+      "typ": 9,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 50,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [],
+      "min": null,
+      "typ": 8,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [],
+      "min": null,
+      "typ": 10,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-on Delay Time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        },
+        {
+          "RG": 3,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 12,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-on Rise Time",
+      "conditions": [],
+      "min": null,
+      "typ": 9,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-off Delay Time",
+      "conditions": [],
+      "min": null,
+      "typ": 27,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-off Fall Time",
+      "conditions": [],
+      "min": null,
+      "typ": 7,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "body_diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 70,
+      "max": null,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Body Diode Voltage",
+      "conditions": [
+        {
+          "TJ": 25,
+          "unit": "°C"
+        },
+        {
+          "IS": 50,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1.2,
+      "max": null,
+      "unit": "V"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "conditions": [
+        {
+          "IF": 50,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "di/dt": "100A/us"
+        }
+      ],
+      "min": null,
+      "typ": 87,
+      "max": null,
+      "unit": "nC"
+    },
+    "Trr": {
+      "parameter": "Reverse Recovery Time",
+      "conditions": [],
+      "min": null,
+      "typ": 49,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "notes": {
+    "note1": "Repetitive Rating: Pulse width limited by maximum junction temperature",
+    "note2": "EAS condition: Tj=25°C, VDD=50V, VGS=10V, L=0.5mH, Rg=25Ω. The table shows the minimum avalanche energy, which is 400mJ when the device is tested until failure."
+  }
+}

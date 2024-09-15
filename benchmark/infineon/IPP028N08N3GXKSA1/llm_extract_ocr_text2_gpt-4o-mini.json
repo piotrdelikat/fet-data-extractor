@@ -1,0 +1,156 @@
+{
+  "general_info": {
+    "componentName": "IPP028N08N3 G",
+    "manufacturer": "Infineon Technologies AG",
+    "description": "OptiMOG®3 Power-Transistor",
+    "features": [
+      "N-channel, normal level",
+      "Excellent gate charge x R DS(on) product (FOM)",
+      "Very low on-resistance R DS(on)",
+      "175 °C operating temperature",
+      "Pb-free lead plating; RoHS compliant",
+      "Qualified according to JEDEC for target application"
+    ],
+    "applications": [
+      "Ideal for high-frequency switching and synchronous rectification"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 100,
+      "unit": "A",
+      "conditions": "T = 25 °C"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "value": 400,
+      "unit": "A",
+      "conditions": "T C=25 °C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, Single Pulse",
+      "value": 1430,
+      "unit": "mJ",
+      "conditions": "T C=25 °C"
+    },
+    "VGS": {
+      "parameter": "Gate Source Voltage",
+      "value": 20,
+      "unit": "V",
+      "conditions": "±"
+    },
+    "P_tot": {
+      "parameter": "Power Dissipation",
+      "value": 300,
+      "unit": "W",
+      "conditions": "T C=25 °C"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating and Storage Temperature",
+      "value": "-55 to 175",
+      "unit": "°C"
+    },
+    "IEC_climatic_category": {
+      "parameter": "IEC Climatic Category",
+      "value": "55/175/56"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": 0.5,
+      "unit": "K/W"
+    },
+    "RthJA": {
+      "parameter": "Thermal Resistance, Junction to Ambient",
+      "value": 62,
+      "unit": "K/W",
+      "conditions": "minimal footprint"
+    }
+  },
+  "static_characteristics": {
+    "V_BR_DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "value": 80,
+      "unit": "V",
+      "conditions": "V GS=0 V, I D=1 mA"
+    },
+    "V_GS_th": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 2.8,
+      "typ": null,
+      "max": 3.5,
+      "unit": "V",
+      "conditions": "I DSS, V DS=80 V, V GS=0 V, T j=25 °C"
+    },
+    "I_DSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "min": 0.1,
+      "typ": null,
+      "max": 1,
+      "unit": "µA",
+      "conditions": "V DS=80 V, V GS=0 V, T j=125 °C"
+    },
+    "I_GSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "min": 1,
+      "typ": null,
+      "max": 100,
+      "unit": "nA",
+      "conditions": "V GS=20 V, V DS=0 V"
+    },
+    "R_DS_on": {
+      "parameter": "Drain-Source On-State Resistance",
+      "min": null,
+      "typ": 2.4,
+      "max": 2.8,
+      "unit": "mΩ",
+      "conditions": "V GS=10 V, I D=100 A"
+    }
+  },
+  "dynamic_characteristics": {
+    "C_iss": {
+      "parameter": "Input Capacitance",
+      "value": 10700,
+      "unit": "pF",
+      "conditions": "V GS=0 V, V DS=40 V, f=1 MHz"
+    },
+    "C_oss": {
+      "parameter": "Output Capacitance",
+      "value": 2890,
+      "unit": "pF",
+      "conditions": "V GS=0 V, V DS=40 V, f=1 MHz"
+    },
+    "C_rss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "value": 100,
+      "unit": "pF",
+      "conditions": "V GS=0 V, V DS=40 V, f=1 MHz"
+    },
+    "Q_g": {
+      "parameter": "Total Gate Charge",
+      "min": 72,
+      "typ": 155,
+      "max": null,
+      "unit": "nC",
+      "conditions": "V GS=0 to 10 V"
+    },
+    "Q_oss": {
+      "parameter": "Output Charge",
+      "min": 210,
+      "typ": 279,
+      "max": null,
+      "unit": "nC",
+      "conditions": "V DD=40 V, V GS=0 V"
+    }
+  },
+  "additional_info": {
+    "package": [
+      "PG-TO220-3",
+      "PG-TO262-3"
+    ],
+    "marking": "028N08N",
+    "previous_engineering_sample_codes": "IPP02CN08N"
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "general_info": {
+    "componentName": "650V CoolMOS CFD2 Power Transistor",
+    "manufacturer": "Infineon Technologies",
+    "description": "650V CoolMOS CFD2 series combines the experience of the leading SJ MOSFET supplier with high class innovation.",
+    "features": [
+      "Ultra-fast body diode",
+      "Very high commutation ruggedness",
+      "Extremely low losses due to very low FOM Rdson*Qg and Eoss",
+      "Easy to use/drive",
+      "Qualified for industrial grade applications according to JEDEC (J-STD20 and JESD22)",
+      "Pb-free plating, Halogen free mold compound"
+    ],
+    "applications": [
+      "Resonant switching PWM stages for e.g. PC Silverbox, LCD TV, Lighting, Server and Telecom"
+    ]
+  },
+  "maximum_ratings": {
+    "continuous_drain_current": {
+      "parameter": "Continuous drain current",
+      "value": 8.7,
+      "unit": "A",
+      "conditions": "Tj = 25°C"
+    },
+    "pulsed_drain_current": {
+      "parameter": "Pulsed drain current",
+      "value": 27,
+      "unit": "A",
+      "conditions": "tp = 10μs, Tj = 25°C"
+    },
+    "avalanche_energy_single_pulse": {
+      "parameter": "Avalanche energy, single pulse",
+      "value": 227,
+      "unit": "mJ",
+      "conditions": "D = 1.8A, DD = 50V"
+    },
+    "avalanche_energy_repetitive": {
+      "parameter": "Avalanche energy, repetitive",
+      "value": 5.5,
+      "unit": "mJ",
+      "conditions": "D = 1.8A, DD = 50V"
+    },
+    "avalanche_current_repetitive": {
+      "parameter": "Avalanche current, repetitive",
+      "value": 0.34,
+      "unit": "A",
+      "conditions": "D = 1.8A, DD = 50V"
+    },
+    "gate_source_voltage": {
+      "parameter": "Gate source voltage",
+      "value": "+20 / -30",
+      "unit": "V",
+      "conditions": "Tj = 25°C"
+    },
+    "power_dissipation_non_fullpak": {
+      "parameter": "Power dissipation (non FullPAK)",
+      "value": 83.3,
+      "unit": "W",
+      "conditions": "Tc = 25°C"
+    },
+    "power_dissipation_fullpak": {
+      "parameter": "Power dissipation (FullPAK)",
+      "value": 31.2,
+      "unit": "W",
+      "conditions": "Tc = 25°C"
+    },
+    "operating_and_storage_temperature": {
+      "parameter": "Operating and storage temperature",
+      "value": "-55 to +150",
+      "unit": "°C"
+    },
+    "mounting_torque_non_fullpak": {
+      "parameter": "Mounting torque (non FullPAK)",
+      "value": 20,
+      "unit": "Ncm",
+      "conditions": "M3 and M3.5 screws"
+    },
+    "mounting_torque_fullpak": {
+      "parameter": "Mounting torque (FullPAK)",
+      "value": 30,
+      "unit": "Ncm",
+      "conditions": "M2.5 screws"
+    },
+    "continuous_diode_forward_current": {
+      "parameter": "Continuous diode forward current",
+      "value": 8.7,
+      "unit": "A",
+      "conditions": "Tj = 25°C"
+    },
+    "diode_pulse_current": {
+      "parameter": "Diode pulse current",
+      "value": 27,
+      "unit": "A",
+      "conditions": "tp = 10μs, Tj = 25°C"
+    },
+    "reverse_diode_dv_dt": {
+      "parameter": "Reverse diode dv/dt",
+      "value": 50,
+      "unit": "V/ns",
+      "conditions": "Tj = 25°C"
+    },
+    "maximum_diode_commutation_speed": {
+      "parameter": "Maximum diode commutation speed",
+      "value": 900,
+      "unit": "A/μs",
+      "conditions": "Tj = 25°C"
+    },
+    "insulation_withstand_voltage": {
+      "parameter": "Insulation withstand voltage for TO-220FP",
+      "value": 2500,
+      "unit": "V",
+      "conditions": "Tj = 25°C"
+    }
+  },
+  "thermal_characteristics": {
+    "thermal_resistance_junction_case_non_fullpak": {
+      "parameter": "Thermal resistance, junction - case",
+      "value": 1.5,
+      "unit": "°C/W",
+      "conditions": "TO-247, TO-220, I²PAK"
+    },
+    "thermal_resistance_junction_ambient_non_fullpak": {
+      "parameter": "Thermal resistance, junction - ambient",
+      "value": 62,
+      "unit": "°C/W",
+      "conditions": "TO-247, TO-220, I²PAK"
+    },
+    "thermal_resistance_junction_case_fullpak": {
+      "parameter": "Thermal resistance, junction - case",
+      "value": 4,
+      "unit": "°C/W",
+      "conditions": "TO-220 FP"
+    },
+    "thermal_resistance_junction_ambient_fullpak": {
+      "parameter": "Thermal resistance, junction - ambient",
+      "value": 80,
+      "unit": "°C/W",
+      "conditions": "TO-220 FP"
+    },
+    "soldering_temperature": {
+      "parameter": "Soldering temperature, wavesoldering only allowed at leads",
+      "value": 260,
+      "unit": "°C",
+      "conditions": "leaded, 1.6 mm (0.063 in.) from case for 10s"
+    }
+  },
+  "electrical_characteristics": {
+    "drain_source_breakdown_voltage": {
+      "parameter": "Drain-source breakdown voltage",
+      "value": 650,
+      "unit": "V",
+      "conditions": "VGS = 0V, ID = 1mA"
+    },
+    "gate_threshold_voltage": {
+      "parameter": "Gate threshold voltage",
+      "value": 3.5,
+      "unit": "V",
+      "conditions": "VDS = VGS, ID = 0.3mA"
+    },
+    "zero_gate_voltage_drain_current": {
+      "parameter": "Zero gate voltage drain current",
+      "value": 100,
+      "unit": "μA",
+      "conditions": "VDS = 650V, VGS = 0V, Tj = 25°C"
+    },
+    "gate_source_leakage_current": {
+      "parameter": "Gate-source leakage current",
+      "value": 100,
+      "unit": "nA",
+      "conditions": "VGS = 20V, VDS = 0V"
+    },
+    "drain_source_on_state_resistance": {
+      "parameter": "Drain-source on-state resistance",
+      "value": 0.378,
+      "unit": "mΩ",
+      "conditions": "VGS = 10V, ID = 3.4A, Tj = 25°C"
+    },
+    "gate_resistance": {
+      "parameter": "Gate resistance",
+      "value": 4,
+      "unit": "Ω",
+      "conditions": "f = 1MHz, open drain"
+    }
+  },
+  "dynamic_characteristics": {
+    "input_capacitance": {
+      "parameter": "Input capacitance",
+      "value": 870,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 100V, f = 1MHz"
+    },
+    "output_capacitance": {
+      "parameter": "Output capacitance",
+      "value": 45,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 0...400V"
+    },
+    "effective_output_capacitance_energy_related": {
+      "parameter": "Effective output capacitance, energy related",
+      "value": 36,
+      "unit": "pF",
+      "conditions": "VDS = 0...400V"
+    },
+    "effective_output_capacitance_time_related": {
+      "parameter": "Effective output capacitance, time related",
+      "value": 161,
+      "unit": "pF",
+      "conditions": "VDS = 0...400V"
+    },
+    "turn_on_delay_time": {
+      "parameter": "Turn-on delay time",
+      "value": 10,
+      "unit": "ns",
+      "conditions": "VDD = 400V, VGS = 13V, ID = 5.2A"
+    },
+    "rise_time": {
+      "parameter": "Rise time",
+      "value": 7,
+      "unit": "ns",
+      "conditions": "VDD = 400V, VGS = 13V, ID = 5.2A"
+    },
+    "turn_off_delay_time": {
+      "parameter": "Turn-off delay time",
+      "value": 38,
+      "unit": "ns",
+      "conditions": "VDD = 400V, VGS = 13V, ID = 5.2A"
+    },
+    "fall_time": {
+      "parameter": "Fall time",
+      "value": 8,
+      "unit": "ns",
+      "conditions": "VDD = 400V, VGS = 13V, ID = 5.2A"
+    }
+  },
+  "gate_charge_characteristics": {
+    "gate_to_source_charge": {
+      "parameter": "Gate to source charge",
+      "value": 6.4,
+      "unit": "nC",
+      "conditions": "VDD = 480V, ID = 5.2A, VGS = 0...10V"
+    },
+    "gate_to_drain_charge": {
+      "parameter": "Gate to drain charge",
+      "value": 18.6,
+      "unit": "nC",
+      "conditions": "VDD = 480V, ID = 5.2A, VGS = 0...10V"
+    },
+    "gate_charge_total": {
+      "parameter": "Gate charge total",
+      "value": 31.5,
+      "unit": "nC",
+      "conditions": "VDD = 480V, ID = 5.2A, VGS = 0...10V"
+    },
+    "gate_plateau_voltage": {
+      "parameter": "Gate plateau voltage",
+      "value": 6.4,
+      "unit": "V",
+      "conditions": "VDD = 480V, ID = 5.2A, VGS = 0...10V"
+    }
+  },
+  "reverse_diode_characteristics": {
+    "diode_forward_voltage": {
+      "parameter": "Diode forward voltage",
+      "value": 0.9,
+      "unit": "V",
+      "conditions": "IS = 5.2A, VGS = 0V, Tj = 25°C"
+    },
+    "reverse_recovery_time": {
+      "parameter": "Reverse recovery time",
+      "value": 90,
+      "unit": "ns",
+      "conditions": "VDD = 400V, ID = 5.2A, dIF/dt = 100A/μs"
+    },
+    "reverse_recovery_charge": {
+      "parameter": "Reverse recovery charge",
+      "value": 0.3,
+      "unit": "μC",
+      "conditions": "VDD = 400V, ID = 5.2A, dIF/dt = 100A/μs"
+    },
+    "peak_reverse_recovery_current": {
+      "parameter": "Peak reverse recovery current",
+      "value": 6.2,
+      "unit": "A",
+      "conditions": "VDD = 400V, ID = 5.2A, dIF/dt = 100A/μs"
+    }
+  }
+}

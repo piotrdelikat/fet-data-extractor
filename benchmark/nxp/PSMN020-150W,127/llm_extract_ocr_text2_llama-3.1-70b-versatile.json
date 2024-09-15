@@ -1,0 +1,546 @@
+{
+  "general_info": {
+    "componentName": "PSMN020-150W",
+    "manufacturer": "Philips Semiconductors",
+    "description": "N-channel TrenchMOS transistor",
+    "features": [
+      "Trench technology",
+      "Very low on-state resistance",
+      "Fast switching",
+      "Low thermal resistance"
+    ],
+    "applications": [
+      "d.c. to d.c. converters",
+      "switched mode power supplies"
+    ]
+  },
+  "thermal_characteristics": {
+    "Rth_j-mb": {
+      "parameter": "Thermal resistance junction to mounting base",
+      "value": 0.5,
+      "unit": "K/W"
+    },
+    "Rth_j-a": {
+      "parameter": "Thermal resistance junction to ambient",
+      "value": 45,
+      "unit": "K/W"
+    }
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain-source voltage",
+      "value": 150,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-source voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous drain current",
+      "value": 73,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed drain current",
+      "value": 290,
+      "unit": "A"
+    },
+    "PD": {
+      "parameter": "Total power dissipation",
+      "value": 300,
+      "unit": "W"
+    },
+    "Tj_Tstg": {
+      "parameter": "Operating and storage junction temperature range",
+      "value": "-55 to +175",
+      "unit": "°C"
+    }
+  },
+  "avalanche_energy_limiting_values": {
+    "EAS": {
+      "parameter": "Non-repetitive avalanche energy",
+      "value": 707,
+      "unit": "mJ"
+    },
+    "IAS": {
+      "parameter": "Non-repetitive avalanche current",
+      "value": 73,
+      "unit": "A"
+    }
+  },
+  "electrical_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-source breakdown voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 0.25,
+          "unit": "mA"
+        }
+      ],
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(TO)": {
+      "parameter": "Gate threshold voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 2,
+      "typ": null,
+      "max": 4,
+      "unit": "V"
+    },
+    "RDS(ON)": {
+      "parameter": "Drain-source on-state resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 25,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 3,
+      "max": 6,
+      "unit": "mΩ"
+    },
+    "IGSS": {
+      "parameter": "Gate source leakage current",
+      "conditions": [
+        {
+          "VGS": "±10",
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": -12,
+      "max": -6,
+      "unit": "nA"
+    },
+    "IDSS": {
+      "parameter": "Zero gate voltage drain current",
+      "conditions": [
+        {
+          "VDS": 150,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": -20,
+      "max": -10,
+      "unit": "μA"
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg(tot)": {
+      "parameter": "Total gate charge",
+      "conditions": [
+        {
+          "ID": 73,
+          "unit": "A"
+        },
+        {
+          "VDD": 120,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 227,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-source charge",
+      "conditions": [
+        {
+          "ID": 73,
+          "unit": "A"
+        },
+        {
+          "VDD": 120,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 46,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-drain (Miller) charge",
+      "conditions": [
+        {
+          "ID": 73,
+          "unit": "A"
+        },
+        {
+          "VDD": 120,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 91,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-on delay time",
+      "conditions": [
+        {
+          "VDD": 75,
+          "unit": "V"
+        },
+        {
+          "RD": 2.7,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 5.6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 34,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-on rise time",
+      "conditions": [
+        {
+          "VDD": 75,
+          "unit": "V"
+        },
+        {
+          "RD": 2.7,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 5.6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 79,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-off delay time",
+      "conditions": [
+        {
+          "VDD": 75,
+          "unit": "V"
+        },
+        {
+          "RD": 2.7,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 5.6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 233,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-off fall time",
+      "conditions": [
+        {
+          "VDD": 75,
+          "unit": "V"
+        },
+        {
+          "RD": 2.7,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 5.6,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 101,
+      "max": null,
+      "unit": "ns"
+    },
+    "Ld": {
+      "parameter": "Internal drain inductance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 3.5,
+      "max": null,
+      "unit": "nH"
+    },
+    "Ls": {
+      "parameter": "Internal source inductance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 7.5,
+      "max": null,
+      "unit": "nH"
+    },
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 9537,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 854,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Feedback capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 380,
+      "max": null,
+      "unit": "pF"
+    }
+  },
+  "reverse_diode_limiting_values_and_characteristics": {
+    "IS": {
+      "parameter": "Continuous source current (body diode)",
+      "conditions": [
+        {
+          "IF": 25,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 73,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Pulsed source current (body diode)",
+      "conditions": [
+        {
+          "IF": 75,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 290,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode forward voltage",
+      "conditions": [
+        {
+          "IF": 20,
+          "unit": "A"
+        },
+        {
+          "-dIF/dt": 100,
+          "unit": "A/μs"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VR": 30,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 0.85,
+      "max": 1.2,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "conditions": [
+        {
+          "IF": 20,
+          "unit": "A"
+        },
+        {
+          "-dIF/dt": 100,
+          "unit": "A/μs"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VR": 30,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 127,
+      "max": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse recovery charge",
+      "conditions": [
+        {
+          "IF": 20,
+          "unit": "A"
+        },
+        {
+          "-dIF/dt": 100,
+          "unit": "A/μs"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VR": 30,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "μC"
+    }
+  },
+  "additional_info": {
+    "mounting_base_temperature_range": "-55 to +175",
+    "maximum_avalanche_current": "73",
+    "avalanche_time_range": "0 to 1000"
+  }
+}

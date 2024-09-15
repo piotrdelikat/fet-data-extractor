@@ -1,10 +1,10 @@
 import fs from 'fs';
 import path from 'path';
-import { PDFLoader } from "@langchain/community/document_loaders/fs/pdf";
+import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
 import { datasheetsFolderPath } from '..';
 import { isTextMeaningful } from './helpers';
 
-const pdfToText = async (filePath: string) => {
+export const pdfToText = async (filePath: string) => {
   const pdfFilePath = filePath.replace('datasheets', '');
   const pdfPath = path.join(datasheetsFolderPath, pdfFilePath);
   const textFilePath = path.join('text', pdfFilePath.replace('.pdf', '.txt'));
@@ -12,21 +12,24 @@ const pdfToText = async (filePath: string) => {
   // Check if the PDF file exists
   if (!fs.existsSync(pdfPath)) {
     console.log(`PDF file does not exist: ${pdfPath}`);
-     // Create or append to nonExisting.json file
-     const nonExistingJsonPath = path.join('nonExisting.json');
-     let nonExistingPaths: string[] = [];
-     if (fs.existsSync(nonExistingJsonPath)) {
-       const nonExistingJson = fs.readFileSync(nonExistingJsonPath, 'utf-8');
-       nonExistingPaths = JSON.parse(nonExistingJson);
-     }
-     if (!nonExistingPaths.includes(pdfPath)) {
-       nonExistingPaths.push(pdfPath);
-       fs.writeFileSync(nonExistingJsonPath, JSON.stringify(nonExistingPaths, null, 2));
-       console.log(`Added ${pdfPath} to nonExisting.json`);
-     } else {
-       console.log(`${pdfPath} already exists in nonExisting.json`);
-     }
-     
+    // Create or append to nonExisting.json file
+    const nonExistingJsonPath = path.join('nonExisting.json');
+    let nonExistingPaths: string[] = [];
+    if (fs.existsSync(nonExistingJsonPath)) {
+      const nonExistingJson = fs.readFileSync(nonExistingJsonPath, 'utf-8');
+      nonExistingPaths = JSON.parse(nonExistingJson);
+    }
+    if (!nonExistingPaths.includes(pdfPath)) {
+      nonExistingPaths.push(pdfPath);
+      fs.writeFileSync(
+        nonExistingJsonPath,
+        JSON.stringify(nonExistingPaths, null, 2)
+      );
+      console.log(`Added ${pdfPath} to nonExisting.json`);
+    } else {
+      console.log(`${pdfPath} already exists in nonExisting.json`);
+    }
+
     return;
   }
 
@@ -39,7 +42,7 @@ const pdfToText = async (filePath: string) => {
   console.log(`Loading PDF: ${pdfPath}`);
 
   const loader = new PDFLoader(pdfPath, {
-    splitPages: false
+    splitPages: false,
   });
 
   try {
@@ -50,16 +53,18 @@ const pdfToText = async (filePath: string) => {
     console.log(`Saving text file: ${textFilePath}`);
     const textDir = path.dirname(textFilePath);
     if (!fs.existsSync(textDir)) {
-        fs.mkdirSync(textDir, { recursive: true });
+      fs.mkdirSync(textDir, { recursive: true });
     }
 
     // Concatenate all page contents
-    const allPageContent = docs.map(doc => doc.pageContent).join('\n');
+    const allPageContent = docs.map((doc) => doc.pageContent).join('\n');
     fs.writeFileSync(textFilePath, allPageContent);
     console.log('All pages saved successfully.');
 
     if (isTextMeaningful(textFilePath)) {
-      console.log(`The extracted text appears to be meaningful. Path: ${textFilePath}`);
+      console.log(
+        `The extracted text appears to be meaningful. Path: ${textFilePath}`
+      );
     } else {
       console.log('The extracted text might be binary or not meaningful.');
       // Delete the file
@@ -80,7 +85,6 @@ const pdfToText = async (filePath: string) => {
         console.log(`${pdfPath} already exists in binaryPdfs.json`);
       }
     }
-
   } catch (error) {
     console.error('Error loading PDF:', error);
   }
@@ -103,7 +107,6 @@ const pdfToText = async (filePath: string) => {
 // Usage
 //pdfToText("datasheets/infineon/IPI072N10N3G.pdf");
 
-
 // Count results
 const countProcessedFiles = () => {
   const textFolderPath = path.join('text');
@@ -111,7 +114,7 @@ const countProcessedFiles = () => {
 
   if (fs.existsSync(textFolderPath)) {
     const manufacturers = fs.readdirSync(textFolderPath);
-    manufacturers.forEach(mnf => {
+    manufacturers.forEach((mnf) => {
       const mnfFolderPath = path.join(textFolderPath, mnf);
       if (fs.statSync(mnfFolderPath).isDirectory()) {
         const files = fs.readdirSync(mnfFolderPath);
@@ -146,12 +149,14 @@ const findUnprocessedFiles = (): string[] => {
   // Collect paths from text folder
   if (fs.existsSync(textFolderPath)) {
     const manufacturers = fs.readdirSync(textFolderPath);
-    manufacturers.forEach(mnf => {
+    manufacturers.forEach((mnf) => {
       const mnfFolderPath = path.join(textFolderPath, mnf);
       if (fs.statSync(mnfFolderPath).isDirectory()) {
         const files = fs.readdirSync(mnfFolderPath);
-        files.forEach(file => {
-          processedPaths.push(`datasheets/${mnf}/${file.replace('.txt', '.pdf')}`);
+        files.forEach((file) => {
+          processedPaths.push(
+            `datasheets/${mnf}/${file.replace('.txt', '.pdf')}`
+          );
         });
       }
     });
@@ -162,7 +167,11 @@ const findUnprocessedFiles = (): string[] => {
   if (fs.existsSync(binaryJsonPath)) {
     const binaryJson = fs.readFileSync(binaryJsonPath, 'utf-8');
     const binaryPaths: string[] = JSON.parse(binaryJson);
-    processedPaths.push(...binaryPaths.map(path => path.replace('node_modules/fet-datasheets/', 'datasheets/')));
+    processedPaths.push(
+      ...binaryPaths.map((path) =>
+        path.replace('node_modules/fet-datasheets/', 'datasheets/')
+      )
+    );
   }
 
   // Add paths from nonExisting.json
@@ -170,7 +179,11 @@ const findUnprocessedFiles = (): string[] => {
   if (fs.existsSync(nonExistingJsonPath)) {
     const nonExistingJson = fs.readFileSync(nonExistingJsonPath, 'utf-8');
     const nonExistingPaths: string[] = JSON.parse(nonExistingJson);
-    processedPaths.push(...nonExistingPaths.map(path => path.replace('node_modules/fet-datasheets/', 'datasheets/')));
+    processedPaths.push(
+      ...nonExistingPaths.map((path) =>
+        path.replace('node_modules/fet-datasheets/', 'datasheets/')
+      )
+    );
   }
 
   // Read unprocessed.json
@@ -183,7 +196,9 @@ const findUnprocessedFiles = (): string[] => {
   const unprocessedPaths: string[] = JSON.parse(unprocessedJson);
 
   // Find paths that are in unprocessed.json but not in processedPaths
-  const remainingUnprocessed = unprocessedPaths.filter(path => !processedPaths.includes(path));
+  const remainingUnprocessed = unprocessedPaths.filter(
+    (path) => !processedPaths.includes(path)
+  );
 
   console.log(`Remaining unprocessed files: ${remainingUnprocessed.length}`);
   console.log(remainingUnprocessed);
@@ -203,11 +218,12 @@ const countUnprocessedFiles = () => {
   const uniquePaths = Array.from(new Set(unprocessedPaths));
   console.log(`Unique unprocessed files: ${uniquePaths.length}`);
   // Find and log duplicate files
-  const duplicatePaths = unprocessedPaths.filter((path: string, index: number) => unprocessedPaths.indexOf(path) !== index);
+  const duplicatePaths = unprocessedPaths.filter(
+    (path: string, index: number) => unprocessedPaths.indexOf(path) !== index
+  );
   console.log(`Duplicate unprocessed files: ${duplicatePaths.length}`);
   console.log(duplicatePaths);
 };
-
 
 // countProcessedFiles();
 // findUnprocessedFiles();

@@ -1,0 +1,232 @@
+{
+  "general_info": {
+    "componentName": "TK6R9P08QM",
+    "manufacturer": "Toshiba Electronic Devices & Storage Corporation",
+    "description": "Silicon N-channel MOS (U-MOSX-H)",
+    "features": [
+      "High-speed switching",
+      "Small gate charge: QSW = 11.6 nC (typ.)",
+      "Small output charge: Qoss = 46 nC (typ.)",
+      "Low drain-source on-resistance: RDS(ON) = 5.5 mΩ (typ.) (VGS = 10 V)",
+      "Low leakage current: IDSS = 10 μA (max) (VDS = 80 V)",
+      "Enhancement mode: Vth = 2.5 to 3.5 V (VDS = 10 V, ID = 0.5 mA)"
+    ],
+    "applications": [
+      "High-Efficiency DC-DC Converters",
+      "Switching Voltage Regulators",
+      "Motor Drivers"
+    ]
+  },
+  "thermal_characteristics": {
+    "Rth(ch-c)": {
+      "parameter": "Channel-to-case thermal resistance",
+      "value": 1.67,
+      "unit": "°C/W",
+      "conditions": "Tc = 25 °C"
+    }
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-source voltage",
+      "value": 80,
+      "unit": "V",
+      "conditions": "Ta = 25 °C"
+    },
+    "VGS": {
+      "parameter": "Gate-source voltage",
+      "value": "±20",
+      "unit": "V",
+      "conditions": "Ta = 25 °C"
+    },
+    "ID": {
+      "parameter": "Drain current (DC)",
+      "value": 62,
+      "unit": "A",
+      "conditions": "Tc = 25 °C"
+    },
+    "IDP": {
+      "parameter": "Drain current (pulsed)",
+      "value": 210,
+      "unit": "A",
+      "conditions": "t = 100 μs"
+    },
+    "PD": {
+      "parameter": "Power dissipation",
+      "value": 89,
+      "unit": "W",
+      "conditions": "Tc = 25 °C"
+    },
+    "EAS": {
+      "parameter": "Single-pulse avalanche energy",
+      "value": 24,
+      "unit": "mJ",
+      "conditions": "VDD = 64 V, Tch = 25 °C (initial), L = 4.9 μH, IAS = 62 A"
+    },
+    "IAS": {
+      "parameter": "Single-pulse avalanche current",
+      "value": 62,
+      "unit": "A",
+      "conditions": "VDD = 64 V, Tch = 25 °C (initial), L = 4.9 μH, IAS = 62 A"
+    },
+    "Tch": {
+      "parameter": "Channel temperature",
+      "value": 175,
+      "unit": "°C",
+      "conditions": "Ta = 25 °C"
+    },
+    "Tstg": {
+      "parameter": "Storage temperature",
+      "value": "-55 to 175",
+      "unit": "°C",
+      "conditions": "Ta = 25 °C"
+    }
+  },
+  "electrical_characteristics": {
+    "static_characteristics": {
+      "IGSS": {
+        "parameter": "Gate leakage current",
+        "value": "±0.1",
+        "unit": "μA",
+        "conditions": "VGS = ±20 V, VDS = 0 V"
+      },
+      "IDSS": {
+        "parameter": "Drain cut-off current",
+        "value": 10,
+        "unit": "μA",
+        "conditions": "VDS = 80 V, VGS = 0 V"
+      },
+      "V(BR)DSS": {
+        "parameter": "Drain-source breakdown voltage",
+        "value": 80,
+        "unit": "V",
+        "conditions": "ID = 10 mA, VGS = 0 V"
+      },
+      "V(BR)DSX": {
+        "parameter": "Drain-source breakdown voltage",
+        "value": 60,
+        "unit": "V",
+        "conditions": "ID = 10 mA, VGS = -20 V"
+      },
+      "Vth": {
+        "parameter": "Gate threshold voltage",
+        "value": "2.5 to 3.5",
+        "unit": "V",
+        "conditions": "VDS = 10 V, ID = 0.5 mA"
+      },
+      "RDS(ON)": {
+        "parameter": "Drain-source on-resistance",
+        "value": 5.5,
+        "unit": "mΩ",
+        "conditions": "VGS = 10 V, ID = 31 A"
+      }
+    },
+    "dynamic_characteristics": {
+      "Ciss": {
+        "parameter": "Input capacitance",
+        "value": 2700,
+        "unit": "pF",
+        "conditions": "VDS = 40 V, VGS = 0 V, f = 1 MHz"
+      },
+      "Crss": {
+        "parameter": "Reverse transfer capacitance",
+        "value": 45,
+        "unit": "pF",
+        "conditions": "VDS = 40 V, VGS = 0 V, f = 1 MHz"
+      },
+      "Coss": {
+        "parameter": "Output capacitance",
+        "value": 700,
+        "unit": "pF",
+        "conditions": "VDS = 40 V, VGS = 0 V, f = 1 MHz"
+      },
+      "rg": {
+        "parameter": "Gate resistance",
+        "value": 1.5,
+        "unit": "Ω",
+        "conditions": "VGS = 0 V/ 10 V ID = 31 A"
+      },
+      "tr": {
+        "parameter": "Switching time (rise time)",
+        "value": 45,
+        "unit": "ns",
+        "conditions": "VDD ≈ 40 V, VGS = 0 V/ 10 V ID = 31 A"
+      },
+      "ton": {
+        "parameter": "Switching time (turn-on time)",
+        "value": 60,
+        "unit": "ns",
+        "conditions": "VDD ≈ 40 V, VGS = 0 V/ 10 V ID = 31 A"
+      },
+      "tf": {
+        "parameter": "Switching time (fall time)",
+        "value": 53,
+        "unit": "ns",
+        "conditions": "VDD ≈ 40 V, VGS = 0 V/ 10 V ID = 31 A"
+      },
+      "toff": {
+        "parameter": "Switching time (turn-off time)",
+        "value": 89,
+        "unit": "ns",
+        "conditions": "VDD ≈ 40 V, VGS = 0 V/ 10 V ID = 31 A"
+      }
+    },
+    "gate_charge_characteristics": {
+      "Qg": {
+        "parameter": "Total gate charge (gate-source plus gate-drain)",
+        "value": 39,
+        "unit": "nC",
+        "conditions": "VDD ≈ 40 V, VGS = 10 V, ID = 31 A"
+      },
+      "Qgs1": {
+        "parameter": "Gate-source charge 1",
+        "value": 24,
+        "unit": "nC",
+        "conditions": "VDD ≈ 40 V, VGS = 6 V, ID = 16 A"
+      },
+      "Qgd": {
+        "parameter": "Gate-drain charge",
+        "value": 11.5,
+        "unit": "nC",
+        "conditions": "VDD ≈ 40 V, VGS = 10 V, ID = 31 A"
+      },
+      "QSW": {
+        "parameter": "Gate switch charge",
+        "value": 8.6,
+        "unit": "nC",
+        "conditions": "VDD ≈ 40 V, VGS = 10 V, ID = 31 A"
+      },
+      "Qoss": {
+        "parameter": "Output charge",
+        "value": 46,
+        "unit": "nC",
+        "conditions": "VDS = 40 V, VGS = 0 V, f = 1 MHz"
+      }
+    },
+    "source_drain_characteristics": {
+      "IDRP": {
+        "parameter": "Reverse drain current (pulsed)",
+        "value": 210,
+        "unit": "A",
+        "conditions": "t = 100 μs"
+      },
+      "VDSF": {
+        "parameter": "Diode forward voltage",
+        "value": -1.2,
+        "unit": "V",
+        "conditions": "IDR = 15.5 A, VGS = 0 V, -dIDR/dt = 100 A/μs"
+      },
+      "trr": {
+        "parameter": "Reverse recovery time",
+        "value": 39,
+        "unit": "ns",
+        "conditions": "IDR = 15.5 A, VGS = 0 V, -dIDR/dt = 100 A/μs"
+      },
+      "Qrr": {
+        "parameter": "Reverse recovery charge",
+        "value": 35,
+        "unit": "nC",
+        "conditions": "IDR = 15.5 A, VGS = 0 V, -dIDR/dt = 100 A/μs"
+      }
+    }
+  }
+}

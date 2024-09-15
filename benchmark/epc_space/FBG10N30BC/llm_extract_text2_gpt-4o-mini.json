@@ -1,0 +1,620 @@
+{
+  "general_info": {
+    "componentName": "FBG10N30B/2N7668",
+    "manufacturer": "EPC Space",
+    "description": "Rad Hard eGaN® 100 V, 30 A, 16 mΩ Surface Mount (FSMD-B)",
+    "features": [
+      "Low RDS(on)",
+      "Ultra-low QG For High Efficiency",
+      "Logic Level",
+      "Light Weight",
+      "Compact Hermetic Package",
+      "Source Sense Pin",
+      "Total Ionizing Dose LDR Immune",
+      "Total Ionizing Dose HDR Immune",
+      "Single Event Effect (SEE) Hardened – SEE immunity up to LET of 83.7 MeV/mg/cm² with VDS up to 100% of rated Breakdown",
+      "Neutron – Maintains Pre-Rad specification for up to 4 x 10¹⁵ Neutrons/cm²"
+    ],
+    "applications": [
+      "Satellite and Avionics",
+      "Deep Space Probes",
+      "High Speed Rad Hard DC-DC Conversion",
+      "Rad Hard Motor Controllers"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 100,
+      "unit": "V",
+      "conditions": "Note 1"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 30,
+      "unit": "A",
+      "conditions": "ID @ VGS = 4.5 V, TC = 25°C, RθJA < 35 °C/W"
+    },
+    "IDM": {
+      "parameter": "Single-Pulse Drain Current",
+      "value": 120,
+      "unit": "V",
+      "conditions": "tpulse ≤ 80 μs"
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": "+6 / -4",
+      "unit": "V",
+      "conditions": "Note 2"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating and Storage Junction Temperature Range",
+      "value": "-55 to +150",
+      "unit": "°C"
+    },
+    "TSOL": {
+      "parameter": "Package Mounting Surface Temperature",
+      "value": 260,
+      "unit": "°C"
+    },
+    "ESD": {
+      "parameter": "ESD Class",
+      "value": "1A (ΔA)"
+    },
+    "weight": {
+      "parameter": "Device Weight",
+      "value": 0.135,
+      "unit": "g"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "value": 35,
+      "unit": "°C/W",
+      "conditions": "Note 3"
+    },
+    "RθJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": 2.25,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "VDSMIN": {
+      "parameter": "Minimum Drain to Source Voltage",
+      "conditions": [
+        {
+          "VG": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain to Source Leakage",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 0.525,
+      "typ": null,
+      "max": 50,
+      "unit": "μA"
+    },
+    "IDSS_125C": {
+      "parameter": "Drain to Source Leakage",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TC": 125,
+          "unit": "°C"
+        }
+      ],
+      "min": 8,
+      "typ": 15,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSSF": {
+      "parameter": "Gate to Source Forward Leakage",
+      "conditions": [
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 5.5,
+      "typ": null,
+      "max": 500,
+      "unit": "μA"
+    },
+    "IGSSR": {
+      "parameter": "Gate to Source Reverse Leakage",
+      "conditions": [
+        {
+          "VGS": -4,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 0.007,
+      "typ": null,
+      "max": 250,
+      "unit": "μA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 5,
+          "unit": "mA"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 0.8,
+      "typ": 1.4,
+      "max": 2.5,
+      "unit": "V"
+    },
+    "ΔVGS(th)/ΔT": {
+      "parameter": "Gate to Source Threshold Voltage Temperature Coefficient",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 5,
+          "unit": "mA"
+        },
+        {
+          "TC": "-55°C < TA < 150°C",
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 1.26,
+      "max": null,
+      "unit": "mV/°C"
+    },
+    "RDS(on)": {
+      "parameter": "Drain to Source Resistance",
+      "conditions": [
+        {
+          "ID": 30,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 14,
+      "typ": 16,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "VSD": {
+      "parameter": "Source to Drain Forward Voltage",
+      "conditions": [
+        {
+          "IS": 0.5,
+          "unit": "A"
+        },
+        {
+          "VG": 0,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 2.5,
+      "max": null,
+      "unit": "V"
+    }
+  },
+  "dynamic_characteristics": {
+    "CISS": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "f": 1,
+          "unit": "MHz"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 697,
+      "typ": null,
+      "max": 1000,
+      "unit": "pF"
+    },
+    "COSS": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "f": 1,
+          "unit": "MHz"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 390,
+      "typ": null,
+      "max": 700,
+      "unit": "pF"
+    },
+    "CRSS": {
+      "parameter": "Reverse transfer Capacitance",
+      "conditions": [
+        {
+          "f": 1,
+          "unit": "MHz"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 730,
+      "typ": null,
+      "max": null,
+      "unit": "pF"
+    },
+    "RG": {
+      "parameter": "Gate Resistance",
+      "conditions": [
+        {
+          "f": 1,
+          "unit": "MHz"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 0.6,
+      "typ": null,
+      "max": null,
+      "unit": "Ω"
+    },
+    "QG": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "ID": 15,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": 7,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "QG_30A": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "ID": 30,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": 7,
+      "typ": 11,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGD": {
+      "parameter": "Gate to Drain Charge",
+      "conditions": [
+        {
+          "ID": 15,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": 1.7,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGD_30A": {
+      "parameter": "Gate to Drain Charge",
+      "conditions": [
+        {
+          "ID": 30,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": 1.7,
+      "typ": 2.9,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGS": {
+      "parameter": "Gate to Source Charge",
+      "conditions": [
+        {
+          "ID": 15,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": 1.4,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGS_30A": {
+      "parameter": "Gate to Source Charge",
+      "conditions": [
+        {
+          "ID": 30,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": 2.4,
+      "typ": 3.1,
+      "max": null,
+      "unit": "nC"
+    },
+    "QOSS": {
+      "parameter": "Output Charge",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": 35,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "QRR": {
+      "parameter": "Source to Drain Recovery Charge",
+      "conditions": [
+        {
+          "ID": 30,
+          "unit": "A"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 1,
+      "unit": "nC"
+    }
+  },
+  "radiation_characteristics": {
+    "VDSMAX": {
+      "parameter": "Maximum Drain to Source Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 5,
+          "unit": "mA"
+        }
+      ],
+      "min": 1.4,
+      "typ": 2.5,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain to Source Leakage",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 2.6,
+      "typ": null,
+      "max": 50,
+      "unit": "μA"
+    },
+    "IGSSF": {
+      "parameter": "Gate to Source Forward Leakage",
+      "conditions": [
+        {
+          "VGS": 5,
+          "unit": "V"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": 500,
+      "unit": "μA"
+    },
+    "IGSSR": {
+      "parameter": "Gate to Source Reverse Leakage",
+      "conditions": [
+        {
+          "VGS": -4,
+          "unit": "V"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": 250,
+      "unit": "μA"
+    },
+    "RDS(on)": {
+      "parameter": "Drain to Source Resistance",
+      "conditions": [
+        {
+          "ID": 30,
+          "unit": "A"
+        },
+        {
+          "VGS": 5,
+          "unit": "V"
+        }
+      ],
+      "min": 14,
+      "typ": 16,
+      "max": null,
+      "unit": "mΩ"
+    }
+  },
+  "single_event_effect": {
+    "see_soa": [
+      {
+        "ion": "Xe",
+        "let": 50,
+        "range": 131,
+        "energy": 1653,
+        "vds_voltage_vgs_0v": 100,
+        "vds_voltage_vgs_4v": 100
+      },
+      {
+        "ion": "Au",
+        "let": 83.7,
+        "range": 130,
+        "energy": 2482,
+        "vds_voltage_vgs_0v": 100,
+        "vds_voltage_vgs_4v": 100
+      }
+    ]
+  },
+  "additional_info": {
+    "terminal_pad_finish": "Standard Terminal Pad finish is a solder alloy of 63%Sn 37%Pb",
+    "ss_pin_note": "SS pin is connected directly to source of internal die."
+  }
+}

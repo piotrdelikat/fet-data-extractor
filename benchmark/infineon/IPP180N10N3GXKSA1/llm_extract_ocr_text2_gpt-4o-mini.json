@@ -1,0 +1,235 @@
+{
+  "general_info": {
+    "componentName": "IPP180N10N3 G",
+    "manufacturer": "Infineon Technologies AG",
+    "description": "N-channel, normal level power transistor with excellent gate charge x RDS(on) product and very low on-resistance.",
+    "features": [
+      "Excellent gate charge x RDS(on) product (FOM)",
+      "Very low on-resistance RDS(on)",
+      "175 °C operating temperature",
+      "Pb-free lead plating; RoHS compliant",
+      "Qualified according to JEDEC for target application",
+      "Halogen-free according to IEC61249-2-21"
+    ],
+    "applications": [
+      "High-frequency switching",
+      "Synchronous rectification"
+    ],
+    "package": [
+      "PG-TO220-3",
+      "PG-TO262-3"
+    ],
+    "marking": "180N10N"
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 43,
+      "unit": "A",
+      "conditions": "Tj=25 °C"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "value": 30,
+      "unit": "A",
+      "conditions": "Tj=25 °C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, Single Pulse",
+      "value": 172,
+      "unit": "mJ",
+      "conditions": "Tc=25 °C"
+    },
+    "VGS": {
+      "parameter": "Gate Source Voltage",
+      "value": 20,
+      "unit": "V",
+      "conditions": "±"
+    },
+    "P_tot": {
+      "parameter": "Power Dissipation",
+      "value": 71,
+      "unit": "W",
+      "conditions": "Tc=25 °C"
+    },
+    "Tj_Tstg": {
+      "parameter": "Operating and Storage Temperature",
+      "value": "−55 to 175",
+      "unit": "°C"
+    },
+    "IEC_climatic_category": {
+      "parameter": "IEC Climatic Category",
+      "value": "55/175/56"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "value": 2.1,
+      "unit": "K/W"
+    },
+    "RthJA": {
+      "parameter": "Thermal Resistance, Junction to Ambient",
+      "value": 40,
+      "unit": "K/W",
+      "conditions": "6 cm² cooling area"
+    }
+  },
+  "static_characteristics": {
+    "V_BR_DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "value": 100,
+      "unit": "V",
+      "conditions": "VGS=0 V, ID=1 mA"
+    },
+    "VGS_th": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 2.7,
+      "typ": null,
+      "max": 3.5,
+      "unit": "V",
+      "conditions": "ID=33 µA"
+    },
+    "I_DSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "min": 0.1,
+      "typ": null,
+      "max": 1,
+      "unit": "µA",
+      "conditions": "VDS=100 V, VGS=0 V, Tj=25 °C"
+    },
+    "I_GSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "min": 1,
+      "typ": null,
+      "max": 100,
+      "unit": "nA",
+      "conditions": "VGS=20 V, VDS=0 V"
+    },
+    "R_DS_on": {
+      "parameter": "Drain-Source On-State Resistance",
+      "min": null,
+      "typ": 15.5,
+      "max": 18,
+      "unit": "mΩ",
+      "conditions": "VGS=10 V, ID=33 A"
+    },
+    "R_G": {
+      "parameter": "Gate Resistance",
+      "value": 1.4,
+      "unit": "Ω"
+    },
+    "g": {
+      "parameter": "Transconductance",
+      "value": 40,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "C_iss": {
+      "parameter": "Input Capacitance",
+      "value": 1350,
+      "unit": "pF",
+      "conditions": "VGS=0 V, VDS=50 V, f=1 MHz"
+    },
+    "C_oss": {
+      "parameter": "Output Capacitance",
+      "value": 237,
+      "unit": "pF",
+      "conditions": "VGS=0 V, VDS=50 V, f=1 MHz"
+    },
+    "C_rss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "value": 11,
+      "unit": "pF",
+      "conditions": "VGS=0 V, VDS=50 V, f=1 MHz"
+    },
+    "t_on": {
+      "parameter": "Turn-On Delay Time",
+      "value": 12,
+      "unit": "ns"
+    },
+    "t_r": {
+      "parameter": "Rise Time",
+      "value": 12,
+      "unit": "ns"
+    },
+    "t_off": {
+      "parameter": "Turn-Off Delay Time",
+      "value": 19,
+      "unit": "ns"
+    },
+    "t_f": {
+      "parameter": "Fall Time",
+      "value": 5,
+      "unit": "ns"
+    },
+    "Q_gs": {
+      "parameter": "Gate to Source Charge",
+      "value": 7,
+      "unit": "nC"
+    },
+    "Q_gd": {
+      "parameter": "Gate to Drain Charge",
+      "value": 4,
+      "unit": "nC"
+    },
+    "Q_sw": {
+      "parameter": "Switching Charge",
+      "value": 6,
+      "unit": "nC"
+    },
+    "Q_g": {
+      "parameter": "Gate Charge Total",
+      "min": 19,
+      "typ": null,
+      "max": 25,
+      "unit": "nC",
+      "conditions": "VGS=0 to 10 V"
+    },
+    "V_plateau": {
+      "parameter": "Gate Plateau Voltage",
+      "value": 4.9,
+      "unit": "V"
+    },
+    "Q_oss": {
+      "parameter": "Output Charge",
+      "min": 25,
+      "typ": null,
+      "max": 33,
+      "unit": "nC",
+      "conditions": "VGS=0 V, VDS=50 V"
+    }
+  },
+  "reverse_diode": {
+    "I_S": {
+      "parameter": "Diode Continuous Forward Current",
+      "value": 43,
+      "unit": "A"
+    },
+    "I_S_pulse": {
+      "parameter": "Diode Pulse Current",
+      "value": 172,
+      "unit": "A"
+    },
+    "V_SD": {
+      "parameter": "Diode Forward Voltage",
+      "value": 1.2,
+      "unit": "V"
+    },
+    "t_rr": {
+      "parameter": "Reverse Recovery Time",
+      "value": null,
+      "unit": "ns"
+    },
+    "Q_rr": {
+      "parameter": "Reverse Recovery Charge",
+      "value": null,
+      "unit": "nC"
+    }
+  },
+  "additional_info": {
+    "legal_disclaimer": "The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics.",
+    "warnings": "Infineon Technologies components may be used in life-support devices or systems only with the express written approval of Infineon Technologies."
+  }
+}

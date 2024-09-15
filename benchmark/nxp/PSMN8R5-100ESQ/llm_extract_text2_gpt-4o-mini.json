@@ -1,0 +1,312 @@
+{
+  "general_info": {
+    "componentName": "PSMN8R5-100ES",
+    "manufacturer": "NXP Semiconductors",
+    "description": "N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK",
+    "releaseDate": "11 October 2012",
+    "features": [
+      "High efficiency due to low switching and conduction losses",
+      "Suitable for standard level gate drive sources"
+    ],
+    "applications": [
+      "AC-to-DC power supply equipment",
+      "Motor control",
+      "Server power supplies",
+      "Synchronous rectification"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "min": null,
+      "typ": 100,
+      "max": 100,
+      "unit": "V",
+      "conditions": "Tj ≥ 25 °C; Tj ≤ 175 °C"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "min": null,
+      "typ": 100,
+      "max": 100,
+      "unit": "A",
+      "conditions": "Tj = 25 °C; VGS = 10 V"
+    },
+    "Ptot": {
+      "parameter": "Total Power Dissipation",
+      "min": null,
+      "typ": 263,
+      "max": 263,
+      "unit": "W",
+      "conditions": "Tmb = 25 °C"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "min": -20,
+      "typ": null,
+      "max": 20,
+      "unit": "V"
+    },
+    "IDM": {
+      "parameter": "Peak Drain Current",
+      "min": null,
+      "typ": 429,
+      "max": 429,
+      "unit": "A",
+      "conditions": "pulsed; tp ≤ 10 μs; Tmb = 25 °C"
+    },
+    "Tstg": {
+      "parameter": "Storage Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    },
+    "Tj": {
+      "parameter": "Junction Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    },
+    "Tsl(M)": {
+      "parameter": "Peak Soldering Temperature",
+      "min": null,
+      "typ": null,
+      "max": 260,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 25,
+          "unit": "A"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 6.4,
+      "typ": 8.5,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "ID": 250,
+          "unit": "μA"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-Source Threshold Voltage",
+      "conditions": [
+        {
+          "ID": 1,
+          "unit": "mA"
+        },
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 2.4,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain Leakage Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 0.1,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate Leakage Current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 0.1,
+      "max": null,
+      "unit": "μA"
+    }
+  },
+  "dynamic_characteristics": {
+    "QG(tot)": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 25,
+          "unit": "A"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 111,
+      "max": null,
+      "unit": "nC"
+    },
+    "QGD": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "ID": 25,
+          "unit": "A"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 33,
+      "max": null,
+      "unit": "nC"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": "1 MHz"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 512,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": "1 MHz"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 380,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": "1 MHz"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 256,
+      "max": null,
+      "unit": "pF"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth(j-mb)": {
+      "parameter": "Thermal Resistance from Junction to Mounting Base",
+      "min": 0.49,
+      "typ": 0.57,
+      "max": null,
+      "unit": "K/W"
+    }
+  }
+}

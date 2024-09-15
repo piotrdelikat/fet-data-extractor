@@ -1,0 +1,352 @@
+{
+  "general_info": {
+    "componentName": "IPF015N10N5",
+    "manufacturer": "Infineon Technologies",
+    "description": "OptiMOS™ 5 Power-Transistor, 100 V",
+    "features": [
+      "Ideal for high frequency switching and sync. rec.",
+      "Excellent gate charge x RDS(on) product (FOM)",
+      "Very low on-resistance RDS(on)",
+      "N-channel, normal level",
+      "100% avalanche tested",
+      "Pb-free lead plating; RoHS compliant",
+      "Halogen-free according to IEC61249-2-21"
+    ],
+    "applications": [
+      "Fully qualified according to JEDEC for Industrial Applications"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "min": null,
+      "typ": 276,
+      "max": null,
+      "unit": "A",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "min": null,
+      "typ": null,
+      "max": 1104,
+      "unit": "A",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, Single Pulse",
+      "min": null,
+      "typ": null,
+      "max": 166,
+      "unit": "mJ",
+      "conditions": [
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "RGS": 25,
+          "unit": "Ω"
+        }
+      ]
+    },
+    "VGS": {
+      "parameter": "Gate Source Voltage",
+      "min": -20,
+      "typ": null,
+      "max": 20,
+      "unit": "V"
+    },
+    "Ptot": {
+      "parameter": "Power Dissipation",
+      "min": null,
+      "typ": 375,
+      "max": null,
+      "unit": "W",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating and Storage Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "min": 0,
+      "typ": 0.3,
+      "max": 0.4,
+      "unit": "°C/W"
+    },
+    "RthJA": {
+      "parameter": "Thermal Resistance, Junction to Ambient",
+      "min": null,
+      "typ": 40,
+      "max": null,
+      "unit": "°C/W"
+    },
+    "Tsol": {
+      "parameter": "Soldering Temperature",
+      "min": null,
+      "typ": 260,
+      "max": null,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ]
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 2.2,
+      "typ": 3,
+      "max": 3.8,
+      "unit": "V",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 279,
+          "unit": "μA"
+        }
+      ]
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "min": null,
+      "typ": 0.1,
+      "max": 100,
+      "unit": "μA",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "min": null,
+      "typ": 1,
+      "max": 100,
+      "unit": "nA",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        }
+      ]
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "min": null,
+      "typ": 1.53,
+      "max": 1.7,
+      "unit": "mΩ",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ]
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "min": null,
+      "typ": 1200,
+      "max": 1600,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ]
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "min": null,
+      "typ": 1800,
+      "max": 2300,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ]
+    },
+    "QG": {
+      "parameter": "Total Gate Charge",
+      "min": null,
+      "typ": 168,
+      "max": 210,
+      "unit": "nC",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "VGS": "0 to 10",
+          "unit": "V"
+        }
+      ]
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "min": null,
+      "typ": 33,
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "RG,ext": 1.6,
+          "unit": "Ω"
+        }
+      ]
+    }
+  },
+  "reverse_diode": {
+    "IS": {
+      "parameter": "Diode Continuous Forward Current",
+      "min": null,
+      "typ": 268,
+      "max": null,
+      "unit": "A",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "min": -0.86,
+      "typ": null,
+      "max": 1,
+      "unit": "V",
+      "conditions": [
+        {
+          "IF": 100,
+          "unit": "A"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "min": null,
+      "typ": 88,
+      "max": 176,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VR": 50,
+          "unit": "V"
+        },
+        {
+          "IF": 100,
+          "unit": "A"
+        },
+        {
+          "diF/dt": 100,
+          "unit": "A/μs"
+        }
+      ]
+    }
+  }
+}

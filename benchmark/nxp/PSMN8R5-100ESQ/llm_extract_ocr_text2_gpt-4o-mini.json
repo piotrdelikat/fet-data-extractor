@@ -1,0 +1,170 @@
+{
+  "general_info": {
+    "componentName": "PSMN8R5-100ES",
+    "manufacturer": "NXP Semiconductors",
+    "description": "N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK",
+    "date": "11 October 2012",
+    "features": [
+      "High efficiency due to low switching and conduction losses",
+      "Suitable for standard level gate drive sources"
+    ],
+    "applications": [
+      "AC-to-DC power supply equipment",
+      "Motor control",
+      "Server power supplies",
+      "Synchronous rectification"
+    ]
+  },
+  "quick_reference_data": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "conditions": "Tj ≥ 25 °C; Tj ≤ 175 °C",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "conditions": "Tj = 25 °C; VGS = 10 V",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "A"
+    },
+    "Ptot": {
+      "parameter": "Total Power Dissipation",
+      "conditions": "Tj = 25 °C; Tmb = 25 °C",
+      "min": null,
+      "typ": null,
+      "max": 263,
+      "unit": "W"
+    }
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "V"
+    },
+    "VDGR": {
+      "parameter": "Drain-Gate Voltage",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "min": null,
+      "typ": null,
+      "max": 20,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Peak Drain Current",
+      "min": null,
+      "typ": null,
+      "max": 429,
+      "unit": "A"
+    },
+    "Ptot": {
+      "parameter": "Total Power Dissipation",
+      "min": null,
+      "typ": null,
+      "max": 263,
+      "unit": "W"
+    },
+    "Tstg": {
+      "parameter": "Storage Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 25,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 6.4,
+      "max": 8.5,
+      "unit": "mΩ"
+    },
+    "QGD": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 25,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 33,
+      "max": null,
+      "unit": "nC"
+    },
+    "QG(tot)": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 25,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 111,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "dynamic_characteristics": {
+    "EDS(AL)S": {
+      "parameter": "Non-Repetitive Drain-Source Avalanche Energy",
+      "conditions": [
+        {
+          "VGS": 10,
+          "Tj(init)": 25,
+          "ID": 100,
+          "Vsup": "≤ 100 V",
+          "RGS": 50,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 219,
+      "unit": "mJ"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth(j-mb)": {
+      "parameter": "Thermal Resistance from Junction to Mounting Base",
+      "min": null,
+      "typ": 0.49,
+      "max": 0.57,
+      "unit": "K/W"
+    }
+  }
+}

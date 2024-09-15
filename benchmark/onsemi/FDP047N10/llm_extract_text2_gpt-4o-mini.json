@@ -1,0 +1,404 @@
+{
+  "general_info": {
+    "componentName": "FDP047N10",
+    "manufacturer": "ON Semiconductor",
+    "description": "N-Channel PowerTrench® MOSFET 100 V, 164 A, 4.7 mΩ",
+    "features": [
+      "RDS(on) = 3.9 mΩ (Typ.) @ VGS = 10 V, ID = 75 A",
+      "Fast Switching Speed",
+      "Low Gate Charge",
+      "High Performance Trench Technology for Extremely Low RDS(on)",
+      "High Power and Current Handling Capability",
+      "RoHS Compliant"
+    ],
+    "applications": [
+      "Synchronous Rectification for ATX / Server / Telecom PSU",
+      "Battery Protection Circuit",
+      "Motor Drives and Uninterruptible Power Supplies",
+      "Micro Solar Inverter"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current - Continuous (TC = 25°C, Silicon Limited)",
+      "value": 164,
+      "unit": "A"
+    },
+    "ID_100C": {
+      "parameter": "Drain Current - Continuous (TC = 100°C, Silicon Limited)",
+      "value": 116,
+      "unit": "A"
+    },
+    "ID_Package_Limited": {
+      "parameter": "Drain Current - Continuous (TC = 25°C, Package Limited)",
+      "value": 120,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Drain Current - Pulsed",
+      "value": 656,
+      "unit": "A"
+    },
+    "EAS": {
+      "parameter": "Single Pulsed Avalanche Energy",
+      "value": 1153,
+      "unit": "mJ"
+    },
+    "dv_dt": {
+      "parameter": "Peak Diode Recovery dv/dt",
+      "value": 6,
+      "unit": "V/ns"
+    },
+    "PD": {
+      "parameter": "Power Dissipation (TC = 25°C)",
+      "value": 375,
+      "unit": "W"
+    },
+    "derate": {
+      "parameter": "Derate Above 25°C",
+      "value": 2.5,
+      "unit": "W/°C"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating and Storage Temperature Range",
+      "value": "-55 to +175",
+      "unit": "°C"
+    },
+    "TL": {
+      "parameter": "Maximum Lead Temperature for Soldering, 1/8” from Case for 5 Seconds",
+      "value": 300,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Thermal Resistance, Junction to Case, Max.",
+      "value": 0.4,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Thermal Resistance, Junction to Ambient, Max.",
+      "value": 62.5,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "conditions": [
+        {
+          "ID": 250,
+          "unit": "μA"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "ΔBVDSS/ΔTJ": {
+      "parameter": "Breakdown Voltage Temperature Coefficient",
+      "conditions": [
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": -0.1,
+      "typ": null,
+      "max": null,
+      "unit": "V/°C"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate to Body Leakage Current",
+      "conditions": [
+        {
+          "VGS": "±20",
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VGS": "VDS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 2.5,
+      "typ": 3.5,
+      "max": 4.5,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain to Source On Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 75,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 3.9,
+      "max": 4.7,
+      "unit": "mΩ"
+    },
+    "gFS": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 75,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 170,
+      "max": null,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 25,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": "1 MHz"
+        }
+      ],
+      "min": null,
+      "typ": 1150,
+      "max": 1525,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [],
+      "min": 1120,
+      "typ": 1500,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [],
+      "min": 45,
+      "typ": 68,
+      "max": null,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 75,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 25,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 174,
+      "max": 358,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-On Rise Time",
+      "conditions": [],
+      "min": null,
+      "typ": 386,
+      "max": 782,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [],
+      "min": null,
+      "typ": 344,
+      "max": 698,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-Off Fall Time",
+      "conditions": [],
+      "min": null,
+      "typ": 244,
+      "max": 499,
+      "unit": "ns"
+    },
+    "Qg_tot": {
+      "parameter": "Total Gate Charge at 10V",
+      "conditions": [
+        {
+          "VDS": 80,
+          "unit": "V"
+        },
+        {
+          "ID": 75,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 160,
+      "max": 210,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate to Source Gate Charge",
+      "conditions": [],
+      "min": null,
+      "typ": 5,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate to Drain “Miller” Charge",
+      "conditions": [],
+      "min": null,
+      "typ": 36,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "drain_source_diode_characteristics": {
+    "IS": {
+      "parameter": "Maximum Continuous Drain to Source Diode Forward Current",
+      "conditions": [],
+      "min": null,
+      "typ": 164,
+      "max": null,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Maximum Pulsed Drain to Source Diode Forward Current",
+      "conditions": [],
+      "min": null,
+      "typ": 656,
+      "max": null,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Drain to Source Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "IS": 75,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.25,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "IS": 75,
+          "unit": "A"
+        },
+        {
+          "dIF/dt": 100,
+          "unit": "A/μs"
+        }
+      ],
+      "min": null,
+      "typ": 88,
+      "max": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "conditions": [],
+      "min": null,
+      "typ": 245,
+      "max": null,
+      "unit": "nC"
+    }
+  }
+}

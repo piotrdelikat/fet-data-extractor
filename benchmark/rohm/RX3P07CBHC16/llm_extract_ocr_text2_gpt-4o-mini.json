@@ -1,0 +1,408 @@
+{
+  "general_info": {
+    "componentName": "RX3P07CBH",
+    "manufacturer": "ROHM Co., Ltd.",
+    "description": "Nch 100V 120A Power MOSFET",
+    "features": [
+      "Low on-resistance",
+      "High power small mold package (TO220AB)",
+      "Pb-free plating; RoHS compliant",
+      "100% UIS tested"
+    ],
+    "applications": [
+      "Switching"
+    ],
+    "packaging": {
+      "type": "Tube",
+      "quantity": 1000
+    }
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain - Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 120,
+      "unit": "A",
+      "conditions": "Silicon limit (VGS=10V), Tc = 25°C"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "value": 480,
+      "unit": "A",
+      "conditions": "VGS=10V"
+    },
+    "VGSS": {
+      "parameter": "Gate - Source Voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "I_avalanche": {
+      "parameter": "Avalanche Current, Single Pulse",
+      "value": 35,
+      "unit": "A"
+    },
+    "E_avalanche": {
+      "parameter": "Avalanche Energy, Single Pulse",
+      "value": 99,
+      "unit": "mJ"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 135,
+      "unit": "W"
+    },
+    "Tj": {
+      "parameter": "Junction Temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "Tstg": {
+      "parameter": "Operating and Storage Temperature Range",
+      "value": "−55 to +150",
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance, Junction - Case",
+      "min": null,
+      "typ": null,
+      "max": 0.92,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain - Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "ΔV(BR)DSS": {
+      "parameter": "Breakdown Voltage Temperature Coefficient",
+      "conditions": [
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": null,
+      "typ": 62.3,
+      "max": null,
+      "unit": "mV/°C"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 2,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate - Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 5,
+      "max": 500,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 4,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "ΔVGS(th)": {
+      "parameter": "Gate Threshold Voltage Temperature Coefficient",
+      "conditions": [
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": null,
+      "typ": -4.5,
+      "max": null,
+      "unit": "mV/°C"
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain - Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 70,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 5.2,
+      "max": 5.2,
+      "unit": "mΩ"
+    },
+    "RG": {
+      "parameter": "Gate Resistance",
+      "conditions": [
+        {
+          "VGS": 6,
+          "ID": 35,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 4.8,
+      "max": 7.2,
+      "unit": "Ω"
+    },
+    "|Yfs|": {
+      "parameter": "Forward Transfer Admittance",
+      "conditions": [
+        {
+          "VDS": 5,
+          "ID": 35,
+          "unit": "A"
+        }
+      ],
+      "min": 30,
+      "typ": null,
+      "max": null,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 4650,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 890,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 33,
+      "max": null,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 40,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "conditions": [
+        {
+          "ID": 35,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 37,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [
+        {
+          "R": 1.42,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 99,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "conditions": [
+        {
+          "RG": 10,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 60,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "gate_charge_characteristics": {
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VGS": 10,
+          "VDD": 50,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 73,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate - Source Charge",
+      "conditions": [
+        {
+          "ID": 50,
+          "VGS": 6,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 16.4,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate - Drain Charge",
+      "conditions": [
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 18.9,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "body_diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Forward Current",
+      "conditions": [
+        {
+          "Ta": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 70,
+      "unit": "A"
+    },
+    "S": {
+      "parameter": "Pulse Forward Current",
+      "conditions": [],
+      "min": null,
+      "typ": null,
+      "max": 480,
+      "unit": "A"
+    },
+    "VF": {
+      "parameter": "Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "I": 70,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 1.2,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "conditions": [
+        {
+          "IS": 50,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 74,
+      "max": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "conditions": [
+        {
+          "IS": 50,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 190,
+      "max": null,
+      "unit": "nC"
+    }
+  }
+}

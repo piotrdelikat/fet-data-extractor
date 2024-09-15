@@ -1,0 +1,237 @@
+{
+  "general_info": {
+    "componentName": "GSFH9R015",
+    "manufacturer": "Goodark Semiconductor",
+    "description": "150V N-Channel MOSFET",
+    "features": [
+      "Advanced MOSFET process technology",
+      "Ideal for high efficiency switched mode power supplies",
+      "Low on-resistance with low gate charge",
+      "Fast switching and reverse body recovery"
+    ],
+    "applications": [
+      "High efficiency switch mode power supplies",
+      "Wide variety of other applications"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 150,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current - Continuous, @ Steady-State (Tc=25°C)",
+      "value": 100,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Drain Current - Pulsed",
+      "value": 400,
+      "unit": "A"
+    },
+    "PD": {
+      "parameter": "Power Dissipation (Tc=25°C)",
+      "value": 178,
+      "unit": "W"
+    },
+    "TJ": {
+      "parameter": "Maximum Junction Temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "TSTG": {
+      "parameter": "Storage Temperature Range",
+      "value": "-55 to +150",
+      "unit": "°C"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient (PCB Mounted, Steady-State)",
+      "value": 50,
+      "unit": "°C/W"
+    },
+    "RθJC": {
+      "parameter": "Junction-to-Case",
+      "value": 0.7,
+      "unit": "°C/W"
+    },
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "value": 784,
+      "unit": "mJ"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 150,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "nA"
+    },
+    "RDS(ON)": {
+      "parameter": "Static Drain-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 7.39,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VGS": "VDS",
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 2.1,
+      "typ": 3.9,
+      "max": null,
+      "unit": "V"
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 24.9,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain ('Miller') Charge",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 30.8,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [],
+      "min": null,
+      "typ": 32,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "conditions": [],
+      "min": null,
+      "typ": 25,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [],
+      "min": null,
+      "typ": 97,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "conditions": [],
+      "min": null,
+      "typ": 89,
+      "max": null,
+      "unit": "ns"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [],
+      "min": null,
+      "typ": 5870,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [],
+      "min": null,
+      "typ": 404,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [],
+      "min": null,
+      "typ": 9.3,
+      "max": null,
+      "unit": "pF"
+    }
+  }
+}

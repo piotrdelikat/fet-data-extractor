@@ -1,0 +1,59 @@
+{
+  "general_info": {
+    "componentName": "HEXFET Power MOSFET",
+    "manufacturer": "International Rectifier",
+    "description": "Lead-Free HEXFET Power MOSFET"
+  },
+  "lead_assignments": {
+    "1": "GATE",
+    "2": "DRAIN",
+    "3": "SOURCE",
+    "4": "DRAIN"
+  },
+  "notes": [
+    {
+      "note": "Dimensioning & Tolerancing per ANSI Y14.5M, 1982."
+    },
+    {
+      "note": "Outline conforms to JEDEC Outline TO-220AB."
+    },
+    {
+      "note": "Controlling dimension: inch."
+    },
+    {
+      "note": "Heatsink & lead measurements do not include burrs."
+    }
+  ],
+  "dimensions": {
+    "min": {
+      "value": 6.47,
+      "unit": "mm"
+    },
+    "max": {
+      "value": 15.24,
+      "unit": "mm"
+    }
+  },
+  "assembly_info": {
+    "part_number": "IRF 1010",
+    "assembly_line": "C",
+    "lot_code": "1789",
+    "date_code": "WW 19, 1997",
+    "year": "1997",
+    "week": "19"
+  },
+  "warnings": [
+    {
+      "warning": "Due to technical requirements products may contain dangerous substances."
+    },
+    {
+      "warning": "Infineon Technologies’ products may not be used in any applications where a failure of the product or any consequences of the use thereof can reasonably be expected to result in personal injury."
+    }
+  ],
+  "contact_info": {
+    "headquarters": "233 Kansas St., El Segundo, California 90245, USA",
+    "tel": "(310) 252-7105",
+    "fax": "(310) 252-7903",
+    "website": "www.irf.com"
+  }
+}

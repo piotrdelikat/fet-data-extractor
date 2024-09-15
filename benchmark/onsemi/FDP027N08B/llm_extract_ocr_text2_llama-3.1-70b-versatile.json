@@ -1,0 +1,591 @@
+{
+  "general_info": {
+    "componentName": "FDP027N08B",
+    "manufacturer": "ON Semiconductor",
+    "description": "N-Channel PowerTrench MOSFET",
+    "features": [
+      "Low FOM RDS(on) * QG",
+      "Low Reverse-Recovery Charge, Qrr = 112 nC",
+      "Soft Reverse-Recovery Body Diode",
+      "Enables High Efficiency in Synchronous Rectification",
+      "Fast Switching Speed",
+      "100% UIL Tested",
+      "This device is Pb-Free, Halogen Free/BFR Free and is RoHS Compliant"
+    ],
+    "applications": [
+      "Synchronous Rectification for ATX / Server / Telecom PSU",
+      "Battery Protection Circuit",
+      "Motor Drives and Uninterruptible Power Supplies"
+    ]
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": 0.61,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "value": 62.5,
+      "unit": "°C/W"
+    }
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 80,
+      "unit": "V",
+      "conditions": "Note 1"
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": "+20 / -20",
+      "unit": "V",
+      "conditions": "Note 2"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 223,
+      "unit": "A",
+      "conditions": "@ VGS = 10 V"
+    },
+    "IDM": {
+      "parameter": "Single-Pulse Drain Current",
+      "value": 892,
+      "unit": "A",
+      "conditions": "Note 1"
+    },
+    "EAS": {
+      "parameter": "Single Pulsed Avalanche Energy",
+      "value": 917,
+      "unit": "mJ",
+      "conditions": "Note 2"
+    },
+    "dv/dt": {
+      "parameter": "Peak Diode Recovery dv/dt",
+      "value": 6,
+      "unit": "V/ns",
+      "conditions": "Note 3"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 1.64,
+      "unit": "W/°C",
+      "conditions": "Derate Above 25°C"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating and Storage Temperature Range",
+      "value": "-55 to +175",
+      "unit": "°C"
+    },
+    "TSOL": {
+      "parameter": "Maximum Lead Temperature for Soldering, 1/8” from Case for 5 Seconds",
+      "value": 300,
+      "unit": "°C"
+    }
+  },
+  "electrical_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain to Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 80,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "ΔBVDSS/ΔTJ": {
+      "parameter": "Breakdown Voltage Temperature Coefficient",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        },
+        {
+          "TC": 150,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": -0.05,
+      "max": null,
+      "unit": "V/°C"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 64,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "TC": 150,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 0.001,
+      "max": 0.5,
+      "unit": "mA"
+    },
+    "IGSS": {
+      "parameter": "Gate to Body Leakage Current",
+      "conditions": [
+        {
+          "VDS": 64,
+          "unit": "V"
+        },
+        {
+          "VGS": "+20 / -20",
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 0.01,
+      "max": 0.5,
+      "unit": "mA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 2.5,
+      "typ": null,
+      "max": 4.5,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain to Source On Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 2.21,
+      "max": 2.7,
+      "unit": "mΩ"
+    },
+    "gFS": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 227,
+      "max": null,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 10170,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 1670,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "min": null,
+      "typ": 35,
+      "max": null,
+      "unit": "pF"
+    },
+    "Qg(tot)": {
+      "parameter": "Total Gate Charge at 10V",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 178,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate to Source Gate Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 137,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs2": {
+      "parameter": "Gate Charge Threshold to Plateau",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 56,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate to Drain “Miller” Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 25,
+      "max": null,
+      "unit": "nC"
+    },
+    "ESR": {
+      "parameter": "Equivalent Series Resistance (G-S)",
+      "conditions": [
+        {
+          "VDS": 40,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 2.4,
+      "max": null,
+      "unit": "Ω"
+    }
+  },
+  "switching_characteristics": {
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 4.7,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 47,
+      "max": 104,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-On Rise Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 4.7,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 66,
+      "max": 142,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 4.7,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 87,
+      "max": 184,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-Off Fall Time",
+      "conditions": [
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ID": 100,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "RG": 4.7,
+          "unit": "Ω"
+        }
+      ],
+      "min": null,
+      "typ": 41,
+      "max": 92,
+      "unit": "ns"
+    }
+  },
+  "diode_characteristics": {
+    "IS": {
+      "parameter": "Maximum Continuous Drain to Source Diode Forward Current",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 223,
+      "max": null,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Maximum Pulsed Drain to Source Diode Forward Current",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 892,
+      "max": null,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Drain to Source Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ISD": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 1.3,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ISD": 100,
+          "unit": "A"
+        },
+        {
+          "di/dt": 200,
+          "unit": "A/μs"
+        }
+      ],
+      "min": null,
+      "typ": 80,
+      "max": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDD": 40,
+          "unit": "V"
+        },
+        {
+          "ISD": 100,
+          "unit": "A"
+        },
+        {
+          "di/dt": 100,
+          "unit": "A/μs"
+        }
+      ],
+      "min": null,
+      "typ": 112,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "additional_info": {
+    "terminal_pad_finish": "Standard Terminal Pad finish is a solder alloy of 63%Pb 37%Sn",
+    "ss_pin_note": "SS pin is connected directly to source of internal die."
+  }
+}

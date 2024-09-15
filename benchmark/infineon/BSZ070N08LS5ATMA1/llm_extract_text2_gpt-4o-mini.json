@@ -1,0 +1,372 @@
+{
+  "general_info": {
+    "componentName": "BSZ070N08LS5",
+    "manufacturer": "Infineon Technologies",
+    "description": "OptiMOS 5 Power-Transistor, 80 V",
+    "features": [
+      "Ideal for high frequency switching and sync. rec.",
+      "Optimized technology for DC/DC converters",
+      "Excellent gate charge x RDS(on) product (FOM)",
+      "Very low on-resistance RDS(on)",
+      "N-channel, logic level",
+      "100% avalanche tested",
+      "Pb-free plating; RoHS compliant",
+      "Qualified according to JEDEC for target applications",
+      "Halogen-free according to IEC61249-2-21",
+      "Higher solder joint reliability with enlarged source interconnection"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "min": null,
+      "typ": 40,
+      "max": 40,
+      "unit": "A",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        },
+        {
+          "Tc": 100,
+          "unit": "°C"
+        }
+      ]
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "min": null,
+      "typ": null,
+      "max": 160,
+      "unit": "A",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "VGS": {
+      "parameter": "Gate Source Voltage",
+      "min": -20,
+      "typ": null,
+      "max": 20,
+      "unit": "V"
+    },
+    "P_tot": {
+      "parameter": "Power Dissipation",
+      "min": null,
+      "typ": null,
+      "max": 69,
+      "unit": "W",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating and Storage Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 150,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "min": 1,
+      "typ": 1.8,
+      "max": null,
+      "unit": "K/W",
+      "conditions": [
+        {
+          "description": "Device on PCB, minimal footprint"
+        }
+      ]
+    },
+    "RthJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "min": 60,
+      "typ": null,
+      "max": null,
+      "unit": "K/W",
+      "conditions": [
+        {
+          "description": "Device on PCB, 6 cm² cooling area"
+        }
+      ]
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "min": 80,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 1,
+          "unit": "mA"
+        }
+      ]
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 1.1,
+      "typ": 1.7,
+      "max": 2.3,
+      "unit": "V",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 36,
+          "unit": "μA"
+        }
+      ]
+    },
+    "I_DSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "min": null,
+      "typ": 0.1,
+      "max": 100,
+      "unit": "μA",
+      "conditions": [
+        {
+          "VDS": 80,
+          "VGS": 0,
+          "Tj": 25,
+          "unit": "°C"
+        },
+        {
+          "VDS": 80,
+          "VGS": 0,
+          "Tj": 125,
+          "unit": "°C"
+        }
+      ]
+    },
+    "I_GSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "nA",
+      "conditions": [
+        {
+          "VGS": 20,
+          "VDS": 0,
+          "unit": "V"
+        }
+      ]
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "min": 5.9,
+      "typ": 7,
+      "max": 9.4,
+      "unit": "mΩ",
+      "conditions": [
+        {
+          "VGS": 4.5,
+          "ID": 10,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "ID": 20,
+          "unit": "A"
+        }
+      ]
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "min": 1800,
+      "typ": 2340,
+      "max": null,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 40,
+          "unit": "V",
+          "frequency": "1 MHz"
+        }
+      ]
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "min": 280,
+      "typ": 364,
+      "max": null,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 40,
+          "unit": "V",
+          "frequency": "1 MHz"
+        }
+      ]
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "min": 12,
+      "typ": 21,
+      "max": null,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 40,
+          "unit": "V",
+          "frequency": "1 MHz"
+        }
+      ]
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "min": null,
+      "typ": 6.1,
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VDD": 40,
+          "VGS": 10,
+          "ID": 20,
+          "RG_ext": 3,
+          "unit": "Ω"
+        }
+      ]
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "min": null,
+      "typ": 4.8,
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VDD": 40,
+          "VGS": 10,
+          "ID": 20,
+          "RG_ext": 3,
+          "unit": "Ω"
+        }
+      ]
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "min": null,
+      "typ": 24.6,
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VDD": 40,
+          "VGS": 10,
+          "ID": 20,
+          "RG_ext": 3,
+          "unit": "Ω"
+        }
+      ]
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "min": null,
+      "typ": 5.8,
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VDD": 40,
+          "VGS": 10,
+          "ID": 20,
+          "RG_ext": 3,
+          "unit": "Ω"
+        }
+      ]
+    }
+  },
+  "reverse_diode": {
+    "I_S": {
+      "parameter": "Diode Continuous Forward Current",
+      "min": null,
+      "typ": 40,
+      "max": null,
+      "unit": "A",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "I_S_pulse": {
+      "parameter": "Diode Pulse Current",
+      "min": null,
+      "typ": 160,
+      "max": null,
+      "unit": "A",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "V_SD": {
+      "parameter": "Diode Forward Voltage",
+      "min": 0.85,
+      "typ": 1.2,
+      "max": null,
+      "unit": "V",
+      "conditions": [
+        {
+          "VGS": 0,
+          "IF": 20,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "t_rr": {
+      "parameter": "Reverse Recovery Time",
+      "min": null,
+      "typ": 32,
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VR": 40,
+          "IF": 20,
+          "diF/dt": 100,
+          "unit": "A/μs"
+        }
+      ]
+    },
+    "Q_rr": {
+      "parameter": "Reverse Recovery Charge",
+      "min": null,
+      "typ": 275,
+      "max": null,
+      "unit": "nC",
+      "conditions": [
+        {
+          "VR": 40,
+          "IF": 20,
+          "diF/dt": 100,
+          "unit": "A/μs"
+        }
+      ]
+    }
+  }
+}

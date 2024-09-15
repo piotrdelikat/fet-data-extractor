@@ -1,0 +1,263 @@
+{
+  "general_info": {
+    "componentName": "CSD19531Q5A",
+    "manufacturer": "Texas Instruments",
+    "description": "100 V N-Channel NexFET™ Power MOSFET",
+    "features": [
+      "Ultra-Low Qg and Qgd",
+      "Low Thermal Resistance",
+      "Avalanche Rated",
+      "Pb-Free Terminal Plating",
+      "RoHS Compliant",
+      "Halogen Free",
+      "SON 5 mm × 6 mm Plastic Package"
+    ],
+    "applications": [
+      "Primary Side Telecom",
+      "Secondary Side Synchronous Rectifier",
+      "Motor Control"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-to-Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 100,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Continuous Drain Current (Silicon limited)",
+      "value": 110,
+      "unit": "A",
+      "conditions": "TC = 25°C"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 3.3,
+      "unit": "W"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "-55 to 150",
+      "unit": "°C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, single pulse",
+      "value": 180,
+      "unit": "mJ",
+      "conditions": "ID = 60 A, L = 0.1 mH, RG = 25 Ω"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-to-Source Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 80,
+          "unit": "V"
+        }
+      ],
+      "min": 1,
+      "typ": null,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate-to-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 0,
+          "unit": "V"
+        },
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-to-Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 2.2,
+      "typ": 2.7,
+      "max": 3.3,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-to-Source On Resistance",
+      "conditions": [
+        {
+          "VGS": 6,
+          "unit": "V"
+        },
+        {
+          "ID": 16,
+          "unit": "A"
+        }
+      ],
+      "min": 6,
+      "typ": null,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "RDS(on)_at_VGS_10V": {
+      "parameter": "Drain-to-Source On Resistance at VGS = 10V",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 16,
+          "unit": "A"
+        }
+      ],
+      "min": 5.3,
+      "typ": null,
+      "max": null,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg": {
+      "parameter": "Gate Charge Total (10 V)",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 16,
+          "unit": "A"
+        }
+      ],
+      "min": 37,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate Charge Gate to Drain",
+      "conditions": [
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 16,
+          "unit": "A"
+        }
+      ],
+      "min": 6.6,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 16,
+          "unit": "A"
+        }
+      ],
+      "min": 2980,
+      "typ": 3870,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 16,
+          "unit": "A"
+        }
+      ],
+      "min": 560,
+      "typ": 728,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 16,
+          "unit": "A"
+        }
+      ],
+      "min": 13,
+      "typ": 16.9,
+      "max": null,
+      "unit": "pF"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case Thermal Resistance",
+      "value": 1,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient Thermal Resistance",
+      "value": 50,
+      "unit": "°C/W"
+    }
+  }
+}

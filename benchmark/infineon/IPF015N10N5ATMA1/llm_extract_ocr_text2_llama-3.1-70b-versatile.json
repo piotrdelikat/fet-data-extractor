@@ -1,0 +1,253 @@
+{
+  "general_info": {
+    "componentName": "IPF015N10N5",
+    "manufacturer": "Infineon Technologies",
+    "description": "OptiMOSTM 5 Power-Transistor, 100 V",
+    "features": [
+      "Ideal for high frequency switching and sync. rec.",
+      "Excellent gate charge x RDS(on) product (FOM)",
+      "Very low on-resistance RDS(on)",
+      "N-channel, normal level",
+      "100% avalanche tested",
+      "Pb-free lead plating; RoHS compliant",
+      "Halogen-free according to IEC61249-2-21"
+    ],
+    "product_validation": "Fully qualified according to JEDEC for Industrial Applications"
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal resistance, junction - case",
+      "min": null,
+      "typ": 0.3,
+      "max": 0.4,
+      "unit": "°C/W"
+    },
+    "RthJA": {
+      "parameter": "Thermal resistance, junction - ambient, 6 cm² cooling area",
+      "min": null,
+      "typ": null,
+      "max": 40,
+      "unit": "°C/W"
+    }
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous drain current",
+      "min": null,
+      "typ": null,
+      "max": 276,
+      "unit": "A"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed drain current",
+      "min": null,
+      "typ": null,
+      "max": 211,
+      "unit": "A"
+    },
+    "EAS": {
+      "parameter": "Avalanche energy, single pulse",
+      "min": null,
+      "typ": null,
+      "max": 35,
+      "unit": "mJ"
+    },
+    "VGS": {
+      "parameter": "Gate source voltage",
+      "min": null,
+      "typ": null,
+      "max": 20,
+      "unit": "V"
+    },
+    "Ptot": {
+      "parameter": "Power dissipation",
+      "min": null,
+      "typ": null,
+      "max": 375,
+      "unit": "W"
+    },
+    "Tj_TSTG": {
+      "parameter": "Operating and storage junction temperature range",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-source breakdown voltage",
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate threshold voltage",
+      "min": 2.2,
+      "typ": 3,
+      "max": 3.8,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Zero gate voltage drain current",
+      "min": null,
+      "typ": 0.1,
+      "max": 5,
+      "unit": "µA"
+    },
+    "IGSS": {
+      "parameter": "Gate-source leakage current",
+      "min": null,
+      "typ": 10,
+      "max": 100,
+      "unit": "nA"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-source on-state resistance",
+      "min": null,
+      "typ": 1,
+      "max": 1.53,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "min": null,
+      "typ": 12000,
+      "max": 16000,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "min": null,
+      "typ": 1800,
+      "max": 2300,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse transfer capacitance",
+      "min": null,
+      "typ": 80,
+      "max": 140,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-on delay time",
+      "min": null,
+      "typ": 33,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise time",
+      "min": null,
+      "typ": 23,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-off delay time",
+      "min": null,
+      "typ": 80,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall time",
+      "min": null,
+      "typ": 27,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "gate_charge_characteristics": {
+    "Qgs": {
+      "parameter": "Gate to source charge",
+      "min": null,
+      "typ": 53,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qg(th)": {
+      "parameter": "Gate charge at threshold",
+      "min": null,
+      "typ": 36,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate to drain charge",
+      "min": null,
+      "typ": 34,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qsw": {
+      "parameter": "Switching charge",
+      "min": null,
+      "typ": 51,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qg": {
+      "parameter": "Gate charge total",
+      "min": null,
+      "typ": 168,
+      "max": null,
+      "unit": "nC"
+    },
+    "Vplateau": {
+      "parameter": "Gate plateau voltage",
+      "min": null,
+      "typ": 4.4,
+      "max": null,
+      "unit": "V"
+    },
+    "Qoss": {
+      "parameter": "Output charge",
+      "min": null,
+      "typ": 213,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "reverse_diode": {
+    "IS": {
+      "parameter": "Diode continuous forward current",
+      "min": null,
+      "typ": null,
+      "max": 268,
+      "unit": "A"
+    },
+    "IS_pulse": {
+      "parameter": "Diode pulse current",
+      "min": null,
+      "typ": null,
+      "max": 1104,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode forward voltage",
+      "min": null,
+      "typ": 0.86,
+      "max": 1,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "min": null,
+      "typ": 88,
+      "max": 176,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse recovery charge",
+      "min": null,
+      "typ": 235,
+      "max": 470,
+      "unit": "nC"
+    }
+  }
+}

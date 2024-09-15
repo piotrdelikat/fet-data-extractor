@@ -1,0 +1,408 @@
+{
+  "general_info": {
+    "componentName": "CSD19506KTT",
+    "manufacturer": "Texas Instruments",
+    "description": "80 V N-Channel NexFET™ Power MOSFET",
+    "features": [
+      "Ultra-Low Qg and Qgd",
+      "Low Thermal Resistance",
+      "Avalanche Rated",
+      "Pb-Free Terminal Plating",
+      "RoHS Compliant",
+      "Halogen Free",
+      "D2PAK Plastic Package"
+    ],
+    "applications": [
+      "Secondary Side Synchronous Rectifier",
+      "Motor Control"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-to-Source Voltage",
+      "value": 80,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current (Package limited)",
+      "value": 200,
+      "unit": "A"
+    },
+    "ID_silicon_limited_25C": {
+      "parameter": "Continuous Drain Current (Silicon limited)",
+      "value": 291,
+      "unit": "A",
+      "conditions": "Tc = 25°C"
+    },
+    "ID_silicon_limited_100C": {
+      "parameter": "Continuous Drain Current (Silicon limited)",
+      "value": 206,
+      "unit": "A",
+      "conditions": "Tc = 100°C"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 400,
+      "unit": "A"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 375,
+      "unit": "W"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "-55 to 175",
+      "unit": "°C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, single pulse",
+      "value": 832,
+      "unit": "mJ",
+      "conditions": "ID = 129 A, L = 0.1 mH, RG = 25Ω"
+    },
+    "RθJC": {
+      "parameter": "Junction-to-case thermal resistance",
+      "value": 0.4,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-ambient thermal resistance",
+      "value": 62,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-to-source voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 80,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain-to-source leakage current",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 64,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": null,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate-to-source leakage current",
+      "conditions": [
+        {
+          "VDS": 0,
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-to-source threshold voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 2.1,
+      "typ": 2.5,
+      "max": 3.2,
+      "unit": "V"
+    },
+    "RDS(on)_at_VGS_6V": {
+      "parameter": "Drain-to-source on-resistance",
+      "conditions": [
+        {
+          "VGS": 6,
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": 2.2,
+      "typ": 2.8,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "RDS(on)_at_VGS_10V": {
+      "parameter": "Drain-to-source on-resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": 2,
+      "typ": 2.3,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "gfs": {
+      "parameter": "Transconductance",
+      "conditions": [
+        {
+          "VDS": 8,
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 297,
+      "max": null,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 40,
+          "unit": "V"
+        }
+      ],
+      "min": 938,
+      "typ": 1200,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 40,
+          "unit": "V"
+        }
+      ],
+      "min": 226,
+      "typ": 2940,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse transfer capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 40,
+          "unit": "V"
+        }
+      ],
+      "min": 42,
+      "typ": 55,
+      "max": null,
+      "unit": "pF"
+    },
+    "RG": {
+      "parameter": "Series gate resistance",
+      "min": 1.3,
+      "typ": 2.6,
+      "max": null,
+      "unit": "Ω"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": 120,
+      "typ": 156,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate charge gate-to-drain",
+      "conditions": [
+        {
+          "VDS": 40,
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": 20,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate charge gate-to-source",
+      "conditions": [
+        {
+          "VDS": 40,
+          "ID": 100,
+          "unit": "A"
+        }
+      ],
+      "min": 37,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qoss": {
+      "parameter": "Output charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 345,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn on delay time",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 10,
+          "ID": 100,
+          "RG": 0,
+          "unit": "A"
+        }
+      ],
+      "min": 14,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise time",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 10,
+          "ID": 100,
+          "RG": 0,
+          "unit": "A"
+        }
+      ],
+      "min": 7,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn off delay time",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 10,
+          "ID": 100,
+          "RG": 0,
+          "unit": "A"
+        }
+      ],
+      "min": 30,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall time",
+      "conditions": [
+        {
+          "VDS": 40,
+          "VGS": 10,
+          "ID": 100,
+          "RG": 0,
+          "unit": "A"
+        }
+      ],
+      "min": 5,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "diode_characteristics": {
+    "VSD": {
+      "parameter": "Diode forward voltage",
+      "conditions": [
+        {
+          "ID": 100,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": 0.9,
+      "typ": 1.1,
+      "max": null,
+      "unit": "V"
+    },
+    "Qrr": {
+      "parameter": "Reverse recovery charge",
+      "conditions": [
+        {
+          "VDS": 40,
+          "IF": 100,
+          "di/dt": 300,
+          "unit": "A/μs"
+        }
+      ],
+      "min": 5,
+      "typ": null,
+      "max": null,
+      "unit": "nC"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "conditions": [
+        {
+          "VDS": 40,
+          "IF": 100,
+          "unit": "A"
+        }
+      ],
+      "min": 107,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-case thermal resistance",
+      "value": 0.4,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-ambient thermal resistance",
+      "value": 62,
+      "unit": "°C/W"
+    }
+  }
+}

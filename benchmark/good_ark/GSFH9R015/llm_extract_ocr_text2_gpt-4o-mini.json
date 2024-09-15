@@ -1,0 +1,406 @@
+{
+  "general_info": {
+    "componentName": "GSFH9R015",
+    "manufacturer": "Good Ark Semiconductor",
+    "description": "150V N-Channel MOSFET",
+    "features": [
+      "Advanced MOSFET process technology",
+      "Ideal for high efficiency switched mode power supplies",
+      "Low on-resistance with low gate charge",
+      "Fast switching and reverse body recovery"
+    ],
+    "applications": [
+      "High efficiency switch mode power supplies",
+      "Wide variety of other applications"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 150,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Drain Current - Continuous, @ Steady-State (TC=25°C)",
+      "value": 100,
+      "unit": "A"
+    },
+    "ID_100C": {
+      "parameter": "Drain Current - Continuous, @ Steady-State (TC=100°C)",
+      "value": 63,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Drain Current - Pulsed",
+      "value": 400,
+      "unit": "A"
+    },
+    "PD": {
+      "parameter": "Power Dissipation (TC=25°C)",
+      "value": 178,
+      "unit": "W"
+    },
+    "Linear_Derating_Factor": {
+      "parameter": "Linear Derating Factor (TC=25°C)",
+      "value": 1.4,
+      "unit": "W/°C"
+    },
+    "EAS": {
+      "parameter": "Single Pulse Avalanche Energy",
+      "value": 784,
+      "unit": "mJ"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient (PCB Mounted, Steady-State)",
+      "value": 50,
+      "unit": "°C/W"
+    },
+    "RθJC": {
+      "parameter": "Junction-to-Case",
+      "value": 0.7,
+      "unit": "°C/W"
+    },
+    "TJ": {
+      "parameter": "Maximum Junction Temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "TSTG": {
+      "parameter": "Storage Temperature Range",
+      "value": "−55 to +150",
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain-Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 150,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 1,
+      "max": 50,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 2.1,
+      "max": null,
+      "unit": "nA"
+    },
+    "RDS(ON)": {
+      "parameter": "Static Drain-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": 7.3,
+      "typ": 9,
+      "max": null,
+      "unit": "mΩ"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "conditions": [
+        {
+          "VGS": "VDS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "μA"
+        }
+      ],
+      "min": 3.9,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 75,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 24.9,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [
+        {
+          "VDS": 75,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 30.8,
+      "max": null,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain ('Miller') Charge",
+      "conditions": [
+        {
+          "VDS": 75,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 32,
+      "max": null,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "conditions": [
+        {
+          "VDS": 30,
+          "unit": "V"
+        },
+        {
+          "RGEN": 3.3,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 25,
+      "max": null,
+      "unit": "nS"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "conditions": [
+        {
+          "VDS": 30,
+          "unit": "V"
+        },
+        {
+          "RGEN": 3.3,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 97,
+      "max": null,
+      "unit": "nS"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "conditions": [
+        {
+          "VDS": 30,
+          "unit": "V"
+        },
+        {
+          "RGEN": 3.3,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 89,
+      "max": null,
+      "unit": "nS"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "conditions": [
+        {
+          "VDS": 30,
+          "unit": "V"
+        },
+        {
+          "RGEN": 3.3,
+          "unit": "Ω"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 404,
+      "max": null,
+      "unit": "nS"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 75,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 5870,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 75,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 404,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 75,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 9.3,
+      "max": null,
+      "unit": "pF"
+    }
+  },
+  "diode_characteristics": {
+    "ISM": {
+      "parameter": "Pulsed Source Current (Body Diode)",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "IS": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 400,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "IS": 20,
+          "unit": "A"
+        }
+      ],
+      "min": 1,
+      "typ": null,
+      "max": 1.2,
+      "unit": "V"
+    }
+  }
+}

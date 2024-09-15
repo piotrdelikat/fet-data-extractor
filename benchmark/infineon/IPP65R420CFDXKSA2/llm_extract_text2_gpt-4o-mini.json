@@ -1,0 +1,185 @@
+{
+  "general_info": {
+    "componentName": "IPD65R420CFD",
+    "manufacturer": "Infineon Technologies",
+    "description": "650V CoolMOS CFD2 Power Transistor",
+    "revision": "Rev. 2.6, 2016-08-26"
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain to Source Voltage",
+      "value": 650,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate to Source Voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 420,
+      "unit": "A"
+    },
+    "Ptot": {
+      "parameter": "Total Power Dissipation",
+      "value": 150,
+      "unit": "W"
+    },
+    "Tj": {
+      "parameter": "Junction Temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "Tstg": {
+      "parameter": "Storage Temperature",
+      "value": "-55 to +150",
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "VGS(th)": {
+      "parameter": "Gate to Source Threshold Voltage",
+      "conditions": [
+        {
+          "ID": 250,
+          "unit": "µA"
+        }
+      ],
+      "min": 2,
+      "typ": 2.5,
+      "max": 3,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": 0.42,
+      "typ": 0.48,
+      "max": 0.55,
+      "unit": "Ω"
+    },
+    "IDSS": {
+      "parameter": "Drain to Source Leakage Current",
+      "conditions": [
+        {
+          "VDS": 650,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 250,
+      "unit": "µA"
+    }
+  },
+  "dynamic_characteristics": {
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDS": 400,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 20,
+          "unit": "A"
+        }
+      ],
+      "min": null,
+      "typ": 40,
+      "max": null,
+      "unit": "nC"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VDS": 400,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 2000,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VDS": 400,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 500,
+      "max": null,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VDS": 400,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "min": null,
+      "typ": 50,
+      "max": null,
+      "unit": "pF"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "value": 62,
+      "unit": "°C/W"
+    },
+    "RθJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": 0.5,
+      "unit": "°C/W"
+    }
+  },
+  "additional_info": {
+    "insulation_withstand_voltage": {
+      "parameter": "Insulation Withstand Voltage",
+      "value": 2500,
+      "unit": "V rms",
+      "conditions": "c=25°C,=1min"
+    },
+    "package_type": "PG-TO 252",
+    "halogen_free": "Yes"
+  }
+}

@@ -12,6 +12,7 @@ datasheets
 /text
 /textOCR
 /ocr
+/benchmarkTries
 
 binaryPdfs.json
 failed.json

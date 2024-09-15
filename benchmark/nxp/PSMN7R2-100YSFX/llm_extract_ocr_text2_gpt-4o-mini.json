@@ -1,0 +1,217 @@
+{
+  "general_info": {
+    "componentName": "PSMN7R2-100YSF",
+    "manufacturer": "Nexperia",
+    "description": "NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package",
+    "releaseDate": "20 June 2023"
+  },
+  "features": [
+    "Low Qrr for higher efficiency and lower spiking",
+    "Low QG × RDS(on) FOM for high efficiency switching applications",
+    "Strong avalanche energy rating (EAS)",
+    "Avalanche rated and 100% tested",
+    "Ha-free and RoHS compliant LFPAK56 package",
+    "Wave-solderable LFPAK56 package"
+  ],
+  "applications": [
+    "Synchronous rectifier in AC-DC and DC-DC",
+    "Primary side switch in 48 V DC-DC",
+    "BLDC motor control",
+    "USB-PD and mobile fast-charge adapters",
+    "Flyback and resonant topologies"
+  ],
+  "quick_reference_data": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "V",
+      "conditions": "25 °C ≤ Tj ≤ 175 °C"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "min": null,
+      "typ": null,
+      "max": 111,
+      "unit": "A",
+      "conditions": "VGS = 10 V; Tmb = 25 °C"
+    },
+    "Ptot": {
+      "parameter": "Total Power Dissipation",
+      "min": null,
+      "typ": null,
+      "max": 194,
+      "unit": "W",
+      "conditions": "Tmb = 25 °C"
+    },
+    "Tj": {
+      "parameter": "Junction Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 25,
+          "Tj": 25,
+          "unit": "°C"
+        },
+        {
+          "VGS": 10,
+          "ID": 25,
+          "Tj": 100,
+          "unit": "°C"
+        }
+      ],
+      "min": 5.7,
+      "typ": 6.9,
+      "max": 8.9,
+      "unit": "mΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "QGD": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "ID": 25,
+          "VDS": 50,
+          "VGS": 10,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 3,
+      "typ": 10,
+      "max": 23,
+      "unit": "nC"
+    },
+    "QG(total)": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "ID": 25,
+          "VDS": 50,
+          "VGS": 10,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": 25,
+      "typ": 50,
+      "max": 75,
+      "unit": "nC"
+    },
+    "EDS(AL)S": {
+      "parameter": "Non-Repetitive Drain-Source Avalanche Energy",
+      "conditions": [
+        {
+          "ID": 38,
+          "Vsup": "≤ 100 V",
+          "RGS": 50,
+          "VGS": 10,
+          "Tj(init)": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": null,
+      "max": 173,
+      "unit": "mJ"
+    }
+  },
+  "source_drain_diode": {
+    "Qr": {
+      "parameter": "Recovered Charge",
+      "conditions": [
+        {
+          "IS": 25,
+          "dIS/dt": -100,
+          "VGS": 0,
+          "VDS": 50,
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ],
+      "min": null,
+      "typ": 23,
+      "max": null,
+      "unit": "nC"
+    }
+  },
+  "limiting_values": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "min": null,
+      "max": 100,
+      "unit": "V",
+      "conditions": "25 °C ≤ Tj ≤ 175 °C"
+    },
+    "VDGR": {
+      "parameter": "Drain-Gate Voltage",
+      "min": null,
+      "max": 100,
+      "unit": "V",
+      "conditions": "25 °C ≤ Tj ≤ 175 °C; RGS = 20 kΩ"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "min": -20,
+      "max": 20,
+      "unit": "V"
+    },
+    "Ptot": {
+      "parameter": "Total Power Dissipation",
+      "min": null,
+      "max": 194,
+      "unit": "W"
+    },
+    "ID": {
+      "parameter": "Drain Current",
+      "min": null,
+      "max": 111,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Peak Drain Current",
+      "min": null,
+      "max": 443,
+      "unit": "A"
+    },
+    "Tstg": {
+      "parameter": "Storage Temperature",
+      "min": -55,
+      "max": 175,
+      "unit": "°C"
+    },
+    "Tj": {
+      "parameter": "Junction Temperature",
+      "min": null,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth(j-mb)": {
+      "parameter": "Thermal Resistance from Junction to Mounting Base",
+      "min": 0.69,
+      "typ": null,
+      "max": 0.77,
+      "unit": "K/W"
+    },
+    "Rth(j-a)": {
+      "parameter": "Thermal Resistance from Junction to Ambient",
+      "min": 42,
+      "typ": null,
+      "max": 85,
+      "unit": "K/W"
+    }
+  }
+}

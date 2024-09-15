@@ -1,0 +1,300 @@
+{
+  "general_info": {
+    "componentName": "IPW65R420CFD",
+    "manufacturer": "Infineon Technologies",
+    "description": "650V CoolMOS™ CFD2 Power Transistor",
+    "orderingCodes": [
+      "IPW65R420CFD",
+      "IPB65R420CFD",
+      "IPP65R420CFD",
+      "IPA65R420CFD",
+      "IPD65R420CFD",
+      "IPI65R420CFD"
+    ],
+    "features": [
+      "Ultra-fast body diode",
+      "Very high commutation ruggedness",
+      "Extremely low losses due to very low FOM Rdson*Qg and Eoss",
+      "Easy to use/drive",
+      "Qualified for industrial grade applications according to JEDEC (J-STD20 and JESD22)",
+      "Pb-free plating, Halogen free mold compound"
+    ],
+    "applications": [
+      "Resonant switching PWM stages for PC Silverbox",
+      "LCD TV",
+      "Lighting",
+      "Server",
+      "Telecom"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "min": -20,
+      "typ": null,
+      "max": 8.7,
+      "unit": "A",
+      "conditions": "at Tj = 25°C"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "min": null,
+      "typ": null,
+      "max": 27,
+      "unit": "A"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, Single Pulse",
+      "min": null,
+      "typ": null,
+      "max": 900,
+      "unit": "mJ"
+    },
+    "EAR": {
+      "parameter": "Avalanche Energy, Repetitive",
+      "min": null,
+      "typ": null,
+      "max": 2500,
+      "unit": "mJ"
+    },
+    "IAR": {
+      "parameter": "Avalanche Current, Repetitive",
+      "min": null,
+      "typ": null,
+      "max": 50,
+      "unit": "A"
+    },
+    "dv_dt": {
+      "parameter": "MOSFET dv/dt Ruggedness",
+      "min": null,
+      "typ": null,
+      "max": 83.3,
+      "unit": "V/ns"
+    },
+    "VGS": {
+      "parameter": "Gate Source Voltage",
+      "min": null,
+      "typ": null,
+      "max": 31.2,
+      "unit": "V"
+    },
+    "Ptot_non_FullPAK": {
+      "parameter": "Power Dissipation (non FullPAK)",
+      "min": null,
+      "typ": null,
+      "max": 60,
+      "unit": "W"
+    },
+    "Ptot_FullPAK": {
+      "parameter": "Power Dissipation (FullPAK)",
+      "min": null,
+      "typ": null,
+      "max": 40,
+      "unit": "W"
+    },
+    "Tj": {
+      "parameter": "Operating and Storage Temperature",
+      "min": -55,
+      "typ": null,
+      "max": 150,
+      "unit": "°C"
+    },
+    "M": {
+      "parameter": "Mounting Torque (non FullPAK)",
+      "min": null,
+      "typ": null,
+      "max": 8.7,
+      "unit": "Ncm"
+    },
+    "M_FullPAK": {
+      "parameter": "Mounting Torque (FullPAK)",
+      "min": null,
+      "typ": null,
+      "max": 27,
+      "unit": "Ncm"
+    },
+    "IF": {
+      "parameter": "Continuous Diode Forward Current",
+      "min": null,
+      "typ": null,
+      "max": 900,
+      "unit": "A"
+    },
+    "IF_pulse": {
+      "parameter": "Diode Pulse Current",
+      "min": null,
+      "typ": null,
+      "max": 2500,
+      "unit": "A"
+    },
+    "dv_dt_diode": {
+      "parameter": "Reverse Diode dv/dt",
+      "min": null,
+      "typ": null,
+      "max": 50,
+      "unit": "V/ns"
+    },
+    "Vins": {
+      "parameter": "Insulation Withstand Voltage for TO-220FP",
+      "min": null,
+      "typ": null,
+      "max": 400,
+      "unit": "V"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Thermal Resistance, Junction to Case",
+      "min": 1.5,
+      "typ": null,
+      "max": 62,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Thermal Resistance, Junction to Ambient",
+      "min": null,
+      "typ": null,
+      "max": 260,
+      "unit": "°C"
+    },
+    "Soldering_temp": {
+      "parameter": "Soldering Temperature, Wavesoldering Only Allowed at Leads",
+      "min": null,
+      "typ": null,
+      "max": 260,
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "BVD": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "min": 650,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 3.5,
+      "typ": 4,
+      "max": 4.5,
+      "unit": "V"
+    },
+    "ID(0V)": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "µA"
+    },
+    "IGS": {
+      "parameter": "Gate-Source Leakage Current",
+      "min": null,
+      "typ": 4,
+      "max": null,
+      "unit": "nA"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "min": 0.378,
+      "typ": 0.42,
+      "max": null,
+      "unit": "MΩ"
+    },
+    "RG": {
+      "parameter": "Gate Resistance",
+      "min": null,
+      "typ": 4,
+      "max": null,
+      "unit": "MΩ"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "min": 870,
+      "typ": null,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "min": 45,
+      "typ": null,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss_energy": {
+      "parameter": "Effective Output Capacitance, Energy Related",
+      "min": 36,
+      "typ": null,
+      "max": null,
+      "unit": "pF"
+    },
+    "Coss_time": {
+      "parameter": "Effective Output Capacitance, Time Related",
+      "min": 161,
+      "typ": null,
+      "max": null,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "min": 10,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "min": 7,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "min": 38,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "min": 8,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    }
+  },
+  "reverse_diode_characteristics": {
+    "Vf": {
+      "parameter": "Diode Forward Voltage",
+      "min": 0.9,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "min": 90,
+      "typ": null,
+      "max": null,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "min": 0.3,
+      "typ": null,
+      "max": null,
+      "unit": "µC"
+    },
+    "Irrm": {
+      "parameter": "Peak Reverse Recovery Current",
+      "min": 6.2,
+      "typ": null,
+      "max": null,
+      "unit": "A"
+    }
+  }
+}

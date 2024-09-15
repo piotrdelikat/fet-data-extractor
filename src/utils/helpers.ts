@@ -73,10 +73,13 @@ export const requestController = async (
       );
 
       if (attempt === maxRetries) {
-        throw new Error(`Request failed after ${maxRetries} attempts`);
+        throw error; // Throw the actual error instead of creating a new one
       }
     }
   }
+  // This line should never be reached due to the throw in the loop,
+  // but TypeScript might complain without it
+  throw new Error(`Request failed after ${maxRetries} attempts`);
 };
 
 export const renameFilesInSubfolders = (
@@ -191,30 +194,38 @@ export const copyFilesInBulk = (
   console.log('File copying process completed.');
 };
 
+// * Creates a log entry in a JSON file (`failed.json`) when an error
+// occurs, instead of throwing an error.
+
 export const createLogEntryOnError = (
   textFilePath: string,
   model: string,
   error: string
-): null => {
-  // Create a JSON log in failed.json instead of throwing an error
+) => {
+  // Create a JSON object containing details about the error and its
   const failedLog = {
-    filename: path.basename(textFilePath),
-    model: model,
-    error: error,
+    filename: path.basename(textFilePath), // Extracts the base name of the file from the textFilePath
+    model: model, // The identifier or description of the model where the error occurred
+    error: error, // The detailed error message or description
   };
-  const failedLogPath = 'failed.json';
 
-  // Check if the file exists, if not create it with an empty array
+  const failedLogPath = 'failed.json'; // Specifies the path to the log file
+
+  // Check if the log file exists; if not, create it with an empty array
   if (!fs.existsSync(failedLogPath)) {
-    fs.writeFileSync(failedLogPath, '[]');
+    fs.writeFileSync(failedLogPath, JSON.stringify([], null, 2)); //Writes an empty array to the file in JSON format
   }
 
-  // Read existing content, parse it, add new log, and write back
+  // Read the existing content of the log file and parse it as JSON
   const existingContent = fs.readFileSync(failedLogPath, 'utf8');
   const existingLogs = JSON.parse(existingContent);
+
+  // Add the new error log to the list of logs
   existingLogs.push(failedLog);
+
+  // Write the updated list of logs back to the file in a pretty-printed JSON format
   fs.writeFileSync(failedLogPath, JSON.stringify(existingLogs, null, 2));
 
-  console.error(`Error logged to ${failedLogPath}`);
-  return null; // Return null to indicate failure
+  console.error(`Error logged to ${failedLogPath}`); // Logs an error message indicating where the log was saved
+  return null; // Indicates that no data is being returned upon successful operation (failure case)
 };

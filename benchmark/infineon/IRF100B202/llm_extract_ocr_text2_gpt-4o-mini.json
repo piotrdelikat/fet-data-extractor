@@ -1,0 +1,384 @@
+{
+  "general_info": {
+    "componentName": "IRF100B202",
+    "manufacturer": "International Rectifier",
+    "description": "StrongIRFET™ HEXFET® Power MOSFET",
+    "applications": [
+      "Brushed Motor drive applications",
+      "BLDC Motor drive applications",
+      "Battery powered circuits",
+      "Half-bridge and full-bridge topologies",
+      "Synchronous rectifier applications",
+      "Resonant mode power supplies",
+      "OR-ing and redundant power switches",
+      "DC/DC and AC/DC converters",
+      "DC/AC Inverters"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "ID_TC_25C": {
+      "parameter": "Continuous Drain Current @ TC = 25°C",
+      "value": 97,
+      "unit": "A"
+    },
+    "ID_TC_100C": {
+      "parameter": "Continuous Drain Current @ TC = 100°C",
+      "value": 68,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 380,
+      "unit": "A"
+    },
+    "PD_TC_25C": {
+      "parameter": "Maximum Power Dissipation @ TC = 25°C",
+      "value": 221,
+      "unit": "W"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "TJ": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "−55 to +175",
+      "unit": "°C"
+    },
+    "TSOL": {
+      "parameter": "Soldering Temperature, for 10 seconds (1.6mm from case)",
+      "value": 300,
+      "unit": "°C"
+    },
+    "mounting_torque": {
+      "parameter": "Mounting Torque",
+      "value": "10 lbf·in (1.1 N·m)"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case",
+      "typ": null,
+      "max": 0.5,
+      "unit": "°C/W"
+    },
+    "RθCS": {
+      "parameter": "Case-to-Sink, Flat Greased Surface",
+      "typ": null,
+      "max": 0.68,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient",
+      "typ": null,
+      "max": 62,
+      "unit": "°C/W"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-to-Source Breakdown Voltage",
+      "min": 100,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": [
+        {
+          "VGS": 0,
+          "ID": 250,
+          "unit": "µA"
+        }
+      ]
+    },
+    "ΔV(BR)DSS/ΔTJ": {
+      "parameter": "Breakdown Voltage Temp. Coefficient",
+      "min": null,
+      "typ": 0.1,
+      "max": null,
+      "unit": "V/°C",
+      "conditions": [
+        {
+          "ID": 5,
+          "unit": "mA"
+        }
+      ]
+    },
+    "RDS(on)": {
+      "parameter": "Static Drain-to-Source On-Resistance",
+      "min": 7.2,
+      "typ": null,
+      "max": 8.6,
+      "unit": "mΩ",
+      "conditions": [
+        {
+          "VGS": 10,
+          "ID": 58,
+          "unit": "A"
+        }
+      ]
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "min": 2,
+      "typ": null,
+      "max": null,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "min": null,
+      "typ": 250,
+      "max": null,
+      "unit": "µA",
+      "conditions": [
+        {
+          "VDS": 100,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ]
+    },
+    "IGSS": {
+      "parameter": "Gate-to-Source Forward Leakage",
+      "min": null,
+      "typ": 4,
+      "max": null,
+      "unit": "nA",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        }
+      ]
+    },
+    "IGSS_reverse": {
+      "parameter": "Gate-to-Source Reverse Leakage",
+      "min": null,
+      "typ": 100,
+      "max": null,
+      "unit": "nA",
+      "conditions": [
+        {
+          "VGS": -20,
+          "unit": "V"
+        }
+      ]
+    }
+  },
+  "dynamic_characteristics": {
+    "gfs": {
+      "parameter": "Forward Transconductance",
+      "min": 123,
+      "typ": null,
+      "max": null,
+      "unit": "S"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "min": null,
+      "typ": 77,
+      "max": 116,
+      "unit": "nC",
+      "conditions": [
+        {
+          "VDS": 10,
+          "ID": 58,
+          "unit": "A"
+        }
+      ]
+    },
+    "Qgs": {
+      "parameter": "Gate-to-Source Charge",
+      "min": 20,
+      "typ": null,
+      "max": null,
+      "unit": "nC",
+      "conditions": [
+        {
+          "ID": 58,
+          "unit": "A"
+        }
+      ]
+    },
+    "Qgd": {
+      "parameter": "Gate-to-Drain Charge",
+      "min": 23,
+      "typ": null,
+      "max": null,
+      "unit": "nC",
+      "conditions": [
+        {
+          "ID": 58,
+          "unit": "A"
+        }
+      ]
+    },
+    "td(on)": {
+      "parameter": "Turn-On Delay Time",
+      "min": null,
+      "typ": 11,
+      "max": null,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "min": null,
+      "typ": 56,
+      "max": null,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-Off Delay Time",
+      "min": null,
+      "typ": 55,
+      "max": null,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "min": null,
+      "typ": 58,
+      "max": null,
+      "unit": "ns"
+    },
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "min": null,
+      "typ": 4476,
+      "max": null,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ]
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "min": null,
+      "typ": 319,
+      "max": null,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ]
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "min": null,
+      "typ": 154,
+      "max": null,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "VDS": 50,
+          "unit": "V"
+        }
+      ]
+    }
+  },
+  "diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Source Current (Body Diode)",
+      "min": null,
+      "typ": 97,
+      "max": null,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Pulsed Source Current (Body Diode)",
+      "min": null,
+      "typ": 380,
+      "max": null,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "min": null,
+      "typ": 1.3,
+      "max": null,
+      "unit": "V",
+      "conditions": [
+        {
+          "TJ": 25,
+          "IS": 58,
+          "VGS": 0,
+          "unit": "V"
+        }
+      ]
+    },
+    "dv/dt": {
+      "parameter": "Peak Diode Recovery dv/dt",
+      "min": null,
+      "typ": 28,
+      "max": null,
+      "unit": "V/ns",
+      "conditions": [
+        {
+          "TJ": 175,
+          "IS": 58,
+          "VDS": 100,
+          "unit": "V"
+        }
+      ]
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "min": null,
+      "typ": 51,
+      "max": null,
+      "unit": "ns",
+      "conditions": [
+        {
+          "TJ": 25,
+          "VDD": 85,
+          "IF": 58,
+          "unit": "A"
+        }
+      ]
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "min": null,
+      "typ": 58,
+      "max": null,
+      "unit": "nC",
+      "conditions": [
+        {
+          "TJ": 25,
+          "IF": 58,
+          "unit": "A"
+        }
+      ]
+    },
+    "IRRM": {
+      "parameter": "Reverse Recovery Current",
+      "min": null,
+      "typ": 3.7,
+      "max": null,
+      "unit": "A",
+      "conditions": [
+        {
+          "TJ": 25,
+          "unit": "°C"
+        }
+      ]
+    }
+  },
+  "additional_info": {
+    "packageType": "TO-220",
+    "standardPack": {
+      "form": "Tube",
+      "quantity": 50
+    },
+    "orderablePartNumber": "IRF100B202"
+  }
+}

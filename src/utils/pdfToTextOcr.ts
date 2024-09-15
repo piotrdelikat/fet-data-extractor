@@ -10,10 +10,6 @@ import { datasheetsFolderPath } from '..';
 export async function pdfToTextOcr(filePath: string): Promise<void> {
   const pdfFilePath = filePath.replace('node_modules/fet-datasheets', '');
   const pdfPath = path.join(datasheetsFolderPath, pdfFilePath);
-  const textFilePath = path.join(
-    'textOCR',
-    pdfFilePath.replace('.pdf', '.txt')
-  );
 
   // Check if the PDF file exists
   if (!fs.existsSync(pdfPath)) {
@@ -38,6 +34,11 @@ export async function pdfToTextOcr(filePath: string): Promise<void> {
     return;
   }
 
+  const textFilePath = path.join(
+    'textOCR',
+    pdfFilePath.replace('.pdf', '.txt')
+  );
+
   // Check if the .txt file already exists
   if (fs.existsSync(textFilePath)) {
     console.log(`Text file already exists: ${textFilePath}`);
@@ -56,7 +57,13 @@ export async function pdfToTextOcr(filePath: string): Promise<void> {
         'pdf'
       )
       .then(function (result: any) {
-        result.saveFiles(outDir);
+        // Create the directory if it doesn't exist
+        if (!fs.existsSync(outDir)) {
+          fs.mkdirSync(outDir, { recursive: true });
+        }
+
+        // Save the text file
+        result.file.save(textFilePath);
       });
   } catch (error: any) {
     console.error('Error extracting text from PDF:', error);

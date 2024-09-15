@@ -4,6 +4,8 @@ import {
   processAllDocumentsFromBaseDirectory,
   processPdfToImagesToJson,
 } from './processes';
+import { processBenchmarkDocuments } from './benchmark';
+import { runPromptImprover } from './utils/promptImprover';
 
 // Set the datasheets folder path
 export const datasheetsFolderPath = './node_modules/fet-datasheets';
@@ -19,8 +21,19 @@ const processAllPdfsVisualLLM = () => {
   });
 };
 
+// runPromptImprover();
+
 // Process all PDFs to Images and to JSON with Visual LLM in all directories
 //processAllPdfsVisualLLM();
 
 //Text to JSON from all mnf and mpn in 'text' folder holding text  extracted from PDFs
 //processAllDocumentsFromBaseDirectory('text');
+
+//Execute the benchmark processing
+processBenchmarkDocuments()
+  .then(() => {
+    console.log('Benchmark processing completed.');
+  })
+  .catch((error) => {
+    console.error('Error during benchmark processing:', error);
+  });

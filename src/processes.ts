@@ -6,11 +6,13 @@ import { readVplateauAnthropic } from './utils/anthropic/readCharts';
 import { preselectPagesOpenAI } from './utils/openAI/preselectPages';
 import { readValuesFromTextAnthropic } from './utils/anthropic/extractDataFromText';
 import { datasheetsFolderPath } from '.';
+import { readValuesFromTextOpenAI } from './utils/openAI/extractDataFromText';
 
 export const processPdfToImagesToJson = async (
   directoryPath: string,
-  limit?: number,
-  model: string = 'claude-3-5-sonnet-20240620'
+  model: string = 'claude-3-5-sonnet-20240620',
+  readVplateau = true,
+  limit?: number
 ) => {
   const pdfFiles = fs
     .readdirSync(directoryPath)
@@ -55,8 +57,9 @@ export const processPdfToImagesToJson = async (
 
       // Check if V_plateau exists in the JSON
       if (
-        !jsonOutput.charts?.Gate_Charge?.V_plateau ||
-        jsonOutput.charts?.Gate_Charge?.V_plateau === 'unknown'
+        readVplateau &&
+        (!jsonOutput.charts?.Gate_Charge?.V_plateau ||
+          jsonOutput.charts?.Gate_Charge?.V_plateau === 'unknown')
       ) {
         // If V_plateau doesn't exist, perform the preselection step
         const preselectionResult = await preselectPagesOpenAI(imagesPath);
@@ -86,7 +89,7 @@ export const processPdfToImagesToJson = async (
       jsonOutput = dataReadResult;
       dataUpdated = true;
 
-      if (preselectionResult.chartPages.V_plateau) {
+      if (readVplateau && preselectionResult.chartPages.V_plateau) {
         const vPlateauResult = await readVplateauAnthropic(
           imagesPath,
           preselectionResult.chartPages.V_plateau,
@@ -118,13 +121,14 @@ export const processPdfToImagesToJson = async (
 export const processTextToJson = async (
   filePath: string,
   outputFileName: string,
-  model: string = 'claude-3-5-sonnet-20240620'
+  model: string = 'claude-3-5-sonnet-20240620',
+  outputFolderName: string = 'intermediate'
 ) => {
   const mpn = path.basename(filePath, '.txt');
 
   const mfr = path.basename(path.dirname(filePath));
 
-  const intermediatePath = path.join('intermediate', mfr, mpn);
+  const intermediatePath = path.join(outputFolderName, mfr, mpn);
 
   const llmExtractPath = path.join(
     intermediatePath,
@@ -146,7 +150,16 @@ export const processTextToJson = async (
 
   // If llm_extract.json doesn't exist, perform data extraction from text
   if (fs.existsSync(textFilePath)) {
-    const jsonOutput = await readValuesFromTextAnthropic(textFilePath, model);
+    const jsonOutput = [
+      'claude-3-5-sonnet-20240620',
+      'claude-3-haiku-20240307',
+    ].includes(model)
+      ? await readValuesFromTextAnthropic(textFilePath, model)
+      : await readValuesFromTextOpenAI(
+          textFilePath,
+          model,
+          model.includes('gpt') ? 'OpenAI' : 'Groq'
+        );
 
     // Write the JSON output to the file
     fs.writeFileSync(llmExtractPath, JSON.stringify(jsonOutput, null, 2));
@@ -204,17 +217,23 @@ export const processAllDocumentsFromBaseDirectory = async (
   console.log('Finished processing all documents.');
 };
 
-const processSingleDocument = async (
+export const processSingleDocument = async (
   filePath: string,
-  model: string = 'claude-3-5-sonnet-20240620'
+  outputFileName: string,
+  model: string = 'claude-3-5-sonnet-20240620',
+  readVplateau = true,
+  outputFolderName: string = 'intermediate'
 ) => {
   const fileName = path.basename(filePath, '.pdf');
   const mfr = path.basename(path.dirname(filePath));
   const mpn = fileName;
 
   const imagesPath = path.join('images', mfr, mpn);
-  const intermediatePath = path.join('intermediate', mfr, mpn);
-  const llmExtractPath = path.join(intermediatePath, `llm_extract.json`);
+  const intermediatePath = path.join(outputFolderName, mfr, mpn);
+  const llmExtractPath = path.join(
+    intermediatePath,
+    `${outputFileName}_${model}.json`
+  );
 
   // Check if the images path exists, if not, convert the PDF to images
   if (!fs.existsSync(imagesPath) || fs.readdirSync(imagesPath).length === 0) {
@@ -245,8 +264,9 @@ const processSingleDocument = async (
 
     // Check if V_plateau exists in the JSON
     if (
-      !jsonOutput.charts?.Gate_Charge?.V_plateau ||
-      jsonOutput.charts?.Gate_Charge?.V_plateau === 'unknown'
+      readVplateau &&
+      (!jsonOutput.charts?.Gate_Charge?.V_plateau ||
+        jsonOutput.charts?.Gate_Charge?.V_plateau === 'unknown')
     ) {
       // If V_plateau doesn't exist, perform the preselection step
       const preselectionResult = await preselectPagesOpenAI(imagesPath);
@@ -276,7 +296,7 @@ const processSingleDocument = async (
     jsonOutput = dataReadResult;
     dataUpdated = true;
 
-    if (preselectionResult.chartPages.V_plateau) {
+    if (readVplateau && preselectionResult.chartPages.V_plateau) {
       const vPlateauResult = await readVplateauAnthropic(
         imagesPath,
         preselectionResult.chartPages.V_plateau,

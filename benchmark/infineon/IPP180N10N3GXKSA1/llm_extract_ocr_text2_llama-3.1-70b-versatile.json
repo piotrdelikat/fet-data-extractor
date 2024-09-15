@@ -1,0 +1,146 @@
+{
+  "general_info": {
+    "componentName": "IPP180N10N3 G",
+    "manufacturer": "Infineon Technologies AG",
+    "description": "N-channel, normal level, OptiMOS 3 Power-Transistor",
+    "features": [
+      "Excellent gate charge x R DS(on) product (FOM)",
+      "Very low on-resistance R DS(on)",
+      "175 °C operating temperature",
+      "Pb-free lead plating; RoHS compliant",
+      "Qualified according to JEDEC for target application"
+    ],
+    "applications": [
+      "High-frequency switching",
+      "Synchronous rectification"
+    ]
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal Resistance Junction to Case",
+      "value": 2.1,
+      "unit": "K/W"
+    },
+    "RthJA": {
+      "parameter": "Thermal Resistance Junction to Ambient",
+      "conditions": [
+        {
+          "description": "minimal footprint",
+          "value": 62,
+          "unit": "K/W"
+        },
+        {
+          "description": "6 cm² cooling area",
+          "value": 40,
+          "unit": "K/W"
+        }
+      ]
+    }
+  },
+  "absolute_maximum_ratings": {
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 43,
+      "unit": "A",
+      "conditions": "T = 25 °C"
+    },
+    "ID_pulse": {
+      "parameter": "Pulsed Drain Current",
+      "value": 30,
+      "unit": "A",
+      "conditions": "T = 25 °C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, Single Pulse",
+      "value": 172,
+      "unit": "mJ",
+      "conditions": "I D = 33 A, R GS = 25 Ω"
+    },
+    "VGS": {
+      "parameter": "Gate Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "Ptot": {
+      "parameter": "Power Dissipation",
+      "value": 71,
+      "unit": "W",
+      "conditions": "T C = 25 °C"
+    },
+    "Tj_Tstg": {
+      "parameter": "Operating and Storage Junction Temperature",
+      "value": "-55 ... 175",
+      "unit": "°C"
+    }
+  },
+  "static_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "value": 100,
+      "unit": "V",
+      "conditions": "V GS = 0 V, I D = 1 mA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate Threshold Voltage",
+      "value": "2.7",
+      "unit": "V",
+      "conditions": "V DS = V GS, I D = 33 µA"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "value": "1",
+      "unit": "µA",
+      "conditions": "V DS = 100 V, V GS = 0 V, T j = 25 °C"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage Current",
+      "value": "1",
+      "unit": "nA",
+      "conditions": "V GS = 20 V, V DS = 0 V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-State Resistance",
+      "value": 18,
+      "unit": "mΩ",
+      "conditions": "V GS = 10 V, I D = 33 A"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "value": 1800,
+      "unit": "pF",
+      "conditions": "V GS = 0 V, V DS = 50 V, f = 1 MHz"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "value": 315,
+      "unit": "pF",
+      "conditions": "V GS = 0 V, V DS = 50 V, f = 1 MHz"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "value": 11,
+      "unit": "pF",
+      "conditions": "V GS = 0 V, V DS = 50 V, f = 1 MHz"
+    },
+    "Qg": {
+      "parameter": "Gate Charge Total",
+      "value": 25,
+      "unit": "nC",
+      "conditions": "V GS = 0 to 10 V, I D = 33 A"
+    },
+    "Qgs": {
+      "parameter": "Gate to Source Charge",
+      "value": 7,
+      "unit": "nC",
+      "conditions": "V GS = 0 to 10 V, I D = 33 A"
+    },
+    "Qgd": {
+      "parameter": "Gate to Drain Charge",
+      "value": 4,
+      "unit": "nC",
+      "conditions": "V GS = 0 to 10 V, I D = 33 A"
+    }
+  }
+}
