@@ -1,0 +1,512 @@
+{
+  "general_info": {
+    "componentName": "RX3P07CBH",
+    "description": "Nch 100V 120A Power MOSFET",
+    "package": "TO-220AB",
+    "features": [
+      "Low on - resistance",
+      "High power small mold package (TO220AB)",
+      "Pb-free plating ; RoHS compliant",
+      "100% UIS tested"
+    ],
+    "applications": [
+      "Switching"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain - Source voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous drain current",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "value": 120,
+      "unit": "A"
+    },
+    "ID_pulsed": {
+      "parameter": "Pulsed drain current",
+      "value": 480,
+      "unit": "A"
+    },
+    "VGSS": {
+      "parameter": "Gate - Source voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "IAR": {
+      "parameter": "Avalanche current, single pulse",
+      "value": 35,
+      "unit": "A"
+    },
+    "EAS": {
+      "parameter": "Avalanche energy, single pulse",
+      "value": 99,
+      "unit": "mJ"
+    },
+    "PD": {
+      "parameter": "Power dissipation",
+      "value": 135,
+      "unit": "W"
+    },
+    "Tj": {
+      "parameter": "Junction temperature",
+      "value": 150,
+      "unit": "°C"
+    },
+    "Tstg": {
+      "parameter": "Operating junction and storage temperature range",
+      "min": -55,
+      "max": 150,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal resistance, junction - case",
+      "max": 0.92,
+      "unit": "°C/W"
+    }
+  },
+  "electrical_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain - Source breakdown voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 100,
+      "unit": "V"
+    },
+    "ΔV(BR)DSS": {
+      "parameter": "Breakdown voltage temperature coefficient",
+      "conditions": [
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "typ": 62.3,
+      "unit": "mV/°C"
+    },
+    "IDSS": {
+      "parameter": "Zero gate voltage drain current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "max": 5,
+      "unit": "μA"
+    },
+    "IGSS": {
+      "parameter": "Gate - Source leakage current",
+      "conditions": [
+        {
+          "VGS": 20,
+          "unit": "V"
+        },
+        {
+          "VDS": 0,
+          "unit": "V"
+        }
+      ],
+      "max": 500,
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate threshold voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "min": 2,
+      "max": 4,
+      "unit": "V"
+    },
+    "ΔVGS(th)": {
+      "parameter": "Gate threshold voltage temperature coefficient",
+      "conditions": [
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ],
+      "typ": -4.5,
+      "unit": "mV/°C"
+    },
+    "RDS(on)": [
+      {
+        "parameter": "Static drain - source on - state resistance",
+        "conditions": [
+          {
+            "VGS": 10,
+            "unit": "V"
+          },
+          {
+            "ID": 70,
+            "unit": "A"
+          }
+        ],
+        "typ": 4,
+        "max": 5.2,
+        "unit": "mΩ"
+      },
+      {
+        "parameter": "Static drain - source on - state resistance",
+        "conditions": [
+          {
+            "VGS": 6,
+            "unit": "V"
+          },
+          {
+            "ID": 35,
+            "unit": "A"
+          }
+        ],
+        "typ": 4.8,
+        "max": 7.2,
+        "unit": "mΩ"
+      }
+    ],
+    "RG": {
+      "parameter": "Gate resistance",
+      "typ": 0.9,
+      "unit": "Ω"
+    },
+    "Yfs": {
+      "parameter": "Forward Transfer Admittance",
+      "conditions": [
+        {
+          "VDS": 5,
+          "unit": "V"
+        },
+        {
+          "ID": 35,
+          "unit": "A"
+        }
+      ],
+      "min": 30,
+      "unit": "S"
+    },
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 4650,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 890,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse transfer capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 33,
+      "unit": "pF"
+    },
+    "td(on)": {
+      "parameter": "Turn - on delay time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 35,
+          "unit": "A"
+        },
+        {
+          "RG": 10,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 40,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Rise time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 35,
+          "unit": "A"
+        },
+        {
+          "RG": 10,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 37,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn - off delay time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 35,
+          "unit": "A"
+        },
+        {
+          "RG": 10,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 99,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Fall time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 35,
+          "unit": "A"
+        },
+        {
+          "RG": 10,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 60,
+      "unit": "ns"
+    }
+  },
+  "gate_charge_characteristics": {
+    "Qg": [
+      {
+        "parameter": "Total gate charge",
+        "conditions": [
+          {
+            "VGS": 10,
+            "unit": "V"
+          },
+          {
+            "VDD": 50,
+            "unit": "V"
+          },
+          {
+            "ID": 50,
+            "unit": "A"
+          }
+        ],
+        "typ": 73,
+        "unit": "nC"
+      },
+      {
+        "parameter": "Total gate charge",
+        "conditions": [
+          {
+            "VGS": 6,
+            "unit": "V"
+          },
+          {
+            "VDD": 50,
+            "unit": "V"
+          },
+          {
+            "ID": 50,
+            "unit": "A"
+          }
+        ],
+        "typ": 48,
+        "unit": "nC"
+      }
+    ],
+    "Qgs": {
+      "parameter": "Gate - Source charge",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "typ": 16.4,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate - Drain charge",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 50,
+          "unit": "A"
+        }
+      ],
+      "typ": 18.9,
+      "unit": "nC"
+    }
+  },
+  "body_diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous forward current",
+      "conditions": [
+        {
+          "Ta": 25,
+          "unit": "°C"
+        }
+      ],
+      "max": 70,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Pulse forward current",
+      "max": 480,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Forward voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "IS": 70,
+          "unit": "A"
+        }
+      ],
+      "max": 1.2,
+      "unit": "V"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "conditions": [
+        {
+          "IS": 50,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "di/dt": 100,
+          "unit": "A/μs"
+        }
+      ],
+      "typ": 74,
+      "unit": "ns"
+    },
+    "Qrr": {
+      "parameter": "Reverse recovery charge",
+      "conditions": [
+        {
+          "IS": 50,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "di/dt": 100,
+          "unit": "A/μs"
+        }
+      ],
+      "typ": 190,
+      "unit": "nC"
+    }
+  }
+}

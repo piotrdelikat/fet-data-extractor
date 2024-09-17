@@ -1,0 +1,284 @@
+{
+  "general_info": {
+    "componentName": "PSMN020-150W",
+    "manufacturer": "Philips Semiconductors",
+    "description": "N-channel TrenchMOS™ transistor",
+    "features": [
+      "'Trench' technology",
+      "Very low on-state resistance",
+      "Fast switching",
+      "Low thermal resistance"
+    ],
+    "applications": [
+      "d.c. to d.c. converters",
+      "switched mode power supplies"
+    ],
+    "package": "SOT429 (TO247)"
+  },
+  "absolute_maximum_ratings": {
+    "VDSS": {
+      "parameter": "Drain-source voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": "Tj = 25 ˚C to 175˚C"
+    },
+    "VDGR": {
+      "parameter": "Drain-gate voltage",
+      "value": 150,
+      "unit": "V",
+      "conditions": "Tj = 25 ˚C to 175˚C; RGS = 20 kΩ"
+    },
+    "VGS": {
+      "parameter": "Gate-source voltage",
+      "value": 20,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous drain current",
+      "value": 73,
+      "unit": "A",
+      "conditions": "Tmb = 25 ˚C"
+    },
+    "ID_100C": {
+      "parameter": "Continuous drain current",
+      "value": 51,
+      "unit": "A",
+      "conditions": "Tmb = 100 ˚C"
+    },
+    "IDM": {
+      "parameter": "Pulsed drain current",
+      "value": 290,
+      "unit": "A",
+      "conditions": "Tmb = 25 ˚C"
+    },
+    "PD": {
+      "parameter": "Total power dissipation",
+      "value": 300,
+      "unit": "W",
+      "conditions": "Tmb = 25 ˚C"
+    },
+    "Tj_Tstg": {
+      "parameter": "Operating junction and storage temperature",
+      "min": -55,
+      "max": 175,
+      "unit": "˚C"
+    }
+  },
+  "avalanche_energy_limiting_values": {
+    "EAS": {
+      "parameter": "Non-repetitive avalanche energy",
+      "value": 707,
+      "unit": "mJ",
+      "conditions": "Unclamped inductive load, IAS = 73 A; tp = 100 μs; Tj prior to avalanche = 25˚C; VDD ≤ 25 V; RGS = 50 Ω; VGS = 5 V"
+    },
+    "IAS": {
+      "parameter": "Non-repetitive avalanche current",
+      "value": 73,
+      "unit": "A"
+    }
+  },
+  "thermal_characteristics": {
+    "Rth_j_mb": {
+      "parameter": "Thermal resistance junction to mounting base",
+      "typ": null,
+      "max": 0.5,
+      "unit": "K/W"
+    },
+    "Rth_j_a": {
+      "parameter": "Thermal resistance junction to ambient",
+      "typ": 45,
+      "max": null,
+      "unit": "K/W",
+      "conditions": "in free air"
+    }
+  },
+  "electrical_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-source breakdown voltage",
+      "min": 150,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": "VGS = 0 V; ID = 0.25 mA"
+    },
+    "V(BR)DSS_low_temp": {
+      "parameter": "Drain-source breakdown voltage",
+      "min": 134,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": "Tj = -55˚C"
+    },
+    "VGS(TO)": {
+      "parameter": "Gate threshold voltage",
+      "min": 2,
+      "typ": 3,
+      "max": 4,
+      "unit": "V",
+      "conditions": "VDS = VGS; ID = 1 mA"
+    },
+    "VGS(TO)_low_temp": {
+      "parameter": "Gate threshold voltage",
+      "min": 1,
+      "typ": null,
+      "max": null,
+      "unit": "V",
+      "conditions": "Tj = -55˚C"
+    },
+    "RDS(ON)": {
+      "parameter": "Drain-source on-state resistance",
+      "min": null,
+      "typ": 12,
+      "max": 20,
+      "unit": "mΩ",
+      "conditions": "VGS = 10 V; ID = 25 A"
+    },
+    "RDS(ON)_low_temp": {
+      "parameter": "Drain-source on-state resistance",
+      "min": null,
+      "typ": null,
+      "max": 56,
+      "unit": "mΩ",
+      "conditions": "Tj = -55˚C"
+    },
+    "RDS(ON)_high_temp": {
+      "parameter": "Drain-source on-state resistance",
+      "min": null,
+      "typ": null,
+      "max": 100,
+      "unit": "mΩ",
+      "conditions": "Tj = 175˚C"
+    },
+    "IGSS": {
+      "parameter": "Gate source leakage current",
+      "min": null,
+      "typ": 0.05,
+      "max": 10,
+      "unit": "nA",
+      "conditions": "VGS = ±10 V; VDS = 0 V"
+    },
+    "IDSS": {
+      "parameter": "Zero gate voltage drain current",
+      "min": null,
+      "typ": null,
+      "max": 500,
+      "unit": "μA",
+      "conditions": "VDS = 150 V; VGS = 0 V; Tj = 175˚C"
+    },
+    "Qg(tot)": {
+      "parameter": "Total gate charge",
+      "typ": 227,
+      "unit": "nC",
+      "conditions": "ID = 73 A; VDD = 120 V; VGS = 10 V"
+    },
+    "Qgs": {
+      "parameter": "Gate-source charge",
+      "typ": 46,
+      "unit": "nC",
+      "conditions": "ID = 73 A; VDD = 120 V; VGS = 10 V"
+    },
+    "Qgd": {
+      "parameter": "Gate-drain (Miller) charge",
+      "typ": 91,
+      "unit": "nC",
+      "conditions": "ID = 73 A; VDD = 120 V; VGS = 10 V"
+    },
+    "td_on": {
+      "parameter": "Turn-on delay time",
+      "typ": 34,
+      "unit": "ns",
+      "conditions": "VDD = 75 V; RD = 2.7 Ω; VGS = 10 V; RG = 5.6 Ω"
+    },
+    "tr": {
+      "parameter": "Turn-on rise time",
+      "typ": 79,
+      "unit": "ns",
+      "conditions": "VDD = 75 V; RD = 2.7 Ω; VGS = 10 V; RG = 5.6 Ω"
+    },
+    "td_off": {
+      "parameter": "Turn-off delay time",
+      "typ": 233,
+      "unit": "ns",
+      "conditions": "VDD = 75 V; RD = 2.7 Ω; VGS = 10 V; RG = 5.6 Ω"
+    },
+    "tf": {
+      "parameter": "Turn-off fall time",
+      "typ": 101,
+      "unit": "ns",
+      "conditions": "VDD = 75 V; RD = 2.7 Ω; VGS = 10 V; RG = 5.6 Ω"
+    },
+    "Ld": {
+      "parameter": "Internal drain inductance",
+      "typ": 3.5,
+      "unit": "nH",
+      "conditions": "Measured from tab to centre of die"
+    },
+    "Ld_lead": {
+      "parameter": "Internal drain inductance",
+      "typ": 4.5,
+      "unit": "nH",
+      "conditions": "Measured from drain lead to centre of die"
+    },
+    "Ls": {
+      "parameter": "Internal source inductance",
+      "typ": 7.5,
+      "unit": "nH",
+      "conditions": "Measured from source lead to source bond pad"
+    },
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "typ": 9537,
+      "unit": "pF",
+      "conditions": "VGS = 0 V; VDS = 25 V; f = 1 MHz"
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "typ": 854,
+      "unit": "pF",
+      "conditions": "VGS = 0 V; VDS = 25 V; f = 1 MHz"
+    },
+    "Crss": {
+      "parameter": "Feedback capacitance",
+      "typ": 380,
+      "unit": "pF",
+      "conditions": "VGS = 0 V; VDS = 25 V; f = 1 MHz"
+    }
+  },
+  "reverse_diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous source current (body diode)",
+      "max": 73,
+      "unit": "A"
+    },
+    "ISM": {
+      "parameter": "Pulsed source current (body diode)",
+      "max": 290,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Diode forward voltage",
+      "typ": 0.85,
+      "max": 1.2,
+      "unit": "V",
+      "conditions": "IF = 25 A; VGS = 0 V"
+    },
+    "VSD_high_current": {
+      "parameter": "Diode forward voltage",
+      "typ": 1.1,
+      "unit": "V",
+      "conditions": "IF = 75 A; VGS = 0 V"
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "typ": 127,
+      "unit": "ns",
+      "conditions": "IF = 20 A; -dIF/dt = 100 A/μs; VGS = 0 V; VR = 30 V"
+    },
+    "Qrr": {
+      "parameter": "Reverse recovery charge",
+      "typ": 1,
+      "unit": "μC",
+      "conditions": "IF = 20 A; -dIF/dt = 100 A/μs; VGS = 0 V; VR = 30 V"
+    }
+  }
+}

@@ -1,0 +1,853 @@
+{
+  "general_info": {
+    "componentName": "IMT40R036M2H",
+    "manufacturer": "Infineon",
+    "description": "400V CoolSiC™ G2 MOSFET",
+    "features": [
+      "Ideal for high frequency switching and synchronous rectification",
+      "Commutation robust fast body diode with low Qfr",
+      "Low RDS(on) dependency on temperature",
+      "Benchmark gate threshold voltage, VGS(th)",
+      "Recommended gate driving voltage 0V to 18V",
+      ".XT interconnection technology for best-in-class thermal performance",
+      "100% avalanche tested"
+    ],
+    "applications": [
+      "SMPS",
+      "Solar PV inverters",
+      "Energy storage, UPS and battery formation",
+      "Class-D audio",
+      "Motor drives"
+    ],
+    "productValidation": "Fully qualified according to JEDEC for Industrial Applications"
+  },
+  "key_performance_parameters": {
+    "VDS": {
+      "value": 400,
+      "unit": "V"
+    },
+    "RDS(on),typ": {
+      "value": 36.4,
+      "unit": "mΩ"
+    },
+    "ID": {
+      "value": 50,
+      "unit": "A"
+    },
+    "Qoss": {
+      "value": 42,
+      "unit": "nC"
+    },
+    "Eoss": {
+      "value": 3,
+      "unit": "μJ"
+    },
+    "QG": {
+      "value": 26,
+      "unit": "nC"
+    }
+  },
+  "maximum_ratings": {
+    "ID": {
+      "value": 50,
+      "unit": "A",
+      "conditions": [
+        {
+          "VGS": 18,
+          "unit": "V"
+        },
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "ID_TC100": {
+      "value": 36,
+      "unit": "A",
+      "conditions": [
+        {
+          "VGS": 18,
+          "unit": "V"
+        },
+        {
+          "TC": 100,
+          "unit": "°C"
+        }
+      ]
+    },
+    "ID_TA25": {
+      "value": 7.6,
+      "unit": "A",
+      "conditions": [
+        {
+          "VGS": 18,
+          "unit": "V"
+        },
+        {
+          "TA": 25,
+          "unit": "°C"
+        },
+        {
+          "RTHJA": 40,
+          "unit": "°C/W"
+        }
+      ]
+    },
+    "ID_pulse": {
+      "value": 150,
+      "unit": "A",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "EAS": {
+      "value": 66,
+      "unit": "mJ",
+      "conditions": [
+        {
+          "ID": 11.1,
+          "unit": "A"
+        },
+        {
+          "RGS": 25,
+          "unit": "Ω"
+        }
+      ]
+    },
+    "EAR": {
+      "value": 0.33,
+      "unit": "mJ",
+      "conditions": [
+        {
+          "ID": 11.1,
+          "unit": "A"
+        },
+        {
+          "RGS": 25,
+          "unit": "Ω"
+        }
+      ]
+    },
+    "VGS_DC": {
+      "value": 23,
+      "unit": "V"
+    },
+    "VGS_AC": {
+      "value": 25,
+      "unit": "V",
+      "conditions": [
+        {
+          "tpulse": "≤500 ns"
+        },
+        {
+          "duty cycle": "≤ 1%"
+        }
+      ]
+    },
+    "Ptot_TC25": {
+      "value": 167,
+      "unit": "W",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "Ptot_TA25": {
+      "value": 3.8,
+      "unit": "W",
+      "conditions": [
+        {
+          "TA": 25,
+          "unit": "°C"
+        },
+        {
+          "RTHJA": 40,
+          "unit": "°C/W"
+        }
+      ]
+    },
+    "Tstg": {
+      "min": -55,
+      "max": 150,
+      "unit": "°C"
+    },
+    "Tj": {
+      "min": -55,
+      "max": 175,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "value": 0.9,
+      "unit": "°C/W"
+    },
+    "RthJA": {
+      "value": 40,
+      "unit": "°C/W",
+      "conditions": [
+        "6 cm² cooling area"
+      ]
+    }
+  },
+  "operating_range": {
+    "VGS(on)": {
+      "value": 18,
+      "unit": "V"
+    },
+    "VGS(off)": {
+      "value": 0,
+      "unit": "V"
+    }
+  },
+  "electrical_characteristics": {
+    "static_characteristics": {
+      "V(BR)DSS": {
+        "min": 400,
+        "unit": "V",
+        "conditions": [
+          {
+            "VGS": 0,
+            "unit": "V"
+          },
+          {
+            "ID": 0.4,
+            "unit": "mA"
+          }
+        ]
+      },
+      "VGS(th)": {
+        "min": 3.5,
+        "typ": 4.5,
+        "max": 5.6,
+        "unit": "V",
+        "conditions": [
+          {
+            "VDS": "VGS"
+          },
+          {
+            "ID": 4,
+            "unit": "mA"
+          }
+        ]
+      },
+      "IDSS": {
+        "typ": {
+          "value": 1,
+          "unit": "μA",
+          "conditions": [
+            {
+              "VDS": 400,
+              "unit": "V"
+            },
+            {
+              "VGS": 0,
+              "unit": "V"
+            },
+            {
+              "Tj": 25,
+              "unit": "°C"
+            }
+          ]
+        },
+        "max": {
+          "value": 2,
+          "unit": "μA",
+          "conditions": [
+            {
+              "VDS": 400,
+              "unit": "V"
+            },
+            {
+              "VGS": 0,
+              "unit": "V"
+            },
+            {
+              "Tj": 175,
+              "unit": "°C"
+            }
+          ]
+        }
+      },
+      "IGSS": {
+        "max": 100,
+        "unit": "nA",
+        "conditions": [
+          {
+            "VGS": 20,
+            "unit": "V"
+          },
+          {
+            "VDS": 0,
+            "unit": "V"
+          }
+        ]
+      },
+      "RDS(on)": {
+        "typ": {
+          "value": 36.4,
+          "unit": "mΩ",
+          "conditions": [
+            {
+              "VGS": 18,
+              "unit": "V"
+            },
+            {
+              "ID": 11.1,
+              "unit": "A"
+            },
+            {
+              "Tj": 25,
+              "unit": "°C"
+            }
+          ]
+        },
+        "max": {
+          "value": 45.7,
+          "unit": "mΩ",
+          "conditions": [
+            {
+              "VGS": 18,
+              "unit": "V"
+            },
+            {
+              "ID": 11.1,
+              "unit": "A"
+            },
+            {
+              "Tj": 25,
+              "unit": "°C"
+            }
+          ]
+        },
+        "typ_175C": {
+          "value": 52.5,
+          "unit": "mΩ",
+          "conditions": [
+            {
+              "VGS": 18,
+              "unit": "V"
+            },
+            {
+              "ID": 11.1,
+              "unit": "A"
+            },
+            {
+              "Tj": 175,
+              "unit": "°C"
+            }
+          ]
+        },
+        "typ_VGS15": {
+          "value": 44.6,
+          "unit": "mΩ",
+          "conditions": [
+            {
+              "VGS": 15,
+              "unit": "V"
+            },
+            {
+              "ID": 11.1,
+              "unit": "A"
+            },
+            {
+              "Tj": 25,
+              "unit": "°C"
+            }
+          ]
+        }
+      },
+      "RG": {
+        "typ": 5.5,
+        "max": 8.3,
+        "unit": "Ω"
+      }
+    },
+    "dynamic_characteristics": {
+      "Ciss": {
+        "typ": 870,
+        "max": 1170,
+        "unit": "pF",
+        "conditions": [
+          {
+            "VGS": 0,
+            "unit": "V"
+          },
+          {
+            "VDS": 200,
+            "unit": "V"
+          },
+          {
+            "f": 1,
+            "unit": "MHz"
+          }
+        ]
+      },
+      "Coss": {
+        "typ": 120,
+        "unit": "pF",
+        "conditions": [
+          {
+            "VGS": 0,
+            "unit": "V"
+          },
+          {
+            "VDS": 200,
+            "unit": "V"
+          },
+          {
+            "f": 1,
+            "unit": "MHz"
+          }
+        ]
+      },
+      "Crss": {
+        "typ": 10,
+        "unit": "pF",
+        "conditions": [
+          {
+            "VGS": 0,
+            "unit": "V"
+          },
+          {
+            "VDS": 200,
+            "unit": "V"
+          },
+          {
+            "f": 1,
+            "unit": "MHz"
+          }
+        ]
+      },
+      "Co(er)": {
+        "typ": 150,
+        "unit": "pF",
+        "conditions": [
+          {
+            "VGS": 0,
+            "unit": "V"
+          },
+          {
+            "VDS": "0...200",
+            "unit": "V"
+          }
+        ]
+      },
+      "Co(tr)": {
+        "typ": 210,
+        "unit": "pF",
+        "conditions": [
+          {
+            "ID": "constant"
+          },
+          {
+            "VGS": 0,
+            "unit": "V"
+          },
+          {
+            "VDS": "0...200",
+            "unit": "V"
+          }
+        ]
+      },
+      "td(on)": {
+        "typ": 13,
+        "unit": "ns",
+        "conditions": [
+          {
+            "VDD": 200,
+            "unit": "V"
+          },
+          {
+            "VGS": "0...18",
+            "unit": "V"
+          },
+          {
+            "ID": 11.1,
+            "unit": "A"
+          },
+          {
+            "RG,ext": 1.8,
+            "unit": "Ω"
+          }
+        ]
+      },
+      "tr": {
+        "typ": 11.9,
+        "unit": "ns",
+        "conditions": [
+          {
+            "VDD": 200,
+            "unit": "V"
+          },
+          {
+            "VGS": "0...18",
+            "unit": "V"
+          },
+          {
+            "ID": 11.1,
+            "unit": "A"
+          },
+          {
+            "RG,ext": 1.8,
+            "unit": "Ω"
+          }
+        ]
+      },
+      "td(off)": {
+        "typ": 17.9,
+        "unit": "ns",
+        "conditions": [
+          {
+            "VDD": 200,
+            "unit": "V"
+          },
+          {
+            "VGS": "18...0",
+            "unit": "V"
+          },
+          {
+            "ID": 11.1,
+            "unit": "A"
+          },
+          {
+            "RG,ext": 1.8,
+            "unit": "Ω"
+          }
+        ]
+      },
+      "tf": {
+        "typ": 8.1,
+        "unit": "ns",
+        "conditions": [
+          {
+            "VDD": 200,
+            "unit": "V"
+          },
+          {
+            "VGS": "18...0",
+            "unit": "V"
+          },
+          {
+            "ID": 11.1,
+            "unit": "A"
+          },
+          {
+            "RG,ext": 1.8,
+            "unit": "Ω"
+          }
+        ]
+      }
+    },
+    "gate_charge_characteristics": {
+      "Qgs": {
+        "typ": 7,
+        "unit": "nC",
+        "conditions": [
+          {
+            "VDD": 200,
+            "unit": "V"
+          },
+          {
+            "ID": 11.1,
+            "unit": "A"
+          },
+          {
+            "VGS": "0 to 18",
+            "unit": "V"
+          }
+        ]
+      },
+      "Qgd": {
+        "typ": 5.4,
+        "unit": "nC",
+        "conditions": [
+          {
+            "VDD": 200,
+            "unit": "V"
+          },
+          {
+            "ID": 11.1,
+            "unit": "A"
+          },
+          {
+            "VGS": "0 to 18",
+            "unit": "V"
+          }
+        ]
+      },
+      "Qg": {
+        "typ": 26,
+        "unit": "nC",
+        "conditions": [
+          {
+            "VDD": 200,
+            "unit": "V"
+          },
+          {
+            "ID": 11.1,
+            "unit": "A"
+          },
+          {
+            "VGS": "0 to 18",
+            "unit": "V"
+          }
+        ]
+      },
+      "Qg(sync)": {
+        "typ": 24,
+        "unit": "nC",
+        "conditions": [
+          {
+            "VDS": 0.1,
+            "unit": "V"
+          },
+          {
+            "VGS": "0 to 18",
+            "unit": "V"
+          }
+        ]
+      },
+      "Qoss": {
+        "typ": 42,
+        "unit": "nC",
+        "conditions": [
+          {
+            "VDS": 200,
+            "unit": "V"
+          },
+          {
+            "VGS": 0,
+            "unit": "V"
+          }
+        ]
+      },
+      "Eoss": {
+        "typ": 3,
+        "unit": "μJ",
+        "conditions": [
+          {
+            "VDS": 200,
+            "unit": "V"
+          },
+          {
+            "VGS": 0,
+            "unit": "V"
+          }
+        ]
+      }
+    },
+    "reverse_diode_characteristics": {
+      "IS": {
+        "value": 24,
+        "unit": "A",
+        "conditions": [
+          {
+            "TC": 25,
+            "unit": "°C"
+          }
+        ]
+      },
+      "IS_pulse": {
+        "value": 150,
+        "unit": "A",
+        "conditions": [
+          {
+            "TC": 25,
+            "unit": "°C"
+          },
+          {
+            "tpulse": "≤250 ns"
+          }
+        ]
+      },
+      "VSD": {
+        "typ": 3.5,
+        "max": 4.3,
+        "unit": "V",
+        "conditions": [
+          {
+            "VGS": 0,
+            "unit": "V"
+          },
+          {
+            "IS": 11.1,
+            "unit": "A"
+          },
+          {
+            "Tj": 25,
+            "unit": "°C"
+          }
+        ]
+      },
+      "tfr": {
+        "typ": {
+          "value1": 11.5,
+          "value2": 8.5,
+          "unit": "ns",
+          "conditions": [
+            {
+              "VR": 200,
+              "unit": "V"
+            },
+            {
+              "IS": 11.1,
+              "unit": "A"
+            },
+            {
+              "diS/dt": [
+                1000,
+                3000
+              ],
+              "unit": "A/μs"
+            }
+          ]
+        }
+      },
+      "Qfr": {
+        "typ": {
+          "value1": 39,
+          "value2": 77,
+          "unit": "nC",
+          "conditions": [
+            {
+              "VR": 200,
+              "unit": "V"
+            },
+            {
+              "IS": 11.1,
+              "unit": "A"
+            },
+            {
+              "diS/dt": [
+                1000,
+                3000
+              ],
+              "unit": "A/μs"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "package_info": {
+    "type": "PG-HSOF-8",
+    "dimensions": {
+      "A": {
+        "min": 2.2,
+        "max": 2.4,
+        "unit": "mm"
+      },
+      "b": {
+        "min": 0.7,
+        "max": 0.9,
+        "unit": "mm"
+      },
+      "b1": {
+        "min": 9.7,
+        "max": 9.9,
+        "unit": "mm"
+      },
+      "b2": {
+        "min": 0.42,
+        "max": 0.5,
+        "unit": "mm"
+      },
+      "c": {
+        "min": 0.4,
+        "max": 0.6,
+        "unit": "mm"
+      },
+      "D": {
+        "min": 10.28,
+        "max": 10.58,
+        "unit": "mm"
+      },
+      "D1": {
+        "value": 3.3,
+        "unit": "mm"
+      },
+      "E": {
+        "min": 9.7,
+        "max": 10.1,
+        "unit": "mm"
+      },
+      "E1": {
+        "value": 7.5,
+        "unit": "mm"
+      },
+      "E2": {
+        "value": 8.5,
+        "unit": "mm"
+      },
+      "E3": {
+        "value": 9.46,
+        "unit": "mm"
+      },
+      "e": {
+        "value": 1.2,
+        "unit": "mm"
+      },
+      "H": {
+        "min": 11.48,
+        "max": 11.88,
+        "unit": "mm"
+      },
+      "H1": {
+        "min": 6.55,
+        "max": 6.95,
+        "unit": "mm"
+      },
+      "H2": {
+        "value": 7.15,
+        "unit": "mm"
+      },
+      "H3": {
+        "value": 3.59,
+        "unit": "mm"
+      },
+      "H4": {
+        "value": 3.26,
+        "unit": "mm"
+      },
+      "N": {
+        "value": 8
+      },
+      "K1": {
+        "value": 4.18,
+        "unit": "mm"
+      },
+      "L": {
+        "min": 1.4,
+        "max": 1.8,
+        "unit": "mm"
+      },
+      "L1": {
+        "min": 0.5,
+        "max": 0.9,
+        "unit": "mm"
+      },
+      "L2": {
+        "min": 0.5,
+        "max": 0.7,
+        "unit": "mm"
+      },
+      "L3": {
+        "min": 1,
+        "max": 1.3,
+        "unit": "mm"
+      },
+      "L4": {
+        "min": 2.62,
+        "max": 2.81,
+        "unit": "mm"
+      }
+    }
+  }
+}

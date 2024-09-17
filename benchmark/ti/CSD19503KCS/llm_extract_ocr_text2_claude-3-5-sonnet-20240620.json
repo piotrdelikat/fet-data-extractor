@@ -1,0 +1,233 @@
+{
+  "general_info": {
+    "part_number": "CSD19503KCS",
+    "description": "80V N-Channel NexFET Power MOSFET",
+    "features": [
+      "Ultra-low Qg and Qgd",
+      "Low thermal resistance",
+      "Avalanche rated",
+      "Pb free terminal plating",
+      "RoHS compliant",
+      "Halogen free",
+      "TO-220 plastic package"
+    ],
+    "applications": [
+      "Secondary side synchronous rectifier",
+      "Motor control"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-to-Source Voltage",
+      "value": 80,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current (Package limited)",
+      "value": 100,
+      "unit": "A"
+    },
+    "ID_silicon_25C": {
+      "parameter": "Continuous Drain Current (Silicon limited), TC = 25°C",
+      "value": 94,
+      "unit": "A"
+    },
+    "ID_silicon_100C": {
+      "parameter": "Continuous Drain Current (Silicon limited), TC = 100°C",
+      "value": 66,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 247,
+      "unit": "A",
+      "conditions": "Max RθJC = 0.8°C/W, pulse duration ≤100μs, Duty cycle ≤1%"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 188,
+      "unit": "W"
+    },
+    "TJ_Tstg": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "value": "-55 to 175",
+      "unit": "°C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, single pulse",
+      "value": 140,
+      "unit": "mJ",
+      "conditions": "ID = 53A, L = 0.1mH, RG = 25Ω"
+    }
+  },
+  "electrical_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-to-Source Voltage",
+      "min": 80,
+      "unit": "V",
+      "conditions": "VGS = 0V, ID = 250μA"
+    },
+    "IDSS": {
+      "parameter": "Drain-to-Source Leakage Current",
+      "max": 1,
+      "unit": "μA",
+      "conditions": "VGS = 0V, VDS = 64V"
+    },
+    "IGSS": {
+      "parameter": "Gate-to-Source Leakage Current",
+      "max": 100,
+      "unit": "nA",
+      "conditions": "VDS = 0V, VGS = 20V"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-to-Source Threshold Voltage",
+      "min": 2.2,
+      "typ": 2.8,
+      "max": 3.4,
+      "unit": "V",
+      "conditions": "VDS = VGS, ID = 250μA"
+    },
+    "RDS(on)_6V": {
+      "parameter": "Drain-to-Source On-Resistance",
+      "typ": 8.8,
+      "max": 10.9,
+      "unit": "mΩ",
+      "conditions": "VGS = 6V, ID = 60A"
+    },
+    "RDS(on)_10V": {
+      "parameter": "Drain-to-Source On-Resistance",
+      "typ": 7.6,
+      "max": 9.2,
+      "unit": "mΩ",
+      "conditions": "VGS = 10V, ID = 60A"
+    },
+    "gfs": {
+      "parameter": "Transconductance",
+      "typ": 110,
+      "unit": "S",
+      "conditions": "VDS = 8V, ID = 60A"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "typ": 2100,
+      "max": 2730,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 40V, f = 1MHz"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "typ": 555,
+      "max": 721,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 40V, f = 1MHz"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "typ": 8.5,
+      "max": 11.1,
+      "unit": "pF",
+      "conditions": "VGS = 0V, VDS = 40V, f = 1MHz"
+    },
+    "RG": {
+      "parameter": "Series Gate Resistance",
+      "typ": 1.2,
+      "max": 2.4,
+      "unit": "Ω"
+    },
+    "Qg": {
+      "parameter": "Gate Charge Total (10V)",
+      "typ": 28,
+      "max": 36,
+      "unit": "nC",
+      "conditions": "VDS = 40V, ID = 60A"
+    },
+    "Qgd": {
+      "parameter": "Gate Charge Gate-to-Drain",
+      "typ": 5.4,
+      "unit": "nC",
+      "conditions": "VDS = 40V, ID = 60A"
+    },
+    "Qgs": {
+      "parameter": "Gate Charge Gate-to-Source",
+      "typ": 9.8,
+      "unit": "nC",
+      "conditions": "VDS = 40V, ID = 60A"
+    },
+    "Qg(th)": {
+      "parameter": "Gate Charge at Vth",
+      "typ": 6.1,
+      "unit": "nC",
+      "conditions": "VDS = 40V, ID = 60A"
+    },
+    "Qoss": {
+      "parameter": "Output Charge",
+      "typ": 71,
+      "unit": "nC",
+      "conditions": "VDS = 40V, VGS = 0V"
+    },
+    "td(on)": {
+      "parameter": "Turn On Delay Time",
+      "typ": 7,
+      "unit": "ns",
+      "conditions": "VDS = 40V, VGS = 10V, IDS = 60A, RG = 0Ω"
+    },
+    "tr": {
+      "parameter": "Rise Time",
+      "typ": 3,
+      "unit": "ns",
+      "conditions": "VDS = 40V, VGS = 10V, IDS = 60A, RG = 0Ω"
+    },
+    "td(off)": {
+      "parameter": "Turn Off Delay Time",
+      "typ": 11,
+      "unit": "ns",
+      "conditions": "VDS = 40V, VGS = 10V, IDS = 60A, RG = 0Ω"
+    },
+    "tf": {
+      "parameter": "Fall Time",
+      "typ": 2,
+      "unit": "ns",
+      "conditions": "VDS = 40V, VGS = 10V, IDS = 60A, RG = 0Ω"
+    }
+  },
+  "diode_characteristics": {
+    "VSD": {
+      "parameter": "Diode Forward Voltage",
+      "typ": 0.9,
+      "max": 1.1,
+      "unit": "V",
+      "conditions": "ISD = 60A, VGS = 0V"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "typ": 119,
+      "unit": "nC",
+      "conditions": "VDS = 40V, IF = 60A, di/dt = 300A/μs"
+    },
+    "trr": {
+      "parameter": "Reverse Recovery Time",
+      "typ": 72,
+      "unit": "ns",
+      "conditions": "VDS = 40V, IF = 60A, di/dt = 300A/μs"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case Thermal Resistance",
+      "max": 0.8,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient Thermal Resistance",
+      "typ": 62,
+      "unit": "°C/W"
+    }
+  }
+}

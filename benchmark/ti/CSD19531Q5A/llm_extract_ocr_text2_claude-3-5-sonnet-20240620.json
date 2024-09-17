@@ -1,0 +1,125 @@
+{
+  "general_info": {
+    "part_number": "CSD19531Q5A",
+    "manufacturer": "Texas Instruments",
+    "description": "100 V N-Channel NexFET Power MOSFET",
+    "features": [
+      "Ultra-Low Qg and Qgd",
+      "Low Thermal Resistance",
+      "Avalanche Rated",
+      "Pb-Free Terminal Plating",
+      "RoHS Compliant",
+      "Halogen Free",
+      "SON 5 mm × 6 mm Plastic Package"
+    ],
+    "applications": [
+      "Primary Side Telecom",
+      "Secondary Side Synchronous Rectifier",
+      "Motor Control"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-to-Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "VGS": {
+      "parameter": "Gate-to-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current (Package limited)",
+      "value": 100,
+      "unit": "A"
+    },
+    "ID_silicon": {
+      "parameter": "Continuous Drain Current (Silicon limited), TC = 25°C",
+      "value": 110,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 337,
+      "unit": "A",
+      "conditions": "pulse duration ≤100 μs, duty cycle ≤1%"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 3.3,
+      "unit": "W",
+      "conditions": "TA = 25°C"
+    },
+    "TJ_TSTG": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "min": -55,
+      "max": 150,
+      "unit": "°C"
+    },
+    "EAS": {
+      "parameter": "Avalanche Energy, single pulse",
+      "value": 180,
+      "unit": "mJ",
+      "conditions": "ID = 60 A, L = 0.1 mH, RG = 25 Ω"
+    }
+  },
+  "thermal_characteristics": {
+    "RθJC": {
+      "parameter": "Junction-to-Case Thermal Resistance",
+      "max": 1,
+      "unit": "°C/W"
+    },
+    "RθJA": {
+      "parameter": "Junction-to-Ambient Thermal Resistance",
+      "typ": 50,
+      "unit": "°C/W",
+      "conditions": "Device mounted on FR4 material with 1-inch², 2-oz. Cu"
+    }
+  },
+  "electrical_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-to-Source Voltage",
+      "min": 100,
+      "unit": "V",
+      "conditions": "VGS = 0 V, ID = 250 μA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-to-Source Threshold Voltage",
+      "min": 2.2,
+      "typ": 2.7,
+      "max": 3.3,
+      "unit": "V",
+      "conditions": "VDS = VGS, ID = 250 μA"
+    },
+    "RDS(on)": [
+      {
+        "parameter": "Drain-to-Source On Resistance",
+        "typ": 6,
+        "max": 7.8,
+        "unit": "mΩ",
+        "conditions": "VGS = 6 V, ID = 16 A"
+      },
+      {
+        "parameter": "Drain-to-Source On Resistance",
+        "typ": 5.3,
+        "max": 6.4,
+        "unit": "mΩ",
+        "conditions": "VGS = 10 V, ID = 16 A"
+      }
+    ],
+    "Qg": {
+      "parameter": "Gate Charge Total (10 V)",
+      "typ": 37,
+      "max": 48,
+      "unit": "nC",
+      "conditions": "VDS = 50 V, ID = 16 A"
+    },
+    "Qgd": {
+      "parameter": "Gate Charge Gate to Drain",
+      "typ": 6.6,
+      "unit": "nC",
+      "conditions": "VDS = 50 V, ID = 16 A"
+    }
+  }
+}

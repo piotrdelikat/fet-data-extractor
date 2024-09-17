@@ -1,0 +1,427 @@
+{
+  "general_info": {
+    "componentName": "GT023N10TL",
+    "manufacturer": "Goford Semiconductor",
+    "description": "N-Channel Enhancement Mode Power MOSFET",
+    "features": [
+      "VDS 100V",
+      "ID (at VGS = 10V) 330A",
+      "RDS(ON) (at VGS = 10V) < 1.9mΩ",
+      "100% Avalanche Tested",
+      "RoHS Compliant"
+    ],
+    "applications": [
+      "Power switch",
+      "DC/DC converters"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-Source Voltage",
+      "value": 100,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous Drain Current",
+      "value": 330,
+      "unit": "A"
+    },
+    "IDM": {
+      "parameter": "Pulsed Drain Current",
+      "value": 1320,
+      "unit": "A",
+      "conditions": "note1"
+    },
+    "VGS": {
+      "parameter": "Gate-Source Voltage",
+      "value": "±20",
+      "unit": "V"
+    },
+    "PD": {
+      "parameter": "Power Dissipation",
+      "value": 395,
+      "unit": "W"
+    },
+    "EAS": {
+      "parameter": "Single pulse avalanche energy",
+      "value": 506,
+      "unit": "mJ",
+      "conditions": "note2"
+    },
+    "TJ_Tstg": {
+      "parameter": "Operating Junction and Storage Temperature Range",
+      "min": -55,
+      "max": 150,
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJA": {
+      "parameter": "Thermal Resistance, Junction-to-Ambient",
+      "value": 62,
+      "unit": "°C/W"
+    },
+    "RthJC": {
+      "parameter": "Maximum Junction-to-Case",
+      "value": 0.32,
+      "unit": "°C/W"
+    }
+  },
+  "electrical_characteristics": {
+    "V(BR)DSS": {
+      "parameter": "Drain-Source Breakdown Voltage",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "µA"
+        }
+      ],
+      "min": 100,
+      "unit": "V"
+    },
+    "IDSS": {
+      "parameter": "Zero Gate Voltage Drain Current",
+      "conditions": [
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "max": 1,
+      "unit": "µA"
+    },
+    "IGSS": {
+      "parameter": "Gate-Source Leakage",
+      "conditions": [
+        {
+          "VGS": "±20",
+          "unit": "V"
+        }
+      ],
+      "max": "±100",
+      "unit": "nA"
+    },
+    "VGS(th)": {
+      "parameter": "Gate-Source Threshold Voltage",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 250,
+          "unit": "µA"
+        }
+      ],
+      "min": 2.2,
+      "typ": 3.2,
+      "max": 3.8,
+      "unit": "V"
+    },
+    "RDS(on)": {
+      "parameter": "Drain-Source On-Resistance",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        }
+      ],
+      "max": 1.9,
+      "unit": "mΩ"
+    },
+    "gFS": {
+      "parameter": "Forward Transconductance",
+      "conditions": [
+        {
+          "VGS": 5,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        }
+      ],
+      "typ": 145,
+      "unit": "S"
+    }
+  },
+  "dynamic_characteristics": {
+    "Ciss": {
+      "parameter": "Input Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 8058,
+      "unit": "pF"
+    },
+    "Coss": {
+      "parameter": "Output Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 2730,
+      "unit": "pF"
+    },
+    "Crss": {
+      "parameter": "Reverse Transfer Capacitance",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 50,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ],
+      "typ": 307,
+      "unit": "pF"
+    },
+    "Qg": {
+      "parameter": "Total Gate Charge",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "typ": 121,
+      "unit": "nC"
+    },
+    "Qgs": {
+      "parameter": "Gate-Source Charge",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "typ": 36,
+      "unit": "nC"
+    },
+    "Qgd": {
+      "parameter": "Gate-Drain Charge",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 10,
+          "unit": "V"
+        }
+      ],
+      "typ": 26,
+      "unit": "nC"
+    },
+    "td(on)": {
+      "parameter": "Turn-on Delay Time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "RG": 5,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 24,
+      "unit": "ns"
+    },
+    "tr": {
+      "parameter": "Turn-on Rise Time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "RG": 5,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 30,
+      "unit": "ns"
+    },
+    "td(off)": {
+      "parameter": "Turn-off Delay Time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "RG": 5,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 94,
+      "unit": "ns"
+    },
+    "tf": {
+      "parameter": "Turn-off Fall Time",
+      "conditions": [
+        {
+          "VDD": 50,
+          "unit": "V"
+        },
+        {
+          "ID": 80,
+          "unit": "A"
+        },
+        {
+          "RG": 5,
+          "unit": "Ω"
+        }
+      ],
+      "typ": 74,
+      "unit": "ns"
+    }
+  },
+  "body_diode_characteristics": {
+    "IS": {
+      "parameter": "Continuous Body Diode Current",
+      "conditions": [
+        {
+          "TC": 25,
+          "unit": "°C"
+        }
+      ],
+      "max": 330,
+      "unit": "A"
+    },
+    "VSD": {
+      "parameter": "Body Diode Voltage",
+      "conditions": [
+        {
+          "TJ": 25,
+          "unit": "°C"
+        },
+        {
+          "ISD": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        }
+      ],
+      "max": 1.2,
+      "unit": "V"
+    },
+    "Qrr": {
+      "parameter": "Reverse Recovery Charge",
+      "conditions": [
+        {
+          "IF": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "di/dt": 100,
+          "unit": "A/µs"
+        }
+      ],
+      "typ": 297,
+      "unit": "nC"
+    },
+    "Trr": {
+      "parameter": "Reverse Recovery Time",
+      "conditions": [
+        {
+          "IF": 80,
+          "unit": "A"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "di/dt": 100,
+          "unit": "A/µs"
+        }
+      ],
+      "typ": 94,
+      "unit": "ns"
+    }
+  },
+  "package_info": {
+    "package": "TOLL-8L",
+    "marking": "GT023N10",
+    "packaging": "2000pcs/Reel"
+  }
+}

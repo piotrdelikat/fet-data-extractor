@@ -1,0 +1,269 @@
+{
+  "general_info": {
+    "part_number": "IPx65R420CFD",
+    "series": "CoolMOS CFD2",
+    "voltage_rating": "650V",
+    "features": [
+      "Ultra-fast body diode",
+      "Very high commutation ruggedness",
+      "Extremely low losses due to very low FOM Rdson*Qg and Eoss",
+      "Easy to use/drive",
+      "Qualified for industrial grade applications",
+      "Pb-free plating",
+      "Halogen free mold compound"
+    ],
+    "applications": [
+      "Resonant switching PWM stages",
+      "PC Silverbox",
+      "LCD TV",
+      "Lighting",
+      "Server",
+      "Telecom"
+    ],
+    "packages": [
+      "TO-247",
+      "D²PAK",
+      "TO-220",
+      "TO-220 FP",
+      "DPAK",
+      "I²PAK"
+    ]
+  },
+  "absolute_maximum_ratings": {
+    "VDS": {
+      "parameter": "Drain-source voltage",
+      "value": 700,
+      "unit": "V"
+    },
+    "ID": {
+      "parameter": "Continuous drain current",
+      "value": 8.7,
+      "unit": "A",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "ID_100C": {
+      "parameter": "Continuous drain current",
+      "value": 5.5,
+      "unit": "A",
+      "conditions": [
+        {
+          "Tc": 100,
+          "unit": "°C"
+        }
+      ]
+    },
+    "IDM": {
+      "parameter": "Pulsed drain current",
+      "value": 27,
+      "unit": "A",
+      "conditions": [
+        {
+          "Tc": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "EAS": {
+      "parameter": "Single pulse avalanche energy",
+      "value": 227,
+      "unit": "mJ",
+      "conditions": [
+        {
+          "ID": 1.8,
+          "unit": "A"
+        },
+        {
+          "VDD": 50,
+          "unit": "V"
+        }
+      ]
+    },
+    "VGS": {
+      "parameter": "Gate-source voltage",
+      "value": {
+        "min": -20,
+        "max": 20
+      },
+      "unit": "V"
+    },
+    "Tj": {
+      "parameter": "Operating junction temperature",
+      "value": {
+        "min": -55,
+        "max": 150
+      },
+      "unit": "°C"
+    }
+  },
+  "thermal_characteristics": {
+    "RthJC": {
+      "parameter": "Thermal resistance, junction to case",
+      "value": 1.5,
+      "unit": "°C/W",
+      "conditions": [
+        {
+          "package": "TO-247, TO-220, I²PAK"
+        }
+      ]
+    },
+    "RthJA": {
+      "parameter": "Thermal resistance, junction to ambient",
+      "value": 62,
+      "unit": "°C/W",
+      "conditions": [
+        {
+          "package": "TO-247, TO-220, I²PAK"
+        }
+      ]
+    }
+  },
+  "electrical_characteristics": {
+    "BVDSS": {
+      "parameter": "Drain-source breakdown voltage",
+      "min": 650,
+      "unit": "V",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "ID": 1,
+          "unit": "mA"
+        }
+      ]
+    },
+    "VGS(th)": {
+      "parameter": "Gate threshold voltage",
+      "min": 3.5,
+      "max": 4.5,
+      "unit": "V",
+      "conditions": [
+        {
+          "VDS": "VGS",
+          "unit": "V"
+        },
+        {
+          "ID": 0.3,
+          "unit": "mA"
+        }
+      ]
+    },
+    "IDSS": {
+      "parameter": "Zero gate voltage drain current",
+      "max": 1,
+      "unit": "µA",
+      "conditions": [
+        {
+          "VDS": 650,
+          "unit": "V"
+        },
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "Tj": 25,
+          "unit": "°C"
+        }
+      ]
+    },
+    "RDS(on)": {
+      "parameter": "Drain-source on-state resistance",
+      "typ": 0.378,
+      "max": 0.42,
+      "unit": "Ω",
+      "conditions": [
+        {
+          "VGS": 10,
+          "unit": "V"
+        },
+        {
+          "ID": 3.4,
+          "unit": "A"
+        }
+      ]
+    },
+    "Ciss": {
+      "parameter": "Input capacitance",
+      "typ": 870,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ]
+    },
+    "Coss": {
+      "parameter": "Output capacitance",
+      "typ": 45,
+      "unit": "pF",
+      "conditions": [
+        {
+          "VGS": 0,
+          "unit": "V"
+        },
+        {
+          "VDS": 100,
+          "unit": "V"
+        },
+        {
+          "f": 1,
+          "unit": "MHz"
+        }
+      ]
+    },
+    "Qg": {
+      "parameter": "Total gate charge",
+      "typ": 31.5,
+      "unit": "nC",
+      "conditions": [
+        {
+          "VDS": 480,
+          "unit": "V"
+        },
+        {
+          "ID": 5.2,
+          "unit": "A"
+        },
+        {
+          "VGS": "0 to 10",
+          "unit": "V"
+        }
+      ]
+    },
+    "trr": {
+      "parameter": "Reverse recovery time",
+      "typ": 90,
+      "unit": "ns",
+      "conditions": [
+        {
+          "VR": 400,
+          "unit": "V"
+        },
+        {
+          "IF": 5.2,
+          "unit": "A"
+        },
+        {
+          "dIF/dt": 100,
+          "unit": "A/µs"
+        }
+      ]
+    }
+  }
+}
