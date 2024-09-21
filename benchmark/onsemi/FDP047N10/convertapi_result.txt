@@ -1,0 +1,1100 @@
+
+
+
+
+
+
+
+
+Is Now Part of
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To learn more about ON Semiconductor, please visit our website at www.onsemi.com
+
+
+Please note: As part of the Fairchild Semiconductor integration, some of the Fairchild orderable part numbers will need to change in order to meet ON Semiconductor’s system requirements. Since the ON Semiconductor product management systems do not have the ability to manage part nomenclature that utilizes an underscore (_), the underscore (_) in the Fairchild part numbers will be changed to a dash (-). This document may contain device numbers with an underscore (_). Please check the ON Semiconductor website to verify the updated device numbers. The most current and up-to-date ordering information can be found at www.onsemi.com. Please email any questions regarding the system integration to Fairchild_questions@onsemi.com.
+
+
+
+
+ON Semiconductor and the ON Semiconductor logo are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries. ON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent-Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+
+
+
+FDP047N10
+N-Channel PowerTrench® MOSFET
+100 V, 164 A, 4.7 mΩ
+November 2013
+
+Features
+• RDS(on) = 3.9 mΩ (Typ.) @ VGS = 10 V, ID = 75 A
+• Fast Switching Speed
+• Low Gate Charge
+• High Performance Trench Technology for Extremely Low RDS(on)
+• High Power and Current Handling Capability
+• RoHS Compliant
+Description
+This N-Channel MOSFET is produced using Fairchild Semicon- ductor’s advanced PowerTrench® process that has been tai- lored to minimize the on-state resistance while maintaining superior switching performance.
+Applications
+• Synchronous Rectification for ATX / Server / Telecom PSU
+• Battery Protection Circuit
+• Motor Drives and Uninterruptible Power Supplies
+• Micro Solar Inverter
+
+
+D
+
+
+
+
+G                      G
+D
+TO-220
+
+S
+
+MOSFET Maximum Ratings TC = 25ᵒC unless otherwise noted.
+
+Symbol
+VDSS VGSS
+
+Drain to Source Voltage Gate to Source Voltage
+Parameter
+FDP047N10
+100
+±20
+Unit V V
+
+
+ID
+
+IDM EAS
+dv/dt
+Drain Current     -  Continuous (TC = 25ᵒC, Silicon Limited)
+- Continuous (TC = 100ᵒC, Silicon Limited)
+- Continuous (TC = 25ᵒC, Package Limited)
+Drain Current          - Pulsed             (Note 1)
+Single Pulsed Avalanche Energy                 (Note 2)
+Peak Diode Recovery dv/dt                    (Note 3)
+(TC = 25ᵒC)
+164*
+116*
+120
+656*
+1153
+6.0
+375
+A A A A
+mJ
+V/ns W
+
+PD      Power Dissipation
+- Derate Above 25ᵒC
+2.5
+W/ᵒC
+
+Tᴊ, Tꜱᴛɢ Tʟ
+Operating and Storage Temperature Range
+Maximum Lead Temperature for Soldering, 1/8” from Case for 5 Seconds
+-55 to +175     ᵒC
+300       ᵒC
+*Calculated continuous current based on maximum allowable junction temperature. Package limitation current is 120A.
+
+Thermal Characteristics
+
+Symbol
+Parameter
+FDP047N10
+Unit
+RθJC      Thermal Resistance, Junction to Case, Max.                      0.4       oC/W
+RθJA      Thermal Resistance, Junction to Ambient, Max.                    62.5
+
+©2008 Fairchild Semiconductor Corporation                1
+FDP047N10 Rev. C2
+www.fairchildsemi.com
+
+Package Marking and Ordering Information
+Part Number      Top Mark     Package  Packing Method   Reel Size   Tape Width    Quantity
+FDP047N10      FDP047N10     TO-220      Tube       N/A       N/A      50 units
+
+Electrical Characteristics TC = 25ᵒC unless otherwise noted.
+Symbol          Parameter             Test Conditions      Min.   Typ.   Max.   Unit
+Off Characteristics
+
+BVDSS
+ΔBVDSS
+/ ΔTJ
+IDSS IGSS
+Drain to Source Breakdown Voltage Breakdown Voltage Temperature Coefficient
+Zero Gate Voltage Drain Current Gate to Body Leakage Current
+ID = 250 μA, VGS = 0 V, TJ = 25ᵒC
+ID = 250 μA, Referenced to 25ᵒC VDS = 100 V, VGS = 0 V
+VDS = 100 V, VGS = 0 V, TC = 150ᵒC VGS = ±20 V, VDS = 0 V
+100
+-
+-
+-
+-
+-
+0.1
+-
+-
+-
+-
+- 1
+500
+±100
+V
+V/ᵒC
+
+μA nA
+On Characteristics
+VGS(th)     Gate Threshold Voltage          VGS = VDS, ID = 250 μA        2.5    3.5    4.5    V RDS₍ₒn₎    Static Drain to Source On Resistance    VGS = 10 V, ID = 75 A         -    3.9    4.7   mΩ gFS       Forward Transconductance        VDS = 10 V, ID = 75 A         -    170    -    S
+Dynamic Characteristics
+
+Ciss      Input Capacitance            V
+Coss      Output Capacitance            DS
+
+= 25 V, VGS
+
+= 0 V,
+-   11500  15265  pF
+-   1120   1500   pF
+f = 1 MHz
+Crss       Reverse Transfer Capacitance                          -    455   680   pF
+Switching Characteristics
+
+td(on) tr td(off) tf Qg(tot) Qgs Qgd
+Turn-On Delay Time Turn-On Rise Time Turn-Off Delay Time Turn-Off Fall Time
+Total Gate Charge at 10V Gate to Source Gate Charge Gate to Drain “Miller” Charge
+
+VDD = 50 V, ID = 75 A, VGS = 10 V, RG = 25 Ω
+
+
+VDS = 80 V, ID = 75 A, VGS = 10 V
+-
+-
+-
+(Note 4)  -
+-
+-
+(Note 4)  -
+174
+386
+344
+244
+160
+56
+36
+358  ns
+782  ns
+698  ns
+499  ns
+210  nC
+-   nC
+-   nC
+Drain-Source Diode Characteristics
+
+Iꜱ Iꜱᴍ Vꜱᴅ
+trr
+Maximum Continuous Drain to Source Diode Forward Current Maximum Pulsed Drain to Source Diode Forward Current
+Drain to Source Diode Forward Voltage   VGS = 0 V, ISD = 75 A Reverse Recovery Time          VGS = 0 V, ISD = 75 A,
+-    -
+-    -
+-    -
+-   88
+164*  A
+656  A
+1.25  V
+-   ns
+
+Qrr
+Notes:
+Reverse Recovery Charge
+dIF/dt = 100 A/μs
+-   245
+-   nC
+1. Repetitive rating: pulse-width limited by maximum junction temperature.
+2. L = 0.41 mH, IAS = 75 A, VDD = 50 V, RG = 25 Ω, starting TJ = 25°C.
+3. ISD ≤ 75 A, di/dt ≤ 200 A/μs, VDD ≤ BVDSS, starting TJ = 25°C.
+4. Essentially independent of operating temperature typical characteristics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+©2008 Fairchild Semiconductor Corporation                2
+FDP047N10 Rev. C2
+www.fairchildsemi.com
+
+
+Typical Performance Characteristics
+
+Figure 1. On-Region Characteristics       Figure 2. Transfer Characteristics
+
+300
+
+
+
+
+100
+
+7V
+8V
+
+10V
+
+
+6.5 V
+
+6.0 V
+
+
+
+5.5 V
+400
+
+
+
+100
+
+
+
+
+
+175oC
+
+
+
+
+
+
+-55oC 25oC
+
+
+10
+VGS = 5V
+
+*Notes:
+10             1. 250μs Pulse Test
+2. TC = 25oC
+6                                 1
+
+
+
+
+
+*Notes:
+1. VDS = 20V
+2. 250μs Pulse Test
+
+0.1            1         5
+VDS,Drain-Source Voltage[V]
+2       4       6       8
+VGS,Gate-Source Voltage[V]
+
+Figure 3. On-Resistance Variation vs.        Figure 4. Body Diode Forward Voltage Drain Current and Gate Voltage           Variation vs. Source Current
+and Temperature
+10                                300
+
+
+8
+
+
+6
+
+VGS = 10V
+4
+VGS = 20V
+
+2
+
+*Note: TJ = 25ᵒC
+0
+100
+
+
+
+
+
+
+
+10
+
+
+
+
+2
+
+
+175oC
+
+
+
+
+
+25oC
+
+
+
+
+
+
+*Notes:
+1. VGS = 0V
+2. 250μs Pulse Test
+
+0     100    200    300    400
+ID, Drain Current [A]
+0.0       0.5       1.0
+VSD, Body Diode Forward Voltage [V]
+1.4
+
+Figure 5. Capacitance Characteristics       Figure 6. Gate Charge Characteristics
+
+16000
+
+14000
+
+12000
+
+10000
+
+8000
+
+6000
+
+
+
+
+Ciss
+
+
+
+
+
+
+
+
+Coss
+
+Ciss = Cgs + Cgd (Cds = shorted) Coss = Cds + Cgd
+Crss = Cgd
+
+
+
+*Note:
+1. VGS = 0V
+2. f = 1MHz
+10
+VDS = 20V VDS = 50V
+8      VDS = 80V
+
+
+6
+
+
+4
+
+
+4000
+
+2000
+
+0
+
+
+
+Crss
+
+
+2
+
+*Note: ID = 75A
+0
+
+0.1        1        10    30
+VDS, Drain-Source Voltage [V]
+0   30   60   90   120  150  180
+Qg, Total Gate Charge [nC]
+
+
+
+©2008 Fairchild Semiconductor Corporation                3
+FDP047N10 Rev. C2
+www.fairchildsemi.com
+
+
+Typical Performance Characteristics (Continued)
+
+Figure 7. Breakdown Voltage Variation        Figure 8. On-Resistance Variation vs. Temperature                    vs. Temperature
+1.2                                3.0
+
+2.5
+1.1
+2.0
+
+1.0                                1.5
+
+
+
+
+0.9
+
+
+
+0.8
+
+
+
+*Notes:
+1. VGS = 0V
+2. ID = 250μA
+1.0
+
+0.5
+
+0.0
+
+
+
+*Notes:
+1. VGS = 10V
+2. ID = 75A
+
+-100  -50   0   50   100  150  200
+TJ, Junction Temperature [ᵒC]
+-100  -50   0   50   100  150  200
+TJ, Junction Temperature [ᵒC]
+Figure 9. Maximum Safe Operating Area      Figure 10. Maximum Drain Current
+vs. Case Temperature
+
+1000
+
+10μs
+200
+
+
+
+100
+
+
+
+10
+
+
+
+
+
+
+
+
+Operation in This Area is Limited by R DS(on)
+
+
+
+
+1ms 10ms
+100ms DC
+
+100μs
+
+
+150
+
+
+
+100
+
+
+
+
+
+
+
+
+Limited by package
+
+
+1
+
+
+
+0.1
+
+*Notes:
+1. TC = 25oC                         50
+2. TJ = 175oC
+3. Single Pulse
+0
+
+0.1      1      10      100 200
+VDS, Drain-Source Voltage [V]
+25   50   75  100  125o
+TC, Case Temperature [ C]
+150  175
+
+Figure 11. Transient Thermal Response Curve
+
+
+1
+
+
+
+0.1
+
+
+
+
+0.01
+
+
+
+
+1E-3
+0.5
+
+0.2
+0.1
+0.05
+
+0.02
+0.01
+
+Single pulse
+
+
+
+
+
+
+PDM
+t₁
+t₂
+*Notes:
+1. ZθJC(t) = 0.4oC/W Max.
+2. Duty Factor, D= t1/t2
+3. TJM - TC = PDM * ZθJC(t)
+10⁻⁵     10⁻⁴     10⁻³     10⁻²     10⁻¹     10⁰     10¹
+Rt₁e,cRteacntganuglaurlaPruPlusleseDDuuraratitoionn[[sseecc]]
+
+
+
+©2008 Fairchild Semiconductor Corporation                4
+FDP047N10 Rev. C2
+www.fairchildsemi.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ IG = const.
+
+
+
+Figure 12. Gate Charge Test Circuit & Waveform
+
+
+
+
+
+
+
+
+
+
+
+
+V10GVS
+
+
+
+
+VGS
+RG
+RL
+VDS
+
+
+
+
+
+
+DUT
+
+
+
+
+VDD
+
+VDS
+
+
+
+
+
+
+VGS
+
+
+90%
+
+
+
+
+
+10%
+
+
+td(on)  tr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+td(off)
+f
+t on           t off
+
+Figure 13. Resistive Switching Test Circuit & Waveforms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ VGS
+
+
+
+Figure 14. Unclamped Inductive Switching Test Circuit & Waveforms
+
+
+
+
+©2008 Fairchild Semiconductor Corporation                5
+FDP047N10 Rev. C2
+www.fairchildsemi.com
+
+
+
+
+
+
+
+
+DUT    +
+
+
+VDS
+
+_
+
+
+I SD
+L
+
+
+
+
+
+
+
+
+
+VGS
+Driver
+RG
+
+
+
+Same Type as DUT
+
+
+• dv/dt controlled by RG
+• ISD controlled by pulse period
+
+
+
+
+VDD
+
+
+
+
+
+
+VGS
+( Driver )
+
+
+
+I SD
+( DUT )
+Gate Pulse Width D = --------------------------
+Gate Pulse Period
+
+
+
+IFM , Body Diode Forward Current
+
+
+
+IRM
+
+
+
+
+
+
+
+
+di/dt
+
+10V
+
+
+
+
+VDS
+( DUT )
+Body Diode Reverse Current
+
+
+Body Diode Recovery dv/dt
+
+
+VSD
+VDD
+
+
+Body Diode Forward Voltage Drop
+Figure 15. Peak Diode Recovery dv/dt Test Circuit & Waveforms
+
+
+
+
+
+©2008 Fairchild Semiconductor Corporation                6
+FDP047N10 Rev. C2
+www.fairchildsemi.com
+
+
+Mechanical Dimensions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 16. TO220, Molded, 3-Lead, Non Jedec Variation AB
+Package drawings are provided as a service to customers considering Fairchild components. Drawings may change in any manner without notice. Please note the revision and/or date on the drawing and contact a Fairchild Semiconductor representative to verify or obtain the most recent revision. Package specifications do not expand the terms of Fairchild’s worldwide terms and conditions, specif- ically the warranty therein, which covers Fairchild products.
+Always visit Fairchild Semiconductor’s online packaging area for the most recent package drawings: http://www.fairchildsemi.com/package/packageDetails.html?id=PN_TO220-0R3
+
+
+©2008 Fairchild Semiconductor Corporation                7
+FDP047N10 Rev. C2
+www.fairchildsemi.com
+
+
+
+
+
+
+
+
+
+TRADEMARKS
+The following includes registered and unregistered trademarks and service marks, owned by Fairchild Semiconductor and/or its global subsidiaries, and is not intended to be an exhaustive list of all such trademarks.
+
+AccuPower™ AX-CAP®*
+F-PFS™
+FRFET®                t ®
+Sync-Lock™
+®*
+
+BitSiC™
+Build it Now™ CorePLUS™ CorePOWER™ CROSSVOLT™ CTL™
+Current Transfer Logic™ DEUXPEED®
+Dual Cool™ EcoSPARK®
+EfficentMax™ ESBC™
+®
+Fairchild®
+Fairchild Semiconductor® FACT Quiet Series™ FACT®
+FAST®
+FastvCore™ FETBench™ FPS™
+Global Power ResourceSM GreenBridge™
+Green FPS™
+Green FPS™ e-Series™ Gmax™
+GTO™
+IntelliMAX™ ISOPLANAR™
+Marking Small Speakers Sound Louder and Better™
+MegaBuck™ MICROCOUPLER™
+MicroFET™ MicroPak™ MicroPak2™ MillerDrive™
+MotionMax™ mWSaver® OptoHiT™
+OPTOLOGIC® OPTOPLANAR®
+PowerTrench® PowerXS™
+Programmable Active Droop™ QFET®
+QS™
+Quiet Series™ RapidConfigure™
+™
+Saving our world, 1mW/W/kW at a time™ SignalWise™
+SmartMax™ SMART START™
+Solutions for Your Success™ SPM®
+STEALTH™
+SuperFET® SuperSOT™-3
+SuperSOT™-6 SuperSOT™-8 SupreMOS®
+SyncFET™
+
+TinyBoost® TinyBuck® TinyCalc™ TinyLogic® TINYOPTO™
+TinyPower™ TinyPWM™ TinyWire™ TranSiC™ TriFault Detect™
+TRUECURRENT®*
+μSerDes™
+
+
+UHC®
+Ultra FRFET™ UniFET™ VCX™
+VisualMax™ VoltagePlus™ XS™
+
+*Trademarks of System General Corporation, used under license by Fairchild Semiconductor.
+DISCLAIMER
+FAIRCHILD SEMICONDUCTOR RESERVES THE RIGHT TO MAKE CHANGES WITHOUT FURTHER NOTICE TO ANY PRODUCTS HEREIN TO IMPROVE
+RELIABILITY, FUNCTION, OR DESIGN. FAIRCHILD DOES NOT ASSUME ANY LIABILITY ARISING OUT OF THE APPLICATION OR USE OF ANY PRODUCT OR CIRCUIT DESCRIBED HEREIN; NEITHER DOES IT CONVEY ANY LICENSE UNDER ITS PATENT RIGHTS, NOR THE RIGHTS OF OTHERS. THESE SPECIFICATIONS DO NOT EXPAND THE TERMS OF FAIRCHILD’S WORLDWIDE TERMS AND CONDITIONS, SPECIFICALLY THE WARRANTY THEREIN, WHICH COVERS THESE PRODUCTS.
+
+LIFE SUPPORT POLICY
+FAIRCHILD’S PRODUCTS ARE NOT AUTHORIZED FOR USE AS CRITICAL COMPONENTS IN LIFE SUPPORT DEVICES OR SYSTEMS WITHOUT THE EXPRESS WRITTEN APPROVAL OF FAIRCHILD SEMICONDUCTOR CORPORATION.
+As used here in:
+
+1.  Life support devices or systems are devices or systems which, (a) are intended for surgical implant into the body or (b) support or sustain life, and (c) whose failure to perform when properly used in accordance with instructions for use provided in the labeling, can be reasonably expected to result in a significant injury of the user.
+2.  A critical component in any component of a life support, device, or system whose failure to perform can be reasonably expected to cause the failure of the life support device or system, or to affect its safety or effectiveness.
+
+ANTI-COUNTERFEITING POLICY
+Fairchild Semiconductor Corporation’s Anti-Counterfeiting Policy. Fairchild’s Anti-Counterfeiting Policy is also stated on our external website, www.Fairchildsemi.com, under Sales Support.
+Counterfeiting of semiconductor parts is a growing problem in the industry. All manufactures of semiconductor products are experiencing counterfeiting of their parts. Customers who inadvertently purchase counterfeit parts experience many problems such as loss of brand reputation, substandard performance, failed application, and increased cost of production and manufacturing delays. Fairchild is taking strong measures to protect ourselves and our customers from the proliferation of counterfeit parts. Fairchild strongly encourages customers to purchase Fairchild parts either directly from Fairchild or from Authorized Fairchild Distributors who are listed by country on our web page cited above. Products customers buy either from Fairchild directly or from Authorized Fairchild Distributors are genuine parts, have full traceability, meet Fairchild’s quality standards for handing and storage and provide access to Fairchild’s full range of up-to-date technical and product information. Fairchild and our Authorized Distributors will stand behind all warranties and will appropriately address and warranty issues that may arise. Fairchild will not provide any warranty coverage or other assistance for parts bought from Unauthorized Sources. Fairchild is committed to combat this global problem and encourage our customers to do their part in stopping this practice by buying direct or from authorized distributors.
+
+
+PRODUCT STATUS DEFINITIONS
+Definition of Terms Datasheet Identification
+Advance Information
+
+
+Preliminary
+No Identification Needed Obsolete
+
+
+
+Product Status
+Formative / In Design
+
+
+First Production
+Full Production Not In Production
+
+
+
+Definition
+Datasheet contains the design specifications for product development. Specifications may change in any manner without notice.
+Datasheet contains preliminary data; supplementary data will be published at a later date. Fairchild Semiconductor reserves the right to make changes at any time without notice to improve design.
+Datasheet contains final specifications. Fairchild Semiconductor reserves the right to make changes at any time without notice to improve the design.
+Datasheet contains specifications on a product that is discontinued by Fairchild Semiconductor. The datasheet is for reference information only.
+
+©2008 Fairchild Semiconductor Corporation                8
+FDP047N10 Rev. C2
+Rev. I66
+www.fairchildsemi.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ON Semiconductor and  are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries. ON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+PUBLICATION ORDERING INFORMATION
+LITERATURE FULFILLMENT:
+Literature Distribution Center for ON Semiconductor 19521 E. 32nd Pkwy, Aurora, Colorado 80011 USA
+Phone: 303−675−2175 or 800−344−3860 Toll Free USA/Canada Fax: 303−675−2176 or 800−344−3867 Toll Free USA/Canada Email: orderlit@onsemi.com
+© Semiconductor Components Industries, LLC
+
+
+N. American Technical Support: 800−282−9855 Toll Free USA/Canada
+Europe, Middle East and Africa Technical Support:
+Phone: 421 33 790 2910
+Japan Customer Focus Center
+Phone: 81−3−5817−1050
+www.onsemi.com
+1
+
+
+ON Semiconductor Website: www.onsemi.com
+Order Literature: http://www.onsemi.com/orderlit
+For additional information, please contact your local Sales Representative
+
+www.onsemi.com

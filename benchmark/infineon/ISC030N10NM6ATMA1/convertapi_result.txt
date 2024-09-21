@@ -1,0 +1,1324 @@
+
+ISC030N10NM6
+
+
+
+
+MOSFET
+OptiMOSTM 6 Power-Transistor, 100 V
+Features
+• N-channel, normal level
+• Very low on-resistance RDS(on)
+• Excellent gate charge x RDS(on) product (FOM)
+• Very low reverse recovery charge (Qrr)
+• High avalanche energy rating
+• 175°C operating temperature
+• Optimized for high frequency switching and synchronous rectification
+• Pb-free lead plating; RoHS compliant
+• Halogen-free according to IEC61249-2-21
+• MSL 1 classified according to J-STD-020
+
+
+
+TDSON-8 FL (enlarged source interconnection)
+8
+7
+6 5
+
+
+1            5
+2            6
+3
+4            8
+
+4
+3
+2
+1
+
+
+Product validation
+Fully qualified according to JEDEC for Industrial Applications
+
+Table 1  Key Performance Parameters
+
+
+
+
+
+Gate Pin 4
+
+
+*1: Internal body diode
+Drain
+Pin 5-8
+
+
+*1
+
+
+
+
+
+Source Pin 1-3
+
+Parameter
+VDS
+RDS(on),max ID
+Qoss QG(0V...10V)
+Qrr (100A/µs)
+Value
+100
+3.0
+179
+101
+55
+56
+Unit
+V
+mΩ A
+nC nC nC
+
+Type / Ordering Code             Package           Marking      Related Links
+ISC030N10NM6                PG-TDSON-8 FL      030N10N6         -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+1                    Rev. 2.2, 2023-02-14
+
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+
+Table of Contents
+Description                                                        1
+Maximum ratings                                                    3
+Thermal characteristics                                                 3
+Electrical characteristics                                                4
+Electrical characteristics diagrams                                           6
+Package Outlines                                                   10
+Revision History                                                    12
+Trademarks                                                       12
+Disclaimer                                                       12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2                    Rev. 2.2, 2023-02-14
+
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+
+1  Maximum ratings
+at TA=25 °C, unless otherwise specified
+
+
+Table 2  Maximum ratings
+Parameter
+Continuous drain current¹⁾ Pulsed drain current³⁾
+Avalanche current, single pulse⁴⁾ Avalanche energy, single pulse Gate source voltage
+
+
+Symbol
+
+
+ID
+
+
+
+ID,pulse IAS EAS VGS
+
+
+
+Min.
+-
+-
+-
+-
+-
+-
+-
+-20
+
+Values Typ.
+-
+-
+-
+-
+-
+-
+-
+-
+
+
+
+Max.
+179
+127
+110
+21
+716
+50
+988
+20
+
+
+Unit
+
+
+A
+
+A A
+mJ V
+
+
+Note / Test Condition
+
+VGS=10 V, TC=25 °C VGS=10 V, TC=100 °C VGS=8 V, TC=100 °C
+VGS=10V,TA=25°C,RthJA=50°C/W²⁾
+TA=25 °C
+TC=25 °C
+ID=18 A, RGS=25 Ω
+-
+
+Power dissipation
+Ptot
+-    -    208   W
+TC=25 °C
+2)
+
+
+Operating and storage temperature
+
+
+Tj, Tstg
+-   -
+-55  -
+3.0
+175
+TA=25 °C, RthJA=50 °C/W
+°C  -
+
+
+2  Thermal characteristics
+
+Table 3  Thermal characteristics
+Values
+
+Parameter
+
+Thermal resistance, junction - case, bottom
+Thermal resistance, junction - case, top
+Thermal resistance, junction - ambient, 6 cm² cooling area
+Symbol
+
+RthJC RthJC RthJA
+Min.
+-
+
+-
+
+-
+Typ.
+0.36
+
+-
+
+-
+Max.
+0.72
+
+20
+
+50
+Unit
+
+°C/W
+
+°C/W
+
+°C/W
+Note / Test Condition
+
+-
+
+-
+
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+¹⁾ Rating refers to the product only with datasheet specified absolute maximum values, maintaining case temperature as specified. For other case temperatures please refer to Diagram 2. De-rating will be required based on the actual environmental conditions.
+²⁾ Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm² (one layer, 70 µm thick) copper area for drain connection. PCB is vertical in still air.
+³⁾ See Diagram 3 for more detailed information
+⁴⁾ See Diagram 13 for more detailed information
+
+Final Data Sheet
+3                    Rev. 2.2, 2023-02-14
+
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+3  Electrical characteristics
+at Tj=25 °C, unless otherwise specified
+
+
+Table 4  Static characteristics
+Parameter
+
+Drain-source breakdown voltage Gate threshold voltage
+Zero gate voltage drain current Gate-source leakage current Drain-source on-state resistance
+Gate resistance Transconductance
+
+
+Symbol
+
+V(BR)DSS VGS(th)
+IDSS IGSS RDS(on)
+RG
+gfs
+
+
+
+Min.
+100
+2.3
+-
+-
+-
+-
+- 0.52
+41
+
+Values Typ.
+-
+2.8
+0.1
+10
+10
+2.6
+3.1
+1.05
+82
+
+
+
+Max.
+-
+3.3
+1.0
+100
+100
+3.0
+4.0
+1.56
+-
+
+
+Unit
+
+V V
+µA nA mΩ
+Ω
+S
+
+
+Note / Test Condition
+
+VGS=0 V, ID=1 mA
+VDS=VGS, ID=109 µA
+VDS=80 V, VGS=0 V, Tj=25 °C
+VDS=80 V, VGS=0 V, Tj=125 °C¹⁾
+VGS=20 V, VDS=0 V
+VGS=10 V, ID=50 A
+VGS=8 V, ID=25 A
+-
+|VDS|≥2|ID|RDS(on)max, ID=50 A
+
+Table 5  Dynamic characteristics
+Values
+
+Parameter
+
+Input capacitance Output capacitance¹⁾
+Reverse transfer capacitance¹⁾ Turn-on delay time
+Rise time
+
+Turn-off delay time Fall time
+Symbol
+
+Ciss Coss Crss
+td(on) tr td(off) tf
+Min.
+-
+-
+-
+-
+
+-
+
+-
+
+-
+Typ.
+4000
+900
+15
+11
+
+4.5
+
+22.5
+
+5.3
+Max.
+5200
+1100
+22
+-
+
+-
+
+-
+
+-
+Unit
+
+pF pF pF
+ns ns ns ns
+Note / Test Condition
+
+VGS=0 V, VDS=50 V, f=1 MHz VGS=0 V, VDS=50 V, f=1 MHz VGS=0 V, VDS=50 V, f=1 MHz
+VDD=50 V, VGS=10 V, ID=25 A,
+RG,ext=1.6 Ω
+VDD=50 V, VGS=10 V, ID=25 A,
+RG,ext=1.6 Ω
+VDD=50 V, VGS=10 V, ID=25 A,
+RG,ext=1.6 Ω
+VDD=50 V, VGS=10 V, ID=25 A,
+RG,ext=1.6 Ω
+Table 6  Gate charge characteristics²⁾
+Values
+
+Parameter
+
+Gate to source charge¹⁾ Gate charge at threshold¹⁾ Gate to drain charge¹⁾ Switching charge
+Gate charge total¹⁾ Gate plateau voltage
+Gate charge total, sync. FET Output charge¹⁾
+Symbol
+
+Qgs Qg(th) Qgd Qsw Qg Vplateau Qg(sync) Qoss
+Min.
+-
+-
+-
+-
+-
+-
+-
+-
+Typ.
+18
+11
+9.1
+16
+55
+4.6
+50
+101
+Max.
+24
+14
+14
+- 69
+-
+- 126
+Unit
+
+nC nC nC nC nC V
+nC nC
+Note / Test Condition
+
+VDD=50 V, ID=25 A, VGS=0 to 10 V VDD=50 V, ID=25 A, VGS=0 to 10 V VDD=50 V, ID=25 A, VGS=0 to 10 V VDD=50 V, ID=25 A, VGS=0 to 10 V VDD=50 V, ID=25 A, VGS=0 to 10 V VDD=50 V, ID=25 A, VGS=0 to 10 V VDS=0.1 V, VGS=0 to 10 V
+VDS=50 V, VGS=0 V
+
+
+
+
+¹⁾ Defined by design. Not subject to production test.
+²⁾ See ″Gate charge waveforms″ for parameter definition
+Final Data Sheet                        4
+Rev. 2.2, 2023-02-14
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+
+Table 7  Reverse diode
+Parameter
+
+Diode continuous forward current Diode pulse current
+Diode forward voltage Reverse recovery time¹⁾ Reverse recovery charge¹⁾ Reverse recovery time¹⁾ Reverse recovery charge¹⁾
+
+
+
+Symbol
+
+IS
+IS,pulse VSD
+trr Qrr trr Qrr
+
+
+
+
+Min.
+-
+-
+-
+-
+-
+-
+-
+
+
+Values Typ.
+-
+- 0.82
+46.5
+56
+25.5
+266
+
+
+
+
+Max.
+179
+716
+1.0
+70
+84
+38
+399
+
+
+
+Unit
+
+A A V
+ns nC ns nC
+
+
+
+Note / Test Condition
+
+TC=25 °C
+TC=25 °C
+VGS=0 V, IF=50 A, Tj=25 °C VR=50 V, IF=25 A, diF/dt=100 A/µs VR=50 V, IF=25 A, diF/dt=100 A/µs
+VR=50 V, IF=25 A, diF/dt=1000 A/µs
+VR=50 V, IF=25 A, diF/dt=1000 A/µs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+¹⁾ Defined by design. Not subject to production test.
+Final Data Sheet                        5
+Rev. 2.2, 2023-02-14
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+4  Electrical characteristics diagrams
+
+Diagram 1: Power dissipation
+240
+Diagram 2: Drain current
+200
+175
+200
+150
+160
+125
+120                                  100
+75
+80
+50
+40
+25
+
+
+
+0
+0   25   50   75  100  125  150  175  200
+TC [°C]
+
+
+0
+0   25   50   75  100  125  150  175  200
+TC [°C]
+Ptot=f(TC)                             ID=f(TC); VGS≥10 V
+
+
+
+
+
+Diagram 3: Safe operating area
+10³
+Diagram 4: Max. transient thermal impedance
+10¹
+
+
+
+
+
+10²
+
+
+
+
+10¹
+
+10 µs
+
+
+100 µs
+
+
+1 ms
+
+1 µs
+
+
+
+
+
+
+
+10⁰
+single pulse 0.01
+0.02
+0.05
+0.1
+0.2
+0.5
+
+10 ms
+
+
+10⁰
+
+DC
+10-1
+
+
+
+10-1
+
+
+
+10-2
+
+10⁻¹      10⁰      10¹      10²      10³
+VDS [V]
+10-2
+
+10⁻⁵    10⁻⁴    10⁻³    10⁻²    10⁻¹    10⁰
+tp [s]
+ID=f(VDS); TC=25 °C; D=0; parameter: tp                 ZthJC=f(tp); parameter: D=tp/T
+
+
+Final Data Sheet
+6                    Rev. 2.2, 2023-02-14
+
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+
+
+Diagram 5: Typ. output characteristics
+800
+
+
+700
+
+
+
+10 V
+Diagram 6: Typ. drain-source on resistance
+8
+
+6 V
+7                     7 V
+
+
+600                                   6
+
+8 V
+500                           8 V     5
+400                                   4
+
+300
+         7 V  
+3
+10 V
+200                           6 V        2
+
+100
+0
+
+1
+5 V
+4.5 V
+0
+
+0      1      2      3      4      5
+VDS [V]
+ID=f(VDS), Tj=25 °C; parameter: VGS
+0   50  100  150  200  250  300  350  400
+ID [A]
+RDS(on)=f(ID), Tj=25 °C; parameter: VGS
+
+
+
+
+
+Diagram 7: Typ. transfer characteristics
+320
+Diagram 8: Typ. drain-source on resistance
+8
+
+
+280                                   7
+175 °C
+
+240                                   6
+
+
+200                                   5
+25 °C
+
+160                                   4
+
+
+120                                   3
+
+
+80                                   2
+
+
+175 °C
+40
+
+
+0
+
+1
+25 °C
+0
+
+0    1    2    3    4    5    6    7
+VGS [V]
+ID=f(VGS), |VDS|>2|ID|RDS(on)max; parameter: Tj
+5      6      7      8      9     10
+VGS [V]
+RDS(on)=f(VGS), ID=50 A; parameter: Tj
+
+
+
+
+
+Final Data Sheet
+7                    Rev. 2.2, 2023-02-14
+
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+
+
+Diagram 9: Normalized drain-source on resistance
+2.4
+Diagram 10: Typ. gate threshold voltage
+3.6
+
+3.2
+2.0
+2.8
+
+1.6                                  2.4
+
+
+
+
+1.2
+
+2.0
+
+1.6
+1090 µA
+
+
+109 µA
+
+0.8                                  1.2
+
+0.8
+0.4
+0.4
+
+
+0.0
+-80   -40   0    40   80   120   160   200
+Tj [°C]
+RDS(on)=f(Tj), ID=50 A, VGS=10 V
+0.0
+-80   -40   0    40   80   120   160   200
+Tj [°C]
+VGS(th=f(Tj), VGS=VDS; parameter: ID
+
+
+
+
+
+Diagram 11: Typ. capacitances
+10⁴
+Diagram 12: Forward characteristics of reverse diode
+10³
+
+
+
+
+
+
+10³
+
+
+
+
+Ciss
+25 °C
+25 °C, max
+175 °C
+175 °C, max
+
+10²
+Coss
+
+10²
+
+
+
+10¹
+
+10¹
+Crss
+
+
+
+10⁰
+
+0     20     40     60     80     100
+VDS [V]
+10⁰
+0.00   0.25   0.50   0.75   1.00   1.25   1.50
+VSD [V]
+C=f(VDS); VGS=0 V; f=1 MHz                    IF=f(VSD); parameter: Tj
+
+
+
+
+
+Final Data Sheet
+
+
+
+
+8                    Rev. 2.2, 2023-02-14
+
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+
+
+Diagram 13: Avalanche characteristics
+10²
+Diagram 14: Typ. gate charge
+10
+20 V
+50 V
+80 V
+
+8
+25 °C
+
+
+
+
+
+10¹
+
+
+150 °C
+100 °C
+6
+
+4
+
+
+
+
+2
+
+
+
+10⁰
+
+100          10¹        10²        10³
+tAV [µs]
+0
+0    10    20    30    40    50    60
+Qgate [nC]
+IAS=f(tAV); RGS=25 Ω; parameter: Tj,start                   VGS=f(Qgate), ID=25 A pulsed, Tj=25 °C; parameter: VDD
+
+
+
+
+
+Diagram 15: Drain-source breakdown voltage
+112
+Diagram Gate charge waveforms
+
+110
+
+108
+
+106
+
+104
+
+102
+
+100
+
+98
+
+96
+
+94
+-80   -40   0    40   80   120   160   200
+Tj [°C]
+VBR(DSS)=f(Tj); ID=10 mA
+
+
+
+
+
+Final Data Sheet
+9                    Rev. 2.2, 2023-02-14
+
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+5  Package Outlines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIMENSION
+
+
+
+
+
+MILLIMETERS
+DOCUMENT NO.
+Z8B000193699
+REVISION
+04
+
+MIN.
+A       0.90
+A1      0.15
+b       0.26
+D       4.80
+MAX.
+1.20
+0.35
+0.54
+5.35
+SCALE
+
+0  1
+10:1
+
+2
+
+
+3mm
+
+D1       3.70
+D2       0.00
+E       5.70
+E1       5.90
+E2       3.88
+e
+
+
+
+
+
+
+1.27
+4.40
+0.23
+6.10
+6.42
+4.42
+EUROPEAN PROJECTION
+
+L        0.69       0.90
+M       0.45       0.69
+ISSUE DATE
+05.11.2019
+Figure 1  Outline PG-TDSON-8 FL, dimensions in mm
+
+Final Data Sheet
+10                    Rev. 2.2, 2023-02-14
+
+OptiMOSTM 6 Power-Transistor, 100 V
+ISC030N10NM6                           
+
+
+
+
+PG-TDSON-8-FL: Recommended Boardpads & Apertures
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 2  Outline Boardpads (TDSON-8 FL)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+11                    Rev. 2.2, 2023-02-14
+
+
+OptiMOS TM 6 Power-Transistor , 100 V
+ISC030N10NM6                           
+
+
+Revision History
+ISC030N10NM6
+Revision: 2023-02-14, Rev. 2.2
+Previous Revision
+
+Revision 2.0
+2.1
+2.2
+Date
+2021-07-05
+2021-07-20
+2023-02-14
+Subjects (major changes since last revision) Release of final version
+Update Diagram 10 Update SOA Diagram
+
+
+Trademarks
+All referenced product or service names and trademarks are the property of their respective owners.
+
+
+
+We Listen to Your Comments
+Any information within this document that you feel is wrong, unclear or missing at all? Your feedback will help us to continuously improve the quality of this document. Please send your proposal (including a reference to this document) to: erratum@infineon.com
+
+Published by
+Infineon Technologies AG 81726 München, Germany
+© 2023 Infineon Technologies AG All Rights Reserved.
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics (“Beschaffenheitsgarantie”) .
+With respect to any examples, hints or any typical values stated herein and/or any information regarding the application of the product, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation warranties of non-infringement of intellectual property rights of any third party.
+In addition, any information given in this document is subject to customer’s compliance with its obligations stated in this document and any applicable legal requirements, norms and standards concerning customer’s products and any use of the product of Infineon Technologies in customer’s applications.
+The data contained in this document is exclusively intended for technically trained staff. It is the responsibility of customer’s technical departments to evaluate the suitability of the product for the intended application and the completeness of the product information given in this document with respect to such application.
+Information
+For further information on technology, delivery terms and conditions and prices please contact your nearest Infineon Technologies Office (www.infineon.com).
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+The Infineon Technologies component described in this Data Sheet may be used in life-support devices or systems and/or automotive, aviation and aerospace applications or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life-support, automotive, aviation and aerospace device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+12                    Rev. 2.2, 2023-02-14

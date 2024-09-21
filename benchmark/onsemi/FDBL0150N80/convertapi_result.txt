@@ -1,0 +1,1158 @@
+
+
+
+
+
+
+
+
+Is Now Part of
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To learn more about ON Semiconductor, please visit our website at www.onsemi.com
+
+
+Please note: As part of the Fairchild Semiconductor integration, some of the Fairchild orderable part numbers will need to change in order to meet ON Semiconductor’s system requirements. Since the ON Semiconductor product management systems do not have the ability to manage part nomenclature that utilizes an underscore (_), the underscore (_) in the Fairchild part numbers will be changed to a dash (-). This document may contain device numbers with an underscore (_). Please check the ON Semiconductor website to verify the updated device numbers. The most current and up-to-date ordering information can be found at www.onsemi.com. Please email any questions regarding the system integration to Fairchild_questions@onsemi.com.
+
+
+
+
+ON Semiconductor and the ON Semiconductor logo are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries. ON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent-Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+
+
+July 2016
+FDBL0150N80
+N-Channel PowerTrench® MOSFET
+80 V, 300 A, 1.4 mΩ
+
+Features
+◼ Typical RDS(on) = 1.1 mΩ at VGS = 10V, ID = 80 A
+◼ Typical Qg(tot) = 172 nC at VGS = 10V, ID = 80 A
+◼ UIS Capability                                      D
+◼ RoHS Compliant
+Applications
+◼ Industrial Motor Drive
+◼ Industrial Power Supply                            G
+◼ Industrial Automation
+◼ Battery Operated tools                                  S
+◼ Battery Protection
+
+◼ Solar Inverters
+◼ UPS and Energy Inverters
+◼ Energy Storage
+◼ Load Switch
+For current package drawing, please refer to the Fairchild web‐
+site at https://www.fairchildsemi.com/evaluate/package‐spec‐ ifications/packageDetails.html?id=PN_PSOFA‐008
+MOSFET Maximum Ratings TJ = 25°C unless otherwise noted.
+
+
+Symbol VDSS VGS
+
+Drain-to-Source Voltage Gate-to-Source Voltage
+Parameter
+Ratings
+80
+±20
+Units V V
+
+I     Drain Current - Continuous (VGS=10) (Note 1)     TC = 25°C
+D    Pulsed Drain Current               TC = 25°C
+300
+A
+See Figure 4
+
+Eᴀꜱ Pᴅ
+TJ, TSTG RθJC RθJA
+Single Pulse Avalanche Energy                (Note 2) Power Dissipation
+Derate Above 25ᵒC
+Operating and Storage Temperature Thermal Resistance, Junction to Case
+Maximum Thermal Resistance, Junction to Ambient      (Note 3)
+820
+429
+2.86
+-55 to + 175
+0.35
+43
+mJ W
+W/ᵒC
+oC ᵒC/W ᵒC/W
+Notes:
+1: Current is limited by bondwire configuration.
+2: Starting TJ = 25°C, L = 0.4mH, IAS = 64A, VDD = 40V during inductor charging and VDD = 0V during time in avalanche.
+3: RθJA is the sum of the junction-to-case and case-to-ambient thermal resistance, where the case thermal reference is defined as the solder mounting surface of the drain pins. RθJC is guaranteed by design, while RθJAis determined by the board design. The maximum rating presented here is based on mounting on a 1 in² pad of 2oz copper.
+Package Marking and Ordering Information
+Device Marking     Device      Package
+FDBL0150N80    FDBL0150N80     MO-299A       -         -          -
+
+
+
+
+
+
+
+©2014 Fairchild Semiconductor Corporation            1
+FDBL0150N80 Rev.1.2
+www.fairchildsemi.com
+
+Electrical Characteristics TJ = 25°C unless otherwise noted.
+
+Symbol        Parameter           Test Conditions     Min.   Typ.  Max.  Units
+Off Characteristics
+
+
+BVDSS
+
+Drain-to-Source Breakdown Voltage
+
+ID = 250μA, VGS = 0V
+
+80    -    -    V
+VDS= 80V,  TJ = 25ᵒC        -    -    1    μA
+
+IDSS   Drain-to-Source Leakage Current
+VGS
+= 0V  TJ
+= 175ᵒC (Note 4)   -    -    1   mA
+
+IGSS
+Gate-to-Source Leakage Current
+VGS = ±20V
+-    -   ±100   nA
+On Characteristics
+VGS(th)   Gate to Source Threshold Voltage   VGS = VDS, ID = 250μA       2.0   3.0   4.0   V
+
+RDS(on)  Drain to Source On Resistance
+
+Dynamic Characteristics
+ID = 80A, VGS= 10V
+TJ = 25ᵒC        -    1.1   1.4   mΩ TJ = 175ᵒC (Note 4)   -    2.4   3.1   mΩ
+
+
+Ciss Coss
+Input Capacitance Output Capacitance
+
+VDS
+
+= 25V, VGS
+
+= 0V,
+-   12800   -   pF
+-   1925   -   pF
+
+Crss Rg Qg(ToT)
+Reverse Transfer Capacitance Gate Resistance
+Total Gate Charge at 10V
+f = 1MHz
+
+f = 1MHz
+VGS = 0 to 10V  VDD = 64V
+-   139
+-   3.0
+-   172
+-   pF
+4.6  Ω
+188  nC
+
+Qg(th) Qgs Qgd
+Threshold Gate Charge Gate-to-Source Gate Charge
+Gate-to-Drain “Miller“ Charge
+VGS = 0 to 2V
+ID = 80A
+-   23
+-   51
+-   34
+27   nC
+-   nC
+-   nC
+Switching Characteristics
+
+
+ton td(on) tr td(off) tf
+toff
+Turn-On Time Turn-On Delay Rise Time Turn-Off Delay Fall Time
+Turn-Off Time
+
+
+
+VDD = 40V, ID = 80A, VGS = 10V, RGEN = 6Ω
+-   -
+-   42
+-   73
+-   87
+-   48
+-   -
+128  ns
+-   ns
+-   ns
+-   ns
+-   ns
+193  ns
+Drain-Source Diode Characteristics
+
+
+
+VSD
+Source-to-Drain Diode Voltage     ISD =80A, VGS = 0V         -    -   1.25   V
+ISD = 40A, VGS = 0V        -    -    1.2    V
+
+trr Qrr
+Note:
+Reverse-Recovery Time Reverse-Recovery Charge
+IF = 80A, dISD/dt = 100A/μs,
+VDD=64V
+-   117
+-   205
+136  ns
+269  nC
+4: The maximum value is specified by design at TJ = 175°C. Product is not tested to this condition in production.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FDBL0150N80 Rev.1.2                      2                      www.fairchildsemi.com
+
+
+
+Typical Characteristics
+
+
+1.2
+
+1.0
+
+0.8
+
+0.6
+400
+
+
+300
+
+
+200
+
+
+CURRENT LIMITED BY PACKAGE
+
+
+VGS = 10V
+
+
+CURRENT LIMITED BY SILICON
+
+
+0.4
+
+0.2
+
+100
+
+
+0.0
+
+0   25  50  75  100  125  150  175
+TC, CASE TEMPERATURE(oC)
+0
+25  50  75  100  125  150  175  200
+TC, CASE TEMPERATURE(oC)
+
+Figure 1. Normalized Power Dissipation vs. Case Temperature
+Figure 2. Maximum Continuous Drain Current vs.
+Case Temperature
+
+2
+
+1
+
+
+
+
+
+0.1
+
+
+DUTY CYCLE - DESCENDING ORDER
+
+D = 0.50
+0.20
+0.10
+0.05
+0.02
+0.01
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOTES:
+
+
+
+
+
+
+
+
+
+PDM
+
+
+
+t1
+t2
+
+SINGLE PULSE
+DUTY FACTOR: D = t₁/t₂
+PEAK TJ = PDM x ZθJA x RθJA + TC
+
+0.01
+10⁻⁵        10⁻⁴        10⁻³        10⁻²        10⁻¹        10⁰        10¹
+t, RECTANGULAR PULSE DURATION(s)
+Figure 3. Normalized Maximum Transient Thermal Impedance
+
+10000
+VGS = 10V
+
+
+
+1000
+
+
+
+
+100
+
+
+
+
+10
+
+
+
+
+
+
+
+SINGLE PULSE
+TC = 25oC
+FOR TEMPERATURES ABOVE 25oC DERATE PEAK
+CURRENT AS FOLLOWS:
+
+I = I2   175 - TC 150
+10⁻⁵        10⁻⁴        10⁻³        10⁻²        10⁻¹        10⁰        10¹ t, RECTANGULAR PULSE DURATION(s)
+Figure 4. Peak Current Capability
+
+
+
+
+
+FDBL0150N80 Rev.1.2                      3                      www.fairchildsemi.com
+
+Typical Characteristics
+
+
+
+2000
+1000
+2000
+1000
+
+If R = 0
+tAV = (L)(IAS)/(1.3*RATED BVDSS - VDD)
+If R ≠ 0
+tAV = (L/R)ln[(IAS*R)/(1.3*RATED BVDSS - VDD) +1]
+
+
+100
+
+
+10
+
+
+1
+
+
+0.1
+
+
+
+
+
+
+OPERATION IN THIS AREA MAY BE LIMITED BY rDS(on)
+
+
+
+
+
+
+
+
+
+
+
+SINGLE PULSE TJ = MAX RATED TC = 25oC
+
+
+
+
+100us
+
+
+1ms
+
+10ms 100ms
+
+
+100
+
+
+
+10
+
+
+
+1
+
+
+
+
+
+
+
+
+
+STARTING TJ = 150oC
+
+
+
+
+
+STARTING TJ = 25oC
+
+0.1      1      10     100   500
+VDS, DRAIN TO SOURCE VOLTAGE (V)
+0.001 0.01  0.1   1   10  100  1000 10000
+tAV, TIME IN AVALANCHE (ms)
+NOTE: Refer to Fairchild Application Notes AN7514 and AN7515
+
+Figure 5.
+Forward Bias Safe Operating Area
+Figure 6. Unclamped Inductive Switching Capability
+
+
+300
+
+
+240
+
+PULSE DURATION = 80μs DUTY CYCLE = 0.5% MAX
+VDD = 5V
+300
+
+100
+
+
+VGS = 0 V
+
+
+180
+
+
+120
+
+
+60
+
+
+0
+
+
+TJ = 25oC TJ = 175oC
+
+
+
+
+
+
+
+
+TJ = -55oC
+
+10
+
+
+
+1
+
+
+
+0.1
+TJ = 175 oC
+TJ = 25 oC
+
+2    3    4    5    6    7
+VGS, GATE TO SOURCE VOLTAGE (V)
+0.0   0.2   0.4   0.6   0.8   1.0   1.2
+VSD, BODY DIODE FORWARD VOLTAGE (V)
+
+Figure 7.
+Transfer Characteristics       Figure 8.
+Forward Diode Characteristics
+
+
+
+
+
+250
+
+
+200
+
+
+150
+
+
+100
+
+
+50
+
+
+0
+
+
+
+
+
+
+
+
+
+
+5V
+
+
+
+80μs PULSE WIDTH Tj=25oC
+
+
+
+
+
+
+
+VGS
+15V Top 10V
+8V
+7V
+6V
+5.5V
+5V Bottom
+
+
+
+
+250
+
+
+200
+
+
+150
+
+
+100
+
+
+50
+
+
+0
+
+
+
+
+
+5V
+VGS
+15V Top 10V
+8V 5.5V
+7V
+6V
+5.5V
+5V Bottom
+
+
+
+
+
+80μs PULSE WIDTH Tj=175oC
+
+0    1    2    3    4    5
+VDS, DRAIN TO SOURCE VOLTAGE (V)
+0    1    2    3    4    5
+VDS, DRAIN TO SOURCE VOLTAGE (V)
+
+Figure 9.
+Saturation Characteristics        Figure 10.
+Saturation Characteristics
+
+
+
+
+FDBL0150N80 Rev.1.2                      4                      www.fairchildsemi.com
+
+Typical Characteristics
+
+
+20
+ID = 80A
+
+16
+
+PULSE DURATION = 80μs DUTY CYCLE = 0.5% MAX
+2.4
+
+
+2.0
+
+PULSE DURATION = 80μs DUTY CYCLE = 0.5% MAX
+
+
+12
+TJ = 175oC
+8
+
+TJ = 25oC
+1.6
+
+
+1.2
+
+
+4                              0.8
+
+
+0                              0.4
+ID = 80A VGS = 10V
+2      4      6      8     10       -80  -40   0   40   80  120  160  200
+
+VGS
+, GATE TO SOURCE VOLTAGE (V)
+TJ, JUNCTION TEMPERATURE(oC)
+
+Figure 11.
+RDSON vs. Gate Voltage       Figure 12. Normalized RDSON vs. Junction
+Temperature
+
+
+1.5
+
+
+1.2
+
+
+VGS = VDS
+ID = 250μA
+1.10
+
+
+1.05
+
+ID = 5mA
+
+
+0.9
+
+
+0.6
+
+
+1.00
+
+
+
+0.3
+0.95
+
+
+0.0
+-80  -40   0   40   80  120  160  200
+TJ, JUNCTION TEMPERATURE(ᵒC)
+
+Figure 13. Normalized Gate Threshold Voltage vs.
+Temperature
+0.90
+-80  -40   0   40   80  120  160  200
+TJ, JUNCTION TEMPERATURE (ᵒC)
+
+Figure 14. Normalized Drain to Source Breakdown Voltage vs. Junction Temperature
+
+
+100000
+
+
+10000
+
+
+1000
+
+
+
+
+
+
+Ciss
+
+
+
+Coss
+10
+ID = 80A
+
+8
+
+
+6
+
+
+4
+
+
+VDD = 40V
+
+
+VDD =32V
+
+
+
+
+
+VDD = 48V
+
+
+100
+
+
+10
+
+
+f = 1MHz VGS = 0V
+
+2
+Crss
+
+0
+
+0.1       1       10       100
+VDS, DRAIN TO SOURCE VOLTAGE (V)
+0  20  40  60  80  100 120 140 160 180
+Qg, GATE CHARGE(nC)
+
+Figure 15.
+Capacitance vs. Drain to Source Voltage
+Figure 16.
+Gate Charge vs. Gate to Source Voltage
+
+
+FDBL0150N80 Rev.1.2                      5                      www.fairchildsemi.com
+
+9.70
+9.90
+
+
+
+
+
+
+(0.40)
+
+
+
+0.60
+0.80
+
+DETAIL "A"
+
+
+B
+
+
+
+
+0.40
+0.60
+
+
+
+
+
+
+
+10°
+
+
+11.58
+11.78
+
+(3.30) (2X)
+
+10.28
+10.48
+
+0.60
+0.80
+
+
+
+
+
+
+1
+
+
+
+(0.35)
+
+
+
+0.60
+
+
+
+
+
+
+
+
+8.40
+
+
+
+
+8
+
+
+1.20
+7X
+0.50
+0.70
+
+0.70 (8X)
+0.90
+0.25  C A B
+0.20  C
+
+
+0.20 C A B
+DETAIL "A"
+
+TOP VIEW
+10.20
+5.10
+4.45
+
+
+
+
+
+0.20 C
+2.20
+2.40
+0.10 C
+
+
+
+
+
+SIDE VIEW
+DETAIL "B"
+
+0.40
+0.60
+
+C
+
+6.64
+
+
+
+
+
+6.64
+
+
+
+4.99
+
+1.46
+
+
+
+
+2.04
+
+
+0.86
+
+
+2.95
+
+2.90
+
+
+0.60
+2.80
+
+
+8.10
+
+13.28
+
+
+
+9.80
+A      10.00
+
+
+
+
+0.20 C A B
+
+1
+
+0.80
+
+8
+
+1.20
+
+
+
+
+
+
+5.19
+(8.00)
+
+
+
+4.73
+(2X)
+
+
+
+1.90
+2.10
+
+0.10
+LAND PATTERN RECOMMENDATION
+
+
+
+
+(7.15)
+
+6.55
+6.75
+
+
+5.89
+
+
+
+
+
+
+
+3.75
+
+
+
+
+
+
+
+
+
+7.40
+7.60
+
+
+
+
+
+
+1.20
+3X
+
+2.60 (2X)
+
+
+3.30 (2X)
+
+
+
+
+0.65
+2X
+
+
+
+NOTES: UNLESS OTHERWISE SPECIFIED
+A) PACKAGE STANDARD REFERENCE:
+JEDEC MO-299, ISSUE A, DATED NOVEMBER 2009.
+B) ALL DIMENSIONS ARE IN MILLIMETERS.
+C) DIMENSIONS DO NOT INCLUDE BURRS
+
+(8.30)
+BOTTOM VIEW
+
+
+
+
+10°
+OR MOLD FLASH. MOLD FLASH OR BURRS DOES NOT EXCEED 0.10MM.
+D) DIMENSIONING AND TOLERANCING PER ASME Y14.5M-1994.
+E) DRAWING FILE NAME: MKT-PSOF08AREV3
+
+
+
+
+
+(0.35)
+
+DETAIL "B"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ON Semiconductor and  are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries. ON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+PUBLICATION ORDERING INFORMATION
+LITERATURE FULFILLMENT:
+Literature Distribution Center for ON Semiconductor 19521 E. 32nd Pkwy, Aurora, Colorado 80011 USA
+Phone: 303−675−2175 or 800−344−3860 Toll Free USA/Canada Fax: 303−675−2176 or 800−344−3867 Toll Free USA/Canada Email: orderlit@onsemi.com
+© Semiconductor Components Industries, LLC
+
+
+N. American Technical Support: 800−282−9855 Toll Free USA/Canada
+Europe, Middle East and Africa Technical Support:
+Phone: 421 33 790 2910
+Japan Customer Focus Center
+Phone: 81−3−5817−1050
+www.onsemi.com
+1
+
+
+ON Semiconductor Website: www.onsemi.com
+Order Literature: http://www.onsemi.com/orderlit
+For additional information, please contact your local Sales Representative
+
+www.onsemi.com

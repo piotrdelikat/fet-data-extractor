@@ -1,0 +1,553 @@
+
+
+
+
+
+
+
+
+
+• Lead-Free
+PD - 94997
+
+IRL540NPbF
+HEXFET⑥ Power MOSFET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.irf.com                                                  1
+2/10/04
+
+IRL540NPbF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2                                                 www.irf.com
+
+IRL540NPbF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.irf.com                                                  3
+
+IRL540NPbF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4                                                 www.irf.com
+
+IRL540NPbF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.irf.com                                                  5
+
+IRL540NPbF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6                                                 www.irf.com
+
+IRL540NPbF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.irf.com                                                  7
+
+IRL540NPbF
+
+
+
+TO-220AB Package Outline
+Dimensions are shown in millimeters (inches)
+
+
+
+2.87 (.113)
+2.62 (.103)
+
+
+
+
+15.24 (.600)
+14.84 (.584)
+
+10.54 (.415)
+10.29 (.405)
+
+
+
+
+4
+
+  3.78 (.149)
+3.54 (.139)
+- A -
+
+6.47 (.255)
+6.10 (.240)
+
+
+4.69 (.185)
+4.20 (.165)
+
+- B -
+
+1.32 (.052)
+1.22 (.048)
+
+
+
+
+
+
+
+
+
+
+LEAD ASSIGNMENTS
+1.15 (.045)                     LEAD ASSIGNMENTS
+
+
+1 2 3
+MIN
+HEXFE1T- GATE
+1- GAT2E- DRAIN
+IGBTs, CoPACK
+1- GATE
+2- DRA3IN- SOURCE 2- COLLECTOR
+
+
+14.09 (.555)
+13.47 (.530)
+
+
+4.06 (.160)
+3.55 (.140)
+3- SOU4R- CDERAIN
+4- DRAIN
+3- EMITTER
+4- COLLECTOR
+
+
+
+
+
+
+
+
+
+
+NOTES:
+
+
+3X 1.40 (.055)   
+1.15 (.045)
+
+2.54 (.100)
+2X
+0.93 (.037)
+0.69 (.027)
+0.36 (.014)  M B A M
+
+3X 0.55 (.022)
+0.46 (.018)
+2.92 (.115)
+2.64 (.104)
+1 DIMENSIONING & TOLERANCING PER ANSI Y14.5M, 1982.   3 OUTLINE CONFORMS TO JEDEC OUTLINE TO-220AB.
+2 CONTROLLING DIMENSION : INCH            4 HEATSINK & LEAD MEASUREMENTS DO NOT INCLUDE BURRS.
+
+TO-220AB Part Marking Information
+
+
+EXAMPL E :
+T HIS IS AN IRF 1010 LOT CODE 1789
+AS S E MB L E D ON WW 19, 1997
+IN T HE ASSE MB L Y LINE "C"
+Note: "P" in assembly line position indicates "Lead-Free"
+
+
+
+INT E RNAT IONAL RE CT IF IE R
+LOGO
+
+AS S E MB L Y LOT CODE
+
+
+PART NU MB E R
+
+
+DAT E CODE
+YE AR 7 = 1997
+WEEK 19 LINE C
+
+
+
+
+
+Data and specifications subject to change without notice.
+
+
+
+
+IR WORLD HEADQUARTERS: 233 Kansas St., El Segundo, California 90245, USA Tel: (310) 252-7105
+TAC Fax: (310) 252-7903
+Visit us at www.irf.com for sales contact information.02/04
+8                                                 www.irf.com
+
+Note: For the most current drawings please refer to the IR website at: http://www.irf.com/package/
+
+IMPORTANT NOTICE
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics (“Beschaffenheitsgarantie”) .
+With respect to any examples, hints or any typical values  stated  herein  and/or  any  information regarding the application of the product, Infineon Technologies  hereby  disclaims  any  and  all warranties and liabilities of any kind, including without limitation warranties of non-infringement of intellectual property rights of any third party.
+In addition, any information given in this document is subject to customer’s compliance with its obligations stated in this document and any applicable  legal  requirements,  norms  and standards concerning customer’s products and any use of the product of Infineon Technologies in customer’s applications.
+The data contained in this document is exclusively intended for technically trained staff. It is the responsibility of customer’s technical departments to evaluate the suitability of the product for the intended application and the completeness of the product information given in this document with respect to such application.
+
+For further information on the product, technology, delivery terms and conditions and prices please contact your nearest Infineon Technologies office (www.infineon.com).
+
+WARNINGS
+Due to technical requirements products may contain dangerous substances. For information on the types in question please contact your nearest Infineon Technologies office.
+Except as otherwise explicitly approved by Infineon Technologies in a written document signed by authorized   representatives   of   Infineon Technologies, Infineon Technologies’ products may not be used in any applications where a failure of the product or any consequences of the use thereof can reasonably be expected to result in personal injury.

@@ -1,0 +1,1312 @@
+
+
+
+
+
+
+
+
+1 Features
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024
+CSD19503KCS 80V N-Channel NexFET™ Power MOSFET
+Product Summary
+
+TA = 25°C
+TYPICAL VALUE
+UNIT
+
+• Ultra-low Qg and Qgd
+• Low thermal resistance
+• Avalanche rated
+• Pb free terminal plating
+VDS
+Qg Qgd
+Drain-to-Source Voltage Gate Charge Total (10V) Gate Charge Gate-to-Drain
+80      V
+28     nC
+5.4     nC
+VGS = 6V   8.8  mΩ
+
+• RoHS compliant
+• Halogen free
+• TO-220 plastic package
+RDS(on)
+
+VGS(th)
+Drain-to-Source On-Resistance
+
+Threshold Voltage
+
+VGS
+= 10V   7.6  mΩ
+2.8      V
+
+2 Applications
+Ordering Information(1)
+
+Device
+Package
+Media
+Qty
+Ship
+
+• Secondary side synchronous rectifier
+• Motor control
+CSD19503KCS   TO-220 Plastic
+Package
+
+Tube   50   Tube
+
+3 Description
+This 80V, 7.6mΩ, TO-220 NexFET™ power MOSFET is designed to minimize losses in power conversion
+(1)  For all available packages, see the orderable addendum at the end of the data sheet.
+Absolute Maximum Ratings
+
+applications.
+TA = 25°C
+VALUE
+UNIT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Gate (Pin 1)
+
+
+
+
+
+Drain (Pin 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Source (Pin 3)
+VDS VGS
+
+
+
+ID
+
+
+
+
+Iᴅᴍ PD
+TJ,
+Tstg EAS
+Drain-to-Source Voltage Gate-to-Source Voltage
+Continuous Drain Current (Package limited)
+Continuous Drain Current (Silicon limited), TC = 25°C
+Continuous Drain Current (Silicon limited), TC = 100°C
+Pulsed Drain Current (1)
+Power Dissipation
+Operating Junction and Storage Temperature Range
+Avalanche Energy, single pulse ID = 53A, L = 0.1mH, RG = 25Ω
+80    V
+±20    V
+100
+
+94   A
+
+66
+
+247   A
+188   W
+
+–55 to 175  °C
+
+140   mJ
+(1)  Max RθJC = 0.8°C/W, pulse duration ≤100μs, Duty cycle ≤1%
+
+
+22
+TC = 25°C, ID = 60A
+20                 TC = 125°C, ID = 60A
+18
+16
+14
+12
+10
+8
+6
+4
+0  2  4  6  8  10  12  14  16  18  20
+10
+ID = 60A
+9  VDS = 40V
+8
+7
+6
+5
+4
+3
+2
+1
+0
+0    4    8   12   16   20   24   28
+
+VGS - Gate-to- Source Voltage (V)
+RDS(on) vs VGS
+
+G001
+Qg - Gate Charge (nC)
+
+Gate Charge
+
+G001
+
+
+
+
+
+
+
+
+An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications, intellectual property matters and other important disclaimers. PRODUCTION DATA.
+
+
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024                                        www.ti.com
+
+Table of Contents
+
+1 Features                         1
+2 Applications                       1
+3 Description                       1
+4 Specifications                      3
+4.1 Electrical Characteristics              3
+4.2 Thermal Information                 3
+4.3 Typical MOSFET Characteristics          4
+5 Device and Documentation Support         7
+5.1 Third-Party Products Disclaimer           7
+5.2 Documentation Support               7
+5.3 Receiving Notification of Documentation Updates  7
+5.4 Support Resources                 7
+5.5 Trademarks                     7
+5.6 Electrostatic Discharge Caution           7
+5.7 Glossary                       7
+6 Revision History                    7
+7 Mechanical, Packaging, and Orderable Information  8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2   Submit Document Feedback                              Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: CSD19503KCS
+
+
+
+
+www.ti.com
+
+4 Specifications
+4.1 Electrical Characteristics
+(TA = 25°C unless otherwise stated)
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024
+PARAMETER                TEST CONDITIONS          MIN  TYP  MAX  UNIT STATIC CHARACTERISTICS
+
+BVDSS  Drain-to-Source Voltage
+IDSS   Drain-to-Source Leakage Current IGSS   Gate-to-Source Leakage Current
+VGS = 0V, ID = 250μA VGS = 0V, VDS = 64V VDS = 0V, VGS = 20V
+80           V
+1  μA
+100  nA
+
+VGS₍th₎  Gate-to-Source Threshold Voltage RDS₍ₒn₎  Drain-to-Source On-Resistance
+gfs   Transconductance
+DYNAMIC CHARACTERISTICS
+Ciss   Input Capacitance
+Cₒss   Output Capacitance
+Crss   Reverse Transfer Capacitance RG    Series Gate Resistance
+Qg    Gate Charge Total (10V) Qgd   Gate Charge Gate-to-Drain
+Qgs   Gate Charge Gate-to-Source Qg₍th₎  Gate Charge at Vth
+Qₒss  Output Charge
+td₍ₒn₎   Turn On Delay Time tr    Rise Time
+td₍ₒff₎   Turn Off Delay Time tf    Fall Time
+DIODE CHARACTERISTICS
+VSD   Diode Forward Voltage
+VDS = VGS, ID = 250μA VGS = 6V, ID = 60A VGS = 10V, ID = 60A VDS = 8V, ID = 60A
+
+
+
+VGS = 0V, VDS = 40V, ƒ = 1MHz
+
+
+
+
+
+VDS = 40V, ID = 60A
+
+
+VDS = 40V, VGS = 0V
+
+
+VDS = 40V, VGS = 10V, IDS = 60A, RG = 0Ω
+
+
+
+ISD = 60A, VGS = 0V
+2.2   2.8   3.4   V
+8.8  10.9  mΩ
+7.6  9.2  mΩ
+110      S
+
+
+2100  2730  pF
+555  721  pF
+8.5  11.1  pF
+1.2   2.4  Ω
+28   36  nC
+5.4      nC
+9.8      nC
+6.1      nC
+71      nC
+7      ns
+3      ns
+11      ns
+2      ns
+
+
+0.9   1.1  V
+
+Qrr    Reverse Recovery Charge      VDS= 40V, IF = 60A,
+119      nC
+
+trr    Reverse Recovery Time
+di/dt = 300A/μs
+72      ns
+
+
+4.2 Thermal Information
+(TA = 25°C unless otherwise stated)
+
+
+
+
+THERMAL METRIC
+
+
+
+
+MIN  TYP  MAX
+
+
+
+
+UNIT
+
+RθJC   Junction-to-Case Thermal Resistance RθJA   Junction-to-Ambient Thermal Resistance
+0.8
+62
+
+°C/W
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                               Submit Document Feedback   3
+Product Folder Links: CSD19503KCS
+
+
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024                                        www.ti.com
+
+4.3 Typical MOSFET Characteristics
+(TA = 25°C unless otherwise stated)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 4-1. Transient Thermal Impedance
+
+
+
+200
+180
+160
+140
+120
+100
+80
+60
+40
+20
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+VGS =10V VGS =8V VGS =6V
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+
+VDS = 5V
+
+
+
+
+
+
+
+
+
+
+
+
+
+TC = 125°C TC = 25°C TC = −55°C
+0     0.4    0.8    1.2    1.6     2          0   1   2   3   4   5   6   7   8
+
+VDS - Drain-to-Source Voltage (V)
+Figure 4-2. Saturation Characteristics
+
+G001
+VGS - Gate-to-Source Voltage (V)
+Figure 4-3. Transfer Characteristics
+
+G001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4   Submit Document Feedback                              Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: CSD19503KCS
+
+
+
+
+www.ti.com
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024
+
+
+10
+ID = 60A
+9  VDS = 40V
+8
+7
+6
+5
+4
+3
+2
+1
+0
+0    4    8   12   16   20   24   28
+100000
+
+
+10000
+
+
+1000
+
+
+100
+
+
+10
+
+
+1
+
+
+Ciss = Cgd + Cgs Coss = Cds + Cgd Crss = Cgd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0   10   20   30   40   50   60   70   80
+
+Qg - Gate Charge (nC)
+Figure 4-4. Gate Charge
+
+G001
+VDS - Drain-to-Source Voltage (V)
+Figure 4-5. Capacitance
+
+G001
+
+3.4
+3.2
+3
+2.8
+2.6
+2.4
+2.2
+2
+1.8
+1.6
+1.4
+22
+ID = 250uA
+20
+18
+16
+14
+12
+10
+8
+6
+4
+
+TC = 25°C, ID = 60A TC = 125°C, ID = 60A
+−75 −50 −25  0  25  50  75 100 125 150 175 200          0   2   4   6   8  10  12  14  16  18  20
+
+TC - Case Temperature (ºC)
+
+G001
+VGS - Gate-to- Source Voltage (V)
+
+G001
+
+Figure 4-6. Threshold Voltage vs Temperature
+Figure 4-7. On-State Resistance vs Gate-to-Source Voltage
+
+2.4
+2.2
+2
+1.8
+1.6
+1.4
+1.2
+1
+0.8
+0.6
+0.4
+
+VGS = 6V VGS = 10V
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ID =60A
+100
+
+10
+
+1
+
+0.1
+
+0.01
+
+0.001
+
+0.0001
+
+TC = 25°C TC = 125°C
+−75 −50 −25  0  25  50  75 100 125 150 175 200          0     0.2    0.4    0.6    0.8     1
+
+TC - Case Temperature (ºC)
+
+G001
+VSD − Source-to-Drain Voltage (V)
+
+G001
+
+Figure 4-8. Normalized On-State Resistance vs Temperature
+Figure 4-9. Typical Diode Forward Voltage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                               Submit Document Feedback   5
+Product Folder Links: CSD19503KCS
+
+
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024                                        www.ti.com
+
+
+5000
+
+1000
+
+10us 100us
+
+1ms    DC
+10ms
+100
+
+TC = 25ºC TC = 125ºC
+
+
+100
+
+
+10
+
+
+1
+Single Pulse
+Max RthₑtₐJC = 0.8ºC/W
+0.1                                   10
+0.1      1      10      100     1000         0.01            0.1             1
+
+VDS - Drain-to-Source Voltage (V)
+
+G001
+TAV - Time in Avalanche (mS)
+
+G001
+
+Figure 4-10. Maximum Safe Operating Area
+Figure 4-11. Single Pulse Unclamped Inductive Switching
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+
+0
+−50 −25  0  25  50  75  100 125 150 175 200
+
+TC - Case Temperature (ºC)
+
+G001
+Figure 4-12. Maximum Drain Current vs Temperature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6   Submit Document Feedback                              Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: CSD19503KCS
+
+
+
+
+www.ti.com
+
+5 Device and Documentation Support
+5.1 Third-Party Products Disclaimer
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+5.2 Documentation Support
+5.2.1 Related Documentation
+
+5.3 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on Notifications to register and receive a weekly digest of any product information that has changed. For change details, review the revision history included in any revised document.
+5.4 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do not necessarily reflect TI's views; see TI's Terms of Use.
+5.5 Trademarks
+NexFET™ is a trademark of Texas Instruments. TI E2E™ is a trademark of Texas Instruments.
+All trademarks are the property of their respective owners.
+5.6 Electrostatic Discharge Caution
+This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may be more susceptible to damage because very small parametric changes could cause the device not to meet its published specifications.
+
+5.7 Glossary
+TI Glossary   This glossary lists and explains terms, acronyms, and definitions.
+
+6 Revision History
+Changes from Revision A (August 2014) to Revision B (April 2024)                   Page
+•  Updated the numbering format for tables, figures, and cross-references throughout the document      1
+Changes from Revision * (December 2013) to Revision A (August 2014)                Page
+•  Pulsed drain current increased from 113 to 247A                                 1
+•  Updated pulsed current conditions                                         1
+•  Updated Figure 4-10 to reflect increased pulsed drain current                          4
+
+
+
+
+
+
+
+
+
+
+Copyright © 2024 Texas Instruments Incorporated                               Submit Document Feedback   7
+Product Folder Links: CSD19503KCS
+
+
+CSD19503KCS
+SLPS479B – DECEMBER 2013 – REVISED APRIL 2024                                        www.ti.com
+
+7 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most current data available for the designated devices. This data is subject to change without notice and revision of this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8   Submit Document Feedback                              Copyright © 2024 Texas Instruments Incorporated
+Product Folder Links: CSD19503KCS
+
+PACKAGE OPTION ADDENDUM
+
+www.ti.com                                                                                             3-Apr-2024
+
+
+
+PACKAGING INFORMATION
+
+
+Orderable Device
+Status
+(1)
+Package Type Package
+Drawing
+Pins
+Package Qty
+Eco Plan
+(2)
+Lead finish/ Ball material
+(6)
+MSL Peak Temp
+(3)
+Op Temp (°C)
+Device Marking
+(4/5)
+Samples
+
+CSD19503KCS
+ACTIVE
+TO-220   KCS   3
+50  RoHS-Exempt     SN & Green
+N / A for Pkg Type
+-55 to 175
+CSD19503KCS
+Samples
+
+⁽¹⁾ The marketing status values are defined as follows:
+ACTIVE: Product device recommended for new designs.
+LIFEBUY: TI has announced that the device will be discontinued, and a lifetime-buy period is in effect.
+NRND: Not recommended for new designs. Device is in production to support existing customers, but TI does not recommend using this part in a new design.
+PREVIEW: Device has been announced but is not in production. Samples may or may not be available.
+OBSOLETE: TI has discontinued the production of the device.
+
+⁽²⁾ RoHS: TI defines "RoHS" to mean semiconductor products that are compliant with the current EU RoHS requirements for all 10 RoHS substances, including the requirement that RoHS substance do not exceed 0.1% by weight in homogeneous materials. Where designed to be soldered at high temperatures, "RoHS" products are suitable for use in specified lead-free processes. TI may reference these types of products as "Pb-Free".
+RoHS Exempt: TI defines "RoHS Exempt" to mean products that contain lead but are compliant with EU RoHS pursuant to a specific EU RoHS exemption.
+Green: TI defines "Green" to mean the content of Chlorine (Cl) and Bromine (Br) based flame retardants meet JS709B low halogen requirements of <=1000ppm threshold. Antimony trioxide based flame retardants must also meet the <=1000ppm threshold requirement.
+
+⁽³⁾ MSL, Peak Temp. - The Moisture Sensitivity Level rating according to the JEDEC industry standard classifications, and peak solder temperature.
+
+⁽⁴⁾ There may be additional marking, which relates to the logo, the lot trace code information, or the environmental category on the device.
+
+⁽⁵⁾ Multiple Device Markings will be inside parentheses. Only one Device Marking contained in parentheses and separated by a "~" will appear on a device. If a line is indented then it is a continuation of the previous line and the two combined represent the entire Device Marking for that device.
+
+⁽⁶⁾ Lead finish/Ball material - Orderable Devices may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum column width.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+Addendum-Page 1
+
+PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                               3-Apr-2024
+
+TUBE
+
+
+T - Tube height
+
+
+W - Tube width
+
+
+B - Alignment groove width
+
+L - Tube length
+
+
+*All dimensions are nominal
+Device CSD19503KCS CSD19503KCS
+
+Package Name
+KCS KCS
+
+Package Type TO-220 TO-220
+
+Pins
+3
+3
+
+SPQ
+50
+50
+
+L (mm)
+532
+532
+
+W (mm)
+34.1
+34.1
+
+T (µm)
+700
+700
+
+B (mm)
+9.6
+9.6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pack Materials-Page 1
+
+
+KCS0003B
+PACKAGE OUTLINE
+TO-220 - 19.65 mm max height
+
+                                                                          SCALE 0.850                                        
+
+
+
+TO-220
+
+
+
+
+
+
+
+10.36
+9.96
+
+
+2.9
+2.6
+4.7
+4.4
+
+
+1.32
+1.22
+
+
+8.55
+8.15
+
+
+6.5
+6.1
+
+
+
+( 3.84)
+(6.3)
+
+
+
+12.5
+12.1
+
+
+
+9.25
+9.05
+19.65 MAX
+
+
+
+3X
+3.9 MAX
+
+
+13.12
+12.70
+
+
+
+1
+
+0.90
+0.77
+
+1.36
+1.23
+
+
+
+
+
+
+
+
+5.08
+3
+
+
+
+2X 2.54
+
+
+0.47
+0.34
+
+
+
+
+2.79
+2.59
+
+
+
+
+
+
+
+
+
+
+
+
+4222214/B 08/2018
+NOTES:
+1. Dimensions are in millimeters. Any dimension in brackets or parenthesis are for reference only. Dimensioning and tolerancing per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. Reference JEDEC registration TO-220.
+
+
+
+
+
+
+
+www.ti.com
+
+
+KCS0003B
+EXAMPLE BOARD LAYOUT
+TO-220 - 19.65 mm max height
+TO-220
+
+
+
+
+
+
+
+
+
+
+
+0.07 MAX ALL AROUND
+
+3X (1.2)
+2X (1.7)
+METAL          2X SOLDER MASK OPENING
+
+
+
+(1.7)
+
+
+
+
+
+R (0.05)
+1               2             3
+(2.54)
+0.07 MAX ALL AROUND
+
+
+SOLDER MASK
+OPENING
+(5.08)
+
+LAND PATTERN EXAMPLE
+NON-SOLDER MASK DEFINED SCALE:15X
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4222214/B 08/2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.ti.com
+
+IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS” AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale or other applicable terms available either on ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable warranties or warranty disclaimers for TI products.
+TI objects to and rejects any additional or different terms you may have proposed.
+
+Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265 Copyright © 2024, Texas Instruments Incorporated

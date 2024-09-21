@@ -1,0 +1,1070 @@
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+
+
+OptiMOG
+Features
+™3 Power-Transistor
+
+Product Summary
+V DS               80  V
+
+• N-channel, normal level
+• Excellent gate charge x R DS₍ₒn₎ product (FOM)
+• Very low on-resistance R DS₍ₒn₎
+
+• 175 °C operating temperature
+• Pb-free lead plating; RoHS compliant
+• Qualified according to JEDEC¹⁾ for target application
+
+R DS(on),max (SMD)          5.4  mΩ
+
+I D                80  A
+
+previous engineering sample codes: IPP06CN08N
+• Ideal for high-frequency switching and synchronous rectification
+• Halogen-free according to IEC61249-2-21
+
+
+
+
+
+Type
+IPP057N08N3 G
+IPI057N08N3 G
+IPB054N08N3 G
+
+
+
+
+
+
+Package Marking
+PG-TO220-3 057N08N
+PG-TO262-3 057N08N
+PG-TO263-3 054N08N
+Maximum ratings, at T j=25 °C, unless otherwise specified
+
+
+Parameter
+Symbol
+Conditions
+Value
+Unit
+
+
+Continuous drain current
+
+
+Pulsed drain current²⁾ Avalanche energy, single pulse Gate source voltage
+Power dissipation
+Operating and storage temperature
+I D
+
+
+
+
+I D,pulse
+
+E AS
+
+V GS
+
+P tot
+
+T j, T stg
+T =25 °C²⁾ T C=100 °C T C=25 °C
+I D=80 A, R GS=25 Ω
+
+
+T C=25 °C
+80      A
+80
+320
+210      mJ
+±20      V
+150      W
+-55 ... 175    °C
+IEC climatic category; DIN IEC 68-1                       55/175/56
+Rev. 1.2                         page 1                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+
+
+Parameter             Symbol Conditions
+Values
+min.   typ.  max.
+Unit
+
+Thermal characteristics
+
+
+Thermal resistance, junction - case Thermal resistance,
+junction - ambient
+R thJC
+
+R thJA
+-
+minimal footprint     -
+6 cm² cooling area³⁾    -
+-    1
+-   62
+-    40
+K/W
+
+Electrical characteristics, at T j=25 °C, unless otherwise specified
+
+Static characteristics
+
+
+Drain-source breakdown voltage Gate threshold voltage
+Zero gate voltage drain current
+V (BR)DSS
+
+V GS(th)
+
+
+I DSS
+V GS=0 V, I D=1 mA    80
+V DS=V GS, I D=90 µA   2
+V DS=80 V, V GS=0 V,
+T j=25 °C
+-
+2.8
+
+0.1
+-  V
+3.5
+
+1  µA
+
+
+
+
+
+Gate-source leakage current Drain-source on-state resistance
+
+
+Drain-source on-state resistance
+
+
+
+
+
+I GSS
+
+R DS(on)
+
+
+
+
+
+R DS(on)
+V DS=80 V, V GS=0 V,
+T j=125 °C
+
+V GS=20 V, V DS=0 V    -
+V GS=10 V, I D=80 A    -
+V GS=6 V, I D=40 A    -
+
+V GS=10 V, I D=80 A,
+-
+(SMD)
+
+10
+
+1
+4.9
+6.3
+
+4.6
+
+100
+
+100  nA
+5.7  mΩ
+9.9
+
+5.4
+
+
+
+
+
+Gate resistance
+
+Transconductance
+V GS=6 V, I D=40 A,
+-
+(SMD)
+
+R G                  -
+g    |V DS|>2|I D|R DS(on)max,   52
+
+6.0
+
+2.2
+
+103
+
+9.6
+
+-  Ω
+
+-  S
+
+fs   I
+D=80 A
+
+¹⁾J-STD20 and JESD22
+
+²⁾ See figure 3
+³⁾ Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm² (one layer, 70 µm thick) copper area for drain connection. PCB is vertical in still air.
+
+
+
+
+
+
+Rev. 1.2                         page 2                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+
+
+Parameter             Symbol Conditions
+Values
+min.   typ.  max.
+Unit
+
+
+Dynamic characteristics
+Input capacitance Output capacitance
+Reverse transfer capacitance Turn-on delay time
+Rise time
+Turn-off delay time Fall time
+Gate Charge Characteristics⁴⁾
+Gate to source charge Gate to drain charge Switching charge Gate charge total Gate plateau voltage Output charge
+
+
+
+C iss C oss C rss t d(on) t r
+t d(off)
+
+t f
+
+
+
+
+
+Q gs Q gd Q sw Q g
+V plateau
+
+Q oss
+
+
+-
+V GS=0 V, V DS=40 V,
+f =1 MHz         -
+-
+-
+V DD=40 V, V GS=10 V,   -
+I D=80 A, R G=1.6 Ω    -
+-
+
+
+
+-
+-
+V DD=40 V, I D=80 A,
+V GS=0 to 10 V
+-
+-
+V DD=40 V, V GS=0 V   -
+
+
+3570
+963
+36
+18
+66
+38
+10
+
+
+
+19
+11
+19
+52
+5.2
+70
+
+
+4750 pF
+1280
+54
+-  ns
+-
+-
+-
+
+
+
+25  nC
+16
+27
+69
+-  V
+93  nC
+
+Reverse Diode
+Diode continous forward current Diode pulse current
+Diode forward voltage
+
+Reverse recovery time Reverse recovery charge
+
+
+
+I S
+
+I S,pulse
+
+
+V SD
+
+
+t rr
+
+Q rr
+
+
+
+T C=25 °C
+
+
+V GS=0 V, I F=80 A,
+T j=25 °C
+
+V R=40 V, I F=I S,
+di F/dt =100 A/µs
+
+
+-    -
+-    -
+
+-   1.0
+
+-    72
+-   130
+
+
+80  A
+320
+
+1.2  V
+
+-  ns
+-  nC
+⁴⁾ See figure 16 for gate charge parameter definition
+
+
+
+
+
+
+
+
+
+
+Rev. 1.2                         page 3                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+1 Power dissipation                2 Drain current
+P tₒt=f(T C)                        I D=f(T C); V GS“10 V
+
+
+
+180                             100
+
+
+
+150
+80
+
+
+120
+60
+
+90
+
+40
+60
+
+
+20
+30
+
+
+0
+0     50     100     150     200
+T C [°C]
+0
+0     50     100     150     200
+T C [°C]
+
+3 Safe operating area                4 Max. transient thermal impedance
+I D=f(V DS); T C=25 °C; D =0              Z thJC=f(t p)
+parameter: t p                     parameter: D =t p/T
+
+
+10³
+
+
+
+limited by on-state
+resistance
+
+
+
+
+
+1 µs
+10¹
+
+
+10 µs
+
+
+10²
+
+100 µs
+10⁰
+
+
+0.5
+
+1 ms
+
+0.2
+
+
+
+10¹
+10 ms
+
+
+DC
+
+
+10-1
+0.1
+
+0.05
+0.02
+
+0.01
+single pulse
+
+
+10⁰
+10-1
+
+
+10⁰
+
+
+
+V DS [V]
+
+
+10¹
+
+
+10²
+10-2
+10-5
+
+
+
+10-4
+
+
+
+10-3
+
+
+
+t p [s]
+
+
+
+10-2
+
+
+
+10-1
+
+
+10⁰
+Rev. 1.2                         page 4                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+5 Typ. output characteristics           6 Typ. drain-source on resistance
+I D=f(V DS); T j=25 °C                 R DS₍ₒn₎=f(I D); T j=25 °C
+parameter: V GS                    parameter: V GS
+
+320                              20
+10 V  8 V
+
+280        7 V
+
+
+
+240
+
+
+200
+
+
+6.5 V
+16
+
+4.5 V    5 V
+
+
+12
+
+
+
+
+5.5 V
+
+160         6 V
+
+
+
+120
+
+
+80
+
+
+40
+
+
+
+5.5 V
+
+
+
+
+5 V
+8
+
+6.5 V
+
+8 V
+4
+
+6 V
+
+
+7 V
+
+10 V
+
+4.5 V
+
+0
+0    1    2     3    4    5
+V DS [V]
+
+
+0
+0     40     80     120     160
+I D [A]
+
+7 Typ. transfer characteristics           8 Typ. forward transconductance
+I D=f(V GS); |V DS|>2|I D|R DS₍ₒn₎mₐₓ            g fs=f(I D); T j=25 °C parameter: T j
+180                             160
+
+
+
+150
+
+120
+
+120
+
+
+
+90                             80
+
+
+
+60
+
+
+175 °C
+
+30
+25 °C             40
+
+
+
+
+0
+0      2      4      6      8
+V GS [V]
+
+
+
+0
+0     40     80     120     160
+I D [A]
+Rev. 1.2                         page 5                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+9 Drain-source on-state resistance        10 Typ. gate threshold voltage
+R DS₍ₒn₎=f(T j); I D=80 A; V GS=10 V          V GS₍th₎=f(T j); V GS=V DS
+parameter: I D
+
+12                              4
+
+
+
+10
+
+3
+900 µA
+8
+
+
+
+98 %
+
+6
+
+
+
+
+
+
+typ
+
+90 µA
+
+
+2
+
+
+4
+
+1
+
+2
+
+
+0
+-60   -20   20   60   100   140   180
+T j [°C]
+0
+-60   -20   20   60   100   140   180
+T j [°C]
+
+11 Typ. capacitances                12 Forward characteristics of reverse diode
+C =f(V DS); V GS=0 V; f =1 MHz            I F=f(V SD)
+parameter: T j
+
+104                                  10³
+
+
+Ciss
+
+25 °C
+
+
+
+
+10³
+Coss
+
+
+10²
+
+
+
+175 °C
+
+
+175 °C, 98%
+
+
+
+
+
+25 °C, 98%
+
+
+10²
+
+Crss
+10¹
+
+
+
+
+
+10¹
+
+
+0     20     40     60     80
+V DS [V]
+10⁰
+
+
+0     0.5     1     1.5     2
+V SD [V]
+Rev. 1.2                         page 6                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+13 Avalanche characteristics           14 Typ. gate charge
+I AS=f(t AV); R GS=25 Ω                 V GS=f(Q gₐtₑ); I D=80 A pulsed
+parameter: T j₍stₐrt₎                   parameter: V DD
+
+100                              12
+
+
+25 °C
+
+10
+
+
+
+
+20 V
+
+40 V
+
+
+
+60 V
+
+100 °C
+8
+
+
+
+10                              6
+
+
+150 °C
+
+4
+
+
+
+2
+
+
+1
+0.1     1     10     100    1000
+t AV [µs]
+0
+0       20       40       60
+Q gₐtₑ [nC]
+
+15 Drain-source breakdown voltage        16 Gate charge waveforms
+V BR₍DSS₎=f(T j); I D=1 mA
+
+
+
+90
+V GS
+
+Q g
+85
+
+
+
+80
+
+
+
+75
+
+V g s(th)
+
+70
+
+
+65
+g(th)
+
+Q sw
+
+Q gate
+
+
+
+60
+-60   -20   20   60   100   140   180
+T j [°C]
+Q g s
+Q g d
+Rev. 1.2                         page 7                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+
+PG-TO263-3 (D²-Pak)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 1.2                         page 8                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+PG-TO262-3 (I²-Pak)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 1.2                         page 9                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+
+PG-TO220-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 1.2                         page 10                         2010-01-14
+
+IPP057N08N3 G IPI057N08N3 G
+IPB054N08N3 G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Published by
+Infineon Technologies AG 81726 Munich, Germany
+© 2007 Infineon Technologies AG All Rights Reserved.
+
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics. With respect to any examples or hints given herein, any typical values stated herein and/or any information regarding the application of the device, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation, warranties of non-infringement of intellectual property rights
+of any third party.
+
+Information
+For further information on technology, delivery terms and conditions and prices, please contact the nearest Infineon Technologies Office (www.infineon.com).
+
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+Infineon Technologies components may be used in life-support devices or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life-support device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+Rev. 1.2                         page 11                         2010-01-14

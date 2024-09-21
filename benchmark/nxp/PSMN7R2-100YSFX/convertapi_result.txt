@@ -1,0 +1,1848 @@
+PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+20 June 2023                        Product data sheet
+
+
+1. General description
+NextPower 100 V, standard level gate drive MOSFET. Qualified to 175 °C and recommended for industrial and consumer applications.
+
+2. Features and benefits
+•  Low Qrr for higher efficiency and lower spiking
+•  Low QG × RDSₒn FOM for high efficiency switching applications
+• Strong avalanche energy rating (EAS)
+• Avalanche rated and 100% tested
+•  Ha-free and RoHS compliant LFPAK56 package
+• Wave-solderable LFPAK56 package
+
+3. Applications
+•  Synchronous rectifier in AC-DC and DC-DC
+•  Primary side switch in 48 V DC-DC
+• BLDC motor control
+• USB-PD and mobile fast-charge adapters
+• Flyback and resonant topologies
+
+4. Quick reference data
+Table 1. Quick reference data
+
+Symbol
+Vᴅꜱ ID
+Ptot Tj
+Parameter
+drain-source voltage drain current
+total power dissipation junction temperature
+Conditions
+25 °C ≤ Tj ≤ 175 °C
+VGS = 10 V; Tmb = 25 °C; Fig. 2 Tmb = 25 °C; Fig. 1
+Min
+-
+-
+-
+-55
+Typ
+-
+-
+-
+-
+Max
+100
+111
+194
+175
+Unit
+V A W
+°C
+Static characteristics
+
+RDSon
+drain-source on-state resistance
+VGS = 10 V; ID = 25 A; Tj = 25 °C;
+Fig. 12
+VGS = 10 V; ID = 25 A; Tj = 100 °C;
+Fig. 13
+-   5.7
+
+-   8.9
+6.9  mΩ
+
+11  mΩ
+
+Dynamic characteristics
+QGD      gate-drain charge
+
+ID = 25 A; VDS = 50 V; VGS = 10 V;
+
+3    10   23   nC
+
+QG₍tₒt₎    total gate charge
+Avalanche ruggedness
+Tj = 25 °C; Fig. 14; Fig. 15            25   50   75   nC
+
+EDS₍AL₎S    non-repetitive drain- source avalanche energy
+ID = 38 A; Vsup ≤ 100 V; RGS = 50 Ω;
+VGS = 10 V; Tj₍init₎ = 25 °C; unclamped; tp = 70 µs; Fig. 4
+[1]   -    -    173   mJ
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+Symbol     Parameter       Conditions                   Min   Typ   Max  Unit Source-drain diode
+
+Qr       recovered charge    IS = 25 A; dIS/dt = -100 A/µs; VGS = 0 V;
+VDS = 50 V; Tj = 25 °C; Fig. 18
+-    23   -    nC
+
+[1] Protected by 100% test
+
+5. Pinning information
+Table 2. Pinning information
+
+Pin
+1
+2
+3
+4
+mb
+Symbol
+S S S G D
+Description source source source
+gate
+mounting base; connected to drain
+Simplified outline
+mb
+
+
+
+
+
+
+1 2 3 4
+LFPAK56; Power- SO8 (SOT669)
+Graphic symbol
+
+
+D
+
+
+G
+
+mbb076 S
+
+6. Ordering information
+
+
+Table 3. Ordering information Type number
+
+PSMN7R2-100YSF
+
+Package Name LFPAK56;
+Power-SO8
+
+
+
+Description
+plastic, single-ended surface-mounted package; 4 terminals
+
+
+
+Version
+SOT669
+
+7. Marking
+Table 4. Marking codes
+Type number                        Marking code
+PSMN7R2-100YSF                     7F2S10Y
+
+8. Limiting values
+Table 5. Limiting values
+In accordance with the Absolute Maximum Rating System (IEC 60134).Tj = 25 °C unless otherwise stated.
+
+Symbol VDS VDGR VGS
+Ptot ID
+
+
+IDM
+Tstg Tj
+Parameter
+drain-source voltage drain-gate voltage gate-source voltage total power dissipation drain current
+
+peak drain current storage temperature junction temperature
+Conditions
+25 °C ≤ Tj ≤ 175 °C
+25 °C ≤ Tj ≤ 175 °C; RGS = 20 kΩ
+
+Tmb = 25 °C; Fig. 1
+VGS = 10 V; Tmb = 25 °C; Fig. 2 VGS = 10 V; Tmb = 100 °C; Fig. 2
+pulsed; tp ≤ 10 µs; Tmb = 25 °C; Fig. 3
+Min
+-
+-
+-20
+-
+-
+-
+-
+-55
+-55
+Max
+100
+100
+20
+194
+111
+78
+443
+175
+175
+Unit
+V V V W A A A
+°C
+°C
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           2 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+Symbol
+Parameter
+Conditions
+Min
+Max
+Unit
+
+Tsld₍M₎     peak soldering temperature
+Source-drain diode
+-    260   °C
+IS         source current       Tmb = 25 °C                     -     111   A ISM        peak source current    pulsed; tp ≤ 10 µs; Tmb = 25 °C            -     443   A Avalanche ruggedness
+
+EDS(AL)S
+
+
+
+IAS
+non-repetitive drain- source avalanche energy
+
+non-repetitive avalanche current
+ID = 38 A; Vsup ≤ 100 V; RGS = 50 Ω;
+VGS = 10 V; Tj₍init₎ = 25 °C; unclamped; tp = 70 µs; Fig. 4
+Vsup ≤ 100 V; VGS = 10 V; Tj₍init₎ = 25 °C; RGS = 50 Ω; Fig. 4
+[1]   -
+
+
+[1]   -
+173  mJ
+
+
+38   A
+
+[1] Protected by 100% test
+
+
+
+120
+03aa16
+
+120
+ID
+aaa-034596
+
+Pder (%)
+(A)
+100
+
+80                                  80
+
+
+60
+
+
+40                                  40
+
+
+20
+
+
+0
+0     50    100
+
+150
+
+
+Tmb (°C)
+
+200
+0
+0  25  50  75  100  125  150  175  200
+Tmb (°C)
+
+
+
+
+Fig. 1.  Normalized total power dissipation as a function of mounting base temperature
+VGS ≥ 10 V
+111 A continuous current has been successfully demonstrated during application tests. Practically the current will be limited by PCB, thermal design and operating temperature.
+Fig. 2.  Continuous drain current as a function of mounting base temperature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           3 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+
+
+ID (A)
+103
+
+
+
+Limit RDSon = VDS / ID
+aaa-034598
+
+102
+tp = 10 µs
+
+100 µs
+10
+
+DC
+
+
+1
+
+
+
+10-1
+
+
+1 ms
+10 ms
+100 ms
+1                            10                            102
+VDS (V)
+Tmb = 25 °C; IDM is a single pulse
+Fig. 3.  Safe operating area; continuous and peak drain currents as a function of drain-source voltage
+
+
+
+IAL (A)
+
+102
+aaa-034597
+
+
+(1)
+10
+
+
+(2)
+
+
+1
+(3)
+
+
+
+
+10-1
+10-3    10-2    10-1     1     10
+tAL (ms)
+(1) Tj ₍init₎ = 25 °C; (2) Tj ₍init₎ = 150 °C; (3) Repetitive Avalanche
+Fig. 4.  Avalanche rating; avalanche current as a function of avalanche time
+
+9. Thermal characteristics
+Table 6. Thermal characteristics
+
+Symbol
+Rth(j-mb)
+
+
+
+Rth(j-a)
+Parameter
+thermal resistance from junction to mounting base
+thermal resistance from junction to ambient
+Conditions
+Fig. 5
+
+
+Fig. 6
+Fig. 7
+Min
+-
+
+
+-
+-
+Typ
+0.69
+
+
+42
+85
+Max
+0.77
+
+
+-
+-
+Unit
+K/W
+
+
+K/W K/W
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           4 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+
+1
+Zth(j-mb) (K/W)
+
+
+
+δ = 0.5
+aaa-034599
+
+
+0.2
+10-1 0.1
+0.05
+
+0.02
+10-2
+
+
+
+
+
+
+single shot
+
+
+
+
+
+
+
+
+tp
+P     δ = T
+
+
+
+
+
+10-3
+tp     t
+T
+10-6         10-5         10-4         10-3         10-2         10-1          1
+tp (s)
+Fig. 5.  Transient thermal impedance from junction to mounting base as a function of pulse duration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aaa-027933
+Copper area 25.4 mm square; 70 µm thick on FR4 board
+Fig. 6.  PCB layout for thermal resistance from junction to ambient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aaa-027935
+70 µm thick copper on FR4 board
+Fig. 7.  PCB layout with minimum footprint for thermal resistance from junction to ambient
+
+10. Characteristics
+Table 7. Characteristics
+Symbol     Parameter       Conditions                   Min   Typ   Max  Unit Static characteristics
+
+V(BR)DSS VGS(th)
+
+
+ΔVGS(th)/ΔT
+
+
+
+IDSS IGSS
+drain-source breakdown voltage
+gate-source threshold voltage
+
+
+gate-source threshold voltage variation with temperature
+drain leakage current gate leakage current
+ID = 250 µA; VGS = 0 V; Tj = 25 °C ID = 250 µA; VGS = 0 V; Tj = -55 °C
+ID = 1 mA; VDS=VGS; Tj = 25 °C; Fig. 11 ID = 1 mA; VDS=VGS; Tj = 175 °C
+ID = 1 mA; VDS=VGS; Tj = -55 °C 25 °C ≤ Tj ≤ 150 °C
+
+
+VDS = 100 V; VGS = 0 V; Tj = 25 °C VDS = 100 V; VGS = 0 V; Tj = 125 °C VGS = 20 V; VDS = 0 V; Tj = 25 °C VGS = -20 V; VDS = 0 V; Tj = 25 °C
+100
+90
+2
+-
+-
+-
+
+
+-
+-
+-
+-
+-
+- 3
+1.7
+3.4
+-7.5
+
+
+0.02
+8
+2
+2
+-
+- 4
+-
+-
+-
+
+
+1
+100
+100
+100
+V V V V V
+mV/K
+
+
+µA µA nA nA
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           5 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+Symbol
+RDSon
+
+
+
+
+
+
+
+
+
+
+RG
+Parameter
+drain-source on-state resistance
+
+
+
+
+
+
+gate resistance
+Conditions
+VGS = 10 V; ID = 25 A; Tj = 25 °C;
+Fig. 12
+VGS = 7 V; ID = 25 A; Tj = 25 °C; Fig. 12 VGS = 10 V; ID = 25 A; Tj = 100 °C;
+Fig. 13
+VGS = 10 V; ID = 25 A; Tj = 175 °C;
+Fig. 13
+f = 1 MHz; Tj = 25 °C
+Min
+-
+
+-
+-
+
+-
+
+0.9
+Typ
+5.7
+
+6.8
+8.9
+
+12.7
+
+1.8
+Max
+6.9
+
+10.4
+11
+
+15.7
+
+3.6
+Unit
+mΩ
+
+mΩ mΩ
+
+mΩ
+
+Ω
+Dynamic characteristics
+
+QG(tot)
+
+
+
+
+
+QGS QGS(th)
+
+QGS(th-pl)
+
+QGD VGS(pl)
+
+Ciss Coss Crss
+
+td(on) tr td(off) tf
+total gate charge
+
+
+
+
+gate-source charge
+pre-threshold gate- source charge
+post-threshold gate- source charge
+gate-drain charge
+gate-source plateau voltage
+input capacitance output capacitance
+reverse transfer capacitance
+turn-on delay time rise time
+turn-off delay time fall time
+ID = 25 A; VDS = 50 V; VGS = 10 V; Tj = 25 °C; Fig. 14; Fig. 15
+ID = 0 A; VDS = 0 V; VGS = 10 V; Tj = 25 °C
+ID = 25 A; VDS = 50 V; VGS = 10 V; Tj = 25 °C; Fig. 14; Fig. 15
+
+
+
+
+
+ID = 25 A; VDS = 50 V; Tj = 25 °C;
+Fig. 14; Fig. 15
+VDS = 50 V; VGS = 0 V; f = 1 MHz; Tj = 25 °C; Fig. 16
+
+
+
+VDS = 50 V; RL = 2 Ω; VGS = 10 V; RG₍ₑₓt₎ = 5 Ω; Tj = 25 °C
+25
+- 9
+-
+- 3
+-
+
+2065
+535
+2.5
+
+-
+-
+-
+-
+50
+
+25.6
+
+15
+9.7
+
+5.6
+
+10
+4.6
+
+3442
+893
+24.7
+
+14
+15
+34
+18
+75  nC
+
+-   nC
+
+21  nC
+-   nC
+
+-   nC
+
+23  nC
+-   V
+
+4818  pF
+1428  pF
+64  pF
+
+-   ns
+-   ns
+-   ns
+-   ns
+Source-drain diode
+
+VSD
+trr
+source-drain voltage reverse recovery time
+IS = 25 A; VGS = 0 V; Tj = 25 °C; Fig. 17 IS = 25 A; dIS/dt = -100 A/µs; VGS = 0 V;
+-    0.83  1    V
+-    32   -    ns
+
+Qr       recovered charge
+VDS = 50 V; Tj = 25 °C; Fig. 18          -    23   -    nC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           6 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+
+120
+ID
+
+10 V   7 V
+aaa-034600
+
+25
+RDSon
+aaa-034601
+
+(A)
+100
+VGS = 5.5 V
+(mΩ)
+20
+
+80
+15
+5 V
+60
+
+
+
+40
+4.5 V
+
+20
+4 V
+0
+0     1     2     3     4
+VDS (V)
+10
+
+
+5
+
+
+0
+0    4    8    12    16    20
+VGS (V)
+
+Tj = 25 °C
+Fig. 8.  Output characteristics; drain current as a function of drain-source voltage; typical values
+Tj = 25 °C; ID = 25 A
+Fig. 9.  Drain-source on-state resistance as a function of gate-source voltage; typical values
+
+
+120
+ID
+aaa-034602
+
+10-1
+ID
+aaa-011501
+
+(A)
+100
+(A)
+10-2
+
+80
+10-3
+
+60
+10-4
+40
+
+
+175°C
+20
+Tj = 25°C
+10-5
+
+
+0
+0   1   2   3   4   5   6   7   8
+VGS (V)
+10-6
+
+0    1    2    3    4    5
+VGS (V)
+
+VDS = 8 V
+Fig. 10. Transfer characteristics; drain current as a function of gate-source voltage; typical values
+Tj = 25 °C; VDS = 5 V
+Fig. 11. Sub-threshold drain current as a function of gate-source voltage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           7 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+
+25
+RDSon (mΩ)
+
+
+4.5 V  5 V
+
+
+5.5 V
+aaa-034603
+
+6 V
+
+2.5
+a
+aaa-029656
+20                                   2
+
+
+15                                  1.5
+
+
+7 V
+10
+
+
+5                 VGS = 10 V
+
+1
+
+
+0.5
+
+
+0
+0    40    80   120   160   200
+ID (A)
+0
+-60  -30  0  30  60  90  120  150  180
+Tj (°C)
+
+Tj = 25 °C
+Fig. 12. Drain-source on-state resistance as a function of drain current; typical values
+
+
+
+Fig. 13. Normalized drain-source on-state resistance factor as a function of junction temperature
+
+
+10
+VGS (V)
+8
+aaa-034604
+
+
+
+VDS
+
+ID
+
+
+VDS = 20 V
+6
+
+
+4
+
+
+2
+
+
+0
+
+
+
+
+50 V
+
+
+
+80 V
+
+
+VGS(pl)
+
+
+
+VGS(th) VGS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+QGS1
+
+
+
+
+
+
+
+
+
+
+
+
+QGS2
+
+0   10   20   30   40   50   60
+QG (nC)
+Tj = 25 °C; ID = 25 A
+QGS
+QGD
+QG(tot)
+
+
+
+003aaa508
+
+Fig. 14. Gate-source voltage as a function of gate charge; typical values
+Fig. 15. Gate charge waveform definitions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           8 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+104
+C
+aaa-034605
+
+120
+IS
+aaa-034606
+
+(pF)
+
+
+
+103
+
+Ciss
+
+
+
+Coss
+(A)
+100
+
+
+80
+
+60
+
+
+102                                    40
+
+
+
+
+Crss
+175°C
+20
+Tj = 25°C
+
+
+10
+10-1       1       10      102
+VDS (V)
+0
+0   0.2   0.4   0.6   0.8   1   1.2
+VSD (V)
+
+VGS = 0 V; f = 1 MHz
+Fig. 16. Input, output and reverse transfer capacitances as a function of drain-source voltage; typical values
+
+
+ID (A)
+VGS = 0 V
+Fig. 17. Source-drain (diode forward) current as a function of source-drain (diode forward) voltage; typical values
+003aal160
+
+
+
+trr
+ta      tb
+0
+
+
+0.25 IRM
+
+
+IRM
+
+
+t (s)
+Fig. 18. Reverse recovery timing definition
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                     20 June 2023                           9 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+11. Package outline
+
+Plastic single-ended surface-mounted package (LFPAK56; Power-SO8); 4 leads                   SOT669
+
+
+
+
+
+E         A
+b2               c2
+ A2   C
+E1
+
+
+L1
+mounting base
+  b3
+b4
+
+D1
+
+H  D
+
+
+
+
+
+
+L2
+1    2    3    4
+X
+e          b    w  A       c
+1/2 e
+
+
+
+
+
+A
+A1 C
+(A3)
+q
+detail X     L
+y C
+
+
+
+
+
+
+
+Dimensions (mm are the original dimensions)
+0                5 mm                    θ
+scale                             8°
+0°
+
+Unit(1)
+
+A  A1  A2
+
+A3  b  b2  b3
+
+b4  c  c2  D(1) D1(1) E(1) E1(1)  e
+
+H  L  L1
+
+L2  w  y
+
+mm Note
+max nom min
+1.20
+
+1.01
+0.15
+
+0.00
+1.10
+
+0.95
+
+0.25
+0.50
+
+0.35
+4.41
+
+3.62
+2.2
+
+2.0
+0.9
+
+0.7
+0.25
+
+0.19
+0.30
+
+0.24
+4.10
+
+3.80
+4.20
+5.0
+
+4.8
+3.3
+
+3.1
+
+1.27
+6.2
+
+5.8
+0.85
+
+0.40
+1.3
+
+0.8
+1.3
+
+0.8
+
+0.25
+
+0.1
+
+1. Plastic or metal protrusions of 0.15 mm maximum per side are not included.
+sot669_po
+
+Outline version
+References
+IEC       JEDEC      JEITA
+European projection
+
+Issue date
+
+SOT669               MO-235
+ 11-03-25  13-02-27
+Fig. 19. Package outline LFPAK56; Power-SO8 (SOT669)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                    20 June 2023                           10 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+12. Soldering
+
+Footprint information for reflow soldering                                       SOT669
+
+
+
+
+
+
+
+
+
+4.7
+
+
+
+
+
+0.25
+(2×)
+
+
+0.9
+(3×)
+4.2
+
+
+0.25
+(2×)
+
+
+0.6
+(4×)
+
+
+
+
+
+
+
+
+0.6
+(3×)
+
+
+2.55
+2
+3.45 3.5
+
+
+0.25
+(2×)
+SR opening = Cu + 0.075
+
+
+
+1.1
+
+
+
+
+
+2.15
+
+3.3
+
+
+SP opening = Cu - 0.050
+
+
+
+
+1.27
+
+
+
+3.81
+0.7
+(4×)
+
+
+
+
+
+
+
+
+
+solder lands
+solder paste 125 µm stencil
+
+solder resist      occupied area
+Dimensions in mm
+
+sot669_fr
+
+Fig. 20. Reflow soldering footprint for LFPAK56; Power-SO8 (SOT669)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                    20 June 2023                           11 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+Wave soldering footprint information for LFPAK56 package                              SOT669
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.826
+
+
+
+
+1.78
+
+
+
+
+
+
+1.72
+
+
+
+
+
+
+
+2.1
+
+
+
+
+
+
+1.4
+0.6 (x4)                  1.27
+0.635
+
+
+
+
+
+
+
+
+
+solder lands
+
+
+Dimensions in mm Issue date  15-04-13 
+
+
+
+sot669_fw
+Fig. 21. Wave soldering footprint for LFPAK56; Power-SO8 (SOT669)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                    20 June 2023                           12 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+
+13. Legal information
+
+Data sheet status
+injury, death or severe property or environmental damage. Nexperia and its suppliers accept no liability for inclusion and/or use of Nexperia products in such equipment or applications and therefore such inclusion and/or use is at the customer’s own risk.
+Quick reference data — The Quick reference data is an extract of the product data given in the Limiting values and Characteristics sections of this document, and as such is not complete, exhaustive or legally binding.
+
+Document status [1][2]
+Objective [short] data sheet
+
+Preliminary [short] data sheet
+Product [short] data sheet
+Product status [3]
+Development
+
+
+Qualification Production
+Definition
+
+This document contains data from the objective specification for product development.
+This document contains data from the preliminary specification.
+This document contains the product specification.
+Applications — Applications that are described herein for any of these products are for illustrative purposes only. Nexperia makes no representation or warranty that such applications will be suitable for the specified use without further testing or modification.
+Customers are responsible for the design and operation of their applications and products using Nexperia products, and Nexperia accepts no liability for any assistance with applications or customer product design. It is customer’s sole responsibility to determine whether the Nexperia product is suitable
+and fit for the customer’s applications and products planned, as well as for the planned application and use of customer’s third party customer(s).
+Customers should provide appropriate design and operating safeguards to
+
+[1]  Please consult the most recently issued document before initiating or completing a design.
+[2]  The term 'short data sheet' is explained in section "Definitions".
+[3]  The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product status information is available on the internet at https://www.nexperia.com.
+
+Definitions
+Draft — The document is a draft version only. The content is still under internal review and subject to formal approval, which may result in modifications or additions. Nexperia does not give any representations or warranties as to the accuracy or completeness of information included herein and shall have no liability for the consequences of use of such information.
+Short data sheet — A short data sheet is an extract from a full data sheet with the same product type number(s) and title. A short data sheet is intended for quick reference only and should not be relied upon to contain detailed and full information. For detailed and full information see the relevant full data sheet, which is available on request via the local Nexperia sales office. In case of any inconsistency or conflict with the short data sheet, the full data sheet shall prevail.
+Product specification — The information and data provided in a Product data sheet shall define the specification of the product as agreed between Nexperia and its customer, unless Nexperia and customer have explicitly agreed otherwise in writing. In no event however, shall an agreement be valid in which the Nexperia product is deemed to offer functions and qualities beyond those described in the Product data sheet.
+
+Disclaimers
+Limited warranty and liability — Information in this document is believed to be accurate and reliable. However, Nexperia does not give any representations or warranties, expressed or implied, as to the accuracy
+or completeness of such information and shall have no liability for the consequences of use of such information. Nexperia takes no responsibility for the content in this document if provided by an information source outside of Nexperia.
+In no event shall Nexperia be liable for any indirect, incidental, punitive, special or consequential damages (including - without limitation - lost profits, lost savings, business interruption, costs related to the removal or replacement of any products or rework charges) whether or not such damages are based on tort (including negligence), warranty, breach of contract or any other legal theory.
+Notwithstanding any damages that customer might incur for any reason whatsoever, Nexperia’s aggregate and cumulative liability towards customer for the products described herein shall be limited in accordance with the Terms and conditions of commercial sale of Nexperia.
+Right to make changes — Nexperia reserves the right to make changes to information published in this document, including without limitation specifications and product descriptions, at any time and without notice. This document supersedes and replaces all information supplied prior to the publication hereof.
+Suitability for use — Nexperia products are not designed, authorized or warranted to be suitable for use in life support, life-critical or safety-critical systems or equipment, nor in applications where failure or malfunction
+of an Nexperia product can reasonably be expected to result in personal
+minimize the risks associated with their applications and products.
+Nexperia does not accept any liability related to any default, damage, costs or problem which is based on any weakness or default in the customer’s applications or products, or the application or use by customer’s third party customer(s). Customer is responsible for doing all necessary testing for the customer’s applications and products using Nexperia products in order to avoid a default of the applications and the products or of the application or use by customer’s third party customer(s). Nexperia does not accept any liability in this respect.
+Limiting values — Stress above one or more limiting values (as defined in the Absolute Maximum Ratings System of IEC 60134) will cause permanent damage to the device. Limiting values are stress ratings only and (proper) operation of the device at these or any other conditions above those
+given in the Recommended operating conditions section (if present) or the Characteristics sections of this document is not warranted. Constant or repeated exposure to limiting values will permanently and irreversibly affect the quality and reliability of the device.
+Terms and conditions of commercial sale — Nexperia products are sold subject to the general terms and conditions of commercial sale, as
+published at http://www.nexperia.com/profile/terms, unless otherwise agreed in a valid written individual agreement. In case an individual agreement is concluded only the terms and conditions of the respective agreement shall apply. Nexperia hereby expressly objects to applying the customer’s general terms and conditions with regard to the purchase of Nexperia products by customer.
+No offer to sell or license — Nothing in this document may be interpreted or construed as an offer to sell products that is open for acceptance or the grant, conveyance or implication of any license under any copyrights, patents or other industrial or intellectual property rights.
+Export control — This document as well as the item(s) described herein may be subject to export control regulations. Export might require a prior authorization from competent authorities.
+Non-automotive qualified products — Unless this data sheet expressly states that this specific Nexperia product is automotive qualified, the product is not suitable for automotive use. It is neither qualified nor tested in accordance with automotive testing or application requirements. Nexperia accepts no liability for inclusion and/or use of non-automotive qualified products in automotive equipment or applications.
+In the event that customer uses the product for design-in and use in automotive applications to automotive specifications and standards, customer (a) shall use the product without Nexperia’s warranty of the product for such automotive applications, use and specifications, and (b) whenever customer uses the product for automotive applications beyond Nexperia’s specifications such use shall be solely at customer’s own risk,
+and (c) customer fully indemnifies Nexperia for any liability, damages or failed product claims resulting from customer design and use of the product for automotive applications beyond Nexperia’s standard warranty and Nexperia’s product specifications.
+Translations — A non-English (translated) version of a document is for reference only. The English version shall prevail in case of any discrepancy between the translated and English versions.
+
+Trademarks
+Notice: All referenced brands, product names, service names and trademarks are the property of their respective owners.
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                    20 June 2023                           13 / 14
+
+Nexperia                                 PSMN7R2-100YSF
+NextPower 100 V, 6.9 mOhm N-channel MOSFET in LFPAK56 package
+
+Contents
+1. General description                  1
+2. Features and benefits                1
+3. Applications                      1
+4. Quick reference data                 1
+5. Pinning information                 2
+6. Ordering information                 2
+7. Marking                        2
+8. Limiting values                    2
+9. Thermal characteristics               4
+10. Characteristics                    5
+11. Package outline                  10
+12. Soldering                      11
+13. Legal information                 13
+
+
+© Nexperia B.V. 2023. All rights reserved
+For more information, please visit: http://www.nexperia.com
+For sales office addresses, please send an email to: salesaddresses@nexperia.com
+Date of release: 20 June 2023
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN7R2-100YSF                    All information provided in this document is subject to legal disclaimers.             © Nexperia B.V. 2023. All rights reserved
+
+Product data sheet                    20 June 2023                           14 / 14

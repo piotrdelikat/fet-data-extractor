@@ -1,0 +1,954 @@
+
+
+
+OptiMOGTM3 Power-Transistor
+
+
+
+
+
+Product Summary
+IPP180N10N3 G IPI180N10N3 G
+
+Features
+• N-channel, normal level
+• Excellent gate charge x R DS₍ₒn₎ product (FOM)
+• Very low on-resistance R DS₍ₒn₎
+
+• 175 °C operating temperature
+• Pb-free lead plating; RoHS compliant
+• Qualified according to JEDEC¹⁾ for target application
+V DS               100  V
+R DS(on),max TO-263          18  mΩ
+
+I D               43  A
+• Ideal for high-frequency switching and synchronous rectification
+• Halogen-free according to IEC61249-2-21
+
+
+
+
+Type
+IPP180N10N3 G
+IPI180N10N3 G
+
+
+
+
+
+
+Package
+PG-TO220-3
+PG-TO262-3
+
+
+Marking
+180N10N
+180N10N
+
+Maximum ratings, at T j=25 °C, unless otherwise specified
+
+
+Parameter
+Symbol
+Conditions
+Value
+Unit
+
+
+Continuous drain current
+
+
+Pulsed drain current²⁾ Avalanche energy, single pulse Gate source voltage
+I D
+
+
+
+
+I D,pulse
+
+E AS
+
+V GS
+T =25 °C²⁾ T C=100 °C T C=25 °C
+I D=33 A, R GS=25 Ω
+43      A
+30
+172
+50       mJ
+±20      V
+
+Power dissipation
+P tot
+T C=25 °C
+71      W
+
+
+Operating and storage temperature
+T j, T stg
+-55 ... 175    °C
+
+
+IEC climatic category; DIN IEC 68-1
+
+¹⁾J-STD20 and JESD22
+²⁾ See figure 3
+55/175/56
+Rev. 2.2                         page 1                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+
+Parameter
+Symbol
+Conditions
+Values
+Unit
+min.   typ.   max.
+
+Thermal characteristics
+
+
+Thermal resistance, junction - case
+R thJC
+-     -    2.1
+K/W
+
+
+Thermal resistance, junction - ambient
+R thJA
+minimal footprint     -
+6 cm² cooling area³⁾    -
+-   62
+-    40
+
+Electrical characteristics, at T j=25 °C, unless otherwise specified
+
+Static characteristics
+
+
+Drain-source breakdown voltage
+V (BR)DSS
+V GS=0 V, I D=1 mA
+100    -     -   V
+
+
+Gate threshold voltage
+
+Zero gate voltage drain current
+V GS(th)
+
+
+I DSS
+V DS=V GS, I D=33 µA   2
+
+V DS=100 V, V GS=0 V,
+-
+T j=25 °C
+2.7
+
+0.1
+3.5
+
+1  µA
+
+
+V DS=100 V, V GS=0 V,
+-
+T j=125 °C
+10   100
+
+
+Gate-source leakage current
+I GSS
+V GS=20 V, V DS=0 V    -
+1   100  nA
+
+
+Drain-source on-state resistance
+R DS(on)
+V GS=10 V, I D=33 A
+-   15.5
+18  mΩ
+V GS=6 V, I D=16 A     -    19.3    33
+
+Gate resistance
+Transconductance
+
+R G                  -
+g    |V DS|>2|I D|R DS(on)max,   20
+1.4    -   Ω
+40    -   S
+
+fs   I
+D=33 A
+³⁾ Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm² (one layer, 70 µm thick) copper area for drain connection. PCB is vertical in still air.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 2.2                         page 2                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+
+Parameter              Symbol Conditions
+Values
+min.   typ.   max.
+Unit
+Dynamic characteristics
+
+Input capacitance Output capacitance
+Reverse transfer capacitance Turn-on delay time
+Rise time
+Turn-off delay time
+
+C iss C oss C rss 4 d(on)
+4 r
+
+4 d(off)
+-
+V GS=0 V, V DS=50 V,
+f =1 MHz         -
+-
+-
+V DD=50 V, V GS=10 V,   -
+I D=33 A, R G=1.6 Ω    -
+1350
+237
+11
+12
+12
+19
+1800 pF
+315
+-
+-  ns
+-
+-
+Fall time               4 f                   -     5     -
+
+Gate Charge Characteristics⁶⁾
+
+
+Gate to source charge
+Q gs
+-     7     -   nC
+
+
+Gate to drain charge
+Q gd
+-    4     -
+V DD=50 V, I D=33 A,
+
+Switching charge
+Gate charge total
+Q sw
+
+Q g
+V GS=0 to 10 V
+-    6     -
+-    19    25
+
+
+Gate plateau voltage
+V plateau
+-    4.9    -   V
+
+
+Output charge
+Q oss
+V DD=50 V, V GS=0 V   -
+25    33  nC
+
+Reverse Diode
+
+
+Diode continous forward current Diode pulse current
+Diode forward voltage
+
+Reverse recovery time Reverse recovery charge
+I S
+
+I S,pulse
+
+
+V SD
+
+
+4 rr
+
+Q rr
+
+T C=25 °C
+
+
+V GS=0 V, I F=33 A,
+T j=25 °C
+
+V R=15 V, I F=33 A ,
+di F/d4 =100 A/µs
+-    -
+-    -
+
+-    1
+
+-    55
+-    92
+43  A
+172
+
+1.2  V
+
+-  ns
+-  nC
+⁶⁾ See figure 16 for gate charge parameter definition
+
+
+
+
+
+
+
+
+
+
+Rev. 2.2                         page 3                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+1 Power dissipation                2 Drain current
+P tₒt=f(T C)                       I D=f(T C); V GS“10 V
+80                               50
+40
+60
+30
+40
+20
+20
+10
+
+
+
+
+
+0
+0      50     100     150     200
+T C [°C]
+
+
+
+
+0
+0      50     100     150     200
+T C [°C]
+
+3 Safe operating area               4 Max. transient thermal impedance
+I D=f(V DS); T C=25 °C; D =0              Z thJC=f(4 p)
+parameter: 4 p                     parameter: D =4 p/T
+
+103                                   10¹
+
+
+
+limited by on-state
+resistance
+
+
+
+
+10²
+
+
+
+
+10 µs
+1 µs
+
+
+10⁰
+
+0.5
+
+0.2
+100 µs
+0.1
+
+0.05
+
+
+
+10¹
+
+
+
+1 ms
+
+
+
+10-1
+
+0.02
+
+0.01
+
+single pulse
+
+10 ms
+
+
+DC
+
+
+10⁰
+10-1
+
+10⁰
+
+10¹
+V DS [V]
+
+
+10²
+
+10³
+10-2
+10-5
+
+
+10-4
+
+
+10-3
+
+
+
+t p [s]
+
+
+10-2
+
+
+10-1
+
+10⁰
+Rev. 2.2                         page 4                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+5 Typ. output characteristics           6 Typ. drain-source on resistance
+I D=f(V DS); T j=25 °C                 R DS₍ₒn₎=f(I D); T j=25 °C
+parameter: V GS                    parameter: V GS
+
+160                               35
+
+
+140
+
+
+120
+
+
+10 V
+
+
+
+
+
+
+7.5 V
+4.5 V
+30
+5 V
+
+25
+
+
+100
+
+
+80
+
+
+60
+
+
+40
+
+
+20
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5 V
+
+
+4.5 V
+
+20
+6 V
+
+15
+
+5.5 V
+10
+
+
+5
+
+
+6 V
+
+
+7.5 V
+
+
+
+
+
+
+
+10 V
+
+
+0  0
+0     1     2     3     4     5
+V DS [V]
+0
+0        20       40       60
+I D [A]
+
+7 Typ. transfer characteristics          8 Typ. forward transconductance
+I D=f(V GS); |V DS|>2|I D|R DS₍ₒn₎mₐₓ            g fs=f(I D); T j=25 °C parameter: T j
+80                               60
+
+
+
+
+
+60
+
+40
+
+
+
+40
+
+
+
+20
+
+20
+
+
+25 °C
+
+175 °C
+
+
+0
+0      2      4      6      8
+V GS [V]
+0
+0      20     40     60     80
+I D [A]
+Rev. 2.2                         page 5                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+9 Drain-source on-state resistance        10 Typ. gate threshold voltage
+R DS₍ₒn₎=f(T j); I D=33 A; V GS=10 V          V GS₍th₎=f(T j); V GS=V DS
+parameter: I D
+
+40                               4
+
+36
+3.5
+
+32
+
+28
+
+24
+98 %
+20
+
+16
+
+
+
+
+
+
+
+
+
+
+
+
+
+typ
+
+
+3
+
+
+2.5
+
+
+2
+
+
+1.5
+
+
+
+
+
+
+
+
+
+33 µA
+
+
+
+
+
+330 µA
+12
+1
+8
+
+4                              0.5
+
+
+0
+-60   -20   20   60   100   140   180
+T j [°C]
+0
+-60   -20   20   60   100   140   180
+T j [°C]
+
+11 Typ. capacitances               12 Forward characteristics of reverse diode
+C =f(V DS); V GS=0 V; f =1 MHz            I F=f(V SD)
+parameter: T j
+
+104                                   10³
+
+
+
+
+10³
+Ciss
+
+
+
+
+Coss
+
+
+
+
+10²
+
+175 °C, 98%
+
+
+10²
+25 °C
+
+
+
+
+10¹
+
+Crss
+10¹
+175 °C
+
+
+
+25 °C, 98%
+
+
+
+
+
+0      20     40     60     80
+V DS [V]
+10⁰
+
+0     0.5     1     1.5     2
+V SD [V]
+Rev. 2.2                         page 6                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+13 Avalanche characteristics           14 Typ. gate charge
+I AS=f(4 AV); R GS=25 Ω                 V GS=f(Q gₐtₑ); I D=33 A pulsed
+parameter: T j₍stₐrt₎                   parameter: V DD
+
+100                               10
+
+
+
+
+80 V
+8
+
+
+50 V
+
+
+25 °C          6
+20 V
+10               100 °C
+150 °C                   4
+2
+
+
+
+
+
+1
+0.1     1      10     100     1000
+t AV [µs]
+
+
+
+
+0
+0     4     8    12    16    20
+Q gₐtₑ [nC]
+
+15 Drain-source breakdown voltage        16 Gate charge waveforms
+V BR₍DSS₎=f(T j); I D=1 mA
+
+
+
+110
+V GS
+
+Q g
+
+105
+
+
+
+
+
+100
+
+V g s(th)
+
+
+
+95
+
+
+Q g(th)
+Q sw
+Q gate
+
+
+
+90
+-60   -20   20   60   100   140   180
+T j [°C]
+Q g s
+Q g d
+Rev. 2.2                         page 7                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+PG-TO-220
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 2.2                         page 8                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+PG-TO-262
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 2.2                         page 9                         2010-08-11
+
+IPP180N10N3 G IPI180N10N3 G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Published by
+Infineon Technologies AG 81726 Munich, Germany
+© 2009 Infineon Technologies AG All Rights Reserved.
+
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics. With respect to any examples or hints given herein, any typical values stated herein and/or any information regarding the application of the device, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation, warranties of non-infringement of intellectual property rights
+of any third party.
+
+Information
+For further information on technology, delivery terms and conditions and prices, please contact the nearest Infineon Technologies Office (www.infineon.com).
+
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+Infineon Technologies components may be used in life-support devices or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life-support device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+Rev. 2.2                         page 10                         2010-08-11

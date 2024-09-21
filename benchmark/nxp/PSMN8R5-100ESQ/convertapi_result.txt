@@ -1,0 +1,1556 @@
+PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+11 October 2012                      Product data sheet
+
+
+1. Product profile
+
+1.1 General description
+Standard level N-channel MOSFET in a I2PAK package qualified to 175 °C. This product is designed and qualified for use in a wide range of industrial, communications and domestic equipment.
+
+1.2 Features and benefits
+•  High efficiency due to low switching and conduction losses
+•  Suitable for standard level gate drive sources
+
+1.3 Applications
+•  AC-to-DC power supply equipment
+•  Motor control
+•  Server power supplies
+•  Synchronous rectification
+
+1.4 Quick reference data
+Table 1.  Quick reference data
+
+Symbol
+Vᴅꜱ ID
+Ptot
+Parameter
+drain-source voltage drain current
+total power dissipation
+Conditions
+Tj ≥ 25 °C; Tj ≤ 175 °C
+Tj = 25 °C; VGS = 10 V; Fig. 1 Tmb = 25 °C; Fig. 2
+
+
+
+
+[1]
+Min
+-
+-
+-
+Typ
+-
+-
+-
+Max
+100
+100
+263
+Unit
+V A W
+
+Static characteristics
+RDSₒn     drain-source on-state resistance
+Dynamic characteristics
+QGD      gate-drain charge
+
+VGS = 10 V; ID = 25 A; Tj = 25 °C;
+Fig. 13; Fig. 12
+
+
+VGS = 10 V; ID = 25 A; VDS = 50 V;
+
+-    6.4   8.5   mΩ
+
+
+
+-    33   -    nC
+
+QG₍tₒt₎    total gate charge
+Avalanche Ruggedness
+Fig. 14; Fig. 15                 -    111   -    nC
+
+EDS₍AL₎S    non-repetitive drain- source avalanche energy
+VGS = 10 V; Tj₍init₎ = 25 °C; ID = 100 A;
+Vsup ≤ 100 V; RGS = 50 Ω; unclamped; Fig. 3
+-    -    219   mJ
+
+[1] Continious current limited by package.
+
+
+
+
+
+
+
+
+
+
+Scan or click this QR code to view the latest information for this product
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+2. Pinning information
+Table 2.  Pinning information
+
+Pin
+1
+2
+3
+mb
+Symbol
+G D S D
+Description
+gate drain source
+mounting base; connected to drain
+Simplified outline
+mb
+Graphic symbol
+D
+
+
+G
+
+mbb076 S
+
+
+1 2 3
+I2PAK (SOT226)
+
+3. Ordering information
+Table 3.  Ordering information
+
+Type number
+
+
+PSMN8R5-100ES
+Package
+Name      Description                           Version
+I2PAK     plastic single-ended package (I2PAK); TO-262          SOT226
+
+4. Marking
+Table 4.  Marking codes
+Type number                        Marking code
+PSMN8R5-100ES                      PSMN8R5-100ES
+
+5. Limiting values
+Table 5.  Limiting values
+In accordance with the Absolute Maximum Rating System (IEC 60134).
+
+Symbol VDS VDGR VGS
+ID
+
+
+
+IDM
+Ptot Tstg
+Parameter
+drain-source voltage drain-gate voltage gate-source voltage drain current
+
+peak drain current total power dissipation storage temperature
+Conditions
+Tj ≥ 25 °C; Tj ≤ 175 °C
+Tj ≥ 25 °C; Tj ≤ 175 °C; RGS = 20 kΩ
+
+
+VGS = 10 V; Tj = 25 °C; Fig. 1 VGS = 10 V; Tmb = 100 °C; Fig. 1
+pulsed; tp ≤ 10 µs; Tmb = 25 °C; Fig. 4 Tmb = 25 °C; Fig. 2
+
+
+
+
+
+
+
+
+[1]
+Min
+-
+-
+-20
+-
+-
+-
+-
+-55
+Max
+100
+100
+20
+100
+75
+429
+263
+175
+Unit
+V V V A A A W
+°C
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           2 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+Symbol Tj Tsld(M)
+Parameter
+junction temperature
+peak soldering temperature
+Conditions
+Min
+-55
+-
+Max
+175
+260
+Unit
+°C
+°C
+Source-drain diode
+IS        source current          Tmb = 25 °C               [1]    -    100   A ISM       peak source current       pulsed; tp ≤ 10 µs; Tmb = 25 °C          -    429   A Avalanche Ruggedness
+
+EDS₍AL₎S    non-repetitive drain-source
+avalanche energy
+VGS = 10 V; Tj₍init₎ = 25 °C; ID = 100 A;
+Vsup ≤ 100 V; RGS = 50 Ω; unclamped; Fig. 3
+-    219  mJ
+
+[1] Continious current limited by package.
+
+
+
+160
+ID (A)
+
+120
+003aak417
+
+120
+
+Pder (%)
+
+80
+03aa16
+
+(1)
+
+80
+
+
+40
+40
+
+
+
+0
+0     50     100    150    200
+Tmb (°C)
+0
+0     50    100
+
+150
+
+
+Tmb (°C)
+
+200
+
+(1) Capped at 100A due to package
+Fig. 1.  Continuous drain current as a function of mounting base temperature
+Fig. 2.  Normalized total power dissipation as a function of mounting base temperature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           3 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+
+
+10³
+IAL (A)
+003aak418
+
+
+10²
+
+
+
+
+
+
+
+(1)
+10
+
+(2)
+
+
+1
+10⁻³    10⁻²    10⁻¹     1     10
+tAL (ms)
+
+Fig. 3.  Avalanche rating; avalanche current as a function of avalanche time
+
+
+
+10³
+ID (A)
+10²
+
+
+
+Limit RDSₒn = VDS / ID
+
+
+
+
+
+tp =10 µs
+003aak419
+
+100 µs
+
+10
+
+DC
+1 ms
+1
+10 ms
+100 ms
+
+
+10-1
+10⁻¹              1              10             10²             10³
+VDS (V)
+
+Fig. 4.  Safe operating area; continuous and peak drain currents as a function of drain-source voltage
+
+
+
+6. Thermal characteristics
+Table 6.  Thermal characteristics
+
+Symbol
+Rth(j-mb)
+Parameter
+thermal resistance from junction to mounting base
+Conditions
+Fig. 5
+Min
+-
+Typ
+0.49
+Max
+0.57
+Unit
+K/W
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           4 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+
+
+1
+
+Zth(j-mb)
+
+
+
+δ = 0.5
+003aah108
+
+(K/W) 10-1
+
+0.2
+
+0.1
+0.05
+
+
+
+
+
+10-2
+0.02
+
+single shot
+
+P     δ =  tp
+T
+
+
+
+
+
+10-3
+10-6          10-5          10-4          10-3          10-2          10-1
+tp     t
+T
+tp (s)  1
+Fig. 5.  Transient thermal impedance from junction to mounting base as a function of pulse duration
+
+7. Characteristics
+Table 7.  Characteristics
+Symbol     Parameter       Conditions                   Min   Typ   Max  Unit Static characteristics
+
+V(BR)DSS
+
+
+
+VGS(th)
+
+
+VGSth
+
+
+
+
+
+
+IDSS
+
+
+
+IGSS
+
+
+
+RDSon
+
+
+
+
+
+
+
+
+
+
+RG
+drain-source breakdown voltage
+
+gate-source threshold voltage
+gate-source threshold voltage
+
+
+
+drain leakage current
+
+
+gate leakage current
+
+
+drain-source on-state resistance
+
+
+
+
+
+
+gate resistance
+ID = 250 µA; VGS = 0 V; Tj = 25 °C ID = 250 µA; VGS = 0 V; Tj = -55 °C
+ID = 1 mA; VDS = VGS; Tj = 25 °C;
+Fig. 10; Fig. 11
+ID = 1 mA; VDS = VGS; Tj = 175 °C;
+Fig. 10
+ID = 1 mA; VDS = VGS; Tj = -55 °C;
+Fig. 10
+VDS = 100 V; VGS = 0 V; Tj = 25 °C VDS = 100 V; VGS = 0 V; Tj = 100 °C VGS = -20 V; VDS = 0 V; Tj = 25 °C VGS = 20 V; VDS = 0 V; Tj = 25 °C VGS = 10 V; ID = 25 A; Tj = 175 °C;
+Fig. 12
+VGS = 10 V; ID = 25 A; Tj = 100 °C;
+Fig. 12
+VGS = 10 V; ID = 25 A; Tj = 25 °C;
+Fig. 13; Fig. 12 f = 1 MHz
+100
+90
+2.4
+
+1
+
+-
+
+-
+-
+-
+-
+-
+
+-
+
+-
+
+-
+-
+- 3
+
+-
+- 0.02
+- 2
+2
+-
+
+-
+
+6.4
+
+0.71
+-   V
+-   V
+4   V
+
+-   V
+
+4.5  V
+
+1   µA
+20  µA
+100  nA
+100  nA
+22.6  mΩ
+
+14.9  mΩ
+
+8.5  mΩ
+
+-   Ω
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           5 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+Symbol     Parameter       Conditions                   Min   Typ   Max  Unit Dynamic characteristics
+
+QG(tot) QGS QGS(th)
+
+QGS(th-pl)
+
+
+QGD VGS(pl)
+
+Ciss Coss Crss
+td(on) tr td(off) tf
+total gate charge gate-source charge
+pre-threshold gate- source charge
+post-threshold gate- source charge
+gate-drain charge
+gate-source plateau voltage
+input capacitance
+
+
+output capacitance
+
+
+reverse transfer capacitance
+turn-on delay time rise time
+turn-off delay time fall time
+ID = 25 A; VDS = 50 V; VGS = 10 V;
+Fig. 14; Fig. 15
+
+
+
+
+
+
+ID = 15 A; VDS = 50 V; Fig. 14; Fig. 15 VDS = 50 V; VGS = 0 V; f = 1 MHz;
+Tj = 25 °C; Fig. 16; Fig. 17
+VDS = 50 V; VGS = 0 V; f = 1 MHz; Tj = 25 °C; Fig. 16
+VDS = 50 V; VGS = 0 V; f = 1 MHz; Tj = 25 °C; Fig. 16; Fig. 17
+VDS = 50 V; RL = 2 Ω; VGS = 10 V; RG(ext) = 5 Ω
+-    111   -    nC
+-    24   -    nC
+-    16   -    nC
+
+-    8    -    nC
+
+-    33   -    nC
+-    4.4   -    V
+
+-    5512  -    pF
+
+
+-    380   -    pF
+
+
+-    256   -    pF
+
+
+-    20   -    ns
+-    35   -    ns
+-    87   -    ns
+-    43   -    ns
+Source-drain diode
+
+VSD
+trr
+source-drain voltage reverse recovery time
+IS = 25 A; VGS = 0 V; Tj = 25 °C; Fig. 18 IS = 25 A; dIS/dt = -100 A/µs; VGS = 0 V;
+-   0.82
+-   53
+1.2  V
+-   ns
+
+Qr       recovered charge
+VDS = 50 V                    -    124   -    nC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           6 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+
+240
+ID (A)
+VGS(V) = 10  6
+003aah739
+5.5
+20
+RDSon
+003aak421
+(mΩ)
+180                                  15
+120                      5            10
+60                                   5
+4.5
+
+0
+0       2       4
+4
+VDS(V)  6
+0
+0     5     10     15 VGS(V) 20
+
+Tj = 25 °C; tp = 300 μs
+Fig. 6.  Output characteristics; drain current as a function of drain-source voltage; typical values
+Fig. 7.  Drain-source on-state resistance as a function of gate-source voltage; typical values
+
+
+
+120
+gfs (S)
+
+90
+
+
+003aak425
+
+
+250
+ID (A)
+200
+
+
+003aah742
+
+150
+
+60
+100
+
+30
+50
+
+
+
+Tj = 175 °C
+
+
+
+
+
+
+Tj = 25 °C
+
+
+0
+0    80   160   240   320   400
+ID (A)
+0
+0    2    4    6    8    10
+VGS (V)
+
+Fig. 8.  Forward transconductance as a function of drain current; typical values
+Fig. 9.  Transfer characteristics; drain current as a function of gate-source voltage; typical values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           7 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+
+
+5
+VGS(th) (V)
+4
+
+
+
+
+
+max
+003aah027
+
+10-1
+ID (A)
+10-2
+003aah028
+
+
+
+3         typ
+
+10-3
+min
+typ
+max
+
+
+2         min
+10-4
+
+
+1                                 10-5
+
+
+0
+-60     0     60     120    180
+Tj (°C)
+10-6
+
+0       2       4       6
+VGS(V)
+
+Fig. 10. Gate-source threshold voltage as a function of junction temperature
+Fig. 11. Sub-threshold drain current as a function of gate-source voltage
+
+
+
+3                  003aag818
+
+a
+
+25
+RDSon (mΩ)
+
+
+
+
+4.5      5
+003aak422
+
+
+
+5.5
+2.4                                  20
+
+
+1.8                                  15
+
+6
+1.2                                  10
+
+
+
+0.6
+VGS(V) = 10
+5
+
+
+0
+-60     0     60     120    180
+Tj (°C)
+0
+0       80      160
+
+
+ID(A)
+
+240
+
+
+Fig. 12. Normalized drain-source on-state resistance factor as a function of junction temperature
+Fig. 13. Drain-source on-state resistance as a function of drain current; typical values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           8 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+
+10
+VGS (V)
+003aak426
+
+
+VDS
+8                                           ID
+
+
+20 V
+6
+
+
+4
+
+
+80 V VDS = 50 V
+VGS(pl)
+
+VGS(th)       
+
+VGS
+QGS1 QGS2
+2                                           QGS     QGD
+QG(tot)
+
+
+
+0
+0       40       80      120
+QG (nC)
+003aaa508
+
+Fig. 15. Gate charge waveform definitions
+
+Fig. 14. Gate-source voltage as a function of gate charge; typical values
+
+
+
+10⁴
+003aak423
+12000
+003aak424
+
+
+C (pF)
+
+
+
+
+
+10³
+
+
+Ciss
+
+
+
+
+
+
+
+Coss
+C (pF)
+
+
+8000
+
+
+
+
+
+4000
+
+
+
+
+Ciss
+
+
+
+
+
+
+Crss
+
+
+
+Crss
+
+
+10²
+10⁻¹       1       10      10²
+VDS(V)
+0
+0       4       8       12
+VGS(V)
+
+Fig. 16. Input, output and reverse transfer capacitances as a function of drain-source voltage; typical values
+Fig. 17. Input and reverse transfer capacitances as a function of gate-source voltage, typical values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                           9 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+
+400
+IS (A)
+320
+003aah749
+
+
+240
+
+
+160
+Tj = 175°C
+
+80
+Tj = 25 °C
+
+
+0
+0     0.4    0.8    1.2
+SD
+
+(V) 1.6
+
+Fig. 18. Source (diode forward) current as a function of source-drain (diode forward) voltage; typical values
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                          10 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+8. Package outline
+
+Plastic single-ended package (I2PAK); low-profile 3-lead TO-262                           SOT226
+
+
+
+
+
+
+
+
+
+
+
+A
+D1       E                A1
+
+
+
+mounting base
+D
+
+
+
+
+L1
+Q
+b1
+L
+
+
+
+
+1  2  3
+
+b                   c
+
+e  e
+
+
+
+
+
+
+
+
+
+
+0    5    10 mm scale
+DIMENSIONS (mm are the original dimensions)
+
+UNIT
+
+mm
+A
+
+4.5
+4.1
+
+A1
+
+1.40
+1.27
+b
+
+0.85
+0.60
+
+b1
+1.3
+1.0
+c
+
+0.7
+0.4
+D
+max
+
+11
+
+D1
+
+1.6
+1.2
+E
+
+10.3
+9.7
+e
+
+2.54
+L
+
+15.0
+13.5
+
+L1
+3.30
+2.79
+Q
+
+2.6
+2.2
+
+
+OUTLINE VERSION
+REFERENCES
+IEC       JEDEC      JEITA
+EUROPEAN PROJECTION
+
+ISSUE DATE
+
+SOT226              TO-262
+ 06-02-14 09-08-25
+
+Fig. 19. Package outline I2PAK (SOT226)
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                          11 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+
+9. Legal information
+
+9.1 Data sheet status
+In no event shall NXP Semiconductors be liable for any indirect, incidental, punitive, special or consequential damages (including - without limitation - lost profits, lost savings, business interruption, costs related to the removal or replacement of any products or rework charges) whether or not such damages are based on tort (including negligence), warranty, breach of contract or any other legal theory.
+
+Notwithstanding any damages that customer might incur for any reason whatsoever, NXP Semiconductors’ aggregate and cumulative liability towards
+
+Document status [1][2]
+Objective [short] data sheet
+Preliminary [short] data sheet
+Product [short] data sheet
+Product status [3]
+Development
+
+
+Qualification
+
+
+Production
+Definition
+
+This document contains data from the objective specification for product development.
+This document contains data from the preliminary specification.
+
+This document contains the product specification.
+customer for the products described herein shall be limited in accordance with the Terms and conditions of commercial sale of NXP Semiconductors.
+
+Right to make changes — NXP Semiconductors reserves the right to make changes to information published in this document, including without limitation specifications and product descriptions, at any time and without
+notice. This document supersedes and replaces all information supplied prior to the publication hereof.
+
+Suitability for use — NXP Semiconductors products are not designed, authorized or warranted to be suitable for use in life support, life-critical or safety-critical systems or equipment, nor in applications where failure or malfunction of an NXP Semiconductors product can reasonably be expected to result in personal injury, death or severe property or environmental
+
+[1]  Please consult the most recently issued document before initiating or completing a design.
+[2]  The term 'short data sheet' is explained in section "Definitions".
+[3]  The product status of device(s) described in this document may have changed since this document was published and may differ in case of multiple devices. The latest product status information is available on the Internet at URL http://www.nxp.com.
+
+
+9.2 Definitions
+Preview — The document is a preview version only. The document is still subject to formal approval, which may result in modifications or additions. NXP Semiconductors does not give any representations or warranties as to the accuracy or completeness of information included herein and shall have no liability for the consequences of use of such information.
+
+Draft — The document is a draft version only. The content is still under internal review and subject to formal approval, which may result in modifications or additions. NXP Semiconductors does not give any representations or warranties as to the accuracy or completeness of information included herein and shall have no liability for the consequences of use of such information.
+
+Short data sheet — A short data sheet is an extract from a full data sheet with the same product type number(s) and title. A short data sheet is intended for quick reference only and should not be relied upon to contain detailed and full information. For detailed and full information see the relevant full data sheet, which is available on request via the local NXP Semiconductors sales office. In case of any inconsistency or conflict with the short data sheet, the full data sheet shall prevail.
+
+Product specification — The information and data provided in a Product data sheet shall define the specification of the product as agreed between NXP Semiconductors and its customer, unless NXP Semiconductors and customer have explicitly agreed otherwise in writing. In no event however, shall an agreement be valid in which the NXP Semiconductors product
+is deemed to offer functions and qualities beyond those described in the Product data sheet.
+
+
+9.3 Disclaimers
+Limited warranty and liability — Information in this document is believed to be accurate and reliable. However, NXP Semiconductors does not give any representations or warranties, expressed or implied, as to the accuracy or completeness of such information and shall have no liability for the consequences of use of such information. NXP Semiconductors takes no responsibility for the content in this document if provided by an information source outside of NXP Semiconductors.
+damage. NXP Semiconductors and its suppliers accept no liability for inclusion and/or use of NXP Semiconductors products in such equipment or applications and therefore such inclusion and/or use is at the customer’s own risk.
+
+Quick reference data — The Quick reference data is an extract of the product data given in the Limiting values and Characteristics sections of this document, and as such is not complete, exhaustive or legally binding.
+
+Applications — Applications that are described herein for any of these products are for illustrative purposes only. NXP Semiconductors makes no representation or warranty that such applications will be suitable for the specified use without further testing or modification.
+
+Customers are responsible for the design and operation of their applications and products using NXP Semiconductors products, and NXP Semiconductors accepts no liability for any assistance with applications or customer product design. It is customer’s sole responsibility to determine whether the NXP Semiconductors product is suitable and fit for the customer’s applications and products planned, as well as for the planned
+application and use of customer’s third party customer(s). Customers should provide appropriate design and operating safeguards to minimize the risks associated with their applications and products.
+
+NXP Semiconductors does not accept any liability related to any default, damage, costs or problem which is based on any weakness or default in the customer’s applications or products, or the application or use by customer’s third party customer(s). Customer is responsible for doing all
+necessary testing for the customer’s applications and products using NXP Semiconductors products in order to avoid a default of the applications and the products or of the application or use by customer’s third party customer(s). NXP does not accept any liability in this respect.
+
+Limiting values — Stress above one or more limiting values (as defined in the Absolute Maximum Ratings System of IEC 60134) will cause permanent damage to the device. Limiting values are stress ratings only and (proper) operation of the device at these or any other conditions above those
+given in the Recommended operating conditions section (if present) or the Characteristics sections of this document is not warranted. Constant or repeated exposure to limiting values will permanently and irreversibly affect the quality and reliability of the device.
+
+Terms and conditions of commercial sale — NXP Semiconductors products are sold subject to the general terms and conditions of commercial sale, as published at http://www.nxp.com/profile/terms, unless otherwise agreed in a valid written individual agreement. In case an individual agreement is concluded only the terms and conditions of the respective agreement shall apply. NXP Semiconductors hereby expressly objects to applying the customer’s general terms and conditions with regard to the purchase of NXP Semiconductors products by customer.
+
+No offer to sell or license — Nothing in this document may be interpreted or construed as an offer to sell products that is open for acceptance or the
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                          12 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+grant, conveyance or implication of any license under any copyrights, patents or other industrial or intellectual property rights.
+
+Export control — This document as well as the item(s) described herein may be subject to export control regulations. Export might require a prior authorization from competent authorities.
+
+Non-automotive qualified products — Unless this data sheet expressly states that this specific NXP Semiconductors product is automotive qualified, the product is not suitable for automotive use. It is neither qualified nor tested in accordance with automotive testing or application requirements.
+NXP Semiconductors accepts no liability for inclusion and/or use of non- automotive qualified products in automotive equipment or applications.
+
+In the event that customer uses the product for design-in and use in automotive applications to automotive specifications and standards, customer (a) shall use the product without NXP Semiconductors’ warranty of the product for such automotive applications, use and specifications, and
+(b) whenever customer uses the product for automotive applications beyond NXP Semiconductors’ specifications such use shall be solely at customer’s own risk, and (c) customer fully indemnifies NXP Semiconductors for any liability, damages or failed product claims resulting from customer design and use of the product for automotive applications beyond NXP Semiconductors’ standard warranty and NXP Semiconductors’ product specifications.
+
+Translations — A non-English (translated) version of a document is for reference only. The English version shall prevail in case of any discrepancy between the translated and English versions.
+
+
+9.4 Trademarks
+Notice: All referenced brands, product names, service names and trademarks are the property of their respective owners.
+
+Adelante, Bitport, Bitsound, CoolFlux, CoReUse, DESFire, EZ-HV, FabKey, GreenChip, HiPerSmart, HITAG, I²C-bus logo, ICODE, I-CODE, ITEC, Labelution, MIFARE, MIFARE Plus, MIFARE Ultralight, MoReUse, QLPAK, Silicon Tuner, SiliconMAX, SmartXA, STARplug, TOPFET, TrenchMOS, TriMedia and UCODE — are trademarks of NXP B.V.
+
+HD Radio and HD Radio logo — are trademarks of iBiquity Digital Corporation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                          13 / 14
+
+NXP Semiconductors                          PSMN8R5-100ES
+N-channel 100 V 8.5 mΩ standard level MOSFET in I2PAK
+
+
+10. Contents
+1   Product profile                   1
+1.1   General description                1
+1.2   Features and benefits              1
+1.3   Applications                    1
+1.4   Quick reference data               1
+2   Pinning information                2
+3   Ordering information               2
+4   Marking                       2
+5   Limiting values                  2
+6   Thermal characteristics              4
+7   Characteristics                  5
+8   Package outline                 11
+9   Legal information                12
+9.1   Data sheet status                12
+9.2   Definitions                    12
+9.3   Disclaimers                   12
+9.4   Trademarks                   13
+
+
+© NXP B.V. 2012. All rights reserved
+For more information, please visit: http://www.nxp.com
+For sales office addresses, please send an email to: salesaddresses@nxp.com
+Date of release: 11 October 2012
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PSMN8R5-100ES                     All information provided in this document is subject to legal disclaimers.              © NXP B.V. 2012. All rights reserved
+
+Product data sheet                    11 October 2012                          14 / 14

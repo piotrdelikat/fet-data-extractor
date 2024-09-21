@@ -1,0 +1,514 @@
+GT016N10TL
+N-Channel Enhancement Mode Power MOSFET
+Description
+
+
+The GT016N10TL uses advanced trench technology to provide excellent RDS₍ON₎ , low gate charge. It can be used in a wide variety of applications.
+
+General Features
+⚫ VDS              100V
+⚫ ID (at VGS = 10V)       362A
+⚫ RDS₍ON₎ (at VGS = 10V)   <  1.6mΩ
+⚫ 100% Avalanche Tested
+⚫ RoHS Compliant
+
+Application
+⚫ Power switch
+⚫ DC/DC converters
+
+
+
+
+Ordering Information
+
+
+
+
+
+
+Schematic diagram
+D
+
+
+
+
+
+
+
+
+
+
+G1 S2 S3 S4 S5 S6 S7 S8
+
+
+TOLL
+Device               Package           Marking           Packaging
+GT016N10TL           TOLL             GT016N10          2000pcs/Reel
+
+Absolute Maximum Ratings TC = 25ºC, unless otherwise noted
+
+
+Parameter
+Symbol
+Value
+Unit
+
+
+Drain-Source Voltage
+VDS
+100         V
+
+
+Continuous Drain Current
+ID           362         A
+
+
+Pulsed Drain Current                   (note1)
+IDM
+1448        A
+
+
+Gate-Source Voltage
+VGS
+±20         V
+
+
+Power Dissipation
+PD           450         W
+
+
+Single pulse avalanche energy              （note2）
+EAS
+625        mJ
+
+
+Operating Junction and Storage Temperature Range
+TJ, Tstg
+-55 To 150      ºC
+
+Thermal Resistance
+
+
+Parameter
+Symbol
+Value
+Unit
+
+
+Thermal Resistance, Junction-to-Ambient
+RthJA
+25       ºC/W
+
+
+Maximum Junction-to-Case
+RthJC
+0.28
+ºC/W
+
+www.gofordsemi.com           TEL：0755-29961263      FAX:0755-29961466(A1812-V1.2)
+
+GT016N10TL
+
+Specifications TJ = 25ºC, unless otherwise noted
+Value
+
+Parameter
+Symbol
+Test Conditions
+
+Min.  Typ.  Max.
+Unit
+
+Static Parameters
+
+
+Drain-Source Breakdown Voltage Zero Gate Voltage Drain Current Gate-Source Leakage
+Gate-Source Threshold Voltage Drain-Source On-Resistance Forward Transconductance
+V(BR)DSS IDSS IGSS VGS(th) RDS(on)
+gFS
+VGS = 0V, ID = 250µA VDS = 100V, VGS = 0V VGS = ±20V
+VDS = VGS, ID = 250µA
+
+VGS = 10V, ID = 15A VGS = 5V, ID = 15A
+100
+
+--
+
+-- 2.5
+--
+
+--
+--
+
+--
+
+-- 3.0
+1.3
+
+73
+--    V
+
+1   μA
+
+±100  nA
+
+4.5   V
+
+1.6   mΩ
+
+--    S
+Dynamic Parameters
+
+
+Input Capacitance Output Capacitance
+Reverse Transfer Capacitance Total Gate Charge
+Gate-Source Charge Gate-Drain Charge Turn-on Delay Time Turn-on Rise Time Turn-off Delay Time Turn-off Fall Time
+Ciss Coss Crss Qg Qgs Qgd td(on) tr td(off) tf
+
+VGS = 0V, VDS = 50V, f = 1.0MHz
+
+
+
+VDD = 50V, ID = 15A, VGS = 10V
+
+
+
+
+VDD = 50V, ID = 15A, RG = 4.5Ω
+--   10037  --
+
+--   3782   --    pF
+
+--   585   --
+
+--   165   --
+
+--    33    --    nC
+
+--    48   --
+
+--    29   --
+
+--    64   --
+ns
+--   120   --
+
+--   106   --
+Drain-Source Body Diode Characteristics
+
+
+Continuous Body Diode Current Body Diode Voltage
+Reverse Recovery Charge
+
+Reverse Recovery Time
+IS VSD
+Qrr Trr
+TC = 25ºC
+
+TJ = 25ºC, ISD = 15A, VGS = 0V
+
+IF = 15A, VGS = 0V
+di/dt=100A/us
+--   --
+
+--   --
+
+--   166
+
+--   91
+362   A
+
+1.2   V
+
+--   nC
+
+--   ns
+
+
+
+
+Notes
+1. Repetitive Rating: Pulse width limited by maximum junction temperature
+2. EAS condition : Tj=25℃ ,VDD=50V,VGS=10V,L=0.5mH,Rg=25Ω
+The table shows the minimum avalanche energy, which is 1772mJ when the device is tested until failure
+3. Identical low side and high side switch with identical RG
+
+www.gofordsemi.com           TEL：0755-29961263      FAX:0755-29961466(A1812-V1.2)
+
+GT016N10TL
+
+Gate Charge Test Circuit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Switch Time Test Circuit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+EAS Test Circuit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.gofordsemi.com           TEL：0755-29961263      FAX:0755-29961466(A1812-V1.2)
+
+GT016N10TL
+
+Typical Characteristics TJ = 25ºC, unless otherwise noted
+
+
+
+
+120
+Figure 1. Output Characteristics             Figure 2. Transfer Characteristics
+120
+10V
+
+
+100
+5.4V    5.1V
+
+100
+VDS = 5V
+
+
+80                                   80
+4.8V
+60                                   60
+40                4.5V                  40
+25℃
+20              VGS = 4.2V                 20
+
+0
+0      1      2      3      4
+0
+0      2      4      6      8
+VDS, Drain-to-Source Voltage (V)                VGS, Gate-to-Source Voltage (V)
+Figure 3. Drain Source On Resistance                Figure 4. Gate Charge
+
+3                                   10
+VDD = 50V,
+2.5                                    8   ID = 15A
+
+
+2
+
+1.5
+
+1
+
+0.5
+
+6
+VGS = 10V                        4
+2
+
+0
+0      10      20      30      40
+0
+0      50     100     150     200
+ID-Drain Current（A）               Qg Gate Charge（nC）
+
+
+
+
+12000
+
+10000
+
+8000
+
+6000
+
+Figure 5. Capacitance               Figure 6. Source-Drain Diode Forward
+
+Ciss
+
+
+
+
+Coss
+
+4000
+
+
+2000
+
+0
+
+Crss
+
+0    10    20    30    40    50    60
+VDS Drain-Source Voltage(V)                VSD, Source-to-Drain Voltage (V)
+
+
+
+www.gofordsemi.com           TEL：0755-29961263      FAX:0755-29961466(A1812-V1.2)
+
+GT016N10TL
+
+Typical Characteristics TJ = 25ºC, unless otherwise noted
+
+Figure 7. Drain-Source On-Resistance              Figure 8. Safe Operation Area
+
+VGS = 10V, ID = 15A
+
+
+
+
+
+
+
+
+
+
+
+TJ, Junction Temperature (ºC)                  VDS, Drain-Source Voltage(V)
+
+Figure 9. Normalized Maximum Transient Thermal Impedance
+
+
+
+
+0.4°C/W
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pulse Width (s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.gofordsemi.com           TEL：0755-29961263      FAX:0755-29961466(A1812-V1.2)
+
+GT016N10TL
+
+TOLL Package Information
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.gofordsemi.com           TEL：0755-29961263      FAX:0755-29961466(A1812-V1.2)

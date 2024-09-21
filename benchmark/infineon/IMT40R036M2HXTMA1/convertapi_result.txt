@@ -1,0 +1,1670 @@
+Public
+IMT40R036M2H
+Final datasheet
+
+CoolSiC™
+400V CoolSiC™ G2 MOSFET
+Features
+• Ideal for high frequency switching and synchronous rectification
+• Commutation robust fast body diode with low Qfr
+
+
+
+
+
+TOLL
+Tab
+
+
+
+
+
+
+1 2
+3       84
+5      76
+7       5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tab
+
+• Low R   dependency on temperature
+8       4 3
+2
+
+• BenchDmS(oanr)k gate threshold voltage, V
+• Recommended gate driving voltage 0GVS(ttho)
+1
+= 4.5 V
+18 V
+
+• .XT interconnection technology for best‑in‑class thermal performance
+• 100% avalanche tested
+Potential applications
+• SMPS
+• Solar PV inverters
+• Energy storage, UPS and battery formation
+
+
+
+
+
+
+Gate
+Pin 1
+Driver
+
+Drain Tab
+
+
+*1
+
+• Class‑D audio
+• Motor drives
+Product validation
+Fully qualified according to JEDEC for Industrial Applications
+Table 1  Key Performance Parameters
+Source
+Pin 2
+*1: Internal body diode
+Source Pin 3-8
+
+Parameter
+VDS
+RDS(on),typ ID
+Qoss Eoss QG
+Value 400
+36.4
+50
+42
+3.0
+26
+Unit V
+mΩ A
+nC μJ nC
+
+Type/Ordering Code              Package            Marking       Related Links
+IMT40R036M2H                 PG‑HSOF‑8          40R036M2          ‑
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+Table of Contents
+Description                                                   1
+Maximum ratings                                               3
+Thermal characteristics                                           4
+Operating range                                                4
+Electrical characteristics                                           5
+Electrical characteristics diagrams                                     7
+Test Circuits                                                  13
+Package Outlines                                               14
+Revision History                                               15
+Trademarks                                                  15
+Disclaimer                                                   15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+1 Maximum ratings
+at TA=25 °C, unless otherwise specified
+Table 2  Maximum ratings
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+
+Continuous drain current 1)
+
+Pulsed drain current 3) Avalanche energy, single pulse 4) Avalanche energy, repetitive Gate source voltage (static)
+Gate source voltage (transient) Power dissipation
+Storage temperature
+Operating junction temperature
+
+
+ID
+
+
+
+ID,pulse EAS EAR
+VGS,DC
+VGS,AC
+
+Ptot
+
+Tstg Tj
+
+‑  ‑
+
+‑  ‑
+‑  ‑
+‑  ‑
+‑7  ‑
+‑10 ‑
+
+‑  ‑
+
+‑55 ‑
+‑55 ‑
+50
+36  A
+7.6
+150 A
+66  mJ
+0.33 mJ
+23  V
+25  V
+167
+3.8
+150 °C
+175 °C
+VGS=18 V, TC=25 °C
+VGS=18 V, TC=100 °C
+VGS=18 V, TA=25 °C, RTHJA=40 °C/W 2)
+TC=25 °C
+ID=11.1 A, RGS=25 Ω
+ID=11.1 A, RGS=25 Ω
+‑
+tpulsₑ ≤500 ns, duty cycle ≤ 1%
+TC=25 °C
+TA=25 °C, RTHJA=40 °C/W 2)
+‑
+‑
+1)  Rating refers to the product only with datasheet specified absolute maximum values, maintaining case temperature at 25°C.
+For higher case temperature please refer to Diagram 2. De‑rating will be required based on the actual environmental conditions.
+2)  Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm2 (one layer, 70 μm thick) copper area for drain connection. PCB
+is vertical in still air.
+3) See Diagram 3 for more detailed information.
+4) See Diagram 19 for more detailed information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+2 Thermal characteristics
+Table 3  Thermal characteristics
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Thermal resistance, junction ‑ case
+Thermal resistance, junction ‑ ambient,
+6 cm² cooling area 5)
+RthJC RthJA
+‑   ‑   0.9
+
+‑   ‑   40
+°C/W  ‑
+
+°C/W  ‑
+5)  Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm2 (one layer, 70 μm thick) copper area for drain connection. PCB
+is vertical in still air.
+
+3 Operating range
+Table 4  Operating range
+Parameter                Symbol       Values     Unit  Note/ Test Condition Min. Typ. Max.
+
+Recommended turn‑on voltage Recommended turn‑off voltage
+VGS(on)
+VGS(off)
+‑   18  ‑   V    ‑
+‑   0   ‑   V    ‑
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+4 Electrical characteristics
+at Tj=25 °C, unless otherwise specified
+Table 5  Static characteristics
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Drain‑source breakdown voltage Gate threshold voltage 6)
+Zero gate voltage drain current Gate‑source leakage current
+Drain‑source on‑state resistance
+
+Gate resistance
+V(BR)DSS VGS(th)
+IDSS IGSS
+RDS(on)
+
+
+RG
+400
+3.5
+
+‑
+
+‑
+
+‑
+
+‑
+‑ 4.5
+1
+2
+1
+36.4
+52.5
+44.6
+5.5
+‑  V
+5.6  V
+
+‑  μA
+100 nA
+45.7
+‑  mΩ
+‑
+8.3  Ω
+VGS=0 V, ID=0.4 mA
+VDS=VGS, ID=4 mA
+VDS=400 V, VGS=0 V, Tj=25 °C
+VDS=400 V, VGS=0 V, Tj=175 °C
+VGS=20 V, VDS=0 V
+VGS=18 V, ID=11.1 A, Tj=25 °C VGS=18 V, ID=11.1 A, Tj=175 °C VGS=15 V, ID=11.1 A, Tj=25 °C
+‑
+
+6) Tested after 1ms pulse at VGS = +20V.
+Table 6  Dynamic characteristics
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Input capacitance Output capacitance
+Reverse transfer capacitance
+Ciss Coss Crss
+‑  870
+‑  120
+‑  10
+1170 pF
+‑   pF
+‑   pF
+VGS=0 V, VDS=200 V, f=1 MHz VGS=0 V, VDS=200 V, f=1 MHz VGS=0 V, VDS=200 V, f=1 MHz
+
+Effective output capacitance, energy related 7)
+
+Co(er)
+‑   150  ‑   pF
+VGS=0 V, VDS
+=0...200 V
+
+Effective output capacitance, time  C
+
+‑   210  ‑   pF
+
+I =constant, V
+
+=0 V, V
+
+=0...200 V
+
+related 8)
+
+Turn‑on delay time 9)
+
+Rise time 9)
+
+Turn‑off delay time 9)
+
+Fall time 9)
+o(tr)
+
+
+td(on) tr td(off) tf
+
+
+‑   13.0 ‑   ns
+
+‑   11.9 ‑   ns
+
+‑   17.9 ‑   ns
+
+‑   8.1  ‑   ns
+D         GS     DS
+
+VDD=200 V, VGS=0...18 V, ID=11.1 A,
+RG,ₑₓt=1.8 Ω
+VDD=200 V, VGS=0...18 V, ID=11.1 A,
+RG,ₑₓt=1.8 Ω
+VDD=200 V, VGS=18...0 V, ID=11.1 A,
+RG,ₑₓt=1.8 Ω
+VDD=200 V, VGS=18...0 V, ID=11.1 A,
+RG,ₑₓt=1.8 Ω
+7) Co(er) is a fixed capacitance that gives the same stored energy as Coss while VDS is rising from 0 to 200 V.
+8) Co(tr) is a fixed capacitance that gives the same charging time as Coss while VDS is rising from 0 to 200 V.
+9) Refer to Table 9 for test setup.
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+
+Table 7  Gate Charge Characteristics 10)
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Gate to source charge Gate to drain charge Gate charge total
+Gate charge total, sync. FET Output charge
+Output Energy
+Qgs Qgd Qg
+Qg(sync) Qoss Eoss
+‑   7   ‑   nC
+‑   5.4  ‑   nC
+‑   26  ‑   nC
+‑   24  ‑   nC
+‑   42  ‑   nC
+‑   3.0  ‑   μJ
+VDD=200 V, ID=11.1 A, VGS=0 to 18 V VDD=200 V, ID=11.1 A, VGS=0 to 18 V VDD=200 V, ID=11.1 A, VGS=0 to 18 V VDS=0.1 V, VGS=0 to 18 V
+VDS=200 V, VGS=0 V
+VDS=200 V, VGS=0 V
+10) As per JEP192, Guidelines for Gate Charge (QG) Test Method for SiC MOSFET.
+Table 8  Reverse diode characteristics
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Diode continuous forward current Diode pulse current
+Diode forward voltage
+
+
+MOSFET forward recovery time
+
+
+
+
+MOSFET forward recovery charge 11)
+IS
+IS,pulse VSD
+
+
+tfr
+
+
+
+
+
+
+Qfr
+‑  ‑
+‑  ‑
+‑  3.5
+
+11.5
+8.5
+
+
+39
+77
+24  A
+150 A
+4.3  V
+
+
+‑  ns
+
+
+
+
+‑  nC
+TC=25 °C
+TC=25 °C, tpulsₑ≤250 ns VGS=0 V, IS=11.1 A, Tj=25 °C VR=200 V, IS=11.1 A,
+diS/dt=1000 A/μs
+VR=200 V, IS=11.1 A,
+diS/dt=3000 A/μs
+VR=200 V, IS=11.1 A,
+diS/dt=1000 A/μs
+VR=200 V, IS=11.1 A,
+diS/dt=3000 A/μs
+
+11) Qfr includes Qoss. Refer to Table 10 for test setup.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+5 Electrical characteristics diagrams
+
+
+Diagram 1: Power dissipation                Diagram 2: Drain current
+
+175                                60
+
+
+150
+50
+
+
+125
+40
+
+100
+30
+75
+
+20
+50
+
+
+10
+25
+
+
+0
+0   25  50  75  100  125  150  175  200
+TC [°C]
+0
+0   25   50   75  100  125  150  175  200
+TC [°C]
+Ptₒt=f(TC)                            ID=f(TC); VGS≥18 V
+
+
+
+Diagram 3: Safe operating area
+10³
+Diagram 4: Safe operating area
+10³
+
+
+
+102                                      10²
+1 µs
+
+
+10¹
+
+
+
+10⁰
+
+
+
+10 ¹
+
+
+
+10 ²
+
+
+10 µs
+
+
+100 µs
+
+
+1 ms
+10 ms DC
+
+10¹
+
+
+
+10⁰
+
+
+
+10 ¹
+
+
+
+10 ²
+
+1 µs
+
+
+10 µs
+
+
+
+100 µs
+
+
+1 ms
+10 ms DC
+
+
+10 ³
+
+100         10¹       10²       10³
+VDS [V]
+10 ³
+
+100         10¹       10²       10³
+VDS [V]
+
+ID=f(VDS); TC=25 °C; D=0; parameter: tp            ID=f(VDS); TC=125 °C; D=0; parameter: tp
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+
+
+
+
+Diagram 5: Typ. output characteristics           Diagram 6: Typ. output characteristics
+
+
+150
+
+20 V
+18 V
+150
+
+20 V
+
+
+125
+125
+18 V
+15 V
+
+
+100
+100
+
+15 V
+
+
+75                                75
+
+
+12 V
+12 V
+50                                50
+
+
+10 V
+25                          10 V     25
+
+
+
+8 V
+0
+0    2    4    6    8    10    12
+VDS [V]
+
+8 V
+
+0
+0    2    4    6    8    10    12
+VDS [V]
+ID=f(VDS), Tj=25 °C; parameter: VGS               ID=f(VDS), Tj=175 °C; parameter: VGS
+
+
+Diagram 7: Typ. drain‑source on resistance        Diagram 8: Typ. drain‑source on resistance
+
+
+120
+10 V      12 V
+
+120
+10 V     12 V           15 V
+
+
+100
+100
+
+
+15 V
+80                                80
+
+18 V
+
+20 V
+60                                60
+18 V
+20 V
+40                                40
+
+
+
+20                                20
+
+
+
+0
+0     20    40    60    80    100
+ID [A]
+0
+0     20    40    60    80    100
+ID [A]
+RDS₍ₒn₎=f(ID), Tj=25 °C; parameter: VGS              RDS₍ₒn₎=f(ID), Tj=175 °C; parameter: VGS
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+
+
+
+
+Diagram 9: Normalized drain‑source on resistance    Diagram 10: Typ. gate threshold voltage
+
+1.6                                6
+
+
+1.4
+5
+
+1.2
+
+4
+1.0
+
+
+0.8                                3
+
+
+0.6
+2
+
+0.4
+
+1
+0.2
+
+
+0.0
+
+-75 -50 -25  0  25  50  75 100 125 150 175 200
+Tj [°C]
+0
+-75 -50 -25  0  25  50  75 100 125 150 175 200
+Tj [°C]
+RDS₍ₒn₎=f(Tj), ID=11.1 A, VGS=18 V              VGS₍th=f(Tj), VGS=VDS, ID=4 mA
+
+
+
+Diagram 11: Typ. transfer characteristics
+300
+Diagram 12: Max. transient thermal impedance
+10¹
+
+
+
+
+250
+
+25 °C
+
+
+
+
+
+10⁰
+single pulse 0.01
+0.02
+0.05
+0.1
+0.2
+0.5
+200
+
+
+
+150                                10 ¹
+175 °C
+
+
+100
+
+10 ²
+
+50
+
+
+0
+0  2  4  6  8  10  12  14  16  18  20
+VGS [V]
+10 ³
+10 ⁶   10 ⁵   10 ⁴   10 ³   10 ²   10 ¹   10⁰
+tp [s]
+
+ID=f(VGS), |VDS|>2|ID|RDS₍ₒn₎mₐₓ; parameter: Tj        ZthJC=f(tp); parameter: D=tp/T
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+
+
+
+
+Diagram 13: Reverse output characteristics        Diagram 14: Reverse output characteristics
+
+35                                70
+175 °C
+
+
+30                                 60                        25 °C
+
+
+25                                50
+
+
+20                                40
+25 °C
+
+
+15                                30
+175 °C
+
+
+10                                20
+
+
+5                                10
+
+
+0
+0     1     2     3     4     5
+VSD [V]
+0
+0.0    0.4    0.8    1.2    1.6     2.0
+VSD [V]
+IF=f(VSD), VGS=0 V; parameter: Tj               IF=f(VSD), VGS=18 V; parameter: Tj
+
+
+
+Diagram 15: Typ. capacitances
+10⁴
+Diagram 16: Typ. gate charge
+20
+Ciss     16
+10³
+
+
+
+12
+Coss
+10²
+
+8
+
+
+Crss
+10¹
+4
+
+
+
+10⁰
+
+0   50  100  150  200  250  300  350  400
+VDS [V]
+0
+0    5    10    15    20    25    30
+Qgₐtₑ [nC]
+
+C=f(VDS); VGS=0 V; f=1 MHz                   VGS=f(Qgₐtₑ), VDD=200 V, ID=11.1 A pulsed, Tj=25 °C
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+
+
+
+
+Diagram 17: Typ. output charge               Diagram 18: Typ. output energy
+
+70                                10
+
+
+60
+8
+
+50
+
+
+6
+40
+
+
+30
+4
+
+
+20
+
+2
+10
+
+
+0
+0   50  100  150  200  250  300  350  400
+VDS [V]
+0
+0   50  100  150  200  250  300  350  400
+VDS [V]
+Qₒss=f(VDS), VGS=0 V                      Eₒss=f(VDS), VGS=0 V
+
+
+
+Diagram 19: Avalanche characteristics
+10²
+Diagram 20: Min. drain‑source breakdown voltage
+404
+
+
+
+
+
+101                                     403
+
+
+
+25 °C
+
+100                                     402
+
+
+100 °C
+
+
+10 ¹
+
+150 °C
+401
+
+
+
+10 ²
+
+100        10¹       10²       10³
+tAV [µs]
+400
+
+-75 -50 -25  0  25  50  75 100 125 150 175 200
+Tj [°C]
+
+IAS=f(tAV); RGS=25 Ω; parameter: Tj,stₐrt            VBR₍DSS₎=f(Tj); ID=0.4 mA
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+
+
+
+
+Diagram 21: Typ. turn‑on switching losses         Diagram 22: Typ. turn‑off switching losses
+
+
+320
+23 A
+320
+
+
+280                                280
+
+
+240
+240
+
+23 A
+
+200                                200
+
+
+160
+11 A
+160
+
+
+120
+120
+11 A
+
+
+80                                80
+5 A
+5 A
+40                                40
+
+
+0
+0   20  40  60  80  100  120  140  160
+RG, ext [ ]
+0
+0   20  40  60  80  100  120  140  160
+RG, ext [ ]
+Eₒn=f(Rg,ₑₓt), VDD=200 V, VG=0...18 V; parameter: ID       Eₒff=f(Rg,ₑₓt), VDD=200 V, VG=18...0 V; parameter: ID
+
+
+Diagram 23: Typ. turn‑on switching losses         Diagram 24: Typ. turn‑off switching losses
+
+
+600
+23 A
+600
+
+
+
+500
+500
+23 A
+
+
+400
+400
+
+
+300
+
+11 A
+300
+11 A
+
+200
+200
+
+5 A
+5 A
+100                                100
+
+
+
+0
+0   20  40  60  80  100  120  140  160
+RG, ext [ ]
+0
+0   20  40  60  80  100  120  140  160
+RG, ext [ ]
+
+Eₒn=f(Rg,ₑₓt), VDD=320 V, VG=0...18 V; parameter: ID       Eₒff=f(Rg,ₑₓt), VDD=320 V, VG=18...0 V; parameter: ID
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+6 Test Circuits
+Table 9  Switching times ( Cool Si C)
+
+Switching times test circuit for inductive load        Switching times waveform
+
+
+VDS
+
+
+90%
+
+
+
+VDS
+
+
+VGS
+
+RG
+
+VDD
+
+VGS
+10%
+
+
+
+
+
+
+td(on) tr
+
+ton
+
+
+
+
+
+td(off)
+
+
+
+
+
+
+tf
+
+toff
+
+
+
+
+
+Table 10  Body diode characteristics ( Cool Si C)
+Test circuit for body diode characteristics
+
+Body diode recovery waveform
+
+
+
+
+
+
+
+RG2
+
+
+
+IS
+
+
+
+
+
+
+RG1
+
+
+
++ VDS
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+VDD
+
+
+
+VDD
+
+
+
+
+
+ISIOs
+
+
+
+
+
+
+
+
+
+
+
+
+Ifrm
+
+
+
+
+
+
+
+
+IS
+
+
+
+
+dIs / dt
+
+
+
+
+
+
+
+
+tfr 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Qfr
+
+VDS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ifrm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+7 Package Outlines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PACKAGE - GROUP NUMBER:
+
+DIMENSIONS
+PG-HSOF-8-U02
+MILLIMETERS
+
+MIN.
+A    2.20
+b    0.70
+b1    9.70
+b2    0.42
+c    0.40
+D    10.28
+D1
+
+
+
+
+
+
+
+
+
+3.30
+MAX. 2.40
+0.90
+9.90
+0.50
+0.60
+10.58
+E     9.70    10.10
+E1       7.50
+E2       8.50
+E3       9.46
+e      1.20 (BSC)
+H    11.48    11.88
+H1    6.55    6.95
+H2       7.15
+H3       3.59
+H4       3.26
+N        8
+K1       4.18
+
+L    1.40
+L1    0.50
+L2    0.50
+L3    1.00
+L4    2.62
+1.80
+0.90
+0.70
+1.30
+2.81
+
+
+
+
+Figure 1 Outline PG‑HSOF‑8, dimensions in mm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26
+
+Public
+400V CoolSiC™ G2 MOSFET
+IMT40R036M2H                       
+
+Revision History
+IMT40R036M2H
+Revision 2024 ‑ 04 ‑ 27 , Rev. 2 . 0
+Previous Revision
+Revision Date    Subjects (major changes since last revision)
+1.0   2024‑04‑26 Release of preliminary version
+2.0    2024‑04‑27  Release of final
+
+
+
+
+Trademarks
+All referenced product or service names and trademarks are the property of their respective owners.
+
+
+
+We Listen to Your Comments Any information within this document that you feel is wrong, unclear or missing at all? Your feedback will help us to continuously improve the quality of this document. Please send your proposal (including a reference to this document) to: erratum@infineon.com
+
+Published by
+Infineon Technologies AG 81726 München, Germany
+© 2024 Infineon Technologies AG All Rights Reserved.
+
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics (“Beschaffenheitsgarantie”) . With respect to any examples, hints or any typical values stated herein and/or any information regarding the application of the product, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation warranties of non‑infringement of intellectual property rights of any third party.
+
+In addition, any information given in this document is subject to customer’s compliance with its obligations stated in this document and any applicable legal requirements, norms and standards concerning customer’s products and any use of the product of Infineon Technologies in customer’s applications.
+
+The data contained in this document is exclusively intended for technically trained staff. It is the responsibility of customer’s technical departments to evaluate the suitability of the product for the intended application and the completeness of the product information given in this document with respect to such application.
+
+Information
+For further information on technology, delivery terms and conditions and prices please contact your nearest Infineon Technologies Office (www. infineon.com).
+
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+The Infineon Technologies component described in this Data Sheet may be used in life‑support devices or systems and/or automotive, aviation and aerospace applications or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life‑support, automotive, aviation and aerospace device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑04‑26

@@ -1,0 +1,1046 @@
+Philips Semiconductors                                    Product specification
+
+
+N-channel TrenchMOS™ transistor                 PSMN020-150W
+
+FEATURES            SYMBOL              QUICK REFERENCE DATA
+
+• ’Trench’ technology                   d
+• Very low on-state resistance
+• Fast switching
+• Low thermal resistance
+g
+
+VDSS = 150 V ID = 73 A
+RDS(ON) ≤ 20 mΩ
+
+s
+
+GENERAL DESCRIPTION   PINNING              SOT429 (TO247)
+
+SiliconMAX products use the latest Philips  Trench  technology  to achieve  the  lowest  possible on-state  resistance  in  each package at each voltage rating.
+PIN
+1
+2
+
+
+gate drain
+DESCRIPTION
+
+Applications:-
+• d.c. to d.c. converters
+• switched mode power supplies
+The PSMN020-150W is supplied in the SOT429 (TO247) conventional leaded package.
+3
+tab
+source drain
+
+
+
+1 2 3
+LIMITING VALUES
+Limiting values in accordance with the Absolute Maximum System (IEC 134)
+
+SYMBOL
+VDSS VDGR VGS ID
+
+IDM PD
+Tj, Tstg
+PARAMETER
+Drain-source voltage Drain-gate voltage Gate-source voltage
+Continuous drain current
+Pulsed drain current Total power dissipation Operating junction and storage temperature
+CONDITIONS
+Tj = 25 ˚C to 175˚C
+Tj = 25 ˚C to 175˚C; RGS = 20 kΩ
+Tmb = 25 ˚C Tmb = 100 ˚C Tmb = 25 ˚C Tmb = 25 ˚C
+MIN.
+-
+-
+-
+-
+-
+-
+-
+- 55
+MAX.
+150
+150
+± 20
+73
+51
+290
+300
+175
+UNIT
+V V V A A A W
+˚C
+AVALANCHE ENERGY LIMITING VALUES
+Limiting values in accordance with the Absolute Maximum System (IEC 134)
+
+SYMBOL
+EAS
+
+
+
+
+IAS
+PARAMETER
+Non-repetitive avalanche energy
+
+Non-repetitive avalanche current
+CONDITIONS
+Unclamped inductive load, IAS = 73 A;
+tp = 100 μs; Tj prior to avalanche = 25˚C; VDD ≤ 25 V; RGS = 50 Ω; VGS = 5 V; refer to fig:15
+MIN.
+-
+
+
+-
+MAX.
+707
+
+
+73
+UNIT
+mJ
+
+
+A
+
+
+
+
+November 1999                      1                         Rev 1.000
+
+Philips Semiconductors                                      Product specification
+
+
+N-channel TrenchMOS™ transistor                  PSMN020-150W
+
+
+THERMAL RESISTANCES
+
+SYMBOL
+Rth j-mb
+
+Rth j-a
+PARAMETER
+Thermal resistance junction to mounting base
+Thermal resistance junction to ambient
+CONDITIONS
+
+
+in free air
+TYP.
+- 45
+MAX.
+0.5
+-
+UNIT
+K/W K/W
+ELECTRICAL CHARACTERISTICS
+Tj= 25˚C unless otherwise specified
+
+SYMBOL
+V(BR)DSS VGS(TO)
+
+RDS(ON)
+
+IGSS IDSS
+PARAMETER
+Drain-source breakdown voltage
+Gate threshold voltage
+
+Drain-source on-state resistance
+Gate source leakage current Zero gate voltage drain current
+CONDITIONS
+VGS = 0 V; ID = 0.25 mA; VDS = VGS; ID = 1 mA
+VGS = 10 V; ID = 25 A
+VGS = ±10 V; VDS = 0 V VDS = 150 V; VGS = 0 V;
+
+
+Tj = -55˚C
+Tj = 175˚C Tj = -55˚C
+Tj = 175˚C
+
+Tj = 175˚C
+MIN.
+150
+134
+2.0
+1.0
+-
+-
+-
+-
+-
+-
+TYP.
+-
+-
+3.0
+-
+- 12
+- 2
+0.05
+-
+MAX.
+-
+-
+4.0
+- 6
+20
+56
+100
+10
+500
+UNIT
+V V V V V
+mΩ mΩ nA
+μA
+μA
+
+Qg(tot) Qgs Qgd
+td on
+tr
+td off
+tf
+Ld Ld Ls
+
+
+Ciss Coss Crss
+Total gate charge Gate-source charge
+Gate-drain (Miller) charge
+Turn-on delay time Turn-on rise time Turn-off delay time Turn-off fall time
+Internal drain inductance Internal drain inductance Internal source inductance
+
+Input capacitance Output capacitance Feedback capacitance
+ID = 73 A; VDD = 120 V; VGS = 10 V
+
+
+VDD = 75 V; RD = 2.7 Ω; VGS = 10 V; RG = 5.6 Ω
+Resistive load
+
+Measured from tab to centre of die Measured from drain lead to centre of die Measured from source lead to source bond pad
+VGS = 0 V; VDS = 25 V; f = 1 MHz
+-   227   -   nC
+-   46   -   nC
+-   91   -   nC
+-   34   -   ns
+-   79   -   ns
+-   233   -   ns
+-   101   -   ns
+-   3.5   -   nH
+-   4.5   -   nH
+-   7.5   -   nH
+
+-   9537   -   pF
+-   854   -   pF
+-   380   -   pF
+REVERSE DIODE LIMITING VALUES AND CHARACTERISTICS
+Tj = 25˚C unless otherwise specified
+
+SYMBOL
+IS ISM VSD
+trr Qrr
+PARAMETER
+Continuous source current (body diode)
+Pulsed source current (body diode)
+Diode forward voltage
+
+Reverse recovery time Reverse recovery charge
+CONDITIONS
+
+
+
+
+IF = 25 A; VGS = 0 V IF = 75 A; VGS = 0 V
+IF = 20 A; -dIF/dt = 100 A/μs; VGS = 0 V; VR = 30 V
+MIN.
+-
+-
+-
+-
+-
+-
+TYP.
+-
+- 0.85
+1.1
+127
+1.0
+MAX.
+73
+290
+1.2
+-
+-
+-
+UNIT
+A
+A
+V V
+ns
+μC
+
+
+
+November 1999                      2                         Rev 1.000
+
+Philips Semiconductors                                      Product specification
+
+
+N-channel TrenchMOS™ transistor                  PSMN020-150W
+
+
+
+
+100
+90
+80
+70
+60
+50
+Normalised Power Derating, PD (%)
+
+1
+
+
+
+
+0.1
+Transient thermal impedance, Zth j-mb (K/W) D = 0.5
+0.2
+
+0.1
+
+0.05
+
+40                                      0.01
+30
+20
+10
+0                                     0.001
+0.02
+
+
+
+
+single pulse
+P
+D  tp
+
+
+
+T
+D = tp/T
+
+0    25   50   75   100   125   150   175
+Mounting Base temperature, Tmb (C)
+Fig.1. Normalised power dissipation.
+PD% = 100⋅PD/PD ₂₅ ˚C = f(Tmb)
+1E-06  1E-05  1E-04  1E-03  1E-02  1E-01  1E+00
+Pulse width, tp (s)
+
+Fig.4. Transient thermal impedance.
+Zth j₋mb = f(t); parameter D = tp/T
+
+
+
+Normalised Current Derating, ID (%)
+80 Drain Current, ID (A)
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0    25   50   75   100   125   150   175
+Tj = 25 C
+70
+
+60
+
+50
+
+40
+
+30
+
+20
+
+10
+
+0
+VGS = 10V   8 V 6 V
+
+
+
+
+
+
+
+5.2 V
+
+5 V
+
+4.8 V
+4.6 V
+4.2 V 4.4 V
+
+Mounting Base temperature, Tmb (C)
+Fig.2. Normalised continuous drain current.
+ID% = 100⋅ID/ID ₂₅ ˚C = f(Tmb); VGS ≥ 10 V
+0  0.2  0.4  0.6  0.8  1  1.2  1.4  1.6  1.8  2
+Drain-Source Voltage, VDS (V)
+Fig.5. Typical output characteristics, Tj = 25 ˚C. ID = f(VDS)
+
+1000
+Peak Pulsed Drain Current, IDM (A)
+0.1
+Drain-Source On Resistance, RDS(on) (Ohms)
+
+
+
+
+
+100
+
+
+
+
+
+10
+
+
+
+
+
+1
+
+RDS(on) = VDS/ ID
+
+
+
+
+
+
+
+
+
+
+
+D.C.
+
+
+
+tp = 10 us 100 us
+1 ms
+
+10 ms
+
+100 ms
+0.09
+0.08
+0.07
+0.06
+0.05
+0.04
+0.03
+0.02
+0.01
+0
+4.2 V
+4.6 V
+4.4V
+4.8 V
+
+
+5V
+
+
+
+
+
+
+
+5.2V
+Tj = 25 C
+
+
+
+
+
+
+
+
+
+
+
+6 V
+
+8 V  VGS = 10V
+
+1         10        100        1000
+Drain-Source Voltage, VDS (V)
+Fig.3. Safe operating area
+ID & IDM = f(VDS); IDM single pulse; parameter tp
+0   10   20   30   40   50   60   70   80
+Drain Current, ID (A)
+Fig.6. Typical on-state resistance, Tj = 25 ˚C. RDS(ON) = f(ID)
+
+
+
+November 1999                      3                         Rev 1.000
+
+Philips Semiconductors                                      Product specification
+
+
+N-channel TrenchMOS™ transistor                  PSMN020-150W
+
+
+
+
+
+
+100
+90
+80
+70
+60
+
+Drain current, ID (A) VDS > ID X RDS(ON)
+
+4.5
+4
+3.5
+3
+2.5
+Threshold Voltage, VGS(TO) (V)
+
+
+
+maximum typical
+
+50                     175 C
+40
+30
+20
+10
+0
+
+
+
+
+
+Tj = 25 C
+2
+1.5
+1
+0.5
+0
+minimum
+
+0  0.5  1  1.5  2  2.5  3  3.5  4  4.5  5  5.5  6
+Gate-source voltage, VGS (V)
+
+Fig.7. Typical transfer characteristics.
+ID = f(VGS)
+-60 -40 -20  0  20  40  60  80  100 120 140 160 180
+Junction Temperature, Tj (C)
+Fig.10. Gate threshold voltage.
+VGS₍TO₎ = f(Tj); conditions: ID = 1 mA; VDS = VGS
+
+
+100 Transconductance, gfs (S)
+
+1.0E-01
+Drain current, ID (A)
+
+VDS > ID X RDS(ON)
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+Tj = 25 C
+
+
+
+175 C
+
+
+1.0E-02
+
+
+1.0E-03
+
+
+1.0E-04
+
+
+1.0E-05
+
+
+1.0E-06
+
+
+
+
+
+minimum
+
+
+
+
+
+
+
+typical
+
+
+
+
+
+
+
+
+
+
+maximum
+
+0   10  20  30  40  50  60  70  80  90  100
+Drain current, ID (A)
+Fig.8. Typical transconductance, Tj = 25 ˚C. gfs = f(ID)
+0  0.5  1  1.5  2  2.5  3  3.5  4  4.5  5
+Gate-source voltage, VGS (V)
+Fig.11. Sub-threshold drain current.
+ID = f(VGS₎; conditions: Tj = 25 ˚C
+
+
+
+2.9
+2.7
+2.5
+2.3
+2.1
+1.9
+1.7
+1.5
+1.3
+1.1
+0.9
+0.7
+0.5
+Normalised On-state Resistance
+
+
+
+100000
+
+
+
+
+10000
+
+
+
+
+1000
+
+
+
+
+100
+
+
+Capacitances, Ciss, Coss, Crss (pF)
+
+
+
+
+
+
+
+Ciss
+
+
+
+
+
+Coss
+
+
+Crss
+
+-60 -40 -20  0  20  40  60  80  100 120 140 160 180
+Junction temperature, Tj (C)
+Fig.9. Normalised drain-source on-state resistance.
+RDS(ON)/RDS(ON)25 ˚C = f(Tj)
+0.1      1      10      100     1000
+Drain-Source Voltage, VDS (V)
+Fig.12. Typical capacitances, Ciss, Cₒss, Crss. C = f(VDS); conditions: VGS = 0 V; f = 1 MHz
+
+
+
+November 1999                      4                         Rev 1.000
+
+Philips Semiconductors                                      Product specification
+
+
+N-channel TrenchMOS™ transistor                  PSMN020-150W
+
+
+
+
+
+Gate-source voltage, VGS (V)
+15
+14 ID = 73A
+13 Tj = 25 C
+12
+11
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+
+
+
+
+
+
+VDD = 30 V
+
+
+
+
+
+
+
+
+
+
+
+VDD = 120 V
+
+100
+
+
+
+
+10
+
+
+
+
+1
+
+
+
+
+0.1
+Maximum Avalanche Current, IAS (A)
+
+
+
+
+
+
+
+Tj prior to avalanche = 150 C
+
+
+
+
+25 C
+
+0   25  50  75  100  125  150  175  200  225  250
+Gate charge, QG (nC)
+
+Fig.13. Typical turn-on gate-charge characteristics.
+VGS = f(QG)
+0.001     0.01      0.1       1       10
+Avalanche time, tAV (ms)
+
+Fig.15. Maximum permissible non-repetitive avalanche current (IAS) versus avalanche time (tAV); unclamped inductive load
+
+
+
+
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+0
+Source-Drain Diode Current, IF (A) VGS = 0 V
+
+
+175 C
+
+
+
+
+
+
+
+
+
+
+Tj = 25 C
+0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1  1.1  1.2
+Source-Drain Voltage, VSDS (V)
+
+Fig.14. Typical reverse diode current.
+IF = f(VSDS); conditions: VGS = 0 V; parameter Tj
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+November 1999                      5                         Rev 1.000
+
+Philips Semiconductors                                      Product specification
+
+
+N-channel TrenchMOS™ transistor                  PSMN020-150W
+
+
+MECHANICAL DATA
+
+Plastic single-ended through-hole package; heatsink mounted; 1 mounting hole; 3-lead TO-247    SOT429
+
+
+α
+
+
+
+
+
+
+
+E                        A
+P                   A1
+β
+q
+S
+
+R
+
+D
+Y
+
+
+
+
+
+
+
+(1)
+1
+Q
+
+b2               L
+
+
+
+1    2    3
+
+b      w M                  c
+b1
+e   e
+
+
+
+
+
+0   10  20 mm
+scale
+
+
+DIMENSIONS (mm are the original dimensions)
+
+
+UNIT A  A1
+
+b  b1  b2  c
+
+D  E  e
+(1)
+L  1  P  Q
+
+q  R  S
+w  Y  α  β
+
+
+mm
+
+Note
+5.3
+4.7
+1.9
+1.7
+1.2
+0.9
+2.2
+1.8
+3.2
+2.8
+0.9  21
+0.6  20
+
+16 5.45 16
+15    15
+4.0
+3.6
+3.7
+3.3
+2.6
+2.4
+
+5.3
+3.5
+3.3
+7.5
+7.1
+0.4 15.7  6°
+15.3  4°
+17°
+13°
+
+1. Tinning of terminals are uncontrolled within zone L1.
+
+OUTLINE
+
+
+REFERENCES
+
+
+EUROPEAN
+
+
+
+ISSUE DATE
+
+VERSION
+IEC      JEDEC      EIAJ
+PROJECTION
+SOT429             TO-247                              98-04-07
+
+
+Fig.16. SOT429; pin 2 connected to mounting base
+Notes
+1. Observe the general handling precautions for electrostatic-discharge sensitive devices (ESDs) to prevent damage to MOS gate oxide.
+2. Refer to mounting instructions for SOT429 envelope.
+3. Epoxy meets UL94 V0 at 1/8".
+
+
+
+
+
+November 1999                      6                         Rev 1.000
+
+Philips Semiconductors                                      Product specification
+
+
+N-channel TrenchMOS™ transistor                  PSMN020-150W
+
+
+
+DEFINITIONS
+Data sheet status Objective specification Preliminary specification Product specification Limiting values
+
+
+
+This data sheet contains target or goal specifications for product development.
+This data sheet contains preliminary data; supplementary data may be published later. This data sheet contains final product specifications.
+Limiting values are given in accordance with the Absolute Maximum Rating System (IEC 134). Stress above one or more of the limiting values may cause permanent damage to the device. These are stress ratings only and operation of the device at these or at any other conditions above those given in the Characteristics sections of this specification is not implied. Exposure to limiting values for extended periods may affect device reliability.
+Application information
+Where application information is given, it is advisory and does not form part of the specification.
+© Philips Electronics N.V. 1999
+All rights are reserved. Reproduction in whole or in part is prohibited without the prior written consent of the copyright owner.
+The information presented in this document does not form part of any quotation or contract, it is believed to be accurate and reliable and may be changed without notice. No liability will be accepted by the publisher for any consequence of its use. Publication thereof does not convey nor imply any license under patent or other industrial or intellectual property rights.
+
+LIFE SUPPORT APPLICATIONS
+These products are not designed for use in life support appliances, devices or systems where malfunction of these products can be reasonably expected to result in personal injury. Philips customers using or selling these products for use in such applications do so at their own risk and agree to fully indemnify Philips for any damages resulting from such improper use or sale.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+November 1999                      7                         Rev 1.000

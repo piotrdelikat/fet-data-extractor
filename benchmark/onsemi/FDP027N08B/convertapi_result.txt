@@ -1,0 +1,1131 @@
+ON Semiconductor Is Now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To learn more about onsemi™, please visit our website at www.onsemi.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+onsemi and           and other names, marks, and brands are registered and/or common law trademarks of Semiconductor Components Industries, LLC dba “onsemi” or its affiliates and/or subsidiaries in the United States and/or other countries. onsemi owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of onsemi product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent-Marking.pdf. onsemi reserves the right to make changes at any time to any products or information herein, without notice. The information herein is provided “as-is” and onsemi makes no warranty, representation or guarantee regarding the accuracy of the information, product features, availability, functionality, or suitability of its products for any particular purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using onsemi products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information provided by onsemi. “Typical” parameters which may be provided in onsemi data sheets and/ or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. onsemi does not convey any license under any of its intellectual property rights nor the rights of others. onsemi products are not designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use onsemi products for any such unintended or unauthorized application, Buyer shall indemnify and hold onsemi and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that onsemi was negligent regarding the design or manufacture of the part. onsemi is an Equal Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner. Other names and brands may be claimed as the property of others.
+
+
+
+
+
+FDP027N08B
+N-Channel PowerTrench® MOSFET
+80 V, 223 A, 2.7 mΩ
+
+Features
+• RDS(on) = 2.21 mΩ ( Typ.) @ VGS = 10 V, ID = 100 A
+Description
+This N-Channel MOSFET is produced using ON Semicon-
+
+• Low FOM R
+DS(on) * QG
+ductor’s PowerTrench® process that has been tailored to mini- mize the on-state resistance while maintaining superior
+
+• Low Reverse-Recovery Charge, Qrr = 112 nC
+• Soft Reverse-Recovery Body Diode
+• Enables High Efficiency in Synchronous Rectification
+• Fast Switching Speed
+• 100% UIL Tested
+• This device is Pb-Free, Halogen Free/BFR Free and is RoHS Compliant
+switching performance.
+
+
+Applications
+• Synchronous Rectification for ATX / Server / Telecom PSU
+• Battery Protection Circuit
+• Motor Drives and Uninterruptible Power Supplies
+
+
+D
+
+
+
+
+GDS
+G
+TO-220
+
+S
+MOSFET Maximum Ratings TC = 25ᵒC unless otherwise noted.
+
+Symbol
+VDSS VGSS
+
+ID
+
+IDM
+
+Drain to Source Voltage Gate to Source Voltage
+Drain Current Drain Current
+Parameter
+
+
+- Continuous (TC = 25ᵒC, Silicon Limited)
+- Continuous (TC = 100ᵒC, Silicon Limited)
+- Continuous (TC = 25ᵒC, Package Limited)
+- Pulsed             (Note 1)
+FDP027N08B_F102
+80
+±20 223*
+158*
+120
+892
+Unit V V
+A A
+
+EAS
+dv/dt
+Single Pulsed Avalanche Energy                  (Note 2)
+Peak Diode Recovery dv/dt                    (Note 3)
+(TC = 25ᵒC)
+917
+6.0
+246
+mJ
+V/ns W
+
+PD       Power Dissipation
+- Derate Above 25ᵒC
+1.64
+W/ᵒC
+
+Tᴊ, Tꜱᴛɢ Tʟ
+Operating and Storage Temperature Range
+Maximum Lead Temperature for Soldering, 1/8” from Case for 5 Seconds
+-55 to +175    ᵒC
+300      ᵒC
+*Calculated continuous current based on maximum allowable junction temperature. Package limitation current is 120 A.
+
+
+Thermal Characteristics
+Symbol
+
+
+Parameter
+
+
+FDP027N08B_F102
+
+
+Unit
+RθJC       Thermal Resistance, Junction to Case, Max.                      0.61      oC/W
+RθJA       Thermal Resistance, Junction to Ambient, Max.                    62.5
+
+©2011 Semiconductor Components Industries, LLC             1
+December 2017, Rev. 3
+Publication Order Number:
+FDP027N08B/D
+
+Package Marking and Ordering Information
+Part Number      Top Mark    Package   Packing Method   Reel Size    Tape Width    Quantity
+FDP027N08B-F102   FDP027N08B    TO-220      Tube        N/A       N/A      50 units
+Electrical Characteristics TC = 25ᵒC unless otherwise noted.
+Symbol          Parameter             Test Conditions      Min.   Typ.   Max.   Unit
+Off Characteristics
+
+BVDSS
+ΔBVDSS
+/ ΔTJ
+IDSS IGSS
+Drain to Source Breakdown Voltage Breakdown Voltage Temperature Coefficient
+Zero Gate Voltage Drain Current Gate to Body Leakage Current
+ID = 250 μA, VGS = 0 V
+ID = 250 μA, Referenced to 25ᵒC VDS = 64 V, VGS = 0 V
+VDS = 64 V, TC = 150ᵒC VGS = ±20 V, VDS = 0 V
+80   -
+-   0.05
+-    -
+-    -
+-    -
+-
+- 1
+500
+±100
+V
+V/ᵒC
+
+μA nA
+On Characteristics
+VGS(th)     Gate Threshold Voltage          VGS = VDS, ID = 250 μA        2.5    -    4.5    V RDS₍ₒn₎    Static Drain to Source On Resistance    VGS = 10 V, ID = 100 A         -    2.21   2.7   mΩ gFS       Forward Transconductance        VDS = 10 V, ID = 100 A         -    227    -    S
+Dynamic Characteristics
+
+Ciss Coss
+Input Capacitance Output Capacitance
+
+VDS
+
+= 40 V, VGS
+
+= 0 V,
+-   10170
+-   1670
+13530  pF
+2220  pF
+
+Crss Coss(er) Qg(tot) Qgs Qgs2 Qgd ESR
+Reverse Transfer Capacitance Engry Related Output Capacitance Total Gate Charge at 10V
+Gate to Source Gate Charge
+Gate Charge Threshold to Plateau Gate to Drain “Miller” Charge Equivalent Series Resistance (G-S)
+f = 1 MHz
+
+VDS = 40 V, VGS = 0 V
+
+VDS = 40 V, VGS = 10 V,
+ID = 100A
+
+f = 1 MHz
+-
+-
+-
+-
+-
+(Note 4)  -
+-
+35
+3025
+137
+56
+25
+28
+2.4
+-   pF
+-   pF
+178  nC
+-   nC
+-   nC
+-   nC
+-   Ω
+Switching Characteristics
+
+td(on)
+Turn-On Delay Time
+-   47
+104  ns
+
+tr       Turn-On Rise Time
+td(off)     Turn-Off Delay Time
+VDD = 40 V, ID = 100 A, VGS = 10 V, RG = 4.7 Ω
+-    66   142   ns
+-    87   184   ns
+
+tf       Turn-Off Fall Time
+(Note 4)  -
+41   92   ns
+Drain-Source Diode Characteristics
+
+Iꜱ Iꜱᴍ Vꜱᴅ
+trr
+Maximum Continuous Drain to Source Diode Forward Current           -
+Maximum Pulsed Drain to Source Diode Forward Current             -
+Drain to Source Diode Forward Voltage   VGS = 0 V, ISD = 100 A         - Reverse Recovery Time          VGS = 0 V, VDD = 40 V, ISD = 100 A,   -
+-   223*   A
+-    892   A
+-    1.3   V
+80    -   ns
+
+Qrr
+Notes:
+Reverse Recovery Charge
+dIF/dt = 100 A/μs
+-   112
+-   nC
+1. Repetitive rating: pulse-width limited by maximum junction temperature.
+2. L = 3 mH, IAS = 24.72 A, RG = 25 Ω, starting TJ = 25°C.
+3. ISD ≤ 100 A, di/dt ≤ 200 A/μs, VDD ≤ BVDSS, starting TJ = 25°C.
+4. Essentially independent of operating temperature typical characteristics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.onsemi.com 2
+
+
+Typical Performance Characteristics
+
+Figure 1. On-Region Characteristics       Figure 2. Transfer Characteristics
+
+500
+
+
+
+
+
+100
+500
+
+
+
+100
+
+
+*Notes:
+1. VDS = 10V
+2. 250μs Pulse Test
+
+175oC
+
+
+
+
+
+
+
+
+
+25oC
+
+
+
+
+
+
+*Notes:
+10   1. 250μs Pulse Test
+2. TC = 25oC
+5
+VGS = 15.0V
+10.0V           10
+8.0V
+7.0V
+6.5V
+6.0V
+5.5V
+1
+
+
+
+
+
+
+-55oC
+
+0.1             1        4
+VDS, Drain-Source Voltage[V]
+2.5  3.0  3.5  4.0  4.5  5.0  5.5  6.0  6.5
+VGS, Gate-Source Voltage[V]
+
+Figure 3. On-Resistance Variation vs.        Figure 4. Body Diode Forward Voltage Drain Current and Gate Voltage           Variation vs. Source Current
+and Temperature
+3.0                                500
+
+
+2.5
+
+
+
+2.0
+
+VGS = 10V
+
+
+
+
+
+VGS = 20V
+100
+
+
+
+
+
+10
+
+
+
+175oC
+
+
+
+25oC
+
+
+1.5
+
+
+
+1.0
+
+
+
+
+*Note: TC = 25ᵒC
+1
+
+
+*Notes:
+1. VGS = 0V
+2. 250μs Pulse Test
+
+0    100   200   300   400   500
+ID, Drain Current [A]
+0.2   0.4   0.6   0.8   1.0   1.2 1.3
+VSD, Body Diode Forward Voltage [V]
+Figure 5. Capacitance Characteristics       Figure 6. Gate Charge Characteristics
+
+30000
+
+10000
+
+
+
+
+
+Ciss
+10
+
+
+8       VDS = 16V
+VDS = 40V
+
+
+
+1000
+
+
+
+100
+
+
+
+10
+
+
+
+
+
+*Note:
+1. VGS = 0V
+2. f = 1MHz
+Ciss = Cgs + Cgd (Cds = shorted) Coss = Cds + Cgd
+Crss = Cgd
+
+
+
+
+Coss
+
+
+
+
+
+Crss
+VDS = 64V
+6
+
+
+4
+
+
+2
+
+
+0
+
+
+
+
+
+
+
+
+
+
+
+*Note: ID = 100A
+
+0.1       1       10      80
+VDS, Drain-Source Voltage [V]
+0    30    60    90   120   150
+Qg, Total Gate Charge [nC]
+
+
+
+
+
+www.onsemi.com 3
+
+Typical Performance Characteristics (Continued)
+
+Figure 7. Breakdown Voltage Variation        Figure 8. On-Resistance Variation vs. Temperature                    vs. Temperature
+
+1.08
+2.0
+
+
+
+1.04
+1.5
+
+
+1.00
+
+
+
+
+0.96
+
+
+
+0.92
+
+
+
+*Notes:
+1. VGS = 0V
+2. ID = 250μA
+1.0
+
+
+
+
+0.5
+
+
+
+*Notes:
+1. VGS = 10V
+2. ID = 100A
+
+-80  -40  0   40  80  120  160  200
+TJ, Junction Temperature [ᵒC]
+-100  -50   0   50  100  150  200
+TJ, Junction Temperature [ᵒC]
+Figure 9. Maximum Safe Operating Area      Figure 10. Maximum Drain Current
+vs. Case Temperature
+
+2000
+1000
+
+
+100
+
+
+10
+
+
+1
+
+
+0.1
+
+
+
+
+
+
+
+
+
+
+
+Operation in This Area is Limited by R DS(on)
+*Notes:
+1. TC = 25oC
+2. TJ = 175oC
+3. Single Pulse
+
+
+
+10us
+   100us 1ms
+10ms
+DC
+250
+
+
+200
+
+
+150
+
+
+100
+
+
+50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+R = 0.61ᵒC/W
+
+
+
+VGS= 10V
+θJC
+0.01                               0
+1         10        100  200         25   50   75   100  125  150  175
+
+V , Drain-Source Voltage [V]
+TC, Case Temperature [ᵒC]
+DS
+
+Figure 11. Eoss vs. Drain to Source Voltage     Figure 12. Unclamped Inductive
+Switching Capability
+6                              200
+
+5                              100
+
+
+4
+
+3
+10      TJ = 150 oC
+2
+
+
+TJ = 25 oC
+
+1
+
+
+0
+0     20     40     60     80
+1
+0.001  0.01  0.1   1   10   100  1000
+
+VDS, Drain to Source Voltage [V]
+tAV
+, TIME IN AVALANCHE (ms)
+
+
+
+www.onsemi.com 4
+
+
+Typical Performance Characteristics (Continued)
+
+Figure 13. Transient Thermal Response Curve
+
+1
+
+
+
+0.5
+
+
+
+0.1
+
+
+
+
+
+0.01
+0.005
+0.2
+
+0.1
+
+0.05
+
+0.02
+0.01
+Single pulse
+
+
+PDM
+t₁
+t₂
+*Notes:
+1. ZθJC(t) = 0.61oC/W Max.
+2. Duty Factor, D= t1/t2
+3. TJM - TC = PDM * ZθJC(t)
+10⁻⁵      10⁻⁴      10⁻³      10⁻²      10⁻¹       1
+t₁R, Reecctatanngguullaarr PPuullsseeDDuurraatitoionn[s[esce]c]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.onsemi.com 5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IG = const.
+
+
+
+Figure 14. Gate Charge Test Circuit & Waveform
+
+
+
+
+
+
+
+
+
+
+
+
+V10GVS
+
+
+
+
+VGS
+RG
+RL
+VDS
+
+
+
+
+
+
+DUT
+
+
+
+
+VDD
+
+VDS
+
+
+
+
+
+
+VGS
+
+
+90%
+
+
+
+
+
+10%
+
+
+td(on)  tr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+td(off)
+f
+t on           t off
+
+Figure 15. Resistive Switching Test Circuit & Waveforms
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ VGS
+
+
+
+Figure 16. Unclamped Inductive Switching Test Circuit & Waveforms
+
+
+
+
+
+www.onsemi.com 6
+
+
+
+
+
+
+
+
+DUT    +
+
+
+VDS
+
+_
+
+
+I SD
+L
+
+
+
+
+
+
+
+
+
+VGS
+Driver
+RG
+
+
+
+Same Type as DUT
+
+
+• dv/dt controlled by RG
+• ISD controlled by pulse period
+
+
+
+
+VDD
+
+
+
+
+
+
+VGS
+( Driver )
+
+
+
+I SD
+( DUT )
+Gate Pulse Width D = --------------------------
+Gate Pulse Period
+
+
+
+IFM , Body Diode Forward Current
+
+
+
+IRM
+
+
+
+
+
+
+
+
+di/dt
+
+10V
+
+
+
+
+VDS
+( DUT )
+Body Diode Reverse Current
+
+
+Body Diode Recovery dv/dt
+
+
+VSD
+VDD
+
+
+Body Diode Forward Voltage Drop
+Figure 17. Peak Diode Recovery dv/dt Test Circuit & Waveforms
+
+
+
+
+
+
+www.onsemi.com 7
+
+
+Mechanical Dimensions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 18. TO-220, Molded, 3-Lead, Jedec Variation AB (Delta)
+Package drawings are provided as a service to customers considering ON Semiconductor components. Drawings may change in any manner without notice. Please note the revision and/or date on the drawing and contact a ON Semiconductor representative to verify or obtain the most recent revision. Package specifications do not expand the terms of ON Semiconductor's worldwide terms and conditions, specif-ically the warranty therein, which covers ON Semiconductor products.
+Always visit ON Semiconductor’s online packaging area for the most recent package drawings: www.onsemi.com
+
+
+
+
+
+www.onsemi.com
+8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ON Semiconductor and  are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries. ON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+PUBLICATION ORDERING INFORMATION
+LITERATURE FULFILLMENT:
+Literature Distribution Center for ON Semiconductor 19521 E. 32nd Pkwy, Aurora, Colorado 80011 USA
+Phone: 303−675−2175 or 800−344−3860 Toll Free USA/Canada Fax: 303−675−2176 or 800−344−3867 Toll Free USA/Canada Email: orderlit@onsemi.com
+© Semiconductor Components Industries, LLC
+
+
+N. American Technical Support: 800−282−9855 Toll Free USA/Canada
+Europe, Middle East and Africa Technical Support:
+Phone: 421 33 790 2910
+
+
+ON Semiconductor Website: www.onsemi.com
+Order Literature: http://www.onsemi.com/orderlit
+For additional information, please contact your local Sales Representative
+
+www.onsemi.com

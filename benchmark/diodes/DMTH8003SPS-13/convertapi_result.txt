@@ -1,0 +1,1036 @@
+
+
+
+
+Green
+DMTH8003SPS
+80V +175°C N-CHANNEL ENHANCEMENT MODE MOSFET
+PowerDI5060-8
+
+
+Product Summary
+
+BVDSS       RDS(ON) Max
+
+
+
+ID
+TC = +25°C
+Features
+•  Rated to +175°C – Ideal for High Ambient Temperature Environments
+
+
+80V
+3.9mΩ @ VGS = 10V     120A
+•  100% Unclamped Inductive Switching Test in Production – Ensures More Reliable and Robust End Application
+
+6mΩ @ VGS = 6V
+97A
+•  Thermally Efficient Package – Cooler Running Applications
+•  High Conversion Efficiency
+•  Low RDS(ON) – Minimizes On-State Losses
+•  Lead-Free Finish; RoHS Compliant (Notes 1 & 2)
+•  Halogen and Antimony Free. “Green” Device (Note 3)
+  •  For automotive applications requiring specific change control
+
+Description and Applications
+This MOSFET is designed to minimize the on-state resistance (RDS(ON)) yet maintain superior switching performance, making it ideal
+(i.e. parts qualified to AEC-Q100/101/200, PPAP capable, and manufactured in IATF 16949 certified facilities), please contact us or your local Diodes representative. https://www.diodes.com/quality/product-definitions/
+for high efficiency power management applications.      
+Mechanical Data
+
+•  Switching
+•  Synchronous Rectification
+•  DC-DC Converters
+•  Package: PowerDI®5060-8
+•  Package Material: Molded Plastic, “Green” Molding Compound. UL Flammability Classification Rating 94V-0
+•  Moisture Sensitivity: Level 1 per J-STD-020
+•  Terminal Finish – Matte Tin Annealed over Copper Leadframe.
+Solderable per MIL-STD-202, Method 208 e3
+•  Weight: 0.097 grams (Approximate) PowerDI5060-8 (Type K)
+S               D
+
+S               D
+
+S               D
+
+
+
+
+Top View
+Pin1
+
+
+Bottom View
+
+
+
+Internal Schematic
+G               D
+
+
+Top View Pin Configuration
+
+Ordering Information (Note 4)
+Part Number               Package
+
+
+
+Qty.
+
+
+Packing
+
+
+
+Carrier
+DMTH8003SPS-13           PowerDI5060-8 (Type K)           2,500          Tape & Reel
+Notes:  1. EU Directive 2002/95/EC (RoHS), 2011/65/EU (RoHS 2) & 2015/863/EU (RoHS 3) compliant. All applicable RoHS exemptions applied.
+2. See https://www.diodes.com/quality/lead-free/ for more information about Diodes Incorporated’s definitions of Halogen- and Antimony-free, "Green" and Lead-free.
+3. Halogen- and Antimony-free "Green” products are defined as those which contain <900ppm bromine, <900ppm chlorine (<1500ppm total Br + Cl) and
+<1000ppm antimony compounds.
+4. For packaging details, go to our website at https://www.diodes.com/design/support/packaging/diodes-packaging/.
+
+Marking Information
+D  D  D  D
+
+
+
+
+TH8003SS
+YY WW
+= Manufacturer’s Marking TH8003SS = Product Type Marking Code YYWW = Date Code Marking
+YY = Last Two Digits of Year (ex: 21 = 2021) WW = Week Code (01 to 53)
+
+
+S  S  S  G
+PowerDI is a registered trademark of Diodes Incorporated.
+DMTH8003SPS
+Document number: DS39685 Rev. 5 - 2
+
+
+1 of 7
+www.diodes.com
+
+
+November 2021
+© Diodes Incorporated
+
+DMTH8003SPS
+
+
+Maximum Ratings (@TA = +25°C, unless otherwise specified.)
+Characteristic
+Drain-Source Voltage Gate-Source Voltage
+Continuous Drain Current, VGS = 10V (Note 6)              TC = +25°C TC = +100°C
+Pulsed Drain Current (10μs Pulse, Duty Cycle = 1%)
+Continuous Body Diode Forward Current (Note 6)             TC = +25°C Pulsed Body Diode Forward Current (10μs Pulse, Duty Cycle = 1%)
+Avalanche Current, L = 3mH (Note 8) Avalanche Energy, L = 3mH (Note 8) Avalanche Current, L = 0.1mH Avalanche Energy, L = 0.1mH
+
+
+Symbol VDSS VGSS
+
+ID
+
+IDM IS ISM IAS EAS IAS EAS
+
+
+Value
+80
+±20
+120
+85
+480
+95
+480
+15.8
+375.4
+65
+211.4
+
+
+Unit V V
+
+A
+
+A A A A
+mJ A
+mJ
+
+
+Thermal Characteristics
+
+Total Power Dissipation (Note 5)
+
+
+Characteristic
+
+
+Symbol
+PD
+
+
+Value
+2.9
+
+
+Unit
+W
+
+Thermal Resistance, Junction to Ambient (Note 5) Total Power Dissipation (Note 6)
+Thermal Resistance, Junction to Case (Note 6) Operating and Storage Temperature Range
+RθJA PD RθJC
+TJ, TSTG
+51
+125
+1.2
+-55 to +175
+°C/W W
+°C/W
+°C
+
+
+Electrical Characteristics (@TA = +25°C, unless otherwise specified.)
+Characteristic          Symbol   Min    Typ    Max    Unit       Test Condition OFF CHARACTERISTICS (Note 7)
+Drain-Source Breakdown Voltage           BVDSS    80     —     —     V   VGS = 0V, ID = 1mA Zero Gate Voltage Drain Current            IDSS     —     —     1     µA   VDS = 64V, VGS = 0V Gate-Source Leakage                 IGSS     —     —    ±100    nA   VGS = ±20V, VDS = 0V ON CHARACTERISTICS (Note 7)
+
+Gate Threshold Voltage
+VGS(TH)    2     —     4
+V  VDS = VGS, ID = 250µA
+Static Drain-Source On-Resistance          RDS(ON)    —    3.1    3.9    mΩ   VGS = 10V, ID = 30A
+
+
+Diode Forward Voltage
+DYNAMIC CHARACTERISTICS (Note 8)
+Input Capacitance Output Capacitance
+Reverse Transfer Capacitance Gate Resistance
+Total Gate Charge Gate-Source Charge Gate-Drain Charge Turn-On Delay Time Turn-On Rise Time Turn-Off Delay Time Turn-Off Fall Time
+Reverse Recovery Time Reverse Recovery Charge
+—
+VSD   —
+
+Ciss    —
+Coss   —
+Crss   —
+Rg    —
+Qg    —
+Qgs    —
+Qgd    —
+tD(ON)   —
+tR    —
+tD(OFF)   —
+tF    —
+tRR    —
+QRR   —
+4.1
+—
+
+8,952
+533
+26
+0.85
+124.3
+24.3
+35.7
+12.6
+24.4
+47.9
+20.9
+56.2
+118.7
+6
+1.3
+
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+mΩ  VGS = 6V, ID = 30A
+V  VGS = 0V, IS = 30A
+
+
+pF  VDS = 40V, VGS = 0V,
+f = 1MHz
+Ω   VDS = 0V, VGS = 0V, f = 1MHz nC  VDS = 40V, ID = 30A, VGS = 10V
+
+ns  VDD = 40V, VGS = 10V,
+ID = 30A, Rg = 2.5Ω
+
+ns  IF = 50A, di/dt = 100A/μs nC
+Notes:  5. Device mounted on FR-4 substrate PC board, 2oz copper, with thermal bias to bottom layer 1inch square copper plate.
+6. Thermal resistance from junction to soldering point (on the exposed drain pad).
+7. Short duration pulse test used to minimize self-heating effect.
+8. Guaranteed by design. Not subject to product testing.
+
+
+
+
+
+
+DMTH8003SPS
+Document number: DS39685 Rev. 5 - 2
+2 of 7
+www.diodes.com
+November 2021
+© Diodes Incorporated
+
+DMTH8003SPS
+
+
+100.0
+90.0
+80.0
+70.0
+60.0
+50.0
+40.0
+30.0
+
+VGS = 5.2V VGS = 5.5V
+
+
+VGS = 6.0V VGS = 10V
+
+
+
+
+
+VGS = 5.0V
+
+
+
+
+
+VGS = 4.7V
+100
+90
+80
+70
+60
+50
+40
+30
+
+
+VDS = 2.0V
+
+20.0
+
+VGS
+= 4.5V
+TJ = 175℃
+20
+TJ = 150℃
+TJ = 85℃ TJ = 25℃
+
+10.0
+0.0
+VGS
+= 4.2V
+10    TJ = 125℃
+0
+TJ = -55℃
+
+0    0.5    1    1.5    2    2.5    3
+VDS, DRAIN-SOURCE VOLTAGE (V)
+Figure 1. Typical Output Characteristic
+0   1   2   3   4   5   6   7   8
+VGS, GATE-SOURCE VOLTAGE (V)
+Figure 2. Typical Transfer Characteristic
+
+
+5.00
+
+4.50
+
+4.00
+
+3.50
+
+3.00
+
+2.50
+
+2.00
+
+
+
+
+
+
+
+VGS = 6.0V
+
+
+
+
+
+VGS = 10V
+20
+18
+16
+14
+12
+10
+8
+6
+4
+2  ID = 50A
+0
+
+
+
+
+ID = 100A
+
+10  20  30  40  50  60  70  80  90  100
+ID, DRAIN-SOURCE CURRENT (A)
+Figure 3. Typical On-Resistance vs. Drain Current and Gate Voltage
+2   4   6   8  10  12  14  16  18  20
+VGS, GATE-SOURCE VOLTAGE (V)
+Figure 4. Typical Transfer Characteristic
+
+
+10
+VGS = 10V
+9
+8  TJ = 175℃
+7
+6  TJ = 150℃
+5  TJ = 125℃
+4  TJ = 85℃
+3
+TJ = 25℃
+2.6
+2.4
+2.2
+2
+1.8
+1.6
+1.4
+1.2
+1
+
+
+
+
+
+
+VGS = 10V, ID = 30A
+
+2
+1  TJ = -55℃
+0
+0.8
+0.6
+0.4
+
+VGS
+= 6.0V, ID
+= 30A
+
+10  20  30  40  50  60  70  80  90  100
+ID, DRAIN CURRENT (A)
+Figure 5. Typical On-Resistance vs. Drain Current and Temperature
+-50  -25  0  25  50  75  100 125 150 175
+TJ, JUNCTION TEMPERATURE (℃)
+Figure 6. On-Resistance Variation with Temperature
+
+
+DMTH8003SPS
+Document number: DS39685 Rev. 5 - 2
+3 of 7
+www.diodes.com
+November 2021
+© Diodes Incorporated
+
+DMTH8003SPS
+
+
+10
+9
+8
+7
+6     VGS = 6.0V, ID = 50A
+5
+4
+3
+2        VGS = 10V, ID = 100A
+1
+0
+4
+
+3.5
+
+3
+
+2.5
+
+2
+
+1.5
+
+1
+
+0.5
+
+0
+
+
+
+
+
+
+
+
+
+ID = 250μA
+
+
+
+
+ID = 1mA
+
+
+
+
+
+
+150
+-50  -25  0  25  50  75  100 125 150 175
+TJ, JUNCTION TEMPERATURE (℃)
+Figure 7. On-Resistance Variation with Temperature
+
+
+
+
+
+100000
+-50  -25  0  25  50  75  100 125 150 175
+TJ, JUNCTION TEMPERATURE (℃)
+Figure 8. Gate Threshold Variation vs. Junction Temperature
+
+
+
+120
+
+VGS
+
+= 0V
+
+
+10000
+f = 1MHz
+
+
+
+Ciss
+
+
+
+90                                1000
+Coss
+
+
+60         TJ = 175℃
+TJ = 150℃ TJ = 125℃
+30       TJ = 85℃
+TJ = 25℃
+0
+
+
+
+
+
+
+
+TJ = -55℃
+
+100
+
+
+10
+
+
+1
+
+
+
+Crss
+
+0      0.3     0.6     0.9     1.2
+VSD, SOURCE-DRAIN VOLTAGE (V)
+Figure 9. Diode Forward Voltage vs. Current
+
+10
+9
+8
+7
+6
+5
+
+
+
+
+1000
+
+
+
+100
+
+
+
+10
+0      20     40     60     80
+VDS, DRAIN-SOURCE VOLTAGE (V)
+Figure 10. Typical Junction Capacitance
+
+
+RDS(ON) Limited PW = 1µs
+PW = 10µs
+PW = 100µs
+
+4         DS = 40V, ID
+3
+2
+
+= 100A
+
+
+
+TJ(Max) = 175℃
+1  TC = 25℃
+Single Pulse
+PW = 1ms
+
+PW = 10ms
+PW = 100ms
+
+DUT on Infinite Heatsink
+1                                     VGS = 10V
+PW = DC
+
+0
+0   20   40   60   80  100  120  140
+0.1
+0.1        1        10       100
+
+Qg (nC)
+Figure 11. Gate Charge
+VDS, DRAIN-SOURCE VOLTAGE (V)
+Figure 12. SOA, Safe Operation Area
+
+
+DMTH8003SPS
+Document number: DS39685 Rev. 5 - 2
+4 of 7
+www.diodes.com
+November 2021
+© Diodes Incorporated
+
+DMTH8003SPS
+
+
+
+1
+
+
+
+
+
+0.1
+
+
+D=0.7 D=0.5
+D=0.3
+
+
+D=0.1
+
+
+
+
+
+D=0.9
+
+D=0.05
+
+
+
+
+0.01
+D=0.02
+
+
+
+D=0.01 D=0.005
+
+
+
+
+
+
+
+RθJC
+
+
+
+
+(t) = r(t) * RθJC
+
+
+
+
+0.001
+D=Single Pulse
+RθJC = 1.2℃/W
+Duty Cycle, D = t1 / t2
+1E-06    1E-05    0.0001    0.001     0.01     0.1      1      10
+t1, PULSE DURATION TIME (sec)
+Figure 13. Transient Thermal Resistance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DMTH8003SPS
+Document number: DS39685 Rev. 5 - 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5 of 7
+www.diodes.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+November 2021
+© Diodes Incorporated
+
+DMTH8003SPS
+
+Package Outline Dimensions
+Please see http://www.diodes.com/package-outlines.html for the latest version.
+
+PowerDI5060-8 (Type K)
+D D1
+
+PowerDI5060-8 (Type K)
+
+
+
+
+
+x              c
+E1 E
+y
+e
+0( 4x) A1
+
+
+
+
+
+S eating Plane
+Dim
+A A1
+b b1 b2 c D
+Min
+0.90
+0
+0.33
+0.300
+0.20
+0.23
+Max
+1.10
+0.05
+0.51
+0.366
+0.35
+0.33
+5.15 BSC
+Typ
+1.00
+0.02
+0.41
+0.333
+0.25
+0.277
+
+
+
+1
+
+b1( 8x)
+C
+
+Ø1.000 Depth 0.07±0.030
+
+01( 4x)
+DE TAIL A
+D1   4.85  4.95  4.90 D2   -    -   3.98 E     6.15 BSC
+E1  5.75  5.85  5.80
+E2  3.56  3.725 3.66
+e    1.27BSC
+
+b( 8x)      e/2
+1
+L
+D2
+
+
+
+k b2( 2x)
+k   -
+L  0.51
+La  0.51
+L1  0.05
+L4   -
+M  3.50
+x   -
+- 0.71
+0.675
+0.20
+- 3.71
+-
+1.27
+0.61
+0.61
+0.175
+0.125
+3.605
+1.400
+
+E2        L4
+M
+A            y    -
+θ  10°
+θ1  6°
+- 12°
+8°
+1.900
+11°
+7°
+
+
+
+La              L1
+DE TAIL A
+All Dimensions in mm
+
+Suggested Pad Layout
+Please see http://www.diodes.com/package-outlines.html for the latest version.
+
+
+PowerDI5060-8 (Type K)
+
+
+X2
+
+Y1 
+
+
+Y2 
+Y3 
+
+G1   X1
+Dimensions C
+G G1 X X1 X2 Y Y1 Y2 Y3
+Value (in mm) 1.270
+0.660
+0.820
+0.610
+3.910
+4.420
+1.270
+1.020
+3.810
+6.610
+
+
+
+Y     C       X ( 8x) G
+
+
+
+
+
+DMTH8003SPS
+Document number: DS39685 Rev. 5 - 2
+6 of 7
+www.diodes.com
+November 2021
+© Diodes Incorporated
+
+DMTH8003SPS
+
+
+
+IMPORTANT NOTICE
+
+1.    DIODES INCORPORATED AND ITS SUBSIDIARIES (“DIODES”) MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH REGARDS TO ANY INFORMATION CONTAINED IN THIS DOCUMENT, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS (AND THEIR EQUIVALENTS UNDER THE LAWS OF ANY JURISDICTION).
+2.    The Information contained herein is for informational purpose only and is provided only to illustrate the operation of Diodes products described herein and application examples. Diodes does not assume any liability arising out of the application or use of this document or any product described herein. This document is intended for skilled and technically trained engineering customers and users who design with Diodes products. Diodes products may be used to facilitate safety-related applications; however, in all instances customers and users are responsible for
+(a) selecting the appropriate Diodes products for their applications, (b) evaluating the suitability of the Diodes products for their intended applications, (c) ensuring their applications, which incorporate Diodes products, comply the applicable legal and regulatory requirements as well as safety and functional-safety related standards, and (d) ensuring they design with appropriate safeguards (including testing, validation, quality control techniques, redundancy, malfunction prevention, and appropriate treatment for aging degradation) to minimize the risks associated with their applications.
+
+3.    Diodes assumes no liability for any application-related information, support, assistance or feedback that may be provided by Diodes from time to time. Any customer or user of this document or products described herein will assume all risks and liabilities associated with such use, and will hold Diodes and all companies whose products are represented herein or on Diodes’ websites, harmless against all damages and liabilities.
+
+4.    Products described herein may be covered by one or more United States, international or foreign patents and pending patent applications. Product names and markings noted herein may also be covered by one or more United States, international or foreign trademarks and trademark applications. Diodes does not convey any license under any of its intellectual property rights or the rights of any third parties (including third parties whose products and services may be described in this document or on Diodes’ website) under this document.
+5.    Diodes   products   are   provided   subject   to   Diodes’   Standard   Terms   and   Conditions   of   Sale (https://www.diodes.com/about/company/terms-and-conditions/terms-and-conditions-of-sales/) or other applicable terms. This document does not alter or expand the applicable warranties provided by Diodes. Diodes does not warrant or accept any liability whatsoever in respect of any products purchased through unauthorized sales channel.
+6.    Diodes products and technology may not be used for or incorporated into any products or systems whose manufacture, use or sale is prohibited under any applicable laws and regulations. Should customers or users use Diodes products in contravention of any applicable laws or regulations, or for any unintended or unauthorized application, customers and users will (a) be solely responsible for any damages, losses or penalties arising in connection therewith or as a result thereof, and (b) indemnify and hold Diodes and its representatives and agents harmless against any and all claims, damages, expenses, and attorney fees arising out of, directly or indirectly, any claim relating to any noncompliance with the applicable laws and regulations, as well as any unintended or unauthorized application.
+
+7.    While efforts have been made to ensure the information contained in this document is accurate, complete and current, it may contain technical inaccuracies, omissions and typographical errors. Diodes does not warrant that information contained in this document is error-free and Diodes is under no obligation to update or otherwise correct this information. Notwithstanding the foregoing, Diodes reserves the right to make modifications, enhancements, improvements, corrections or other changes without further notice to this document and any product described herein. This document is written in English but may be translated into multiple languages for reference. Only the English version of this document is the final and determinative format released by Diodes.
+
+8.    Any unauthorized copying, modification, distribution, transmission, display or other use of this document (or any portion hereof) is prohibited. Diodes assumes no responsibility for any losses incurred by the customers or users or any third parties arising from any such unauthorized use.
+Copyright © 2021 Diodes Incorporated
+
+www.diodes.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DMTH8003SPS
+Document number: DS39685 Rev. 5 - 2
+7 of 7
+www.diodes.com
+November 2021
+© Diodes Incorporated

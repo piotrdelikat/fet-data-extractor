@@ -1,0 +1,1289 @@
+Public
+IQDH88N06LM5CGSC
+Final datasheet
+
+MOSFET
+OptiMOS™ 5 Power‑Transistor, 60 V
+Features
+• N‑channel, logic level
+• Very low on‑resistance RDS₍ₒn₎
+• Superior thermal resistance
+
+
+
+
+
+PG‑WHTFN‑9
+5
+6
+7
+8
+
+
+9
+
+4
+
+• Optimized design for double side cooling
+• 100% avalanche tested
+• Pb‑free lead plating; RoHS compliant
+• Halogen‑free according to IEC61249‑2‑21
+Product validation
+Fully qualified according to JEDEC for Industrial Applications
+Table 1  Key Performance Parameters
+3
+2
+1
+
+
+
+
+Drain
+Pin 5-8
+
+
+Gate       *1
+Pin 9
+
+Parameter
+VDS
+RDS(on),max ID
+Qoss QG
+Value 60
+0.86
+447
+133
+76
+Unit V
+mΩ A
+nC nC
+
+
+*1: Internal body diode
+Source Pin 1-4
+
+
+
+Type/Ordering Code              Package            Marking       Related Links
+IQDH88N06LM5CGSC              PG‑WHTFN‑9           QA            ‑
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+Table of Contents
+Description                                                   1
+Maximum ratings                                               3
+Thermal characteristics                                           3
+Electrical characteristics                                           4
+Electrical characteristics diagrams                                     6
+Package Outlines                                               10
+Revision History                                               12
+Trademarks                                                  12
+Disclaimer                                                   12
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+1 Maximum ratings
+at TA=25 °C, unless otherwise specified
+Table 2  Maximum ratings
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+
+Continuous drain current 1)      ID
+447
+316
+263
+42
+VGS=10 V, TC=25 °C VGS=10 V, TC=100 °C VGS=4.5 V, TC=100 °C
+VGS=10 V,TA=25 °C,RthJA=50 °C/W 2)
+
+Pulsed drain current 3) Avalanche energy, single pulse 4) Gate source voltage
+Power dissipation
+
+Operating and storage temperature
+ID,pulse EAS VGS
+Ptot
+
+Tj, Tstg
+‑  ‑
+‑  ‑
+‑20 ‑
+
+‑  ‑
+
+‑55 ‑
+1788 A
+1115 mJ
+20  V
+333
+3.0
+175 °C
+TC=25 °C
+ID=50 A, RGS=25 Ω
+‑
+TC=25 °C
+TA=25 °C, RthJA=50 °C/W 2)
+‑
+1)  Rating refers to the product only with datasheet specified absolute maximum values, maintaining case temperature as
+specified. For other case temperatures please refer to Diagram 2. De‑rating will be required based on the actual environmental conditions.
+2)  Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm2 (one layer, 70 μm thick) copper area for source connection. PCB
+is vertical in still air.
+3) See Diagram 3 for more detailed information
+4) See Diagram 13 for more detailed information
+2 Thermal characteristics
+Table 3  Thermal characteristics
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Thermal resistance, junction ‑ case, bottom
+Thermal resistance, junction ‑ case, top
+Thermal resistance, junction ‑ ambient,
+6 cm² cooling area 5)
+
+RthJC RthJC
+
+RthJA
+‑   ‑   0.45
+
+‑   ‑   0.56
+
+
+‑   ‑   50
+°C/W  ‑
+
+°C/W  ‑
+
+
+°C/W  ‑
+
+5)  Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm2 (one layer, 70 μm thick) copper area for source connection. PCB
+is vertical in still air.
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+3 Electrical characteristics
+at Tj=25 °C, unless otherwise specified
+Table 4  Static characteristics
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Drain‑source breakdown voltage Gate threshold voltage
+Zero gate voltage drain current Gate‑source leakage current Drain‑source on‑state resistance
+Gate resistance Transconductance
+V(BR)DSS VGS(th)
+IDSS IGSS RDS(on)
+RG
+gfs
+60
+1.1
+
+‑
+
+‑
+
+‑
+
+‑ 115
+‑ 1.7
+0.1
+10
+10
+0.7
+1.0
+0.55
+230
+‑  V
+2.3  V
+
+100 μA
+100 nA
+0.86
+1.24
+‑  Ω
+‑  S
+VGS=0 V, ID=1 mA
+VDS=VGS, ID=163 μA
+VDS=60 V, VGS=0 V, Tj=25 °C
+VDS=60 V, VGS=0 V, Tj=125 °C
+VGS=20 V, VDS=0 V
+VGS=10 V, ID=50 A
+VGS=4.5 V, ID=50 A
+‑
+|VDS|≥2|ID|RDS₍ₒn₎mₐₓ, ID=50 A
+Table 5  Dynamic characteristics
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Input capacitance 6)
+Output capacitance 6)
+Reverse transfer capacitance 6)
+
+Turn‑on delay time Rise time
+Turn‑off delay time Fall time
+Ciss Coss Crss
+td(on) tr td(off) tf
+‑  11000
+‑  2000
+‑  95
+
+‑  14
+
+‑  8
+
+‑  53
+
+‑  16
+14000 pF
+2600 pF
+170  pF
+
+‑   ns
+
+‑   ns
+
+‑   ns
+
+‑   ns
+VGS=0 V, VDS=30 V, f=1 MHz VGS=0 V, VDS=30 V, f=1 MHz VGS=0 V, VDS=30 V, f=1 MHz
+VDD=30 V, VGS=10 V, ID=50 A, RG,ₑₓt=1.
+6 Ω
+VDD=30 V, VGS=10 V, ID=50 A, RG,ₑₓt=1. 6 Ω
+VDD=30 V, VGS=10 V, ID=50 A, RG,ₑₓt=1. 6 Ω
+VDD=30 V, VGS=10 V, ID=50 A, RG,ₑₓt=1. 6 Ω
+6) Defined by design. Not subject to production test.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+
+Table 6  Gate charge characteristics 7)
+
+
+Parameter
+
+Symbol
+
+
+Min.
+Values Typ.
+
+
+Max.
+
+Unit
+
+Note/ Test Condition
+
+Gate to source charge Gate charge at threshold Gate to drain charge 8) Switching charge
+Gate charge total 8) Gate plateau voltage Gate charge total 8)
+Gate charge total, sync. FET Output charge 8)
+Qgs Qg(th) Qgd
+Qsw Qg
+Vplateau Qg Qg(sync) Qoss
+‑  27
+‑  18
+‑  22
+‑  31
+‑  76
+‑  2.5
+‑  152
+‑  62
+‑  133
+‑  nC
+‑  nC
+33  nC
+‑  nC
+95  nC
+‑  V
+202 nC
+‑  nC
+177 nC
+VDD=30 V, ID=50 A, VGS=0 to 4.5 V
+VDD=30 V, ID=50 A, VGS=0 to 4.5 V VDD=30 V, ID=50 A, VGS=0 to 4.5 V VDD=30 V, ID=50 A, VGS=0 to 4.5 V VDD=30 V, ID=50 A, VGS=0 to 4.5 V VDD=30 V, ID=50 A, VGS=0 to 4.5 V VDD=30 V, ID=50 A, VGS=0 to 10 V VDS=0.1 V, VGS=0 to 4.5 V
+VDS=30 V, VGS=0 V
+7) See "Gate charge waveforms" for parameter definition
+8) Defined by design. Not subject to production test.
+
+
+Table 7  Reverse diode
+
+Parameter
+
+
+Symbol
+
+
+
+Min.
+
+Values Typ.
+
+
+
+Max.
+
+
+Unit
+
+
+Note/ Test Condition
+
+Diode continuous forward current Diode pulse current
+Diode forward voltage Reverse recovery time 9) Reverse recovery charge 9) Reverse recovery time 9) Reverse recovery charge 9)
+IS
+IS,pulse VSD
+trr Qrr trr Qrr
+‑  ‑
+‑  ‑
+‑  0.77
+‑  44
+‑  49
+‑  27
+‑  256
+271 A
+1788 A
+1.0  V
+88  ns
+98  nC
+54  ns
+512 nC
+TC=25 °C
+TC=25 °C
+VGS=0 V, IF=50 A, Tj=25 °C
+VR=30 V, IF=25 A, diF/dt=100 A/μs VR=30 V, IF=25 A, diF/dt=100 A/μs VR=30 V, IF=50 A, diF/dt=1000 A/μs VR=30 V, IF=50 A, diF/dt=1000 A/μs
+9) Defined by design. Not subject to production test.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+4 Electrical characteristics diagrams
+
+
+Diagram 1: Power dissipation                Diagram 2: Drain current
+
+350                                500
+
+
+300
+400
+
+250
+
+
+300
+200
+
+
+150
+200
+
+
+100
+
+100
+50
+
+
+0
+0   25   50   75   100  125  150  175
+TC [°C]
+0
+0   25   50   75   100  125  150  175
+TC [°C]
+Ptₒt=f(TC)                            ID=f(TC); VGS≥10 V
+
+
+
+Diagram 3: Safe operating area
+10⁴
+Diagram 4: Max. transient thermal impedance
+10¹
+
+
+
+
+
+10³
+
+
+
+
+
+10 µs
+
+1 µs
+
+
+
+
+
+10⁰
+single pulse 0.01
+0.02
+0.05
+0.1
+0.2
+0.5
+
+
+
+10²
+100 µs
+
+
+DC      1 ms
+10 ¹
+
+10¹
+
+
+
+
+10⁰
+10 ms
+
+10 ²
+
+
+
+10 ¹
+10 ¹       10⁰       10¹       10²
+VDS [V]
+
+ID=f(VDS); TC=25 °C; D=0; parameter: tp
+10 ³
+10 ⁶   10 ⁵   10 ⁴   10 ³   10 ²   10 ¹   10⁰
+tp [s]
+
+ZthJC=f(tp); parameter: D=tp/T
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+
+
+
+
+Diagram 5: Typ. output characteristics           Diagram 6: Typ. drain‑source on resistance
+
+2000                               2.4
+
+
+
+1750
+
+
+1500
+10 V
+5 V
+
+
+
+4.5 V
+
+
+3 V
+2.0
+
+
+
+
+3.5 V        4 V
+
+1.6
+1250
+
+
+
+1000
+4 V     1.2
+4.5 V
+
+750
+500
+3.5 V
+0.8
+5 V
+10 V
+3 V     0.4
+250
+
+
+2.8 V
+0
+0     1     2     3     4     5
+VDS [V]
+
+
+0.0
+
+
+
+0    200    400    600    800    1000
+ID [A]
+ID=f(VDS), Tj=25 °C; parameter: VGS               RDS₍ₒn₎=f(ID), Tj=25 °C; parameter: VGS
+
+
+Diagram 7: Typ. transfer characteristics          Diagram 8: Typ. drain‑source on resistance
+2000                               2.5
+
+
+1750
+
+
+
+1500
+
+25 °C
+
+2.0
+
+
+1250
+1.5
+
+
+1000
+175 °C
+
+
+
+750
+
+175 °C
+1.0
+
+100 °C
+
+
+500
+25 °C
+
+
+
+250
+0.5
+
+55 °C
+
+
+0
+0     1     2     3     4     5
+VGS [V]
+0.0
+
+0   2   4   6   8   10   12   14   16
+VGS [V]
+
+ID=f(VGS), |VDS|>2|ID|RDS₍ₒn₎mₐₓ; parameter: Tj         RDS₍ₒn₎=f(VGS), ID=50 A; parameter: Tj
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+
+
+
+
+Diagram 9: Normalized drain‑source on resistance    Diagram 10: Typ. gate threshold voltage
+
+2.0                                2.4
+
+
+
+2.0
+1.6
+1630 µA
+1.6
+1.2
+163 µA
+1.2
+
+0.8
+0.8
+
+
+0.4
+0.4
+
+
+
+0.0
+
+-75 -50 -25  0  25  50  75 100 125 150 175 200
+Tj [°C]
+0.0
+
+-75 -50 -25  0  25  50  75 100 125 150 175 200
+Tj [°C]
+RDS₍ₒn₎=f(Tj), ID=50 A, VGS=10 V                VGS₍th=f(Tj), VGS=VDS; parameter: ID
+
+
+
+Diagram 11: Typ. capacitances
+10⁵
+Diagram 12: Forward characteristics of reverse diode
+10⁴
+
+
+
+
+
+Ciss
+25 °C
+25 °C, max
+175 °C
+175 °C, max
+10⁴
+
+10³
+Coss
+
+10³
+
+
+
+
+10²
+
+
+Crss
+10²
+
+
+
+
+10¹
+
+0    10    20    30    40    50    60
+VDS [V]
+10¹
+0.0    0.5    1.0    1.5    2.0     2.5
+VSD [V]
+C=f(VDS); VGS=0 V; f=1 MHz                  IF=f(VSD); parameter: Tj
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+
+
+
+
+Diagram 13: Avalanche characteristics           Diagram 14: Typ. gate charge
+
+102                                      10
+12 V
+30 V
+48 V
+
+8
+25 °C
+
+
+
+100 °C
+6
+
+
+10¹
+
+150 °C
+
+4
+
+
+
+
+2
+
+
+
+10⁰
+
+100         10¹        10²        10³
+tAV [µs]
+0
+0   20   40   60   80  100  120  140  160
+Qgₐtₑ [nC]
+IAS=f(tAV); RGS=25 Ω; parameter: Tj,stₐrt            VGS=f(Qgₐtₑ), ID=50 A pulsed, Tj=25 °C; parameter: VDD
+
+
+Diagram 15: Min. drain‑source breakdown voltage    Gate charge waveforms
+65
+
+
+64
+
+
+63
+
+
+62
+
+
+61
+
+
+60
+
+
+59
+
+
+58
+
+
+57
+-75 -50 -25  0  25  50  75 100 125 150 175 200
+Tj [°C]
+
+VBR₍DSS₎=f(Tj); ID=1 mA                     ‑
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+5 Package Outlines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PACKAGE - GROUP NUMBER:
+
+DIMENSIONS
+PG-WHTFN-9-U02
+MILLIMETERS
+
+
+
+DIMENSIONS
+
+
+
+MILLIMETERS
+
+MIN.
+A    0.55
+A1    0.00
+b    0.32
+c    0.10
+D
+D1    4.13
+D2    3.40
+D3    0.75
+D4    3.93
+E
+5.00
+6.00
+MAX. 0.75
+0.05
+0.52
+0.30
+
+4.33
+3.60
+0.95
+4.13
+
+e e1 L L1
+aaa bbb ccc
+MIN.   MAX.
+1.27
+0.75
+0.50    0.70
+0.44    0.64
+0.05
+0.08
+0.10
+E1     3.28    3.48
+E2     3.93    4.13
+E3     1.16    1.36
+
+
+
+
+
+Figure 1 Outline PG‑WHTFN‑9, dimensions in mm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.2
+
+2.155
+
+1.27
+3×
+
+
+
+
+0.5
+4×
+
+
+
+
+
+
+
+
+
+
+1.27
+3×
+2.2
+
+1.905
+
+1.27
+2×
+
+
+
+
+
+
+
+
+0.51
+
+
+
+
+
+
+0.4
+4×
+
+0.47
+3×
+
+
+1.1
+
+
+
+0.8
+
+1.8
+5×
+
+
+
+
+
+
+
+
+
+
+
+Pin1
+
+
+
+0.5
+4×
+
+
+
+
+
+
+1.105
+
+2.2
+
+
+
+
+
+
+1.27
+3×
+2.155
+1.27
+3×
+
+1.905
+1.01
+0.4
+4×
+
+
+copper               solder mask             stencil apertures
+
+All pads are solder-mask defined All dimensions are in units mm
+
+Figure 2 Outline PG‑WHTFN‑9, dimensions in mm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27
+
+Public
+OptiMOS™ 5 Power‑Transistor, 60 V
+IQDH88N06LM5CGSC                     
+
+Revision History
+IQDH88N06LM5CGSC
+Revision 2024 ‑ 06 ‑ 14 , Rev. 2 . 0
+Previous Revision
+Revision Date    Subjects (major changes since last revision)
+2.0    2024‑06‑14  Release of final
+
+
+
+
+Trademarks
+All referenced product or service names and trademarks are the property of their respective owners.
+
+
+
+We Listen to Your Comments Any information within this document that you feel is wrong, unclear or missing at all? Your feedback will help us to continuously improve the quality of this document. Please send your proposal (including a reference to this document) to: erratum@infineon.com
+
+Published by
+Infineon Technologies AG 81726 München, Germany
+© 2024 Infineon Technologies AG All Rights Reserved.
+
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics (“Beschaffenheitsgarantie”) . With respect to any examples, hints or any typical values stated herein and/or any information regarding the application of the product, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation warranties of non‑infringement of intellectual property rights of any third party.
+
+In addition, any information given in this document is subject to customer’s compliance with its obligations stated in this document and any applicable legal requirements, norms and standards concerning customer’s products and any use of the product of Infineon Technologies in customer’s applications.
+
+The data contained in this document is exclusively intended for technically trained staff. It is the responsibility of customer’s technical departments to evaluate the suitability of the product for the intended application and the completeness of the product information given in this document with respect to such application.
+
+Information
+For further information on technology, delivery terms and conditions and prices please contact your nearest Infineon Technologies Office (www. infineon.com).
+
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+The Infineon Technologies component described in this Data Sheet may be used in life‑support devices or systems and/or automotive, aviation and aerospace applications or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life‑support, automotive, aviation and aerospace device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+
+
+
+
+
+
+
+
+
+
+Datasheet                                                             Revision 2.0
+https://www.infineon.com                                                    2024‑05‑27

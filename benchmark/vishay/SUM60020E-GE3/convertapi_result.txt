@@ -1,0 +1,1060 @@
+SUM60020E
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+N-Channel 80 V (D-S) MOSFET
+FEATURES
+
+TO-263
+
+
+
+
+
+
+
+S
+D
+• TrenchFET® power MOSFET
+• Maximum 175 °C junction temperature
+• Very low Qgd reduces power loss from passing through Vplₐtₑₐu
+• 100 % Rg and UIS tested
+• Material categorization: for definitions of compliance please see www.vishay.com/doc?99912
+
+Top View  G
+
+
+PRODUCT SUMMARY
+VDS (V)
+RDS₍ₒn₎ max. (Ω) at VGS = 10 V RDS₍ₒn₎ max. (Ω) at VGS = 7.5 V Qg typ. (nC)
+ID (A)
+
+
+
+
+
+80
+0.00210
+0.00247
+151.2
+150 d
+APPLICATIONS                 D
+• Power supply
+- Secondary synchronous rectification
+• DC/DC converter
+• Power tools              G
+• Motor drive switch
+• DC/AC inverter
+• Battery management              S
+
+Configuration
+Single
+• OR-ing / e-fuse
+
+N-Channel MOSFET
+
+ORDERING INFORMATION
+Package                             TO-263
+Lead (Pb)-free and halogen-free                  SUM60020E-GE3
+
+ABSOLUTE MAXIMUM RATINGS (TC = 25 °C, unless otherwise noted)
+
+PARAMETER
+Drain-source voltage Gate-source voltage
+Continuous drain current (TJ
+
+
+
+
+= 150 °C)      TC = 25 °C TC = 70 °C
+SYMBOL VDS VGS
+ID
+LIMIT
+80
+± 20
+150 d
+150 d
+UNIT
+
+V
+
+
+
+A
+
+Pulsed drain current (t = 100 μs) Avalanche current
+Single avalanche energy a             L = 0.1 mH
+Maximum power dissipation a           TC = 25 °C TC = 125 °C
+Operating junction and storage temperature range
+IDM IAS EAS
+PD
+
+TJ, Tstg
+500
+60
+180          mJ
+375 b
+125 b           W
+-55 to +175        °C
+
+
+THERMAL RESISTANCE RATINGS
+PARAMETER
+Junction-to-ambient (PCB mount) c
+Junction-to-case (drain)
+Notes
+a. Duty cycle ≤ 1 %
+b. See SOA curve for voltage derating
+c. When mounted on 1" square PCB (FR4 material)
+d. Package limited
+
+
+SYMBOL
+RthJA RthJC
+
+
+LIMIT
+40
+0.4
+
+
+UNIT
+
+°C/W
+
+
+
+S19-0181-Rev. A, 25-Feb-2019                   1                     Document Number: 77059 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SUM60020E
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+
+SPECIFICATIONS (TJ = 25 °C, unless otherwise noted)
+PARAMETER             SYMBOL      TEST CONDITIONS       MIN.    TYP.    MAX.    UNIT
+Static
+
+Drain-source breakdown voltage Gate threshold voltage
+Gate-body leakage
+
+
+Zero gate voltage drain current
+
+
+On-state drain current a
+
+Drain-source on-state resistance a
+
+Forward transconductance a
+Dynamic b
+Input capacitance Output capacitance
+Reverse transfer capacitance Total gate charge c
+Gate-source charge c Gate-drain charge c Output charge
+Gate resistance Turn-on delay time c Rise time c
+Turn-off delay time c
+Fall time c
+VDS VGS(th) IGSS
+
+
+IDSS
+
+
+ID(on) RDS(on)
+gfs
+
+
+Ciss Coss Crss Qg Qgs Qgd Qoss Rg td(on) tr td(off) tf
+VGS = 0 V, ID = 250 μA VDS = VGS, ID = 250 μA VDS = 0 V, VGS = ± 20 V VDS = 80 V, VGS = 0 V
+VDS = 80 V, VGS = 0 V, TJ = 125 °C VDS = 80 V, VGS = 0 V, TJ = 175 °C VDS ≥ 10 V, VGS = 10 V
+VGS = 10 V, ID = 30 A VGS = 7.5 V, ID = 20 A VDS = 15 V, ID = 30 A
+
+
+
+VGS = 0 V, VDS = 40 V, f = 1 MHz
+
+
+
+VDS = 40 V, VGS = 10 V, ID = 41.7 A
+
+
+VDS = 40 V, VGS = 0 V
+f = 1 MHz
+
+
+VDD = 40 V, RL = 1.2 Ω
+ID ≅ 33.3 A, VGEN = 10 V, Rg = 1 Ω
+80
+2
+-
+-
+-
+- 120
+-
+-
+-
+
+
+-
+-
+-
+-
+-
+-
+- 0.34
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+- 0.00175
+0.00190
+115
+
+
+10 680
+1180
+50
+151.2
+48.4
+24
+138
+1.7
+30
+13
+50
+15
+-
+V
+4
+± 250   nA
+1
+μA
+150
+5    mA
+-    A
+0.00210
+Ω
+0.00247
+-    S
+
+
+-
+-    pF
+- 227
+-
+nC
+-
+207
+3.4    Ω
+60
+26
+ns
+100
+30
+Drain-Source Body Diode Ratings and Characteristics b (TC = 25 °C)
+
+Pulsed current (t = 100 μs) Forward voltage a
+Reverse recovery time
+Peak reverse recovery charge Reverse recovery charge Reverse recovery fall time
+Reverse recovery rise time
+Notes
+ISM VSD
+trr IRM(REC)
+Qrr tₐ tb
+
+
+IF = 10 A, VGS = 0 V
+
+
+
+IF = 33.3 A, di/dt = 100 A/μs
+-     -
+-    0.75
+-    80
+-     4
+-   0.182
+-    44
+-    36
+250    A
+1.5    V
+160    ns
+6    A
+0.275   μC
+-
+ns
+-
+a. Pulse test; pulse width ≤ 300 μs, duty cycle ≤ 2 %
+b. Guaranteed by design, not subject to production testing
+c. Independent of operating temperature
+
+
+
+
+Stresses beyond those listed under “Absolute Maximum Ratings” may cause permanent damage to the device. These are stress ratings only, and functional operation of the device at these or any other conditions beyond those indicated in the operational sections of the specifications is not implied. Exposure to absolute maximum rating conditions for extended periods may affect device reliability.
+
+
+
+
+
+S19-0181-Rev. A, 25-Feb-2019                   2                     Document Number: 77059 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SUM60020E
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+TYPICAL CHARACTERISTICS (TA = 25 °C, unless otherwise noted)
+
+
+200
+
+
+
+150
+
+VGS = 10 V thru 6 V
+
+
+VGS = 5 V
+100
+
+
+80
+
+
+
+
+100
+
+
+
+50
+
+
+
+0
+
+
+
+
+
+
+
+
+
+VGS = 4 V
+60
+
+
+40
+
+20    TC = 25 °C TC = 125 °C
+0
+
+
+
+
+
+
+
+
+
+TC = -55 °C
+
+0     1     2     3     4
+VDS - Drain-to-Source Voltage (V)
+Output Characteristics
+0    1.6   3.2   4.8   6.4    8
+VGS - Gate-to-Source Voltage (V)
+Transfer Characteristics
+
+
+
+150
+
+
+120
+
+
+90
+
+
+60
+
+
+30
+
+TC = -55 °C TC = 25 °C
+
+
+
+
+
+
+TC = 125 °C
+0.0034
+
+
+
+0.0028
+
+
+
+0.0022
+
+
+
+0.0016
+
+
+
+
+
+
+
+
+
+
+VGS = 7.5 V
+
+
+
+
+
+
+
+
+
+
+
+
+
+VGS = 10 V
+
+
+0
+0   10   20   30   40   50   60
+ID - Drain Current (A)
+Transconductance
+0.0010
+
+0     50    100    150    200
+ID - Drain Current (A)
+On-Resistance vs. Drain Current
+
+
+
+
+10 000
+
+
+
+
+1000
+
+
+
+
+100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Crss
+
+
+
+Ciss
+
+
+
+
+
+Coss
+10
+ID = 42 A
+
+8
+
+
+6
+
+
+4
+
+
+2
+
+VDS = 20 V, 40 V, 64 V
+
+
+10
+0     20    40    60    80
+VDS - Drain-to-Source Voltage (V)
+Capacitance
+0
+0    30   60   90   120   150
+Qg - Total Gate Charge (nC)
+Gate Charge
+
+
+S19-0181-Rev. A, 25-Feb-2019                   3                     Document Number: 77059 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SUM60020E
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+TYPICAL CHARACTERISTICS (TA = 25 °C, unless otherwise noted)
+
+
+2.1
+
+VGS = 10 V, 30 A
+100
+
+
+1.7
+
+
+
+1.3
+
+
+
+
+
+VGS = 7.5 V, 20 A
+10
+
+TJ = 150 °C
+
+1
+
+
+
+
+TJ = 25 °C
+
+
+0.9                                    0.1
+
+
+0.5
+-50 -25  0  25  50  75 100 125 150 175
+TJ - Junction Temperature (°C)
+On-Resistance vs. Junction Temperature
+0.01
+0   0.2  0.4  0.6  0.8  1.0  1.2
+VSD - Source-to-Drain Voltage (V)
+Source Drain Diode Forward Voltage
+
+0.010
+0.008
+ID = 30 A
+3.5
+3.0
+ID = 250 μA
+0.006                                    2.5
+
+0.004
+TJ = 125 °C
+2.0
+
+0.002
+0
+
+
+
+TJ = 25 °C
+
+
+2     4     6     8     10
+VGS - Gate-to-Source Voltage (V)
+
+
+1.5
+
+
+1.0
+
+
+
+
+
+
+-50 -25  0  25  50  75 100 125 150 175
+TJ - Junction Temperature (°C)
+On-Resistance vs. Gate-to-Source Voltage                    Threshold Voltage
+
+
+
+100
+
+
+97
+
+
+ID = 10 mA
+
+325
+
+
+260
+
+94                                    195
+
+
+91                                    130
+
+
+88
+
+
+85
+-50 -25  0  25  50  75 100 125 150 175
+TJ - Junction Temperature (°C)
+65
+
+
+0
+0  25  50  75  100  125  150  175
+TC - Case Temperature (°C)
+Drain Source Breakdown vs. Junction Temperature                  Current De-rating
+
+
+S19-0181-Rev. A, 25-Feb-2019                   4                     Document Number: 77059 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SUM60020E
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+THERMAL RATINGS (TA = 25 °C, unless otherwise noted)
+
+
+
+1000
+
+
+IDM limited
+100
+
+
+
+100
+
+
+
+
+10
+
+
+
+
+Limited by RDS₍ₒn₎ a
+
+
+
+
+
+TC = 25 °C,
+
+100 μs
+
+
+
+1 ms
+10 ms
+DC, 10 s,
+1 s, 100 ms
+
+
+150 °C
+
+
+25 °C
+
+single pulse
+BVDSS limited                      10
+
+1
+0.1     1     10    100    1000
+VDS - Drain-to-Source Voltage (V)
+0.00001    0.0001    0.001     0.01
+t - Time (s)
+Safe Operating Area                 Single Pulse Avalanche Current Capability vs. Time
+Note
+a. VGS > minimum VGS at which RDS₍ₒn₎ is specified
+
+
+
+1
+Duty Cycle = 0.5
+
+
+
+
+
+
+0.1
+0.2
+
+
+
+
+
+0.05
+0.02
+Single Pulse
+
+
+
+0.1
+
+Notes:
+
+PDM
+
+t1
+t2  t1
+1. Duty Cycle, D = t2
+
+
+
+
+
+0.01
+2. Per Unit Base = RthJA = 62.5 °C/W
+3. TJM - TA = PDMZthJA(t)
+4. Surface Mounted
+
+
+10-4             10-3               10-2               10-1               1
+Square Wave Pulse Duration (s)
+
+Normalized Thermal Transient Impedance, Junction-to-Case
+
+Note
+• The characteristics shown in the two graphs
+- Normalized Transient Thermal Impedance Junction to Ambient (25 °C)
+- Normalized Transient Thermal Impedance Junction to Case (25 °C)
+are given for general guidelines only to enable the user to get a “ball park” indication of part capabilities. The data are extracted from single pulse transient thermal impedance characteristics which are developed from empirical measurements. The latter is valid for the part mounted on printed circuit board - FR4, size 1" x 1" x 0.062", double sided with 2 oz. copper, 100 % on both sides. The part capabilities can widely vary depending on actual application parameters and operating conditions
+
+
+
+
+
+
+
+
+
+Vishay Siliconix maintains worldwide manufacturing capability. Products may be manufactured at one of several qualified locations. Reliability data for Silicon Technology and Package Reliability represent a composite of all qualified locations. For related documents such as package / tape drawings, part marking, and reliability data, see www.vishay.com/ppg?77059.
+
+S19-0181-Rev. A, 25-Feb-2019                   5                     Document Number: 77059 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+Package Information
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+TO-263 (D2PAK): 3-LEAD
+
+
+
+
+E
+-A-
+-B-
+A
+c2
+E1   6
+K
+E3
+
+
+
+
+
+
+
+
+A  A    b2
+e    b
+0.010 M A M
+2 PL
+
+
+
+
+
+
+
+
+Detail “A”     c               E2
+
+
+
+INCHES     MILLIMETERS
+
+
+
+
+L1
+
+DETAIL A (ROTATED 90°)
+
+
+b b1
+
+
+SECTION A-A
+DIM.
+A
+b b1 b2
+c*  Thin lead Thick lead
+c1  Thin lead Thick lead
+c2 D D1 D2 D3 D4 E E1 E2 E3
+MIN.
+0.160
+0.020
+0.020
+0.045
+0.013
+0.023
+0.013
+0.023
+0.045
+0.340
+0.220
+0.038
+0.045
+0.044
+0.380
+0.245
+0.355
+0.072
+MAX.
+0.190
+0.039
+0.035
+0.055
+0.018
+0.028
+0.017
+0.027
+0.055
+0.380
+0.240
+0.042
+0.055
+0.052
+0.410
+- 0.375
+0.078
+MIN.
+4.064
+0.508
+0.508
+1.143
+0.330
+0.584
+0.330
+0.584
+1.143
+8.636
+5.588
+0.965
+1.143
+1.118
+9.652
+6.223
+9.017
+1.829
+MAX.
+4.826
+0.990
+0.889
+1.397
+0.457
+0.711
+0.431
+0.685
+1.397
+9.652
+6.096
+1.067
+1.397
+1.321
+10.414
+- 9.525
+1.981
+e       0.100 BSC      2.54 BSC
+
+
+Notes
+1. Plane B includes maximum features of heat sink tab and plastic.
+2. No more than 25 % of L1 can fall above seating plane by max. 8 mils.
+3. Pin-to-pin coplanarity max. 4 mils.
+K     0.045
+L     0.575
+L1     0.090
+L2     0.040
+L3     0.050
+0.055
+0.625
+0.110
+0.055
+0.070
+1.143
+14.605
+2.286
+1.016
+1.270
+1.397
+15.875
+2.794
+1.397
+1.778
+
+4. *: Thin lead is for SUB, SYB.
+Thick lead is for SUM, SYM, SQM.
+L4       0.010 BSC
+M       -    0.002
+0.254 BSC
+-   0.050
+
+5. Use inches as the primary measurement.
+6. This feature is for thick lead.
+ECN: T13-0707-Rev. K, 30-Sep-13 DWG: 5843
+
+
+
+
+
+
+
+
+Revison: 30-Sep-13                        1                     Document Number: 71198
+
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+AN826
+Vishay Siliconix
+
+
+
+RECOMMENDED MINIMUM PADS FOR D2PAK: 3-Lead
+
+
+
+
+
+0.420
+(10.668)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.145
+(3.683)
+
+
+
+0.135
+(3.429)
+
+
+0.200
+(5.080)
+0.050
+(1.257)
+
+
+
+
+Recommended Minimum Pads Dimensions in Inches/(mm)
+
+
+
+
+
+
+Return to Index
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Document Number: 73397 11-Apr-05
+www.vishay.com
+1
+
+Legal Disclaimer Notice
+www.vishay.com                                       Vishay
+Disclaimer
+
+ALL PRODUCT, PRODUCT SPECIFICATIONS AND DATA ARE SUBJECT TO CHANGE WITHOUT NOTICE TO IMPROVE RELIABILITY, FUNCTION OR DESIGN OR OTHERWISE.
+Vishay Intertechnology, Inc., its affiliates, agents, and employees, and all persons acting on its or their behalf (collectively, “Vishay”), disclaim any and all liability for any errors, inaccuracies or incompleteness contained in any datasheet or in any other disclosure relating to any product.
+Vishay makes no warranty, representation or guarantee regarding the suitability of the products for any particular purpose or the continuing production of any product. To the maximum extent permitted by applicable law, Vishay disclaims (i) any and all liability arising out of the application or use of any product, (ii) any and all liability, including without limitation special, consequential or incidental damages, and (iii) any and all implied warranties, including warranties of fitness for particular purpose, non-infringement and merchantability.
+Statements regarding the suitability of products for certain types of applications are based on Vishay's knowledge of typical requirements that are often placed on Vishay products in generic applications. Such statements are not binding statements about the suitability of products for a particular application. It is the customer's responsibility to validate that a particular product with the properties described in the product specification is suitable for use in a particular application. Parameters provided in datasheets and / or specifications may vary in different applications and performance may vary over time. All operating parameters, including typical parameters, must be validated for each customer application by the customer's technical experts. Product specifications do not expand or otherwise modify Vishay's terms and conditions of purchase, including but not limited to the warranty expressed therein.
+Hyperlinks included in this datasheet may direct users to third-party websites. These links are provided as a convenience and for informational purposes only. Inclusion of these hyperlinks does not constitute an endorsement or an approval by Vishay of any of the products, services or opinions of the corporation, organization or individual associated with the third-party website. Vishay disclaims any and all liability and bears no responsibility for the accuracy, legality or content of the third-party website or for that of subsequent links.
+Vishay products are not designed for use in life-saving or life-sustaining applications or any application in which the failure of the Vishay product could result in personal injury or death unless specifically qualified in writing by Vishay. Customers using or selling Vishay products not expressly indicated for use in such applications do so at their own risk. Please contact authorized Vishay personnel to obtain written terms and conditions regarding products designed for such applications.
+No license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted by this document or by any conduct of Vishay. Product names and markings noted herein may be trademarks of their respective owners.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2024 VISHAY INTERTECHNOLOGY, INC. ALL RIGHTS RESERVED
+Revision: 01-Jul-2024                       1                     Document Number: 91000 For technical questions, contact:
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000

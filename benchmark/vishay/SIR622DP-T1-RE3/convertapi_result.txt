@@ -1,0 +1,1506 @@
+SiR622DP
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+N-Channel 150 V (D-S) MOSFET
+
+
+PowerPAK® SO-8 Single
+D
+FEATURES
+• ThunderFET® technology optimizes balance
+
+D 8
+D  7                 of R
+
+DS(on)
+, Qg, Qsw
+and Q
+
+oss
+
+D 6
+5                   • 100 % Rg
+and UIS tested
+• Material categorization: for definitions of compliance please see www.vishay.com/doc?99912
+1
+
+
+
+1
+Top View
+2 S
+3 S
+4 S G
+Bottom View
+APPLICATIONS               D
+• Fixed telecom
+• DC/DC converter
+
+PRODUCT SUMMARY
+VDS (V)
+RDS₍ₒn₎ max. (Ω) at VGS = 10 V RDS₍ₒn₎ max. (Ω) at VGS = 7.5 V Qg typ. (nC)
+ID (A)
+Configuration
+
+ORDERING INFORMATION
+
+
+150
+0.0177
+0.0204
+20.7
+51.6
+Single
+• Primary and secondary side switch
+• Battery management
+• Synchronous rectification
+
+G
+
+
+
+S
+N-Channel MOSFET
+Package                             PowerPAK® SO-8
+Lead (Pb)-free and halogen-free                  SiR622DP-T1-GE3
+Lead (Pb)-free and halogen-free, BLR               SiR622DP-T1-RE3
+ABSOLUTE MAXIMUM RATINGS (TA = 25 °C, unless otherwise noted)
+
+PARAMETER
+Drain-source voltage Gate-source voltage
+
+Continuous drain current (TJ = 150 °C)
+
+Pulsed drain current (t = 100 μs) Continuous source-drain diode current
+Single pulse avalanche current Single pulse avalanche energy
+
+Maximum power dissipation
+
+Operating junction and storage temperature range Soldering recommendations (peak temperature) d, e
+
+THERMAL RESISTANCE RATINGS
+
+
+
+TC = 25 °C TC = 70 °C TA = 25 °C TA = 70 °C
+
+TC = 25 °C TA = 25 °C
+L = 0.1 mH
+TC = 25 °C TC = 70 °C TA = 25 °C TA = 70 °C
+SYMBOL
+VDS VGS
+
+
+ID
+
+
+Iᴅᴍ IS
+IAS EAS
+
+
+PD
+
+
+TJ, Tstg
+LIMIT
+150
+± 20
+51.6
+41.3
+12.6 b, c
+10.1 b, c
+100
+60 a
+5.6 b, c
+40
+80
+104
+66.6
+6.25 b, c
+4 b, c
+-55 to +150
+260
+UNIT
+V
+
+
+
+
+A
+
+
+
+
+mJ W
+°C
+PARAMETER                             SYMBOL    TYPICAL    MAXIMUM     UNIT
+Maximum junction-to-ambient b, f             t ≤ 10 s      RthJA       15       20       °C/W Maximum junction-to-case (Drain)          Steady State    RthJC       0.9       1.2
+Notes
+a. Package limited
+b. Surface mounted on 1" x 1" FR4 board
+c. t = 10 s
+d. See solder profile (www.vishay.com/doc?73257). The PowerPAK SO-8 is a leadless package. The end of the lead terminal is exposed copper (not plated) as a result of the singulation process in manufacturing. A solder fillet at the exposed copper tip cannot be guaranteed and is not required to ensure adequate bottom side solder interconnection
+e. Rework conditions: manual soldering with a soldering iron is not recommended for leadless components
+f. Maximum under steady state conditions is 54 °C/W
+g. TC = 25 °C
+S23-1102-Rev. B, 11-Dec-2023                   1                     Document Number: 75758 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SiR622DP
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+
+SPECIFICATIONS (TJ = 25 °C, unless otherwise noted)
+PARAMETER               SYMBOL      TEST CONDITIONS       MIN.   TYP.   MAX.   UNIT
+Static
+
+Drain-source breakdown voltage
+VDS
+VGS = 0 V, ID = 250 μA
+150    -     -    V
+
+VDS temperature coefficient VGS₍th₎ temperature coefficient
+ΔVDS/TJ
+ΔVGS(th)/TJ
+ID = 250 μA
+-   120
+-   -9.7
+-
+mV/°C
+-
+
+Gate-source threshold voltage Gate-source leakage
+Zero gate voltage drain current On-state drain current a
+Drain-source on-state resistance a
+Forward transconductance a
+Dynamic b
+Input capacitance Output capacitance
+Reverse transfer capacitance Total gate charge
+Gate-source charge Gate-drain charge Output charge
+Gate resistance Turn-on delay time Rise time
+Turn-off delay time Fall time
+Turn-on delay time Rise time
+Turn-off delay time Fall time
+Drain-Source Body Diode Characteristics Continuous source-drain diode current Pulse diode forward current (t = 100 μs) Body diode voltage
+Body diode reverse recovery time
+VGS(th) IGSS
+IDSS
+
+ID(on) RDS(on)
+gfs
+
+
+Ciss Coss Crss
+Qg
+
+Qgs Qgd Qoss Rg td(on) tr td(off) tf td(on) tr td(off) tf
+
+IS Iꜱᴍ Vꜱᴅ
+trr
+VDS = VGS, ID = 250 μA VDS = 0 V, VGS = ± 20 V VDS = 150 V, VGS = 0 V
+VDS = 150 V, VGS = 0 V, TJ = 70 °C VDS ≥ 5 V, VGS = 10 V
+VGS = 10 V, ID = 20 A VGS = 7.5 V, ID = 15 A VDS = 10 V, ID = 20 A
+
+
+VDS = 75 V, VGS = 0 V, f = 1 MHz VDS = 50 V, VGS = 10 V, ID = 20 A VDS = 50 V, VGS = 7.5 V, ID = 20 A
+VDS = 50 V, VGS = 0 V
+f = 1 MHz
+
+VDD = 50 V, RL = 2.5 Ω
+ID ≅ 20 A, VGEN = 10 V, Rg = 1 Ω
+
+
+
+VDD = 50 V, RL = 2.5 Ω
+ID ≅ 20 A, VGEN = 7.5 V, Rg = 1 Ω
+
+
+
+TC = 25 °C IS = 5 A
+2.5
+-
+-
+- 50
+-
+-
+-
+
+-
+-
+-
+-
+-
+-
+-
+-
+0.8
+-
+-
+-
+-
+-
+-
+-
+-
+
+-
+-
+-
+-
+-
+-
+-
+-
+- 0.0147
+0.0170
+33
+
+1516
+236
+10.5
+27
+20.7
+9.2
+8.2
+60
+1.8
+13
+6
+18
+6
+16
+7
+16
+6
+
+-
+- 0.77
+114
+4.5   V
+± 100  nA
+1
+μA
+10
+-    A
+0.0177  Ω
+0.0204
+-    S
+
+-
+-   pF
+- 41
+31
+-   nC
+- 90
+3.5   Ω
+25
+12
+36
+12
+ns
+32
+14
+32
+12
+
+60
+A
+100
+1.1   V
+225   ns
+
+Body diode reverse recovery charge Reverse recovery fall time
+Reverse recovery rise time
+Notes
+Qrr tₐ tb
+IF = 20 A, dI/dt = 100 A/μs, TJ
+-
+= 25 °C
+-
+-
+350
+55
+59
+680   nC
+-
+ns
+-
+a. Pulse test; pulse width ≤ 300 μs, duty cycle ≤ 2 %
+b. Guaranteed by design, not subject to production testing.
+
+
+Stresses beyond those listed under “Absolute Maximum Ratings” may cause permanent damage to the device. These are stress ratings only, and functional operation of the device at these or any other conditions beyond those indicated in the operational sections of the specifications is not implied. Exposure to absolute maximum rating conditions for extended periods may affect device reliability.
+
+
+
+
+
+
+
+S23-1102-Rev. B, 11-Dec-2023                   2                     Document Number: 75758 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SiR622DP
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+TYPICAL CHARACTERISTICS (25 °C, unless otherwise noted)
+
+
+100
+
+
+80
+
+
+60
+
+
+VGS = 10 V thru 8 V
+
+
+
+
+
+VGS = 7 V
+100
+
+
+80
+
+
+60
+
+
+40
+VGS = 6 V
+20
+
+VGS = 5 V
+0
+40
+TC = 25 °C
+
+20
+TC = 125 °C
+
+0
+
+
+
+
+
+TC = -55 °C
+
+0    2    4    6    8    10
+VDS - Drain-to-Source Voltage (V)
+0    2    4    6    8    10
+VGS - Gate-to-Source Voltage (V)
+
+Output Characteristics                       Transfer Characteristics
+
+
+
+
+0.1                                    3500
+
+
+0.08                                    2800
+
+
+0.06
+
+
+0.04
+
+
+VGS = 7.5 V
+2100
+
+
+1400
+
+
+Ciss
+
+
+0.02
+
+
+0
+
+
+VGS = 10 V
+700
+
+
+0
+
+
+Crss
+
+Coss
+
+0    20   40   60   80   100
+ID - Drain Current (A)
+0    20   40   60   80   100
+VDS - Drain-to-Source Voltage (V)
+
+On-Resistance vs. Drain Current                        Capacitance
+
+
+
+10
+
+ID = 20 A
+8
+
+
+6
+
+
+4
+
+
+
+VDS = 25V
+
+
+
+
+VDS = 50V
+
+
+
+
+
+
+
+
+
+VDS
+
+
+
+
+
+= 75V
+2.5
+
+
+2.0
+
+
+1.5
+
+
+
+ID = 20 A
+
+
+
+
+
+VGS = 10 V
+
+
+
+
+
+
+
+
+
+
+VGS = 7.5 V
+
+1.0
+2
+
+
+0
+0    6    12   18   24   30
+Qg - Total Gate Charge (nC)
+0.5
+
+-50  -25  0  25  50  75  100 125 150
+TJ - Junction Temperature (°C)
+
+Gate Charge                      On-Resistance vs. Junction Temperature
+
+
+S23-1102-Rev. B, 11-Dec-2023                   3                     Document Number: 75758 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SiR622DP
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+TYPICAL CHARACTERISTICS (25 °C, unless otherwise noted)
+
+
+100
+
+
+10
+
+
+1
+
+
+
+
+TJ = 150 °C
+
+
+
+
+
+
+
+TJ = 25 °C
+0.1
+
+
+0.08
+
+
+0.06
+
+
+ID = 20 A
+
+
+0.1
+0.04
+
+TJ = 125 °C
+
+
+0.01
+0.02
+
+
+TJ = 25 °C
+
+0.001
+0   0.2  0.4  0.6  0.8  1.0  1.2
+VSD - Source-to-Drain Voltage (V)
+0
+5    6    7    8    9    10
+VGS - Gate-to-Source Voltage (V)
+
+Source-Drain Diode Forward Voltage               On-Resistance vs. Gate-to-Source Voltage
+
+
+
+0.6
+
+0.3
+
+0
+
+-0.3
+
+-0.6
+
+-0.9
+
+-1.2
+
+-1.5
+
+
+
+
+
+
+
+
+
+
+
+
+ID = 250 μA
+
+
+
+
+
+
+
+
+
+ID = 5 mA
+200
+
+
+160
+
+
+120
+
+
+80
+
+
+40
+
+
+0
+
+-50  -25  0  25  50  75  100 125 150
+TJ - Temperature (°C)
+0.001   0.01    0.1     1     10
+Time (s)
+
+Threshold Voltage                    Single Pulse Power, Junction-to-Ambient
+
+
+
+1000
+
+
+100
+
+
+10
+
+
+1
+
+
+0.1
+
+
+0.01
+
+
+IDM limited
+
+
+ID limited
+
+
+
+
+Limited by RDS₍ₒn₎ (1)
+
+
+TA = 25 °C
+Single pulse   BVDSS limited
+
+
+
+
+
+100 μs
+
+1 ms
+
+10 ms
+100 ms
+1 s
+10 s DC
+0.01   0.1   1    10   100   1000
+VDS - Drain-to-Source Voltage (V)
+(1) VGS > minimum VGS at which RDS₍ₒn₎ is specified
+Safe Operating Area, Junction-to-Ambient
+
+
+S23-1102-Rev. B, 11-Dec-2023                   4                     Document Number: 75758 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SiR622DP
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+TYPICAL CHARACTERISTICS (25 °C, unless otherwise noted)
+
+
+
+60
+
+
+48
+
+
+36
+
+
+24
+
+
+12
+
+
+0
+0   25   50   75  100  125  150
+TC - Case Temperature (°C)
+
+Current Derating a
+
+
+
+
+125                                    3.0
+
+
+100                                    2.4
+
+
+75                                    1.8
+
+
+50                                    1.2
+
+
+25                                    0.6
+
+
+0
+0   25   50   75  100  125  150
+TC - Case Temperature (°C)
+0
+0   25   50   75  100  125  150
+TA - Ambient Temperature (°C)
+
+Power, Junction-to-Case                      Power, Junction-to-Ambient
+
+
+Note
+a. The power dissipation PD is based on TJ max. = 150 °C, using junction-to-case thermal resistance, and is more useful in settling the upper dissipation limit for cases where additional heatsinking is used. It is used to determine the current rating, when this rating falls below the package limit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+S23-1102-Rev. B, 11-Dec-2023                   5                     Document Number: 75758 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+SiR622DP
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+TYPICAL CHARACTERISTICS (25 °C, unless otherwise noted)
+
+
+
+1
+
+
+
+
+
+
+
+0.1
+Duty Cycle = 0.5
+
+
+0.2
+
+0.1
+
+
+Notes:
+
+PDM
+
+t₁
+t₂  t
+
+
+
+
+
+0.01
+0.05
+
+0.02
+
+
+Single pulse
+1. Duty cycle, D = ¹
+2
+2. Per unit base = RthJA = 54 °C/W
+3. TJM - TA = PDMZthJA (t)
+4. Surface mounted
+0.0001     0.001      0.01      0.1       1       10      100      1000
+Square Wave Pulse Duration (s)
+
+Normalized Thermal Transient Impedance, Junction-to-Ambient
+
+
+
+1
+Duty Cycle = 0.5
+
+
+
+
+
+
+0.1
+0.2
+0.1
+0.05
+0.02
+Single pulse
+
+
+
+
+
+
+0.01
+0.0001     0.001      0.01      0.1       1       10       100      1000
+Square Wave Pulse Duration (s)
+
+Normalized Thermal Transient Impedance, Junction-to-Case
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vishay Siliconix maintains worldwide manufacturing capability. Products may be manufactured at one of several qualified locations. Reliability data for Silicon Technology and Package Reliability represent a composite of all qualified locations. For related documents such as package/tape drawings, part marking, and reliability data, see www.vishay.com/ppg?75758.
+
+S23-1102-Rev. B, 11-Dec-2023                   6                     Document Number: 75758 For technical questions, contact: pmostechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+Package Information
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+PowerPAK® SO-8, (Single/Dual)
+
+
+H            L
+E2    K
+W                                         E4
+
+1                                                    1
+Z
+2                                                    2
+D
+3                                                    3
+
+4                                                    4
+L1
+E3
+A1         Backside View of Single Pad
+H    E2     K  L E4
+
+2
+E1                Detail Z                        1
+E
+D1
+2
+
+
+
+
+
+Notes
+1. Inch will govern.
+2 Dimensions exclusive of mold gate burrs.
+3. Dimensions exclusive of mold flash and cutting burrs.
+3
+D2
+4
+
+
+E3
+Backside View of Dual Pad
+
+
+
+DIM.
+A A1
+b c D D1 D2 D3 D4 D5 E E1 E2 E3 E4
+e K K1 H L L1
+θ
+W M
+
+MIN.
+0.97
+
+0.33
+0.23
+5.05
+4.80
+3.56
+1.32
+
+
+6.05
+5.79
+3.48
+3.68
+
+
+
+0.56
+0.51
+0.51
+0.06
+0°
+0.15
+MILLIMETERS NOM.
+1.04
+- 0.41
+0.28
+5.15
+4.90
+3.76
+1.50
+0.57 typ.
+3.98 typ.
+6.15
+5.89
+3.66
+3.78
+0.75 typ.
+1.27 BSC
+1.27 typ.
+- 0.61
+0.61
+0.13
+- 0.25
+0.125 typ.
+
+MAX.
+1.12
+0.05
+0.51
+0.33
+5.26
+5.00
+3.91
+1.68
+
+
+6.25
+5.99
+3.84
+3.91
+
+
+
+- 0.71
+0.71
+0.20
+12°
+0.36
+
+MIN.
+0.038
+0
+0.013
+0.009
+0.199
+0.189
+0.140
+0.052
+
+
+0.238
+0.228
+0.137
+0.145
+
+
+
+0.022
+0.020
+0.020
+0.002
+0°
+0.006
+INCHES NOM. 0.041
+-
+0.016
+0.011
+0.203
+0.193
+0.148
+0.059
+0.0225 typ.
+0.157 typ.
+0.242
+0.232
+0.144
+0.149
+0.030 typ.
+0.050 BSC
+0.050 typ.
+- 0.024
+0.024
+0.005
+- 0.010
+0.005 typ.
+
+MAX.
+0.044
+0.002
+0.020
+0.013
+0.207
+0.197
+0.154
+0.066
+
+
+0.246
+0.236
+0.151
+0.154
+
+
+
+- 0.028
+0.028
+0.008
+12°
+0.014
+ECN: S17-0173-Rev. L, 13-Feb-17 DWG: 5881
+
+
+
+
+Revison: 13-Feb-17                        1                     Document Number: 71655
+
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+
+VI SHAY SILICO NIX 
+www.vishay.com
+
+
+
+Power MOSFETs                           Application Note AN821
+
+PowerPAK® SO-8 Mounting and Thermal Considerations
+
+
+by Wharton McDaniel
+MOSFETs for switching applications are now available with die on resistances around 1 mΩ and with the capability to handle 85 A. While these die capabilities represent a major advance over what was available just a few years ago, it is important for power MOSFET packaging technology to keep pace. It should be obvious that degradation of a high performance die by the package is undesirable. PowerPAK is a new package technology that addresses these issues. In this application note, PowerPAK’s construction is described. Following this mounting information is presented including land patterns and soldering profiles for maximum reliability. Finally, thermal and electrical performance is discussed.
+THE PowerPAK PACKAGE
+The PowerPAK package was developed around the SO-8 package (figure 1). The PowerPAK SO-8 utilizes the same footprint and the same pin-outs as the standard SO-8. This allows PowerPAK to be substituted directly for a standard SO-8 package. Being a leadless package, PowerPAK SO-8 utilizes the entire SO-8 footprint, freeing space normally occupied by the leads, and thus allowing it to hold a larger die than a standard SO-8. In fact, this larger die is slightly larger than a full sized DPAK die. The bottom of the die attach pad is exposed for the purpose of providing a direct, low resistance thermal path to the substrate the device is mounted on. Finally, the package height is lower than the standard  SO-8,  making  it  an  excellent  choice  for applications with space constraints.
+PowerPAK SO-8 SINGLE MOUNTING
+The PowerPAK single is simple to use. The pin arrangement (drain, source, gate pins) and the pin dimensions are the same as standard SO-8 devices (see figure 2). Therefore, the PowerPAK connection pads match directly to those of the SO-8. The only difference is the extended drain connection area. To take immediate advantage of the PowerPAK SO-8 single devices, they can be mounted to existing SO-8 land patterns.
+
+
+
+
+
+
+
+
+
+Standard SO-8   PowerPAK SO-8
+
+
+Fig. 2
+
+The minimum land pattern recommended to take full advantage of the PowerPAK thermal performance see Application  Note  826,  Recommended  Minimum  Pad Patterns With Outline Drawing Access for Vishay Siliconix MOSFETs. Click on the PowerPAK SO-8 single in the index of this document.
+In this figure, the drain land pattern is given to make full contact to the drain pad on the PowerPAK package.
+This land pattern can be extended to the left, right, and top of the drawn pattern. This extension will serve to increase the heat dissipation by decreasing the thermal resistance from the foot of the PowerPAK to the PC board and therefore to the ambient. Note that increasing the drain land area beyond a certain point will yield little decrease in foot-to-board and foot-to-ambient thermal resistance. Under specific conditions of board configuration, copper weight and layer stack, experiments have found that more than about 0.25 in2 to 0.5 in2 of additional copper (in addition to the drain land) will yield little improvement in thermal performance.
+
+
+Fig. 1 PowerPAK 1212 Devices
+
+Revision: 16-Mai-13                        1                     Document Number: 71622 For technical questions, contact: powermosfettechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+Application Note AN821
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+
+PowerPAK® SO-8 Mounting and Thermal Considerations
+
+
+PowerPAK SO-8 DUAL
+The pin arrangement (drain, source, gate pins) and the pin dimensions of the PowerPAK SO-8 dual are the same as standard SO-8 dual devices. Therefore, the PowerPAK device connection pads match directly to those of the SO-8. As in the single-channel package, the only exception is the extended drain connection area. Manufacturers can likewise take immediate advantage of the PowerPAK SO-8 dual devices by mounting them to existing SO-8 dual land patterns.
+To take the advantage of the dual PowerPAK SO-8’s thermal performance, the minimum recommended land pattern  can  be  found  in  Application  Note  826, Recommended  Minimum  Pad  Patterns  With  Outline Drawing Access for Vishay Siliconix MOSFETs. Click on the PowerPAK 1212-8 dual in the index of this document.
+The gap between the two drain pads is 24 mils. This matches the spacing of the two drain pads on the PowerPAK SO-8 dual package.
+For  the  lead  (Pb)-free  solder  profile,  see www.vishay.com/doc?73257.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig. 3 Solder Reflow Temperature Profile
+
+REFLOW SOLDERING
+Vishay Siliconix surface-mount packages meet solder reflow reliability requirements. Devices are subjected to solder reflow  as  a  test  preconditioning  and  are  then reliability-tested using temperature cycle, bias humidity, HAST, or pressure pot. The solder reflow temperature profile used, and the temperatures and time duration, are shown in figures 3 and 4.
+Ramp-Up Rate
+Temperature at 150 - 200 °C Temperature Above 217 °C Maximum Temperature
+Time at Maximum Temperature
+Ramp-Down Rate
++ 3 °C /s max. 120 s max.
+60 - 150 s
+255 + 5/- 0 °C
+30 s
++ 6 °C/s max.
+
+
+
+
+
+
+30 s
+260 °C
+
+3 °C(max)              6 °C/s (max.)
+
+
+
+150 - 200 °C
+
+
+
+
+
+
+60 s (min.) Pre-Heating Zone
+
+217 °C
+
+
+150 s (max.) Reflow Zone
+
+Maximum peak temperature at 240 °C is allowed.
+
+
+
+
+Fig. 4 Solder Reflow Temperatures and Time Durations
+
+
+
+
+
+Revision: 16-Mai-13                        2                     Document Number: 71622 For technical questions, contact: powermosfettechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+Application Note AN821
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+
+PowerPAK® SO-8 Mounting and Thermal Considerations
+
+
+THERMAL PERFORMANCE
+Introduction
+A basic measure of a device’s thermal performance is the junction-to-case thermal resistance, RthJC, or the junction-to-foot thermal resistance, RthJF This parameter is measured for the device mounted to an infinite heat sink and is therefore a characterization of the device only, in other words, independent of the properties of the object to which the device is mounted. Table 1 shows a comparison of the DPAK, PowerPAK SO-8, and standard SO-8. The PowerPAK has thermal performance equivalent to the DPAK, while having an order of magnitude better thermal performance over the SO-8.
+TABLE 1 - DPAK AND POWERPAK SO-8 EQUIVALENT STEADY STATE PERFORMANCE
+
+
+Because of the presence of the trough, this result suggests a minimum performance improvement of 10 °C/W by using a PowerPAK SO-8 in a standard SO-8 PC board mount.
+The only concern when mounting a PowerPAK on a standard SO-8 pad pattern is that there should be no traces running between the body of the MOSFET. Where the standard SO-8 body is spaced away from the pc board, allowing traces to run underneath, the PowerPAK sits directly on the pc board.
+Thermal Performance - Spreading Copper
+Designers may add additional copper, spreading copper, to the drain pad to aid in conducting heat from a device. It is helpful to have some information about the thermal performance for a given area of spreading copper.
+Figure 6 shows the thermal resistance of a PowerPAK SO-8
+
+
+
+Thermal
+
+DPAK
+PowerPAK SO-8
+Standard SO-8
+device mounted on a 2-in. 2-in., four-layer FR-4 PC board. The two internal layers and the backside layer are solid copper. The internal layers were chosen as solid copper to
+
+Resistance RthJC  1.2 °C/W   1 °C/W     16 °C/W
+
+Thermal Performance on Standard SO-8 Pad Pattern
+Because of the common footprint, a PowerPAK SO-8 can be mounted on an existing standard SO-8 pad pattern. The question then arises as to the thermal performance of the PowerPAK device under these conditions. A characterization was made comparing a standard SO-8 and a PowerPAK device on a board with a trough cut out underneath the PowerPAK drain pad. This configuration restricted the heat flow to the SO-8 land pads. The results are shown in figure 5.
+
+Si4874DY vs. Si7446DP PPAK on a 4-Layer Board SO-8 Pattern, Trough Under Drain
+model the large power and ground planes common in many applications. The top layer was cut back to a smaller area and at each step junction-to-ambient thermal resistance measurements were taken. The results indicate that an area above 0.3 to 0.4 square inches of spreading copper gives no additional  thermal  performance  improvement.  A subsequent experiment was run where the copper on the back-side was reduced, first to 50 % in stripes to mimic circuit traces, and then totally removed. No significant effect was observed.
+
+Rth vs. Spreading Copper
+(0 %, 50 %, 100 % Back Copper)
+56
+60
+51
+
+50
+
+
+40
+Si4874DY
+30
+
+
+20
+
+10
+
+
+
+
+
+Si7446DP
+46
+
+
+
+41             100 %
+
+
+
+36
+
+
+
+
+
+
+ 0 % 
+
+50 %
+
+0.00
+
+0
+0.25 0.50 0.75 1.00 1.25 1.50 1.75 2.00
+Spreading Copper (sq in)
+
+0.0001
+0.01
+1
+Pulse Duration (sec)
+100
+10000
+Fig. 6 Spreading Copper Junction-to-Ambient Performance
+Fig. 5 PowerPAK SO-8 and Standard SO-0 Land Pad Thermal Path
+
+Revision: 16-Mai-13                        3                     Document Number: 71622 For technical questions, contact: powermosfettechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+Application Note AN821
+ʷʷʷ.ᵛⁱˢʰᵃʸ.ᶜᵒᵐ                           Vishay Siliconix
+
+PowerPAK® SO-8 Mounting and Thermal Considerations
+
+
+SYSTEM AND ELECTRICAL IMPACT OF
+PowerPAK SO-8
+In any design, one must take into account the change in MOSFET RDS₍ₒn₎ with temperature (figure 7).
+
+On-Resistance vs. Junction Temperature
+1.8
+
+VGS = 10 V
+Suppose each device is dissipating 2.7 W. Using the junction-to-foot thermal resistance characteristics of the PowerPAK  SO-8  and  the  standard  SO-8,  the  die temperature is determined to be 107 °C for the PowerPAK (and for DPAK) and 148 °C for the standard SO-8. This is a 2 °C rise above the board temperature for the PowerPAK and a 43 °C rise for the standard SO-8. Referring to figure 7, a 2 °C difference has minimal effect on RDS₍ₒn₎ whereas a 43 °C difference has a significant effect on RDS₍ₒn₎.
+
+1.6
+
+
+1.4
+
+
+1.2
+
+
+1.0
+
+
+0.8
+
+
+0.6
+ID = 23 A
+Minimizing the thermal rise above the board temperature by using PowerPAK has not only eased the thermal design but it has allowed the device to run cooler, keep rDS₍ₒn₎ low, and permits the device to handle more current than the same MOSFET die in the standard SO-8 package.
+CONCLUSIONS
+PowerPAK SO-8 has been shown to have the same thermal performance as the DPAK package while having the same footprint as the standard SO-8 package. The PowerPAK SO-8 can hold larger die approximately equal in size to the
+
+- 50  - 25  0   25  50  75  100  125  150
+TJ - Junction Temperature (°C)
+
+Fig. 7 MOSFET RDS₍ₒn₎ vs. Temperature
+A MOSFET generates internal heat due to the current passing through the channel. This self-heating raises the junction temperature of the device above that of the PC board to which it is mounted, causing increased power dissipation in the device. A major source of this problem lies in the large values of the junction-to-foot thermal resistance of the SO-8 package.
+PowerPAK SO-8 minimizes the junction-to-board thermal resistance to where the MOSFET die temperature is very close to the temperature of the PC board. Consider two devices mounted on a PC board heated to 105 °C by other components on the board (figure 8).
+maximum that the DPAK can accommodate implying no sacrifice in performance because of package limitations.
+Recommended PowerPAK SO-8 land patterns are provided to aid in PC board layout for designs using this new package.
+Thermal considerations have indicated that significant advantages can be gained by using PowerPAK SO-8 devices in designs where the PC board was laid out for the standard SO-8. Applications experimental data gave thermal  performance  data  showing  minimum  and typical thermal performance in a SO-8 environment, plus information  on  the  optimum  thermal  performance obtainable  including  spreading  copper.  This  further emphasized the DPAK equivalency.
+PowerPAK SO-8 therefore has the desired small size characteristics of the SO-8 combined with the attractive thermal characteristics of the DPAK package.
+
+
+PowerPAK SO-8
+
+
+107 °C
+Standard SO-8
+
+
+148 °C
+
+
+0.8 °C/W           16 C/W
+
+PC Board at 105 °C
+
+
+
+
+
+
+Fig. 8 Temperature of Devices on a PC Board
+
+Revision: 16-Mai-13                        4                     Document Number: 71622 For technical questions, contact: powermosfettechsupport@vishay.com
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000
+
+Application Note 826
+Vishay Siliconix
+
+
+
+
+
+RECOMMENDED MINIMUM PADS FOR PowerPAK® SO-8 Single
+
+
+
+
+
+
+
+
+
+
+
+
+0.024
+(0.61)
+0.260
+(6.61)
+
+
+
+0.150
+(3.81)
+
+
+
+
+
+
+0.026
+(0.66)
+
+
+
+
+
+
+
+0.050
+(1.27)
+0.032
+(0.82)
+0.040
+(1.02)
+
+
+
+
+
+
+
+
+Return to Index
+
+
+
+Return to Index
+Recommended Minimum Pads Dimensions in Inches/(mm)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Document Number: 72599                                               www.vishay.com
+Revision: 21-Jan-08                                                         15
+
+Legal Disclaimer Notice
+www.vishay.com                                       Vishay
+Disclaimer
+
+ALL PRODUCT, PRODUCT SPECIFICATIONS AND DATA ARE SUBJECT TO CHANGE WITHOUT NOTICE TO IMPROVE RELIABILITY, FUNCTION OR DESIGN OR OTHERWISE.
+Vishay Intertechnology, Inc., its affiliates, agents, and employees, and all persons acting on its or their behalf (collectively, “Vishay”), disclaim any and all liability for any errors, inaccuracies or incompleteness contained in any datasheet or in any other disclosure relating to any product.
+Vishay makes no warranty, representation or guarantee regarding the suitability of the products for any particular purpose or the continuing production of any product. To the maximum extent permitted by applicable law, Vishay disclaims (i) any and all liability arising out of the application or use of any product, (ii) any and all liability, including without limitation special, consequential or incidental damages, and (iii) any and all implied warranties, including warranties of fitness for particular purpose, non-infringement and merchantability.
+Statements regarding the suitability of products for certain types of applications are based on Vishay's knowledge of typical requirements that are often placed on Vishay products in generic applications. Such statements are not binding statements about the suitability of products for a particular application. It is the customer's responsibility to validate that a particular product with the properties described in the product specification is suitable for use in a particular application. Parameters provided in datasheets and / or specifications may vary in different applications and performance may vary over time. All operating parameters, including typical parameters, must be validated for each customer application by the customer's technical experts. Product specifications do not expand or otherwise modify Vishay's terms and conditions of purchase, including but not limited to the warranty expressed therein.
+Hyperlinks included in this datasheet may direct users to third-party websites. These links are provided as a convenience and for informational purposes only. Inclusion of these hyperlinks does not constitute an endorsement or an approval by Vishay of any of the products, services or opinions of the corporation, organization or individual associated with the third-party website. Vishay disclaims any and all liability and bears no responsibility for the accuracy, legality or content of the third-party website or for that of subsequent links.
+Vishay products are not designed for use in life-saving or life-sustaining applications or any application in which the failure of the Vishay product could result in personal injury or death unless specifically qualified in writing by Vishay. Customers using or selling Vishay products not expressly indicated for use in such applications do so at their own risk. Please contact authorized Vishay personnel to obtain written terms and conditions regarding products designed for such applications.
+No license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted by this document or by any conduct of Vishay. Product names and markings noted herein may be trademarks of their respective owners.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+© 2024 VISHAY INTERTECHNOLOGY, INC. ALL RIGHTS RESERVED
+Revision: 01-Jul-2024                       1                     Document Number: 91000
+
+THIS DOCUMENT IS SUBJECT TO CHANGE WITHOUT NOTICE. THE PRODUCTS DESCRIBED HEREIN AND THIS DOCUMENT ARE SUBJECT TO SPECIFIC DISCLAIMERS, SET FORTH AT www.vishay.com/doc?91000

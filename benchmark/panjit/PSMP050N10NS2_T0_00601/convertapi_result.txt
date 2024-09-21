@@ -1,0 +1,718 @@
+PSMP050N10NS2
+100V N-Channel Enhancement Mode MOSFET
+
+
+ Voltage 
+ Current  Feature
+100 V
+
+120 A
+ RDS(ON),max
+
+ QG (TYP)
+< 5.0 mΩ
+40.5 nC
+TO-220AB-L
+⚫ RDS(ON),max < 5.0 mΩ at VGS = 10 V, ID = 50 A
+⚫ RDS(ON),max < 7.0 mΩ at VGS = 6 V, ID = 25 A
+⚫ High switching speed
+⚫ Low reverse transfer capacitance
+⚫ Lead free in compliance with EU RoHS 2.0
+⚫ Green molding compound as per IEC 61249 standard
+Mechanical Data
+⚫ Case: TO-220AB-L package
+⚫ Terminals: Solderable per MIL-STD-750, Method 2026
+⚫ Approx. Weight: 2.0948 grams
+Application
+• SR solutions of Power supply, BMS, BLDC motor driver switch
+
+Absolute Maximum Ratings (TA = 25 oC unless otherwise specified)
+
+
+
+Drain-Source Voltage Gate-Source Voltage
+PARAMETER
+
+
+
+
+TC=25 ᵒC
+SYMBOL VDS VGS
+LIMIT
+100
+±20
+120
+UNITS
+V
+
+Continuous Drain Current (Note 3)
+
+Pulsed Drain Current (Note 6)
+Single Pulse Avalanche Current (Note 5)
+Single Pulse Avalanche Energy (Note 5)
+
+Power Dissipation
+TC=100 ᵒC TC=25 ᵒC
+
+
+TC=25 ᵒC TC=100 ᵒC
+ID
+
+IDM IAS EAS
+Pᴅ
+A
+76
+480     A
+50     A
+318     mJ
+138
+W
+55
+
+Operating Junction and Storage Temperature Range
+
+TJ,TSTG
+-55~150   oC
+
+
+Thermal Characteristics
+PARAMETER
+Junction-to-Case (Bottom)
+
+SYMBOL
+RθJC
+
+MAXIMUM
+0.9
+
+UNITS
+oC/W
+
+Thermal Resistance
+Junction-to-Ambient (Note.4)
+
+RθJA
+60    oC/W
+
+
+
+
+July 21,2022                   PSMP050N10NS2-REV.00                   Page 1
+
+PSMP050N10NS2
+Electrical Characteristics (TA = 25 oC unless otherwise specified)
+PARAMETER        SYMBOL   TEST CONDITION   MIN.   TYP.   MAX.  UNITS
+Static
+
+Drain-Source Breakdown Voltage Gate Threshold Voltage
+Drain-Source On-State Resistance
+(Note 1)
+
+Zero Gate Voltage Drain Current Gate-Source Leakage Current Transfer characteristics (Note 1) Gate Resistance
+Dynamic (Note 6)
+Total Gate Charge Gate-Source Charge Gate-Drain Charge Gate Plateau Voltage Input Capacitance Output Capacitance
+Reverse Transfer Capacitance Output Charge
+Turn-On Delay Time Rise Time
+Turn-Off Delay Time Fall Time
+Drain-Source Diode
+Diode Forward Voltage
+Reverse Recovery Charge (Note 6)
+Reverse Recovery Time (Note 6)
+BVDSS VGS(th)
+
+RDS(on)
+
+IDSS IGSS
+gfs Rg
+
+
+Qg Qgs Qgd
+Vplateau Ciss Coss Crss Qoss td(on)
+tr td(off) tf
+
+
+VSD
+Qrr Trr
+VGS=0 V, ID=250 μA VDS=VGS, ID=270 μA VGS=10 V, ID=50 A VGS=6 V, ID=25 A VDS=100 V, VGS=0 V VGS=±20 V, VDS=0 V VDS=10 V, ID=50 A
+f =1.0 MHz
+
+
+
+VDS=50 V, ID=50 A, VGS=10 V
+
+
+VDS=50 V, VGS=0 V,
+f=250 kHz
+
+VDS=50 V, VGS=0 V
+
+VDD=50 V, ID=50 A, VGS=10 V, RG=3.0 Ω
+(Note 2)
+
+
+
+
+IS=50 A, VGS=0 V IF=50 A, VDD=50 V
+di/dt=100 A/μs
+100
+1.8
+-
+-
+-
+-
+-
+-
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+-
+-
+-
+-
+2.8
+4.3
+5.4
+-
+- 100
+0.8
+
+40.5
+15
+6
+5
+3010
+1080
+14
+85
+16
+6
+26
+6
+
+0.9
+85
+56
+-
+V
+3.8
+5.0
+mΩ
+7.0
+1   μA
+±100   nA
+-    S
+1.6   Ω
+
+53
+-   nC
+-
+-    V
+3910
+1400   pF
+-
+110   nC
+-
+-
+ns
+-
+-
+
+1.2   V
+170   nC
+112   ns
+NOTES :
+1. Pulse width < 300 μs, Duty cycle < 2 %
+2. Essentially independent of operating temperature typical characteristics.
+3.  The maximum drain current calculated by maximum junction temperature and thermal impedance. It can be varied by application and environment.
+4.  RθJA is the sum of the junction-to-case and case-to-ambient thermal resistance where the case thermal reference is defined as the solder mounting surface of the drain pins. Mounted on a 1 inch2 with 2oz.square pad of copper.
+5.  EAS is calculated based on the condition of L = 1.0 mH, IAS = 25.2 A, VDD = 50 V, VGS = 10 V. 100% test at L = 0.1 mH, IAS = 50 A in production.
+6. Guaranteed by design, not subject to production testing.
+
+
+
+
+
+July 21,2022                   PSMP050N10NS2-REV.00                   Page 2
+
+PSMP050N10NS2
+
+
+
+TYPICAL CHARACTERISTIC CURVES
+
+
+500
+
+
+V = 10 V
+500
+
+Pulse Duration = 180 μs
+
+TJ= -55 ℃
+
+400
+
+
+300
+
+
+200
+GS
+
+
+VGS = 8 V VGS= = 6.5 V VGS= 6 V
+400
+
+300
+
+200
+VDS = 4 V
+
+
+
+
+
+TJ= 150 ℃
+
+
+100
+
+
+0
+VGS= 5 V
+
+
+0      1      2      3      4
+VDS- Drain-to-Source Voltage (V)
+100
+
+0
+
+TJ= 25 ℃
+
+0  1  2  3  4  5  6  7  8  9  10
+VGS- Gate-to-Source Voltage (V)
+Fig.1 Output Characteristics               Fig.2 Transfer Characteristics
+
+
+16
+VGS = 5 V
+14
+12        VGS = 6 V
+10
+8
+6
+4
+2
+0
+
+
+
+
+VGS = 6.5 V
+
+
+VGS = 8 V
+
+VGS = 10 V
+2.0
+1.8
+1.6
+1.4
+1.2
+1.0
+0.8
+0.6
+0.4
+
+
+
+
+VGS = 10 V
+
+
+
+
+
+
+
+VGS = 6 V
+
+0   50  100  150  200  250  300  350  400
+ID- Drain Current (A)
+-75  -50  -25  0  25  50  75  100  125  150
+Temperature (℃)
+Fig.3 On-Resistance vs. Drain Current       Fig.4 On-Resistance vs. Junction temperature
+
+
+10000
+
+
+1000
+30
+Ciss
+25
+Coss
+20
+
+Pulse Duration = 180 μs ID = 50 A
+
+
+100
+
+
+10
+
+
+1
+
+
+
+
+
+f = 250 kHz VGS = 0 V
+15
+
+10
+Crss
+
+5
+
+0
+
+
+TJ = 125 ℃
+
+TJ = 25 ℃
+
+0.1        1        10        100
+VDS - Drain-to-Source Voltage (V)
+3    4    5    6    7    8    9   10
+VGS- Gate-to-Source Voltage (V)
+Fig.5 Capacitance vs. Drain-Source Voltage      Fig.6 On-Resistance vs. Gate-Source Voltage
+
+July 21,2022                   PSMP050N10NS2-REV.00                   Page 3
+
+PSMP050N10NS2
+
+
+
+
+TYPICAL CHARACTERISTIC CURVES
+
+
+10
+VGS = 10 V ID = 50 A
+8
+
+
+
+VDD
+
+
+= 50 V
+1.10
+
+
+1.05
+
+ID = 250uA
+
+VDD = 20 V
+6
+
+
+4
+
+
+VDD = 80 V
+
+
+1.00
+
+0.95
+2
+
+
+0
+0     10    20    30    40    50
+Qg (nC)
+0.90
+
+-75  -50  -25  0  25  50  75  100  125  150
+Temperature (℃)
+Fig.7 Gate-Charge Characteristics      Fig.8 Breakdown Voltage Variation vs. Temperature
+
+
+1.4
+
+
+1.2
+
+ID = 270 uA
+
+
+
+100
+
+
+1.0
+
+
+0.8
+
+10
+TJ = 150 ℃
+
+TJ = 25 ℃
+
+
+0.6
+1
+TJ = -55 ℃
+
+
+0.4
+
+-75  -50  -25  0  25  50  75  100  125  150
+Temperature (℃)
+0.1
+0.2   0.4   0.6   0.8    1    1.2   1.4
+VSD-Source-to-Drain Voltage (V)
+Fig.9 Threshold Voltage Variation with Temperature    Fig.10 Source-Drain Diode Forward Voltage
+
+1000
+100
+This area is limited by RDS(ON)
+
+10
+0.5
+0.2
+0.1
+0.05
+0.02
+0.01
+1     Single pulse
+
+
+SINGLE PULSE RӨJC = 0.9 °C/W
+
+
+
+10                                  0.1
+
+
+
+PW
+D= T
+
+
+PDM
+
+
+PW
+SINGLE PULSE
+
+RӨJC
+= 0.9 °C/W
+Notes:
+Duty = PW / T
+
+TC = 25 °C
+1
+0.01
+TJ = TC + PDM x ZӨJC x RӨJC
+
+0.1      1      10      100
+VDS- Drain-to-Source Voltage (V)
+0.00001  0.0001   0.001   0.01    0.1    1
+Pulse time [s]
+Fig.11 Maximum Safe Operating Area       Fig.12 Normalized Transient Thermal Impedance
+July 21,2022                   PSMP050N10NS2-REV.00                   Page 4
+
+PSMP050N10NS2
+
+
+
+
+TYPICAL CHARACTERISTIC CURVES
+
+
+100                                  140
+
+
+
+TJ = 25 ℃
+
+TJ = 100 ℃
+120
+
+100
+
+80
+10
+TJ = 125 ℃             60
+40
+20
+
+
+1
+10            100            1000
+tAV, Avalanche duration (μs)
+
+0
+25    50    75    100    125    150
+Temperature (℃)
+Fig.13 Avalanche Characteristics          Fig.14 Drain Current vs. Case Temperature
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+July 21,2022                   PSMP050N10NS2-REV.00                   Page 5
+
+PSMP050N10NS2
+
+Product and Packing Information
+
+
+
+Part No.
+Package Type
+Packing Type
+Marking
+
+
+PSMP050N10NS2
+TO-220AB-L
+50pcs / Tube
+050N10NS
+
+
+Packaging Information
+
+TO-220AB-L Dimension      Unit: inch(mm)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Marking Diagram
+
+
+PJ 050N10NS YWLL x
+Y = Year Code
+W = Week Code (A~Z)
+LL = Lot Code (00~99)
+x  = Production Line Code
+
+
+
+
+
+July 21,2022                   PSMP050N10NS2-REV.00                   Page 6
+
+PSMP050N10NS2
+
+Disclaimer
+
+● Reproducing and modifying information of the document is prohibited without permission from Panjit International Inc..
+● Panjit International Inc. reserves the rights to make changes of the content herein the document anytime without notification. Please refer to our website for the latest document.
+● Panjit International Inc. disclaims any and all liability arising out of the application or use of any product including damages incidentally and consequentially occurred.
+● Panjit International Inc. does not assume any and all implied warranties, including warranties of fitness for particular purpose, non-infringement and merchantability.
+● Applications shown on the herein document are examples of standard use and operation. Customers are responsible in comprehending the suitable use in particular applications. Panjit International Inc. makes no representation or warranty that such applications will be suitable for the specified use without further testing or modification.
+● The products shown herein are not designed and authorized for equipments requiring high level of reliability or relating to human life and for any applications concerning life-saving or life-sustaining, such as medical instruments, transportation equipment, aerospace machinery et cetera. Customers using or selling these products for use in such applications do so at their own risk and agree to fully indemnify Panjit International Inc. for any damages resulting from such improper use or sale.
+● Since Panjit uses lot number as the tracking base, please provide the lot number for tracking when complaining.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+July 21,2022                   PSMP050N10NS2-REV.00                   Page 7

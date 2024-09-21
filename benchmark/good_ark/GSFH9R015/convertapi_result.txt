@@ -1,0 +1,440 @@
+
+
+
+
+
+Main Product Characteristics
+GSFH9R015
+150V N-Channel MOSFET
+
+D
+
+
+VDS
+150V
+
+
+RDS(ON)
+
+ID
+7.3mΩ (Typ.)
+
+100A
+
+
+
+
+
+S
+G D
+TO-220
+
+G
+
+
+
+S
+
+Schematic Diagram
+Features and Benefits
+◼  Advanced MOSFET process te chnology
+◼  Ideal for high efficiency switched mode power supplies
+◼  Low on-resistance with low gate charge
+◼  Fast switching and reverse body recovery
+
+Description
+The GSFH9R015 utilizes the latest techniques to achieve high cell density and low on-resistance. These features make this device extremely efficient and reliable for use in high efficiency switch mode power supplies and a wide variety of other applications.
+
+Absolute Maximum Ratings (TC=25°C unless otherwise specified)
+
+
+Parameter
+Drain-Source Voltage Gate-Source Voltage
+Drain Current-Continuous, @ Steady-State¹ (TC=25°C) Drain Current-Continuous, @ Steady-State (TC=100°C) Drain Current-Pulsed²
+Power Dissipation (TC=25°C)
+Linear Derating Fator (TC=25°C) Single Pulse Avalanche Energy³
+Junction-to-Ambient (PCB Mounted, Steady-State)⁴
+Junction-to-Case
+Maximum Junction Temperature Storage Temperature Range
+Symbol V(ʙʀ)ᴅꜱꜱ Vɢꜱ
+
+Iᴅ Iᴅᴍ Pᴅ
+EAS RθJA RθJC TJ TSTG
+Max.
+150
+±20
+100
+63
+400
+178
+1.4
+784
+50
+0.7
+-55 To +150
+-55 To +150
+Unit V V
+A
+
+A W
+W/°C
+mJ
+°C/W
+°C/W
+°C
+°C
+
+
+
+1/4
+
+GSFH9R015
+150V N-Channel MOSFET
+Electrical Characteristics (TA=25°C unless otherwise specified)
+Parameter         Symbol     Conditions     Min.    Typ.    Max.    Unit On / Off Characteristics
+
+Drain-Source Breakdown Voltage
+V(BR)DSS
+VGS=0V, ID=250uA
+150     -      -     V
+
+
+
+Drain-Source Leakage Current
+
+
+Iᴅꜱꜱ
+VDS=150V, VGS=0V   -
+
+TJ=125°C        -
+-     1    μA
+
+-     50    μA
+
+
+Gate-Source Leakage Current Static Drain-Source On-Resistance Gate Resistance
+Gate Threshold Voltage
+IGSS RDS(ON) RG VGS(th)
+VGS=±20V VGS=10V, ID=20A F=1MHz
+VGS=VDS, ID=250uA
+-
+-
+-
+2.1
+-
+7.3
+1.9
+3
+±100   nA
+9    mΩ
+-    Ω
+3.9    V
+
+Dynamic and Switching Characteristics
+Total Gate Charge Gate-Source Charge
+Gate-to-Drain ("Miller") Charge Turn-On Delay Time
+Rise Time
+Turn-Off Delay Time Fall Time
+Input Capacitance Output Capacitance
+Reverse Transfer Capacitance
+
+
+Qg Qgs Qgd td(on) tr td(off) tf Clss Coss Crss
+
+-
+VDS=75V, ID=20A
+VGS=10V         -
+-
+-
+VDS=30V, RGEN=3.3Ω   -
+VGS=10V, ID=1A     -
+-
+-
+VDS=75V, VGS=0V,
+F=1MHz         -
+-
+
+100    -
+24.9     -    nC
+30.8    -
+32    -
+25    -
+nS
+97    -
+89    -
+5870    -
+404     -     pF
+9.3    -
+Drain-Source Diode Characteristics and Maximum Ratings
+
+Continuous Source Current (Body Diode)
+MOSFET symbol showing the integral reverse
+
+-      -     100    A
+
+Pulsed Source Current (Body Diode)
+Diode Forward Voltage
+Note:
+ISM
+
+Vꜱᴅ
+p-n junction diode.    -
+VGS=0V, IS=20A     -
+-     400    A
+1     1.2     V
+1. Repetitive rating: Pulsed width limited by maximum junction temperature.
+2. Pulse test: pulse width ≤ 300us, duty cycle ≤ 2%.
+3. L=0.5mH, RG=25Ω, VDD=50V, IAS=56A,TJ=25°C.
+4. Device mounted on FR-4 PCB, 1inch x 0.85inch x 0.062 inch.
+
+
+
+
+
+
+
+
+
+
+
+2/4
+
+GSFH9R015
+150V N-Channel MOSFET
+Typical Electrical and Thermal Characteristic Curves
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VDS, Drain to Source Voltage (V)
+Figure 1. Output Characteristics
+VF, Body Diode Forward Voltage (V)
+Figure 2. Body Diode Characteristics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VDS, Drain to Source Voltage (V)
+Figure 3. Safe Operation Area
+TJ, Junction Temperature (°C)
+Figure 4. Normalized On-Resistance vs. TJ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+VDS, Drain to Source Voltage (V)
+Figure 5. Capacitance Characteristics
+Qg, Gate Charge (nC)
+Figure 6. Gate Charge Waveform
+
+
+
+
+3/4
+
+
+
+
+
+
+Package Outline Dimensions (TO-220)
+GSFH9R015
+150V N-Channel MOSFET
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Symbol
+Dimensions In Millimeters
+Dimensions In Inches
+
+Min
+A          4.400
+A1          2.250
+b          0.710
+b1          1.170
+c          0.330
+c1          1.200
+D          9.910
+E          8.950
+E1          12.650
+e
+e1          4.980
+F          2.650
+H          7.900
+h          0.000
+L          12.900
+L1          2.850
+V
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.540 TYP.
+
+
+
+
+
+
+
+
+
+
+
+6.900 REF.
+Max
+4.600
+2.550
+0.910
+1.370
+0.650
+1.400
+10.250
+9.750
+12.950
+
+
+5.180
+2.950
+8.100
+0.300
+13.400
+3.250
+Min
+0.173
+0.089
+0.028
+0.046
+0.013
+0.047
+0.390
+0.352
+0.498
+
+
+0.196
+0.104
+0.311
+0.000
+0.508
+0.112
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+0.100 TYP.
+
+
+
+
+
+
+
+
+
+
+
+0.272 REF.
+Max
+0.181
+0.100
+0.036
+0.054
+0.026
+0.055
+0.404
+0.384
+0.510
+
+
+0.204
+0.116
+0.319
+0.012
+0.528
+0.128
+Φ           3.400          3.800          0.134          0.150
+
+www.goodarksemi.com
+4/4
+Doc.USGSFH9R015xSN2.0
+Dec 2022

@@ -1,0 +1,1974 @@
+
+
+
+
+
+MOSFET
+Metal Oxide Semiconductor Field Effect Transistor
+
+
+CoolMOS™ CFD2 650V
+650V CoolMOS™ CFD2 Power Transistor IPx65R420CFD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data Sheet
+
+Rev.. 2..46
+Final
+
+
+
+PInodwuesrtMriaaln&agMemuletinmt a&rMkeutltimarket
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+1  Description
+CoolMOS™ is a revolutionary technology for high voltage power MOSFETs, designed according to the superjunction (SJ) principle and pioneered by Infineon Technologies. 650V CoolMOS™ CFD2 series combines the experience of the leading SJ MOSFET supplier with high class innovation. The resulting devices provide all benefits of a fast switching SJ MOSFET while offering an extremely fast and robust body diode. This combination of extremely low switching, commutation and conduction losses together with highest robustness make especially resonant switching applications more reliable, more efficient, lighter and cooler.
+Features
+• Ultra-fast body diode
+• Very high commutation ruggedness
+• Extremely low losses due to very low FOM Rdson*Qg and Eoss
+• Easy to use/drive
+• Qualified for industrial grade applications according to JEDEC (J-STD20 and JESD22)
+• Pb-free plating, Halogen free mold compound
+
+Applications
+650V CoolMOS™ CFD2 is especially suitable for resonant switching PWM stages for e.g. PC Silverbox, LCD TV, Lighting, Server and Telecom
+
+Table 1  Key Performance Parameters
+TO-247    D²PAK    TO-220
+
+
+
+
+
+TO-220 FP    DPAK     I²PAK
+
+
+
+
+
+
+
+drain pin 2
+
+
+gate  pin 1
+
+
+source pin 3
+
+Parameter VD= @ Tj ,ęY RDS(on),max Qg,typ ID,pulse Eoss @ 400V
+Body diode di/dt Qrr
+trr Irrm
+Value 700
+0.42
+31.5
+27
+2.8
+900
+0.3
+90
+6.2
+Unit V
+M
+nC A
+µJ A/µs µC ns
+A
+
+
+Type / Ordering Code IPW65R420CFD IPB65R420CFD IPP65R420CFD IPA65R420CFD IPD65R420CFD IPI65R420CFD
+Package PG-TO 247
+PG-TO 263
+PG-TO 220
+PG-TO 220 FullPAK
+PG-TO 252
+PG-TO 262
+Marking
+
+
+
+
+65F6420
+Related Links
+
+
+
+
+see Appendix A
+
+
+
+
+
+
+Final Data Sheet
+2                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+Table of Contents
+Description                                                     2
+Table of Contents                                                 3
+Maximum ratings                                                  4
+Thermal characteristics                                              5
+Electrical characteristics                                              6
+Electrical characteristics diagrams                                        8
+Test Circuits                                                    13
+Package Outlines                                                 14
+Appendix A                                                     20
+Revision History                                                  21
+Disclaimer                                                     21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+2  Maximum ratings
+at j = 25°C, unless otherwise specified
+
+
+Table 2  Maximum ratings
+Parameter
+
+Continuous drain current1)
+
+
+Pulsed drain current2) Avalanche energy, single pulse
+Avalanche energy, repetitive Avalanche current, repetitive MOSFET dv/dt ruggedness Gate source voltage
+
+Power dissipation (non FullPAK) TO-247, TO-220, I²PAK
+Power dissipation (FullPAK) TO-220 FP
+Operating and storage temperature Mounting torque (non FullPAK)
+TO-247, TO-220, I²PAK
+Mounting torque (FullPAK) TO-220 FP
+Continuous diode forward current Diode pulse current
+Reverse diode dv/dt3)
+
+Maximum diode commutation speed
+Insulation withstand voltage for TO-220FP
+
+
+Symbol
+
+D
+
+
+D,pmj,e ę=
+ęr ęr dv/dt s=
+tot tot
+
+j, ,tg
+
+
+
+
+
+=
+=,pmj,e dv/dt di}/dt
+Vɪꜱᴏ
+
+
+
+Min.
+
+
+
+
+
+
+
+
+
+
+
+
+-20
+-30
+
+
+
+
+
+-55
+
+Values Typ.
+
+
+
+Max.
+8.7
+5.5
+27
+
+227
+
+0.34
+1.8
+50
+20
+30
+
+83.3
+
+31.2
+
+150
+
+60
+
+50
+
+8.7
+27
+
+50
+
+900
+
+2500
+
+
+Unit
+
+A
+
+
+A
+
+mJ
+
+mJ A
+V/ns V
+W W
+
+°C
+
+Ncm
+Ncm A
+A
+
+V/ns A/µs V
+
+
+Note / Test Condition
+
+c = 25°C c = 100°C c = 25°C
+D = 1.8A, DD = 50V
+(see table 22)
+D = 1.8A, DD = 50V
+
+
+D= = 0 ... 400V
+static
+AC (f > 1 Hz) c = 25°C
+c = 25°C
+
+M3 and M3.5 screws M2.5 screws
+
+c = 25°C c = 25°C
+D= = 0 ... 400V, =D ≤ D, j = 25°C
+(see table 20)
+
+rms, c=25°C, =1min
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1) Limited by Tj ,ęY.
+2) Pulse width tp limited by Tj ,ęY
+3) Vpeęn<V(Br)D==, Tj<Tj ,ęY, identical low side and high side switch with same Rg
+
+Final Data Sheet
+4                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+3  Thermal characteristics
+
+Table 3  Thermal characteristics TO-247, TO-220, I²PAK
+Values
+
+Parameter
+
+Thermal resistance, junction - case Thermal resistance, junction - ambient
+Soldering temperature, wavesoldering only allowed at leads
+Symbol
+
+tntc tntę
+,ojg
+Min.
+Typ.
+Max.
+1.5
+62
+
+260
+Unit
+
+°C/W
+°C/W
+
+°C
+Note / Test Condition
+
+
+leaded
+1.6 mm (0.063 in.) from case for 10s
+
+Table 4  Thermal characteristics TO-220 FP
+Values
+
+Parameter
+
+Thermal resistance, junction - case Thermal resistance, junction - ambient
+Soldering temperature, wavesoldering only allowed at leads
+Symbol
+
+tntc tntę
+,ojg
+Min.
+Typ.
+Max.
+4
+80
+
+260
+Unit
+
+°C/W
+°C/W
+
+°C
+Note / Test Condition
+
+
+leaded
+1.6 mm (0.063 in.) from case for 10s
+
+Table 5  Thermal characteristics D²PAK, DPAK
+Values
+
+Parameter
+
+Thermal resistance, junction - case Thermal resistance, junction - ambient1)
+
+
+Soldering temperature, wave- &
+reflowsoldering allowed
+Symbol
+
+tntc tntę
+
+
+
+,ojg
+Min.
+Typ.
+
+
+
+
+
+35
+Max.
+1.5
+
+62
+
+
+
+
+260
+Unit
+
+°C/W
+
+°C/W
+
+
+
+
+°C
+Note / Test Condition
+
+
+SMD version, device on PCB, minimal footprint
+SMD version, device on PCB, 6cm² cooling area
+
+reflow MMSSLL1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1) Device on 40mm*40mm*1.5mm one layer epoxy PCB FR4 with 6cm² copper area (thickness 70µm) for drain connection.
+PCB is vertical without air stream cooling.
+
+Final Data Sheet
+5                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+4  Electrical characteristics
+at j = 25°C, unless otherwise specified
+
+
+Table 6  Static characteristics
+Parameter
+
+Drain-source breakdown voltage Gate threshold voltage
+Zero gate voltage drain current
+
+
+
+Gate-source leakage current Drain-source on-state resistance
+
+Gate resistance
+
+
+Symbol
+
+(Br)D==
+s=(tn)
+D==
+
+
+
+s==
+D=(o,)
+
+
+s
+
+
+
+Min.
+650
+3.5
+
+Values Typ.
+
+4
+
+
+100
+
+
+0.378
+0.983
+4
+
+
+
+Max.
+
+
+4.5
+1
+
+
+
+100
+0.42
+
+
+Unit
+
+V V
+µA
+
+
+
+nA
+M
+
+
+M
+
+
+Note / Test Condition
+
+s= = 0V, D = 1mA D= = s=, D = 0.3mA
+D= = 650V, s= = 0V, j = 25°C
+D= = 650V, s= = 0V, j = 150°C
+s= = 20V, D= = 0V
+s= = 10V, D = 3.4A, j = 25°C s= = 10V, D = 3.4A, j = 150°C
+= 1MHz, open drain
+
+Table 7  Dynamic characteristics
+Values
+
+Parameter
+
+Input capacitance Output capacitance
+Effective output capacitance, energy related1)
+Effective output capacitance, time related2) Turn-on delay time
+Rise time
+Turn-off delay time Fall time
+Symbol
+
+i,,
+o,,
+
+o(e,)
+
+o(t,)
+
+g(o,)
+,
+g(o}})
+}
+Min.
+Typ.
+870
+45
+
+36
+
+161
+
+10
+7
+38
+8
+Max.
+Unit
+
+pF
+pF
+
+pF
+
+pF
+
+ns ns ns ns
+Note / Test Condition
+
+s= = 0V, D= = 100V, = 1MHz
+
+
+s= = 0V, D= = 0 ... 400V
+
+D = constant, s= = 0V, D= = 0 ... 400V
+DD = 400V, s= = 13V, D = 5.2A, s = 3.4M
+(see table 21)
+
+Table 8  Gate charge characteristics
+Values
+
+Parameter
+
+Gate to source charge Gate to drain charge Gate charge total Gate plateau voltage
+Symbol
+
+g, gg g
+pjęteęm
+Min.
+Typ.
+6.4
+18.6
+31.5
+6.4
+Max.
+Unit
+
+nC nC nC V
+Note / Test Condition
+
+DD = 480V, D = 5.2A,
+s= = 0 to 10V
+
+
+
+
+
+
+
+1) Co(e,) is a fixed capacitance that gives the same stored energy as Co,, while VD= is rising from 0 to 400V
+2) Co(t,) is a fixed capacitance that gives the same charging time as Co,, while VD= is rising from 0 to 400V
+
+Final Data Sheet
+6                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+Table 9  Reverse diode characteristics
+Values
+
+Parameter
+
+Diode forward voltage Reverse recovery time Reverse recovery charge Peak reverse recovery current
+Symbol
+
+=D
+,,
+,,
+,,,
+Min.
+Typ.
+0.9
+90
+0.3
+6.2
+Max.
+Unit
+
+V
+ns µC A
+Note / Test Condition
+s= = 0V, F = 5.2A, j = 25°C r = 400V, F = 5.2A,
+d F/d = 100A/µs (see table 20)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+7                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+5  Electrical characteristics diagrams
+
+Table 10
+
+
+Power dissipation (Non FullPAK)
+90
+Power dissipation (FullPAK)
+40
+
+80                                  36
+
+70                                  32
+28
+60
+24
+50
+20
+40
+16
+30
+12
+20                                   8
+
+10                                   4
+
+
+0
+0      40      80      120     160
+C [°C]
+0
+0      40      80      120     160
+C [°C]
+tot=f( C)                               tot=f( C)
+
+
+Table 11
+
+
+Max. transient thermal impedance (Non FullPAK)
+10¹
+0.5
+Max. transient thermal impedance (FullPAK)
+10¹
+0.5
+0.2                                  0.2
+0.1                                  0.1
+
+
+
+10⁰
+0.05
+0.02
+
+
+10⁰
+0.05
+0.02
+0.01                                 0.01
+single pulse                              single pulse
+
+
+
+
+
+10-1                                        10-1
+
+
+
+
+
+
+10-2
+
+10-5      10-4      10-3      10-2      10-1
+p [s]
+10-2
+
+10⁻⁵    10⁻⁴    10⁻³    10⁻²    10⁻¹    10⁰
+p [s]
+thJC =f( P); parameter:   p/                     thJC =f( P); parameter:   p/
+
+
+Final Data Sheet
+8                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+Table 12
+
+
+Safe operating area (Non FullPAK)
+10²
+Safe operating area (FullPAK)
+10²
+
+
+
+
+
+10¹
+
+
+
+
+
+10⁰
+
+
+
+
+
+10-1
+1 µs
+10 µs
+
+
+100 µs
+
+1 ms
+
+10 ms
+
+
+DC
+
+
+
+10¹
+
+
+
+
+
+10⁰
+
+
+
+
+
+10-1
+1 µs
+
+10 µs
+
+100 µs
+
+
+1 ms
+
+10 ms
+
+
+DC
+
+
+
+
+10-2
+
+100         10¹        10²        10³
+DS [V]
+10-2
+
+100         10¹        10²        10³
+DS [V]
+D=f( DS); C=25 °C;  =0; Vgs>7.5V; parameter: p         D=f( DS); C=25 °C;  =0; Vgs>7.5V; parameter: p
+
+
+Table 13
+
+
+Safe operating area (Non FullPAK)
+10²
+Safe operating area (FullPAK)
+10²
+
+
+
+
+
+10¹
+
+
+
+
+
+10⁰
+1 µs
+
+10 µs
+
+100 µs
+
+1 ms
+
+
+
+10¹
+
+
+
+
+
+10⁰
+1 µs
+
+
+10 µs
+
+100 µs
+
+
+1 ms
+
+
+10 ms
+10 ms
+
+
+10-1                           DC           10-1                           DC
+
+
+
+
+10-2
+
+100         10¹        10²        10³
+DS [V]
+10-2
+
+100         10¹        10²        10³
+DS [V]
+D=f( DS); C=80 °C;  =0; Vgs>7.5V; parameter: p         D=f( DS); C=80 °C;  =0; Vgs>7.5V; parameter: p
+
+
+
+
+
+Final Data Sheet
+9                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+Table 14
+
+
+Typ. output characteristics Tj = 25°C
+35
+Typ. output characteristics Tj = 125°C
+20
+
+
+18
+30                         20 V
+10 V        16
+25                                  14
+
+12
+20                        8 V
+10
+
+
+10 V
+20 V
+
+
+
+8 V
+
+
+
+7 V
+
+15
+
+7  V   
+10
+
+
+5                         6 V  
+5.5 V
+5 V 4.5 V
+0
+0       5      10      15      20
+DS [V]
+
+8
+
+6
+6 V
+4
+5.5 V
+2                        5 V   
+4.5 V
+0
+0       5      10      15      20
+DS [V]
+D=f( DS);  j=25 °C; parameter:  j                    D=f( DS);  j=125 °C; parameter:  GS
+
+
+Table 15
+
+
+Typ. drain-source on-state resistance
+2.0
+Drain-source on-state resistance
+1.2
+
+
+
+1.0
+1.5
+
+0.8
+
+
+
+
+1.0
+
+
+5 V 5.5 V 6 V
+
+
+6.5 V 7 V
+
+
+10 V
+
+
+0.6
+98%
+typ
+
+
+0.4
+
+0.5
+
+0.2
+
+
+
+0.0
+
+0     4     8     12     16     20
+D [A]
+0.0
+-60   -20    20    60   100   140   180
+j [°C]
+DS(on)=f( D);  j=125 °C; parameter:  GS                 DS(on)=f( j); D=3.4 A;  GS=10 V
+
+
+
+
+
+Final Data Sheet
+10                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+Table 16
+
+
+Typ. transfer characteristics
+30
+Typ. gate charge
+10
+
+
+9
+25                          25 °C       8
+120 V
+480 V
+
+7
+20
+6
+
+15                                   5
+150 °C
+4
+10
+3
+
+2
+5
+1
+
+
+0
+0     2     4     6     8     10
+GS [V]
+0
+0      10      20      30      40
+gate [nC]
+D=f( GS); | DS| = 20V; parameter: j               GS=f( gate); D=5.2 A pulsed; parameter: DD
+
+
+Table 17
+
+
+Avalanche energy
+250
+Drain-source breakdown voltage
+760
+
+740
+
+
+200
+720
+700
+
+680
+150
+660
+
+640
+100
+620
+
+600
+50                                  580
+
+560
+
+
+0
+0      50      100     150     200
+j [°C]
+540
+-60   -20    20    60   100   140   180
+j [°C]
+AS=f( j); D=1.8 A;  DD=50 V                   BR(DSS)=f( j); D=1 mA
+
+
+
+
+
+Final Data Sheet
+11                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+Table 18
+
+
+Typ. capacitances
+10⁴
+Typ. Coss stored energy
+6
+
+
+
+
+
+10³
+5
+Ciss
+
+4
+
+
+
+102                                          3
+Coss
+
+
+2
+
+10¹
+Crss                           1
+
+10⁰
+0    100   200   300   400   500   600
+DS [V]
+
+
+0
+0    100   200   300   400   500   600
+DS [V]
+=f( DS);  GS=0 V; =1 MHz                     oss f  DS
+
+
+Table 19
+Forward characteristics of reverse diode
+10²
+
+
+
+
+
+
+10¹
+125 °C
+25 °C
+
+
+
+
+
+
+
+10⁰
+
+
+
+
+
+
+
+
+
+
+
+10-1
+0         1         2         3
+SD [V]
+F=f( SD); parameter: j
+
+
+
+
+
+Final Data Sheet
+12                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+6  Test Circuits
+
+
+Table 20  Diode characteristics
+Test circuit for diode characteristics
+
+Diode recovery waveform
+
+ID
+RG1
+
+VDS
+
+RG2
+
+
+
+
+
+RG1 = RG2
+
+
+
+
+Table 21  Switching times
+Switching times test circuit for inductive load
+
+Switching times waveform
+
+
+
+
+
+
+
+VGS
+
+
+
+
+VDS
+VDS
+
+
+
+
+VGS
+
+90%
+
+
+
+10%
+
+
+4d(on) 4r 4on
+4d(off)
+4f
+
+4off
+
+
+
+
+
+
+Table 22  Unclamped inductive
+Unclamped inductive load test circuit
+
+Unclamped inductive waveform
+
+V(BR)DS
+
+VD
+ID    VDS
+
+
+VDS
+ID
+VDS
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+13                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+7  Package Outlines
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 1  Outline PG-TO 247, dimensions in mm/inches
+
+
+Final Data Sheet
+14                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 2  Outline PG-TO 263, dimensions in mm/inches
+
+
+
+Final Data Sheet
+15                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 3  Outline PG-TO 220, dimensions in mm/inches
+
+
+
+Final Data Sheet
+16                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 4  Outline PG-TO 220 FullPAK, dimensions in mm/inches
+
+
+
+Final Data Sheet
+17                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 5  Outline PG-TO 252, dimensions in mm/inches
+
+
+
+Final Data Sheet
+18                RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 6  Outline PG-TO 262, dimensions in mm/inches
+
+
+
+Final Data Sheet
+19                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+8  Appendix A
+
+Table 23  Related Links
+• IFX Design Tools:
+http://www.infineon.com/cms/en/product/promopages/designtools/index.html
+
+• IFX CoolMOS Webpage:
+http://www.infineon.com/cms/en/product/channel.html?channel=ff80808112ab681d0112ab6a628704d8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+20                  RReevv.. 22..46,, 22001162--0086--2041
+
+650V CoolMOS™ CFD2 Power Transistor
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+
+
+Revision History
+IPW65R420CFD , IPB65R420CFD , IPP65R420CFD , IPA65R420CFD , IPD65R420CFD , IPI65R420CFD
+Revision: 2012-06-01, Rev. 2.7
+Previous Revision: 2.5
+
+Revision
+2.0
+2.1
+2.2
+2.3
+2.4
+22..55
+22..66
+2.7
+Date
+2011-05-04
+2011-05-05
+2011-06-07
+2011-08-29
+22001112--0096--1041
+22001113--0097--1361
+22001116--0098--2264
+2012-06-01
+Subjects (major changes since last revision)
+Release of final datasheet release of final datasheet Update VD= @ Tj ,ęY update tQogCdFD2 standard
+uuppddaatteeSpOinAn, aAmE,inTgyp. Gate Charge
+rUepledaastee ohfanloegwenpinfreneammionlgd compound status of PG-TO 252 package
+uPpGd-aTteOth2e52Ignsosnt-ehsat lcoognednitiforene version discontinued (creation: 2016.08.24)
+update SOA, AE, Typ. Gate Charge
+
+
+We Listen to Your Comments
+Any information within this document that you feel is wrong, unclear or missing at all? Your feedback will help us to continuously improve the quality of this document. Please send your proposal (including a reference to this document) to: erratum@infineon.com
+
+Edition 2011-08-01 Published by
+Infineon Technologies AG 81726 München, Germany
+© 2011 Infineon Technologies AG All Rights Reserved.
+
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics. With respect to any examples or hints given herein, any typical values stated herein and/or any information regarding the application of the device, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation, warranties of non-infringement of intellectual property rights of any third party.
+
+Information
+For further information on technology, delivery terms and conditions and prices please contact your nearest Infineon Technologies Office (www.infineon.com).
+
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+The Infineon Technologies component described in this Data Sheet may be used in life-support devices or systems and/or automotive, aviation and aerospace applications or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life-support, automotive, aviation and aerospace device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+
+
+
+
+
+
+
+
+
+
+
+Final Data Sheet
+21                  RReevv.. 22..46,, 22001162--0086--2041
+
+
+650V CoolMOSª CFD2 Power Transistor
+IPD65R420CFD                           
+
+
+Revision History
+IPD65R420CFD
+Revision: 2016-08-26, Rev. 2.6
+Previous Revision
+Revision  Date     Subjects (major changes since last revision)
+2.6    2016-08-26  PG-TO 252 non-halogen free version discontinued (DS creation: 2016.08.24)
+
+
+Trademarks of Infineon Technologies AG
+AURIX™, C166™, CanPAK™, CIPOS™, CoolGaN™, CoolMOS™, CoolSET™, CoolSiC™, CORECONTROL™, CROSSAVE™, DAVE™, DI-POL™, DrBlade™, EasyPIM™, EconoBRIDGE™, EconoDUAL™, EconoPACK™, EconoPIM™, EiceDRIVER™, eupec™, FCOS™, HITFET™, HybridPACK™, Infineon™, ISOFACE™, IsoPACK™, i-Wafer™, MIPAQ™, ModSTACK™, my-d™, NovalithIC™, OmniTune™, OPTIGA™, OptiMOS™, ORIGA™, POWERCODE™, PRIMARION™, PrimePACK™, PrimeSTACK™, PROFET™, PRO-SIL™, RASIC™, REAL3™, ReverSave™, SatRIC™, SIEGET™, SIPMOS™, SmartLEWIS™, SOLID FLASH™, SPOC™, TEMPFET™, thinQ!™, TRENCHSTOP™, TriCore™.
+Trademarks updated August 2015
+
+Other Trademarks
+All referenced product or service names and trademarks are the property of their respective owners.
+
+
+
+
+We Listen to Your Comments
+Any information within this document that you feel is wrong, unclear or missing at all? Your feedback will help us to continuously improve the quality of this document. Please send your proposal (including a reference to this document) to: erratum@infineon.com
+
+Published by
+Infineon Technologies AG 81726 München, Germany
+© 2016 Infineon Technologies AG All Rights Reserved.
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics. With respect to any examples or hints given herein, any typical values stated herein and/or any information regarding the application of the device, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation, warranties of non-infringement of intellectual property rights of any third party.
+Information
+For further information on technology, delivery terms and conditions and prices please contact your nearest Infineon Technologies Office (www.infineon.com).
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+The Infineon Technologies component described in this Data Sheet may be used in life-support devices or systems and/or automotive, aviation and aerospace applications or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life-support, automotive, aviation and aerospace device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+
+
+
+
+
+
+
+
+
+
+
+
+22                    Rev. 2.6, 2016-08-26

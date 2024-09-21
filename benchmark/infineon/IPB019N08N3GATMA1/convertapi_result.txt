@@ -1,0 +1,933 @@
+lnfineon
+IPB019N08N3 G
+
+
+OptiMOS’"3 Power-Transistor
+Features
+
+• Ideal for high frequency switching and sync. rec.
+
+• Optimized technology for motor drive applications
+• Excellent gate charge x R DS(..t product (FOM)
+
+Product Summary
+
+' DS
+
+R DS(on),max
+
+! D
+
+
+80 V
+1.9 mv
+180 A
+
+
+• Very low on-resistance RD (..›
+
+• Superior thermal resistance
+
+• N-channel, normal level
+
+• 100% avalanche tested
+
+• Pb-free plating; RoHS compliant
+
+• Qualified according to JEDEC ¹) for target applications
+
+• Halogen-free according to IEC61249-2-21
+previous engineering code:
+IPB022N08N3 G
+
+
+
+
+
+
+
+
+Halogen-Free
+
+
+Type
+
+
+
+
+
+
+Package Marking
+IPB019N08N3 G
+
+
+
+
+
+
+PG-TO263-7 019N08N
+Maximum ratings, at T,=25 °C, unless otherwise specified
+
+Parameter
+Symbol Conditions
+Value
+Unit
+
+
+Continuous drain current
+
+
+
+Pulsed drain current)
+
+Avalanche energy, single pulse³* Gate source voltage
+Power dissipation
+
+Operating and storage temperature IEC climatic category; DIN IEC 68-1
+
+
+! D
+
+
+
+
+' D,pulse
+
+*AS
+’cs
+
+
+T„ T g
+
+T =25 °C²)
+T =100 °C
+
+TQ 25 °C
+
+D 100 A, R cs-25 U
+
+180     A
+
+180
+
+720
+1430     mJ
+*20    V
+300
+-55 ... 175   °C
+55/175/56
+
+¹*J-STD20and JESD22
+²*See figure 3 for more detailed information ’* See figure 13 for more detailed information
+Rev. 2.3                     page 1
+
+
+
+
+2009-11-16
+
+infineon
+IPB019N08N3 G
+
+
+Parameter
+Conditions
+Values
+
+max.
+
+Thermal characteristics
+
+
+Thermal resistance, junction - case  R
+
+Thermal resistance,        R t„   minimal footprint
+junction - ambient             6 c 2 cooling area4
+Electrical characteristics, at T,=25 °C, unless otherwise specified Static characteristics
+-    -   0.5  K/W
+-   -   62
+-   -   40
+
+
+Drain-source breakdown voltage Gate threshold voltage
+Zero gate voltage drain current
+
+
+
+
+
+Gate-source leakage current Drain-source on-state resistance
+
+
+Gate resistance Transconductance
+
+‹BR)DSS SGS(th)
+
+’DSS
+
+
+
+
+
+
+
+css
+
+R Ds(»)
+
+
+
+R
+
+g
+
+cs-0 V, ! D 1 MA
+
+' DS-/GS' D-270 |JA
+
+'DS-80 V, V’cs-0 V,
+T,=25 °C
+
+'DS-80 V. >cs-0 V,
+T,=125 °C
+
+cs-20 V, DS-0 V
+*GS-10 V, ! D 100 A cs-6 V, D-50 A
+
+
+R DS(on) ’
+D-100 A
+
+80
+
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+103
+
+
+
+2.8
+
+0.1
+
+
+10
+
+1
+
+1.6
+
+2.0
+
+2.7
+
+206
+
+V
+3.5
+
+1  pA
+
+
+100
+
+100 nA
+
+1.9  mv
+
+3.3
+
+
+
+S
+°* Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 ct (one layer, 70 pm thick) copper area for drain connection. PCB is vertical in still air.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 2.3                     page 2                    2009-11-16
+
+infineon
+IPB019N08N3 G
+
+Parameter
+Dynamic characteristics
+Conditions
+Values
+max.
+
+
+Input capacitance Output capacitance
+Reverse transfer capacitance Turn-on delay time
+Rise time
+
+
+'GS-0 V. >DS-40 V, f-—1 MHz
+
+
+t dean)
+
+'‹    DD-40 V. >cs-10 V,
+
+-   10700  14200 pF
+
+-   2890  3840
+
+-   100   -
+
+-    28    -  ns
+
+-   73   -
+
+Turn-off delay time Fall time
+Gate Charge Characteristics )
+t d\otf)
+
+t t
+D-100 A' R t=1.6 U
+-   86   -
+
+-   33   -
+
+Gate to source charge Gate to drain charge
+
+
+
+Q gd
+
+-   50
+
+-   30
+
+-  nC
+
+Switching charge Gate charge total Gate plateau voltage
+
+
+Qt
+V plateau
+'DD-40 V. ! D-100 A,
+*cs-0 to 10 V
+-   50   -
+
+-   155   206
+-   4.6   -  V
+
+Output charge
+Q „   DD=40 V, >cs-0 V
+-   210   279  nC
+
+
+Reverse Diode
+
+Diode continous forward current   !
+
+
+
+T =25 °C
+
+
+-    -   180  A
+
+Diode pulse current Diode forward voltage
+' S,putse
+
+
+SD
+
+
+*cs-0 V, / g-100 A, T,=25 °C
+-    -   720
+
+-   1.0   1.2  V
+
+Reverse recovery time Reverse recovery charge
+tq   V'R=40 V, IF=100A
+Q   d/ F dt -—100 A/ps
+-   113   -  ns
+
+-   317   -  nC
+’* See figure 16 for gate charge parameter definition
+
+
+
+
+
+
+
+Rev. 2.3
+page 3
+2009-11-16
+
+intineon
+1 Power dissipation
+P @]-[/ T ct
+
+
+
+
+
+
+
+
+250
+
+
+
+200
+
+
+
+” 150
+
+
+
+100
+
+
+so
+
+
+
+2 Drain current
+! D-f/Tc): *cs'10 V
+
+
+200
+
+180
+
+160
+
+140
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+IPB019N08N3 G
+
+
+
+
+1 OO
+
+0
+200    0
+
+
+
+150   200
+
+
+3 Safe operating area
+/ p=f(*DS); Tc'25 °C; D -0
+parameter: ft
+4 Max. transient thermal impedance
+* t Jc-f// p)
+parameter: D -—IQT
+
+10*
+
+
+
+
+
+
+
+
+1 0²
+
+
+10 '
+
+
+
+10'
+
+
+
+
+
+
+
+
+
+Rev. 2.3
+
+10’
+10'   10'
+
+
+1 O'
+
+
+
+
+
+page 4
+
+10 "
+10 ’   10“    10    1 0 ²   10 '   10'
+r, [s]
+
+2009-11-16
+
+intineon
+5 Typ. output characteristics
+/ t=f( DS); T,=25 °C
+parameter: cs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+240
+
+
+160
+IPB019N08N3 G
+
+
+6 Typ. drain-source on resistance
+R as ry!\! DNi 7j-25 °C parameter: *cs
+
+
+
+
+
+
+Vos
+
+7 Typ. transfer characteristics
+/ q-f/ cs)' I DSI>2|! DIR s gp „
+parameter: T,
+
+100   200
+/ [A]
+
+8 Typ. forward transconductance
+g fs'f DN? 7t 25 °C
+
+300    400
+
+
+
+
+
+
+250
+
+
+
+200
+
+
+
+
+
+
+
+
+100
+
+
+
+so
+
+
+2
+
+
+
+
+Rev. 2.3
+
+
+
+
+page 5
+0   100
+
+/ [A]
+
+200
+
+300
+
+
+
+
+2009-11-16
+
+intineon
+9 Drain-source on-state resistance
+
+
+
+
+10 Typ. gate threshold voltage
+*cs‹t )-f(T)); *cs-*as parameter: /
+
+
+s.s
+
+
+
+21
+
+@ 2
+
+1.s
+
+
+
+a.s
+IPB019N08N3 G
+
+
+-60  -20   20   60  1OO  140  180
+T §’cj
+11 Typ. capacitances C'f(7@5)l cs'0 V; /'-—1 MHz
+
+-60  -20   20   60  100  140  180
+T, §’cj
+
+12 Forward characteristics of reverse diode
+I,=f(Est) parameter: T,
+
+
+
+
+
+
+
+
+
+
+10z
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20     40    60    80                        2
+
+
+Rev. 2.3
+page 6
+2009-11-16
+
+intineon
+13 Avalanche characteristics
+s-f//gv); R cs-25 U parameter: 7q(start)
+1000
+
+
+
+
+
+
+
+
+100
+
+
+
+
+14 Typ. gate charge
+GS f(Q gate)' ' D'100 A pulsed parameter: V'tt
+IPB019N08N3 G
+
+
+
+
+
+
+
+
+
+0.1    1    10
+
+
+
+15 Drain-source breakdown voltage BR(DSS)-f(T,), I t-—1 mA
+
+100   1 000
+0       100
+0 „, [uC]
+
+16 Gate charge waveforms
+
+150   200
+
+
+JL
+8’cs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-60  -20  20  60  100  140  180
+T §’cj
+
+
+Rev. 2.3
+page 7
+2009-11-16
+
+Ìnfìneon
+PG-TO263-7 (D*-Pak)
+IPB019N08N3 G
+
+
+
+
+
+
+
+
+
+
+
+
+
+2S‹
+
+
+
+
+FOO TPR IN T
+
+
+
+
+
+
+
+
+
+DiM
+
+AI
+b b2
+
+o2
+D
+
+
+
+4.30
+0 00
+0.ô0
+0.60
+0.3 3
+ï 47
+8 fi1
+UI LLIME TERS
+
+
+
+
+0 25
+0.70
+1.00
+0.65
+1 40
+9.4õ
+
+
+
+0 469
+0 000
+0.020
+0 020
+0 043
+0.04 6
+œ33&
+
+
+MAC 0.•80
+0 040
+0.028
+0.039
+0.026
+0.0ôô 0.372
+
+
+
+
+DOCUMEN T NO Z8B00 Ï 34765
+
+   DI     6 90   
+    9 80   
+02T?
+0A86
+0 31 1
+0 406
+
+Ei   6.ô0
+
+N
+  0Zl6      0.339   
+
+
+
+EUROPEAN PROJEC Tî ON
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 2.3
+H L L1 L2 FI F2 FT
+
+   F5  F6
+1 4. 6 1
+
+0.70
+00
+16 OF
+9.30
+4 õ0
+1 0 70
+0 37
+0.70
+15.88
+3 00
+1.60
+1 78
+1 6 2 5
+9.60
+4 70
+1 0 90
+0 57
+0.90
+0.S75
+0 090
+0.028
+0 039
+0 632
+0. 366
+0. 4 77
+0 421
+0 01 $
+0 028
+
+
+
+page 8
+0.62õ
+0.4 18
+0.063
+0 070
+0 640
+0 374
+0.16õ
+0 429
+    0 022   
+0.036
+
+
+
+
+
+
+ISSUE DATE
+05-1 1 -2007
+
+RE\dSION 01
+
+
+
+
+
+
+
+
+
+
+
+2009-11-16

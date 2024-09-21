@@ -1,0 +1,937 @@
+IPP028N08N3 G IPI028N08N3 G
+
+
+
+OptiMOG®3 Power-Transistor
+Features
+• N-channel, normal level
+• Excellent gate charge x R DS₍ₒn₎ product (FOM)
+• Very low on-resistance R DS₍ₒn₎
+
+• 175 °C operating temperature
+• Pb-free lead plating; RoHS compliant
+• Qualified according to JEDEC¹⁾ for target application
+
+Product Summary
+V DS               80  V
+R DS(on),max              2.8  mΩ
+
+I D                100  A
+
+previous engineering sample codes: IPP02CN08N
+• Ideal for high-frequency switching and synchronous rectification
+
+
+Type
+IPP028N08N3 G
+IPI028N08N3 G
+
+
+
+
+
+
+Package
+PG-TO220-3
+PG-TO262-3
+
+
+Marking
+028N08N
+028N08N
+
+Maximum ratings, at T j=25 °C, unless otherwise specified
+
+
+Parameter
+Symbol
+Conditions
+Value
+Unit
+
+
+Continuous drain current
+
+
+Pulsed drain current²⁾ Avalanche energy, single pulse
+I D
+
+
+
+
+I D,pulse
+
+E AS
+T =25 °C²⁾ T C=100 °C T C=25 °C
+I D=100 A, R GS=25 Ω
+100      A
+100
+400
+1430      mJ
+
+Gate source voltage
+V GS
+±20      V
+
+
+Power dissipation
+P tot
+T C=25 °C
+300      W
+
+
+Operating and storage temperature
+T j, T stg
+-55 ... 175    °C
+IEC climatic category; DIN IEC 68-1                       55/175/56
+
+
+
+
+
+
+
+
+
+
+Rev. 1.0                         page 1                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+
+
+Parameter
+Symbol
+Conditions
+Values
+Unit
+min.   typ.   max.
+
+Thermal characteristics
+
+
+Thermal resistance, junction - case
+R thJC
+-     -    0.5
+K/W
+
+
+Thermal resistance, junction - ambient
+R thJA
+minimal footprint     -
+6 cm² cooling area³⁾    -
+-   62
+-    40
+
+Electrical characteristics, at T j=25 °C, unless otherwise specified
+
+Static characteristics
+
+
+Drain-source breakdown voltage
+V (BR)DSS
+V GS=0 V, I D=1 mA
+80    -     -   V
+
+
+Gate threshold voltage
+
+Zero gate voltage drain current
+V GS(th)
+
+
+I DSS
+V DS=V GS, I D=270 µA   2
+
+V DS=80 V, V GS=0 V,
+-
+T j=25 °C
+2.8
+
+0.1
+3.5
+
+1  µA
+
+
+V DS=80 V, V GS=0 V,
+-
+T j=125 °C
+10   100
+
+
+Gate-source leakage current
+I GSS
+V GS=20 V, V DS=0 V    -
+1   100  nA
+
+
+Drain-source on-state resistance
+R DS(on)
+V GS=10 V, I D=100 A   -
+2.4
+2.8  mΩ
+
+
+V GS=6 V, I D=50 A
+-   2.8
+4.2
+
+
+Gate resistance
+
+Transconductance
+R G                  -
+g    |V DS|>2|I D|R DS(on)max,   94
+2.7    -   Ω
+187    -   S
+
+fs   I
+D=100 A
+
+
+¹⁾J-STD20 and JESD22
+
+²⁾ See figure 3
+³⁾ Device on 40 mm x 40 mm x 1.5 mm epoxy PCB FR4 with 6 cm² (one layer, 70 µm thick) copper area for drain connection. PCB is vertical in still air.
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 1.0                         page 2                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+Parameter              Symbol Conditions
+Values
+min.   typ.   max.
+Unit
+Dynamic characteristics
+
+Input capacitance Output capacitance
+Reverse transfer capacitance Turn-on delay time
+Rise time
+Turn-off delay time
+
+C iss C oss C rss 4 d(on)
+4 r
+
+4 d(off)
+-
+V GS=0 V, V DS=40 V,
+f =1 MHz         -
+-
+-
+V DD=40 V, V GS=10 V,   -
+I D=100 A, R G=1.6 Ω   -
+10700
+2890
+100
+28
+73
+86
+14200 pF
+3840
+150
+-  ns
+-
+-
+Fall time               4 f                   -     33     -
+
+Gate Charge Characteristics⁴⁾
+
+
+Gate to source charge
+Q gs
+-    50
+67  nC
+
+
+Gate to drain charge
+Q gd
+-
+V DD=40 V, I D=100 A,
+30   45
+
+Switching charge
+Gate charge total
+Q sw
+
+Q g
+V GS=0 to 10 V
+-    50
+-   155
+72
+206
+
+
+Gate plateau voltage
+V plateau
+-    4.7    -   V
+
+
+Output charge
+Q oss
+V DD=40 V, V GS=0 V
+-   210
+279  nC
+
+Reverse Diode
+
+
+Diode continous forward current Diode pulse current
+Diode forward voltage
+
+Reverse recovery time Reverse recovery charge
+I S
+
+I S,pulse
+
+
+V SD
+
+
+4 rr
+
+Q rr
+
+T C=25 °C
+
+
+V GS=0 V, I F=100 A,
+T j=25 °C
+
+V R=40 V, I F=I S,
+di F/d4 =100 A/µs
+-    -
+-    -
+
+-   1.0
+
+-   113
+-   317
+100  A
+400
+
+1.2  V
+
+-  ns
+-  nC
+⁴⁾ See figure 16 for gate charge parameter definition
+
+
+
+
+
+
+
+
+
+
+Rev. 1.0                         page 3                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+
+1 Power dissipation                2 Drain current
+P tₒt=f(T C)                       I D=f(T C); V GS“10 V
+
+
+
+350                              120
+
+
+300
+
+100
+
+
+250
+80
+
+200
+60
+150
+
+40
+100
+
+
+20
+50
+
+
+0
+0      50     100     150     200
+T C [°C]
+0
+0      50     100     150     200
+T C [°C]
+
+3 Safe operating area               4 Max. transient thermal impedance
+I D=f(V DS); T C=25 °C; D =0              Z thJC=f(4 p)
+parameter: 4 p                     parameter: D =4 p/T
+
+103                                   10⁰
+
+
+limited by on-state
+resistance
+1 µs
+
+10 µs
+
+
+
+
+10²
+100 µs
+
+
+
+1 ms
+
+
+0.5
+
+
+
+
+10 ms
+
+10-1
+0.2
+DC                  0.1
+10¹
+0.05
+0.02
+0.01
+
+10⁰
+10-1
+10⁰
+V DS [V]
+10¹
+10²
+10-2
+10-5
+single pulse
+10-4
+10-3
+t p [s]
+10-2
+10-1
+10⁰
+Rev. 1.0                         page 4                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+
+5 Typ. output characteristics           6 Typ. drain-source on resistance
+I D=f(V DS); T j=25 °C                 R DS₍ₒn₎=f(I D); T j=25 °C
+parameter: V GS                    parameter: V GS
+
+
+400
+
+
+350
+15
+6 V
+10 V
+7 V
+
+
+
+300
+
+12    4.5 V
+5 V
+
+
+
+250
+5.5 V
+9
+
+200
+
+6
+150
+5 V
+
+
+100
+
+
+50
+
+
+
+
+
+4.5 V
+
+3
+
+10 V
+
+5.5 V
+6 V
+7 V
+
+
+0
+0     1     2     3     4     5
+V DS [V]
+0
+0      50     100     150     200
+I D [A]
+
+7 Typ. transfer characteristics          8 Typ. forward transconductance
+I D=f(V GS); |V DS|>2|I D|R DS₍ₒn₎mₐₓ            g fs=f(I D); T j=25 °C parameter: T j
+300                              250
+
+
+
+250
+200
+
+
+200
+150
+
+150
+
+
+
+100
+
+
+
+
+
+25 °C
+100
+175 °C
+50
+50
+
+
+
+0
+0      2      4      6      8
+V GS [V]
+0
+0        50       100       150
+I D [A]
+Rev. 1.0                         page 5                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+
+9 Drain-source on-state resistance        10 Typ. gate threshold voltage
+R DS₍ₒn₎=f(T j); I D=100 A; V GS=10 V          V GS₍th₎=f(T j); V GS=V DS
+parameter: I D
+
+6                               4
+
+
+3.5
+5
+
+
+
+
+4
+
+98 %
+3
+
+
+
+
+
+
+
+
+
+
+
+typ
+3
+
+
+2.5
+
+
+2
+
+
+
+
+
+270 µA
+
+2700 µA
+
+1.5
+2
+
+1
+
+1
+0.5
+
+
+0
+-60   -20   20   60   100   140   180
+T j [°C]
+0
+-60   -20   20   60   100   140   180
+T j [°C]
+
+11 Typ. capacitances               12 Forward characteristics of reverse diode
+C =f(V DS); V GS=0 V; f =1 MHz            I F=f(V SD)
+parameter: T j
+
+105                                   10³
+
+
+
+
+10⁴
+
+
+
+
+
+10³
+Ciss
+
+
+Coss
+
+
+
+10²
+
+
+
+
+175 °C
+
+
+
+
+
+25 °C
+
+
+
+
+175 °C, 98%
+
+25 °C, 98%
+
+
+
+
+
+10²
+Crss
+
+10¹
+
+
+
+
+10¹
+
+0      20     40     60     80
+V DS [V]
+10⁰
+
+0     0.5     1     1.5     2
+V SD [V]
+Rev. 1.0                         page 6                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+
+13 Avalanche characteristics           14 Typ. gate charge
+I AS=f(4 AV); R GS=25 Ω                 V GS=f(Q gₐtₑ); I D=50 A pulsed
+parameter: T j₍stₐrt₎                   parameter: V DD
+
+1000                               12
+
+
+40 V
+10
+
+
+
+100
+
+8
+25 °C
+20 V
+
+
+60 V
+
+
+
+150 °C
+100 °C
+6
+
+
+
+10                               4
+
+
+
+2
+
+
+
+1
+0.1     1      10     100    1000
+t AV [µs]
+0
+0      50     100     150     200
+Q gₐtₑ [nC]
+
+15 Drain-source breakdown voltage        16 Gate charge waveforms
+V BR₍DSS₎=f(T j); I D=1 mA
+
+
+
+90
+V GS
+
+Q g
+
+
+
+
+80
+
+
+
+
+
+
+
+V g s(th)
+70
+
+
+
+Q g(th)
+Q sw
+Q gate
+
+
+
+60
+-60   -20   20   60   100   140   180
+T j [°C]
+Q g s
+Q g d
+Rev. 1.0                         page 7                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+
+
+PG-TO262-3 (I²-Pak)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 1.0                         page 8                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+PG-TO220-3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rev. 1.0                         page 9                         2008-01-25
+
+IPP028N08N3 G IPI028N08N3 G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Published by
+Infineon Technologies AG 81726 Munich, Germany
+© 2007 Infineon Technologies AG All Rights Reserved.
+
+Legal Disclaimer
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics. With respect to any examples or hints given herein, any typical values stated herein and/or any information regarding the application of the device, Infineon Technologies hereby disclaims any and all warranties and liabilities of any kind, including without limitation, warranties of non-infringement of intellectual property rights
+of any third party.
+
+Information
+For further information on technology, delivery terms and conditions and prices, please contact the nearest Infineon Technologies Office (www.infineon.com).
+
+Warnings
+Due to technical requirements, components may contain dangerous substances. For information on the types in question, please contact the nearest Infineon Technologies Office.
+Infineon Technologies components may be used in life-support devices or systems only with the express written approval of Infineon Technologies, if a failure of such components can reasonably be expected to cause the failure of that life-support device or system or to affect the safety or effectiveness of that device or system. Life support devices or systems are intended to be implanted in the human body or to support and/or maintain and sustain and/or protect human life. If they fail, it is reasonable to assume that the health of the user or other persons may be endangered.
+Rev. 1.0                         page 10                         2008-01-25

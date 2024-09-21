@@ -1,0 +1,1219 @@
+
+StrongIRFET™ IRF100B202
+
+
+Application
+⚫ Brushed Motor drive applications
+HEXFET® Power MOSFET
+
+⚫ BLDC Motor drive applications
+⚫ Battery powered circuits
+⚫ Half-bridge and full-bridge topologies
+⚫ Synchronous rectifier applications
+⚫ Resonant mode power supplies
+⚫ OR-ing and redundant power switches
+⚫ DC/DC and AC/DC converters
+⚫ DC/AC Inverters
+D       VDSS
+
+RDS(on) typ.
+max
+S    ID (Silicon Limited)
+100V
+7.2mΩ
+8.6mΩ
+97A
+
+
+
+Benefits
+⚫ Improved Gate, Avalanche and Dynamic dV/dt Ruggedness
+⚫ Fully Characterized Capacitance and Avalanche SOA
+⚫ Enhanced body diode dV/dt and dI/dt Capability
+⚫ Lead-Free, RoHS Compliant, Halogen-Free
+S D
+G
+TO-220AB IRF100B202
+
+G         D         S
+Gate       Drain      Source
+
+
+
+Base part number  Package Type
+Standard Pack
+Form      Quantity
+
+Orderable Part Number
+IRF100B202       TO-220          Tube         50         IRF100B202
+
+
+
+
+
+
+
+
+
+25
+ID = 58A
+
+20
+100
+
+
+80
+TJ = 125°C               60
+15
+40
+10              TJ = 25°C                20
+
+
+
+5
+2  4  6  8  10  12  14  16  18  20
+
+VGS, Gate -to -Source Voltage (V)
+
+
+0
+25   50   75   100  125  150  175
+TC , Case Temperature (°C)
+
+
+Fig 1. Typical On– Resistance vs. Gate Voltage
+Fig 2. Maximum Drain Current vs. Case Temperature
+
+1  www.irf.com   © 2014 International Rectifier     Submit Datasheet Feedback      August 18, 2014
+
+IRF100B202
+
+
+Absolute Maximum Rating Symbol
+
+Parameter
+
+Max.
+
+Units
+
+ID @ TC = 25°C ID @ TC = 100°C IDM
+PD @TC = 25°C
+
+Vɢꜱ TJ Tꜱᴛɢ
+Continuous Drain Current, VGS @ 10V Continuous Drain Current, VGS @ 10V Pulsed Drain Current ➀
+Maximum Power Dissipation Linear Derating Factor
+Gate-to-Source Voltage
+Operating Junction and Storage Temperature Range
+Soldering Temperature, for 10 seconds (1.6mm from case) Mounting Torque, 6-32 or M3 Screw
+97
+68
+380
+221
+1.5
+± 20
+-55 to + 175
+300
+10 lbf·in (1.1 N·m)
+A W
+W/°C
+V
+
+°C
+Avalanche Characteristics
+
+EAS (Thermally limited)
+EAS (Thermally limited)
+EAS (tested)
+Single Pulse Avalanche Energy ➁
+Single Pulse Avalanche Energy ➇
+Single Pulse Avalanche Energy Tested Value ➈
+189
+292         mJ
+217
+IAR           Avalanche Current ➀                      See Fig 15, 16, 23a, 23b     A
+
+EAR
+Repetitive Avalanche Energy ➀                                  mJ
+
+
+Thermal Resistance Symbol
+
+Parameter
+
+Typ.
+
+Max.
+
+Units
+
+RθJC RθCS RθJA
+Junction-to-Case ➆
+Case-to-Sink, Flat Greased Surface Junction-to-Ambient
+––– 0.50
+–––
+0.68 ––– 62
+
+°C/W
+
+Static @ TJ = 25°C (unless otherwise specified)
+
+Symbol
+V(BR)DSS
+Parameter
+Drain-to-Source Breakdown Voltage
+Min.
+100
+Typ.
+–––
+Max.
+–––
+Units
+V
+Conditions
+VGS = 0V, ID = 250µA
+
+ΔV₍BR₎DSS/ΔTJ Breakdown Voltage Temp. Coefficient
+–––
+0.10
+–––
+V/°C
+Reference to 25°C, ID = 5mA ➀
+
+RDS(on) VGS(th)
+IDSS
+
+Iɢꜱꜱ RG
+Static Drain-to-Source On-Resistance Gate Threshold Voltage
+Drain-to-Source Leakage Current
+Gate-to-Source Forward Leakage Gate-to-Source Reverse Leakage Gate Resistance
+––– 2.0 –––
+–––
+–––
+–––
+–––
+7.2 –––
+–––
+–––
+–––
+––– 2.4
+8.6
+4.0
+20
+250
+100
+-100 –––
+mΩ  VGS = 10V, ID = 58A
+V  VDS = VGS, ID = 150µA VDS =100 V, VGS = 0V
+µA  VDS = 80V,VGS = 0V,TJ =125°C
+nA  VGS = 20V VGS = -20V
+Ω
+Notes:
+➀ Repetitive rating; pulse width limited by max. junction temperature.
+➁  Limited by TJmₐₓ, starting TJ = 25°C, L = 0.113mH, RG = 50Ω, IAS = 58A, VGS =10V.
+➂ ISD ≤ 58A, di/dt ≤ 1316A/µs, VDD ≤ V₍BR₎DSS, TJ ≤ 175°C.
+➃ Pulse width ≤ 400µs; duty cycle ≤ 2%.
+➄  Cₒss eff. (TR) is a fixed capacitance that gives the same charging time as Cₒss while VDS is rising from 0 to 80% VDSS.
+➅  Cₒss eff. (ER) is a fixed capacitance that gives the same energy as Cₒss while VDS is rising from 0 to 80% VDSS.
+➆ Rθ is measured at TJ approximately 90°C.
+➇  Limited by TJmₐₓ, starting TJ = 25°C, L = 1mH, RG = 50Ω, IAS = 24A, VGS =10V.
+➈  This value determined from sample failure population, starting TJ =25°C, L= 0.113mH, RG = 50Ω, IAS =58A, VGS =10V.
+
+
+
+
+
+2  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+IRF100B202
+
+
+Dynamic Electrical Characteristics @ TJ = 25°C (unless otherwise specified)
+
+Symbol
+gfs Qg Qgs Qgd Qsync td(on)
+tr
+Parameter Forward Transconductance Total Gate Charge
+Gate-to-Source Charge Gate-to-Drain Charge
+Total Gate Charge Sync. (Qg– Qgd)
+Turn-On Delay Time
+Rise Time
+Min. 123 –––
+–––
+–––
+–––
+–––
+–––
+Typ. ––– 77
+20
+23
+54
+11
+56
+Max. ––– 116 –––
+–––
+–––
+–––
+–––
+Units
+S
+
+
+nC
+Conditions
+VDS = 10V, ID =58A ID = 58A
+VDS = 50V VGS = 10V
+VDD = 65V ID = 58A
+
+td(off)
+Turn-Off Delay Time
+–––  55
+–––
+ns
+RG= 2.7Ω
+
+tf Ciss Coss Crss
+Coss eff.(ER)
+Coss eff.(TR)
+Fall Time
+Input Capacitance Output Capacitance
+Reverse Transfer Capacitance
+Effective Output Capacitance (Energy Related)
+Output Capacitance (Time Related)
+–––
+–––
+–––
+–––
+–––
+–––
+58
+4476
+319
+154
+355
+385
+–––
+–––
+–––
+–––
+–––
+–––
+VGS = 10V➃ VGS = 0V VDS = 50V
+pF ƒ = 1.0MHz, See Fig.5
+VGS = 0V, VDS = 0V to 80V➅ VGS = 0V, VDS = 0V to 80V➄
+
+Diode Characteristics
+Symbol
+
+Parameter
+
+Min.
+
+Typ.
+
+Max.
+
+Units
+
+Conditions
+
+IS
+
+ISM
+Continuous Source Current (Body Diode)
+Pulsed Source Current (Body Diode) ➀
+–––
+
+–––
+–––
+
+–––
+97
+
+380
+MOSFET symbol
+
+A showing the
+integral reverse   G
+p-n junction diode.
+
+VSD
+Diode Forward Voltage
+–––
+–––
+1.3
+V TJ = 25°C,IS = 58A,VGS = 0V ➃
+
+dv/dt
+Peak Diode Recovery dv/dt➂
+–––  28
+–––
+V/ns TJ = 175°C,IS =58A,VDS = 100V
+
+
+trr
+
+
+Qrr
+Reverse Recovery Time
+
+Reverse Recovery Charge
+–––
+–––
+–––
+–––
+51
+58
+105
+133
+–––
+–––
+–––
+–––
+ns TJ = 25°C    VDD = 85V TJ = 125°C   IF = 58A,
+nC TJ = 25°C  di/dt = 100A/µs ➃
+TJ = 125°C
+
+IRRM
+Reverse Recovery Current
+–––
+3.7
+–––
+A TJ = 25°C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+
+
+
+1000
+
+
+
+
+
+100
+
+
+
+
+
+
+
+TOP
+
+
+
+
+
+BOTTOM
+
+
+
+
+
+
+VGS 15V
+10V
+7.0V
+6.0V
+5.5V
+5.0V
+4.5V
+4.0V
+
+
+
+1000
+
+
+
+
+
+100
+
+
+
+
+
+
+
+TOP
+
+
+
+
+
+BOTTOM
+
+
+
+
+
+
+VGS 15V
+10V
+7.0V
+6.0V
+5.5V
+5.0V
+4.5V
+4.0V
+
+
+
+
+
+
+
+
+
+
+
+
+4.0V
+IRF100B202
+
+10                                      10
+
+
+4.0V
+≤60µs PULSE WIDTH Tj = 25°C
+1
+0.1       1       10      100
+VDS, Drain-to-Source Voltage (V)
+
+Fig 3. Typical Output Characteristics
+
+
+≤60µs PULSE WIDTH Tj = 175°C
+1
+0.1       1       10      100
+VDS, Drain-to-Source Voltage (V)
+Fig 4. Typical Output Characteristics
+
+1000
+
+
+
+100
+3.0
+
+
+2.5
+
+
+ID = 58A VGS = 10V
+
+
+
+
+10
+TJ = 175°C
+
+
+
+
+TJ = 25°C
+2.0
+
+
+1.5
+
+
+1
+
+
+
+0.1
+
+
+VDS = 50V
+≤60µs PULSE WIDTH
+
+1   2   3   4   5   6   7   8
+
+VGS, Gate-to-Source Voltage (V)
+
+1.0
+
+
+0.5
+
+
+
+
+
+
+-60  -20   20   60   100  140  180
+TJ , Junction Temperature (°C)
+
+
+
+
+100000
+Fig 5. Typical Transfer Characteristics
+
+VGS = 0V,  f = 1 MHZ
+Ciss = Cgs + Cgd, Cds SHORTED
+Fig 6. Normalized On-Resistance vs. Temperature
+
+14
+ID = 58A
+
+Crss = Cgd
+Coss = Cds + Cgd
+12
+VDS
+= 80V
+
+
+10000
+
+
+Ciss
+10    VDS= 50V VDS= 20V
+8
+
+
+
+
+1000
+6
+Coss
+4
+Crss                       2
+
+100
+0.1       1       10      100
+VDS, Drain-to-Source Voltage (V)
+
+0
+0    20    40    60    80   100
+QG, Total Gate Charge (nC)
+
+Fig 7. Typical Capacitance vs. Drain-to-Source Voltage
+Fig 8. Typical Gate Charge vs. Gate-to-Source Voltage
+4  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+
+
+
+1000
+
+
+
+100
+
+
+
+10
+
+
+
+
+
+
+
+
+
+TJ = 175°C
+
+
+
+
+
+
+
+
+
+
+
+
+TJ = 25°C
+
+
+
+1000
+
+
+
+
+100
+
+
+
+
+10
+IRF100B202
+OPERATION IN THIS AREA LIMITED BY R DS(on)
+
+
+
+100µsec
+
+
+
+
+1msec
+
+1
+VGS = 0V
+
+Tc = 25°C Tj = 175°C
+Single Pulse
+10msec
+DC
+
+
+0.1
+0.0    0.5    1.0    1.5    2.0
+VSD, Source-to-Drain Voltage (V)
+Fig 9. Typical Source-Drain Diode Forward Voltage
+
+130
+Id = 5.0mA
+1
+0.1      1      10     100
+VDS, Drain-to-Source Voltage (V)
+Fig 10. Maximum Safe Operating Area
+
+2.0
+
+1.6
+120
+
+1.2
+
+110
+0.8
+
+
+100
+
+0.4
+
+
+90
+-60 -40 -20 0 20 40 60 80 100120140160180
+TJ , Temperature ( °C )
+0.0
+
+0   20   40   60   80   100  120
+
+VDS, Drain-to-Source Voltage (V)
+
+Fig 11. Drain-to-Source Breakdown Voltage
+40
+
+Fig 12. Typical Cₒss Stored Energy
+VGS = 5.0V
+35  VGS = 5.5V VGS = 6.0V VGS = 7.0V
+30  VGS = 8.0V VGS = 10V
+25
+
+20
+
+15
+
+10
+
+5
+0   20   40   60   80   100  120
+ID, Drain Current (A)
+Fig 13. Typical On– Resistance vs. Drain Current
+
+5  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+IRF100B202
+1
+
+D = 0.50
+
+
+
+0.1
+
+
+
+
+
+0.01
+
+
+
+
+
+0.001
+0.20
+0.10
+0.05
+0.02
+0.01
+
+
+
+
+
+
+
+
+
+SINGLE PULSE
+( THERMAL RESPONSE )
+
+
+
+
+
+
+
+
+
+
+Notes:
+1. Duty Factor D = t1/t2
+2. Peak Tj = P dm x Zthjc + Tc
+1E-006        1E-005        0.0001        0.001         0.01         0.1
+t1 , Rectangular Pulse Duration (sec)
+Fig 14. Maximum Effective Transient Thermal Impedance, Junction-to-Case
+1000
+
+100
+Duty Cycle = Single Pulse
+Allowed avalanche Current  vs avalanche pulsewidth, tav, assuming ΔTj = 150°C and Tstart =25°C (Single Pulse)
+
+0.01
+10         0.05
+0.10
+
+
+1
+Allowed avalanche  Current vs avalanche  pulsewidth, tav, assuming ΔΤ j = 25°C and Tstart = 150°C.
+0.1
+1.0E-06       1.0E-05       1.0E-04       1.0E-03       1.0E-02       1.0E-01
+tav (sec)
+
+
+
+
+200
+
+
+
+TOP
+
+
+
+Single Pulse
+Fig 15. Avalanche Current vs. Pulse Width
+
+Notes on Repetitive Avalanche Curves , Figures 15, 16:
+
+
+
+150
+
+
+
+100
+
+
+
+50
+
+
+
+0
+BOTTOM ID = 58A
+1.0% Duty Cycle
+(For further info, see AN-1005 at www.irf.com)
+1.Avalanche failures assumption:
+Purely a thermal phenomenon and failure occurs at a temperature far in excess of Tjmₐₓ. This is validated for every part type.
+2. Safe operation in Avalanche is allowed as long asTjmₐₓ is not exceeded.
+3. Equation below based on circuit and waveforms shown in Figures 23a, 23b.
+4. PD ₍ₐvₑ₎ = Average power dissipation per single avalanche pulse.
+5. BV = Rated breakdown voltage (1.3 factor accounts for voltage increase during avalanche).
+6. Iₐv = Allowable avalanche current.
+7. ΔT = Allowable rise in junction temperature, not to exceed Tjmₐₓ (assumed as 25°C in Figure 14, 15).
+tₐv = Average time in avalanche.
+
+25   50   75   100  125  150  175
+Starting TJ , Junction Temperature (°C)
+
+Fig 16. Maximum Avalanche Energy vs. Temperature
+D = Duty cycle in avalanche = tav ·f
+ZthJC(D, tₐv) = Transient thermal resistance, see Figures 14) PD (ave) = 1/2 ( 1.3·BV·Iₐv) = ΔT/ ZthJC
+Iₐv = 2ΔT/ [1.3·BV·Zth] EAS (AR) = PD (ave)·tav
+6  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+
+
+
+4.0
+
+
+3.5
+
+
+3.0
+
+
+
+30
+IF = 39A
+25  VR = 85V TJ = 25°C
+20  TJ = 125°C
+IRF100B202
+
+2.5                                      15
+
+
+2.0
+
+1.5
+
+
+1.0
+
+ID = 150µA ID = 250µA ID = 1.0mA ID = 1.0A
+
+-75 -50 -25 0  25 50 75 100 125 150 175
+TJ , Temperature ( °C )
+10
+
+5
+
+
+0
+100 200 300 400 500 600 700 800 900 1000
+diF /dt (A/µs)
+
+
+Fig 17. Threshold Voltage vs. Temperature
+25
+IF = 58A VR = 85V
+Fig 18. Typical Recovery Current vs. dif/dt
+1600
+IF = 39A VR = 85V
+
+20  TJ = 25°C
+TJ = 125°C
+15
+
+
+10
+1200
+
+
+
+800
+TJ = 25°C TJ = 125°C
+
+400
+5
+
+
+0
+100 200 300 400 500 600 700 800 900 1000
+diF /dt (A/µs)
+0
+100 200 300 400 500 600 700 800 900 1000
+diF /dt (A/µs)
+
+Fig 19. Typical Recovery Current vs. dif/dt           Fig 20. Typical Stored Charge vs. dif/dt
+
+
+1600
+
+
+
+1200
+
+
+IF = 58A VR = 85V TJ = 25°C TJ = 125°C
+
+
+800
+
+
+
+400
+
+
+
+0
+100 200 300 400 500 600 700 800 900 1000
+diF /dt (A/µs)
+
+Fig 21. Typical Stored Charge vs. dif/dt
+
+7  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+IRF100B202
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig 22. Peak Diode Recovery dv/dt Test Circuit for N-Channel HEXFET® Power MOSFETs
+
+
+
+
+
+
+15V
+V(BR)DSS
+tp
+
+
+VDS    L
+DRIVER
+
+
+RG
+
+20V
+tp
+D.U.T
+IAS
+0.01Ω
+
++
+- VDD
+
+
+
+IAS     
+
+
+Fig 23a. Unclamped Inductive Test Circuit
+
+
+
+
+
+
+
+
+
+
+
+
+Fig 24a. Switching Time Test Circuit
+Fig 23b. Unclamped Inductive Waveforms
+
+
+
+
+
+
+
+
+
+
+
+
+Fig 24b. Switching Time Waveforms
+
+Id
+Vds
+
+Vgs
+
+VDD
+
+Vgs(th)
+
+
+
+
+
+Qgs1 Qgs2  Qgd    Qgodr
+
+Fig 25a. Gate Charge Test Circuit               Fig 25b. Gate Charge Waveform
+
+
+8  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+IRF100B202
+
+TO-220AB Package Outline (Dimensions are shown in millimeters (inches))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+TO-220AB Part Marking Information
+
+
+
+E X A M P L E : T H IS IS A N IR F 1 0 1 0
+L O T C O D E 1 7 8 9
+A S S E M B L E D O N W W 19 , 20 00 I N T H E A S SE M B L Y L IN E "C "
+
+IN T E R N A T IO N A L              P A R T N U M B E R R E C T IF IE R
+LO G O
+
+
+N o t e : "P " i n a s s e m b ly lin e p o s it io n i n d ic a t es "L ea d - F r ee" 
+
+AS S E M B L Y LO T C O D E
+D A T E C O D E 
+Y E A R 0 = 200 0
+W EEK 1 9 L I N E C
+
+
+
+
+
+TO-220AB packages are not recommended for Surface Mount Application.
+
+Note: For the most current drawing please refer to IR website at http://www.irf.com/package/
+
+9  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+IRF100B202
+
+
+
+Qualification Information† Qualification Level
+Moisture Sensitivity Level RoHS Compliant
+
+Industrial
+(per JEDEC JESD47F) ††
+TO-220                N/A
+Yes
+
+†  Qualification standards can be found at International Rectifier’s web site: http://www.irf.com/product-info/reliability/
+†† Applicable version of JEDEC standard at the time of product release.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IR WORLD HEADQUARTERS: 101 N. Sepulveda Blvd., El Segundo, California 90245, USA To contact International Rectifier, please visit http://www.irf.com/whoto-call/
+10  www.irf.com   © 2014 International Rectifier      Submit Datasheet Feedback      August 18, 2014
+
+IMPORTANT NOTICE
+The information given in this document shall in no event be regarded as a guarantee of conditions or characteristics (“Beschaffenheitsgarantie”) .
+With respect to any examples, hints or any typical values  stated  herein  and/or  any  information regarding the application of the product, Infineon Technologies  hereby  disclaims  any  and  all warranties and liabilities of any kind, including without limitation warranties of non-infringement of intellectual property rights of any third party.
+In addition, any information given in this document is subject to customer’s compliance with its obligations stated in this document and any applicable  legal  requirements,  norms  and standards concerning customer’s products and any use of the product of Infineon Technologies in customer’s applications.
+The data contained in this document is exclusively intended for technically trained staff. It is the responsibility of customer’s technical departments to evaluate the suitability of the product for the intended application and the completeness of the product information given in this document with respect to such application.
+
+For further information on the product, technology, delivery terms and conditions and prices please contact your nearest Infineon Technologies office (www.infineon.com).
+
+WARNINGS
+Due to technical requirements products may contain dangerous substances. For information on the types in question please contact your nearest Infineon Technologies office.
+Except as otherwise explicitly approved by Infineon Technologies in a written document signed by authorized   representatives   of   Infineon Technologies, Infineon Technologies’ products may not be used in any applications where a failure of the product or any consequences of the use thereof can reasonably be expected to result in personal injury.

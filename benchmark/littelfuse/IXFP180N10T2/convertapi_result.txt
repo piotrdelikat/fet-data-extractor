@@ -1,0 +1,844 @@
+Preliminary Technical Information
+
+
+TrenchT2TM HiperFETTM
+IXFA180N10T2
+VDSS
+= 100V
+
+Power MOSFET
+
+
+N-Channel Enhancement Mode Avalanche Rated
+Fast Intrinsic Rectifier
+IXFP180N10T2
+ID25   = 180A
+RDS(on) ≤ 6mΩ
+
+
+
+TO-263 AA (IXFA)
+
+
+
+
+
+Symbol   Test Conditions                Maximum Ratings
+VDSS       TJ = 25°C to 175°C                  100       V
+VDGR       TJ = 25°C to 175°C, RGS = 1MΩ            100       V
+VGSS       Continuous                      ±20       V
+VGSM       Transient                       ±30       V
+ID25        TC = 25°C (Chip Capability)              180       A
+G
+S
+D (Tab)
+
+TO-220AB (IXFP)
+
+
+
+
+G
+
+ILRMS
+Lead Current Limit, RMS               120       A
+D S  D (Tab)
+
+IDM        TC = 25°C, Pulse Width Limited by TJM           450       A
+IA         TC = 25°C                       90       A
+EAS       TC = 25°C                       750      mJ
+dv/dt     IS  ≤ IDM, VDD ≤ VDSS, TJ ≤ 175°C             15      V/ns
+PD        TC = 25°C                       480       W
+TJ                                     -55 ... +175       °C
+TJM                                           175       °C
+
+
+G = Gate   D  = Drain S = Source   Tab = Drain
+
+
+
+Features
+
+⚫ International Standard Packages
+
+Tstg TL
+Tsold
+-55 ... +175      °C
+1.6mm (0.062in.) from Case for 10s          300      °C
+Plastic Body for 10 Seconds             260      °C
+⚫ Avalanche Rated
+⚫ 175°C Operating Temperature
+⚫ High Current Handling Capability
+⚫ Fast Intrinsic Rectifier
+
+Md       Mounting Torque (TO-220)            1.13 / 10   Nm/lb.in.
+Weight    TO-263                        2.5       g
+⚫ Low R
+
+DS(on)
+
+TO-220                        3.0       g
+
+
+
+Symbol   Test Conditions               Characteristic Values
+Advantages
+
+⚫ Easy to Mount
+⚫ Space Savings
+⚫ High Power Density
+
+(TJ = 25°C Unless Otherwise Specified)           Min.
+BVDSS      VGS = 0V, ID = 250μA             100
+Typ.
+Max.
+V
+Applications
+
+VGS(th)
+VDS
+= VGS
+, ID
+= 250μA             2.0
+4.0  V
+⚫ DC-DC Converters
+⚫ Battery Chargers
+
+IGSS      VGS = ± 20V, VDS = 0V
+±100 nA
+⚫ Switch-Mode and Resonant-Mode
+
+IDSS
+VDS
+= VDSS
+, VGS
+= 0V
+
+TJ = 150°C
+10 μA
+750 μA
+Power Supplies
+⚫ DC Choppers
+⚫ AC Motor Drives
+
+RDS(on)     VGS = 10V, ID = 50A, Notes 1, 2
+6 mΩ
+⚫ Uninterruptible Power Supplies
+⚫ High Speed Power Switching Applications
+
+
+
+© 2010 IXYS CORPORATION, All Rights Reserved                                      DS100266A(09/10)
+
+
+
+
+Symbol   Test Conditions              Characteristic Values
+IXFA180N10T2 IXFP180N10T2
+TO-263 Outline
+
+(TJ = 25°C, Unless Otherwise Specified)          Min.
+gfs       VDS = 10V, ID = 60A, Note 1         50
+Ciss
+Coss      VGS = 0V, VDS = 25V, f = 1MHz
+Crss
+Typ.
+88
+10.5
+945
+100
+Max.
+S
+nF pF pF
+
+td(on)
+Resistive Switching Times
+21     ns
+
+tr
+GS
+= 10V, VDS
+= 0.5 • V
+DSS, ID
+= 0.5 • I
+
+D25
+37      ns
+
+td(off) tf Qg(on)
+RG = 2Ω (External)
+34      ns
+13      ns
+185     nC
+
+Qgs      VGS = 10V, VDS = 0.5 • VDSS, ID = 0.5 • ID25
+Qgd RthJC
+RthCH     TO-220
+48
+52
+
+
+0.50
+nC
+nC
+0.31 °C/W
+°C/W
+
+
+Source-Drain Diode
+Symbol   Test Conditions              Characteristic Values
+
+(TJ = 25°C, Unless Otherwise Specified)          Min. IS        VGS = 0V
+ISM      Repetitive, Pulse Width Limited by TJM
+VSD      IF = 100A, VGS = 0V, Note 1
+Typ.
+Max.
+180  A
+720  A
+1.3  V
+
+
+
+
+TO-220 Outline
+
+trr IRM QRM
+IF = 0.5 • ID25, VGS = 0V
+-di/dt = 100A/μs VR = 0.5 • VDSS
+66      ns
+5.8      A
+190     nC
+
+
+
+Notes: 1. Pulse test, t ≤ 300μs, duty cycle, d ≤ 2%.
+2. On through-hole package, RDS(on) Kelvin test contact location must be 5mm or less from the package body.
+
+Pins: 1 - Gate   2 - Drain 3 - Source
+
+
+PRELIMINARY TECHNICAL INFORMATION
+The product presented herein is under development. The Technical Specifications offered are derived from data gathered during objective characterizations of preliminary engineering lots; but also may yet contain some information supplied during a pre-production design evaluation. IXYS reserves the right to change limits, test conditions, and dimensions without notice.
+
+
+
+
+
+
+IXYS Reserves the Right to Change Limits, Test Conditions, and Dimensions.
+
+IXYS MOSFETs and IGBTs are covered  4,835,592  4,931,844  5,049,961  5,237,481  6,162,665    6,404,065 B1  6,683,344   6,727,585  7,005,734 B2  7,157,338B2
+by one or more of the following U.S. patents: 4,850,072  5,017,508  5,063,307  5,381,025  6,259,123 B1  6,534,343   6,710,405 B2 6,759,692  7,063,975 B2
+4,881,106  5,034,796  5,187,117  5,486,715  6,306,728 B1  6,583,505   6,710,463   6,771,478 B2 7,071,537
+
+IXFA180N10T2 IXFP180N10T2
+
+
+
+
+180
+
+160
+
+140
+Fig. 1. Output Characteristics @ TJ = 25ºC
+
+VGS = 15V
+10V
+9V
+8V
+
+
+350
+
+
+300
+
+
+250
+Fig. 2. Extended Output Characteristics @ TJ = 25ºC
+
+VGS = 15V
+10V
+8V
+
+120
+
+100
+7V
+7V
+200
+
+
+80                          6V
+
+60
+
+40
+
+20
+5V
+0
+0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1  1.1  1.2
+VDS - Volts
+
+150
+
+
+100
+
+
+50
+
+
+0
+
+
+
+6V
+
+
+
+
+5V
+
+
+0    1    2    3    4    5    6    7    8
+VDS - Volts
+
+
+
+
+
+
+180
+
+160
+
+Fig. 3. Output Characteristics @ TJ = 150ºC
+
+VGS = 15V
+10V
+9V
+
+
+
+
+3.0
+
+
+2.6
+Fig. 4. RDS₍ₒn₎ Normalized to ID = 90A Value vs.
+Junction Temperature
+
+VGS = 10V
+
+140
+
+120
+
+100
+
+80
+8V
+7V
+2.2
+6V             1.8
+1.4
+I D = 180A
+I D = 90A
+
+60
+1.0
+40
+5V
+0.6
+20
+
+
+0
+0     0.5     1     1.5     2     2.5     3
+VDS - Volts
+
+0.2
+
+
+-50   -25   0   25   50   75   100   125   150   175
+TJ - Degrees Centigrade
+
+
+
+
+
+3.4
+
+
+3.0
+
+
+2.6
+Fig. 5. RDS₍ₒn₎ Normalized to ID = 90A Value vs.
+Drain Current
+
+VGS = 10V
+15V - - - - -
+TJ = 175ºC
+
+
+
+140
+
+
+120
+
+
+100
+
+Fig. 6. Drain Current vs. Case Temperature
+
+External Lead Current Limit
+
+2.2                                        80
+
+
+1.8                                        60
+
+
+1.4
+40
+TJ = 25ºC
+
+1.0                                        20
+
+
+0.6
+
+
+0   40   80   120   160   200   240   280   320   360
+ID - Amperes
+0
+-50   -25   0   25   50   75   100   125   150   175
+TC - Degrees Centigrade
+
+
+
+© 2010 IXYS CORPORATION, All Rights Reserved
+
+IXFA180N10T2 IXFP180N10T2
+
+
+
+
+200
+
+180
+
+160
+
+140
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+Fig. 7. Input Admittance
+
+
+
+
+
+
+TJ = 150ºC
+25ºC
+- 40ºC
+
+
+160
+
+140
+
+120
+
+100
+
+80
+
+60
+
+40
+
+20
+Fig. 8. Transconductance
+
+TJ = - 40ºC
+
+
+
+25ºC
+
+
+150ºC
+
+
+0
+3.0    3.5    4.0    4.5    5.0    5.5    6.0    6.5
+VGS - Volts
+
+0
+0   20   40   60   80   100  120  140  160  180  200
+ID - Amperes
+
+
+
+
+300
+
+
+250
+
+
+200
+Fig. 9. Forward Voltage Drop of Intrinsic Diode
+
+
+10
+9  VDS = 50V I D = 90A
+8  I G = 10mA
+7
+
+6
+Fig. 10. Gate Charge
+
+150                                         5
+
+
+
+100
+
+
+50
+
+
+TJ = 150ºC
+
+4
+
+3
+TJ = 25ºC              2
+1
+
+
+0
+0.3   0.4   0.5  0.6   0.7   0.8   0.9   1.0  1.1   1.2   1.3
+VSD - Volts
+
+0
+0   20   40   60   80   100   120   140   160   180
+QG - NanoCoulombs
+
+
+
+
+100,000
+Fig. 11. Capacitance
+
+
+1000
+Fig. 12. Forward-Bias Safe Operating Area
+
+
+
+
+
+10,000
+f = 1 MHz
+
+
+
+
+
+Ciss
+
+
+
+
+
+
+100
+
+RDS(on) Limit
+
+
+10ms
+
+1ms
+100µs
+25µs
+
+
+1,000
+
+
+
+
+100
+
+
+
+
+10
+
+
+Coss
+
+
+
+Crss
+
+
+
+
+10
+
+TC = 175ºC T J = 25ºC
+Single Pulse
+1
+
+100ms
+DC
+
+0    5    10    15    20    25    30    35    40
+VDS - Volts
+IXYS Reserves the Right to Change Limits, Test Conditions, and Dimensions.
+1                10                100
+VDS - Volts
+
+IXFA180N10T2 IXFP180N10T2
+
+
+Fig. 13. Resistive Turn-on Rise Time vs.
+Junction Temperature
+50
+
+45                       RG = 2Ω , VGS = 10V
+40                       VDS = 50V
+
+35
+
+30
+
+25
+I D = 90A
+20
+
+15           I D = 45A
+10
+
+5
+Fig. 14. Resistive Turn-on Rise Time vs.
+Drain Current
+55
+
+50  RG = 2Ω , VGS = 10V
+45  VDS = 50V
+
+40                TJ = 25ºC
+
+35
+
+30
+
+25
+
+20
+
+15
+TJ = 125ºC
+10
+
+
+0
+25   35   45   55   65   75   85   95   105  115  125
+TJ - Degrees Centigrade
+
+5
+90   100   110   120   130   140   150   160   170   180
+ID - Amperes
+
+
+Fig. 15. Resistive Turn-on Switching Times vs.
+Gate Resistance
+20                                 26
+19   t r      td(on) - - - - -                  25
+TJ = 125ºC, VGS = 10V
+18   VDS = 50V                          24
+
+
+17                                 23
+I D = 90A, 180A
+
+16                                 22
+
+
+15                                 21
+
+
+14                                 20
+Fig. 16. Resistive Turn-off Switching Times vs.
+Junction Temperature
+19                                 46
+18   t f      td(off) - - - - -                 44
+17   RG = 2Ω, VGS = 10V                     42
+VDS = 50V
+16                                 40
+15         I D = 90A                    38
+14                                 36
+13                         I D = 180A    34
+12                                 32
+11                                 30
+
+
+13                                 19
+2  3  4  5  6  7  8  9  10  11  12  13  14  15
+RG - Ohms
+
+10                                 28
+25   35   45   55   65   75   85   95  105  115  125
+TJ - Degrees Centigrade
+
+
+Fig. 17. Resistive Turn-off Switching Times vs.
+Drain Current
+17                                 50
+
+t f     td(off) - - - - -
+Fig. 18. Resistive Turn-off Switching Times vs.
+Gate Resistance
+17                                 46
+
+t f     td(off) - - - - -
+
+16  RG = 2Ω, VGS = 10V
+46
+16  T = 125ºC, V
+= 10V                     44
+
+VDS = 50V
+15
+TJ = 125ºC  42
+J     GS
+VDS = 50V
+
+15                                 42
+
+14                                 38
+
+
+14
+13                          TJ = 25ºC   34
+40
+I D = 180A, 90A
+13                                 38
+12                                 30
+
+
+
+11                                 26
+90   100  110  120  130  140  150  160  170  180
+ID - Amperes
+
+
+12                                 36
+2  3  4  5  6  7  8  9  10  11  12  13  14  15
+RG - Ohms
+
+
+
+© 2010 IXYS CORPORATION, All Rights Reserved
+
+IXFA180N10T2 IXFP180N10T2
+
+
+Fig. 19. Maximum Transient Thermal Impedance
+1
+
+
+
+
+
+
+
+0.1
+
+
+
+
+
+
+
+0.01
+
+
+
+
+
+
+
+0.001
+0.00001         0.0001          0.001          0.01           0.1           1           10
+Pulse Width - Seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IXYS Reserves the Right to Change Limits, Test Conditions, and Dimensions.
+
+
+
+
+
+IXYS REF: IXF_180N10T2 (6V)01-02-09

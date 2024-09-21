@@ -1,0 +1,954 @@
+
+
+
+
+Green
+DMT10H9M9LCT
+100V N-CHANNEL ENHANCEMENT MODE MOSFET
+
+
+Product Summary
+BVDSS      RDS(ON)       Package     ID
+TC = +25°C
+100V   8.5mΩ @VGS = 10V   TO220AB    101A
+14mΩ @VGS = 4.5V           78A
+
+Description
+This new generation MOSFET features low on-resistance and fast switching, making it ideal for high-efficiency power management applications.
+
+Applications
+•  Motor Control
+•  Backlighting
+•  DC-DC Converters
+•  Power Management Functions
+Features
+•  Low Input Capacitance
+•  High BVDSS Rating for Power Application
+•  Low Input/Output Leakage
+•  Lead-Free Finish; RoHS Compliant (Notes 1 & 2)
+•  Halogen and Antimony Free. “Green” Device (Note 3)
+•  For automotive applications requiring specific change control (i.e. parts qualified to AEC-Q100/101/200, PPAP capable, and manufactured in IATF 16949 certified facilities), please contact us or your local Diodes representative. https://www.diodes.com/quality/product-definitions/
+
+
+Mechanical Data
+•  Case: TO220AB
+•  Case Material: Molded Plastic, “Green” Molding Compound. UL Flammability Classification Rating 94V-0
+•  Terminals: Matte Tin Finish Annealed over Copper Leadframe. Solderable per MIL-STD-202, Method 208
+•  Terminal Connections: See Diagram Below
+•  Weight: TO220AB – 1.85 grams (Approximate)
+
+
+TO220AB
+
+
+
+
+
+
+
+
+Top View         Bottom View
+Ordering Information (Note 4)
+
+Equivalent Circuit
+Top View
+Pin Out Configuration
+Part Number                   Case                   Packaging
+DMT10H9M9LCT                 TO220AB                 50 Pieces/Tube
+Notes:  1. EU Directive 2002/95/EC (RoHS), 2011/65/EU (RoHS 2) & 2015/863/EU (RoHS 3) compliant. All applicable RoHS exemptions applied.
+2. See https://www.diodes.com/quality/lead-free/ for more information about Diodes Incorporated’s definitions of Halogen- and Antimony-free, "Green" and Lead-free.
+3. Halogen- and Antimony-free "Green” products are defined as those which contain <900ppm bromine, <900ppm chlorine (<1500ppm total Br + Cl) and
+<1000ppm antimony compounds.
+4. For packaging details, go to our website at https://www.diodes.com/design/support/packaging/diodes-packaging/.
+
+Marking Information
+
+
+
+= Manufacturer’s Marking T9M9LCT = Product Type Marking Code YYWW = Date Code Marking
+YY or  YY = Last Two Digits of Year (ex: 21 = 2021) WW or WW = Week Code (01 to 53)
+
+T9M9LCT YYWW
+
+
+DMT10H9M9LCT
+Document number: DS43274 Rev. 3 - 2
+1 of 7
+www.diodes.com
+June 2021
+© Diodes Incorporated
+
+DMT10H9M9LCT
+
+
+Maximum Ratings (@TA = +25°C, unless otherwise specified.)
+Characteristic
+Drain-Source Voltage Gate-Source Voltage
+Continuous Drain Current (Note 6) VGS = 10V          TC = +25°C TC = +70°C
+Maximum Continuous Body Diode Forward Current (Note 6) Pulsed Drain Current (10μs Pulse, Duty Cycle = 1%)
+Pulsed Body Diode Forward Current (10μs Pulse, Duty Cycle = 1%) Avalanche Current, L = 0.3mH (Note 8)
+Avalanche Energy, L = 0.3mH (Note 8)
+
+
+Symbol VDSS VGSS
+ID
+
+IS IDM ISM IAS EAS
+
+
+Value
+100
+±20
+101
+80
+101
+404
+404
+21
+66
+
+
+Unit V V
+A
+A A A A
+mJ
+
+
+
+Thermal Characteristics
+Characteristic
+Total Power Dissipation (Note 5)                   TA = +25°C Thermal Resistance, Junction to Ambient (Note 5)
+Total Power Dissipation                       TC = +25°C
+Thermal Resistance, Junction to Case (Note 7) Operating and Storage Temperature Range
+
+
+Symbol PD RθJA PD RθJC
+TJ, TSTG
+
+
+Value
+2.3
+54
+156
+0.8
+-55 to +150
+
+
+Unit
+W
+°C/W W
+°C/W
+°C
+
+
+
+Electrical Characteristics (@TA = +25°C, unless otherwise specified.)
+Characteristic          Symbol   Min    Typ    Max    Unit       Test Condition OFF CHARACTERISTICS (Note 9)
+Drain-Source Breakdown Voltage           BVDSS    100    —     —     V   VGS = 0V, ID = 1mA Zero Gate Voltage Drain Current            IDSS     —     —     1     µA   VDS = 80V, VGS = 0V Gate-Source Leakage                 IGSS     —     —    ±100    nA   VGS = ±20V, VDS = 0V ON CHARACTERISTICS (Note 9)
+
+Gate Threshold Voltage
+VGS(TH)
+1.3   —
+2.5
+V  VDS = VGS, ID = 250µA
+Static Drain-Source On-Resistance          RDS(ON)    —    6.7    8.5    mΩ   VGS = 10V, ID = 20A
+
+
+Diode Forward Voltage
+DYNAMIC CHARACTERISTICS (Note 10)
+Input Capacitance Output Capacitance
+Reverse Transfer Capacitance Gate Resistance
+Total Gate Charge Gate-Source Charge Gate-Drain Charge Turn-On Delay Time Turn-On Rise Time Turn-Off Delay Time Turn-Off Fall Time
+Reverse Recovery Time Reverse Recovery Charge
+—
+VSD   —
+
+Ciss    —
+Coss   —
+Crss   —
+Rg    —
+Qg    —
+Qgs    —
+Qgd    —
+tD(ON)   —
+tR    —
+tD(OFF)   —
+tF    —
+tRR    —
+QRR   —
+9.0
+0.8
+
+2309
+536
+15.7
+1.9
+40.2
+20.2
+7.0
+8.5
+5.4
+10.6
+28.3
+14.9
+44.3
+14
+1.2
+
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+—
+VGS = 4.5V, ID = 5A
+V  VGS = 0V, IS = 13A
+
+
+pF  VDS = 50V, VGS = 0V
+f = 1MHz
+Ω  VDS = 0V, VGS = 0V, f = 1MHz
+nC  VDD = 50V, ID = 13A,
+VGS = 10V
+
+
+ns  VDD = 50V, VGS = 10V,
+ID = 13A, Rg = 6Ω
+
+ns
+nC  IF = 13A, di/dt = 100A/µs
+Notes:  5. Device mounted on FR-4 PC board, with minimum recommended pad layout, single sided.
+6. Device mounted on FR-4 substrate PC board, 2oz copper, with thermal bias to bottom layer 1inch square copper plate.
+7. Thermal resistance from junction to soldering point (on the exposed drain pad).
+8. IAS and EAS ratings are based on low frequency and duty cycles to keep TJ = +25°C.
+9. Short duration pulse test used to minimize self-heating effect.
+10. Guaranteed by design. Not subject to product testing.
+
+
+
+
+
+DMT10H9M9LCT
+Document number: DS43274 Rev. 3 - 2
+2 of 7
+www.diodes.com
+June 2021
+© Diodes Incorporated
+
+DMT10H9M9LCT
+
+
+30.0
+
+
+25.0
+
+
+20.0
+
+
+15.0
+
+
+VGS = 10.0V VGS = 5.0V VGS = 4.5V
+VGS = 4.3V VGS = 4.0V
+
+
+
+
+
+
+
+VGS = 3.5V
+30
+VDS = 5.0V
+25
+
+
+20
+
+
+15
+
+
+10.0
+
+
+5.0
+
+
+0.0
+
+
+
+
+VGS = 3.0V
+10
+TJ = 150℃
+5    TJ = 125℃
+
+0
+
+TJ = 85℃ TJ = 25℃
+TJ = -55℃
+
+
+
+0.020
+0.018
+0.016
+0.014
+0.012
+0.010
+0.008
+0.006
+0.004
+0.002
+0.000
+0   0.5   1   1.5   2   2.5   3
+VDS, DRAIN-SOURCE VOLTAGE (V)
+Figure 1. Typical Output Characteristic
+
+
+
+
+
+
+
+
+VGS = 4.5V
+
+
+
+VGS = 10V
+
+
+
+
+0  10  20  30  40  50  60  70  80  90 100
+ID, DRAIN-SOURCE CURRENT (A)
+Figure 3. Typical On-Resistance vs. Drain Current and Gate Voltage
+
+
+
+
+0.1
+
+
+0.08
+
+
+0.06
+
+
+0.04
+
+
+0.02
+
+
+0
+0    1    2    3    4    5    6
+VGS, GATE-SOURCE VOLTAGE (V)
+Figure 2. Typical Transfer Characteristic
+
+
+
+
+
+
+
+
+
+
+
+
+
+ID = 20A
+
+
+
+
+
+
+2  4  6  8  10  12  14  16  18  20
+VGS, GATE-SOURCE VOLTAGE (V)
+Figure 4. Typical Transfer Characteristic
+
+
+0.02
+
+
+
+0.015
+
+
+
+0.01
+
+
+
+0.005
+
+
+
+0
+
+VGS = 10V
+
+
+
+
+
+
+TJ = 150℃
+TJ = 125℃ TJ = 85℃ TJ = 25℃ TJ = -55℃
+2.4
+2.2
+2
+1.8
+1.6
+1.4
+1.2
+1
+0.8
+0.6
+0.4
+
+
+
+
+
+
+VGS = 10V, ID = 20A
+
+
+
+
+
+VGS = 4.5V, ID = 5.0A
+
+0    5   10   15   20   25   30
+ID, DRAIN CURRENT (A)
+Figure 5. Typical On-Resistance vs. Drain Current and Temperature
+-50  -25  0  25  50  75  100  125  150
+TJ, JUNCTION TEMPERATURE (℃)
+Figure 6. On-Resistance Variation with Temperature
+
+
+DMT10H9M9LCT
+Document number: DS43274 Rev. 3 - 2
+3 of 7
+www.diodes.com
+June 2021
+© Diodes Incorporated
+
+DMT10H9M9LCT
+
+
+0.02
+0.018
+0.016
+0.014
+0.012
+0.01
+0.008
+0.006
+0.004
+0.002
+0
+
+
+
+
+
+30
+
+
+25
+
+
+20
+
+
+
+
+
+
+
+VGS = 4.5V, ID = 5A
+
+
+
+
+
+
+VGS = 10V, ID = 20A
+
+
+
+-50  -25  0  25  50  75  100  125  150
+TJ, JUNCTION TEMPERATURE (℃)
+Figure 7. On-Resistance Variation with Temperature
+
+
+VGS = 0V
+4
+
+3.5
+
+3
+
+2.5
+
+2
+
+1.5
+
+1
+
+0.5
+
+0
+
+
+
+
+10000
+
+
+
+1000
+
+
+
+
+
+
+
+
+ID = 1mA
+
+
+ID = 250μA
+
+
+
+
+
+
+-50  -25  0  25  50  75  100  125  150
+TJ, JUNCTION TEMPERATURE (℃)
+Figure 8. Gate Threshold Variation vs. Junction
+Temperature
+
+f = 1MHz
+Ciss
+
+
+
+Coss
+
+
+15
+
+TJ = 150oC
+10
+TJ = 125oC
+TJ = 85oC
+5
+
+
+0
+
+
+
+
+
+
+TJ = 25oC TJ = -55oC
+100
+
+
+
+10
+
+
+
+1
+
+
+Crss
+
+0     0.3     0.6     0.9     1.2
+VSD, SOURCE-DRAIN VOLTAGE (V)
+Figure 9. Diode Forward Voltage vs. Current
+0    20    40    60    80    100
+VDS, DRAIN-SOURCE VOLTAGE (V)
+Figure 10. Typical Junction Capacitance
+
+
+10                                     1000
+
+
+8                                     100
+
+
+RDS(ON)
+Limited
+
+
+6
+
+
+4             VDS = 50V, ID = 20A
+10    PW = 1µs PW = 10µs
+PW = 100µs
+1        PW = 1ms
+
+
+
+2                                      0.1
+
+
+0                                     0.01
+TJ(Max) = 150℃
+TC = 25℃
+Single Pulse DUT on Infinite Heatsink
+VGS = 10V
+PW = 10ms PW = 100ms
+DC
+
+0  5  10  15  20  25  30  35  40  45
+Qg (nC)
+Figure 11. Gate Charge
+0.1     1      10     100    1000
+VDS, DRAIN-SOURCE VOLTAGE (V)
+Figure 12. SOA, Safe Operation Area
+
+
+
+DMT10H9M9LCT
+Document number: DS43274 Rev. 3 - 2
+4 of 7
+www.diodes.com
+June 2021
+© Diodes Incorporated
+
+DMT10H9M9LCT
+
+
+1
+
+
+D = 0.7
+D = 0.5
+D = 0.3
+
+
+
+
+D = 0.9
+
+
+0.1
+D = 0.1
+
+D = 0.05
+
+
+
+
+
+0.01
+D = 0.02
+D = 0.01
+D = 0.005
+
+D = Single Pulse
+
+RθJC (t) = r(t) * RθJC RθJC = 0.8℃/W
+Duty Cycle, D = t1/t2
+0.001
+0.000001  0.00001  0.0001   0.001   0.01    0.1     1     10    100    1000
+t1, PULSE DURATION TIME (sec)
+Figure 13. Transient Thermal Resistance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DMT10H9M9LCT
+Document number: DS43274 Rev. 3 - 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5 of 7
+www.diodes.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+June 2021
+© Diodes Incorporated
+
+DMT10H9M9LCT
+
+Package Outline Dimensions
+Please see http://www.diodes.com/package-outlines.html for the latest version.
+TO220AB
+
+
+E               A
+E /2             A1
+
+TO220AB
+
+
+Q
+H1
+
+D
+D1            L2
+Dim A
+H1                A1
+A2
+D2    b
+b2
+E1          c
+Min
+3.56
+0.51
+2.04
+0.39
+1.15
+0.356
+Max
+4.82
+1.39
+2.92
+1.01
+1.77
+0.61
+Typ
+—
+—
+— 0.81
+1.24
+—
+D 14.22 16.51  —
+D1 8.39 9.01  —
+D2 11.45 12.87  —
+
+L1                                 e
+e1
+A2                      E
+b2                                            E1
+L                                               H1
+—
+— 9.66
+6.86
+5.85
+—
+— 10.66
+8.89
+6.85
+2.54
+5.08
+—
+—
+—
+L 12.70 14.73  —
+L1  —  4.42  —
+L2 15.80 17.51 16.00
+c                     P  3.54  4.08  —
+b                                  Q  2.54  3.42  —
+e                                            All Dimensions in mm
+e1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DMT10H9M9LCT
+Document number: DS43274 Rev. 3 - 2
+6 of 7
+www.diodes.com
+June 2021
+© Diodes Incorporated
+
+DMT10H9M9LCT
+
+
+
+IMPORTANT NOTICE
+
+1.    DIODES INCORPORATED AND ITS SUBSIDIARIES (“DIODES”) MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH REGARDS TO ANY INFORMATION CONTAINED IN THIS DOCUMENT, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS (AND THEIR EQUIVALENTS UNDER THE LAWS OF ANY JURISDICTION).
+2.    The Information contained herein is for informational purpose only and is provided only to illustrate the operation of Diodes products described herein and application examples. Diodes does not assume any liability arising out of the application or use of this document or any product described herein. This document is intended for skilled and technically trained engineering customers and users who design with Diodes products. Diodes products may be used to facilitate safety-related applications; however, in all instances customers and users are responsible for (a) selecting the appropriate Diodes products for their applications, (b) evaluating the suitability of the Diodes products for their intended applications, (c) ensuring their applications, which incorporate Diodes products, comply the applicable legal and regulatory requirements as well as safety and functional- safety related standards, and (d) ensuring they design with appropriate safeguards (including testing, validation, quality control techniques, redundancy, malfunction prevention, and appropriate treatment for aging degradation) to minimize the risks associated with their applications.
+
+3.    Diodes assumes no liability for any application-related information, support, assistance or feedback that may be provided by Diodes from time to time. Any customer or user of this document or products described herein will assume all risks and liabilities associated with such use, and will hold Diodes and all companies whose products are represented herein or on Diodes’ websites, harmless against all damages and liabilities.
+
+4.    Products described herein may be covered by one or more United States, international or foreign patents and pending patent applications. Product names and markings noted herein may also be covered by one or more United States, international or foreign trademarks and trademark applications. Diodes does not convey any license under any of its intellectual property rights or the rights of any third parties (including third parties whose products and services may be described in this document or on Diodes’ website) under this document.
+5.    Diodes   products   are   provided   subject   to   Diodes’   Standard   Terms   and   Conditions   of   Sale (https://www.diodes.com/about/company/terms-and-conditions/terms-and-conditions-of-sales/) or other applicable terms. This document does not alter or expand the applicable warranties provided by Diodes. Diodes does not warrant or accept any liability whatsoever in respect of any products purchased through unauthorized sales channel.
+
+6.    Diodes products and technology may not be used for or incorporated into any products or systems whose manufacture, use or sale is prohibited under any applicable laws and regulations. Should customers or users use Diodes products in contravention of any applicable laws or regulations, or for any unintended or unauthorized application, customers and users will (a) be solely responsible for any damages, losses or penalties arising in connection therewith or as a result thereof, and (b) indemnify and hold Diodes and its representatives and agents harmless against any and all claims, damages, expenses, and attorney fees arising out of, directly or indirectly, any claim relating to any noncompliance with the applicable laws and regulations, as well as any unintended or unauthorized application.
+7.    While efforts have been made to ensure the information contained in this document is accurate, complete and current, it may contain technical inaccuracies, omissions and typographical errors. Diodes does not warrant that information contained in this document is error-free and Diodes is under no obligation to update or otherwise correct this information. Notwithstanding the foregoing, Diodes reserves the right to make modifications, enhancements, improvements, corrections or other changes without further notice to this document and any product described herein. This document is written in English but may be translated into multiple languages for reference. Only the English version of this document is the final and determinative format released by Diodes.
+
+8.    Any unauthorized copying, modification, distribution, transmission, display or other use of this document (or any portion hereof) is prohibited. Diodes assumes no responsibility for any losses incurred by the customers or users or any third parties arising from any such unauthorized use.
+
+Copyright © 2021 Diodes Incorporated
+www.diodes.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DMT10H9M9LCT
+Document number: DS43274 Rev. 3 - 2
+7 of 7
+www.diodes.com
+June 2021
+© Diodes Incorporated

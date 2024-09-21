@@ -1,0 +1,980 @@
+RX3P07CBH
+Nch 100V 120A Power MOSFET                  Datasheet
+
+
+
+
+
+VDSS
+RDS₍ₒn₎(Max.) ID
+PD
+
+100V
+5.2mΩ
+±120A 135W
+•Outline
+
+
+
+TO-220AB
+
+•Features                     •Inner circuit
+1) Low on - resistance
+2) High power small mold package (TO220AB)
+3) Pb-free plating ; RoHS compliant
+4) 100% UIS tested
+
+
+
+
+
+
+
+•Application
+Switching
+•Packaging specifications
+Packing
+Quantity (pcs)
+Type
+
+Tube 1000
+
+
+
+
+•Absolute maximum ratings (Ta = 25°C ,unless otherwise specified)
+Taping code
+Marking
+C16
+RX3P07CBH
+
+Parameter Drain - Source voltage
+Symbol VDSS
+Value 100
+Unit V
+
+Continuous drain current
+
+Pulsed drain current
+Silicon limit (VGS=10V)
+Tc = 25°C (VGS=10V)
+*1
+D
+*2
+D
+I *3
+±120      A
+±70      A
+±480      A
+
+Gate - Source voltage
+DP
+VGSS
+±20       V
+
+Avalanche current, single pulse
+A *4          35       A
+
+Avalanche energy, single pulse
+E *4
+99      mJ
+AS
+
+Power dissipation
+P *2
+135      W
+
+Junction temperature
+Operating junction and storage temperature range
+D
+Tj Tstg
+150      ℃
+-55 to +150    ℃
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.          1/10             20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+
+•Thermal resistance
+
+Parameter
+
+
+Symbol
+
+Values
+Min.  Typ.  Max.
+
+
+Unit
+
+Thermal resistance, junction - case
+R  *2
+-    -   0.92
+℃/W
+thJC
+
+•Electrical characteristics (Tₐ = 25°C)
+Values
+
+Parameter
+
+Drain - Source breakdown voltage
+Symbol
+
+V(BR)DSS
+Conditions
+
+VGS = 0V, ID = 1mA
+Min. 100
+Typ.
+
+-
+Max.
+
+-
+Unit
+
+V
+
+Breakdown voltage
+ΔV(BR)DSS ID = 1mA
+-  62.3
+-  mV/
+
+temperature coefficient
+Zero gate voltage drain current
+Gate - Source leakage current Gate threshold voltage
+Gate threshold voltage temperature coefficient
+ΔTj
+IDSS
+
+IGSS VGS(th) ΔVGS(th)
+ΔTj
+referenced to 25℃ VDS = 100V, VGS = 0V
+VGS = ±20V, VDS = 0V VDS = VGS, ID = 1mA ID = 1mA
+referenced to 25℃
+
+-
+-
+2.0
+
+-
+
+
+-
+-
+-
+
+-4.5
+
+
+5
+±500
+4.0
+
+-
+℃
+
+μA
+nA V
+mV/℃
+
+Static drain - source
+
+R  *5
+VGS = 10V, ID = 70A
+-   4.0
+5.2
+mΩ
+
+on - state resistance Gate resistance
+DS(on)
+
+RG
+VGS
+= 6V, ID
+= 35A
+-
+-   4.8
+-   0.9
+7.2
+-   Ω
+
+Forward Transfer Admittance
+|Yfs|*5
+VDS = 5V, ID = 35A
+30    -    -    S
+
+
+*1 Limited by silicon chip capability.
+*2 Tc=25℃, Limited only by maximum temperature allowed.
+*3 Pw ≤ 10μs, Duty cycle ≤ 1%
+*4 L ⋍ 0.1mH, VDD = 50V, RG = 25Ω, Starting Tj = 25℃ Fig.3-1,3-2
+*5 Pulsed
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        2/10                 20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+•Electrical characteristics (Tₐ = 25°C)
+Values
+
+Parameter
+
+Input capacitance Output capacitance
+Reverse transfer capacitance
+Symbol
+
+Ciss Coss Crss
+Conditions
+
+VGS = 0V VDS = 50V
+f = 1MHz
+Min.
+-
+-
+-
+Typ. 4650
+890
+33
+Max.
+-
+-
+-
+Unit
+
+
+pF
+
+Turn - on delay time
+t  *5
+VDD ⋍ 50V,VGS = 10V
+-   40   -
+
+
+Rise time
+d(on)
+*5 r
+
+ID = 35A
+
+-   37   -
+ns
+
+Turn - off delay time
+t  *5
+R ⋍ 1.42Ω
+-   99   -
+
+
+Fall time
+d(off)
+tf*5
+L
+RG = 10Ω
+
+-   60   -
+
+
+
+•Gate charge characteristics (Tₐ = 25°C)
+Values
+
+Parameter
+
+
+Total gate charge
+Symbol
+
+
+*5 g
+Conditions
+
+VGS = 10V
+
+VDD ⋍ 50V
+Min.
+-
+-
+Typ. 73.0
+48.0
+Max.
+-
+-
+Unit
+
+
+
+nC
+
+Gate - Source charge
+Qgs*5
+ID = 50A
+VGS = 6V
+-   16.4   -
+
+Gate - Drain charge
+Q *5
+-   18.9   -
+gd
+
+
+
+•Body diode electrical characteristics (Source-Drain) (Tₐ = 25°C)
+Values
+
+Parameter
+
+Continuous forward current
+Symbol
+
+IS
+Conditions
+
+
+Ta = 25℃
+Min.
+-
+Typ.
+-
+Max. 70
+Unit
+
+A
+
+Pulse forward current      S *³
+-    -   480   A
+
+Forward voltage
+V *⁵  V  = 0V, I = 70A
+-    -   1.2   V
+
+
+Reverse recovery time Reverse recovery charge
+SD    GS    S
+r   IS = 50A, VGS=0V
+r *5   di/dt = 100A/μs
+
+-    74    -    ns
+-   190   -   nC
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        3/10                20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+•Electrical characteristic curves
+
+
+
+Fig.1 Power Dissipation Derating Curve     Fig.2 Maximum Safe Operating Area
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.3 Normalized Transient Thermal Resistance vs. Pulse Width
+Fig.4 Single Pulse Maximum Power Dissipation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        4/10                20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+•Electrical characteristic curves
+
+
+
+Fig.5 Typical Output Characteristics(I)      Fig.6 Typical Output Characteristics(II)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.7 Breakdown Voltage vs. Junction Temperature
+Fig.8 Typical Transfer Characteristics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        5/10                20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+•Electrical characteristic curves
+
+
+
+
+Fig.9 Gate Threshold Voltage vs.
+Junction Temperature
+Fig.10 Forward Transfer Admittance vs.
+Drain Current
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.11 Drain Current Derating Curve      Fig.12 Static Drain - Source On - State
+Resistance vs. Gate Source Voltage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        6/10                20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+•Electrical characteristic curves
+
+
+
+
+Fig.13 Static Drain - Source On - State Resistance vs. Junction Temperature
+Fig.14 Static Drain - Source On - State Resistance vs. Drain Current (I)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.15 Static Drain - Source On - State Resistance vs. Drain Current (II)
+Fig.16 Static Drain - Source On - State Resistance vs. Drain Current (III)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        7/10                20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+•Electrical characteristic curves
+
+
+
+
+Fig.17 Typical Capacitances vs. Drain - Source Voltage
+Fig.18 Switching Characteristics
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.19 Typical Gate Charge         Fig.20 Source Current vs.
+Source Drain Voltage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        8/10                20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+
+•Measurement circuits
+
+
+Fig.1-1 Switching Time Measurement Circuit      Fig.1-2 Switching Waveforms
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.2-1 Gate Charge Measurement Circuit       Fig.2-2 Gate Charge Waveform
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fig.3-1 Avalanche Measurement Circuit        Fig.3-2 Avalanche Waveform
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.        9/10                20221122 - Rev.002
+
+RX3P07CBH                                        Datasheet
+•Dimensions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+www.rohm.com
+© 2022 ROHM Co., Ltd. All rights reserved.
+10/10                20221122 - Rev.002
+
+
+Notice
+Precaution on using ROHM Products
+1.  Our Products are designed and manufactured for application in ordinary electronic equipment (such as AV equipment, OA equipment, telecommunication equipment, home electronic appliances, amusement equipment, etc.).  If you intend to use our Products in devices requiring extremely high reliability (such as medical equipment (Note 1), transport equipment, traffic equipment, aircraft/spacecraft, nuclear power controllers, fuel controllers, car equipment including car accessories, safety devices, etc.) and whose malfunction or failure may cause loss of human life, bodily injury or serious damage to property (“Specific Applications”), please consult with the ROHM sales representative in advance. Unless otherwise agreed in writing by ROHM in advance, ROHM shall not be in any way responsible or liable for any damages, expenses or losses incurred by you or third parties arising from the use of any ROHM’s Products for Specific Applications.
+(Note1) Medical Equipment Classification of the Specific Applications JAPAN      USA       EU       CHINA
+CLASSⅢ   CLASSⅢ   CLASSⅡb    CLASSⅢ CLASSⅣ          CLASSⅢ
+
+2.  ROHM designs and manufactures its Products subject to strict quality control system. However, semiconductor products can fail or malfunction at a certain rate. Please be sure to implement, at your own responsibilities, adequate safety measures including but not limited to fail-safe design against the physical injury, damage to any property, which a failure or malfunction of our Products may cause. The following are examples of safety measures:
+[a] Installation of protection circuits or other protective devices to improve system safety
+[b] Installation of redundant circuits to reduce the impact of single or multiple circuit failure
+
+3.  Our Products are designed and manufactured for use under standard conditions and not under any special or extraordinary environments or conditions, as exemplified below. Accordingly, ROHM shall not be in any way responsible or liable for any damages, expenses or losses arising from the use of any ROHM’s Products under any special or extraordinary environments or conditions.  If you intend to use our Products under any special or extraordinary environments or conditions (as exemplified below), your independent verification and confirmation of product performance, reliability, etc, prior to use, must be necessary:
+[a] Use of our Products in any types of liquid, including water, oils, chemicals, and organic solvents
+[b] Use of our Products outdoors or in places where the Products are exposed to direct sunlight or dust
+[c] Use of our Products in places where the Products are exposed to sea wind or corrosive gases, including Cl2,
+H2S, NH3, SO2, and NO2
+[d] Use of our Products in places where the Products are exposed to static electricity or electromagnetic waves
+[e] Use of our Products in proximity to heat-producing components, plastic cords, or other flammable items
+[f] Sealing or coating our Products with resin or other coating materials
+[g] Use of our Products without cleaning residue of flux (Exclude cases where no-clean type fluxes is used. However, recommend sufficiently about the residue.) ; or Washing our Products by using water or water-soluble cleaning agents for cleaning residue after soldering
+[h] Use of the Products in places subject to dew condensation
+
+4. The Products are not subject to radiation-proof design.
+5. Please verify and confirm characteristics of the final or mounted products in using the Products.
+
+6.  In particular, if a transient load (a large amount of load applied in a short period of time, such as pulse, is applied, confirmation of performance characteristics after on-board mounting is strongly recommended. Avoid applying power exceeding normal rated power; exceeding the power rating under steady-state loading condition may negatively affect product performance and reliability.
+7.  De-rate Power Dissipation depending on ambient temperature. When used in sealed area, confirm that it is the use in the range that does not exceed the maximum junction temperature.
+
+8. Confirm that operation temperature is within the specified range described in the product specification.
+9.  ROHM shall not be in any way responsible or liable for failure induced under deviant condition from what is defined in this document.
+Precaution for Mounting / Circuit board design
+1.  When a highly active halogenous (chlorine, bromine, etc.) flux is used, the residue of flux may negatively affect product performance and reliability.
+2.  In principle, the reflow soldering method must be used on a surface-mount products, the flow soldering method must be used on a through hole mount products. If the flow soldering method is preferred on a surface-mount products, please consult with the ROHM representative in advance.
+For details, please refer to ROHM Mounting specification
+
+Notice-PGA-E                                                 Rev.004
+© 2015 ROHM Co., Ltd. All rights reserved.
+
+
+
+Precautions Regarding Application Examples and External Circuits
+1.  If change is made to the constant of an external circuit, please allow a sufficient margin considering variations of the characteristics of the Products and external components, including transient characteristics, as well as static characteristics.
+
+2.  You agree that application notes, reference designs, and associated data and information contained in this document are presented only as guidance for Products use.  Therefore, in case you use such information, you are solely responsible for it and you must exercise your own independent verification and judgment in the use of such information contained in this document.  ROHM shall not be in any way responsible or liable for any damages, expenses or losses incurred by you or third parties arising from the use of such information.
+
+Precaution for Electrostatic
+This Product is electrostatic sensitive product, which may be damaged due to electrostatic discharge. Please take proper caution in your manufacturing process and storage so that voltage exceeding the Products maximum rating will not be applied to Products. Please take special care under dry condition (e.g. Grounding of human body / equipment / solder iron, isolation from charged objects, setting of Ionizer, friction prevention and temperature / humidity control).
+Precaution for Storage / Transportation
+1.  Product performance and soldered connections may deteriorate if the Products are stored in the places where:
+[a] the Products are exposed to sea winds or corrosive gases, including Cl2, H2S, NH3, SO2, and NO2
+[b] the temperature or humidity exceeds those recommended by ROHM
+[c] the Products are exposed to direct sunshine or condensation
+[d] the Products are exposed to high Electrostatic
+
+2.  Even under ROHM recommended storage condition, solderability of products out of recommended storage time period may be degraded. It is strongly recommended to confirm solderability before using Products of which storage time is exceeding the recommended storage time period.
+
+3.  Store / transport cartons in the correct direction, which is indicated on a carton with a symbol. Otherwise bent leads may occur due to excessive stress applied when dropping of a carton.
+4.  Use Products within the specified time after opening a humidity barrier bag. Baking is required before using Products of which storage time is exceeding the recommended storage time period.
+Precaution for Product Label
+A two-dimensional barcode printed on ROHM Products label is for ROHM’s internal use only.
+Precaution for Disposition
+When disposing Products please dispose them properly using an authorized industry waste company.
+Precaution for Foreign Exchange and Foreign Trade act
+Since concerned goods might be fallen under listed items of export control prescribed by Foreign exchange and Foreign trade act, please consult with ROHM in case of export.
+Precaution Regarding Intellectual Property Rights
+1.  All information and data including but not limited to application example contained in this document is for reference only. ROHM does not warrant that foregoing information or data will not infringe any intellectual property rights or any other rights of any third party regarding such information or data.
+2.  ROHM shall not have any obligations where the claims, actions or demands arising from the combination of the Products with other articles such as components, circuits, systems or external equipment (including software).
+3.  No license, expressly or implied, is granted hereby under any intellectual property rights or other rights of ROHM or any third parties with respect to the Products or the information contained in this document. Provided, however, that ROHM will not assert its intellectual property rights or other rights against you or your customers to the extent necessary to manufacture or sell products containing the Products, subject to the terms and conditions herein.
+Other Precaution
+1.  This document may not be reprinted or reproduced, in whole or in part, without prior written consent of ROHM.
+2.  The Products may not be disassembled, converted, modified, reproduced or otherwise changed without prior written consent of ROHM.
+3.  In no event shall you use in any way whatsoever the Products and the related technical information contained in the Products or this document for any military purposes, including but not limited to, the development of mass-destruction weapons.
+4.  The proper names of companies or products described in this document are trademarks or registered trademarks of ROHM, its affiliated companies or third parties.
+
+
+
+Notice-PGA-E                                                 Rev.004
+© 2015 ROHM Co., Ltd. All rights reserved.
+
+Datasheet
+
+General Precaution
+1.  Before you use our Products, you are requested to carefully read this document and fully understand its contents. ROHM shall not be in any way responsible or liable for failure, malfunction or accident arising from the use of any ROHM’s Products against warning, caution or note contained in this document.
+
+2. All information contained in this document is current as of the issuing date and subject to change without any prior notice. Before purchasing or using ROHM’s Products, please confirm the latest information with a ROHM sales representative.
+
+3.  The information contained in this document is provided on an “as is” basis and ROHM does not warrant that all information contained in this document is accurate and/or error-free. ROHM shall not be in any way responsible or liable for an y damages, expenses or losses incurred by you or third parties resulting from inaccuracy or errors of or concerning such information.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Notice – WE                                                  Rev.001
+© 2015 ROHM Co., Ltd. All rights reserved.
